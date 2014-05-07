@@ -1,0 +1,647 @@
+/*CSS for desktop*/
+
+/*STANDARD COLORS
+..................
+
+light classic red: #C30;
+light classic red - flat: #D96052;
+dark classic red: #A30B0B;
+classic blue: #003366;
+classic gold: #997f5a;
+brown-grey: #e7e6e3;
+*/
+
+
+/* ------------- Custom Fonts ------------- */
+@font-face {
+  font-family: 'PT Sans Narrow';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans Narrow'), local('PTSans-Narrow'), url(http://themes.googleusercontent.com/static/fonts/ptsansnarrow/v4/UyYrYy3ltEffJV9QueSi4Z4t0mJKPaLVqklzZuc32b4.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Volkhov';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Volkhov Bold'), local('Volkhov-Bold'), url(http://themes.googleusercontent.com/static/fonts/volkhov/v5/bfl1JD3mxnmq4NrdCJOHxb3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Volkhov';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Volkhov Italic'), local('Volkhov-Italic'), url(http://themes.googleusercontent.com/static/fonts/volkhov/v5/Y_Jmwi-iHxNj27PG4ILsdbO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+
+/* ------------- Custom Reset ---------------*/
+html, body {
+	background:url('img/paper_texture.jpg');
+	/*background-color: #f0f0f0;*/
+	color: #666;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-size: 1em;
+	position:relative;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+p {
+	padding: 0 0 20px 0;
+	margin: 0;
+}
+
+p strong,li strong{
+	font-weight: bold;
+	color: #C30;
+}
+
+a {
+	color: #D96052;
+	text-decoration: none; /* remove underline for every link*/
+}
+
+a:hover{ /* mouse over link */
+	color: #997f5a;
+}
+
+
+h1, h2, h3, h4, h5, ul, li, form {
+  font-weight: normal;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+	font-family: "Volkhov", serif;
+	color: #C30;
+	font-size: 3em;
+	margin: 30px 0 30px 0;
+}
+
+h2 {
+	font-family: "Volkhov", serif;
+	color: #000;
+	font-size: 1.2em;
+	margin: 15px 0 10px 0;
+}
+
+
+h3 {
+	font-family: "Volkhov", serif;
+	color: #003366;
+	font-size: 1.1em;
+	margin: 15px 0 0 0;
+}
+
+
+
+/* ------------- GLOBAL ---------------*/
+#top-wide,
+#content-wide,
+#footer-wide,
+#content-wide,
+#portfolio-wide,
+#project-wide {
+	float: left;
+	width: 100%
+}
+
+#top,
+#content,
+#portfolio,
+#footer{
+	margin: auto;
+	width: 980px;
+}
+
+/* ------------- Top Section ---------------- */
+#top-wide {
+	background-color: #f7f7f7;
+	border-top:7px solid #C30; 
+    border-bottom:1px dotted #888888;
+	height: 100px;
+	margin-bottom: 40px;
+}
+
+#logo {
+	position:relative;
+	float:left;
+	margin-top: 20px;
+	padding-top:0px;
+}
+
+#logo img{
+	width: 70px;
+}
+
+#nav {
+	float: right;
+	padding: 40px 0 0 0;
+}
+
+#nav ul li {
+	float: left;
+	padding: 0 40px 0 0;
+}
+
+#nav ul li a {
+	color: #646473;
+	float: left;
+	font-family: 'Volkhov', serif;
+	font-style: italic;
+	font-size: 1.2em;
+}
+
+#nav ul li a:hover {
+	color: #C30;
+	margin-top: 1px;
+}
+
+
+/* ------------- Index Page ---------------- */
+.index h1 {
+	font-family: "Volkhov", serif;
+	color: #C30;
+	font-size: 4em;
+	margin: 2em 0 1em 0;
+	
+}
+
+.index h2 {
+	font-family: "Volkhov", serif;
+	color: #000;
+	font-size: 1.4em;
+	margin: 1em 0 1em 0;
+}
+
+.index h3 {
+	font-family: "Volkhov", serif;
+	color: #666;
+	font-size: 1em;
+	margin: 1em 0 0 0;
+}
+
+.index h4 {
+	font-family: "Volkhov", serif;
+	color: #c30;
+	font-size: 1em;
+	margin: 1em 0 1em 0;
+}
+
+.index a {
+	color: #c30;
+	font-family: 'Volkhov', serif;
+}
+
+.index a:hover {
+	color: #997f5a;
+	font-family: 'Volkhov', serif;
+}
+
+.index-img img{
+	width: 400px;
+	margin: 20px 0 0 0;
+	padding: 0;
+}
+
+.index-img {
+	float: left;
+	margin: 0 0 0 0;
+	padding: 0px 13px;
+	width: 400px;
+}
+
+.index-content{
+	float: right;
+	width: 500px;
+}
+
+/* ------------- About Page ---------------- */
+.picframe {
+	background-color: #f7f7f7;
+	width: 30%;
+	padding: 15px 15px 15px 15px; /* top, right, bottom, left */
+	margin-right: 40px;
+	margin-bottom: 20px;
+	float:left;
+	box-shadow: 0px 3px 15px #888888;
+}
+
+.picframe img{
+	width: 100%;
+}
+
+/* ------------- Portfolio Page ---------------- */
+.col-12{
+	width:100%;
+	margin:0;
+	list-style:none;
+	position:relative;
+	padding:0;
+}
+
+.col, .col1, .col2, .col3, .col4{
+    float:left;
+    margin-left:5%;
+}
+
+.port-item{
+	cursor: pointer;
+	background-color: #fafafa;
+	float:none;
+	width:100%;
+	height:100%;
+	margin:0 0 12% 0;
+	padding:0px 0px 15px 0px;
+	position:relative;
+	display:block;
+	-webkit-border-radius:8px;
+	-moz-border-radius:8px;
+	border-radius:8px;
+
+/*	-webkit-box-shadow:0 0 0 1px rgba(100,100,0,.1);
+	-moz-box-shadow:0 0 0 1px rgba(0,0,0,.1);
+	box-shadow:0 0 0 1px rgba(0,0,0,.1);*/
+	
+	/* more transition code*/
+	/* change bg color and box shadow in and out within 0.25s*/
+	-webkit-transition: background-color ease-in-out 0.25s; 
+	-moz-transition: background-color ease-in-out 0.25s; /* mozilla */
+	-o-transition: background-color ease-in-out 0.25s; /* opera */
+	transition: background-color ease-in-out 0.25s;
+
+	-webkit-transition: box-shadow ease-in-out 0.25s; 
+	-moz-transition: box-shadow ease-in-out 0.25s; /* mozilla */
+	-o-transition: box-shadow ease-in-out 0.25s; /* opera */
+	transition: box-shadow ease-in-out 0.25s;
+}
+
+.port-item h4 {
+	font-family: "Volkhov", serif;
+	color: #003366;
+	font-size: 0.9em;
+	margin: 18px 0 0 0;
+	text-align: center;
+}
+
+.port-item h5 {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-size:0.6em;
+	text-decoration:none;
+	display:block;
+	position:relative;
+	color:#8a8a8a;
+	text-align: center;
+}
+
+.port-item a{
+	text-decoration:none;
+	display:block;
+	position:relative;
+	color:#555;
+}
+.port-item:hover{
+	background-color: #fafafa;
+	-moz-box-shadow: 0 0 1px 6px rgba(173,151,94,0.2);
+	-webkit-box-shadow: 0 0 1px 6px rgba(173,151,94,0.2);
+	box-shadow:0 0 1px 6px rgba(173,151,94,0.2);
+}
+
+.port-item:active{
+	background-color:#e7e6e3;
+}
+
+.port-item img{
+	display:block;
+	width: 250px;
+	margin:0 auto;
+	-webkit-border-radius:8px;
+	-moz-border-radius:8px;
+	border-radius:8px;
+	-moz-background-clip:padding;
+	-webkit-background-clip:padding-box;
+	background-clip:padding-box;
+}
+
+
+/* ------------- Project Section ---------------- */
+.prj-wide {
+	float: left;
+	padding: 30px 0 30px 0;
+	width: 100%;
+}
+
+.prj-wide:first-child {
+	padding: 0px 0 30px 0;
+}
+
+.prj-item {
+	margin: auto;
+	/*overflow: hidden;*/
+	line-height: 20px;
+	position: relative;
+	width: 980px;
+}
+
+.prj-info {
+	float: left;
+	width: 360px;
+}
+
+.prj-item p {
+	color: #313131;
+	line-height: 1.3em;
+	font-size: 17px;
+}
+
+.prj-item h3 {
+	font-family: "Volkhov", serif;
+	font-weight: bold;
+	color: #C30;
+	font-size: 1.4em;
+	margin: 0 0 12px 0;
+}
+
+.prj-item h4 {
+	font-family: "Volkhov", serif;
+	color: #666;
+	font-size: 1em;
+	margin: 12px 0 20px 0;
+}
+
+.prj-item h5 {
+	font-family: "Volkhov", serif;
+	color: #C30;
+	font-size: 1em;
+	margin: 12px 0 20px 0;
+}
+
+
+.prj-display-img img {
+	width: 560px;
+	margin: 50px 0 0 0;
+	padding: 0;
+}
+
+.prj-display-img {
+	float: right;
+	margin: 0 0 0 0;
+	padding: 0px 13px;
+	width: 560px;
+}
+
+.prj-content {
+	padding: 20px 0 20px 0;
+	border-top:1px dotted #888888;
+}
+
+.prj-description {
+	padding: 20px 0 20px 0;
+}
+	
+.prj-img img {
+	width: 300px;
+	margin: 10px 0 0 0;
+	box-shadow:0 0 10px 2px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow:0 0 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.prj-img {
+	margin: 10px 0 0 0px;
+	padding: 0px 13px;
+	width: 300px;
+}
+
+.prj-img ul{
+	display: inline;
+}
+
+.prj-img ul li{
+display: inline;
+	padding: 0 0 0 0;
+}
+
+.prj-fullsize-img img {
+	width: 100%;
+	margin: 10px 0 0 0;
+	box-shadow:0 0 10px 2px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow:0 0 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.prj-fullsize-img {
+	margin: 10px 0 0 0px;
+	padding: 0px 13px;
+	width: 100%;
+}
+
+.prj-photo img {
+	margin: 20px 40px 20px 0px;
+	width: 100%;
+	background-color: #f7f7f7;
+	padding: 12px 12px 12px 12px; /* top, right, bottom, left */
+	float:left;
+	box-shadow: 0px 3px 15px #888888;
+}
+
+.prj-photo {
+	width: 45%;
+}
+
+
+
+/* ------------- Contact Page ---------------- */
+
+#contact-form-wrap {
+	/*background:url(img/contact_form.jpg) no-repeat;*/
+	float: left;
+	width: 100%;
+	position: relative;
+	margin: 20px 0 0 0;
+}
+
+
+#contact-form {
+	height: 510px;
+	margin: auto;
+	position: relative;
+}
+
+#form-left { /* your subject, name, email address */
+	width: 40%;
+	float: left;
+	padding: 0 5% 0 3%;
+}
+
+#form-right { /* your message */
+	float: left;
+	width: 40%;
+	padding: 0 0 0 5%;
+}
+
+#form-send {
+	float: left;
+	width: 100%;
+	text-align: center;
+	margin-top: 40px;
+}
+
+
+#contact-form label {
+	display: block;
+	color: #003366;
+	font-family: "Volkhov", serif;
+	font-size: 15px;
+	margin: 0px 0 10px 0;
+}
+
+#contact-form input[type=text],input[type=email] { /* your subject, name, email address */
+	width: 100%;
+	float: left;
+	height:40px;
+	margin: 0px 0 10px 0;
+	display: block;
+	color: #003366;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-size: 16px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	/* border: 1px dotted #a8a8a8; */
+	border:none;
+}
+
+#contact-form input[type=text].error, input[type=email].error  {
+	border: 1px solid #c30;
+}
+
+#contact-form textarea{ /* your message */
+	display: block;
+	color: #003366;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-size: 16px;
+	margin: 0px 0 10px 0;
+	height:125px; 
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	width: 100%;
+	/* border: 1px dotted #a8a8a8; */
+	border: none;
+}
+
+
+#contact-form textarea:focus,
+#contact-form input[type=text]:focus, input[type=email]:focus{ /* when input and textarea are clicked/focused */
+	-moz-box-shadow:inset 2px 2px 2px rgba(0,0,0,0.16), 0 0 0 3px rgba(173,151,94,0.2);
+	-webkit-box-shadow:inset 2px 2px 2px rgba(0,0,0,0.16), 0 0 0 3px rgba(173,151,94,0.2);
+	box-shadow:inset 2px 2px 2px rgba(0,0,0,0.16), 0 0 0 3px rgba(173,151,94,0.2);
+	outline: none;
+}
+/* ------ Placeholder ----- */
+/* chrome, safari */
+::-webkit-input-placeholder {
+    color:#CCC;
+    font-style:italic;
+}
+ 
+/* mozilla */
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color:#CCC;
+    font-style:italic;
+}
+ 
+/* ie (faux placeholder) */
+input.placeholder-text, textarea.placeholder-text  { 
+    color:#CCC;
+    font-style:italic;
+}
+
+/* ------------- Footer ---------------- */
+#footer-wide {
+	border-top:1px dotted #888888;
+	background-color: #f7f7f7;
+	font:0.8em DinPro, Helvetica, Arial, sans-serif;
+	height: 100px;
+	margin-top: 20px;
+}
+
+#footer{
+	color: #747484;
+	margin: auto;
+	width: 980px;
+}
+
+#copyright{
+	float: left;
+	text-align: left;
+	margin-top: 40px;
+}
+
+#social{
+	float: right;
+	padding: 35px 0 0 0;
+}
+
+#social ul li {
+	float: left;
+	padding: 0 0 0 20px;
+}
+
+#social ul li img:hover {
+	margin-top: 1px;
+	background-color:#ED988E !important;
+}
+
+#social ul li img, #social ul li img:hover{ 
+background-color: #fff; 
+border-radius:20px; 
+border:none;
+display: block; 
+
+}
+
+#social ul li.social_fb img, #social ul li.social_fb img:hover { 
+	background-position: -64px 0;
+}
+
+#social ul li.social_twitter img, #social ul li.social_twitter img:hover{
+	background-position: -192px 0;
+}
+
+#social ul li.social_flickr img, #social ul li.social_flickr img:hover{
+	background-position: -256px 0;
+}
+
+
+/* ------------- Button Style ---------------- */
+.btn-send{
+	/* basic transition code*/
+	border:none;
+	display: inline-block;
+	margin-bottom: 1em;
+	padding: 1em 2em;
+	background-color: #D96052;
+	color: #fff;
+	text-decoration: none;
+	font-size: 1em;
+	cursor: pointer;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-o-border-radius:5px; 
+	
+	
+	/* more transition code*/
+	/* change bg color in and out within 0.25s*/
+	-webkit-transition: background-color ease-in-out 0.25s; 
+	-moz-transition: background-color ease-in-out 0.25s; /* mozilla */
+	-o-transition: background-color ease-in-out 0.25s; /* opera */
+	transition: background-color ease-in-out 0.25s;
+}
+
+.btn-send:hover{
+	background-color: #c30;
+}
