@@ -4,7 +4,8 @@
 ..................
 
 light classic red: #C30;
-light classic red - flat: #D96052;
+red - flat: #e74c3c;
+red - flat light: #D96052;
 dark classic red: #A30B0B;
 classic blue: #003366;
 classic gold: #997f5a;
@@ -36,8 +37,8 @@ brown-grey: #e7e6e3;
 
 /* ------------- Custom Reset ---------------*/
 html, body {
-	background:url('img/paper_texture.jpg');
-	/*background-color: #f0f0f0;*/
+	/*background-image:url('../img/paper_texture.jpg');*/
+	background-color: #eeeeee;
 	color: #666;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 	font-size: 1em;
@@ -101,12 +102,18 @@ h3 {
 /* ------------- GLOBAL ---------------*/
 #top-wide,
 #content-wide,
-#footer-wide,
+#portfolio-wide,
+#project-wide,
+#footer-wide, {
+	width: 100%
+}
+
+#top-wide,
 #content-wide,
 #portfolio-wide,
-#project-wide {
-	float: left;
-	width: 100%
+#project-wide{
+	position: relative;
+	margin-bottom: 40px;
 }
 
 #top,
@@ -114,49 +121,53 @@ h3 {
 #portfolio,
 #footer{
 	margin: auto;
-	width: 980px;
+	width: 80%;
 }
 
 /* ------------- Top Section ---------------- */
 #top-wide {
-	background-color: #f7f7f7;
-	border-top:7px solid #C30; 
+	background-color: #fefefe;
+	border-top:4px solid #e74c3c; 
     border-bottom:1px dotted #888888;
-	height: 100px;
-	margin-bottom: 40px;
+	height: 80px;
+}
+
+header{
+	width:80%;
 }
 
 #logo {
+	display: block;
 	position:relative;
 	float:left;
-	margin-top: 20px;
-	padding-top:0px;
+	margin-top:18px;
+	width: 54px;
 }
 
 #logo img{
-	width: 70px;
+	width: 100%;
 }
 
 #nav {
 	float: right;
-	padding: 40px 0 0 0;
+	padding-top: 30px;
 }
 
 #nav ul li {
 	float: left;
-	padding: 0 40px 0 0;
+	padding-left:20px;
 }
 
 #nav ul li a {
-	color: #646473;
+	color: #e74c3c;
 	float: left;
 	font-family: 'Volkhov', serif;
 	font-style: italic;
-	font-size: 1.2em;
+	font-size: 1em;
 }
 
 #nav ul li a:hover {
-	color: #C30;
+	color: #D96052;
 	margin-top: 1px;
 }
 
@@ -166,7 +177,7 @@ h3 {
 	font-family: "Volkhov", serif;
 	color: #C30;
 	font-size: 4em;
-	margin: 2em 0 1em 0;
+	margin: 1em 0 0.8em 0;
 	
 }
 
@@ -201,22 +212,39 @@ h3 {
 	font-family: 'Volkhov', serif;
 }
 
-.index-img img{
-	width: 400px;
-	margin: 20px 0 0 0;
-	padding: 0;
+@media screen and (min-width: 768px){
+	.index-img {
+		display: block;
+		position: relative;
+		float:left;
+		width: 35%;
+	}
+
+	.index-img img{
+		width: 100%;
+	}
+
+	.index-content{
+		display: block;
+		position: relative;
+		margin-left: 35%;
+		padding-left: 5%;
+	}	
 }
 
-.index-img {
-	float: left;
-	margin: 0 0 0 0;
-	padding: 0px 13px;
-	width: 400px;
-}
+@media screen and (max-width: 767px){
+	.index-img{
+		width:100%;
+	}
 
-.index-content{
-	float: right;
-	width: 500px;
+	.index-img img{
+		width: 100%;
+	}
+
+	.index-content{
+		width:100%;
+	}	
+
 }
 
 /* ------------- About Page ---------------- */
@@ -235,29 +263,15 @@ h3 {
 }
 
 /* ------------- Portfolio Page ---------------- */
-.col-12{
-	width:100%;
-	margin:0;
-	list-style:none;
-	position:relative;
-	padding:0;
-}
-
-.col, .col1, .col2, .col3, .col4{
-    float:left;
-    margin-left:5%;
-}
 
 .port-item{
 	cursor: pointer;
+	display:block;
 	background-color: #fafafa;
-	float:none;
 	width:100%;
 	height:100%;
-	margin:0 0 12% 0;
 	padding:0px 0px 15px 0px;
 	position:relative;
-	display:block;
 	-webkit-border-radius:8px;
 	-moz-border-radius:8px;
 	border-radius:8px;
@@ -316,7 +330,7 @@ h3 {
 
 .port-item img{
 	display:block;
-	width: 250px;
+	width: 100%;
 	margin:0 auto;
 	-webkit-border-radius:8px;
 	-moz-border-radius:8px;
@@ -561,58 +575,40 @@ input.placeholder-text, textarea.placeholder-text  {
 
 /* ------------- Footer ---------------- */
 #footer-wide {
+	position: relative;
 	border-top:1px dotted #888888;
 	background-color: #f7f7f7;
 	font:0.8em DinPro, Helvetica, Arial, sans-serif;
-	height: 100px;
-	margin-top: 20px;
+	height: 80px;
+	margin-top: 40px;
 }
 
 #footer{
 	color: #747484;
 	margin: auto;
-	width: 980px;
+	width: 80%;
 }
 
 #copyright{
 	float: left;
 	text-align: left;
-	margin-top: 40px;
+	margin-top: 30px;
 }
 
 #social{
 	float: right;
-	padding: 35px 0 0 0;
+	padding: 25px 0 0 0;
 }
 
 #social ul li {
 	float: left;
-	padding: 0 0 0 20px;
+	padding-left: 20px;
 }
 
 #social ul li img:hover {
 	margin-top: 1px;
 	background-color:#ED988E !important;
-}
-
-#social ul li img, #social ul li img:hover{ 
-background-color: #fff; 
-border-radius:20px; 
-border:none;
-display: block; 
-
-}
-
-#social ul li.social_fb img, #social ul li.social_fb img:hover { 
-	background-position: -64px 0;
-}
-
-#social ul li.social_twitter img, #social ul li.social_twitter img:hover{
-	background-position: -192px 0;
-}
-
-#social ul li.social_flickr img, #social ul li.social_flickr img:hover{
-	background-position: -256px 0;
+	border-radius:20px; 
 }
 
 
