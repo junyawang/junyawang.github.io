@@ -21,47 +21,46 @@
 
 	<body>	
 		<!-- Navigation section -->
-		<div id = "top-wide">
-			<header id = "top">
+		<nav>
+			<div class="container">
 				<!-- logo -->
-				
-				<div id="logo">
+				<div id = "logo">
 					<a href = "index.html"><img src="img/logo.png" alt="logo"/></a>
 				</div>
 				
-				<div id = "nav">
+				<div id = "menu">
 					<ul>
 						<li><a href="portfolio.html">portfolio</a></li>
 						<li><a href="about.html">about</a></li>
 						<li><a href="contact.php">contact</a></li>
 					</ul>
 				</div>
-			</header>
-		</div> <!-- /end #top-wide -->
+			</div>
+		</nav> <!-- /end nav -->
 		
 		<!-- About section-->
-		<div id = "content-wide">
-		<div id = "content" class = "index">
-			<div class = "index-img">
-				<img src="img/profile_icon.png" alt="profile"/>
-			</div>
-			<div class = "index-content">
-				<h1>hi!</h1>
-				<h2>
-				I'm Junya Wang, a graphic and UI/UX designer in Canada. I am also interested in industrial design and have experience on industrial modeling.</h2>
-				<h3>Looking around in my portfolio and you'll find some of my <a href="portfolio.html">recent projects</a> and a few <a href="about.html">personal works</a> as well. If you are interested in working with me, <a href="contact.html">contact me</a> soon!</h3>
-				<h4>I am currently <strong>AVAILABLE</strong> for jobs!</h4>
-			</div>
+		<div class = "wrapper index">
+			<div class = "container col_group">
+				<section class = "index-img col span_5_of_12">
+					<img src="img/profile_icon.png" alt="profile"/>
+				</section>
+				<section class = "index-content col span_7_of_12">
+					<h1>hi!</h1>
+					<h2>
+					I'm Junya Wang, a graphic and UI/UX designer in Canada. I am also interested in industrial design and have experience on industrial modeling.</h2>
+					<h3>Looking around in my portfolio and you'll find some of my <a href="portfolio.html">recent projects</a> and a few <a href="about.html">personal works</a> as well. If you are interested in working with me, <a href="contact.html">contact me</a> soon!</h3>
+					<h4>I am currently <strong>AVAILABLE</strong> for jobs!</h4>
+				</section>
 			</div><!-- /end #content -->
 		</div><!-- /end #content-wide -->
 		
 
 		
 		<!-- Footer section -->
-		<div id = "footer-wide">
-			<div id = "footer">
+		<footer>
+			<div class = "container">
 				<div id ="copyright">
-					<span>&copy; 2014 Junya Wang</span>
+					<p>&copy; Junya Wang 2014</p>
 				</div> <!-- /end #copyright-->
 			
 				<div id = "social">
@@ -71,8 +70,8 @@
 						<li><a href = "http://www.flickr.com/photos/aquaya"><img src="img/flickr.png" width="30" height="30" alt="flickr"/></a></li>
 					</ul>
 				</div> <!-- /end #social-->
-			</div> <!-- /end #footer -->
-		</div> <!-- /end #footer-wide -->
+			</div> <!-- /end .container -->
+		</footer> <!-- /end footer -->
 		<script type="text/javascript" src="/scripts/retina.js"></script>
 	</body>
 </html>

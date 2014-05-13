@@ -20,30 +20,29 @@
 
 	<body>	
 		<!-- Navigation section -->
-		<div id = "top-wide">
-			<header id = "top">
+		<nav>
+			<div class="container col span_12_of_12">
 				<!-- logo -->
-				
-				<div id="logo">
+				<div id = "logo">
 					<a href = "index.html"><img src="img/logo.png" alt="logo"/></a>
 				</div>
 				
-				<div id = "nav">
+				<div id = "menu">
 					<ul>
 						<li><a href="portfolio.html">portfolio</a></li>
 						<li><a href="about.html">about</a></li>
-						<li><a href="contact.html">contact</a></li>
+						<li><a class="active" href="contact.php">contact</a></li>
 					</ul>
 				</div>
-			</header>
-		</div> <!-- /end #top-wide -->
+			</div>
+		</nav> <!-- /end nav -->
 		
 		<!-- Contact section-->
-		<div id = "content-wide" class="contact">
-			<div id = "content">
+		<div class="wrapper">
+			<section class="container">
 				<h1>contact me.</h1>
 				
-				<h2>I am currently <strong>AVAILABLE</strong> for jobs!</h2>
+				<h2>I am currently <span>AVAILABLE</span> for jobs!</h2>
 				<p>You are welcome to <a href="./resume_junyawang.pdf">download my resume</a>.</p>
 
 				<h2>Want to hire me for a project or work with me? Send me an email!</h2>
@@ -51,8 +50,9 @@
 					<p><a href="mailto:junyaw@sfu.ca">junyaw@sfu.ca</a></p>
 				
 				<h2>Or take only 60 seconds to fill in the contact form below!</h2>
-								
-				<div id="contact-form-wrap">
+			</section>
+
+			<section id="contact-form-wrap" class="container">
 				<div id="contact-form">
 
 						<?php
@@ -83,8 +83,8 @@
     						}
     					?>
 						
-						<form method="post" id="contactform" action="contact.php" autocomplete="on">
-						<div id="form-left">
+						<form method="post" id="contactform" action="contact.php" autocomplete="on" class="col_group">
+						<div id="form-left" class="col span_6_of_12">
 							<label>Subject</label>
 							<input type="text" name="subject" id="subject" />
 							
@@ -94,7 +94,7 @@
 							<label for="email">Your Email Address*</label>
 							<input type="email" name="email" id="email" class="required" placeholder="myname@example.com"/>
 						</div>
-						<div id="form-right">
+						<div id="form-right" class="col span_6_of_12">>
 							<label for="message">Your Message*</label>
 							<textarea rows="10" id="message" name="message" class="required"></textarea>
 							<label>*Are you human? What is 2+2?* </label>
@@ -106,28 +106,28 @@
 						</div>
 					</form>
 				</div><!-- end of contact-form div -->					
-			</div><!-- end of contact-form-wrap div -->
+			</section><!-- end of contact-form-wrap div -->
 
 			</div><!-- /end #content -->
 		</div><!-- /end #content-wide -->
 
 		
 		<!-- Footer section -->
-		<div id = "footer-wide">
-			<div id = "footer">
+		<footer>
+			<div class = "container">
 				<div id ="copyright">
-					<span>&copy; 2014 Junya Wang</span>
+					<p>&copy; Junya Wang 2014</p>
 				</div> <!-- /end #copyright-->
 			
 				<div id = "social">
 					<ul>
-						<li class="social_fb"><a href = "http://www.facebook.com/ayajunya"><img src="img/facebook.png" width="30" height="30" alt="facebook"/></a></li>
-						<li class="social_twitter"><a href = "https://twitter.com/mistyaquaya"><img src="img/twitter.png" width="30" height="30" alt="twitter"/></a></li>
-						<li class="social_flickr"><a href = "http://www.flickr.com/photos/aquaya"><img src="img/flickr.png" width="30" height="30" alt="flickr"/></a></li>
+						<li><a href = "http://www.facebook.com/ayajunya"><img src="img/facebook.png" width="30" height="30" alt="facebook"/></a></li>
+						<li><a href = "https://twitter.com/mistyaquaya"><img src="img/twitter.png" width="30" height="30" alt="twitter"/></a></li>
+						<li><a href = "http://www.flickr.com/photos/aquaya"><img src="img/flickr.png" width="30" height="30" alt="flickr"/></a></li>
 					</ul>
 				</div> <!-- /end #social-->
-			</div> <!-- /end #footer -->
-		</div> <!-- /end #footer-wide -->
+			</div> <!-- /end .container -->
+		</footer> <!-- /end footer -->
 		<script type="text/javascript" src="/scripts/retina.js"></script>
 	</body>
 </html>

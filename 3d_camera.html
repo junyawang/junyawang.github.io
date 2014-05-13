@@ -21,96 +21,144 @@
 
 	<body>	
 		<!-- Navigation section -->
-		<div id = "top-wide">
-			<header id = "top">
-				<div id="logo">
+		<nav>
+			<div class="container">
+				<!-- logo -->
+				<div id = "logo">
 					<a href = "index.html"><img src="img/logo.png" alt="logo"/></a>
 				</div>
 				
-				<div id = "nav">
+				<div id = "menu">
 					<ul>
-						<li><a href="portfolio.html">portfolio</a></li>
+						<li><a class="active" href="portfolio.html">portfolio</a></li>
 						<li><a href="about.html">about</a></li>
 						<li><a href="contact.php">contact</a></li>
 					</ul>
 				</div>
-			</header>
-		</div> <!-- /end #top-wide -->
+			</div>
+		</nav> <!-- /end nav -->
 		
 		<!-- Project section-->
-		<div id = "project-wide">
-			<div class = "prj-wide">
-				<div class = "prj-item">
-					<div class = "prj-info">
-						<h3>3D Modeling - Film Camera </h3>
-						<h4>Solidworks / Industrial 3D Modeling</h4>
-						<p>Building digital models with four different configurations by applying scale‐based and/or module‐based product family design. Modifying or refining the models for making them suitable for parametric and configuration changes.</p>
-						<p><strong>My Role: </strong> Industrial Sketches, Dimensioning, 3D Modeling, Lighting, Rendering, Graphic Design</p>
-						<p><strong>Tool used: </strong> <i>Solidworks 2011</i>, <i>Photoview 360</i>, <i>Adobe Illustrator</i></p>
-						<p>Modeled in March 2013</p>
-					</div><!-- /end .prj-info -->
-					
-					<div class="prj-display-img">
+		<div class = "wrapper">
+			<div class = "container prj-item col_group">
+				<section class = "prj-info">
+					<h1>3D Modeling - Film Camera </h1>
+					<h4><span>- </span>Solidworks / Industrial 3D Modeling<span> -</span></h4>
 					<img src="img/camera/camera_exp1.jpg" alt="camera_exp1"/>
-					</div><!-- /end .prj-display-img -->
-					
-				</div><!-- /end .prj-item -->
-			</div><!-- /end .prj-wide -->
+				</section><!-- /end .prj-info -->
+				
+				<section class = "prj-content col span_12_of_12">
+				<div class = "col span_3_of_12">
+					<h3>TYPE</h3>
+					<ul>
+						<li>Industrial Modeling</li>
+						<li>Academic Project</li>
+						<li>Individual Work</li>
+					</ul>
+				</div>
 
-			<div class = "prj-wide">
-				<div class = "prj-item">
-					<div class="prj-content">
-						<h5>Modeling Process</h5>
-						<div class="prj-fullsize-img">
-							<img src="img/camera/camera_sketch.jpg" alt="camera_sketch"/>
-						</div><!-- /end .prj-fullsize-img -->
-						<div class="prj-description">
-							<p>At first, I drew the industrial sketches of 6 views precisely. Then I measured the dimensions of my Pentax Me-Super and label them on the sketch.</p>
-						</div>
-						
-						<div class="prj-fullsize-img">
-							<img src="img/camera/camera_draft.jpg" alt="camera_draft"/>
-						</div><!-- /end .prj-fullsize-img -->
-						<div class="prj-description">
-							<p>Then, I used Solidworks to build parts of the model and assemble them together to a completed assembly.</p>
-						</div>
-						
-						<div class="prj-fullsize-img">
-							<img src="img/camera/camera_rendering.jpg" alt="camera_rendering"/>
-						</div><!-- /end .prj-fullsize-img -->
-						<div class="prj-description">
-							<p>Finally, I select the right material for texture. I adjusted light to prevent over-exposure and under-exposure. Then I made a exploded view and did final render in Photoview 360 for each configuration.</p>
-						</div>
-					</div><!-- /end .prj-content -->
-					
-					<div class="prj-content">
-						<h5>Final Renders</h5>
-						<div class="prj-fullsize-img">
-							<ul>
-								<li><img src="img/camera/camera_back1.jpg" alt="camera_back1"/></li>
-								<li><img src="img/camera/camera_back2.jpg" alt="camera_back2"/></li>
-								<li><img src="img/camera/camera1.jpg" alt="camera1"/></li>
-								<li><img src="img/camera/camera_exp1.jpg" alt="camera_exp1"/></li>
-								<li><img src="img/camera/camera2.jpg" alt="camera2"/></li>
-								<li><img src="img/camera/camera_exp2.jpg" alt="camera_exp2"/></li>
-								<li><img src="img/camera/camera3.jpg" alt="camera3"/></li>
-								<li><img src="img/camera/camera_exp3.jpg" alt="camera_exp3"/></li>
-								<li><img src="img/camera/camera_flash.jpg" alt="camera_flash"/></li>
-								<li><img src="img/camera/camera_exp_flash.jpg" alt="camera_exp_flash"/></li>
-								<li><img src="img/camera/camera_two_eye.jpg" alt="camera_two_eye"/></li>
-								<li><img src="img/camera/camera_exp_two_eye.jpg" alt="camera_exp_two_eye"/></li>
-							</ul>
-						</div><!-- /end .prj-fullsize-img -->
-					</div><!-- /end .prj-content -->
-				</div><!-- /end .prj-item -->
-			</div><!-- /end .prj-wide -->
+				<div class = "col span_3_of_12">
+					<h3>ROLE</h3>
+					<ul>
+						<li>Industrial Sketches</li>
+						<li>Dimensioning</li>
+						<li>3D modeling</li>
+						<li>Lighting</li>
+						<li>Rendering</li>
+					</ul>
+				</div>
+
+				<div class = "col span_3_of_12">
+					<h3>TOOLS</h3>
+					<ul>
+						<li>Solidworks 2011</li>
+						<li>Photoview 360</li>
+						<li>Hand Sketch</li>
+					</ul>
+				</div>
+
+				<div class = "col span_3_of_12">
+					<h3>TIME</h3>
+					<ul>
+						<li>March 2013</li>
+						<li>within 2 weeks</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class = "prj-content col span_12_of_12">
+				<h2>Description</h2>
+				<p>Building digital models with four different configurations by applying scale‐based and/or module‐based product family design. Modifying or refining the models for making them suitable for parametric and configuration changes.</p>
+			</section>
+
+			<section class="prj-content col span_12_of_12">
+				<h2>Modeling Process</h2>
+
+				<img src="img/camera/camera_sketch.jpg" alt="camera_sketch"/>
+
+				<p>At first, I drew the industrial sketches of 6 views precisely. Then I measured the dimensions of my Pentax Me-Super and label them on the sketch.</p>
+
+				<img src="img/camera/camera_draft.jpg" alt="camera_draft"/>
+
+				<p>Then, I used Solidworks to build parts of the model and assemble them together to a completed assembly.</p>
+
+				<img src="img/camera/camera_rendering.jpg" alt="camera_rendering"/>
+
+				<p>Finally, I select the right material for texture. I adjusted light to prevent over-exposure and under-exposure. Then I made a exploded view and did final render in Photoview 360 for each configuration.</p>
+
+			</section>
+				
+			<section class="prj-content col span_12_of_12">
+				<h2>Final Renders</h2>
+				<div class="prj-img">
+					<ul>
+						<li>
+							<img src="img/camera/camera_back1.jpg" alt="camera_back1"/>
+						</li>
+						<li>
+							<img src="img/camera/camera_back2.jpg" alt="camera_back2"/>
+						</li>
+						<li>
+							<img src="img/camera/camera1.jpg" alt="camera1"/>
+						</li>
+						<li>
+							<img src="img/camera/camera_exp1.jpg" alt="camera_exp1"/>
+						</li>
+						<li>
+							<img src="img/camera/camera2.jpg" alt="camera2"/>
+						</li>
+						<li>
+							<img src="img/camera/camera_exp2.jpg" alt="camera_exp2"/>
+						</li>
+						<li>
+							<img src="img/camera/camera3.jpg" alt="camera3"/>
+						</li>
+						<li>
+							<img src="img/camera/camera_exp3.jpg" alt="camera_exp3"/>
+						</li>
+						<li>
+							<img src="img/camera/camera_flash.jpg" alt="camera_flash"/>
+						</li>
+						<li>
+							<img src="img/camera/camera_exp_flash.jpg" alt="camera_exp_flash"/>
+						</li>
+						<li>
+							<img src="img/camera/camera_two_eye.jpg" alt="camera_two_eye"/>
+						</li>
+						<li>
+							<img src="img/camera/camera_exp_two_eye.jpg" alt="camera_exp_two_eye"/>
+						</li>
+					</ul>
+				</div><!-- /end .prj-fullsize-img -->
+			</section><!-- /end .prj-content -->
 		</div><!-- /end .project-wide -->
+	</div>
 				
 		<!-- Footer section -->
-		<div id = "footer-wide">
-			<div id = "footer">
+		<footer>
+			<div class = "container">
 				<div id ="copyright">
-					<span>&copy; 2014 Junya Wang</span>
+					<p>&copy; Junya Wang 2014</p>
 				</div> <!-- /end #copyright-->
 			
 				<div id = "social">
@@ -120,8 +168,8 @@
 						<li><a href = "http://www.flickr.com/photos/aquaya"><img src="img/flickr.png" width="30" height="30" alt="flickr"/></a></li>
 					</ul>
 				</div> <!-- /end #social-->
-			</div> <!-- /end #footer -->
-		</div> <!-- /end #footer-wide -->
+			</div> <!-- /end .container -->
+		</footer> <!-- /end footer -->
 		<script type="text/javascript" src="/scripts/retina.js"></script>
 	</body>
 </html>

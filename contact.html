@@ -3,13 +3,12 @@
 	<head>
 	<meta charset="utf-8"/>
 		<title>Junya Wang &raquo; Contact</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2 user-scalable=yes"/>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 		<link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 768px) and (max-device-width: 1024px)" href="css/style_tablet.css"/>
 		<link rel="stylesheet" type="text/css" media="handheld, only screen and (max-width: 480px), only screen and (max-device-width: 480px)" href="css/style_mobile.css"/>
 		<link rel="stylesheet" href="css/grid.css">
-		
+						
 		<!-- JS -->
 		<script type="text/javascript" src="scripts/jquery/jquery.js"></script> 
 		<!-- startFade -->
@@ -21,40 +20,40 @@
 
 	<body>	
 		<!-- Navigation section -->
-		<div id = "top-wide">
-			<header id = "top">
+		<nav>
+			<div class="container col span_12_of_12">
 				<!-- logo -->
-				
-				<div id="logo">
+				<div id = "logo">
 					<a href = "index.html"><img src="img/logo.png" alt="logo"/></a>
 				</div>
 				
-				<div id = "nav">
+				<div id = "menu">
 					<ul>
 						<li><a href="portfolio.html">portfolio</a></li>
 						<li><a href="about.html">about</a></li>
-						<li><a href="contact.html">contact</a></li>
+						<li><a class="active" href="contact.php">contact</a></li>
 					</ul>
 				</div>
-			</header>
-		</div> <!-- /end #top-wide -->
+			</div>
+		</nav> <!-- /end nav -->
 		
 		<!-- Contact section-->
-		<div id = "content-wide" class="contact">
-			<div id = "content">
+		<div class="wrapper">
+			<section class="container">
 				<h1>contact me.</h1>
 				
-				<h2>I am currently <strong>AVAILABLE</strong> for jobs!</h2>
+				<h2>I am currently <span>AVAILABLE</span> for jobs!</h2>
 				<p>You are welcome to <a href="./resume_junyawang.pdf">download my resume</a>.</p>
 
 				<h2>Want to hire me for a project or work with me? Send me an email!</h2>
 					<!-- <p><a href="tel:17788599861">+1 778-859-9861</a></p> -->
 					<p><a href="mailto:junyaw@sfu.ca">junyaw@sfu.ca</a></p>
 				
-				<!-- <h2>Or take only 60 seconds to fill in the contact form below!</h2> -->
-								
-				<!-- <div id="contact-form-wrap">
-				<div id="contact-form">
+				<h2>Or take only 60 seconds to fill in the contact form below!</h2>
+			</section>
+
+			<section class="contact-form-wrap container">
+				<div class="contact-form">
 
 						<?php
     						$name = $_POST['name'];
@@ -84,8 +83,8 @@
     						}
     					?>
 						
-						<form method="post" id="contactform" action="contact.php" autocomplete="on">
-						<div id="form-left">
+						<form method="post" id="contactform" action="contact.php" autocomplete="on" class="col_group">
+						<div class="form-left col span_6_of_12">
 							<label>Subject</label>
 							<input type="text" name="subject" id="subject" />
 							
@@ -95,40 +94,40 @@
 							<label for="email">Your Email Address*</label>
 							<input type="email" name="email" id="email" class="required" placeholder="myname@example.com"/>
 						</div>
-						<div id="form-right">
+						<div class="form-right col span_6_of_12">>
 							<label for="message">Your Message*</label>
 							<textarea rows="10" id="message" name="message" class="required"></textarea>
 							<label>*Are you human? What is 2+2?* </label>
 							<input type="text" name="human"/>
 						</div>
 
-						<div id="form-send">
-							<input type="submit" class="btn-send" name="submit" value="send message" onClick="_gaq.push(['_trackEvent', 'contact', 'send message', 'contact form',, false]);" />
+						<div class="form-send">
+							<input type="submit" name="submit" value="send message" onClick="_gaq.push(['_trackEvent', 'contact', 'send message', 'contact form',, false]);" />
 						</div>
 					</form>
-				</div>
-			</div> --><!-- end of contact-form-wrap div -->
+				</div><!-- end of contact-form div -->					
+			</section><!-- end of contact-form-wrap div -->
 
 			</div><!-- /end #content -->
 		</div><!-- /end #content-wide -->
 
 		
 		<!-- Footer section -->
-		<div id = "footer-wide">
-			<div id = "footer">
+		<footer>
+			<div class = "container">
 				<div id ="copyright">
-					<span>&copy; 2014 Junya Wang</span>
+					<p>&copy; Junya Wang 2014</p>
 				</div> <!-- /end #copyright-->
 			
 				<div id = "social">
 					<ul>
-						<li class="social_fb"><a href = "http://www.facebook.com/ayajunya"><img src="img/facebook.png" width="30" height="30" alt="facebook"/></a></li>
-						<li class="social_twitter"><a href = "https://twitter.com/mistyaquaya"><img src="img/twitter.png" width="30" height="30" alt="twitter"/></a></li>
-						<li class="social_flickr"><a href = "http://www.flickr.com/photos/aquaya"><img src="img/flickr.png" width="30" height="30" alt="flickr"/></a></li>
+						<li><a href = "http://www.facebook.com/ayajunya"><img src="img/facebook.png" width="30" height="30" alt="facebook"/></a></li>
+						<li><a href = "https://twitter.com/mistyaquaya"><img src="img/twitter.png" width="30" height="30" alt="twitter"/></a></li>
+						<li><a href = "http://www.flickr.com/photos/aquaya"><img src="img/flickr.png" width="30" height="30" alt="flickr"/></a></li>
 					</ul>
 				</div> <!-- /end #social-->
-			</div> <!-- /end #footer -->
-		</div> <!-- /end #footer-wide -->
+			</div> <!-- /end .container -->
+		</footer> <!-- /end footer -->
 		<script type="text/javascript" src="/scripts/retina.js"></script>
 	</body>
 </html>
