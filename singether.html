@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="css/grid.css">
 		
 		<!-- JS -->
-		<script type="text/javascript" src="scripts/jquery/jquery.js"></script> 
+		<script type="text/javascript" src="scripts/jquery/jquery.min.js"></script> 
 		<!-- startFade -->
 		<script type="text/javascript" src="scripts/jquery/jquery.startFade.js"></script>
 		<script type="text/javascript">
@@ -111,7 +111,7 @@
 					<h2>Walkthrough Video and Prototype Demo</h2>
 					<p>Now let's watch the <span>walkthrough video</span></p>
 					
-					<iframe src="http://player.vimeo.com/video/43940981?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="980" height="551" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+					<iframe src="http://player.vimeo.com/video/43940981?title=0&amp;byline=0&amp;portrait=0&amp;color=e74c3c" width="980" height="551" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 					
 					<h2>Feeling interested about Singether? Wanna have a try?</h2>
 					<p>&#8594; Try <a href="http://www.sfu.ca/~junyaw/iat334/singetherFinal/Main.html">Singether Prototype Online Demo</a></p>
@@ -136,6 +136,17 @@
 				</div> <!-- /end #social-->
 			</div> <!-- /end .container -->
 		</footer> <!-- /end footer -->
-		<script type="text/javascript" src="/scripts/retina.js"></script>
+		
+		<!-- Retina Display -->
+		<script type="text/javascript" src="scripts/retina.min.js"></script>
+
+		<!-- FitVids - Responsive Video -->
+		<script src="scripts/jquery/jquery.fitvids.js"></script>
+		<script>
+		// Basic FitVids Test
+		$(".prj-content").fitVids();
+		// Custom selector and No-Double-Wrapping Prevention Test
+		// $(".prj-content").fitVids({ customSelector: "iframe[src^='http://socialcam.com']"});
+		</script>
 	</body>
 </html>

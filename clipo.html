@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="css/grid.css">
 		
 		<!-- JS -->
-		<script type="text/javascript" src="scripts/jquery/jquery.js"></script> 
+		<script type="text/javascript" src="scripts/jquery/jquery.min.js"></script> 
 		<!-- startFade -->
 		<script type="text/javascript" src="scripts/jquery/jquery.startFade.js"></script>
 		<script type="text/javascript">
@@ -109,7 +109,7 @@
 					
 				<section class="prj-content col span_12_of_12">
 					<h2>Final Demo and Prototype</h2>
-					<p>&#8594; Try <strong><a href="http://www.sfu.ca/~junyaw/clipO_prototype/clipO.html">interactive prototype</a></strong></p>
+					<p>&#8594; Try <span><a href="http://www.sfu.ca/~junyaw/clipO_prototype/clipO.html">interactive prototype</a></span></p>
 					<iframe width="980" height="551" src="//www.youtube.com/embed/koenf9Tw9so" frameborder="0" allowfullscreen></iframe>
 				</section>
 			</div><!-- /end .container -->
@@ -131,6 +131,17 @@
 				</div> <!-- /end #social-->
 			</div> <!-- /end .container -->
 		</footer> <!-- /end footer -->
-		<script type="text/javascript" src="/scripts/retina.js"></script>
+		
+		<!-- Retina Display -->
+		<script type="text/javascript" src="scripts/retina.min.js"></script>
+
+		<!-- FitVids - Responsive Video -->
+		<script src="scripts/jquery/jquery.fitvids.js"></script>
+		<script>
+		// Basic FitVids Test
+		$(".prj-content").fitVids();
+		// Custom selector and No-Double-Wrapping Prevention Test
+		// $(".prj-content").fitVids({ customSelector: "iframe[src^='http://socialcam.com']"});
+		</script>
 	</body>
 </html>
