@@ -21,7 +21,7 @@
 	<body>	
 		<!-- Navigation section -->
 		<nav>
-			<div class="container col span_12_of_12">
+			<div class="container">
 				<!-- logo -->
 				<div id = "logo">
 					<a href = "index.html"><img src="img/logo.png" alt="logo"/></a>
@@ -50,66 +50,62 @@
 					<p><a href="mailto:junyaw@sfu.ca">junyaw@sfu.ca</a></p>
 				
 				<h2>Or take only 60 seconds to fill in the contact form below!</h2>
-			</section>
+			</section><!-- /end of .container -->
 
-			<section id="contact-form-wrap" class="container">
-				<div id="contact-form">
+			<section class="container col_group">
+					<?php
+						$name = $_POST['name'];
+						$email = $_POST['email'];
+						$message = $_POST['message'];
+						$from= 'From: Junya Wang - Online Portfolio';
+						$to= 'ayajunya@gmail.com';
+						$human= $_POST['human'];
 
-						<?php
-    						$name = $_POST['name'];
-    						$email = $_POST['email'];
-    						$message = $_POST['message'];
-    						$from= 'From: Junya Wang - Online Portfolio';
-    						$to= 'ayajunya@gmail.com';
-    						$human= $_POST['human'];
+						$subject = $_POST['subject'];
+						$body = "From: $name\n Email: $email\n Message:\n $message";
 
-    						$subject = $_POST['subject'];
-    						$body = "From: $name\n Email: $email\n Message:\n $message";
-
-    						if($_POST['submit']){
-    							if ($name != '' && $email != '' && $message != ''){
-    								if ($human=='4'){
-    									if (mail ($to, $subject, $body, $from)) { 
-    										echo '<p>Your message has been sent!</p>';
-    									} else {
-    										echo '<p>Oops, something goes wrong. Wanna try again?</p>'; 
-    									}
-    								} else if($_POST['submit'] && $human !='4') {
-    									echo '<p>Wrong answer! Seems you are not a human lol!</p>';
-    								}
-    							} else {
-    								echo '<p>Please fill in all required fields!</p>';
-    							}
-    						}
-    					?>
+						if($_POST['submit']){
+							if ($name != '' && $email != '' && $message != ''){
+								if ($human=='4'){
+									if (mail ($to, $subject, $body, $from)) { 
+										echo '<p>Your message has been sent!</p>';
+									} else {
+										echo '<p>Oops, something goes wrong. Wanna try again?</p>'; 
+									}
+								} else if($_POST['submit'] && $human !='4') {
+									echo '<p>Wrong answer! Seems you are not a human lol!</p>';
+								}
+							} else {
+								echo '<p>Please fill in all required fields!</p>';
+							}
+						}
+					?>
+					
+					<form method="post" class="contact-form" action="contact.php" autocomplete="on">
+					<div class="form-left col span_6_of_12">
+						<label>Subject</label>
+						<input type="text" name="subject" id="subject" />
 						
-						<form method="post" id="contactform" action="contact.php" autocomplete="on" class="col_group">
-						<div id="form-left" class="col span_6_of_12">
-							<label>Subject</label>
-							<input type="text" name="subject" id="subject" />
-							
-							<label for="name">Your Name*</label>
-							<input type="text" name="name" id="name" class="required" />
-							
-							<label for="email">Your Email Address*</label>
-							<input type="email" name="email" id="email" class="required" placeholder="myname@example.com"/>
-						</div>
-						<div id="form-right" class="col span_6_of_12">>
-							<label for="message">Your Message*</label>
-							<textarea rows="10" id="message" name="message" class="required"></textarea>
-							<label>*Are you human? What is 2+2?* </label>
-							<input type="text" name="human"/>
-						</div>
+						<label for="name">Your Name*</label>
+						<input type="text" name="name" id="name" class="required" />
+						
+						<label for="email">Your Email Address*</label>
+						<input type="email" name="email" id="email" class="required" placeholder="myname@example.com"/>
+					</div>
 
-						<div id="form-send">
-							<input type="submit" class="btn-send" name="submit" value="send message" onClick="_gaq.push(['_trackEvent', 'contact', 'send message', 'contact form',, false]);" />
-						</div>
-					</form>
-				</div><!-- end of contact-form div -->					
-			</section><!-- end of contact-form-wrap div -->
+					<div class="form-right col span_6_of_12">
+						<label for="message">Your Message*</label>
+						<textarea rows="10" id="message" name="message" class="required"></textarea>
+						<label>*Are you human? What is 2+2?* </label>
+						<input type="text" name="human"/>
+					</div>
 
-			</div><!-- /end #content -->
-		</div><!-- /end #content-wide -->
+					<div id="form-send" class="col span_2_of_12">
+						<input type="submit" class="btn-send" name="submit" value="send message" onClick="_gaq.push(['_trackEvent', 'contact', 'send message', 'contact form',, false]);" />
+					</div>
+				</form>					
+			</section><!-- /end of .container -->
+		</div><!-- /end of .wrapper -->
 
 		
 		<!-- Footer section -->

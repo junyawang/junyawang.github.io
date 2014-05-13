@@ -310,10 +310,6 @@ footer {
 	box-shadow: 0px 3px 15px #888888;
 }*/
 
-.about-img {
-	margin-top: 20px;
-}
-
 /* ------------- Portfolio Page ---------------- */
 
 .port-item{
@@ -427,9 +423,10 @@ footer {
 
 .contact-form label {
 	display: block;
-	color: #003366;
-	font-family: "Volkhov", serif;
-	font-size: 15px;
+	color: #036;
+	font-family: "Roboto Slab", serif;
+	font-weight: bold;
+	font-size: 1em;
 	margin: 0px 0 10px 0;
 }
 
@@ -447,7 +444,7 @@ textarea {
 	width: 100%;
 	display: block;
 	margin: 0px 0 10px 0;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-family: "Arvo"; 
 	font-size: 1em;
 	color: #003366;
 	-moz-border-radius: 10px;
