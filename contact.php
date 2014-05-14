@@ -112,7 +112,7 @@
 					</div>
 
 					<div id="form-send" class="col span_2_of_12">
-						<input type="submit" class="btn-send" name="submit" value="send message" onClick="_gaq.push(['_trackEvent', 'contact', 'send message', 'contact form',, false]);" />
+						<input type="submit" class="btn-send" name="submit" value="send message"/>
 					</div>
 				</form>					
 			</section><!-- /end of .container -->
