@@ -131,7 +131,7 @@ h1 {
 }
 
 h2 {
-	font-family: "Arvo", serif;
+	font-family: "Roboto Slab", serif;
 	font-weight: bold;
 	color: #707a71;
 	font-size: 1.2em;
@@ -147,14 +147,14 @@ h3 {
 }
 
 h4 {
-	font-family: "Arvo", serif;
+	font-family: "Roboto Slab", serif;
 	color: #666;
 	font-size: 1em;
 	margin: 12px 0 20px 0;
 }
 
 h5 {
-	font-family: "Arvo", serif;
+	font-family: "Roboto", serif;
 	color: #6cc5c3;
 	font-size: 1em;
 	margin: 10px 0 10px 0;
@@ -247,6 +247,7 @@ footer {
 }
 
 .index h2 {
+	font-family: "Arvo", serif;
 	font-weight: normal;
 	color: #707a71;
 	font-size: 1.4em;
@@ -261,7 +262,7 @@ footer {
 }
 
 .index h4 {
-	
+	font-family: "Arvo", serif;
 	font-size: 1em;
 	margin: 1em 0 1em 0;
 }
