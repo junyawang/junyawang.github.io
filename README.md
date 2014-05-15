@@ -1,4 +1,5 @@
-junyawang.github.io
+Junya Wang's Porfolio
 ===================
 
-Junya Wang's Portfolio
+View it at:
+junyawang.github.io
