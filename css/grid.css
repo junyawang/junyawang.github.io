@@ -16,7 +16,6 @@
 	margin-left: 0;
 } /* all browsers except IE6 and lower */
 
-
 /*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 1024 PIXELS */
 
 @media only screen and (max-width: 1024px) {
@@ -84,7 +83,10 @@
 		width: 6.86%; 
 	}
 
+	/* for each col's first column has no margin-left*/
 	/* for grid 4-of-12, every 3 column, the next first child has no margin-left*/
+	.col:first-child,
+	.span_12_of_12:first-child,
 	.span_4_of_12:nth-child(3n+1) { 
 		clear: both;
 		margin-left: 0;
@@ -131,8 +133,23 @@
 		width: 6.86%; 
 	}
 
-	/* for grid 4-of-12, each odd column has no margin-left*/
-	.span_4_of_12:nth-child(odd) { 
+	/* for the following grid, all columns have no margin-left*/
+	.span_12_of_12,
+	.span_11_of_12,
+	.span_10_of_12,
+	.span_9_of_12,
+	.span_8_of_12,
+	.span_7_of_12,
+	.span_6_of_12,
+	.span_5_of_12 { 
+		clear: both;
+		margin-left: 0;
+	}
+
+	/* for each col's first column has no margin-left*/
+	/* for 4-of-12 grid, each odd column has no margin-left*/
+	.col:first-child,
+	.span_4_of_12:nth-child(odd){ 
 		clear: both;
 		margin-left: 0;
 	}
@@ -169,7 +186,7 @@
 		width: 100%; 
 	}
 	.span_3_of_12 {
-		width: 100%; 
+		width: 49.2%; 
 	}
 	.span_2_of_12 {
 		width: 100%; 
@@ -178,8 +195,25 @@
 		width: 100%; 
 	}
 
-	/* for grid 4-of-12, all columns have no margin-left*/
-	.span_4_of_12 { 
+	/* for grid except 3-of-12, all columns have no margin-left*/
+	.span_12_of_12,
+	.span_11_of_12,
+	.span_10_of_12,
+	.span_9_of_12,
+	.span_8_of_12,
+	.span_7_of_12,
+	.span_6_of_12,
+	.span_5_of_12,
+	.span_4_of_12,
+	.span_2_of_12,
+	.span_1_of_12 { 
+		clear: both;
+		margin-left: 0;
+	}
+
+	/* for each col and grid 3-of-12, each odd column has no margin-left*/
+	.col:nth-child(odd),
+	.span_3_of_12:nth-child(odd) { 
 		clear: both;
 		margin-left: 0;
 	}

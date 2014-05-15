@@ -1,30 +1,20 @@
-/*CSS for desktop*/
+/*..........................................*
 
-/*STANDARD COLORS
-..................
+  TITLE:    Styles for Junya Wang's Portfolio
+  AUTHOR:   Junya Wang
+  UPDATE: 	2014/05/15
 
-light classic red: #C30;
-red - flat: #e74c3c;
-red - flat light: #D96052;
-dark classic red: #A30B0B;
-classic blue: #036;
-classic gold: #997f5a;
-brown-grey: #e7e6e3;
+*...........................................*/
 
-*** AQUA STYLE***
-light aqua: #b2dfda;
-light green: #c2cd96;
+/* ........... COLOR PALETTES ..............*
 
-*** CLASSY AQUA-BROWN ***
-light aqua: #a2c8c9;
-vintage olive: #707a71;
-light rice: #f2f1ec;
-dark rice: #eae7e2;
-
-*** BRIGHT AQUA-ORANGE ***
-bright aqua: #6cc5c3;
-bright orange: #f15a22;
-*/
+		*** CLASSY AQUA-BROWN ***
+		bright aqua:   #6cc5c3;
+		light aqua:    #b2dfda;
+		vintage aqua:  #a2c8c9;
+		vintage olive: #707a71;
+		light gold:    #997f5a;
+*...........................................*/
 
 
 /* ------------- Custom Fonts ------------- */
@@ -103,32 +93,26 @@ h1, h2, h3, h4, h5, ul, li, form {
 /* ------------- GLOBAL ---------------*/
 body {
 	background-image: url('../img/texture/xv.png');
-	/*background-color: #f0f0f0;*/
 	font-family: "Roboto Slab", serif; 
 	font-size: 1em;
 	color: #666;
 	line-height: 1.5em;
 }
 
-/*::selection {
-	color: red;
-	background: yellow;
+::selection {
+	color: white;
+	background: rgba(108,197,195,.5);
 }
 
 ::-moz-selection {
-	color: red;
-	background: yellow;
-}*/
+	color: white;
+	background: rgba(108,197,195,.5);
+}
 
 .wrapper {
 	width: 100%;
 	margin-top: 20px;
 }
-
-/*#content-wide{
-	position: relative;
-	margin-bottom: 40px;
-}*/
 
 .container{
 	margin: 0 auto;
@@ -144,15 +128,28 @@ body {
 }
 
 span {
-	color: #a2c8c9;
+	color: #6cc5c3;
+	font-weight: bold;
 }
 
 h1 {
 	font-family: "Arvo", serif;
 	font-weight: bold;
 	color: #6cc5c3;
-	font-size: 3em;
+	font-size: 2.6em;
 	margin: 30px 0 30px 0;
+}
+
+@media screen and (max-width: 1024px){
+	h1{
+		font-size: 2rem;
+	}
+}
+
+@media screen and (max-width: 768px){
+	h1{
+		font-size: 1.8rem;
+	}
 }
 
 h2 {
@@ -332,11 +329,20 @@ footer {
 }*/
 
 /* ------------- About Page ---------------- */
-/*.picframe {
-	background-color: #f7f7f7;
-	padding: 10px;
-	box-shadow: 0px 3px 15px #888888;
-}*/
+
+/*when screen >= 481px, hide #about_square*/
+@media screen and (min-width: 481px){
+	#about_square {
+		display: none;
+	}
+}
+
+/*when screen <= 480px, hide #about_rect*/
+@media screen and (max-width: 480px){
+	#about_rect {
+		display: none;
+	}
+}
 
 /* ------------- Portfolio Page ---------------- */
 
