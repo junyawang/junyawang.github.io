@@ -19,27 +19,6 @@
 
 /* ------------- Custom Fonts ------------- */
 @font-face {
-  font-family: 'PT Sans Narrow';
-  font-style: normal;
-  font-weight: 400;
-  src: local('PT Sans Narrow'), local('PTSans-Narrow'), url(http://themes.googleusercontent.com/static/fonts/ptsansnarrow/v4/UyYrYy3ltEffJV9QueSi4Z4t0mJKPaLVqklzZuc32b4.woff) format('woff');
-}
-
-@font-face {
-  font-family: 'Volkhov';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Volkhov Bold'), local('Volkhov-Bold'), url(http://themes.googleusercontent.com/static/fonts/volkhov/v5/bfl1JD3mxnmq4NrdCJOHxb3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
-}
-
-@font-face {
-  font-family: 'Volkhov';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Volkhov Italic'), local('Volkhov-Italic'), url(http://themes.googleusercontent.com/static/fonts/volkhov/v5/Y_Jmwi-iHxNj27PG4ILsdbO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
-}
-
-@font-face {
   font-family: 'Arvo';
   font-style: normal;
   font-weight: 400;
@@ -153,19 +132,11 @@ h1 {
 }
 
 h2 {
-	font-family: "Roboto Slab", serif;
+	font-family: "Arvo", serif;
 	font-weight: bold;
 	color: #707a71;
 	font-size: 1.2em;
 	margin: 15px 0 10px 0;
-}
-
-
-h3 {
-	font-family: "Roboto Slab", serif;
-	color: #6cc5c3;
-	font-size: 1.1em;
-	margin: 15px 0 0 0;
 }
 
 h3 {
@@ -177,7 +148,7 @@ h3 {
 }
 
 h4 {
-	font-family: "Roboto Slab", serif;
+	font-family: "Arvo", serif;
 	color: #666;
 	font-size: 1em;
 	margin: 12px 0 20px 0;
@@ -270,28 +241,28 @@ footer {
 
 
 .index h1 {
-	font-family: "Volkhov", serif;
+	
 	font-size: 4em;
 	margin: 1em 0 0.8em 0;
 	
 }
 
 .index h2 {
-	font-family: "Volkhov", serif;
+	font-weight: normal;
 	color: #707a71;
 	font-size: 1.4em;
 	margin: 1em 0 1em 0;
 }
 
 .index h3 {
-	font-family: "Volkhov", serif;
+	font-weight: normal;
 	color: #666;
 	font-size: 1em;
 	margin: 1em 0 0 0;
 }
 
 .index h4 {
-	font-family: "Volkhov", serif;
+	
 	font-size: 1em;
 	margin: 1em 0 1em 0;
 }
@@ -597,14 +568,6 @@ nav a:hover {
 
 .active{
 	color: #a2c8c9;
-}
-
-.index a {
-	font-family: 'Volkhov', serif;
-}
-
-.index a:hover {
-	font-family: 'Volkhov', serif;
 }
 
 .port-item:hover{
