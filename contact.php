@@ -95,21 +95,21 @@
 					
 					<form method="post" class="contact-form" action="contact.php" autocomplete="on">
 					<div class="form-left col span_6_of_12">
-						<label>Subject</label>
-						<input type="text" name="subject" id="subject" />
+						<label for="subject">Subject</label>
+						<input type="text" id="subject" name="subject" />
 						
 						<label for="name">Your Name*</label>
-						<input type="text" name="name" id="name" class="required" />
+						<input type="text" id="name" name="name" class="required" />
 						
 						<label for="email">Your Email Address*</label>
-						<input type="email" name="email" id="email" class="required" placeholder="myname@example.com"/>
+						<input type="email" id="email" name="email" class="required" placeholder="myname@example.com"/>
 					</div>
 
 					<div class="form-right col span_6_of_12">
 						<label for="message">Your Message*</label>
 						<textarea rows="10" id="message" name="message" class="required"></textarea>
-						<label>*Are you human? What is 2+2?* </label>
-						<input type="text" name="human"/>
+						<label for="human">*Are you human? What is 2+2?* </label>
+						<input type="text" id="human" name="human" class="required"/>
 					</div>
 
 					<div id="form-send" class="col span_2_of_12">
