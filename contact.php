@@ -8,6 +8,7 @@
 		<link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 768px) and (max-device-width: 1024px)" href="css/style_tablet.css"/>
 		<link rel="stylesheet" type="text/css" media="handheld, only screen and (max-width: 480px), only screen and (max-device-width: 480px)" href="css/style_mobile.css"/>
 		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="animate.min.css">
 						
 		<!-- JS -->
 		<script type="text/javascript" src="scripts/jquery/jquery.min.js"></script> 
