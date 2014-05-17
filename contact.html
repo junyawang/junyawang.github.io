@@ -123,17 +123,26 @@
 		<!-- Footer section -->
 		<footer>
 			<div class = "container">
-				<div id ="copyright">
+				<div class = "copyright">
 					<p>&copy; Junya Wang 2014</p>
-				</div> <!-- /end #copyright-->
+				</div> <!-- /end .copyright-->
 			
-				<div id = "social">
+				<div class = "social">
 					<ul>
-						<li><a href = "http://www.facebook.com/ayajunya"><img src="img/facebook.png" width="30" height="30" alt="facebook"/></a></li>
-						<li><a href = "https://twitter.com/mistyaquaya"><img src="img/twitter.png" width="30" height="30" alt="twitter"/></a></li>
-						<li><a href = "http://www.flickr.com/photos/aquaya"><img src="img/flickr.png" width="30" height="30" alt="flickr"/></a></li>
+						<li>
+							<span class="social-icon"><a href="http://www.linkedin.com/in/junyawang">&#62233;</a></span>
+						</li>
+						<li>
+							<span class="social-icon"><a href="https://dribbble.com/junyawang">&#62236;</a></span>
+						</li>
+						<li>
+							<span class="social-icon"><a href="http://www.linkedin.com/in/junyawang">&#62209;</a></span>
+						</li>
+						<li>
+							<span class="social-icon"><a href="https://www.flickr.com/photos/aquaya/">&#62212;</a></span>
+						</li>
 					</ul>
-				</div> <!-- /end #social-->
+				</div> <!-- /end .social-->
 			</div> <!-- /end .container -->
 		</footer> <!-- /end footer -->
 		
