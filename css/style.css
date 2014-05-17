@@ -216,13 +216,24 @@ footer {
 	margin-top: 40px;
 }
 
-.copyright{
+.copyright, .withlove{
 	float: left;
 	text-align: left;
-	margin-top: 15px;
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Arvo', serif;
 	font-size: 0.6em;
 	color: #707a71;
+	margin-top: 18px;
+}
+
+.withlove{
+	margin-left: 5px;
+	color: #ABABAB;
+}
+
+@media screen and (max-width: 768px){
+	.withlove{
+		display: none;
+	}
 }
 
 .social{
