@@ -54,7 +54,7 @@
 			<section class="container">
 				<h1>contact me.</h1>
 				
-				<h2>I am currently <span>AVAILABLE</span> for jobs!</h2>
+				<h2>I am currently <span>AVAILABLE</span> for job opportunities!</h2>
 				<p>You are welcome to <a href="./resume_junyawang.pdf">download my resume</a>.</p>
 
 				<h2>Want to hire me for a project or work with me? Send me an email!</h2>
