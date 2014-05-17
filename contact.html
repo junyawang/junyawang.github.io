@@ -43,7 +43,7 @@
 					<ul>
 						<li><a href="portfolio.html">portfolio</a></li>
 						<li><a href="about.html">about</a></li>
-						<li><a class="active" href="contact.php">contact</a></li>
+						<li><a class="active" href="contact.html">contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -65,33 +65,6 @@
 			</section><!-- /end of .container -->
 
 			<section class="container col_group">
-					<?php
-						$name = $_POST['name'];
-						$email = $_POST['email'];
-						$message = $_POST['message'];
-						$from= 'From: Junya Wang - Online Portfolio';
-						$to= 'ayajunya@gmail.com';
-						$human= $_POST['human'];
-
-						$subject = $_POST['subject'];
-						$body = "From: $name\n Email: $email\n Message:\n $message";
-
-						if($_POST['submit']){
-							if ($name != '' && $email != '' && $message != ''){
-								if ($human=='4'){
-									if (mail ($to, $subject, $body, $from)) { 
-										echo '<p>Your message has been sent!</p>';
-									} else {
-										echo '<p>Oops, something goes wrong. Wanna try again?</p>'; 
-									}
-								} else if($_POST['submit'] && $human !='4') {
-									echo '<p>Wrong answer! Seems you are not a human lol!</p>';
-								}
-							} else {
-								echo '<p>Please fill in all required fields!</p>';
-							}
-						}
-					?>
 					
 					<form method="post" class="contact-form" action="contact.php" autocomplete="on">
 					<div class="form-left col span_6_of_12">
