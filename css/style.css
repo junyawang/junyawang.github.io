@@ -185,7 +185,7 @@ nav {
 	height: 80px;
 }
 
-#logo {
+.logo {
 	display: block;
 	position: relative;
 	float: left;
@@ -194,12 +194,12 @@ nav {
 }
 
 
-#menu {
+.menu {
 	float: right;
 	padding-top: 30px;
 }
 
-#menu ul li {
+.menu ul li {
 	font-family: "Arvo", serif;
 	float: left;
 	padding-left: 20px;
@@ -551,6 +551,7 @@ textarea.placeholder-text {
 a {
 	text-decoration: none; /* remove underline for every link*/
 	color: #a2c8c9;
+	border-bottom: 1px #a2c8c9 dotted;
 	-webkit-transition: all ease-in-out 0.3s; 
 	-moz-transition: all ease-in-out 0.3s; /* mozilla */
 	-o-transition: all ease-in-out 0.3s; /* opera */
@@ -562,12 +563,11 @@ a:hover{ /* mouse over link */
 	color: #6cc5c3;
 }
 
-nav a {
+nav a{
 	color: #707a71;
 }
 
 nav a:hover {
-	color: #6cc5c3;
 	margin-top: 1px;
 }
 
@@ -580,9 +580,4 @@ nav a:hover {
 	-moz-box-shadow: 0 0 1px 5px rgba(173,151,94,0.16);
 	-webkit-box-shadow: 0 0 1px 5px rgba(173,151,94,0.16);
 	box-shadow: 0 0 0px 5px rgba(173,151,94,0.16);
-}
-
-#social ul li img:hover {
-	margin-top: 1px;
-	background-color: #b2dfda;
 }

@@ -35,11 +35,11 @@
 		<nav>
 			<div class="container">
 				<!-- logo -->
-				<div id = "logo">
+				<div class="logo">
 					<a href = "index.html"><img src="img/logo.png" alt="logo"/></a>
 				</div>
 				
-				<div id = "menu">
+				<div class="menu">
 					<ul>
 						<li><a href="portfolio.html">portfolio</a></li>
 						<li><a href="about.html">about</a></li>
