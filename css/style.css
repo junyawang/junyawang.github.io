@@ -60,8 +60,8 @@
   src: local('Droid Serif Bold'), local('DroidSerif-Bold'), url(../fonts/DroidSerif-Bold.woff) format('woff');
 }
 
-/* ---------- Icon Font - Social ------------*/
-/* License: Entypo pictograms by Daniel Bruce — www.entypo.com */
+/* ---------- Icon Font ------------*/
+/* Social icon: Entypo pictograms by Daniel Bruce — www.entypo.com */
 @font-face{
 	font-family: 'entypo-social';
 	font-style: normal;
