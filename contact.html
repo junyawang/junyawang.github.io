@@ -65,6 +65,39 @@
 			</section><!-- /end of .container -->
 
 			<section class="container col_group">
+					<?php
+
+						$conn=mysql_connect('127.0.0.1','root','123456'); 
+						mysql_query("set names 'utf8'",$conn); 
+						mysql_select_db('test1',$conn); 
+
+						$name = $_POST['name'];
+						$email = $_POST['email'];
+						$message = $_POST['message'];
+						$from= 'From: Junya Wang - Online Portfolio';
+						$to= 'ayajunya@gmail.com';
+						$human= $_POST['human'];
+
+						$subject = $_POST['subject'];
+						$body = "From: $name\n Email: $email\n Message:\n $message";
+
+						if($_POST['submit']){
+							if ($name != '' && $email != '' && $message != ''){
+								if ($human=='4'){
+									if (mail ($to, $subject, $body, $from)) { 
+										echo 'Your message has been sent!';
+									} else {
+										echo 'Oops, something goes wrong. Wanna try again?'; 
+									}
+								} else if($_POST['submit'] && $human !='4') {
+									echo 'Wrong answer! Seems you are not a human lol!';
+								}
+							} else {
+								echo 'Please fill in all required fields!';
+							}
+						}
+					?>
+
 					
 					<form method="post" class="contact-form" action="contact.php" autocomplete="on">
 					<div class="form-left col span_6_of_12">

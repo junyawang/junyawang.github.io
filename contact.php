@@ -85,15 +85,15 @@
 							if ($name != '' && $email != '' && $message != ''){
 								if ($human=='4'){
 									if (mail ($to, $subject, $body, $from)) { 
-										echo '<p>Your message has been sent!</p>';
+										echo 'Your message has been sent!';
 									} else {
-										echo '<p>Oops, something goes wrong. Wanna try again?</p>'; 
+										echo 'Oops, something goes wrong. Wanna try again?'; 
 									}
 								} else if($_POST['submit'] && $human !='4') {
-									echo '<p>Wrong answer! Seems you are not a human lol!</p>';
+									echo 'Wrong answer! Seems you are not a human lol!';
 								}
 							} else {
-								echo '<p>Please fill in all required fields!</p>';
+								echo 'Please fill in all required fields!';
 							}
 						}
 					?>
