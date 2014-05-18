@@ -66,6 +66,11 @@
 
 			<section class="container col_group">
 					<?php
+
+						$conn=mysql_connect('127.0.0.1','root','123456'); 
+						mysql_query("set names 'utf8'",$conn); 
+						mysql_select_db('test1',$conn); 
+
 						$name = $_POST['name'];
 						$email = $_POST['email'];
 						$message = $_POST['message'];
