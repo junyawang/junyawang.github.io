@@ -59,7 +59,7 @@
 
 				<h2>Want to hire me for a project or work with me? Send me an email!</h2>
 					<!-- <p><a href="tel:17788599861">+1 778-859-9861</a></p> -->
-					<p><a href="mailto:junyaw@sfu.ca">junyaw@sfu.ca</a></p>
+					<p><a href="mailto:ayajunya@gmail.com">ayajunya@gmail.com</a></p>
 				
 				<h2>Or take only 60 seconds to fill in the contact form below!</h2>
 			</section><!-- /end of .container -->
