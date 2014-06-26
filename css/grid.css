@@ -87,7 +87,8 @@
 	/* for grid 4-of-12, every 3 column, the next first child has no margin-left*/
 	.col:first-child,
 	.span_12_of_12:first-child,
-	.span_4_of_12:nth-child(3n+1) { 
+	.span_4_of_12:nth-child(3n+1),
+	.span_6_of_12:nth-child(odd) { 
 		clear: both;
 		margin-left: 0;
 	}
