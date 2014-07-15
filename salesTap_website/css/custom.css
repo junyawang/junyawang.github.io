@@ -1,0 +1,231 @@
+/* --------- COLOR PALETTES ----------*/
+/*
+Orange: #ff9901;
+Orange-btnHover: #ffa115;
+Orange-linkHover: ;
+
+Blue: #3f5ec9;
+Blue-btnHover: #4e6bcd;
+Blue-linkHover: #8c9edf;
+
+Light-blue: #f8faff;
+
+Contact-form-border: #d9deeb;
+
+Dark-grey: #43485c;
+*/
+
+/* --------- FONTS ----------*/
+h1, h2, h3, h4, h5, h6, label, p, span, a {
+	font-family: Source Sans Pro, sans-serif;
+	text-align: left;
+}
+
+h1 {
+	color: white;
+	font-size: 2.2em;
+	font-weight: 300;
+}
+
+h2 {
+	color: white;
+	font-size: 1.2em;
+	font-weight: 300;
+}
+
+h3 {
+	font-size: 1.2em;
+}
+
+label {
+	color: black;
+}
+
+span {
+	font-size: 1em;
+	color: #3f5ec9;
+}
+
+/* --------- NAV BAR ----------*/
+.navbar {
+	border:none;
+}
+
+.navbar-text {
+	font-family: Source Sans Pro, sans-serif;
+	text-transform: uppercase;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	color: white;
+}
+
+.logo-img {
+	width: 90px;
+}
+
+.clearNav {
+	background-color: transparent;
+}
+
+.darkNav {
+	background-color: black;
+}
+
+/* --------- HEADER ----------*/
+header {
+	padding-top: 100px;
+	padding-bottom: 50px;
+	background-color: #ff9901;
+}
+
+.header-container {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.header-text {
+	text-align: center;
+}
+
+.header-img {
+	width: 100%;
+}
+
+.form {
+	background-color: #f8faff;
+}
+
+/* --------- CLIENTS ---------*/
+.clients {
+	background-color: #43485c;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.clients-header {
+	color: white;
+	text-align: center;
+}
+
+.clients-bottom {
+	margin: 0 auto;
+}
+
+.clients-img {
+	padding: 10px 10px;
+}
+
+/* --------- CONTACT ---------*/
+.contact {
+	padding: 200px auto;
+	background-color: #f8faff;
+}
+
+.contact-header {
+	font-size: 1.8em;
+	font-weight: 400;
+	color: #3f5ec9;
+	text-align: center;
+}
+
+.form-control {
+	box-shadow: none;
+	border: 2px solid #d9deeb;
+	outline: none;
+	color: #3f5ec9;
+}
+
+input {
+	outline: none;
+}
+
+.form-control:focus {
+	outline: none;
+	border-color: #3f5ec9;
+}
+
+input:focus {
+	outline: none;
+}
+
+/* --------- FOOTER ----------*/
+footer {
+	background-color: #f8faff;
+}
+
+.panel-footer {
+	background-color: #f8faff;
+	border-top: 1px solid #3f5ec9;
+}
+
+.footer-text {
+	font-size: 0.8em;
+	color: #8c9edf;
+}
+
+/* --------- STYLE ----------*/
+.features {
+	background-color: white;
+}
+
+/* --------- IMAGES ----------*/
+.img-centered {
+	margin: 0 auto;
+}
+
+/* --------- LAYOUTS ----------*/
+.noPadding{
+	padding:0 0 0 0;
+}
+
+.alignLeft {
+	text-align: left;
+}
+
+.alignLeft {
+	text-align: right;
+}
+
+/* --------- BUTTONS ----------*/
+.btn {
+	padding: 6px 46px;
+	border: 1px solid transparent;
+	border-radius: 2px;
+	font-family: Source Sans Pro, sans-serif;
+	font-size: 1.3em;
+	font-weight: 300;
+	color: white;
+}
+
+.btn:hover {
+	color: white;
+}
+
+.btn-primary {
+	background-color: #3f5ec9;
+}
+
+.btn-primary:hover {
+	background-color: #4e6bcd;
+	border-color: #3f5ec9;
+}
+
+.btn-orange {
+	background-color: #ff9901;
+	font-size: 1.1em;
+}
+
+.btn-orange:hover {
+	background-color: #ffa115;
+	border-color: #ff9901;
+}
+
+/* --------- LINKS ----------*/
+a {
+	color: #3f5ec9;
+}
+
+a:hover {
+	color: #8c9edf;
+	text-decoration: none;
+}
