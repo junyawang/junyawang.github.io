@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>salesTap - Collateral Control</title>
+    <title>SalesTap - Simple Enterprise Asset Management</title>
     
     
     <link rel="shortcut icon" href="img/favico.png" />
@@ -18,27 +18,29 @@
     <link href="css/custom.css" rel="stylesheet" type="text/css">
 
     <!-- Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
     <link href="css/plugins/linecons/linecons.css" rel="stylesheet" type="text/css">
-    <link href="css/plugins/font-awesome/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-    <!-- Retina Images Plugin -->
-    <script src="js/plugins/retina/retina.min.js"></script>
-	
+    <!-- JS -->
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap/bootstrap.min.js"></script>
     <script src="js/modernizr.custom.js"></script>
 
-    <script src="js/jquery.simple-text-rotator.js"></script>
-
+    <!-- Retina Images Plugin -->
+    <script src="js/plugins/retina/retina.min.js"></script>
+	
+    <!-- Nav bar background color change -->
     <script type="text/javascript">
         $(window).scroll(function() {    
             var scroll = $(window).scrollTop();
 
             if (scroll >= 50) {
                 $(".clearNav").addClass("darkNav");
+                $(".navbar-default").addClass("navbar-dark");
             } else {
                 $(".clearNav").removeClass("darkNav");
+                $(".navbar-default").removeClass("navbar-dark");
             }
         });
     </script>
@@ -57,22 +59,28 @@
 
         <nav class="navbar navbar-default navbar-fixed-top clearNav" role="navigation">
             <div class="container">
-                <div class="navbar-header page-scroll">
+                <div class="navbar-header pull-left page-scroll">
+                    <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button> -->
+
                     <a class="navbar-brand" href="#page-top">
                         <span class="logo">
                             <img class= "logo-img" src="img/salesTap_logo.png" alt="">
                         </span>
                     </a>
                 </div>
-
-                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <!-- <div class="collapse navbar-collapse navbar-right navbar-main-collapse">-->
+                <div class="navbar-header navbar-right pull-right">
                     <ul class="nav navbar-nav">
-                        <li class="page-scroll">
+                        <!-- <li class="page-scroll">
                             <a href="#admin_features" class="navbar-text">Admin Features</a>
                         </li>
                         <li class="page-scroll">
                             <a href="#sales_features" class="navbar-text">Sales Features</a>
-                        </li>
+                        </li> -->
                         <li class="page-scroll">
                             <a href="#contact" class="navbar-text">Contact Us</a>
                         </li>
@@ -83,22 +91,28 @@
             <!-- /.container -->
         </nav>
        
-       
+       <!-- HEADER -->
         <header class="intro-bg">
             <div class="intro-body">
                 <div class="container header-container noPadding">
                     <h1 class="header-text">
                         Simple Enterprise Asset Management
                     </h1>
-                    <div class="center-block">
-                        <button type="button" class="btn btn-primary center-block">Try Now</button>
+                    <h2>
+                        SalesTap delivers customized iOS and Android apps to your company that makes the distribution and management of your virtual assets easy and secure.
+                    </h2>
+                    <div class="center-block header-btn">
+                        <a href="#contact">
+                            <button type="button" class="btn btn-primary center-block">Try Now</button>
+                        </a>
                     </div>
-                    <img class="header-img img-responsive img-centered" src="img/demo-devices/macbook-air.png" alt="macbook-air">
+                    <img class="header-img img-responsive img-centered" src="img/banner_allDevices.png" alt="macbook-air">
                 </div>
             </div>
         </header>
         
-        <section id="clients" class="clients">
+        <!-- CLIENTS -->
+        <!-- <section id="clients" class="clients">
             <div class="container-fluid">
                 <div class="row">
                     <h2 class="clients-header">Brought to you by a team trusted by many</h2>
@@ -122,74 +136,174 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         
+        <!-- ADMIN FEATURES -->
         <section id="admin_features" class="features">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-6 noPadding">
-                        <img class="img-responsive" src="http://placehold.it/1200x1200" alt="">
+                    <div class="col-md-6 hidden-sm hidden-xs noPadding">
+                        <img class="img-responsive img-desktop" src="img/device_mockup_desktop_crop.png" alt="">
                     </div>
-                    <div class="col-md-6">
-                        <h3>Feature 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-                        <h3>Feature 2</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <!-- FEATURE CONTENTS -->
+                    <div class="col-md-6 col-sm-12 feature-text-area">
+                        <h1 class="feature-header">Cloud-Based Asset Control</h1>
+                        
+                        <!-- Feature 1 -->
+                        <div class="row">
+                            <div class="col-xs-1">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="col-xs-11">
+                                <h3 class="feature-points">Instant Web Access</h3>
+                                <p>Secure web-based access means you can make changes from anywhere, at any time.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Feature 2 -->
+                        <div class="row">
+                            <div class="col-xs-1">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="col-xs-11">  
+                                <h3 class="feature-points">Keep Things New</h3>
+                                <p>Be sure that your team is always using the newest version of every file.</p>
+                            </div>
+                        </div>
 
-                        <h3>Feature 3</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <!-- Feature 3 -->
+                        <div class="row">
+                            <div class="col-xs-1">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="col-xs-11">
+                                <h3 class="feature-points">Control Access</h3>
+                                <p>Create users and groups and set file permissions with ease. Grant or remove user access in a single click.</p>
+                            </div>
+                        </div>
 
-                        <h3>Feature 4</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <!-- Feature 4 -->
+                        <div class="row">
+                            <div class="col-xs-1">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="col-xs-11">
+                                <h3 class="feature-points">Get Analysis</h3>
+                                <p>Get analytics on who’s accessing which data, where, and how. Determine best practices and improve performance.</p>
+                            </div>
+                        </div>
 
-                        <h3>Feature 5</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-                        <h3>Feature 6</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-                        <h3>Feature 7</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <!-- Feature 5 -->
+                        <div class="row">
+                            <div class="col-xs-1">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="col-xs-11">
+                                <h3 class="feature-points">Back-end Integration</h3>
+                                <p>Integrate directly with SalesForce, your current ERP, CRM, or back-end to improve your work flows and increase adoption.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> <!-- ADMIN FEATURES -->
 
-        <section id="sales_features" class="features">
+        <!-- MID CTA - BETWEEN FEATURES -->
+        <section id="mid-cta" class="mid-cta">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-6 col-md-push-6 noPadding">
-                        <img class="img-responsive" src="http://placehold.it/1200x1200" alt="">
-                    </div>
-                    <div class="col-md-6 col-md-pull-6">
-                        <h3>Feature 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-                        <h3>Feature 2</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-                        <h3>Feature 3</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-                        <h3>Feature 4</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-                        <h3>Feature 5</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-                        <h3>Feature 6</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-                        <h3>Feature 7</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
+                    <h2 class="mid-cta-header">Our application works on mobile devices, tablets, laptops, and desktop workstations.<br /> Store all of your data in our secure cloud database, and access your work from anywhere!</h2>
+                </div>
+                <div class="center-block mid-cta-btn">
+                    <a href="#contact">
+                        <button type="button" class="btn btn-primary btn-white-border center-block">Try Now</button>
+                    </a>
                 </div>
             </div>
         </section>
         
-		<section class="contact" id="contact">
-            <div class="container">
+        <!-- SALES FEATURES -->
+        <section id="sales_features" class="features">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-md-push-6 hidden-sm hidden-xs noPadding">
+                        <img class="img-responsive img-mobile" src="img/device_mockup_mobile_crop.png" alt="">
+                    </div>
+                    <div class="col-md-6 col-md-pull-6 col-sm-12 feature-text-area">
+                        <h1 class="feature-header">Made for Mobile</h1>
+
+                        <div class="row">
+                            <div class="col-xs-1">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="col-xs-11">
+                                <h3 class="feature-points">Native Apps</h3>
+                                <p>SalesTap Works. Reliable and consistent functionality across all devices.</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-1">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="col-xs-11">
+                                <h3 class="feature-points">Intuitive Functionality</h3>
+                                <p>Following your best practices, we provide the most intuitive representation of your work flows.</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-1">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="col-xs-11">
+                                <h3 class="feature-points">Improved Presentations</h3>
+                                <p>Easier access to files means better presentations. No more endless searching for the right file or version.</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-1">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="col-xs-11">
+                                <h3 class="feature-points">Easy-send Info Packs</h3>
+                                <p>Send several files to your customers with ease, in one email, directly from your device.</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-1">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="col-xs-11">
+                                <h3 class="feature-points">Save Time</h3>
+                                <p>Save time by completing tasks and forms on the go, and having them instantly updated in your CRM or back-end.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> <!-- SALES FEATURES -->
+
+        <!-- MAP -->
+        <section id="map" class="map">
+            <div class="container-fluid">
+                    <h1 class="map-header">Map Customers and Leads</h1>
+                    <h2 class="map-text">Visulize your customers and leads on an interactive map. Manage your time and territory efficiently.</h2>
+            </div>
+        </section>
+
+        <!-- FOOTER AREA-->
+        <footer>
+            <!-- CONTACT -->
+            <div class="container contact" id="contact">
+                <div class="row">
+                    <h1 class="contact-header">Contact us for a demo</h1>
+                    <h2 class="contact-text">Have a question, custom feature request, or want to see a demo? It’s easy.<br /> Send us a message now – we’ll get in touch within 48 hours, with no obligation.</h2>
+                </div>
+
                 <div class="row">
                     <div class="col-md-4 col-md-offset-4">
                         <?php
@@ -222,29 +336,34 @@
                         }
                     ?>
 
-                        <form name="sentMessage" id="contactForm" action="contact.php" autocomplete="on" novalidate>
-                            <h1 class="contact-header">Contact us for a demo</h1>
+                        <form name="sentMessage" id="contactForm" action="index.php" autocomplete="on">
                             
+                            <!-- Name -->
                             <div class="row control-group">
-                                <div class="glyph">
-                                    <div class="fs1" aria-hidden="true" data-icon="&#xe007;"></div>
-                                </div>
                                 <div class="form-group col-xs-12 floating-label-form-group controls">
-                                    <input type="text" class="form-control" placeholder="Name" id="name" name="name" required data-validation-required-message="Please enter your name.">
+                                    <span class="iconfont" aria-hidden="true" data-icon="&#xe007;"></span>
+                                    <input type="text" class="form-control input-padding" placeholder="Name" id="name" name="name" required data-validation-required-message="Please enter your name.">
+                                    <!-- <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span> -->
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             
+                            <!-- Email Address -->
                             <div class="row control-group">
                                 <div class="form-group col-xs-12 floating-label-form-group controls">
-                                    <input type="email" class="form-control" placeholder="Email Address" id="email" name="email" required data-validation-required-message="Please enter your email address.">
+                                    <span class="iconfont" aria-hidden="true" data-icon="&#xe019;"></span>
+                                    <input type="email" class="form-control input-padding" placeholder="Email Address" id="email" name="email" required data-validation-required-message="Please enter your email address.">
+                                    <!-- <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span> -->
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             
+                            <!-- Message -->
                             <div class="row control-group">
                                 <div class="form-group col-xs-12 floating-label-form-group controls">
-                                    <textarea rows="5" class="form-control" placeholder="Comment" id="message" name="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <span class="iconfont" aria-hidden="true" data-icon="&#xe014;"></span>
+                                    <textarea rows="5" class="form-control input-padding" placeholder="Comment" id="message" name="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <!-- <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span> -->
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
@@ -257,44 +376,22 @@
                         </form>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <footer>
+            </div> <!-- / CONTACT-->
+            
+            <!-- FOOTER -->
             <div class="container panel-footer">
                 <div class="row">
-                    <div class="col-md-9">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
                         <span class="footer-text">Copyright &copy; 2014  <a href="http://www.momentussoftware.com"> Momentus Software </a>  Vancouver</span>
                     </div>
-                    <div class="col-md-3 pull-right">
-                        <span class="footer-text alignRight">Give us a call at <a href="tel:16042942878">(604) 294-2878</a></span>
+                    <div class="col-md-6 footer-right col-sm-12 col-xs-12">
+                        <span class="footer-text">Give us a call at <a href="tel:16042942878">(604) 294-2878</a></span>
                     </div>
                 </div>
             </div>
         </footer>
 
     </div> <!-- / #wrapper-->
-
-    <!-- Core JavaScript Files -->
-
-    <!-- Plugin JavaScript Files -->
-    <script src="js/plugins/jquery.easing/jquery.easing.1.3.js"></script>
-    <script src="js/plugins/jquery.fitvids/jquery.fitvids.js"></script>
-    <script src="js/plugins/jquery.fs.wallpaper/jquery.fs.wallpaper.min.js"></script>
-    <script src="js/plugins/jquery.magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="js/plugins/jquery.tubular/jquery.tubular.1.0.js"></script>
-    <script src="js/plugins/owl.carousel/owl.carousel.min.js"></script>
-    <script src="js/plugins/scrollReveal/scrollReveal.js"></script>
-    <script src="js/plugins/stellar/stellar.js"></script>
-    <script src="js/plugins/jquery.mousewheel/jquery.mousewheel.js"></script>
-    <script src="js/plugins/jquery.simplr.smoothscroll/jquery.simplr.smoothscroll.js"></script>
-    <script src="js/plugins/jqBootstrapValidation/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-    <script src="js/plugins/isotope/isotope.pkgd.min.js"></script>
-
-    <!-- Spectrum JavaScript Files -->
-    <script src="js/spectrum.nav.js"></script>
-    <script src="js/spectrum.js"></script>
 
 </body>
 

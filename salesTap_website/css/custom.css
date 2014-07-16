@@ -1,8 +1,8 @@
-/* --------- COLOR PALETTES ----------*/
+/* --------- COLOR PALETTES ---------- */
 /*
 Orange: #ff9901;
 Orange-btnHover: #ffa115;
-Orange-linkHover: ;
+Orange-toggleHover: #ffc062;
 
 Blue: #3f5ec9;
 Blue-btnHover: #4e6bcd;
@@ -15,7 +15,7 @@ Contact-form-border: #d9deeb;
 Dark-grey: #43485c;
 */
 
-/* --------- FONTS ----------*/
+/* --------- FONTS ---------- */
 h1, h2, h3, h4, h5, h6, label, p, span, a {
 	font-family: Source Sans Pro, sans-serif;
 	text-align: left;
@@ -31,6 +31,7 @@ h2 {
 	color: white;
 	font-size: 1.2em;
 	font-weight: 300;
+	text-align: center;
 }
 
 h3 {
@@ -46,7 +47,53 @@ span {
 	color: #3f5ec9;
 }
 
-/* --------- NAV BAR ----------*/
+/* --------- GENERAL ---------- */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.img-centered {
+	margin: 0 auto;
+}
+
+.noPadding{
+	padding:0 0 0 0;
+}
+
+.alignLeft {
+	text-align: left;
+}
+
+.alignRight {
+	text-align: right;
+}
+
+/* ------ FONT AWESOME ---------*/
+.fa-check {
+	margin-top: 22px;
+	color: #ff9901;
+}
+
+/* --------- NAV BAR ---------- */
 .navbar {
 	border:none;
 }
@@ -67,15 +114,55 @@ span {
 	background-color: transparent;
 }
 
+.navbar-toggle {
+	border: none;
+	border-radius: 2px;
+	color: white;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+	background-color: #ffc062;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	color: white;
+	background-color: transparent;
+}
+
+/* for changing nav bg, toggle, text color when scrolling */
 .darkNav {
 	background-color: black;
 }
 
-/* --------- HEADER ----------*/
+.navbar-dark .navbar-toggle:hover,
+.navbar-dark .navbar-toggle:focus {
+	background-color: #888;
+}
+
+.navbar-dark .navbar-nav > li > a {
+    color: white;
+}
+
+.navbar-dark .navbar-nav > li > a:hover,
+.navbar-dark .navbar-nav > li > a:focus {
+	color: #ff9901;
+	background-color: transparent;
+}
+
+
+
+
+/* --------- HEADER ---------- */
 header {
 	padding-top: 100px;
 	padding-bottom: 50px;
-	background-color: #ff9901;
+	background-image: url('../img/banner_bg.png');
 }
 
 .header-container {
@@ -83,6 +170,10 @@ header {
 	margin: 0 auto;
 }
 
+.header-btn {
+	margin-top: 40px;
+	margin-bottom: 60px;
+}
 .header-text {
 	text-align: center;
 }
@@ -91,12 +182,15 @@ header {
 	width: 100%;
 }
 
-.form {
-	background-color: #f8faff;
+/* Mobile */
+@media screen and (max-width: 768px){
+	.header-container {
+		width: 80%;
+	}
 }
 
-/* --------- CLIENTS ---------*/
-.clients {
+/* --------- CLIENTS --------- */
+/*.clients {
 	background-color: #43485c;
 	padding-top: 10px;
 	padding-bottom: 20px;
@@ -113,19 +207,174 @@ header {
 
 .clients-img {
 	padding: 10px 10px;
+}*/
+
+/* --------- FEATURES --------- */
+.features {
+	background-color: white;
+	padding-top: 80px;
 }
 
-/* --------- CONTACT ---------*/
-.contact {
-	padding: 200px auto;
+.feature-header {
+	font-weight: 400;
+	color: #3f5ec9;
+}
+
+.feature-text-area {
+	padding-top: 30px;
+	padding-left: 70px;
+	padding-right: 50px;
+}
+
+.feature-text-area .col-xs-11 {
+	margin-left: 0px;
+	padding-left: 18px;
+}
+
+.feature-text-area .col-xs-1 {
+	margin-right: 0px;
+	padding-right: 0px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {
+	.feature-text-area {
+		padding: 0 0 0 0;
+	}
+	.feature-text-area .col-xs-11 {
+		margin-left: 0px;
+		padding-left: 0px;
+	}
+	.feature-text-area .col-xs-1 {
+		margin-right: 0px;
+		padding-right: 0px;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {
+	.feature-text-area {
+		padding: 0 0 0 0;
+	}
+	.feature-text-area .col-xs-11 {
+		margin-left: 0px;
+		padding-left: 0px;
+	}
+	.feature-text-area .col-xs-1 {
+		margin-right: 0px;
+		padding-right: 0px;
+	}
+}
+
+.feature-points {
+	font-weight: 600;
+}
+
+.img-mobile {
+	float: right;
+	margin-right: 0;
+}
+
+@media screen and (max-width: 1024px){
+	.img-mobile {
+		padding-left: 20px;
+	}
+}
+
+/* Mobile */
+@media screen and (max-width: 768px){
+	.features {
+		padding-top: 50px;
+	}
+
+	.img-desktop {
+		padding-right: 10px;
+	}
+
+	.img-mobile {
+		padding-left: 10px;
+		padding-bottom: 30px;
+	}
+
+	/* GET ERROR BY HAVING THIS CODE*/
+	/*.feature-text-area {
+		padding: 0 0 0 0;*/
+}
+
+/* --------- MID CTA - BETWEEN FEATURES --------- */
+.mid-cta {
 	background-color: #f8faff;
+	background-image: url('../img/mid_cta_bg.png');
+	background-position: right;
+	background-repeat: no-repeat;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.mid-cta-header {
+	padding-bottom: 20px;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	font-weight: 400;
+	color: #3f5ec9;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px){
+	.mid-cta-header {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+/* ---------- MAP ------------ */
+.map {
+	background-color: #3f5ec9;
+	background-image: url('../img/bottom_cta_bg.png');
+	background-repeat: no-repeat;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.map-header {
+	padding-bottom: 20px;
+	font-size: 1.8em;
+	width: 80%;
+	margin: 0 auto;
+	font-weight: 400;
+	text-align: center;
+}
+
+.map-text {
+	padding-bottom: 20px;
+	width: 80%;
+	margin: 0 auto;
+	font-weight: 300;
+	text-align: center;
+}
+
+
+/* --------- CONTACT --------- */
+.contact {
+	padding-top: 30px;
+	padding-bottom: 50px;
+	
 }
 
 .contact-header {
+	padding-bottom: 10px;
 	font-size: 1.8em;
 	font-weight: 400;
 	color: #3f5ec9;
 	text-align: center;
+}
+
+.contact-text {
+	padding-bottom: 20px;
+	text-align: center;
+	color: #3f5ec9;
+	font-weight: 400;
 }
 
 .form-control {
@@ -135,27 +384,55 @@ header {
 	color: #3f5ec9;
 }
 
-input {
-	outline: none;
-}
-
 .form-control:focus {
 	outline: none;
 	border-color: #3f5ec9;
+}
+
+.form-control::-moz-placeholder {
+  color: #d9deeb;
+  opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #d9deeb;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #d9deeb;
+}
+
+input {
+	outline: none;
 }
 
 input:focus {
 	outline: none;
 }
 
-/* --------- FOOTER ----------*/
+.input-padding {
+	padding-left: 30px;
+}
+
+.iconfont {
+	position: absolute;
+	padding-top: 8px;
+	padding-left: 10px;
+	color: #d9deeb;
+}
+
+.iconfont:focus {
+	color: #3f5ec9;
+}
+
+/* --------- FOOTER ---------- */
 footer {
-	background-color: #f8faff;
+	background-image: url('../img/contact_bg.png');
 }
 
 .panel-footer {
-	background-color: #f8faff;
 	border-top: 1px solid #3f5ec9;
+	background-color: transparent;
 }
 
 .footer-text {
@@ -163,30 +440,20 @@ footer {
 	color: #8c9edf;
 }
 
-/* --------- STYLE ----------*/
-.features {
-	background-color: white;
-}
-
-/* --------- IMAGES ----------*/
-.img-centered {
-	margin: 0 auto;
-}
-
-/* --------- LAYOUTS ----------*/
-.noPadding{
-	padding:0 0 0 0;
-}
-
-.alignLeft {
-	text-align: left;
-}
-
-.alignLeft {
+.footer-right {
+	float: right;
 	text-align: right;
 }
 
-/* --------- BUTTONS ----------*/
+/* Mobile */
+@media screen and (max-width: 768px){
+	.footer-text {
+		text-align: center;
+		margin: 0 auto;
+	}
+}
+
+/* --------- BUTTONS ---------- */
 .btn {
 	padding: 6px 46px;
 	border: 1px solid transparent;
@@ -220,7 +487,13 @@ footer {
 	border-color: #ff9901;
 }
 
-/* --------- LINKS ----------*/
+.btn-white-border,
+.btn-white-border:hover {
+	border-width: 2px;
+	border-color: white;
+}
+
+/* --------- LINKS ---------- */
 a {
 	color: #3f5ec9;
 }
