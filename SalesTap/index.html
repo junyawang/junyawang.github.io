@@ -31,19 +31,17 @@
     <script src="js/plugins/retina/retina.min.js"></script>
 	
     <!-- Nav bar background color change -->
-    <script type="text/javascript">
-        $(window).scroll(function() {    
-            var scroll = $(window).scrollTop();
-
-            if (scroll >= 50) {
-                $(".clearNav").addClass("darkNav");
-                $(".navbar-default").addClass("navbar-dark");
-            } else {
-                $(".clearNav").removeClass("darkNav");
-                $(".navbar-default").removeClass("navbar-dark");
-            }
-        });
-    </script>
+   <script type="text/javascript">
+       $(window).scroll(function() {    
+           var scroll = $(window).scrollTop();
+           var transitionHeight = 100;
+           if (scroll >= 50) {
+               $(".clearNav").css( "background-color", "rgba(0,0,0,"+(scroll - 50) / transitionHeight+")");
+           } else {
+               $(".clearNav").css("background-color", "rgba(0,0,0,0)");
+           }
+       });
+   </script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
