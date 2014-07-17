@@ -447,9 +447,9 @@ footer {
 
 /* Mobile */
 @media screen and (max-width: 768px){
-	.footer-text {
-		text-align: center;
+	.footer-content {
 		margin: 0 auto;
+		text-align: center;
 	}
 }
 
