@@ -16,9 +16,16 @@ Dark-grey: #43485c;
 */
 
 /* --------- FONTS ---------- */
-h1, h2, h3, h4, h5, h6, label, p, span, a {
+h1, h2, h3, h4, h5, h6, label, p, span, a, .navbar-text {
 	font-family: Source Sans Pro, sans-serif;
 	text-align: left;
+
+	/* css trick to render the text for better results */
+	text-rendering: optimizeLegibility;
+	font-feature-settings: "kern";
+	-webkit-font-feature-settings: "kern";
+	-moz-font-feature-settings: "kern";
+	-moz-font-feature-settings: "kern=1";
 }
 
 h1 {
@@ -53,7 +60,7 @@ span {
   margin: 0 auto;
 }
 
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
   .container {
     width: 750px;
   }
@@ -69,7 +76,7 @@ span {
   .container {
     width: 1170px;
   }
-}
+}*/
 
 .img-centered {
 	margin: 0 auto;
@@ -98,26 +105,40 @@ span {
 	border:none;
 }
 
+.navbar-default {
+	background-color: transparent;
+	border: none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.navbar-brand {
+	height: 70px;
+	padding: 15px 15px;
+}
+
 .navbar-text {
-	font-family: Source Sans Pro, sans-serif;
+	font-size: 1.2em;
+	vertical-align: middle;
 	text-transform: uppercase;
-	margin-top: 0px;
-	margin-bottom: 0px;
 	color: white;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
 }
 
 .logo-img {
-	width: 90px;
-}
-
-.clearNav {
-	background-color: transparent;
-
-	-webkit-transition: all .5s ease-out;
-	-moz-transition: all .5s ease-out;
-	-ms-transition: all .5s ease-out;
-	-o-transition: all .5s ease-out;
-	transition: all .5s ease-out;
+	height: 100%;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
 }
 
 .navbar-toggle {
@@ -141,15 +162,15 @@ span {
 	background-color: transparent;
 }
 
-/* for changing nav bg, toggle, text color when scrolling */
-.darkNav {
-	background-color: black;
+/* for changing nav bg, toggle, text color and brand height when scrolling */
+.navbar-dark {
+	background-color: #303030;
 
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-ms-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
 }
 
 .navbar-dark .navbar-toggle:hover,
@@ -167,8 +188,33 @@ span {
 	background-color: transparent;
 }
 
+.navbar-brand-sm {
+	height: 60px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
 
+.logo-img-sm {
+	height: 99%; /* if keep 100%, logo height will shrink. dont know why*/
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
 
+.navbar-text-sm {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
 
 /* --------- HEADER ---------- */
 header {
@@ -188,6 +234,8 @@ header {
 }
 .header-text {
 	text-align: center;
+	font-size: 2.4em;
+	font-weight: 400;
 }
 
 .header-img {
@@ -499,11 +547,11 @@ footer {
 	border-color: #ff9901;
 }
 
-.btn-white-border,
+/*.btn-white-border,
 .btn-white-border:hover {
 	border-width: 2px;
 	border-color: white;
-}
+}*/
 
 /* --------- LINKS ---------- */
 a {
