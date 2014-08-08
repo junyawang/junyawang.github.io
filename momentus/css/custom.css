@@ -289,21 +289,31 @@ textarea.form-control {
 .navbar-transparent {
 	background-color: transparent;
 	border: none;
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-ms-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
 }
 
 .navbar-transparent .navbar-nav>li>a {
 	color: white;
 }
 
+.navbar-transparent-black .navbar-nav>li>a {
+	color: #121023;
+}
+
 .navbar-transparent .navbar-nav>li>a:hover {
 	background-color: rgba(0,0,0,0.4);
 	color: #ff9901;
 }
+
+.navbar-transparent-black .navbar-nav>li>a:hover {
+	background-color: transparent;
+	color: #ff9901;
+}
+
 
 .navbar-brand {
 	height: 37px;
@@ -325,7 +335,7 @@ textarea.form-control {
 .navbar-white {
 	position: fixed;
 	top: 0;
-	background: #f7f7f7;
+	background: #fff;
 	padding: 0 0;
 	-webkit-transition: all 1s ease;
 	-moz-transition: all 1s ease;

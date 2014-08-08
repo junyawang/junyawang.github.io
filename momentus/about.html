@@ -28,7 +28,7 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 <div class="wrapper">
-    <nav class="navbar navbar-fixed-top navbar-transparent" role="navigation">
+    <nav class="navbar navbar-fixed-top navbar-transparent-black" role="navigation">
         <div class="container">
 
             <!-- Logo -->
@@ -41,7 +41,7 @@
             </div>
             
             <!-- Menus -->
-            <div class="navbar-header navbar-white pull-right">
+            <div class="navbar-header navbar-right pull-right">
                 <ul class="nav navbar-nav">
                     <li class="page-scroll">
                         <a href="about.html" class="navbar-text">About</a>
@@ -220,9 +220,9 @@
              var scroll = $(window).scrollTop();
 
              if (scroll >= 200) {
-                 $(".navbar").addClass("navbar-white");
+                 $("nav").addClass("navbar-white");
              } else {
-                 $(".navbar").removeClass("navbar-white");
+                 $("nav").removeClass("navbar-white");
              }
          });
          
