@@ -409,11 +409,10 @@ header.index-header {
 	background-image: url(../img/header_bg.jpg);
 	background-attachment: fixed;
 	background-size: 100% auto;
-	padding: 0 0 20% 0;
 }
 
 .index-header .header-text {
-	padding: 25% 0 10% 0;
+	padding: 25% 0 20% 0;
 	text-align: center;
 	font-weight: 300;
 	font-size: 3.4em;
@@ -425,6 +424,17 @@ header.index-header {
 	text-align: center;
 	
 	color: white;
+}
+
+.header-arrow {
+	text-align: center;
+	color: white;
+	font-size: 1.6em;
+	padding: 0 0 10% 0;
+}
+
+.header-arrow:hover {
+	cursor: pointer;
 }
 
 /* --------- SERVICES --------- */

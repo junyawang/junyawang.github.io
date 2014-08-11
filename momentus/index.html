@@ -15,11 +15,14 @@
     <!-- CSS -->
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="css/8cols.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/animate.css">
     <link href="css/custom.css" rel="stylesheet" type="text/css">
 
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
+    
 
     <!-- JS -->
     <script src="js/jquery-1.10.2.js"></script>
@@ -76,7 +79,9 @@
                     Software powerhouse building highly customized mobile application and platform development for consumer and business
                 </h2> -->
 
-                <button class="col-md-4 col-md-offset-4 header-description btn btn-lg btn-transparent">Learn More</button>
+                <span class="col-md-2 col-md-offset-5 col-sm-12 col-xs-12 header-arrow">
+                    <i class="fa fa-chevron-down animated bounce infinite"></i>
+                </span>
             </div>
         </div>
     </header>
@@ -150,7 +155,7 @@
     </section> <!-- / .sec-services -->
     
     <!-- PROJECTS -->
-    <section id="projects" class="sec-projects">
+    <section id="projects" class="sec-projects" data-scroll-reveal="enter bottom move 50px over 0.8s">
         <div class="container">
             
             
@@ -164,7 +169,7 @@
                 
                 <!-- rect body section -->
                 <div class="row">
-                    <div class="col-md-7 project-content">
+                    <div class="col-md-7 project-content" data-scroll-reveal="enter left move 20px over 0.6s">
                         <h3 class="sec-title project-title">iOS Development</h3>
                         <h4 class="sec-title project-title">Project Name</h4>
 
@@ -178,7 +183,7 @@
                         </ul>           
                     </div>
 
-                    <div class="col-md-5 noPadding img-responsive project-img">
+                    <div class="col-md-5 noPadding img-responsive project-img" data-scroll-reveal="enter right move 20px over 0.6s">
                         <img class="mockup-iphone5" src="img/mockup_iphone5.png" alt="">
                     </div>
                 </div>
@@ -207,9 +212,9 @@
                 
                 <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/cbs-sports.png" alt="">
                 
-                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/starbucks.png" alt="">
+                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/synacor.png" alt="">
                 
-                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/american-idol.png" alt="">
+                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/fox.png" alt="">
                 
                 <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/hotel-tonight.png" alt="">
                 
@@ -227,9 +232,21 @@
                 
                 <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/whole-foods.png" alt="">
                 
-                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/starbucks.png" alt="">
+                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/clover.png" alt="">
                 
-                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/starbucks.png" alt="">
+                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/izon.png" alt="">
+
+                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/tact.png" alt="">
+                
+                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/qualitrol.png" alt="">
+                
+                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/lisnr.png" alt="">
+                
+                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/nordic.png" alt="">
+                
+                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/triplespot.png" alt="">
+                
+                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/kromephotos.png" alt="">
             </div>
         </div>
     </section>
@@ -316,17 +333,34 @@
 
     <!-- Retina Images Plugin -->
     <script type="text/javascript" src="js/retina.min.js"></script>
+    
+    <!-- ScrollReveal.js-->
+    <script src='js/scrollReveal.js-master/scrollReveal.js'></script>
+    <script>
+        window.scrollReveal = new scrollReveal();
+    </script>
+
 
     <!-- Nav bar background color change -->
     <script type="text/javascript">
          $(window).scroll(function() {    
-             var scroll = $(window).scrollTop();
+            var scroll = $(window).scrollTop();
 
-             if (scroll >= 200) {
-                 $("nav").addClass("navbar-white");
+            if (scroll >= 50) {
+                $(".fa-chevron-down").addClass("fadeOut");
+                $(".fa-chevron-down").removeClass("bounce infinite");
+            } else {
+                $(".fa-chevron-down").removeClass("fadeOut");
+                $(".fa-chevron-down").addClass("bounce infinite");
+            }
+
+            if (scroll >= 200) {
+                $("nav").addClass("navbar-white");
+                
              } else {
-                 $("nav").removeClass("navbar-white");
-             }
+                $("nav").removeClass("navbar-white");
+            }
+
          });
          
          $(".contactScroll").click(function() {
@@ -334,7 +368,14 @@
                  scrollTop: $("#contact").offset().top
              }, 700);
          });
+
+         $(".header-arrow").click(function() {
+             $('html, body').animate({
+                 scrollTop: $("#services").offset().top
+             }, 700);
+         });
     </script>
-</body>
+
+    </body>    
 
 </html>
