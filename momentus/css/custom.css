@@ -557,7 +557,6 @@ header.about-header {
 
 .exec-img {
 	max-width: 200px;
-	max-width: 200px;
 	margin: 0 auto;
 }
 
@@ -581,6 +580,18 @@ header.about-header {
 .exec-bio {
 	padding-top: 20px;
 	font-weight: 400;
+}
+
+
+/* =========== CAREER PAGE============ */
+.sec-culture {
+	background-color: #f7f7f7;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.event-img {
+	margin: 0 auto;
 }
 
 /*-------------------------------------------
