@@ -448,6 +448,8 @@ header.index-header {
 /* --------- SERVICES --------- */
 .sec-services {
 	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #ff9901;
 }
 
 .service-title {
@@ -466,8 +468,8 @@ header.index-header {
 .service-icon {
 	margin: 0 auto;
 	text-align: center;
-	max-width: 180px;
-	max-height: 180px;
+	max-width: 120px;
+	max-height: 120px;
 }
 
 .service-icon-img {
@@ -476,7 +478,7 @@ header.index-header {
 
 .service-point {
 	text-align: center;
-	margin-top: 10px;
+	margin-top: 0;
 	font-size: 1em;
 	font-weight: 300;
 }
@@ -485,39 +487,49 @@ header.index-header {
 /* --------- PROJECTS --------- */
 .sec-projects {
 	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.project-description {
+	margin: 10px 0 50px 0;
+	text-align: center;
 }
 
 span.project-title{
 	text-align: left;
-	font-size: 1.4em;
+	font-size: 1.2em;
 	font-weight: 400;
-	margin-top: 20px;
-	margin-bottom: 20px;
 	text-transform: none;
-	color: white
+	color: white;
+	line-height: 2;
+	padding-left: 10px;
 }
 
-/*.panel-project {
-	margin-top: 5px;
-}*/
+.panel-project {
+	cursor: pointer;
+	padding-left: 1px;
+	padding-right: 1px;
+}
 
-.project-content {
+div.project-content {
 	background-color: #333;
-	/*position: absolute;*/
 }
 
-.project-tag-list {
-	/*margin-top: 40px;*/
-}
-
-.project-tag {
+ul.project-tag-list {
+	margin: 0 0;
 	display: inline-block;
-	/*padding: 5px 12px 5px 0px;*/
+	float: right;
+}
+
+li.project-tag {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 8px 10px 8px 0px;
 	color: white;
 	font-weight: 300;
 }
 
-.project-tag:not(:first-child) {
+li.project-tag:not(:first-child) {
 	margin-left: 10px;
 }
 /* --------- CLIENTS --------- */
