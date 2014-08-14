@@ -412,7 +412,7 @@ header.index-header {
 }
 
 .index-header .header-text {
-	padding: 25% 0 20% 0;
+	padding: 20% 0 5% 0;
 	text-align: center;
 	font-weight: 300;
 	font-size: 3.4em;
@@ -421,9 +421,12 @@ header.index-header {
 }
 
 .index-header .header-description {
+	padding: 0 0 7% 0;
 	text-align: center;
-	
+	font-weight: 300;
+	font-size: 1.6em;
 	color: white;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
 .header-arrow {
@@ -584,6 +587,29 @@ header.about-header {
 
 
 /* =========== CAREER PAGE============ */
+header.career-header {
+	background-image: url(../img/header_bg.jpg);
+	background-attachment: fixed;
+	background-size: 100% auto;
+}
+
+.career-header .header-text {
+	padding: 20% 0 5% 0;
+	text-align: center;
+	font-weight: 400;
+	font-size: 3em;
+	color: white;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.career-header .header-description {
+	text-align: center;
+	font-weight: 300;
+	font-size: 3.4em;
+	color: white;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
 .sec-culture {
 	background-color: #f7f7f7;
 	padding-top: 50px;

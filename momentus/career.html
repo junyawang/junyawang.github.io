@@ -61,17 +61,23 @@
         </div>
         <!-- /.container -->
     </nav>
-   
+
     <!-- HEADER -->
-    <header class="about-header">
+    <header class="career-header">
         <div class="container noPadding">
-            <h1 class="header-text about-header-text">
-                Career at Momentus
-            </h1>
-            <h2>
-                blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
-            </h2>
-            
+            <div class="row">
+                <h1 class="header-text about-header-text">
+                    Career at Momentus
+                </h1>
+                <h2 class="col-md-8 col-md-offset-2 header-description">
+                    Brilliant <span>Engineering</span><br /> 
+                    Meets Beautiful <span>Design</span>
+                </h2>
+
+                <span class="col-md-2 col-md-offset-5 col-sm-12 col-xs-12 header-arrow">
+                    <i class="fa fa-chevron-down animated bounce infinite"></i>
+                </span>
+            </div>
         </div>
     </header>
     
@@ -192,20 +198,34 @@
     <!-- Nav bar background color change -->
     <script type="text/javascript">
          $(window).scroll(function() {    
-             var scroll = $(window).scrollTop();
+            var scroll = $(window).scrollTop();
 
-             if (scroll >= 200) {
+            if (scroll >= 50) {
+                $(".fa-chevron-down").addClass("fadeOut");
+                $(".fa-chevron-down").removeClass("bounce infinite");
+            } else {
+                $(".fa-chevron-down").removeClass("fadeOut");
+                $(".fa-chevron-down").addClass("bounce infinite");
+            }
+
+            if (scroll >= 200) {
                  $("nav").addClass("navbar-white");
-             } else {
+            } else {
                  $("nav").removeClass("navbar-white");
-             }
-         });
+            }
+        });
          
-         $(".contactScroll").click(function() {
-             $('html, body').animate({
-                 scrollTop: $("#contact").offset().top
-             }, 700);
-         });
+        $(".contactScroll").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#contact").offset().top
+            }, 700);
+        });
+
+        $(".header-arrow").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#services").offset().top
+            }, 700);
+        });
     </script>
 </body>
 
