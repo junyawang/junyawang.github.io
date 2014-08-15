@@ -94,56 +94,42 @@
             </div>
 
             <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-6">
+                <div class="col-md-4 col-sm-6 col-xs-6">
                     <div class="service-icon img-circle">
                         <img class="service-icon-img" src="img/icon-iot.png" alt="">
                     </div>
                     <h3 class="service-point">iOS</h3>
                 </div>
 
-                <div class="col-md-3 col-sm-6 col-xs-6">
+                <div class="col-md-4 col-sm-6 col-xs-6">
                     <div class="service-icon img-circle">
                         <img class="service-icon-img" src="img/icon-iot.png" alt="">
                     </div>
                     <h3 class="service-point">Android</h3>
                 </div>
 
-                <div class="col-md-3 col-sm-6 col-xs-6">
+                <div class="col-md-4 col-sm-6 col-xs-6">
                     <div class="service-icon img-circle">
                         <img class="service-icon-img" src="img/icon-backends.png" alt="">
                     </div>
                     <h3 class="service-point">Backends</h3>
                 </div>
 
-                <div class="col-md-3 col-sm-6 col-xs-6">
+                <div class="col-md-4 col-sm-6 col-xs-6">
                     <div class="service-icon img-circle">
                         <img class="service-icon-img" src="img/icon-design.png" alt="">
                     </div>
                     <h3 class="service-point">Design</h3>
                 </div>
 
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <div class="service-icon img-circle">
-                        <img class="service-icon-img" src="img/icon-design.png" alt="">
-                    </div>
-                    <h3 class="service-point">R&D</h3>
-                </div>
-
-                <div class="col-md-3 col-sm-6 col-xs-6">
+                <div class="col-md-4 col-sm-6 col-xs-6">
                     <div class="service-icon img-circle">
                         <img class="service-icon-img" src="img/icon-iot.png" alt="">
                     </div>
                     <h3 class="service-point">IoT</h3>
                 </div>
 
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <div class="service-icon img-circle">
-                        <img class="service-icon-img" src="img/icon-enterprise.png" alt="">
-                    </div>
-                    <h3 class="service-point">Enterprise</h3>
-                </div>
-
-                <div class="col-md-3 col-sm-6 col-xs-6">
+                <div class="col-md-4 col-sm-6 col-xs-6">
                     <div class="service-icon img-circle">
                         <img class="service-icon-img" src="img/icon-embeddedTech.png" alt="">
                     </div>
@@ -164,7 +150,7 @@
 
             <div class="row noPadding">
                 <div class="panel-project noPadding col-md-6 col-sm-6">
-                    <div class="noPadding">
+                    <div class="panel-img noPadding">
                         <img class="img-responsive" src="img/projects/mock_synacor.jpg" alt="">
                     </div>
 
@@ -178,7 +164,7 @@
                 </div><!-- / .panel-project -->
 
                 <div class="panel-project noPadding col-md-6 col-sm-6">
-                    <div class="noPadding">
+                    <div class="panel-img noPadding">
                         <img class="img-responsive" src="img/projects/mock_shakira.jpg" alt="">
                     </div>
 
@@ -193,7 +179,7 @@
                 </div><!-- / .panel-project -->
 
                 <div class="panel-project noPadding col-md-4 col-sm-6">
-                    <div class="noPadding">
+                    <div class="panel-img noPadding">
                         <img class="img-responsive" src="img/projects/mock_triplespot.jpg" alt="">
                     </div>
 
@@ -207,7 +193,7 @@
                 </div><!-- / .panel-project -->
 
                 <div class="panel-project noPadding col-md-4 col-sm-6">
-                    <div class="noPadding">
+                    <div class="panel-img noPadding">
                         <img class="img-responsive" src="img/projects/mock_clover2.jpg" alt="">
                     </div>
 
@@ -222,7 +208,7 @@
                 </div><!-- / .panel-project -->
 
                 <div class="panel-project noPadding col-md-4 col-sm-6">
-                    <div class="noPadding">
+                    <div class="panel-img noPadding">
                         <img class="img-responsive" src="img/projects/mock_shakira.jpg" alt="">
                     </div>
 
@@ -303,9 +289,9 @@
                 
                 <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/clarifi.png" alt="">
                 
-                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/triplespot.png" alt="">
+                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/spacio.png" alt="">
                 
-                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/kromephotos.png" alt="">
+                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/alephcloud.png" alt="">
             </div>
         </div>
     </section>
@@ -430,6 +416,14 @@
          });
     </script>
 
-    </body>    
 
+    <script type="text/javascript">
+        $('.panel-project').click(function(){
+            $(this).toggleClass('active');
+            $(this).children().toggleClass('active');
+            $(this).removeClass('col-md-6');
+        });
+    </script>
+    
+    </body>    
 </html>

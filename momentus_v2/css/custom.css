@@ -426,7 +426,7 @@ header.index-header {
 }
 
 .index-header .header-description {
-	padding: 0 0 7% 0;
+	padding: 3% 0 7% 0;
 	text-align: center;
 	font-weight: 300;
 	font-size: 1.6em;
@@ -438,7 +438,7 @@ header.index-header {
 	text-align: center;
 	color: white;
 	font-size: 1.6em;
-	padding: 0 0 10% 0;
+	padding: 5% 0 7% 0;
 }
 
 .header-arrow:hover {
@@ -447,12 +447,13 @@ header.index-header {
 
 /* --------- SERVICES --------- */
 .sec-services {
-	padding-top: 50px;
+	padding-top: 30px;
 	padding-bottom: 50px;
 	background-color: #ff9901;
 }
 
 .service-title {
+	padding-top: 20px;
 	margin-bottom: 5px;
 }
 
@@ -639,6 +640,60 @@ header.career-header {
 /*-------------------------------------------
                 ANIMATION
 ---------------------------------------------*/
+
+/*.panel-project {
+
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+
+	-webkit-transition: all 0.5s ease 0.5s;
+	-moz-transition: all 0.5s ease 0.5s;
+	transition: all 0.5s ease 0.5s;
+
+	z-index: 100;
+}
+
+.panel-project.active {
+
+	position: fixed;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	width: 900px;
+	height: 300px;
+	
+	z-index: 300;
+  
+}
+
+.panel-img {
+	-webkit-transition: all 0.5s ease 0.5s;
+	-moz-transition: all 0.5s ease 0.5s;
+	transition: all 0.5s ease 0.5s;
+
+	z-index: 0;
+}
+
+.panel-img.active {
+	width: 300px;
+	height: 100%;
+
+	z-index: 300;
+}*/
+
+/*.project-content {
+	height: 20%;
+	margin-left: 10px;
+}*/
 
 
 /*-------------------------------------------
