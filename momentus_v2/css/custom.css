@@ -318,6 +318,11 @@ textarea.form-control {
 	color: #121023;
 }
 
+.navbar-transparent-black .navbar-nav> .navbar-active>a {
+	color: #ff9901;
+	font-weight: 400;
+}
+
 .navbar-transparent .navbar-nav>li>a:hover {
 	background-color: rgba(0,0,0,0.4);
 	color: #ff9901;
@@ -346,6 +351,11 @@ textarea.form-control {
 	text-transform: uppercase;
 }
 
+a.navbar-active {
+	font-weight: bolder;
+	color: #ff9901;	
+}
+
 .navbar-white {
 	position: fixed;
 	top: 0;
@@ -360,6 +370,10 @@ textarea.form-control {
 
 .navbar-white .navbar-nav>li>a {
 	color: #121023;
+}
+
+.navbar-white .navbar-nav>.navbar-active>a {
+	color: #ff9901;
 }
 
 .navbar-white .navbar-nav>li>a:hover {
