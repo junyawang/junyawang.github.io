@@ -90,7 +90,7 @@
         <div class="container">
             <div class="row">
                 <h1 class="sec-title service-title">What we do</h1>
-                <h2 class="service-description">blah blah blah blah blah blah</h2>
+                <h2 class="service-description">We develop custom web and mobile applications</h2>
             </div>
 
             <div class="row">
@@ -98,14 +98,8 @@
                     <div class="service-icon img-circle">
                         <img class="service-icon-img" src="img/icon-iot.png" alt="">
                     </div>
-                    <h3 class="service-point">iOS</h3>
-                </div>
-
-                <div class="col-md-4 col-sm-6 col-xs-6">
-                    <div class="service-icon img-circle">
-                        <img class="service-icon-img" src="img/icon-iot.png" alt="">
-                    </div>
-                    <h3 class="service-point">Android</h3>
+                    <h3 class="service-point">Mobile</h3>
+                    <p class="service-point-descr">We can do it all. Android, iOS, Windows Mobile, BlackBerry.</p>
                 </div>
 
                 <div class="col-md-4 col-sm-6 col-xs-6">
@@ -113,6 +107,15 @@
                         <img class="service-icon-img" src="img/icon-backends.png" alt="">
                     </div>
                     <h3 class="service-point">Backends</h3>
+                    <p class="service-point-descr">To take an app to the next level, a server is usually a must. We have extensive experience with all major server technologies with a particular emphasis on Django.</p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-6">
+                    <div class="service-icon img-circle">
+                        <img class="service-icon-img" src="img/icon-backends.png" alt="">
+                    </div>
+                    <h3 class="service-point">OS Customization</h3>
+                    <p class="service-point-descr">Create a white-label Android OS with your own security requirements and app store, notification pane, splash screens, and app permissions (i.e controlled email access). Basically lock down the android experience so its focus is your business</p>
                 </div>
 
                 <div class="col-md-4 col-sm-6 col-xs-6">
@@ -120,13 +123,7 @@
                         <img class="service-icon-img" src="img/icon-design.png" alt="">
                     </div>
                     <h3 class="service-point">Design</h3>
-                </div>
-
-                <div class="col-md-4 col-sm-6 col-xs-6">
-                    <div class="service-icon img-circle">
-                        <img class="service-icon-img" src="img/icon-iot.png" alt="">
-                    </div>
-                    <h3 class="service-point">IoT</h3>
+                    <p class="service-point-descr">Whether it’s mobile or web, we can create everything from beautiful, illustrative designs to clean, simple layouts.</p>
                 </div>
 
                 <div class="col-md-4 col-sm-6 col-xs-6">
@@ -134,6 +131,15 @@
                         <img class="service-icon-img" src="img/icon-embeddedTech.png" alt="">
                     </div>
                     <h3 class="service-point">Embedded Tech</h3>
+                    <p class="service-point-descr">We can write drivers to make a variety of hardware work with Android: Printers, Scanners, GPS receiver, Cameras Video, WiFi, Bluetooth, 3G/4G</p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-6">
+                    <div class="service-icon img-circle">
+                        <img class="service-icon-img" src="img/icon-embeddedTech.png" alt="">
+                    </div>
+                    <h3 class="service-point">Product Ambitions</h3>
+                    <p class="service-point-descr">We can help you realize your product ambitions by providing assistance in areas such as manufactoring test software, manufacturing device provisions, and other systems integration tasks.</p>
                 </div>
             </div><!-- /.row-->
         </div>
@@ -145,11 +151,11 @@
 
             <div class="row">
                 <h1 class="sec-title project-title">What we have done</h1>
-                <h2 class="project-description">blah blah blah blah blah blah</h2>
+                <h2 class="project-description">Here’s a selection of some of our latest work</h2>
             </div>
 
             <div class="row noPadding">
-                <div class="panel-project noPadding col-md-6 col-sm-6">
+                <div class="panel-project noPadding col-md-6 col-sm-12">
                     <div class="panel-img noPadding">
                         <img class="img-responsive" src="img/projects/mock_synacor.jpg" alt="">
                     </div>
@@ -202,7 +208,7 @@
 
                         <ul class="project-tag-list alignRight">
                             <li class="project-tag">Embedded Tech</li>
-                            <li class="project-tag">Android</li>    
+                            <li class="project-tag">Android Customization</li>    
                         </ul>           
                     </div>
                 </div><!-- / .panel-project -->
@@ -216,7 +222,7 @@
                         <span class="sec-title project-title alignLeft">HotelTonight</span>
 
                         <ul class="project-tag-list alignRight">
-                            <li class="project-tag">Mobile</li>  
+                            <li class="project-tag">Consumer Application</li>  
                         </ul>           
                     </div>
                 </div><!-- / .panel-project -->
@@ -297,77 +303,146 @@
     </section>
 
     <!-- FOOTER AREA-->
-    <footer>
-        <!-- CONTACT -->
-        <div class="container contact" id="contact">
-            <div class="row">
-                <h1 class="sec-title footer-title">Let's Work Together!</h1>
+    <footer id="contact">
+        <div class="container">
+            <!-- CONTACT -->
+            <section class="sec-contact">
+                <div class="row">
+                    <h2 class="sec-title footer-title">Let's Work Together!</h2>
 
-                <!-- Contact form-->
-                <div class="col-md-8 col-md-offset-2">
+                    <!-- Contact form-->
+                    <div class="col-md-12">
 
-                    <form name="sentMessage" id="contactForm" action="index.php" autocomplete="on">
-                        
-                        <!-- Name -->
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <span class="iconfont" aria-hidden="true" data-icon="&#xe007;"></span>
-                                <input type="text" class="form-control input-padding" placeholder="Name" id="name" name="name" required data-validation-required-message="Please enter your name.">
-                                <p class="help-block text-danger"></p>
+                        <form name="sentMessage" id="contactForm" action="index.php" autocomplete="on">
+                            
+                            <div class="row">
+                                <!-- First Name -->
+                                <div class="form-group noPadding col-md-6 floating-label-form-group controls">
+                                    <span class="iconfont" aria-hidden="true" data-icon="&#xe007;"></span>
+                                    <input type="text" class="form-control input-padding" placeholder="First Name" id="fname" name="fname" required data-validation-required-message="Please enter your first name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                
+                                <!-- Last Name -->
+                                <div class="form-group noPadding col-md-6 floating-label-form-group controls">
+                                    <span class="iconfont" aria-hidden="true" data-icon="&#xe007;"></span>
+                                    <input type="text" class="form-control input-padding" placeholder="Last Name" id="lname" name="lname" required data-validation-required-message="Please enter your last name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
                             </div>
-                        </div>
-                        
-                        <!-- Email Address -->
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <span class="iconfont" aria-hidden="true" data-icon="&#xe019;"></span>
-                                <input type="email" class="form-control input-padding" placeholder="Email" id="email" name="email" required data-validation-required-message="Please enter your email address.">
-                                <p class="help-block text-danger"></p>
+
+                            <div class="row">
+                                <!-- Company -->
+                                <div class="form-group noPadding col-md-6 floating-label-form-group controls">
+                                    <span class="iconfont" aria-hidden="true" data-icon="&#xe007;"></span>
+                                    <input type="text" class="form-control input-padding" placeholder="Company" id="company" name="company" required data-validation-required-message="Please enter your company name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+
+                                <!-- Phone -->
+                                <div class="form-group noPadding col-md-6 floating-label-form-group controls">
+                                    <span class="iconfont" aria-hidden="true" data-icon="&#xe007;"></span>
+                                    <input type="text" class="form-control input-padding" placeholder="Phone" id="phone" name="phone" required data-validation-required-message="Please enter your phone number.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
                             </div>
-                        </div>
-                        
-                        <!-- Message -->
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <span class="iconfont" aria-hidden="true" data-icon="&#xe014;"></span>
-                                <textarea rows="5" class="form-control input-padding" placeholder="Message" id="message" name="message" required data-validation-required-message="Please enter a message."></textarea>
-                                <p class="help-block text-danger"></p>
+
+                            <div class="row">
+                                <!-- Email Address -->
+                                <div class="form-group noPadding col-md-12 floating-label-form-group controls">
+                                    <span class="iconfont" aria-hidden="true" data-icon="&#xe019;"></span>
+                                    <input type="email" class="form-control input-padding" placeholder="Email" id="email" name="email" required data-validation-required-message="Please enter your email address.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="form-send col-xs-12">
-                                <button type="submit" class="btn btn-lg btn-orange btn-block" name="submit" value="send message">Send</button>
+                            
+                            <!-- Message -->
+                            <div class="row">
+                                <div class="form-group noPadding col-md-12 floating-label-form-group controls">
+                                    <span class="iconfont" aria-hidden="true" data-icon="&#xe014;"></span>
+                                    <textarea rows="5" class="form-control input-padding" placeholder="Message" id="message" name="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
                             </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div> <!-- / CONTACT-->
-        
-        <!-- FOOTER -->
-        <div class="container panel-footer">
-            <div class="row">
-                <!--footer upper-->
-                <div class="social-content col-md-4 col-md-offset-4 col-sm-12 col-xs-12">
-                    <span class="social-icon"><a href="https://twitter.com/MomentusHQ" class="symbol">circletwitterbird</a></span>
 
-                    <span class="social-icon"><a href="https://www.facebook.com/momentussoftware" class="symbol">circlefacebook</a></span>
-
-                    <span class="social-icon"><a href="https://www.linkedin.com/vsearch/p?company=Momentus+Software+Inc%2E&trk=prof-0-ovw-curr_pos" class="symbol">circlelinkedin</a></span>
+                            <div class="row">
+                                <div class="form-send noPadding col-md-4 col-md-offset-4">
+                                    <button type="submit" class="btn btn-lg btn-orange btn-block" name="submit" value="send message">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
+            </section> <!-- / CONTACT-->
+            
+            <!-- LOCATION -->
+            <section class="sec-location">
+                <h2 class="sec-title location-title">Location</h2>
+                <div class="row">
+                    
+                    <!-- Vancouver -->
+                    <div class="col-md-3 col-sm-6">
+                        <h4>Vancouver, BC - Headquaters</h4>
+                        <address>
+                            938 Howe Street, 
+                            Suite 306 & 402<br>
+                            Vancouver, BC, 
+                            Canada, V6Z 1N9<br>
+                        </address>
+                        <span class="google-maps"><a href="https://www.google.com/maps/place/938+Howe+St,+Vancouver,+BC+V6Z+1N9,+Canada/@49.2803846,-123.1228795,17z/data=!3m1!4b1!4m2!3m1!1s0x548673d5635bb051:0x9c1594736458d117"><i class="fa fa-map-marker"></i>Locate us in Google Maps</a></span>
+                    </div>
+
+                    <!-- San Fran -->
+                    <div class="col-md-3 col-sm-6">
+                        <h4>SF Bay Area, California</h4>
+                        <address>
+                            3900 Newparkmall Drive, 
+                            Suite 205C<br>
+                            Newark, CA, 
+                            United States, 94560<br>
+                        </address>
+                        <span class="google-maps"><a href="https://www.google.ca/maps/place/3900+Newpark+Mall+Rd,+Newark,+CA+94560,+USA/@37.5250597,-122.0047065,17z/data=!3m1!4b1!4m2!3m1!1s0x808fbf5ae5cea197:0x1b745e8e11bc0e88"><i class="fa fa-map-marker"></i>Locate us in Google Maps</a></span>
+                    </div>
+                    
+                    <div class="col-md-3 col-sm-6">
+                        <h4>Give us a call</h4>
+                        <address>
+                            <i class="fa fa-phone"></i>
+                            <a href="tel:16042942878">(604) 294-2878</a> (Vancouer)<br> 
+                            <i class="fa fa-phone"></i>
+                            <a href="tel:16046852755">(604) 685-2755</a> (Vancouer)<br>
+                        </address>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <h4>Email</h4>
+                        <address>
+                            <i class="fa fa-envelope-o"></i>
+                            <a href="mailto:info@momentusmobile.com">info@momentusmobile.com</a>
+                        </address>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FOOTER -->
+            <section class="sec-footer">
+                <div class="row">
+                    <!--footer upper-->
+                    <div class="social-content col-md-4 col-md-offset-4 col-sm-12 col-xs-12">
+                        <span class="social-icon"><a href="https://twitter.com/MomentusHQ" class="symbol">circletwitterbird</a></span>
+
+                        <span class="social-icon"><a href="https://www.facebook.com/momentussoftware" class="symbol">circlefacebook</a></span>
+
+                        <span class="social-icon"><a href="https://www.linkedin.com/vsearch/p?company=Momentus+Software+Inc%2E&trk=prof-0-ovw-curr_pos" class="symbol">circlelinkedin</a></span>
+                    </div>
 
 
-                <!--footer left-->
-                <div class="footer-content col-md-6 col-sm-12 col-xs-12">
-                    <span class="footer-text">Copyright &copy; 2014 <a href="http://www.momentussoftware.com"> Momentus Software </a>  Vancouver</span>
+                    <!--footer bottom-->
+                    <div class="footer-content col-md-12">
+                        <span class="footer-text">Copyright &copy; 2014 <a href="http://www.momentussoftware.com">Momentus Software Inc.</a></span>
+                    </div>
                 </div>
-                
-                <!--footer right-->
-                <div class="footer-content footer-right col-md-6 col-sm-12 col-xs-12">
-                    <span class="footer-text">Give us a call at <a href="tel:16042942878">(604) 294-2878</a></span>
-                </div>
-            </div>
+            </section>
         </div>
     </footer>
 
