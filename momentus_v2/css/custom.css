@@ -18,8 +18,13 @@ Light-orange-grey (placeholder): #EDECE8;
 	margin: 0 auto;
 }
 
-.container-full {
+.container-large {
 	width: 90%;
+	margin: 0 auto;
+}
+
+.container-full {
+	width: 100%;
 	margin: 0 auto;
 }
 
@@ -463,6 +468,7 @@ footer {
 /* --------- HEADER ---------- */
 header.index-header {
 	background-image: url(../img/header_bg.jpg);
+	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% auto;
 }
@@ -611,16 +617,21 @@ li.project-tag:not(:first-child) {
 
 /* =========== ABOUT PAGE============ */
 header.about-header {
-	padding: 100px 0;
+	padding: 5% 0 60% 0;
+	background-image: url(../img/company_photo.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% auto;
 }
 
-.about-header-text {
+h1.about-header-text {
 	text-align: center;
+	color: white;
 }
 
-.company-img {
+/*.company-img {
 	width: 100%;
-}
+}*/
 
 .sec-exec {
 	background-color: #f7f7f7;
