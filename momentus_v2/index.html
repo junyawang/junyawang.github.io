@@ -26,7 +26,7 @@
 
     <!-- JS -->
     <script src="js/jquery-1.10.2.js"></script>
-    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
 </head>
 
@@ -34,20 +34,25 @@
         
     <nav class="navbar navbar-fixed-top navbar-transparent" role="navigation">
         <div class="container">
-
-            <!-- Logo -->
-            <div class="navbar-header pull-left page-scroll">
-                <a class="navbar-brand" href="index.html">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <!-- Logo -->
+                <a class="navbar-brand navbar-left page-scroll" href="index.html">
                     <span class="logo">
                         <img class= "img-logo-white" src="img/momentus_logo_white.png" alt="">
                         <img class= "img-logo-dark" src="img/momentus_logo_dark.png" alt="">
                     </span>
                 </a>
+                
+                <!-- Toggle -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>           
             </div>
             
             <!-- Menus -->
-            <div class="navbar-header navbar-right pull-right">
-                <ul class="nav navbar-nav">
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
                     <li class="page-scroll">
                         <a href="about.html" class="navbar-text">About</a>
                     </li>
@@ -94,47 +99,47 @@
             </div>
 
             <div class="row">
-                <div class="col-md-4 col-sm-6 col-xs-6">
+                <div class="panel-service col-md-4 col-sm-6 col-xs-12">
                     <div class="service-icon img-circle">
                         <img class="service-icon-img" src="img/icon-iot.png" alt="">
                     </div>
                     <h3 class="service-point">Mobile</h3>
-                    <p class="service-point-descr">We can do it all. Android, iOS, Windows Mobile, BlackBerry. Whether its creating an app from scratch or porting an existing app to another platform, we do it all. Our experts will guide you from start to finish.</p>
+                    <p class="service-point-descr">We can do it all. Android, iOS, Windows Mobile, BlackBerry. Whether its creating an app from scratch or porting an existing app to another platform. Our experts will guide you from start to finish.</p>
                 </div>
 
-                <div class="col-md-4 col-sm-6 col-xs-6">
+                <div class="panel-service col-md-4 col-sm-6 col-xs-12">
                     <div class="service-icon img-circle">
                         <img class="service-icon-img" src="img/icon-backends.png" alt="">
                     </div>
                     <h3 class="service-point">Backend</h3>
-                    <p class="service-point-descr">To take an app to the next level, a server is usually a must. We have extensive experience with all major server technologies. Whether its performance, scalability and reliability we can suggest an infrastructure that aptly suites your need.</p>
+                    <p class="service-point-descr">We have extensive experience with all major server technologies. Whether its performance, scalability and reliability we can suggest an infrastructure that aptly suites your need.</p>
                 </div>
 
-                <div class="col-md-4 col-sm-6 col-xs-6">
+                <div class="panel-service col-md-4 col-sm-6 col-xs-12">
                     <div class="service-icon img-circle">
                         <img class="service-icon-img" src="img/icon-backends.png" alt="">
                     </div>
                     <h3 class="service-point">OS Customization</h3>
-                    <p class="service-point-descr">Create a white-label Android OS with your own security requirements and app store, notification pane, splash screens, and app permissions (i.e controlled email access). Basically lock down the android experience so its focus is your business</p>
+                    <p class="service-point-descr">Create a white-label Android OS with your own security requirements and app store, notification pane, splash screens, and app permissions.</p>
                 </div>
 
-                <div class="col-md-4 col-sm-6 col-xs-6">
+                <div class="panel-service col-md-4 col-sm-6 col-xs-12">
                     <div class="service-icon img-circle">
                         <img class="service-icon-img" src="img/icon-design.png" alt="">
                     </div>
                     <h3 class="service-point">Design</h3>
-                    <p class="service-point-descr">Whether it’s mobile or web, we can create everything from beautiful, illustrative designs to clean, simple layouts.</p>
+                    <p class="service-point-descr">Whether it’s mobile or web, we can create everything from beautiful, illustrative designs to clean, simple layouts. We are experts in design principles for all platforms like Android, iOS, Windows Mobile, BlackBerry.</p>
                 </div>
 
-                <div class="col-md-4 col-sm-6 col-xs-6">
+                <div class="panel-service col-md-4 col-sm-6 col-xs-12">
                     <div class="service-icon img-circle">
                         <img class="service-icon-img" src="img/icon-embeddedTech.png" alt="">
                     </div>
                     <h3 class="service-point">Embedded Tech</h3>
-                    <p class="service-point-descr">We can write drivers to make a variety of hardware work with Android: Printers, Scanners, GPS receiver, Cameras Video, WiFi, Bluetooth, 3G/4G</p>
+                    <p class="service-point-descr">We can write drivers to make a variety of hardware work with Android, iOS, Printers, Scanners, GPS receiver, Cameras Video, WiFi, Bluetooth, 3G/4G. We are champions for internet of things.</p>
                 </div>
 
-                <div class="col-md-4 col-sm-6 col-xs-6">
+                <div class="panel-service col-md-4 col-sm-6 col-xs-12">
                     <div class="service-icon img-circle">
                         <img class="service-icon-img" src="img/icon-embeddedTech.png" alt="">
                     </div>
@@ -155,7 +160,7 @@
             </div>
 
             <div class="row noPadding">
-                <div class="panel-project noPadding col-md-6 col-sm-12">
+                <div class="panel-project with-modal noPadding col-md-6 col-sm-12" data-toggle="modal" data-target="#modal-synacor">
                     <div class="panel-img noPadding">
                         <img class="img-responsive" src="img/projects/mock_synacor.jpg" alt="">
                     </div>
@@ -169,7 +174,7 @@
                     </div>
                 </div><!-- / .panel-project -->
 
-                <div class="panel-project noPadding col-md-6 col-sm-6">
+                <div class="panel-project with-modal noPadding col-md-6 col-sm-6" data-toggle="modal" data-target="#modal-shakira">
                     <div class="panel-img noPadding">
                         <img class="img-responsive" src="img/projects/mock_shakira.jpg" alt="">
                     </div>
@@ -184,7 +189,7 @@
                     </div>
                 </div><!-- / .panel-project -->
 
-                <div class="panel-project noPadding col-md-4 col-sm-6">
+                <div class="panel-project with-modal noPadding col-md-4 col-sm-6" data-toggle="modal" data-target="#modal-triplespot">
                     <div class="panel-img noPadding">
                         <img class="img-responsive" src="img/projects/mock_triplespot.jpg" alt="">
                     </div>
@@ -227,9 +232,85 @@
                     </div>
                 </div><!-- / .panel-project -->
             </div>
-
         </div>
     </section> <!-- / .sec-projects -->
+
+    <!-- MODAL - PROJECT CASE STUDY -->
+    
+    <!-- MODAL Synacor -->
+    <div class="modal fade" id="modal-synacor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span class="btn-modal-close" aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">Synacor - Case Study</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 noPadding">
+                            <img class="modal-img img-responsive" src="img/projects/mock_synacor.jpg" alt="">
+                        </div>
+                        <div class="col-md-6 modal-descr">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean massa tellus, tempus at augue at, sodales ornare odio. Nam elementum congue hendrerit. Nulla vitae sem eu risus pellentesque hendrerit. Phasellus at massa cursus, eleifend purus vel, porttitor dui. Fusce ac est faucibus, tempus leo sit amet, ullamcorper dui. Ut vestibulum purus ut pellentesque ornare. Vestibulum lacus massa, interdum non ullamcorper a, porta quis lectus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL Shakira -->
+    <div class="modal fade" id="modal-shakira" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span class="btn-modal-close" aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">Shakira - Case Study</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 noPadding">
+                            <img class="modal-img img-responsive" src="img/projects/mock_shakira.jpg" alt="">
+                        </div>
+                        <div class="col-md-6 modal-descr">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean massa tellus, tempus at augue at, sodales ornare odio. Nam elementum congue hendrerit. Nulla vitae sem eu risus pellentesque hendrerit. Phasellus at massa cursus, eleifend purus vel, porttitor dui. Fusce ac est faucibus, tempus leo sit amet, ullamcorper dui. Ut vestibulum purus ut pellentesque ornare. Vestibulum lacus massa, interdum non ullamcorper a, porta quis lectus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL Triplespot -->
+    <div class="modal fade" id="modal-triplespot" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span class="btn-modal-close" aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">TripleSpot - Case Study</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 noPadding">
+                            <img class="modal-img img-responsive" src="img/projects/mock_triplespot.jpg" alt="">
+                        </div>
+                        <div class="col-md-6 modal-descr">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean massa tellus, tempus at augue at, sodales ornare odio. Nam elementum congue hendrerit. Nulla vitae sem eu risus pellentesque hendrerit. Phasellus at massa cursus, eleifend purus vel, porttitor dui. Fusce ac est faucibus, tempus leo sit amet, ullamcorper dui. Ut vestibulum purus ut pellentesque ornare. Vestibulum lacus massa, interdum non ullamcorper a, porta quis lectus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- CLIENTS -->
     <section id="clients" class="sec-clients">
@@ -413,8 +494,6 @@
                         <h4>Give us a call</h4>
                         <address>
                             <i class="fa fa-phone"></i>
-                            <a href="tel:16042942878">(604) 294-2878 (Vancouer)</a><br> 
-                            <i class="fa fa-phone"></i>
                             <a href="tel:16046852755">(604) 685-2755 (Vancouer)</a><br>
                         </address>
                     </div>
@@ -497,13 +576,7 @@
     </script>
 
 
-    <script type="text/javascript">
-        $('.panel-project').click(function(){
-            $(this).toggleClass('active');
-            $(this).children().toggleClass('active');
-            $(this).removeClass('col-md-6');
-        });
-    </script>
+    
     
     </body>    
 </html>

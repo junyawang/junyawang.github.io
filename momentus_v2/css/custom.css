@@ -519,8 +519,8 @@ header.index-header {
 	text-align: center;
 }
 
-.service-icon-row {
-	margin-top: 20px;
+.panel-service {
+	min-height: 290px;
 }
 
 .service-icon {
@@ -543,6 +543,7 @@ h3.service-point {
 }
 
 p.service-point-descr {
+	padding-top: 20px;
 	text-align: center;
 	font-weight: 400;
 }
@@ -570,9 +571,12 @@ span.project-title{
 }
 
 .panel-project {
-	cursor: pointer;
 	padding-left: 1px;
 	padding-right: 1px;
+}
+
+.with-modal {
+	cursor: pointer;
 }
 
 div.project-content {
@@ -596,6 +600,46 @@ li.project-tag {
 li.project-tag:not(:first-child) {
 	margin-left: 10px;
 }
+
+
+/* --------- MODAL --------- */
+.modal-content {
+	border: none;
+	border-radius: 0;
+}
+
+.modal-dialog {
+	margin: 10% auto;
+}
+
+.modal-header {
+	background-color: #121023;
+	color: white;
+	border: none;
+}
+
+span.btn-modal-close {
+	color: white;
+}
+
+.modal-body {
+	padding: 0 0 0 0;
+}
+
+.modal-body .row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.modal-img {
+	width: 100%;
+}
+
+.modal-descr {
+	padding-top: 25px;
+}
+
+
 /* --------- CLIENTS --------- */
 .sec-clients {
 	background-color: #eee;
