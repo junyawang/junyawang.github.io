@@ -47,6 +47,10 @@ Light-orange-grey (placeholder): #EDECE8;
 	cursor: pointer;
 }
 
+.clickable {
+	cursor: pointer;
+}
+
 .noPadding{
 	padding:0 0 0 0;
 }
@@ -237,6 +241,17 @@ a.symbol:hover {
 .tag:not(:first-child) {
 	margin-left: 10px;
 }*/
+
+
+/******* popover *******/
+.popover {
+	max-width: 600px;
+	font-weight: 400;
+	box-shadow: none;
+	webkit-box-shadow: none;
+}
+
+
 
 /******* form *******/
 
@@ -575,10 +590,6 @@ span.project-title{
 	padding-right: 1px;
 }
 
-.with-modal {
-	cursor: pointer;
-}
-
 div.project-content {
 	background-color: #333;
 }
@@ -672,10 +683,6 @@ h1.about-header-text {
 	text-align: center;
 	color: white;
 }
-
-/*.company-img {
-	width: 100%;
-}*/
 
 .sec-exec {
 	background-color: #f7f7f7;
