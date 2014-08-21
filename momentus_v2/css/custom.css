@@ -89,6 +89,14 @@ ul {
 	margin: 0 auto;
 	margin-top: -12px;
 }
+
+hr {
+	width: 60px;
+	margin-top: 30px;
+	margin-left: 0;
+	border-color: #ff9901;
+}
+
 /* --------- TYPOGRAPHY ---------- */
 
 body{
@@ -684,6 +692,18 @@ h1.about-header-text {
 	color: white;
 }
 
+.sec-story {
+	background-color: #ff9901;
+	padding-bottom: 60px;
+}
+
+.sec-story h1 {
+	margin: 40px auto;
+}
+.sec-story p {
+	font-size: 1.2em;
+}
+
 .sec-exec {
 	background-color: #f7f7f7;
 	padding-top: 50px;
@@ -694,31 +714,38 @@ h1.about-header-text {
 	color: #121023;
 }
 
+.panel-exec {
+	margin: 50px auto;
+}
+
 .exec-img {
-	max-width: 200px;
 	margin: 0 auto;
 }
 
 .exec-name,
 .exec-position,
 .exec-bio {
-	text-align: center;
+	text-align: left;
 }
 
 .exec-name {
 	padding-top: 10px;
-	font-weight: 600;
+	font-weight: 300;
+	font-size: 1.8em;
 }
 
 .exec-position {
-	font-size: 1em;
-	font-style: italic;
-	font-weight: 300;
+	font-size: 1.1em;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #ff9901;
 }
 
 .exec-bio {
 	padding-top: 20px;
-	font-weight: 400;
+	font-weight: 300;
+	font-size: 1.1em;
+	color: #888;
 }
 
 
