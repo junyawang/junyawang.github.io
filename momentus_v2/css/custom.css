@@ -148,7 +148,7 @@ label {
 }
 
 span {
-	font-weight: 400;
+	font-weight: bolder;
 }
 
 a {
@@ -234,9 +234,8 @@ a.symbol:hover {
 .btn-transparent:hover,
 .btn-transparent:focus,
 .btn-transparent:active {
-	background-color: orange;
-	color: black;
-	border: 1px solid orange;
+	background-color: #ffa115;
+	color: white;
 }
 
 /******* tag *******/
@@ -808,31 +807,68 @@ header.career-header {
 	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
+.sec-culture p,
+.sec-exceptional p {
+	color: #666;
+}
+
 .sec-culture {
 	background-color: #f7f7f7;
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
 
-.sec-culture p,
-.sec-exceptional p {
-	color: #666;
+
+.culture-description {
+	padding-top: 50px;
+	padding-bottom: 100px;
 }
 
+.culture-img:not(:first-child) {
+	padding-left: 2px;
+}
+
+/*
 .sec-events {
 	padding-top: 50px;
 	padding-bottom: 50px;
 	background-color: #f7f7f7;
 }
+*/
 
-.event-img:not(:first-child) {
-	padding-left: 2px;
-}
 
 .sec-exceptional {
 	padding-top: 50px;
-	padding-bottom: 50px;
-	background-color: #f7f7f7;
+	padding-bottom: 80px;
+	background-color: #ff9901;
+}
+
+h1.exceptional-title {
+	/*font-size: 1.8em;*/
+}
+
+h2.exceptional-title {
+	text-transform: none;
+	font-size: 1.8em;
+}
+
+.exceptional-description p {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	color: #121023;
+}
+
+.exceptional-description a {
+	color: #121023;
+}
+
+.exceptional-description a:hover {
+	color: #555;
+}
+
+.exceptional-description .btn {
+	color: white;
+	margin-top: 40px;
 }
 
 /*-------------------------------------------
