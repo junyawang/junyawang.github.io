@@ -137,6 +137,12 @@ h3 {
 	font-size: 1.2em;
 }
 
+p {
+	font-size: 1.2em;
+	font-weight: 300;
+	color: #222;
+}
+
 label {
 	color: black;
 }
@@ -479,6 +485,16 @@ footer {
 	margin-bottom: 70px;
 }
 
+address,
+.google-maps {
+	color: #e2e2e2;
+}
+
+.google-maps {
+	font-weight: 400;
+	font-size: 0.8em;
+}
+
 .fa-map-marker,
 .fa-phone,
 .fa-envelope-o {
@@ -490,7 +506,7 @@ footer {
 
 /* --------- HEADER ---------- */
 header.index-header {
-	background-image: url(../img/header_bg.jpg);
+	background-image: url(../img/career_banner.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% auto;
@@ -574,6 +590,7 @@ h3.service-point {
 p.service-point-descr {
 	padding-top: 20px;
 	text-align: center;
+	font-size: 1em;
 	font-weight: 300;
 	color: #222;
 }
@@ -758,17 +775,36 @@ h1.about-header-text {
 
 /* =========== CAREER PAGE============ */
 header.career-header {
-	background-image: url(../img/header_bg.jpg);
+	background-image: url(../img/career_banner.jpg);
 	background-attachment: fixed;
 	background-size: 100% auto;
 }
 
-.career-header .header-description {
-	padding: 20% 0 5% 0;
+.career-header h1 {
+	padding: 18% 0 5% 0;
 	text-align: center;
 	font-weight: 300;
 	font-size: 3.4em;
 	color: white;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.career-header h2 {
+	padding: 5% 0 3% 0;
+	text-align: center;
+	font-weight: 300;
+	font-size: 2em;
+	color: white;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.career-header h3 {
+	padding: 0 0 5% 0;
+	text-align: center;
+	font-weight: 300;
+	font-size: 1.6em;
+	color: white;
+	text-transform: uppercase;
 	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
@@ -778,8 +814,25 @@ header.career-header {
 	padding-bottom: 50px;
 }
 
-.event-img {
-	margin: 0 auto;
+.sec-culture p,
+.sec-exceptional p {
+	color: #666;
+}
+
+.sec-events {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #f7f7f7;
+}
+
+.event-img:not(:first-child) {
+	padding-left: 2px;
+}
+
+.sec-exceptional {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #f7f7f7;
 }
 
 /*-------------------------------------------
