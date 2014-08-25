@@ -37,33 +37,29 @@
 
     <nav class="navbar navbar-fixed-top navbar-transparent" role="navigation">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <!-- Logo -->
-                <a class="navbar-brand navbar-left page-scroll" href="index.html">
-                    <span class="logo">
-                        <img class= "img-logo-white" src="img/logo/momentus_logo_white.png" alt="">
-                        <img class= "img-logo-dark" src="img/logo/momentus_logo_dark.png" alt="">
-                    </span>
-                </a>
-                
                 <!-- Toggle -->
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <i class="fa fa-bars"></i>
-                </button>           
+                </button>
+                <!-- Logo -->
+                <a class="navbar-brand page-scroll" href="index.html">
+                    <img class= "img-logo-white" src="img/logo/momentus_logo_white.png" alt="">
+                    <img class= "img-logo-dark" src="img/logo/momentus_logo_dark.png" alt="">
+                </a>               
             </div>
             
             <!-- Menus -->
-            <div class="collapse navbar-collapse">
+            <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="page-scroll">
-                        <a href="about.html" class="navbar-text">About</a>
+                        <a href="about.html">About</a>
                     </li>
                     <li class="page-scroll navbar-active">
-                        <a href="career.html" class="navbar-text">Career</a>
+                        <a href="career.html">Career</a>
                     </li>
-                    <li class="page-scroll navbar-menu">
-                        <a href="#contact" class="navbar-text contactScroll">Contact</a>
+                    <li class="page-scroll">
+                        <a href="#contact" class="contactScroll">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -75,53 +71,80 @@
     <!-- HEADER -->
     <header class="career-header">
         <div class="container noPadding">
-            <div class="row">
-                <h1 class="col-md-8 col-md-offset-2 header-description">
-                    Brilliant <span>Engineering</span><br /> 
-                    Meets Beautiful <span>Design</span>
-                </h1>
+            <h1 class="col-md-8 col-md-offset-2">
+                Brilliant <span>Engineering</span><br /> 
+                Meets Beautiful <span>Design</span>
+            </h1>
 
-              <!--   <h2 class="col-md-8 col-md-offset-2 header-description">
-                    Careers at Momentus Software
-                </h2>
-                <h3 class="col-md-8 col-md-offset-2 header-description">
-                    Join the team
-                </h3> -->
+          <!--   <h2 class="col-md-8 col-md-offset-2 header-description">
+                Careers at Momentus Software
+            </h2>
+            <h3 class="col-md-8 col-md-offset-2 header-description">
+                Join the team
+            </h3> -->
 
-                <span class="col-md-2 col-md-offset-5 col-sm-12 col-xs-12 header-arrow">
-                    <i class="fa fa-chevron-down animated bounce infinite"></i>
-                </span>
-            </div>
+            <span class="col-md-2 col-md-offset-5 col-sm-12 col-xs-12 header-arrow">
+                <i class="fa fa-chevron-down animated bounce infinite"></i>
+            </span>
         </div>
     </header>
     
     <!-- CULTURE -->
     <section id="culture" class="sec-culture">
         <div class="container">
-            <div class="row">
-                <h1 class="sec-title culture-title">Momentus Culture</h1>
-            </div>
+            <h1 class="sec-title culture-title">Momentus Culture</h1>
 
-            <div class="row culture-description">
+            <div class="culture-description">
                 <p>Momentus owes every product and project to its teams. The Principals have over 40 years of pure mobile experience combined. But more importantly they and Team-Members have worked with each other spanning multiple companies – counting names like Adobe Systems, Google, Apple, NOOK and smaller Silicon Valley startups alike.</p>
                 
                 <p>Momentus Software is based in Vancouver, BC. with development teams based across Vancouver, Silicon Valley and Auckland.</p>
-            </div><!-- /.row-->
         </div>
-        <div class="container-full">
+    </section>
+
+    <section class="sec-gallery">
+        <!-- Picture Gallery - Tile -->
+        <div class="container noPadding visible-lg visible-md visible-sm hidden-xs">
             <div class="row">
-                <div class="col-md-4 col-sm-4 col-xs-12 noPadding culture-img">
+                <div class="col-md-4 col-sm-4 noPadding culture-img">
                     <img class="img-responsive" src="img/culture/culture1.jpg" alt="">
                 </div>
                 
-                <div class="col-md-4 col-sm-4 col-xs-12 noPadding culture-img">
+                <div class="col-md-4 col-sm-4 noPadding culture-img">
                     <img class="img-responsive" src="img/culture/culture2.jpg" alt="">
                 </div>
                 
-                <div class="col-md-4 col-sm-4 col-xs-12 noPadding culture-img">
+                <div class="col-md-4 col-sm-4 noPadding culture-img">
                     <img class="img-responsive" src="img/culture/culture3.jpg" alt="">
                 </div>
             </div><!-- /.row-->
+        </div>
+
+        <!-- Picture Gallery - Slider -->
+        <div id="carousel-example-generic" class="carousel slide hidden-lg hidden-md hidden-sm visible-xs" data-ride="carousel">
+          <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img class="img-responsive" src="img/culture/culture1.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="img/culture/culture2.jpg" alt="">
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
         </div>
     </section>
 
@@ -136,7 +159,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tellus dui, porta ut elementum et, vestibulum faucibus lectus. Maecenas non facilisis massa. Proin eget diam vehicula urna mollis aliquam quis sed ipsum. Quisque venenatis eget velit sit amet viverra. Quisque finibus nisi quis diam convallis maximus a sit amet felis. Maecenas nec augue nisi. Pellentesque elementum ex mi, vel tempus odio condimentum nec. Nam faucibus ut sapien sit amet posuere. Vestibulum bibendum placerat dui, vitae malesuada justo viverra eget. Donec ac volutpat mauris. Praesent dui quam, gravida non consectetur at, laoreet quis massa.</p>
             </div>
         </div>
-        <div class="container-full">
+        <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-4 col-xs-12 noPadding event-img">
                     <img class="img-responsive" src="img/culture/event1.jpg" alt="">
@@ -159,15 +182,15 @@
         <div class="container">
             <div class="row">
                 <h1 class="sec-title exceptional-title">Job Positions</h1>
-                <h2 class="sec-title exceptional-title">We currently have <span>no</span> featured job positions.<br>
+                <h2 class="sec-title exceptional-title">We currently have no featured job positions.<br>
                 But we are always looking for <span>exceptional rockstars</span>.</h2>
             </div>
 
             <div class="row exceptional-description">
                 <p>Please send an email to <span><a href="mailto:work@momentussoftware.com">work@momentussoftware.com</a></span> with the desired position/job title in the subject. Include a helpful message introducing yourself in the body and links instead of attachments wherever possible.</p>
                 
-                <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
-                    <a href="mailto:work@momentussoftware.com" class="btn btn-lg btn-transparent btn-block">Submit CV</a>
+                <div class="alignCenter">
+                    <a href="mailto:work@momentussoftware.com" class="btn btn-lg btn-transparent">Submit Your Resume</a>
                 </div>
             </div><!-- /.row-->
         </div>
@@ -320,9 +343,6 @@
         </div>
     </footer>
 
-    <!-- Retina Images Plugin -->
-    <script type="text/javascript" src="js/retina.min.js"></script>
-
     <!-- Nav bar background color change -->
     <script type="text/javascript">
          $(window).scroll(function() {    
@@ -336,7 +356,7 @@
                 $(".fa-chevron-down").addClass("bounce infinite");
             }
 
-            if (scroll >= 200) {
+            if (scroll >= 50) {
                  $("nav").addClass("navbar-white");
             } else {
                  $("nav").removeClass("navbar-white");

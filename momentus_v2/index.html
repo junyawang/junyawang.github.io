@@ -40,66 +40,57 @@
         
     <nav class="navbar navbar-fixed-top navbar-transparent" role="navigation">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <!-- Logo -->
-                <a class="navbar-brand navbar-left page-scroll" href="index.html">
-                    <span class="logo">
-                        <img class= "img-logo-white" src="img/logo/momentus_logo_white.png" alt="">
-                        <img class= "img-logo-dark" src="img/logo/momentus_logo_dark.png" alt="">
-                    </span>
-                </a>
-                
                 <!-- Toggle -->
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <i class="fa fa-bars"></i>
-                </button>           
+                </button>
+                <!-- Logo -->
+                <a class="navbar-brand page-scroll" href="index.html">
+                    <img class="img-logo-white" src="img/logo/momentus_logo_white.png" alt="">
+                    <img class="img-logo-dark" src="img/logo/momentus_logo_dark.png" alt="">
+                </a>
             </div>
-            
+
             <!-- Menus -->
-            <div class="collapse navbar-collapse">
+            <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="page-scroll">
-                        <a href="about.html" class="navbar-text">About</a>
+                        <a href="about.html">About</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="career.html" class="navbar-text">Career</a>
+                        <a href="career.html">Career</a>
                     </li>
-                    <li class="page-scroll navbar-menu">
-                        <a href="#contact" class="navbar-text contactScroll">Contact</a>
+                    <li class="page-scroll" class="contactScroll">
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+            </div><!--/.nav-collapse -->
         </div>
-        <!-- /.container -->
     </nav>
    
     <!-- HEADER -->
     <header class="index-header">
         <div class="container noPadding">
-            <div class="row">
-                <h1 class="header-text">
+                <h1>
                     Boutique <span>Software Products</span> and <span>Services</span> company that specializes in helping craft your <span>Mobile</span> story
                 </h1>
-                <h2 class="col-md-8 col-md-offset-2 header-description">
+                <h2>
                     Software powerhouse building highly customized mobile application and platform development for consumer and business
                 </h2>
 
-                <span class="col-md-2 col-md-offset-5 col-sm-12 col-xs-12 header-arrow">
+                <span class="header-arrow">
                     <i class="fa fa-chevron-down animated bounce infinite"></i>
                 </span>
-            </div>
         </div>
     </header>
     
     <!-- SERVICES -->
     <section id="services" class="sec-services">
         <div class="container">
-            <div class="row">
-                <h1 class="sec-title service-title">What we do</h1>
-                <h2 class="service-description">We develop custom web and mobile applications</h2>
-            </div>
+            <h1 class="sec-title service-title">What we do</h1>
+            <h2 class="service-description">We develop custom web and mobile applications</h2>
+            <hr>
 
             <div class="row">
                 <div class="panel-service col-md-4 col-sm-6 col-xs-12">
@@ -155,12 +146,10 @@
     
     <!-- PROJECTS -->
     <section id="projects" class="sec-projects">
-        <div class="container-large">
-
-            <div class="row">
-                <h1 class="sec-title project-title">What we have done</h1>
-                <h2 class="project-description">Here’s a selection of some of our latest work</h2>
-            </div>
+        <div class="container">
+            <h1 class="sec-title project-title">What we have done</h1>
+            <h2 class="project-description">Here’s a selection of some of our latest work</h2>
+            <hr>
 
             <div class="row noPadding">
                 <div class="panel-project noPadding col-md-6 col-sm-12" data-toggle="modal" data-target="#modal-synacor">
@@ -320,70 +309,128 @@
     <!-- CLIENTS -->
     <section id="clients" class="sec-clients">
         <div class="container">
-            <div class="row">
-                <h1 class="sec-title clients-title">Who we are working with</h1>
-            </div>
+            <h1 class="sec-title clients-title">Who we are working with</h1>
+            <hr>
 
             <div class="row">
-                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/starbucks.png" alt="">
+                <div class="col-md-2 col-sm-2 col-xs-4 clients-img">
+                    <img class="img-responsive" src="img/clients/starbucks.png" alt="">
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-4 clients-img">
+                    <img class="img-responsive" src="img/clients/aaa.png" alt="">
+                </div>
                 
-                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/aaa.png" alt="">
-                
-                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/dell.png" alt="">
-                
-                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/auntie-annes.png" alt="">
-                
-                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/first-data.png" alt="">
-                
-                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/cbs-sports.png" alt="">
-                
-                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/synacor.png" alt="">
-                
-                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/fox.png" alt="">
-                
-                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/hotel-tonight.png" alt="">
-                
-                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/ifd.png" alt="">
-                
-                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/mark-anthony-brands.png" alt="">
-                
-                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/micros.png" alt="">
-                
-                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/mikes.png" alt="">
-                
-                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/shakira.png" alt="">
-                
-                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/toyota.png" alt="">
-                
-                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/whole-foods.png" alt="">
-                
-                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/clover.png" alt="">
-                
-                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/izon.png" alt="">
+                <div class="col-md-2 col-sm-2 col-xs-4 clients-img">
+                    <img class="img-responsive" src="img/clients/dell.png" alt="">
+                </div>
 
-                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/tact.png" alt="">
+                <div class="col-md-2 col-sm-2 col-xs-4 clients-img">
+                    <img class="img-responsive" src="img/clients/auntie-annes.png" alt="">
+                </div>
                 
-                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/qualitrol.png" alt="">
+                <div class="col-md-2 col-sm-2 col-xs-4 clients-img">
+                    <img class="img-responsive" src="img/clients/first-data.png" alt="">
+                </div>
                 
-                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/lisnr.png" alt="">
+                <div class="col-md-2 col-sm-2 col-xs-4 clients-img">
+                    <img class="img-responsive" src="img/clients/cbs-sports.png" alt="">
+                </div>
                 
-                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/nordic.png" alt="">
+                <div class="col-md-2 col-sm-2 col-xs-4 clients-img">
+                    <img class="img-responsive" src="img/clients/synacor.png" alt="">
+                </div>
                 
-                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/triplespot.png" alt="">
+                <div class="col-md-2 col-sm-2 col-xs-4 clients-img">
+                    <img class="img-responsive" src="img/clients/fox.png" alt="">
+                </div>
                 
-                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/kromephotos.png" alt="">
+                <div class="col-md-2 col-sm-2 col-xs-4 clients-img">
+                    <img class="img-responsive" src="img/clients/hotel-tonight.png" alt="">
+                </div>
+                
+                <div class="col-md-2 col-sm-2 col-xs-4 clients-img">
+                    <img class="img-responsive" src="img/clients/ifd.png" alt="">
+                </div>
+                
+                <div class="col-md-2 col-sm-2 col-xs-4 clients-img">
+                    <img class="img-responsive" src="img/clients/mark-anthony-brands.png" alt="">
+                </div>
+                
+                <div class="col-md-2 col-sm-2 col-xs-4 clients-img">
+                    <img class="img-responsive" src="img/clients/micros.png" alt="">
+                </div>
+                
+                <div class="col-md-2 col-sm-2 col-xs-4 clients-img">
+                    <img class="img-responsive" src="img/clients/mikes.png" alt="">
+                </div>
+                
+                <div class="col-md-2 col-sm-2 col-xs-4 clients-img">
+                    <img class="img-responsive" src="img/clients/shakira.png" alt="">
+                </div>
+                
+                <div class="col-md-2 col-sm-2 col-xs-4 clients-img">
+                    <img class="img-responsive" src="img/clients/toyota.png" alt="">
+                </div>
+                
+                <div class="col-md-2 col-sm-2 col-xs-4 clients-img">
+                    <img class="img-responsive" src="img/clients/whole-foods.png" alt="">
+                </div>
 
-                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/homejoy.png" alt="">
+                <div class="col-md-2 col-sm-2 col-xs-4 clients-img">
+                    <img class="img-responsive" src="img/clients/clover.png" alt="">
+                </div>
                 
-                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/insta_poker.png" alt="">
+                <div class="col-md-2 col-sm-2 col-xs-4 clients-img">
+                    <img class="img-responsive" src="img/clients/izon.png" alt="">
+                </div>
+
+                <div class="col-md-2 col-sm-2 col-xs-4 clients-img">
+                    <img class="img-responsive" src="img/clients/tact.png" alt="">
+                </div>
                 
-                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/verizon.png" alt="">
+                <div class="col-md-2 col-sm-2 col-xs-4 clients-img">
+                    <img class="img-responsive" src="img/clients/qualitrol.png" alt="">
+                </div>
                 
-                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/clarifai.png" alt="">
+                <div class="col-md-2 col-sm-2 col-xs-4 clients-img">
+                    <img class="img-responsive" src="img/clients/lisnr.png" alt="">
+                </div>
                 
-                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/spacio.png" alt="">
+                <div class="col-md-2 col-sm-2 col-xs-4 clients-img">
+                    <img class="img-responsive" src="img/clients/nordic.png" alt="">
+                </div>
                 
-                <img class="col-md-2 col-sm-4 col-xs-6 img-responsive clients-img" src="img/clients/alephcloud.png" alt="">
+                <div class="col-md-2 col-sm-2 col-xs-4 clients-img">
+                    <img class="img-responsive" src="img/clients/triplespot.png" alt="">
+                </div>
+                
+                <div class="col-md-2 col-sm-2 col-xs-4 clients-img">
+                    <img class="img-responsive" src="img/clients/kromephotos.png" alt="">
+                </div>
+
+                <div class="col-md-2 col-sm-2 col-xs-4 clients-img">
+                    <img class="img-responsive" src="img/clients/homejoy.png" alt="">
+                </div>
+                
+                <div class="col-md-2 col-sm-2 col-xs-4 clients-img">
+                    <img class="img-responsive" src="img/clients/insta_poker.png" alt="">
+                </div>
+                
+                <div class="col-md-2 col-sm-2 col-xs-4 clients-img">
+                    <img class="img-responsive" src="img/clients/verizon.png" alt="">
+                </div>
+                
+                <div class="col-md-2 col-sm-2 col-xs-4 clients-img">
+                    <img class="img-responsive" src="img/clients/clarifai.png" alt="">
+                </div>
+                
+                <div class="col-md-2 col-sm-2 col-xs-4 clients-img">
+                    <img class="img-responsive" src="img/clients/spacio.png" alt="">
+                </div>
+                
+                <div class="col-md-2 col-sm-2 col-xs-4 clients-img">
+                    <img class="img-responsive" src="img/clients/alephcloud.png" alt="">
+                </div>
             </div>
         </div>
     </section>
@@ -393,9 +440,8 @@
         <div class="container">
             <!-- CONTACT -->
             <section class="sec-contact">
+                <h2 class="sec-title footer-title">Let's Work Together!</h2>
                 <div class="row">
-                    <h2 class="sec-title footer-title">Let's Work Together!</h2>
-
                     <!-- Contact form-->
                     <div class="col-md-12">
 
@@ -467,7 +513,7 @@
                 <div class="row">
                     
                     <!-- Vancouver -->
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-3 col-sm-6 panel-location">
                         <h4>Vancouver, BC - Headquaters</h4>
                         <address>
                             938 Howe Street, 
@@ -482,7 +528,7 @@
                     </div>
 
                     <!-- San Fran -->
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-3 col-sm-6 panel-location">
                         <h4>SF Bay Area, California</h4>
                         <address>
                             3900 Newparkmall Drive, 
@@ -495,7 +541,7 @@
                         </span>
                     </div>
                     
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-3 col-sm-6 panel-location">
                         <h4>Give us a call</h4>
                         <address>
                             <i class="fa fa-phone"></i>
@@ -503,7 +549,7 @@
                         </address>
                     </div>
 
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-3 col-sm-6 panel-location">
                         <h4>Email</h4>
                         <address>
                             <i class="fa fa-envelope-o"></i>
@@ -534,9 +580,6 @@
             </section>
         </div>
     </footer>
-
-    <!-- Retina Images Plugin -->
-    <script type="text/javascript" src="js/retina.min.js"></script>
     
     <!-- ScrollReveal.js-->
     <script src='js/scrollReveal.js-master/scrollReveal.js'></script>
@@ -558,7 +601,7 @@
                 $(".fa-chevron-down").addClass("bounce infinite");
             }
 
-            if (scroll >= 200) {
+            if (scroll >= 50) {
                 $("nav").addClass("navbar-white");
                 
              } else {
