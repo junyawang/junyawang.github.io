@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,7 +24,6 @@
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
     
-
     <!-- JS -->
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -147,8 +147,8 @@
     <!-- PROJECTS -->
     <section id="projects" class="sec-projects">
         <div class="container">
-            <h1 class="sec-title project-title">What we have done</h1>
-            <h2 class="project-description">Here’s a selection of some of our latest work</h2>
+            <h1 class="sec-title">What we have done</h1>
+            <h2>Here’s a selection of some of our latest work</h2>
             <hr>
 
             <div class="row noPadding">
@@ -440,10 +440,11 @@
         <div class="container">
             <!-- CONTACT -->
             <section class="sec-contact">
-                <h2 class="sec-title footer-title">Let's Work Together!</h2>
                 <div class="row">
+                    <h2 class="sec-title footer-title">Let's Work Together!</h2>
+
                     <!-- Contact form-->
-                    <div class="col-md-12">
+                    <div class="col-md-12 noPadding">
 
                         <form name="sentMessage" id="contactForm" action="index.php" autocomplete="on">
                             
@@ -587,6 +588,11 @@
         window.scrollReveal = new scrollReveal();
     </script>
 
+    <script type="text/javascript">
+        $('.nav a').on('click', function(){
+            $(".navbar-toggle").click() //bootstrap 3.x by Richard
+        });
+    </script>
 
     <!-- Nav bar background color change -->
     <script type="text/javascript">

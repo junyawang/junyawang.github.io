@@ -283,8 +283,16 @@ a.symbol:hover {
     transition: all .5s;
 }
 
+.form-group {
+	margin-bottom: 5px;
+}
+
 .form-group:not(:first-child){
-	padding-left: 20px;
+	padding-left: 12px;
+}
+
+.form-send {
+	margin-top: 10px;
 }
 
 .form-control::-moz-placeholder {
@@ -563,7 +571,6 @@ header.index-header {
 }
 
 .service-title {
-	padding-top: 20px;
 	margin-bottom: 5px;
 }
 
@@ -620,8 +627,7 @@ p.service-point-descr {
 	width: 90%;
 }
 
-.project-description {
-	margin: 10px 0 50px 0;
+.sec-projects h2 {
 	text-align: center;
 }
 
@@ -754,10 +760,6 @@ h1.about-header-text {
 	padding-bottom: 50px;
 }
 
-.sec-exec .container {
-	width: 90%;
-}
-
 .exec-title {
 	color: #121023;
 }
@@ -846,7 +848,7 @@ header.career-header {
 
 .sec-culture {
 	background-color: #f7f7f7;
-	padding-top: 50px;
+	padding-top: 30px;
 }
 
 .sec-gallery .container {
@@ -875,35 +877,35 @@ header.career-header {
 	background-color: #ffa928;
 }
 
-h1.exceptional-title {
+.sec-exceptional h1 {
 	/*font-size: 1.8em;*/
 }
 
-h2.exceptional-title {
+.sec-exceptional h2 {
 	text-transform: none;
 	font-size: 1.8em;
 }
 
-.exceptional-description p {
+.sec-exceptional p {
 	padding-top: 30px;
 	padding-bottom: 30px;
 	color: #121023;
 }
 
-.exceptional-description a {
+.sec-exceptional p a {
 	color: #121023;
 }
 
-.exceptional-description a:hover {
+.sec-exceptional a:hover {
 	color: #555;
 }
 
-.exceptional-description .btn {
+.sec-exceptinal .btn {
 	margin-top: 40px;
 	color: white;
 }
 
-.exceptional-description .btn:hover {
+.sec-exceptional .btn:hover {
 	background-color: #ffb13c;
 	color: white;
 }
@@ -992,6 +994,8 @@ h2.exceptional-title {
 		padding: 5px 5px;
 	}
 
+	/* About */
+
 	/* Career */
 	.career-header h1 {
 		padding: 18% 0 20% 0;
@@ -1008,6 +1012,11 @@ h2.exceptional-title {
 
 	h2 {
 		font-size: 1em;
+	}
+
+	hr {
+		margin-top: 20px;
+		margin-bottom: 20px;
 	}
 
 	.sec-title {
@@ -1040,6 +1049,15 @@ h2.exceptional-title {
 	.index-header h2 {
 		padding: 3% 0 7% 0;
 		font-size: 1em;
+	}
+
+	.panel-service {
+		margin-top: 20px;
+	}
+
+	.service-icon {
+		max-width: 150px;
+		max-height: 150px;
 	}
 
 	.clients-img {
@@ -1081,11 +1099,16 @@ h2.exceptional-title {
 	
 	/* Global */
 	h1 {
-		font-size: 1.4em;
+		font-size: 1.6em;
 	}
 
 	h2 {
 		font-size: 0.8em;
+	}
+
+	hr {
+		margin-top: 20px;
+		margin-bottom: 20px;
 	}
 
 	.sec-title {
@@ -1117,12 +1140,35 @@ h2.exceptional-title {
 		text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
 	}
 
+	.sec-exceptional h1 {
+		/*font-size: 1.8em;*/
+	}
+
+	.sec-exceptional h2 {
+		font-size: 1.6em;
+		margin-top: 1em;
+	}
+
+	.culture-description {
+		padding-top: 20px;
+		padding-bottom: 40px;
+	}
+
 	footer {
 		padding-top: 10px;
 	}
 
+	footer .sec-title {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+
 	footer .sec-location {
 		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	footer .panel-location {
 		padding-bottom: 20px;
 	}
 }
