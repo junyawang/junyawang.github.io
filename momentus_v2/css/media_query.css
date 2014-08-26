@@ -1,0 +1,218 @@
+/*-------------------------------------------
+              MEDIA QUERIES
+---------------------------------------------*/
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	/* GLOBAL */
+	h1 {
+		font-size: 1.6em;
+	}
+
+	h2 {
+		font-size: 1em;
+	}
+
+	hr {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	.form-group:not(:first-child){
+		padding-left: 12px;
+	}
+
+	.sec-title {
+		margin-top: 8px;
+		margin-bottom: 8px;
+	}
+
+	/* NAVBAR */
+	/* Navbar Transparent - Collapse */
+	/* bg */
+	.navbar-transparent .navbar-collapse {
+		background-color: transparent;
+	}
+
+	/* link */
+	.navbar-transparent .navbar-collapse .navbar-nav>li>a{
+		color: white;
+	}
+
+	/* hover link */
+	.navbar-transparent .navbar-collapse .navbar-nav>li>a:hover {
+		background-color: rgba(0,0,0,0.4);
+		color: #ff9901;
+	}
+
+	/* active link*/
+	.navbar-transparent .navbar-collapse .navbar-nav>.navbar-active>a{
+		color: #ff9901;
+	}
+
+	/* Navbar White - Collapse */
+	/* link */
+	.navbar-white .navbar-collapse .navbar-nav>li>a {
+		color: #121023;
+	}
+
+	.navbar-white .navbar-collapse .navbar-nav>li>a:hover {
+		background-color: rgba(0,0,0,0.1);
+	}
+
+	/* FOOTER */
+	.footer-content {
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	/* INDEX */
+	.index-header h1{
+		padding: 20% 0 5% 0;
+		font-size: 3.3em;
+	}
+
+	.index-header h2 {
+		padding: 3% 0 7% 0;
+		font-size: 1.4em;
+	}
+
+	.panel-service {
+		margin-top: 20px;
+	}
+
+	.service-icon {
+		max-width: 150px;
+		max-height: 150px;
+	}
+
+	.clients-img {
+		padding: 5px 5px;
+		height: 80px;
+	}
+
+	/* About */
+	.panel-exec {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	.panel-exec hr {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		width: 15%;
+	}
+
+	/* Career */
+	.career-header h1 {
+		padding: 18% 0 20% 0;
+		font-size: 3.0em;
+		text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+	}
+
+	.sec-jobs .panel-job:not(:first-child) {
+		margin-top: 0px;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	/* Global */
+	.form-group:not(:first-child){
+		padding-left: 12px;
+	}
+
+	/* Index */
+	.index-header h1{
+		padding: 20% 0 5% 0;
+		font-size: 3.3em;
+	}
+
+	.clients-img {
+		padding: 5px 5px;
+	}
+
+	/* About */
+
+	/* Career */
+	.career-header h1 {
+		padding: 18% 0 20% 0;
+		font-size: 3.3em;
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	/* Global */
+
+	h1 {
+		font-size: 1.6em;
+	}
+
+	h2 {
+		font-size: 1.2em;
+	}
+
+	hr {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+
+	.sec-title {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	/* Footer */
+	footer {
+		padding-top: 100px;
+	}
+
+	footer .sec-title {
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+
+	footer .sec-location {
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+
+	footer .panel-location {
+		padding-bottom: 30px;
+	}
+
+	/* Index */
+	.index-header h1{
+		padding: 20% 0 5% 0;
+		font-size: 3.2em;
+	}
+
+	.index-header h2 {
+		padding: 3% 0 7% 0;
+		font-size: 1.6em;
+	}
+
+	/* About */
+	.panel-exec {
+		margin: 50px auto;
+	}
+
+	/* Career */
+	.career-header h1 {
+		padding: 18% 0 5% 0;
+		font-size: 3.2em;
+	}
+
+	.sec-exceptional h2 {
+		font-size: 1.8em;
+	}
+
+	.culture-description {
+		padding-top: 20px;
+		padding-bottom: 80px;
+	}
+}
