@@ -1088,7 +1088,6 @@ header.career-header {
 		text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
 	}
 
-
 	/* Footer */
 	.footer-content {
 		margin: 0 auto;
@@ -1160,6 +1159,7 @@ header.career-header {
 		padding-bottom: 40px;
 	}
 
+	/* Footer */
 	footer {
 		padding-top: 10px;
 	}
@@ -1176,6 +1176,10 @@ header.career-header {
 
 	footer .panel-location {
 		padding-bottom: 20px;
+	}
+
+	.form-group:not(:first-child) {
+		padding-left: 0px;
 	}
 }
 
