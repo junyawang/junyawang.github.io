@@ -867,8 +867,8 @@ header.career-header {
 }
 
 .culture-description {
-	padding-top: 50px;
-	padding-bottom: 100px;
+	padding-top: 20px;
+	padding-bottom: 80px;
 }
 
 .sec-exceptional {
@@ -982,7 +982,7 @@ header.career-header {
 	
 	/* Global */
 	.form-group:not(:first-child){
-		padding-left: 0px;
+		padding-left: 15px;
 	}
 
 	.header-arrow {
@@ -1015,8 +1015,12 @@ header.career-header {
 	}
 
 	hr {
-		margin-top: 20px;
-		margin-bottom: 20px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	.form-group:not(:first-child){
+		padding-left: 15px;
 	}
 
 	.sec-title {
@@ -1043,12 +1047,12 @@ header.career-header {
 	/* Index */
 	.index-header h1{
 		padding: 20% 0 5% 0;
-		font-size: 1.6em;
+		font-size: 2em;
 	}
 
 	.index-header h2 {
 		padding: 3% 0 7% 0;
-		font-size: 1em;
+		font-size: 1.4em;
 	}
 
 	.panel-service {
@@ -1084,13 +1088,15 @@ header.career-header {
 		text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
 	}
 
+
+	/* Footer */
 	.footer-content {
 		margin: 0 auto;
 		text-align: center;
 	}
 
 	.form-group:not(:first-child){
-		padding-left: 0px;
+		padding-left: 15px;
 	}
 }
 
@@ -1107,8 +1113,8 @@ header.career-header {
 	}
 
 	hr {
-		margin-top: 20px;
-		margin-bottom: 20px;
+		margin-top: 30px;
+		margin-bottom: 30px;
 	}
 
 	.sec-title {
