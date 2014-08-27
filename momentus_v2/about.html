@@ -16,6 +16,7 @@
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link href="css/custom.css" rel="stylesheet" type="text/css">
     <link href="css/media_query.css" rel="stylesheet" type="text/css">
 
@@ -72,14 +73,17 @@
    
     <!-- HEADER -->
     <header class="about-header">
-        <div class="container noPadding"></div>
+        <div class="container noPadding">
+            <span class="header-arrow visible-md visible-lg">
+                <i class="fa fa-chevron-down animated bounce infinite"></i>
+            </span>
+        </div>
     </header>
     
     <!-- STORY -->
     <section id="story" class="sec-story">
         <div class="container">
             <h1 class="sec-title story-title">Our Story</h1>
-
             <div>
                 <p>Founded in October 2012, Momentus Software is a Vancouver-based startup specializing in building next-gen apps for mobile and tablet devices. We are your one-stop development shop for native mobile application development (iOS, Android, Windows Phone) with in-house expertise in User Interface/Experience, Graphics, OpenGL, Embedded Technology, Mobile and Enterprise Security, Analytics and Advertising Integration.</p>
 
@@ -308,7 +312,7 @@
 
     <!-- Nav bar background color change -->
     <script type="text/javascript">
-         $(window).scroll(function() {    
+        $(window).scroll(function() {    
             var scroll = $(window).scrollTop();
 
             if (scroll >= 50) {
@@ -326,32 +330,24 @@
                 $("nav").removeClass("navbar-white");
             }
 
-         });
+        });
          
-         $(".contactScroll").click(function() {
-             $('html, body').animate({
-                 scrollTop: $("#contact").offset().top
-             }, 700);
-         });
+        $(".contactScroll").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#contact").offset().top
+            }, 700);
+        });
 
-          $(".go-to-top").click(function() {
+        $(".header-arrow").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#story").offset().top
+            }, 700);
+        });
+
+        $(".go-to-top").click(function() {
             $('html, body').animate({
                 scrollTop: $("#page-top").offset().top
             }, 700);
-        });
-    </script>
-
-    <script type="text/javascript">
-        $('[data-toggle="popover"]').popover();
-        
-        $('body').on('click', function (e) {
-            $('[data-toggle="popover"]').each(function () {
-                //the 'is' for buttons that trigger popups
-                //the 'has' for icons within a button that triggers a popup
-                if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
-                    $(this).popover('hide');
-                }
-            });
         });
     </script>
 </body>

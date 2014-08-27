@@ -190,7 +190,10 @@
 	}
 
 	/* About */
-
+	header.about-header {
+		padding: 5% 0 5% 0;
+	}
+	
 	/* Career */
 	.career-header h1 {
 		padding: 18% 0 20% 0;
@@ -210,8 +213,7 @@
 
 /* Large devices (large desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-	/* Global */
-
+	/* Global */s
 	h1 {
 		font-size: 1.6em;
 	}
@@ -261,6 +263,10 @@
 	}
 
 	/* About */
+	.about-header .header-arrow {
+		padding: 48% 0 0 0;
+	}
+
 	.panel-exec {
 		margin: 50px auto;
 	}

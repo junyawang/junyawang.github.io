@@ -808,6 +808,10 @@ header.about-header {
 	width: 100%;
 }
 
+.about-header .header-arrow {
+	padding: 50% 0 0 0;
+}
+
 h1.about-header-text {
 	text-align: center;
 	color: white;
