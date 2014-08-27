@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Momentus Software - Career</title>
+    <title>Career | Momentus Software</title>
     
     
     <link rel="shortcut icon" href="img/favico.ico" />
@@ -77,13 +77,6 @@
                 Brilliant <span>Engineering</span><br /> 
                 Meets Beautiful <span>Design</span>
             </h1>
-
-          <!--   <h2 class="col-md-8 col-md-offset-2 header-description">
-                Careers at Momentus Software
-            </h2>
-            <h3 class="col-md-8 col-md-offset-2 header-description">
-                Join the team
-            </h3> -->
         </div>
     </header>
     
@@ -149,24 +142,31 @@
     <!-- JOB POSITIONS -->
     <section id="jobs" class="sec-jobs">
         <div class="container">
-            <h1 class="sec-title">Grow with us!</h1>
+            <h1 class="sec-title">Current Vacancies</h1>
+            <h2>Grow with us!</h2>
 
             <div class="row">
-                <div class="col-md-4 col-md-offset-1 col-sm-6 panel-job">
-                    <h3>Inside Sales Representative</h3>
-                    <hr>
-                    <h4>Vancouver, BC</h4>
-                    <h5>Full Time</h5>
-                    <a class="btn btn-orange" href="#">Read More</a>
-                </div>
+                <a href="inside_sales_rep.html">
+                    <div class="col-md-6 col-sm-6 panel-job">
+                        <h3>Inside Sales Representative</h3>
+                        <h4>Sales</h4>
+                        <hr>
+                        <h5>Vancouver, BC</h5>
+                        <h6>Full Time</h6>
+                        <a class="btn btn-orange hidden-md hidden-lg" href="#">Read More</a>
+                    </div>
+                </a>
 
-                <div class="col-md-4 col-md-offset-2 col-sm-6 panel-job">
-                    <h3>iOS Developer</h3>
-                    <hr>
-                    <h4>Vancouver, BC</h4>
-                    <h5>Full Time</h5>
-                    <a class="btn btn-orange" href="#">Read More</a>
-                </div>
+                <a href="sr_ios_dev.html">
+                    <div class="col-md-6 col-sm-6 panel-job">
+                        <h3>Senior iOS Developer</h3>
+                        <h4>Engineering</h4>
+                        <hr>
+                        <h5>Vancouver, BC</h5>
+                        <h6>Full Time</h6>
+                        <a class="btn btn-orange hidden-md hidden-lg" href="#">Read More</a>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
@@ -340,6 +340,10 @@
         </div>
     </footer>
 
+    <a href="#page-top" class="go-to-top visible-md visible-lg">
+        <i class="fa fa-arrow-up"></i>
+    </a>
+
     <!-- Nav bar background color change -->
     <script type="text/javascript">
          $(window).scroll(function() {    
@@ -369,6 +373,12 @@
         $(".header-arrow").click(function() {
             $('html, body').animate({
                 scrollTop: $("#culture").offset().top
+            }, 700);
+        });
+
+         $(".go-to-top").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#page-top").offset().top
             }, 700);
         });
     </script>

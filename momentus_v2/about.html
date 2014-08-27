@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Momentus Software - About</title>
+    <title>About | Momentus Software</title>
     
     
     <link rel="shortcut icon" href="img/favico.ico" />
@@ -300,6 +300,10 @@
         </div>
     </footer>
 
+    <a href="#page-top" class="go-to-top visible-md visible-lg">
+        <i class="fa fa-arrow-up"></i>
+    </a>
+
 </div><!--wrapper-->
 
     <!-- Nav bar background color change -->
@@ -329,6 +333,12 @@
                  scrollTop: $("#contact").offset().top
              }, 700);
          });
+
+          $(".go-to-top").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#page-top").offset().top
+            }, 700);
+        });
     </script>
 
     <script type="text/javascript">
