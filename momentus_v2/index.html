@@ -56,6 +56,9 @@
             <!-- Menus -->
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
+                    <li class="page-scroll navbar-active visible-xs">
+                        <a href="index.html">Home</a>
+                    </li>
                     <li class="page-scroll">
                         <a href="about.html">About</a>
                     </li>
@@ -447,8 +450,7 @@
                     <!-- Contact form-->
                     <div class="col-md-12 noPadding">
 
-                        <form name="sentMessage" id="contactForm" action="index.php" autocomplete="on">
-                            
+                        <form name="sentMessage" method="post" id="contactForm" action="contact.php" autocomplete="on">
                             <div class="row">
                                 <!-- First Name -->
                                 <div class="form-group noPadding col-md-6 col-sm-6 floating-label-form-group controls">
@@ -476,7 +478,7 @@
                                 <!-- Phone -->
                                 <div class="form-group noPadding col-md-6 col-sm-6 floating-label-form-group controls">
                                     <span class="iconfont" aria-hidden="true" data-icon="&#xe007;"></span>
-                                    <input type="text" class="form-control input-padding" placeholder="Phone" id="phone" name="phone" required data-validation-required-message="Please enter your phone number.">
+                                    <input type="tel" class="form-control input-padding" placeholder="Phone" id="phone" name="phone" required data-validation-required-message="Please enter your phone number.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
@@ -599,9 +601,9 @@
         });
     </script>
 
-    <!-- Nav bar background color change -->
     <script type="text/javascript">
-         $(window).scroll(function() {    
+        // Nav bar background color change
+        $(window).scroll(function() {    
             var scroll = $(window).scrollTop();
 
             if (scroll >= 50) {
@@ -620,12 +622,13 @@
             }
 
         });
-         
+        
+        // Scroll animation
         $(".contactScroll").click(function() {
             $('html, body').animate({
                 scrollTop: $("#contact").offset().top
             }, 700);
-         });
+        });
 
         $(".header-arrow").click(function() {
             $('html, body').animate({
