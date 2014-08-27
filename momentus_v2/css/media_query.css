@@ -8,6 +8,10 @@
 /* Small devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 	/* GLOBAL */
+	p {
+		line-height: 1.8em;
+	}
+
 	h1 {
 		font-size: 1.6em;
 	}
@@ -82,6 +86,7 @@
 
 	.panel-service {
 		margin-top: 20px;
+		min-height: 350px;
 	}
 
 	.service-icon {
@@ -139,12 +144,31 @@
 		margin-bottom: 2%;
 	}
 
+	.breadcrumb {
+		padding: 3% 0 0 0;
+		font-size: 1.2em;
+	}
+
 	.job-header h1 {
+		padding: 8% 0 0 0;
 		font-size: 2.4em;
+	}
+
+	.job-header ul li {
+		padding: 0 2% 5% 2%;
+		font-size: 1.4em;
 	}
 
 	.sec-job-detail h3 {
 		font-size: 1.6em;
+	}
+
+	.sec-job-detail li {
+		line-height: 2em;
+	}
+
+	.panel-job-detail .btn {
+		margin: 12% 0;
 	}
 }
 
@@ -243,7 +267,7 @@
 
 	/* Career */
 	.career-header h1 {
-		padding: 18% 0 5% 0;
+		padding: 16% 0 16% 0;
 		font-size: 3.2em;
 	}
 

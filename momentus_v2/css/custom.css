@@ -257,7 +257,35 @@ a.symbol:hover {
 	webkit-box-shadow: none;
 }
 
+/******* breadcrumb *******/
+.breadcrumb {
+	padding: 6% 0 0 0;
+	background-color: transparent;
+	font-size: 1em;
+	font-weight: 400;
+}
 
+.breadcrumb > li {
+	display: inline-block;
+}
+
+.breadcrumb > li + li:before {
+	padding: 0 5px;
+	color: #777;
+	content: "/\00a0";
+}
+
+.breadcrumb > .active {
+	color: #777;
+}
+
+.breadcrumb a {
+	color: #ff9901;
+}
+
+.breadcrumb a:hover {
+	color: #ffb13c;
+}
 
 /******* form *******/
 
@@ -624,7 +652,6 @@ header.index-header {
 }
 
 .panel-service {
-	min-height: 320px;
 	margin-top: 30px;
 }
 
@@ -789,6 +816,7 @@ h1.about-header-text {
 .sec-story {
 	background-color: #ffa928;
 	padding-bottom: 60px;
+	box-shadow: 0px -1px 100px 0px rgba(0,0,0,0.2);
 }
 
 .sec-story h1 {
@@ -919,7 +947,6 @@ header.career-header {
 
 .sec-jobs .panel-job {
 	background-color: white;
-	border: 1px solid white;
 	text-align: center;
 	padding: 35px;
 	width: 98%;
@@ -933,7 +960,7 @@ header.career-header {
 }
 
 .sec-jobs .panel-job:hover {
-	border: 1px solid #ff9901;
+	background-color: #f7f7f7;
 	-webkit-transition: all .3s ease;
 	-moz-transition: all .3s ease;
 	-ms-transition: all .3s ease;
@@ -1021,22 +1048,53 @@ header.career-header {
 
 /* =========== JOB DETAIL PAGE============ */
 header.job-header {
-	padding: 10% 0;
-	background-color: #f7f7f7;
-	margin-bottom: 2%;
+	background-image: url(../img/granville_st.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% auto;
 }
 
 .job-header h1 {
-	font-size: 1.6em;
+	padding: 12% 0 1% 0;
+	text-align: center;
+	font-size: 1.3em;
+	color: white;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.job-header hr {
+	width: 80px;
+	margin-top: 4%;
+	margin-bottom: 4%;
+}
+
+.job-header ul {
+	text-align: center;
+}
+
+.job-header ul li {
+	display: inline-block;
+	padding: 1% 2% 5% 2%;
+	font-size: 0.6em;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: #f7f7f7;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
 .sec-job-detail {
-	margin: 5% 0;
+	padding: 2% 0;
 }
 
 .sec-job-detail h3 {
 	font-size: 1.4em;
+	line-height: 1.8em;
+	font-weight: 300;
 	text-transform: uppercase;
+}
+
+.sec-job-detail p {
+	color: #888;
 }
 
 .sec-job-detail ul {
@@ -1044,9 +1102,29 @@ header.job-header {
 	padding-start: 20px;
 	-webkit-padding-start: 20px;
 	font-size: 1.2em;
+	color: #888;
 }
 
+.sec-job-detail li {
+	line-height: 1.6em;
+}
 
+.panel-job-detail {
+	padding: 0.5% 0;
+}
+
+.panel-job-detail a {
+	display: block;
+}
+
+.panel-job-detail .row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.panel-job-detail .btn {
+	margin: 12% 0;
+}
 /*-------------------------------------------
                 ANIMATION
 ---------------------------------------------*/
