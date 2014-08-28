@@ -157,7 +157,13 @@
 
 	.breadcrumb {
 		padding: 3% 0 0 0;
-		font-size: 1.2em;
+		font-size: 1.1em;
+	}
+
+	.breadcrumb > li + li:before {
+		padding: 0 5px;
+		color: #777;
+		content: "/\00a0";
 	}
 
 	.job-header h1 {
