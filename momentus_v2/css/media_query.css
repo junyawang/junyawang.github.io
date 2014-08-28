@@ -57,14 +57,24 @@
 		color: #ff9901;
 	}
 
+	.about-page.navbar-transparent .navbar-collapse .navbar-nav>.navbar-active>a{
+		color: white;
+	}
+
 	/* Navbar White - Collapse */
 	/* link */
 	.navbar-white .navbar-collapse .navbar-nav>li>a {
 		color: #121023;
 	}
-
+	
+	/* hover link */
 	.navbar-white .navbar-collapse .navbar-nav>li>a:hover {
 		background-color: rgba(0,0,0,0.1);
+	}
+
+	/* active link*/
+	.about-page.navbar-white .navbar-collapse .navbar-nav>.navbar-active>a{
+		color: #ff9901;
 	}
 
 	/* FOOTER */
@@ -269,7 +279,7 @@
 
 	/* About */
 	.about-header .header-arrow {
-		padding: 48% 0 0 0;
+		padding: 40% 0 0 0;
 	}
 
 	.panel-exec {
