@@ -8,11 +8,10 @@
 	$phone = $_POST["phone"];
 	$email = $_POST["email"];
 	$message = $_POST["message"];
-	$from = $email;
 	$to = 'junya@momentussoftware.com';
 
-	$subject = 'Momentus Software web form from ' . $fname . $lname;
-	$body = "From: $fname $lname\n Email: $email\n Company: $company\n Phone: $phone\n Message:\n $message";
+	$subject = 'Momentus Software Website Contact Form from '.$fname.' '.$lname;
+	$body = "$message\n \n ---\n \n From: $fname $lname\n Email: $email\n Company: $company\n Phone: $phone\n ";
 
 	if (mail ($to, $subject, $body, $from)) { 
         echo '<p>Your message has been sent!</p>';
