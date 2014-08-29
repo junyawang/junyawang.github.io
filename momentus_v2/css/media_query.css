@@ -122,8 +122,8 @@
 		width: 15%;
 	}
 
-	/* Career */
-	.career-header h1 {
+	/* Careers */
+	.careers-header h1 {
 		padding: 18% 0 20% 0;
 		font-size: 3.0em;
 		text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
@@ -147,6 +147,8 @@
 		margin-left: 1%;
 		margin-right: 1%;
 		padding: 40px;
+		margin-top: 2%;
+		margin-bottom: 2%;
 	}
 
 	/* Job Detail */
@@ -215,10 +217,18 @@
 		padding: 5% 0 5% 0;
 	}
 	
-	/* Career */
-	.career-header h1 {
+	/* Careers */
+	.careers-header h1 {
 		padding: 18% 0 20% 0;
 		font-size: 3.3em;
+	}
+
+	.sec-jobs .panel-job {
+		width: 31.333333%;
+		margin-left: 1%;
+		margin-right: 1%;
+		padding: 40px;
+		height: 300px;
 	}
 
 	/* Job Detail */
@@ -292,8 +302,8 @@
 		margin: 50px auto;
 	}
 
-	/* Career */
-	.career-header h1 {
+	/* Careers */
+	.careers-header h1 {
 		padding: 16% 0 16% 0;
 		font-size: 3.2em;
 	}

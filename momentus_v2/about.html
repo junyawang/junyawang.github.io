@@ -33,6 +33,17 @@
         jQuery.startFade();
     </script>
 
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-54314805-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -55,11 +66,14 @@
             <!-- Menus -->
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
+                    <li class="page-scroll visible-xs">
+                        <a href="index.html">Home</a>
+                    </li>
                     <li class="page-scroll navbar-active">
                         <a href="about.html">About</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="career.html">Career</a>
+                        <a href="careers.html">Careers</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#contact" class="contactScroll">Contact</a>

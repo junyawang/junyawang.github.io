@@ -599,7 +599,7 @@ address,
 
 /* --------- HEADER ---------- */
 header.index-header {
-	background-image: url(../img/career_banner.jpg);
+	background-image: url(../img/careers_banner.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% auto;
@@ -881,15 +881,15 @@ h1.about-header-text {
 }
 
 
-/* =========== CAREER PAGE============ */
-header.career-header {
-	background-image: url(../img/career_banner.jpg);
+/* =========== CAREERS PAGE============ */
+header.careers-header {
+	background-image: url(../img/careers_banner.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 }
 
-.career-header h1 {
+.careers-header h1 {
 	padding: 18% 0 20% 0;
 	text-align: center;
 	font-weight: 300;
