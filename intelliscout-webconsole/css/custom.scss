@@ -6,7 +6,7 @@ $orange: #e75a24; //secondary color
 
 $greyLight: #efeff4;
 $greyMid: #c8c7cc;
-$greyDark: #292E2A; //to replace plain black
+$greyDark: #292E2A; //text, to replace plain black
 
 
 /*-------------------------------------------
@@ -510,33 +510,90 @@ ul.sub.active {
 } 
 
 /* ------------- Modal --------------*/
-.modal-header {
-    padding: 16px;
+.modal-back,
+.modal-close {
+    margin-top: 30px;
+    text-align: center;
+
+    .btn-default {
+        width: 100px;
+        height: 100px;
+        background-color: rgba(0,0,0,0.6);
+        border: none;
+        color: white;
+        font-size: 1.6em;
+    }
+
+    .btn-default:hover {
+        background-color: rgba(0,0,0,0.7);
+    }
 }
 
-.modal-title {
-    font-size: 1.4em;
+.modal-content {
+    @include box-shadow (0px 0px 2px 0px rgba(0, 0, 0, 0.25));
+}
+
+.modal-header {
+    padding: 16px;
+    background-color: $greenDark;
+    border-bottom: none;
+
+    .modal-title {
+        font-size: 1.2em;
+        font-weight: 600;
+        color: white;
+    }
 }
 
 .modal-body {
     padding: 0 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+
 }
 
 .modal-section {
     background-color: white;
     margin: 8px 0;
     padding: 16px 16px;
-    font-size: 1.4em;
+    font-size: 1.2em;
+    border-top: 1px solid $greyMid;
     border-bottom: 1px solid $greyMid;
 }
 
 .modal-thumbnail {
     padding: 8px 16px;
+
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .col-md-3 {
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+
+    .col-md-3:first-child {
+        padding-left:0;
+    }
+
+    .col-md-3:last-child {
+        padding-right:0;
+    }
 }
+
 
 .modal-section-name {
     color: black;
     font-weight: 600;
+}
+
+.fa-camera,
+.fa-video-camera,
+.fa-sort-numeric-asc,
+.fa-file {
+    color: $greyMid;
 }
 
 .modal-section-size {
@@ -545,9 +602,32 @@ ul.sub.active {
     color: $greyMid;
 }
 
-.modal-descr {
-    font-size: 1.2em;
+.modal-note {
     padding: 8px 16px;
+    border-bottom: 1px solid $greyMid;
+
+    .modal-note-header,
+    p {
+        padding: 8px 0;
+    }
+
+    .modal-note-title {
+        font-size: 1.2em;
+        font-weight: 400;
+        color: black;
+    }
+
+    .modal-note-time {
+        font-size: 1.2em;
+        font-weight: 400;
+        color: $greyMid;
+        float: right;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+    
 }
 
 /*--------------------------------------
