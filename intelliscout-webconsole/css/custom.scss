@@ -190,6 +190,41 @@ a:focus {
     }
 }
 
+/* ------------- Button --------------*/
+.btn {
+    border-radius: 2px;
+    @include box-shadow (0px 0px 0px 0px rgba(0, 0, 0, 0));
+    font-weight: 600;
+}
+
+.btn-default {
+}
+
+.btn-success {
+    background-color: $greenDark;
+    border-color: $greenDark;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: $green;
+    border-color: $green;
+    color: white;
+}
+
+.btn-fail {
+    background-color: $orange;
+    border-color: $orange;
+    color: white;
+}
+
+
+/* ------------- Form --------------*/
+.form-control {
+    border-radius: 2px;
+    @include box-shadow (0px 0px 0px 0px rgba(0, 0, 0, 0));
+}
+
 /* ----------- Text Area -----------*/
 textarea{
     border: none;
@@ -228,7 +263,6 @@ textarea{
     font-weight: 300;
     font-size: 1.2em;
 }
-
 
 
 /* --------- REPORT PANEL -----------*/
@@ -551,9 +585,8 @@ ul.sub.active {
 
 .modal-body {
     padding: 0 0;
-    overflow-x: hidden;
+    // overflow-x: hidden;
     overflow-y: auto;
-
 }
 
 .modal-section {
@@ -586,7 +619,6 @@ ul.sub.active {
         padding-right:0;
     }
 }
-
 
 .modal-section-name {
     color: black;
@@ -631,6 +663,11 @@ ul.sub.active {
     p {
         font-size: 1.2em;
     }
+}
+
+/* ------------- Carousel --------------*/
+.carousel-caption {
+    background-color: rgba (0,0,0,0.8);
 }
 
 /*--------------------------------------
