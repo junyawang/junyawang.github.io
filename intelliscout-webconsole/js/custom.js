@@ -1,4 +1,5 @@
 // Menu Toggle Script
+<script type="text/javascript">
     $("#team-toggle").click(function(e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
@@ -24,8 +25,13 @@
 // Modal Toggle
 <script type="text/javascript">
     $("#modal-view-report-trigger").click(function(){
-      $('#modal-view-photo').modal('hide');
-      $('#modal-view-report').modal('show');
+        $('#modal-view-photo').modal('hide');
+        $('#modal-view-report').modal('show');
+    });
+
+    $("#modal-view-photo-trigger").click(function(){
+        $('#modal-view-report').modal('hide');
+        $('#modal-view-photo').modal('show');
     });
 </script>
 

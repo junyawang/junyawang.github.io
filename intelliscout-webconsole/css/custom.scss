@@ -38,6 +38,10 @@ $greyDark: #292E2A; //text, to replace plain black
 	text-align: right;
 }
 
+.hidden {
+    visibility: none;
+}
+
 input,
 input:focus,
 textarea,
@@ -627,7 +631,6 @@ ul.sub.active {
     p {
         font-size: 1.2em;
     }
-    
 }
 
 /*--------------------------------------
