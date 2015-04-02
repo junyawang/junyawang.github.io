@@ -116,10 +116,6 @@ label {
 	color: black;
 }
 
-span {
-	font-weight: bolder;
-}
-
 a {
 	color: $greenDark;
 }
@@ -141,6 +137,7 @@ a:focus {
 .navbar-main {
     background-color: $greenDark;
     margin-bottom: 0;
+    @include box-shadow (0px 2px 2px 0px rgba(0, 0, 0, 0.05));
 }
 
 .navbar-main {
@@ -182,6 +179,7 @@ a:focus {
 	margin-top: 50px;
 	z-index: 10;
     vertical-align: middle;
+    @include box-shadow (0px 2px 2px 0px rgba(0, 0, 0, 0.05));
 
     a {
         padding: 16px 0;
@@ -189,7 +187,7 @@ a:focus {
 }
 
 /* ----------- Text Area -----------*/
-textarea {
+textarea{
     border: none;
     outline: none;
     border-top: 2px solid $greyLight;
@@ -510,6 +508,47 @@ ul.sub.active {
     overflow: hidden;
     white-space: nowrap;
 } 
+
+/* ------------- Modal --------------*/
+.modal-header {
+    padding: 16px;
+}
+
+.modal-title {
+    font-size: 1.4em;
+}
+
+.modal-body {
+    padding: 0 0;
+}
+
+.modal-section {
+    background-color: white;
+    margin: 8px 0;
+    padding: 16px 16px;
+    font-size: 1.4em;
+    border-bottom: 1px solid $greyMid;
+}
+
+.modal-thumbnail {
+    padding: 8px 16px;
+}
+
+.modal-section-name {
+    color: black;
+    font-weight: 600;
+}
+
+.modal-section-size {
+    float: right;
+    font-weight: 400;
+    color: $greyMid;
+}
+
+.modal-descr {
+    font-size: 1.2em;
+    padding: 8px 16px;
+}
 
 /*--------------------------------------
                  PAGE

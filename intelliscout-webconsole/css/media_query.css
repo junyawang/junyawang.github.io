@@ -8,6 +8,14 @@
 /* Small devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 	
+    .navbar-right {
+        margin-right: 0;
+    }
+
+    .modal-dialog {
+        width: 768px;
+    }
+
 /*	#wrapper {
         padding-left: 250px;
     }
@@ -39,10 +47,14 @@
 
 /* Medium devices (desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
+    .modal-dialog {
+        width: 992px;
+    }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-	
+	.modal-dialog {
+        width: 1200px;
+    }
 }
