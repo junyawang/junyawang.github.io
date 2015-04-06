@@ -8,6 +8,8 @@ $greyLight: #efeff4;
 $greyMid: #c8c7cc;
 $greyDark: #292E2A; //text, to replace plain black
 
+$navbar-main-height: 54px;
+$navbar-lower-height: 52px;
 
 /*-------------------------------------------
                     BASE
@@ -141,6 +143,7 @@ a:focus {
 .navbar-main {
     background-color: $greenDark;
     margin-bottom: 0;
+    height: $navbar-main-height;
     @include box-shadow (0px 2px 2px 0px rgba(0, 0, 0, 0.05));
 }
 
@@ -149,12 +152,14 @@ a:focus {
         color: white;
         font-size: 1.2em;
         font-weight: 600;
+        vertical-align: middle;
     }
 
     .navbar-nav.navbar-right>li>a {
         color: white;
         font-size: 1.2em;
         font-weight: 400;
+        vertical-align: middle;
     }
     
     .navbar-nav>.open>a,
@@ -170,7 +175,7 @@ a:focus {
 }
 
 .img-logo {
-	max-width: 50px;
+	max-width: $navbar-main-height;
 }
 
 .dropdown-menu {
@@ -180,9 +185,10 @@ a:focus {
 
 /* NAV BAR - LOWER */
 .navbar-lower {
-	margin-top: 50px;
+	margin-top: $navbar-main-height;
 	z-index: 10;
     vertical-align: middle;
+    height: $navbar-lower-height;
     @include box-shadow (0px 2px 2px 0px rgba(0, 0, 0, 0.05));
 
     a {
@@ -464,7 +470,7 @@ input {
 }
 
 .sidebar-wrapper {
-    margin-top: 100px;
+    margin-top: $navbar-main-height;
     z-index: 1;
     position: fixed;
     width: 0;
@@ -526,13 +532,18 @@ input {
 
 /* Sidebar Styles */
 
-#sidebar-teams {
+.sidebar-left {
     @include box-shadow (2px 0px 10px 0px rgba(0, 0, 0, 0.05));
 }
 
-#sidebar-users {
+.sidebar-right {
     @include box-shadow (-2px 0px 10px 0px rgba(0, 0, 0, 0.05));
 }
+
+#sidebar-teams,
+#sidebar-users {
+    margin-top: $navbar-main-height+$navbar-lower-height;
+} 
 
 .sidebar-nav {
     position: absolute;
@@ -734,4 +745,9 @@ ul.sub.active {
 /* =========== TEAM ACTIVITIES ============ */
 body {
     background-color: $greyLight;
+}
+
+/* =========== ACCOUNT ============ */
+.sec-qr-panel .panel {
+    width: 400px;
 }
