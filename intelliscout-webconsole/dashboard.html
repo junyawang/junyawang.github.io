@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Org Name - Dashboard</title>
+
+
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- CSS -->
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    <link href="css/media_query.css" rel="stylesheet" type="text/css">
+
+    <!-- JS -->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    
+    <!-- Navbar Main -->
+    <nav class="navbar navbar-default navbar-main navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- Toggle -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <!-- Logo -->
+                <a class="navbar-brand page-scroll" href="index.html">
+                    <img class="img-logo" src="http://placehold.it/50x50">
+                </a>
+            </div>
+
+            <!-- Menus -->
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="index.html">Basecamp Networks</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="page-scroll navbar-active">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Craig Ganssle <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="account.html">My Account</a></li>
+                            <li><a href="#">Switch Org</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Log out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+    
+    <div id="wrapper">
+        <!-- SIDEBAR -->
+        <div class="sidebar-wrapper sidebar-teams">
+            <ul class="sidebar-nav main">
+                <li class="active">
+                    <a href="#sub1">Org Account</a>
+                </li>
+                <li>
+                    <a href="#sub2">Billings</a>
+                </li>
+                <li>
+                    <a href="#sub3">Members</a>
+                </li>
+                <li>
+                    <a href="#sub3">Teams</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- REPORT PANEL -->
+        <div id="page-content-wrapper">
+            <section class="sec-report-panel">
+                <div class="container">
+                    <!-- Panel 1 -->
+                    <section class="panel panel-default">
+                        
+                        <!-- Modal Target Area -->
+                        <div class="clickable" data-toggle="modal" data-target="#modal-view-report">
+                            <div class="panel-heading">
+                                <span class="panel-name">Craig Ganssle</span>
+                                <span class="panel-time">11:23</span>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <img class="col-md-3 col-sm-3 col-xs-3" src="http://placehold.it/400x400">
+                                    <img class="col-md-3 col-sm-3 col-xs-3" src="http://placehold.it/400x400">
+                                    <img class="col-md-3 col-sm-3 col-xs-3" src="http://placehold.it/400x400">
+                                    <img class="col-md-3 col-sm-3 col-xs-3" src="http://placehold.it/400x400">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean massa tellus, tempus at augue at, sodales ornare odio. Nam elementum congue hendrerit. Nulla vitae sem eu risus pellentesque hendrerit. Phasellus at massa cursus, eleifend purus vel, porttitor dui. Fusce ac est faucibus, tempus leo sit amet, ullamcorper dui. Ut vestibulum purus ut pellentesque ornare. Vestibulum lacus massa, interdum non ullamcorper a, porta quis lectus.</p>
+                                
+                                <!-- Panel Status -->
+                                <div class="panel-status">
+                                    <span class="report-location alignLeft"><i class="fa fa-map-marker"></i> Vancouver</span>
+
+                                    <ul class="report-status-list alignRight">
+                                        <li class="report-status">
+                                            <i class="fa fa-camera"></i> 23
+                                        </li>
+                                        <li class="report-status">
+                                            <i class="fa fa-video-camera"></i> 23
+                                        </li>
+                                        <li class="report-status">
+                                            <i class="fa fa-sort-numeric-asc"></i> 23
+                                        </li>
+                                        <li class="report-status">
+                                            <i class="fa fa-file"></i> 23
+                                        </li> 
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> <!-- .end Modal Target Area -->
+
+                        <div class="panel-footer">
+                            <i class="fa fa-comment-o"></i> View 23 comments
+                        </div>
+                        
+                        <div class="sec-comment">
+                            <span class="comment-name alignLeft">Junya Wang</span>
+                            <span class="comment-time alignRight">11:24</span>
+                            <p>I like the first photo.</p>
+                        </div>
+
+                        <div class="sec-comment">
+                            <span class="comment-name alignLeft">Jeremy Willemse</span>
+                            <span class="comment-time alignRight">11:24</span>
+                            <p><span class="comment-tag">@junya</span>, I like the first photo, too.</p>
+                        </div>
+
+                        <div>
+                            <form class="comment-form">
+                                <textarea placeholder="Write a comment..." class="textarea common"></textarea>
+                                <input class="btn btn-default" type="submit" value="Post">
+                            </form>
+                        </div>
+                    </section>
+                </div>
+            </section> <!-- / .sec-projects -->
+        </div>
+    </div>
+
+</body>
+
+</html>

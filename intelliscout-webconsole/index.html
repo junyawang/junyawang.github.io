@@ -55,12 +55,12 @@
                         <a href="index.html">Home</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#">Dashboard</a>
+                        <a href="dashboard.html">Dashboard</a>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Craig Ganssle <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Settings</a></li>
+                            <li><a href="account.html">My Account</a></li>
                             <li><a href="#">Switch Org</a></li>
                             <li class="divider"></li>
                             <li><a href="#">Log out</a></li>
@@ -79,7 +79,7 @@
                 
                 <form class="navbar-form navbar-left" role="search">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
+                        <input type="text" class="form-control" placeholder="Enter key words of field report...">
                     </div>
                     <button type="submit" class="btn btn-success">Search</button>
                 </form>
@@ -185,28 +185,36 @@
                             </div>
                         </div> <!-- .end Modal Target Area -->
 
-                        <div class="panel-footer">
-                            <i class="fa fa-comment-o"></i> View 23 comments
-                        </div>
-                        
-                        <div class="sec-comment">
-                            <span class="comment-name alignLeft">Junya Wang</span>
-                            <span class="comment-time alignRight">11:24</span>
-                            <p>I like the first photo.</p>
-                        </div>
+                        <!--Comment-->
+                        <section class="panel-group">
+                            <div class="">
+                                <div class="accordion-heading">
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseComment" aria-expanded="false" aria-controls="collapseComment"><i class="fa fa-comment-o"></i> View 23 comments</a>
+                                    </h4>
+                                </div>
 
-                        <div class="sec-comment">
-                            <span class="comment-name alignLeft">Jeremy Willemse</span>
-                            <span class="comment-time alignRight">11:24</span>
-                            <p><span class="comment-tag">@junya</span>, I like the first photo, too.</p>
-                        </div>
+                                <div class="panel-collapse collapse" id="collapseComment">
+                                    <div class="row-comment">
+                                        <span class="comment-name alignLeft">Junya Wang</span>
+                                        <span class="comment-time alignRight">11:24</span>
+                                        <p>I like the first photo.</p>
+                                    </div>
+                                    <div class="row-comment">
+                                        <span class="comment-name alignLeft">Jeremy Willemse</span>
+                                        <span class="comment-time alignRight">11:24</span>
+                                        <p><span class="comment-tag">@junya</span>, I like the first photo, too.</p>
+                                    </div>
+                                    <div>
+                                        <form class="comment-form">
+                                            <textarea placeholder="Write a comment..." class="textarea common"></textarea>
+                                            <input class="btn btn-default" type="submit" value="Post">
+                                        </form>
+                                    </div>
+                                </div><!-- /.panel-collapse-->
+                            </div><!-- /.panel-default-->
+                        </section><!-- /.panel-group -->
 
-                        <div>
-                            <form class="comment-form">
-                                <textarea placeholder="Write a comment..." class="textarea common"></textarea>
-                                <input class="btn btn-default" type="submit" value="Post">
-                            </form>
-                        </div>
                     </section>
                 </div>
             </section> <!-- / .sec-projects -->
@@ -310,6 +318,36 @@
                         </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean massa tellus, tempus at augue at, sodales ornare odio. Nam elementum congue hendrerit. Nulla vitae sem eu risus pellentesque hendrerit. Phasellus at massa cursus, eleifend purus vel, porttitor dui. Fusce ac est faucibus, tempus leo sit amet, ullamcorper dui. Ut vestibulum purus ut pellentesque ornare. Vestibulum lacus massa, interdum non ullamcorper a, porta quis lectus.</p>
                     </div>
+
+                    <!--Comment-->
+                    <section class="panel-group">
+                        <div class="">
+                            <div class="accordion-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseModalComment" aria-expanded="false" aria-controls="collapseModalComment"><i class="fa fa-comment-o"></i> View 23 comments</a>
+                                </h4>
+                            </div>
+
+                            <div class="panel-collapse collapse" id="collapseModalComment">
+                                <div class="row-comment">
+                                    <span class="comment-name alignLeft">Junya Wang</span>
+                                    <span class="comment-time alignRight">11:24</span>
+                                    <p>I like the first photo.</p>
+                                </div>
+                                <div class="row-comment">
+                                    <span class="comment-name alignLeft">Jeremy Willemse</span>
+                                    <span class="comment-time alignRight">11:24</span>
+                                    <p><span class="comment-tag">@junya</span>, I like the first photo, too.</p>
+                                </div>
+                                <div>
+                                    <form class="comment-form">
+                                        <textarea placeholder="Write a comment..." class="textarea common"></textarea>
+                                        <input class="btn btn-default" type="submit" value="Post">
+                                    </form>
+                                </div>
+                            </div><!-- /.panel-collapse-->
+                        </div><!-- /.panel-default-->
+                    </section><!-- /.panel-group -->
                 </div>
             </div>
         </div><!-- /modal-dialogue -->
@@ -359,14 +397,6 @@
                 </div>
             </div>
         </div><!-- / .modal-dialog -->
-
-        <!-- Controls -->
-        <!-- <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-        </a> -->
 
         <div class="modal-close col-md-1">
             <button type="button" class="btn btn-default" data-dismiss="modal">
