@@ -91,7 +91,7 @@
     
     <div id="wrapper">
         <!-- SIDEBAR -->
-        <div class="sidebar-wrapper sidebar-teams">
+        <div id="sidebar-teams" class="sidebar-wrapper">
             <ul class="sidebar-nav main">
                 <li class="active">
                     <a href="#sub1">Team 1</a>
@@ -106,7 +106,7 @@
         </div>
 
         <!-- SIDEBAR -->
-        <div class="sidebar-wrapper sidebar-users">
+        <div id="sidebar-users"class="sidebar-wrapper">
             <ul id="sub1" class="sidebar-nav sub active">
                 <li>
                     <a href="#"><i class="fa fa-eye"></i> User 1.1</a>
@@ -262,7 +262,7 @@
                             <div class="">
                                 <div class="accordion-heading">
                                     <h4 class="panel-title">
-                                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseComment2" aria-expanded="false" aria-controls="collapseComment2"><i class="fa fa-comment-o"></i> View 2 comments</a>
+                                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseComment2" aria-expanded="false" aria-controls="collapseComment2"><i class="fa fa-comment-o"></i> View 23 comments</a>
                                     </h4>
                                 </div>
 
@@ -485,12 +485,12 @@
     <script type="text/javascript">
         $("#team-toggle").click(function(e) {
             e.preventDefault();
-            $("#wrapper").toggleClass("toggled");
+            $("#wrapper").toggleClass("toggledTeams");
         });
 
         $("#user-toggle").click(function(e) {
             e.preventDefault();
-            $("#wrapper").toggleClass("toggled");
+            $("#wrapper").toggleClass("toggledUsers");
         });
     </script>
 
