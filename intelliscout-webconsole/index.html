@@ -74,17 +74,22 @@
     <!-- Navbar - Lower -->
     <nav class="navbar navbar-default navbar-fixed-top navbar-lower" role="navigation">
         <div class="container-fluid">
-            <div class="collapse navbar-collapse collapse-buttons">
-                <a href="#team-toggle" class="navbar-left" id="team-toggle"><i class="fa fa-users"></i> Teams</a>
+            <div class="collapse navbar-collapse collapse-buttons row">
+                <div class="col-md-2">
+                    <a href="#team-toggle" class="navbar-left" id="team-toggle"><i class="fa fa-users"></i> Teams</a>
+                </div>
                 
-                <form class="navbar-form navbar-left" role="search">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Enter key words of field report...">
-                    </div>
-                    <button type="submit" class="btn btn-success">Search</button>
-                </form>
-                
-                <a href="#user-toggle" class="navbar-right" id="user-toggle"><i class="fa fa-user"></i> Users</a>
+                <div class="col-md-8">
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <span class="search-icon"><i class="fa fa-search"></i></span>
+                            <input type="text" class="form-control" placeholder="Enter key words of field report...">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-2">
+                    <a href="#user-toggle" class="navbar-right" id="user-toggle"><i class="fa fa-user"></i> Users</a>
+                </div>
             </div>
         </div>
     </nav>

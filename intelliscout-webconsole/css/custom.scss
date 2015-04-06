@@ -188,6 +188,28 @@ a:focus {
     a {
         padding: 16px 0;
     }
+
+    .navbar-form {
+        width: 100%;
+        
+        .form-group{
+            width: 100%;
+            position: relative;
+        }
+
+        input {
+            width: 100%;
+            padding-left: 32px;
+        }
+    }
+
+    .search-icon {
+        position: absolute;
+        top: 5px;
+        left: 26px;
+        font-size: 1.2em;
+        color: $greyMid;
+    }
 }
 
 /* ------------- Button --------------*/

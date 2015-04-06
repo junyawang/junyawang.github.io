@@ -134,28 +134,35 @@
                             </div>
                         </div> <!-- .end Modal Target Area -->
 
-                        <div class="panel-footer">
-                            <i class="fa fa-comment-o"></i> View 23 comments
-                        </div>
-                        
-                        <div class="sec-comment">
-                            <span class="comment-name alignLeft">Junya Wang</span>
-                            <span class="comment-time alignRight">11:24</span>
-                            <p>I like the first photo.</p>
-                        </div>
+                        <!--Comment-->
+                        <section class="panel-group">
+                            <div class="">
+                                <div class="accordion-heading">
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseComment1" aria-expanded="false" aria-controls="collapseComment1"><i class="fa fa-comment-o"></i> View 23 comments</a>
+                                    </h4>
+                                </div>
 
-                        <div class="sec-comment">
-                            <span class="comment-name alignLeft">Jeremy Willemse</span>
-                            <span class="comment-time alignRight">11:24</span>
-                            <p><span class="comment-tag">@junya</span>, I like the first photo, too.</p>
-                        </div>
-
-                        <div>
-                            <form class="comment-form">
-                                <textarea placeholder="Write a comment..." class="textarea common"></textarea>
-                                <input class="btn btn-default" type="submit" value="Post">
-                            </form>
-                        </div>
+                                <div class="panel-collapse collapse" id="collapseComment1">
+                                    <div class="row-comment">
+                                        <span class="comment-name alignLeft">Junya Wang</span>
+                                        <span class="comment-time alignRight">11:24</span>
+                                        <p>I like the first photo.</p>
+                                    </div>
+                                    <div class="row-comment">
+                                        <span class="comment-name alignLeft">Jeremy Willemse</span>
+                                        <span class="comment-time alignRight">11:24</span>
+                                        <p><span class="comment-tag">@junya</span>, I like the first photo, too.</p>
+                                    </div>
+                                    <div>
+                                        <form class="comment-form">
+                                            <textarea placeholder="Write a comment..." class="textarea common"></textarea>
+                                            <input class="btn btn-default" type="submit" value="Post">
+                                        </form>
+                                    </div>
+                                </div><!-- /.panel-collapse-->
+                            </div><!-- /.panel-default-->
+                        </section><!-- /.panel-group -->
                     </section>
                 </div>
             </section> <!-- / .sec-projects -->
