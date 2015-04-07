@@ -13,7 +13,7 @@
     }
 
     .modal-dialog {
-        width: 768px;
+        width: 100%;
     }
 
 /*	#wrapper {
@@ -48,13 +48,13 @@
 /* Medium devices (desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .modal-dialog {
-        width: 992px;
+        width: 100%
     }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 	.modal-dialog {
-        width: 1200px;
+        width: 100%;
     }
 }
