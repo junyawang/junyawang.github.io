@@ -98,7 +98,7 @@
         </div>
     </nav>
     
-    <div id="wrapper">
+    <div id="wrapper" class="wrapper-index">
         <!-- SIDEBAR -->
         <div id="sidebar-teams" class="sidebar-wrapper sidebar-left">
             <ul class="sidebar-nav main">
@@ -338,6 +338,15 @@
         </div>
     </div>
 
+    <!-- CHAT -->
+<!--     <div class="navbar navbar-fixed-bottom sec-chat">
+        <div class="container">
+            <form class="comment-form">
+                <textarea placeholder="Send your message here..." class="textarea common"></textarea>
+            </form>
+        </div>
+    </div> -->
+
     <!-- MODAL - View Report-->
     <div class="modal fade bs-example-modal-lg row" id="modal-view-report" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="col-md-1 col-md-offset-1 col-sm-1 col-sm-offset-1 col-xs-1">
@@ -362,7 +371,7 @@
                             <span class="modal-section-size alignRight">11 Items, 21.2MB</span>
                         </div>
                         <div class="row modal-thumbnail">
-                            <div class="col-md-3 col-sm-6 col-xs-12" id="modal-view-photo-trigger" >
+                            <div class="col-md-3 col-sm-6 col-xs-12" id="modal-report-to-photo-trigger">
                                 <img class="modal-img img-responsive clickable" src="http://placehold.it/400x400" alt="">
                             </div>
                             
@@ -423,7 +432,7 @@
                             <span class="modal-section-size alignRight">11 Items, 21.2MB</span>
                         </div>
                         
-                        <div class="modal-note">
+                        <div class="modal-note clickable" id="modal-report-to-note-trigger">
                             <div class="modal-note-header">
                                 <span class="modal-note-title alignLeft">Title</span>
                                 <span class="modal-note-time alignRight">22:23</span>
@@ -487,7 +496,7 @@
         
         <div class="col-md-1 col-md-offset-1 col-sm-1 col-sm-offset-1 col-xs-1">
             <div class="modal-back">
-                <button type="button" class="btn btn-default" id="modal-view-report-trigger">
+                <button type="button" class="btn btn-default" id="modal-photo-to-report-trigger">
                     <span class="btn-modal-close alignRight" aria-hidden="true"><i class="fa fa-arrow-left"></i></span>
                 </button>
             </div>
@@ -538,7 +547,44 @@
         </div>
     </div>
 
+    <!-- MODAL - View Note-->
+    <div class="modal fade bs-example-modal-lg row" id="modal-view-note" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="col-md-1 col-md-offset-1 col-sm-1 col-sm-offset-1 col-xs-1">
+            <div class="modal-back">
+                <button type="button" class="btn btn-default" id="modal-note-to-report-trigger">
+                    <span class="btn-modal-close alignRight" aria-hidden="true"><i class="fa fa-arrow-left"></i></span>
+                </button>
+            </div>
+        </div>
 
+        <div class="col-md-8 col-sm-8 col-xs-10">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">   
+                        <div class="modal-note">
+                            <div class="modal-note-header">
+                                <span class="modal-note-title alignLeft">Title</span>
+                                <span class="modal-note-time alignRight">22:23</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean massa tellus, tempus at augue at, sodales ornare odio. Nam elementum congue hendrerit. Nulla vitae sem eu risus pellentesque hendrerit. Phasellus at massa cursus, eleifend purus vel, porttitor dui. Fusce ac est faucibus, tempus leo sit amet, ullamcorper dui. Ut vestibulum purus ut pellentesque ornare. Vestibulum lacus massa, interdum non ullamcorper a, porta quis lectus.</p>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean massa tellus, tempus at augue at, sodales ornare odio. Nam elementum congue hendrerit. Nulla vitae sem eu risus pellentesque hendrerit. Phasellus at massa cursus, eleifend purus vel, porttitor dui. Fusce ac est faucibus, tempus leo sit amet, ullamcorper dui. Ut vestibulum purus ut pellentesque ornare. Vestibulum lacus massa, interdum non ullamcorper a, porta quis lectus.</p>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean massa tellus, tempus at augue at, sodales ornare odio. Nam elementum congue hendrerit. Nulla vitae sem eu risus pellentesque hendrerit. Phasellus at massa cursus, eleifend purus vel, porttitor dui. Fusce ac est faucibus, tempus leo sit amet, ullamcorper dui. Ut vestibulum purus ut pellentesque ornare. Vestibulum lacus massa, interdum non ullamcorper a, porta quis lectus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /modal-dialogue -->
+        </div>
+
+        <div class="col-md-1 col-sm-1 col-xs-1">
+            <div class="modal-close">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    <span class="btn-modal-close" aria-hidden="true"><i class="fa fa-times"></i></span>
+                </button>
+            </div>
+        </div>
+    </div>
 
     <!-- Import Custom JS-->
 
@@ -568,14 +614,28 @@
 
     <!-- Modal Toggle -->
     <script type="text/javascript">
-        $("#modal-view-report-trigger").click(function(){
+        // Show modal-photo-to-report
+        $("#modal-photo-to-report-trigger").click(function(){
             $('#modal-view-photo').modal('hide');
             $('#modal-view-report').modal('show');
         });
 
-        $("#modal-view-photo-trigger").click(function(){
+        // Show modal-note-to-report
+        $("#modal-note-to-report-trigger").click(function(){
+            $('#modal-view-note').modal('hide');
+            $('#modal-view-report').modal('show');
+        });
+
+        // Show modal-report-to-photo
+        $("#modal-report-to-photo-trigger").click(function(){
             $('#modal-view-report').modal('hide');
             $('#modal-view-photo').modal('show');
+        });
+
+        // Show modal-report-to-note
+        $("#modal-report-to-note-trigger").click(function(){
+            $('#modal-view-report').modal('hide');
+            $('#modal-view-note').modal('show');
         });
     </script>
 
@@ -681,7 +741,7 @@
     </script>
 
     <!-- .modal-back and .modal-close buttons height = width -->
-    // <script type="text/javascript">
+    <!-- <script type="text/javascript">
     //     var cw = $('.modal-back').width();
     //     $('.modal-back').css({
     //         'height': cw + 'px'
@@ -701,7 +761,7 @@
     //     $('.modal-close .btn-default').css({
     //         'height': cw + 'px'
     //     });
-    // </script>
+    // </script> -->
 </body>
 
 </html>
