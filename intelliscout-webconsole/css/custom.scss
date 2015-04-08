@@ -850,21 +850,6 @@ body {
 }
 
 /* =========== ACCOUNT ============ */
-// .sec-my-account-panel {
-//     .panel-body {
-//         padding: 16px;
-
-//         span {
-//             font-size: 1.2em;
-//         }
-//     }
-// }
-
-// .sec-qr-panel{
-//     width: 60%;
-//     margin: 0 auto;
-// }
-
 img.org-logo {
     display: block;
     margin-top: 10px;
@@ -875,4 +860,26 @@ img.qr-code {
     display: block;
     margin: 0 auto;
     margin-top: 10%;
+}
+
+/* =========== SIGN IN & SIGN UP ============ */
+.panel-sign-in {
+    width: 60%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: 1px solid $greyLight;
+    @include box-shadow (0px 0px 10px 0px rgba(0, 0, 0, 0.08));
+    
+    h1 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .panel-body {
+        padding: 30px;
+
+        p {
+            padding: 10px 0 20px 0;
+        }
+    }
 }
