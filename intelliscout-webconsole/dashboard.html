@@ -73,99 +73,91 @@
     
     <div id="wrapper">
         <!-- SIDEBAR -->
-        <div class="sidebar-wrapper sidebar-left">
+        <div class="sidebar-wrapper sidebar-teams">
             <ul class="sidebar-nav main">
                 <li class="active">
-                    <a href="#sub1">Org Account</a>
+                    <a href="#org-account" data-toggle="tab">Org Account</a>
                 </li>
                 <li>
-                    <a href="#sub2">Billings</a>
+                    <a href="#billings" data-toggle="tab">Billings</a>
                 </li>
                 <li>
-                    <a href="#sub3">Members</a>
+                    <a href="#members" data-toggle="tab">Members</a>
                 </li>
                 <li>
-                    <a href="#sub3">Teams</a>
+                    <a href="#teams" data-toggle="tab">Teams</a>
                 </li>
             </ul>
         </div>
 
-        <!-- REPORT PANEL -->
-        <div id="page-content-wrapper">
-            <section class="sec-report-panel">
-                <div class="container">
-                    <!-- Panel 1 -->
-                    <section class="panel panel-default">
-                        
-                        <!-- Modal Target Area -->
-                        <div class="clickable" data-toggle="modal" data-target="#modal-view-report">
-                            <div class="panel-heading">
-                                <span class="panel-name">Craig Ganssle</span>
-                                <span class="panel-time">11:23</span>
-                            </div>
+        <div class="page-content-wrapper-sticky-left-sidebar">
+            <div class="tab-content">
+
+                <!-- Org Account -->
+                <div role="tabpanel" class="tab-pane fade active in" id="org-account">
+                    <div class="container">
+                        <section class="panel panel-default">
                             <div class="panel-body">
-                                <div class="row">
-                                    <img class="col-md-3 col-sm-3 col-xs-3" src="http://placehold.it/400x400">
-                                    <img class="col-md-3 col-sm-3 col-xs-3" src="http://placehold.it/400x400">
-                                    <img class="col-md-3 col-sm-3 col-xs-3" src="http://placehold.it/400x400">
-                                    <img class="col-md-3 col-sm-3 col-xs-3" src="http://placehold.it/400x400">
-                                </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean massa tellus, tempus at augue at, sodales ornare odio. Nam elementum congue hendrerit. Nulla vitae sem eu risus pellentesque hendrerit. Phasellus at massa cursus, eleifend purus vel, porttitor dui. Fusce ac est faucibus, tempus leo sit amet, ullamcorper dui. Ut vestibulum purus ut pellentesque ornare. Vestibulum lacus massa, interdum non ullamcorper a, porta quis lectus.</p>
-                                
-                                <!-- Panel Status -->
-                                <div class="panel-status">
-                                    <span class="report-location alignLeft"><i class="fa fa-map-marker"></i> Vancouver</span>
-
-                                    <ul class="report-status-list alignRight">
-                                        <li class="report-status">
-                                            <i class="fa fa-camera"></i> 23
-                                        </li>
-                                        <li class="report-status">
-                                            <i class="fa fa-video-camera"></i> 23
-                                        </li>
-                                        <li class="report-status">
-                                            <i class="fa fa-sort-numeric-asc"></i> 23
-                                        </li>
-                                        <li class="report-status">
-                                            <i class="fa fa-file"></i> 23
-                                        </li> 
-                                    </ul>
-                                </div>
+                                <h1>Organization Account</h1>
+                                <form class="row">
+                                    <div class="form-group col-md-12">
+                                        <label for="inputFile">Organization Logo</label>
+                                        <div>
+                                            <img class="org-logo" src="http://placehold.it/56x56">
+                                        </div>
+                                        <input type="file" id="inputFile">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputOrgName">Organization Name</label>
+                                        <input type="text" class="form-control" id="inputOrgName">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputOrgDomain">Organization Domain</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" id="inputLastName">
+                                            <div class="input-group-addon">.intelliscout.com</div>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-success">Save Changes</button>
+                                </form>
                             </div>
-                        </div> <!-- .end Modal Target Area -->
-
-                        <!--Comment-->
-                        <section class="panel-group">
-                            <div class="">
-                                <div class="accordion-heading">
-                                    <h4 class="panel-title">
-                                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseComment1" aria-expanded="false" aria-controls="collapseComment1"><i class="fa fa-comment-o"></i> View 23 comments</a>
-                                    </h4>
-                                </div>
-
-                                <div class="panel-collapse collapse" id="collapseComment1">
-                                    <div class="row-comment">
-                                        <span class="comment-name alignLeft">Junya Wang</span>
-                                        <span class="comment-time alignRight">11:24</span>
-                                        <p>I like the first photo.</p>
-                                    </div>
-                                    <div class="row-comment">
-                                        <span class="comment-name alignLeft">Jeremy Willemse</span>
-                                        <span class="comment-time alignRight">11:24</span>
-                                        <p><span class="comment-tag">@junya</span>, I like the first photo, too.</p>
-                                    </div>
-                                    <div>
-                                        <form class="comment-form">
-                                            <textarea placeholder="Write a comment..." class="textarea common"></textarea>
-                                            <input class="btn btn-default" type="submit" value="Post">
-                                        </form>
-                                    </div>
-                                </div><!-- /.panel-collapse-->
-                            </div><!-- /.panel-default-->
-                        </section><!-- /.panel-group -->
-                    </section>
+                        </section>
+                    </div>
                 </div>
-            </section> <!-- / .sec-projects -->
+
+                <!-- Billings -->
+                <div role="tabpanel" class="tab-pane fade" id="billings">
+                    <div class="container">
+                        <section class="panel panel-default">
+                            <div class="panel-body">
+                                <h1>Billings</h1>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <!-- Members -->
+                <div role="tabpanel" class="tab-pane fade" id="members">
+                    <div class="container">
+                        <section class="panel panel-default">
+                            <div class="panel-body">
+                                <h1>Members</h1>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <!-- Teams -->
+                <div role="tabpanel" class="tab-pane fade" id="teams">
+                    <div class="container">
+                        <section class="panel panel-default">
+                            <div class="panel-body">
+                                <h1>Teams</h1>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

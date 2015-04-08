@@ -97,21 +97,29 @@ h1, h2, h3, h4, h5, h6, label, p, span, a {
 h1 {
 	color: black;
 	font-size: 1.8em;
-	font-weight: 400;
+	font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 h2 {
 	color: black;
 	font-size: 1.6em;
-	font-weight: 400;
+	font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 h3 {
 	font-size: 1.4em;
+    margin-top: 18px;
+    margin-bottom: 18px;
 }
 
 h4 {
 	font-size: 1.2em;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 p {
@@ -214,7 +222,7 @@ a:focus {
     .search-icon {
         position: absolute;
         top: 5px;
-        left: 26px;
+        left: 10px;
         font-size: 1.2em;
         color: $greyMid;
     }
@@ -246,6 +254,7 @@ a:focus {
     border-radius: 2px;
     @include box-shadow (0px 0px 0px 0px rgba(0, 0, 0, 0));
     font-weight: 600;
+    font-size: 1.2em;
 }
 
 .btn-default {
@@ -271,10 +280,31 @@ a:focus {
 
 
 /* ------------- Form --------------*/
+form {
+    .row {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .btn {
+        margin-left: 15px;
+        margin-top: 24px;
+    }
+}
+
 .form-control {
     border-radius: 2px;
+    font-size: 1.2em;
+    height: 36px;
     @include box-shadow (0px 0px 0px 0px rgba(0, 0, 0, 0));
 }
+
+label {
+    font-size: 1.2em;
+}
+
+
+
 
 /* ----------- Text Area -----------*/
 textarea{
@@ -324,7 +354,7 @@ textarea{
     margin-top: 60px;
 }
 
-.panel:first-child {
+.panel-report:first-child {
     margin-top: 140px;
 }
 
@@ -360,13 +390,6 @@ textarea{
 }
 
 .panel-body {
-    padding: 0 0px 0px 0px;
-
-    .row {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
     .col-md-3 {
         padding-left: 1px;
         padding-right: 1px;
@@ -381,15 +404,11 @@ textarea{
     }
 
     p {
-        padding: 20px;
+        padding: 20px 0 10px 0;
     }
 }
 
 /* Status */
-.panel-status {
-    padding: 0 0 10px 0;
-}
-
 span.report-location,
 li.report-status {
     font-weight: 400;
@@ -401,14 +420,12 @@ li.report-status {
 
 span.report-location{
     text-align: left;
-    padding-left: 16px;
 }
 
 ul.report-status-list {
     margin: 0 0;
     display: inline-block;
     float: right;
-    padding-right: 16px;
     vertical-align: middle;
 }
 
@@ -479,7 +496,7 @@ li.report-status:not(:first-child) {
     padding: 0 0 16px 0;
 }
 
-input {
+.comment-form .btn {
     margin-left: 16px;
 }
 
@@ -494,7 +511,7 @@ input {
 }
 
 .sidebar-wrapper {
-    margin-top: $navbar-main-height;
+    // margin-top: $navbar-main-height;
     z-index: 1;
     position: fixed;
     width: 0;
@@ -509,6 +526,12 @@ input {
     position: absolute;
     padding: 15px;
     @include transition (all 0.5s ease); //works for toggleUsers
+}
+
+.page-content-wrapper-sticky-left-sidebar {
+    margin-left: 250px;
+    margin-top: $navbar-main-height;
+    padding-top: 20px;
 }
 
 /* -- Team Toggle Controls -- */
@@ -827,6 +850,29 @@ body {
 }
 
 /* =========== ACCOUNT ============ */
-.sec-qr-panel .panel {
-    width: 400px;
+// .sec-my-account-panel {
+//     .panel-body {
+//         padding: 16px;
+
+//         span {
+//             font-size: 1.2em;
+//         }
+//     }
+// }
+
+// .sec-qr-panel{
+//     width: 60%;
+//     margin: 0 auto;
+// }
+
+img.org-logo {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+img.qr-code {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10%;
 }

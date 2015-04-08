@@ -76,24 +76,59 @@
         <div class="sidebar-wrapper sidebar-teams">
             <ul class="sidebar-nav main">
                 <li class="active">
-                    <a href="#sub1">My Account</a>
+                    <a href="#my-account" data-toggle="tab">My Account</a>
                 </li>
                 <li>
-                    <a href="#sub2">QR Code</a>
+                    <a href="#qr-code" data-toggle="tab">QR Code</a>
                 </li>
             </ul>
         </div>
 
-        <!-- QR CODE -->
-        <div id="page-content-wrapper">
-            <section class="sec-qr-panel">
-                <div class="container">
-                    <!-- Panel 1 -->
-                    <section class="panel panel-default">
-                        <img src="img/qr_code.png" alt="">
-                    </section>
+        <div class="page-content-wrapper-sticky-left-sidebar">
+            <div class="tab-content">
+                <!-- My Account -->
+                <div role="tabpanel" class="tab-pane fade active in" id="my-account">
+                    <div class="container">
+                        <section class="panel panel-default">
+                            <div class="panel-body">
+                                <h1>My Account</h1>
+                                <form class="row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputFirstName">First Name</label>
+                                        <input type="text" class="form-control" id="inputFirstName">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputLastName">Last Name</label>
+                                        <input type="text" class="form-control" id="inputLastName">
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <label for="inputEmail">Email</label>
+                                        <input type="email" class="form-control" id="inputEmail">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputCurrentPassword">Current Password</label>
+                                        <input type="password" class="form-control" id="inputCurrentPassword">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputNewPassword">New Password</label>
+                                        <input type="password" class="form-control" id="inputNewPassword">
+                                    </div>
+                                    <button type="submit" class="btn btn-success">Save Changes</button>
+                                </form>
+                            </div>
+                        </section> <!-- / .sec-projects -->
+                    </div>
                 </div>
-            </section> <!-- / .sec-projects -->
+
+                <!-- QR CODE -->
+                <div role="tabpanel" class="tab-pane fade" id="qr-code">
+                    <div class="container">
+                        <section class="sec-qr-panel">
+                            <img class="qr-code img-responsive" src="img/qr_code.jpg" alt="">
+                        </section> <!-- / .sec-projects -->
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
