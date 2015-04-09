@@ -463,28 +463,27 @@ li.report-status:not(:first-child) {
 }
 
 /* ---------- COMMENT -------------- */
+.sec-comment {
+    .accordion-heading {
+        padding: 18px 16px 12px 16px;
+        color: $green;
+        background-color: white;
+        border-bottom: 1px solid $greyLight;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        text-align: center;   
+    }
 
-.accordion-heading {
-    padding: 18px 16px 12px 16px;
-    color: $green;
-    background-color: white;
-    border-bottom: 1px solid $greyLight;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-    text-align: center;   
+    .accordion-toggle {
+        font-size: 1em;
+        text-align: center;
+    }
 }
-
-.accordion-toggle {
-    font-size: 1em;
-    text-align: center;
-}
-
 
 .row-comment {
     padding: 8px 16px;
     border-bottom: 1px solid $greyLight;
 }
-
 
 .comment-name,
 .comment-time {
@@ -883,6 +882,21 @@ img.qr-code {
     display: block;
     margin: 0 auto;
     margin-top: 10%;
+}
+
+#my-account {
+    .accordion-heading {
+        padding-left: 15px;
+        color: $green;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+
+        label {
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+    }
+
 }
 
 /* =========== SIGN IN & SIGN UP ============ */

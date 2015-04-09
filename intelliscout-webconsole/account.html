@@ -90,28 +90,41 @@
                 <div role="tabpanel" class="tab-pane fade active in" id="my-account">
                     <div class="container">
                         <section class="panel panel-default">
-                            <div class="panel-body">
+                            <div class="panel-heading">
                                 <h1>My Account</h1>
+                            </div>
+                            <div class="panel-body">
                                 <form class="row">
                                     <div class="form-group col-md-6">
                                         <label for="inputFirstName">First Name</label>
-                                        <input type="text" class="form-control" id="inputFirstName">
+                                        <input type="text" class="form-control" id="inputFirstName" value="Craig">
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="inputLastName">Last Name</label>
-                                        <input type="text" class="form-control" id="inputLastName">
+                                        <input type="text" class="form-control" id="inputLastName" value="Ganssle">
                                     </div>
                                     <div class="form-group col-md-12">
                                         <label for="inputEmail">Email</label>
-                                        <input type="email" class="form-control" id="inputEmail">
+                                        <input type="email" class="form-control" id="inputEmail" value="craig@basecampnetworks.com">
                                     </div>
-                                    <div class="form-group col-md-6">
-                                        <label for="inputCurrentPassword">Current Password</label>
-                                        <input type="password" class="form-control" id="inputCurrentPassword">
+
+
+                                    <div class="accordion-heading">
+                                        <label>
+                                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseChangePassword" aria-expanded="false" aria-controls="collapseChangePassword">Change Password <i class="fa fa-pencil"></i></a>
+                                        </label>
                                     </div>
-                                    <div class="form-group col-md-6">
-                                        <label for="inputNewPassword">New Password</label>
-                                        <input type="password" class="form-control" id="inputNewPassword">
+
+
+                                    <div class="panel-collapse collapse" id="collapseChangePassword">
+                                        <div class="form-group col-md-6">
+                                            <label for="inputCurrentPassword">Current Password</label>
+                                            <input type="password" class="form-control" id="inputCurrentPassword">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="inputNewPassword">New Password</label>
+                                            <input type="password" class="form-control" id="inputNewPassword">
+                                        </div>
                                     </div>
                                     <button type="submit" class="btn btn-success">Save Changes</button>
                                 </form>
