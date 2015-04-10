@@ -83,7 +83,7 @@
                 </div>
                 
                 <div class="col-md-8">
-                    <form class="navbar-form navbar-left" role="search">
+                    <form class="navbar-form navbar-left search-bar" role="search">
                         <div class="form-group">
                             <span class="search-icon"><i class="fa fa-search"></i></span>
                             <input type="text" class="form-control" placeholder="Enter key words of field report...">
@@ -121,6 +121,11 @@
                         <span class="team-notification"><i class="fa fa-circle"></i></span>
                     </a>
                 </li>
+                <li data-toggle="modal" data-target="#modal-create-team">
+                    <a href="#">
+                        <span class="team-name">+ Create a team</span>
+                    </a>
+                </li>
             </ul>
         </div>
 
@@ -137,6 +142,11 @@
                     <a href="#">
                         <span class="user-visibility"><i class="fa fa-eye-slash"></i></span>
                         <span class="user-name">User 1.2</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        + Add members to team
                     </a>
                 </li>
             </ul>
@@ -160,6 +170,11 @@
                         <span class="user-name">User 2.3</span>
                     </a>
                 </li>
+                <li>
+                    <a href="#">
+                        + Add members to team
+                    </a>
+                </li>
             </ul>
 
             <ul id="sub3" class="sidebar-nav sub">
@@ -179,6 +194,11 @@
                     <a href="#">
                         <span class="user-visibility"><i class="fa fa-eye"></i></span>
                         <span class="user-name">User 3.3</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        + Add members to team
                     </a>
                 </li>
             </ul>
@@ -347,6 +367,72 @@
             </form>
         </div>
     </div> -->
+
+    <!-- MODAL - Create New Team -->
+    <div class="modal fade" id="modal-create-team" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="container">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1>Create a Team</h1>
+                        <p>Please give the new team a name and description.</p>
+                    </div>
+                    <div class="modal-body">   
+                        <form class="row">
+                            <div class="form-group col-md-12">
+                                <label>Team Name</label>
+                                <input type="text" class="form-control" id="inputTeamName" placeholder="">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label>Team Description</label>
+                                <textarea class="team-descr"></textarea>
+                            </div>
+                            <button type="button" class="btn btn-success" id="modal-assign-team-admin-trigger">Next</button>
+                        </form>
+                    </div>
+                </div>
+            </div><!-- /modal-dialogue -->
+        </div>
+    </div>
+
+    <!-- MODAL - Assign Team Admin -->
+    <div class="modal fade" id="modal-assign-team-admin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="container">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1>Assign Team Admin</h1>
+                        <p>Please assign one or more member as the Team Admin to help you organize this team.</p>
+                    </div>
+                    <div class="modal-body">   
+                        <form class="member-list">
+                            <div class="list-item">
+                                <span class="list-name">Jeremy Willemse</span>
+                                <span class="list-operation">
+                                    <button class="btn btn-default">Assign</button>
+                                </span>
+                            </div>
+                            <div class="list-item">
+                                <span class="list-name">Junya Wang</span>
+                                <span class="list-operation">
+                                    <button class="btn btn-default">Assign</button>
+                                </span>
+                            </div>
+                            <div class="list-item">
+                                <span class="list-name">Guy Davis</span>
+                                <span class="list-operation">
+                                    <button class="btn btn-default">Assign</button>
+                                </span>
+                            </div>
+
+                            <button type="button" class="btn btn-default" id="modal-create-team-trigger">Back</button>
+                            <button type="submit" class="btn btn-success" id="">Next</button>
+                        </form>
+                    </div>
+                </div>
+            </div><!-- /modal-dialogue -->
+        </div>
+    </div>
 
     <!-- MODAL - View Report-->
     <div class="modal fade bs-example-modal-lg row" id="modal-view-report" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -615,6 +701,7 @@
 
     <!-- Modal Toggle -->
     <script type="text/javascript">
+        //********** Field Report Workflow *********//
         // Show modal-photo-to-report
         $("#modal-photo-to-report-trigger").click(function(){
             $('#modal-view-photo').modal('hide');
@@ -637,6 +724,19 @@
         $("#modal-report-to-note-trigger").click(function(){
             $('#modal-view-report').modal('hide');
             $('#modal-view-note').modal('show');
+        });
+
+        //********** Create Team Workflow *********//
+        // Show modal-assign-team-admin
+        $("#modal-assign-team-admin-trigger").click(function(){
+            $('#modal-assign-team-admin').modal('show');
+            $('#modal-create-team').modal('hide');
+        });
+
+        // Show modal-create-team
+        $("#modal-create-team-trigger").click(function(){
+            $('#modal-assign-team-admin').modal('hide');
+            $('#modal-create-team').modal('show');
         });
     </script>
 

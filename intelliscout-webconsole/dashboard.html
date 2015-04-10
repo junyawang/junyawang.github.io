@@ -149,8 +149,97 @@
                                 <h1>Members</h1>
                             </div>
                             <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-10">
+                                        <form class="search-bar" role="search">
+                                            <div class="form-group">
+                                                <span class="search-icon"><i class="fa fa-search"></i></span>
+                                                <input type="text" class="form-control" placeholder="Search members">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button class="btn btn-success btn-invite-users" id="modal-invite-members-trigger">+ Invite Members</button>
+                                    </div>
+                                </div>
+                                <div class="table-responsive table-members">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>First Name</th>
+                                                <th>Last Name</th> 
+                                                <th>Email</th>
+                                                <th>Role</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Craig</td>
+                                                <td>Ganssle</td> 
+                                                <td>craig@basecampnetworks.com</td>
+                                                <td>Org Admin</td>
+                                                <td>Team 1, Team 2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jeremy</td>
+                                                <td>Willemse</td> 
+                                                <td>jeremy@momentussoftware.com</td>
+                                                <td>Team Admin</td>
+                                                <td>Team 3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Junya</td>
+                                                <td>Wang</td> 
+                                                <td>junya@momentussoftware.com</td>
+                                                <td>Member</td>
+                                                <td>Team 1, Team 3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Guy</td>
+                                                <td>Davis</td> 
+                                                <td>guy_davis@momentussoftware.com</td>
+                                                <td>Member</td>
+                                                <td>Pending accpet invitation</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </section>
+                    </div>
+                </div>
+
+                <!-- MODAL - Invite Members -->
+                <div class="modal fade" id="modal-invite-members" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="container">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1>Invite Members</h1>
+                                <p>Inviting more members to join your organization. </p>
+                            </div>
+                            <div class="modal-body">   
+                                <form class="row">
+                                    <div class="form-group col-md-12">
+                                        <input type="email" class="form-control" id="inputEmail1" placeholder="email@domain.com">
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <input type="email" class="form-control" id="inputEmail2" placeholder="email@domain.com">
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <input type="email" class="form-control" id="inputEmail3" placeholder="email@domain.com">
+                                    </div>
+
+                                    <div class="form-group col-md-12">
+                                        <a href="#" class="btn btn-default btn-xs btn-add-invitation">+ Add Invitation</a>
+                                    </div>
+                                    <button type="submit" class="btn btn-success">Send Invitations</button>
+                                    <a href="#" class="btn btn-default">Cancel</a>
+                                </form>
+                            </div>
+                        </div>
+                    </div><!-- /modal-dialogue -->
                     </div>
                 </div>
 
@@ -169,6 +258,14 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal Toggle -->
+    <script type="text/javascript">
+        // Show modal-invite-members
+        $("#modal-invite-members-trigger").click(function(){
+            $('#modal-invite-members').modal('show');
+        });
+    </script>
 
 </body>
 

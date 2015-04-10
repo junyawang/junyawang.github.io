@@ -82,7 +82,7 @@ body{
     box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, label, p, span, a {
+h1, h2, h3, h4, h5, h6, label, p, span, a, .h1{
 	font-family: Source Sans Pro, sans-serif;
 	text-align: left;
 
@@ -94,7 +94,8 @@ h1, h2, h3, h4, h5, h6, label, p, span, a {
 	-moz-font-feature-settings: "kern=1";
 }
 
-h1 {
+h1,
+.h1 {
 	color: black;
 	font-size: 2em;
 	font-weight: 600;
@@ -143,111 +144,6 @@ a:focus {
 }
 
 /* --------- UIKIT ---------- */
-/* --------- NAV BAR ---------- */
-.navbar {
-	border: none;
-	font-weight: 400;
-}
-
-/* NAV BAR - MAIN */
-.navbar-main {
-    background-color: $greenDark;
-    margin-bottom: 0;
-    height: $navbar-main-height;
-    @include box-shadow (0px 2px 2px 0px rgba(0, 0, 0, 0.05));
-}
-
-.navbar-main {
-    .navbar-nav.navbar-left>li>a {
-        color: white;
-        font-size: 1.2em;
-        font-weight: 600;
-        vertical-align: middle;
-    }
-
-    .navbar-nav.navbar-right>li>a {
-        color: white;
-        font-size: 1.2em;
-        font-weight: 400;
-        vertical-align: middle;
-    }
-    
-    .navbar-nav>.open>a,
-    .navbar-nav>.open>a:focus,
-    .navbar-nav>.open>a:hover {
-        background-color: $green;
-        color: white;
-    }
-}
-
-.navbar-brand {
-	padding: 0;
-}
-
-.img-logo {
-	max-width: $navbar-main-height;
-}
-
-.dropdown-menu {
-    @include box-shadow (0px 0px 1px 0px rgba(0, 0, 0, 0.25));
-}
-
-
-/* NAV BAR - LOWER */
-.navbar-lower {
-	margin-top: $navbar-main-height;
-	z-index: 10;
-    vertical-align: middle;
-    height: $navbar-lower-height;
-    @include box-shadow (0px 2px 2px 0px rgba(0, 0, 0, 0.05));
-
-    a {
-        padding: 16px 0;
-    }
-
-    .navbar-form {
-        width: 100%;
-        
-        .form-group{
-            width: 100%;
-            position: relative;
-        }
-
-        input {
-            width: 100%;
-            padding-left: 32px;
-        }
-    }
-
-    .search-icon {
-        position: absolute;
-        top: 5px;
-        left: 10px;
-        font-size: 1.2em;
-        color: $greyMid;
-    }
-}
-
-.team-name {
-    text-align: left;
-}
-
-.team-notification {
-    text-align: right;
-    float: right;
-    padding-right: 30px;
-    font-size: 0.8em;
-    color: $orange;
-}
-
-.user-visibility {
-    text-align: left;
-}
-
-.user-name {
-    text-align: left;
-    padding-left: 20px;
-}
 
 /* ------------- Button --------------*/
 .btn {
@@ -293,6 +189,7 @@ form {
 }
 
 .form-control {
+    width: 100%;
     border-radius: 2px;
     font-size: 1.2em;
     height: 36px;
@@ -303,8 +200,20 @@ label {
     font-size: 1.2em;
 }
 
+.search-bar {
+    .search-icon {
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        font-size: 1.2em;
+        color: $greyMid;
+    }
 
-
+    input {
+        width: 100%;
+        padding-left: 32px;
+    }
+}
 
 /* ----------- Text Area -----------*/
 textarea{
@@ -345,12 +254,130 @@ textarea{
     font-size: 1.2em;
 }
 
+/* --------- NAV BAR ---------- */
+.navbar {
+    border: none;
+    font-weight: 400;
+}
+
+/* NAV BAR - MAIN */
+.navbar-main {
+    background-color: $greenDark;
+    margin-bottom: 0;
+    height: $navbar-main-height;
+    @include box-shadow (0px 2px 2px 0px rgba(0, 0, 0, 0.05));
+}
+
+.navbar-main {
+    .navbar-nav.navbar-left>li>a {
+        color: white;
+        font-size: 1.2em;
+        font-weight: 600;
+        vertical-align: middle;
+    }
+
+    .navbar-nav.navbar-right>li>a {
+        color: white;
+        font-size: 1.2em;
+        font-weight: 400;
+        vertical-align: middle;
+    }
+    
+    .navbar-nav>.open>a,
+    .navbar-nav>.open>a:focus,
+    .navbar-nav>.open>a:hover {
+        background-color: $green;
+        color: white;
+    }
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.img-logo {
+    max-width: $navbar-main-height;
+}
+
+.dropdown-menu {
+    @include box-shadow (0px 0px 1px 0px rgba(0, 0, 0, 0.25));
+}
+
+
+/* NAV BAR - LOWER */
+.navbar-lower {
+    margin-top: $navbar-main-height;
+    z-index: 10;
+    vertical-align: middle;
+    height: $navbar-lower-height;
+    @include box-shadow (0px 2px 2px 0px rgba(0, 0, 0, 0.05));
+
+    a {
+        padding: 16px 0;
+    }
+
+    .navbar-form {
+        width: 100%;
+        
+        .form-group{
+            width: 100%;
+            position: relative;
+
+            input {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.team-name {
+    text-align: left;
+}
+
+.team-notification {
+    text-align: right;
+    float: right;
+    padding-right: 30px;
+    font-size: 0.8em;
+    color: $orange;
+}
+
+.user-visibility {
+    text-align: left;
+}
+
+.user-name {
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* ---------- List Item ----------- */
+.list-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $greyLight;
+    vertical-align: middle;
+
+    .list-name {
+        padding-left: 20px;
+        font-size: 1.2em;
+    }
+
+    .list-operation {
+        float: right;
+        vertical-align: middle;
+    }
+}
+
+.list-item:first-child {
+    border-top: 1px solid $greyLight;
+}
+
 /* ---------- Panel ----------- */
 .panel {
     border: none;
     width: 100%;
     margin: 0 auto;
-    margin-top: 60px;
 }
 
 .panel-heading {
@@ -386,6 +413,7 @@ textarea{
 }
 
 .panel-report {
+    margin-top: 60px;
     padding: 0;
 
     .panel-heading {
@@ -636,8 +664,9 @@ li.report-status:not(:first-child) {
     }
 
     li.active {
-        color: $orange;
-        background: white;
+        .team-name{
+            font-weight: 600;
+        }
     }
 
     li a:hover {
@@ -646,9 +675,6 @@ li.report-status:not(:first-child) {
         background: white;
     }
 }
-
-
-
 
 // .sidebar-nav > .sidebar-brand {
 //     height: 65px;
@@ -717,23 +743,26 @@ ul.sub.active {
     @include box-shadow (0px 0px 2px 0px rgba(0, 0, 0, 0.25));
 }
 
-.modal-header {
-    padding: 16px;
-    background-color: $greenDark;
-    border-bottom: none;
+.modal-lg {
+    .modal-header {
+        padding: 16px;
+        background-color: $greenDark;
+        border-bottom: none;
 
-    .modal-title {
-        font-size: 1.2em;
-        font-weight: 600;
-        color: white;
+        .modal-title {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: white;
+        }
+    }
+
+    .modal-body {
+        padding: 0;
+        // overflow-x: hidden;
+        overflow-y: auto;
     }
 }
 
-.modal-body {
-    padding: 0 0;
-    // overflow-x: hidden;
-    overflow-y: auto;
-}
 
 .modal-section {
     background-color: white;
@@ -899,11 +928,31 @@ img.qr-code {
 
 }
 
+/* =========== DASHBOARD ============ */
+table {
+    font-size: 1.2em;
+}
+
+.btn-invite-users {
+    display: block;
+    float: right;
+}
+
+.table-members {
+    clear: both;
+}
+
+/* =========== SWITCH ORG ============ */
+
+
+
 /* =========== SIGN IN & SIGN UP ============ */
 .panel-sign-in {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 60%;
-    margin-top: 20%;
-    margin-bottom: 5%;
     border: 1px solid $greyLight;
     @include box-shadow (0px 0px 10px 0px rgba(0, 0, 0, 0.08));
     
