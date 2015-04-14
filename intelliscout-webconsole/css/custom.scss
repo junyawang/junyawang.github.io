@@ -215,17 +215,14 @@ label {
     }
 }
 
-/* ----------- Text Area -----------*/
+/* ----------- Textarea -----------*/
 textarea{
-    border: none;
-    outline: none;
-    border-top: 2px solid $greyLight;
     resize: inherit;
     overflow: auto;
     width: 100%;
     min-height: 100px;
     font-size: 1.1em;
-    padding: 16px;
+    padding-top: 16px;
 }
 
 // .hiddendiv {
@@ -352,25 +349,40 @@ textarea{
 }
 
 /* ---------- List Item ----------- */
-.list-item {
-    padding-top: 10px;
-    padding-bottom: 10px;
+
+.list-group {
+    margin-bottom: 10px;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px 10px 0;
+    margin: 2px 0;
+    background-color: #fff;
+    border: none;
     border-bottom: 1px solid $greyLight;
-    vertical-align: middle;
 
     .list-name {
-        padding-left: 20px;
         font-size: 1.2em;
+        vertical-align: middle;
     }
 
     .list-operation {
-        float: right;
-        vertical-align: middle;
     }
 }
 
-.list-item:first-child {
-    border-top: 1px solid $greyLight;
+.list-group-item:first-child {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    // border-top: 1px solid $greyLight;
+}
+
+.list-group-item:last-child {
+    margin-bottom: 0;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom: none;
 }
 
 /* ---------- Panel ----------- */
@@ -544,6 +556,18 @@ li.report-status:not(:first-child) {
 .comment-form {
     text-align: left;
     padding: 0 0 16px 0;
+
+    textarea{
+        border: none;
+        outline: none;
+        border-top: 2px solid $greyLight;
+        resize: inherit;
+        overflow: auto;
+        width: 100%;
+        min-height: 100px;
+        font-size: 1.1em;
+        padding: 16px;
+    }
 }
 
 .comment-form .btn {
@@ -947,12 +971,15 @@ table {
 
 
 /* =========== SIGN IN & SIGN UP ============ */
-.panel-sign-in {
+.panel-center {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 60%;
+}
+
+.panel-sign-in {
+    margin-top: 30%;
     border: 1px solid $greyLight;
     @include box-shadow (0px 0px 10px 0px rgba(0, 0, 0, 0.08));
     
@@ -965,6 +992,13 @@ table {
         p {
             padding: 10px 0 10px 0;
         }
+    }
+}
+
+.list-group-item {
+    img {
+        padding: 0;
+        padding-right: 20px;
     }
 }
 

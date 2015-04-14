@@ -10,7 +10,6 @@
 
     <title>Org Name - Team Activities</title>
 
-
     <link rel="shortcut icon" href="img/favicon.ico" />
 
     <!-- CSS -->
@@ -385,9 +384,9 @@
                             </div>
                             <div class="form-group col-md-12">
                                 <label>Team Description</label>
-                                <textarea class="team-descr"></textarea>
+                                <textarea class="form-control"></textarea>
                             </div>
-                            <button type="button" class="btn btn-success" id="modal-assign-team-admin-trigger">Next</button>
+                            <button type="button" class="btn btn-success" id="modal-createTeam-to-assignAdmin-trigger">Next</button>
                         </form>
                     </div>
                 </div>
@@ -405,29 +404,68 @@
                         <p>Please assign one or more member as the Team Admin to help you organize this team.</p>
                     </div>
                     <div class="modal-body">   
-                        <form class="member-list">
-                            <div class="list-item">
+                        <div class="list-group member-list">
+                            <div class="list-group-item clearfix">
                                 <span class="list-name">Jeremy Willemse</span>
-                                <span class="list-operation">
+                                <span class="list-operation pull-right">
                                     <button class="btn btn-default">Assign</button>
                                 </span>
                             </div>
-                            <div class="list-item">
+                            <div class="list-group-item clearfix">
                                 <span class="list-name">Junya Wang</span>
-                                <span class="list-operation">
+                                <span class="list-operation pull-right">
                                     <button class="btn btn-default">Assign</button>
                                 </span>
                             </div>
-                            <div class="list-item">
+                            <div class="list-group-item clearfix">
                                 <span class="list-name">Guy Davis</span>
-                                <span class="list-operation">
+                                <span class="list-operation pull-right">
                                     <button class="btn btn-default">Assign</button>
                                 </span>
                             </div>
 
-                            <button type="button" class="btn btn-default" id="modal-create-team-trigger">Back</button>
-                            <button type="submit" class="btn btn-success" id="">Next</button>
-                        </form>
+                            <button type="button" class="btn btn-default" id="modal-assignAdmin-to-createTeam-trigger">Back</button>
+                            <button type="submit" class="btn btn-success" id="modal-assignAdmin-to-inviteMembers-trigger">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /modal-dialogue -->
+        </div>
+    </div>
+
+    <!-- MODAL - Invite Members -->
+    <div class="modal fade" id="modal-invite-members" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="container">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1>Invite Members</h1>
+                        <p>Invite members from your organization to join this team.</p>
+                    </div>
+                    <div class="modal-body">      
+                        <div class="list-group member-list">
+                            <div class="list-group-item clearfix">
+                                <span class="list-name">Jeremy Willemse</span>
+                                <span class="list-operation pull-right">
+                                    <button class="btn btn-default">Invite</button>
+                                </span>
+                            </div>
+                            <div class="list-group-item clearfix">
+                                <span class="list-name">Junya Wang</span>
+                                <span class="list-operation pull-right">
+                                    <button class="btn btn-default">Invite</button>
+                                </span>
+                            </div>
+                            <div class="list-group-item clearfix">
+                                <span class="list-name">Guy Davis</span>
+                                <span class="list-operation pull-right">
+                                    <button class="btn btn-default">Invite</button>
+                                </span>
+                            </div>
+
+                            <button type="button" class="btn btn-default" id="modal-inviteMembers-to-assignAdmin-trigger">Back</button>
+                            <button type="submit" class="btn btn-success" data-dismiss="modal">Done</button>
+                        </div>
                     </div>
                 </div>
             </div><!-- /modal-dialogue -->
@@ -437,7 +475,6 @@
     <!-- MODAL - View Report-->
     <div class="modal fade bs-example-modal-lg row" id="modal-view-report" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="col-md-1 col-md-offset-1 col-sm-1 col-sm-offset-1 col-xs-1">
-            
             <div class="modal-back">
                 <button type="button" class="btn btn-default">
                     <span class="btn-modal-close alignRight" aria-hidden="true"><i class="fa fa-arrow-left"></i></span>
@@ -727,16 +764,29 @@
         });
 
         //********** Create Team Workflow *********//
-        // Show modal-assign-team-admin
-        $("#modal-assign-team-admin-trigger").click(function(){
+
+        // Show createTeam-to-assignAdmin
+        $("#modal-createTeam-to-assignAdmin-trigger").click(function(){
             $('#modal-assign-team-admin').modal('show');
             $('#modal-create-team').modal('hide');
         });
 
-        // Show modal-create-team
-        $("#modal-create-team-trigger").click(function(){
+        // Show assignAdmin-to-createTeam
+        $("#modal-assignAdmin-to-createTeam-trigger").click(function(){
             $('#modal-assign-team-admin').modal('hide');
             $('#modal-create-team').modal('show');
+        });
+
+        // Show assignAdmin-to-inviteMembers
+        $("#modal-assignAdmin-to-inviteMembers-trigger").click(function(){
+            $('#modal-assign-team-admin').modal('hide');
+            $('#modal-invite-members').modal('show');
+        });
+
+        // Show inviteMembers-to-assignAdmin
+        $("#modal-inviteMembers-to-assignAdmin-trigger").click(function(){
+            $('#modal-assign-team-admin').modal('show');
+            $('#modal-invite-members').modal('hide');
         });
     </script>
 
