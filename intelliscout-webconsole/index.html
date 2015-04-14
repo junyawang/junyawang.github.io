@@ -15,6 +15,7 @@
     <!-- CSS -->
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-tagsinput.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link href="css/custom.css" rel="stylesheet" type="text/css">
@@ -23,6 +24,8 @@
     <!-- JS -->
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-tagsinput.min.js"></script>
+    <script src="js/bootstrap-tagsinput-angular.min.js"></script>
 
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
@@ -143,7 +146,7 @@
                         <span class="user-name">User 1.2</span>
                     </a>
                 </li>
-                <li>
+                <li data-toggle="modal" data-target="#modal-invite-members">
                     <a href="#">
                         + Add members to team
                     </a>
@@ -169,7 +172,7 @@
                         <span class="user-name">User 2.3</span>
                     </a>
                 </li>
-                <li>
+                <li data-toggle="modal" data-target="#modal-invite-members">
                     <a href="#">
                         + Add members to team
                     </a>
@@ -195,7 +198,7 @@
                         <span class="user-name">User 3.3</span>
                     </a>
                 </li>
-                <li>
+                <li data-toggle="modal" data-target="#modal-invite-members">
                     <a href="#">
                         + Add members to team
                     </a>
@@ -486,12 +489,14 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header"> 
-                        <h2 class="modal-title" id="myModalLabel">Craig Ganssle - April 2, 2015 23:08</h2>
+                        <span class="modal-title h2" id="myModalLabel">Craig Ganssle - April 2, 2015 23:08</span>
+                        <button class="btn btn-default btn-export" id="modal-export-trigger"><i class="fa fa-share-square-o"></i> Export</button>
                     </div>
                     <div class="modal-body">   
                         <!--Photo Section-->
                         <div class="modal-section">
-                            <span class="modal-section-name alignLeft"><i class="fa fa-camera"></i> Photo</span>
+                            <span class="modal-section-icon alignLeft"><i class="fa fa-camera"></i></span>
+                            <span class="modal-section-name">Photo</span>
                             <span class="modal-section-size alignRight">11 Items, 21.2MB</span>
                         </div>
                         <div class="row modal-thumbnail">
@@ -512,7 +517,8 @@
 
                         <!--Video Section-->
                         <div class="modal-section">
-                            <span class="modal-section-name alignLeft"><i class="fa fa-video-camera"></i> Video</span>
+                            <span class="modal-section-icon alignLeft"><i class="fa fa-video-camera"></i></span>
+                            <span class="modal-section-name">Video</span>
                             <span class="modal-section-size alignRight">11 Items, 21.2MB</span>
                         </div>
                         <div class="row modal-thumbnail">
@@ -532,7 +538,8 @@
 
                         <!-- Automation Section-->
                         <div class="modal-section">
-                            <span class="modal-section-name alignLeft"><i class="fa fa-sort-numeric-asc"></i> Automation</span>
+                            <span class="modal-section-icon alignLeft"><i class="fa fa-sort-numeric-asc"></i></span>
+                            <span class="modal-section-name">Automation</span>
                             <span class="modal-section-size alignRight">11 Items, 21.2MB</span>
                         </div>
                         <div class="row modal-thumbnail">
@@ -552,7 +559,8 @@
 
                         <!-- Notes Section-->
                         <div class="modal-section">
-                            <span class="modal-section-name alignLeft"><i class="fa fa-file"></i> Notes</span>
+                            <span class="modal-section-icon alignLeft"><i class="fa fa-file"></i></span>
+                            <span class="modal-section-name">Notes</span>
                             <span class="modal-section-size alignRight">11 Items, 21.2MB</span>
                         </div>
                         
@@ -710,6 +718,36 @@
         </div>
     </div>
 
+    <!-- MODAL - Export -->
+    <div class="modal fade" id="modal-export" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="container">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1>Export Field Report</h1>
+                        <p>Please give the new team a name and description.</p>
+                    </div>
+                    <div class="modal-body">   
+                        <form class="row">
+                            <div class="form-group col-md-12">
+                                <label>Link to share</label>
+                                <input type="text" class="form-control input-share-link" value="https://orgname.intelliscout.com/craig_ganssle_201504022308" readonly="" onClick="this.setSelectionRange(0, this.value.length)">
+                                <button class="btn btn-default btn-copy-link" type="button">Copy Link</button>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label>Send link to</label>
+                                <input type="email" class="form-control" id="" placeholder="Enter email addresses" data-role="tagsinput">
+                                <textarea class="form-control" placeholder="Add a note"></textarea>
+                            </div>
+                            <button type="button" class="btn btn-success" id="">Send</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </form>
+                    </div>
+                </div>
+            </div><!-- /modal-dialogue -->
+        </div>
+    </div>
+
     <!-- Import Custom JS-->
 
     <!-- Menu Toggle Script -->
@@ -739,6 +777,7 @@
     <!-- Modal Toggle -->
     <script type="text/javascript">
         //********** Field Report Workflow *********//
+
         // Show modal-photo-to-report
         $("#modal-photo-to-report-trigger").click(function(){
             $('#modal-view-photo').modal('hide');
@@ -787,6 +826,19 @@
         $("#modal-inviteMembers-to-assignAdmin-trigger").click(function(){
             $('#modal-assign-team-admin').modal('show');
             $('#modal-invite-members').modal('hide');
+        });
+
+        //********** Export Workflow *********//
+
+        // Show report-to-export
+        $("#modal-export-trigger").click(function(){
+            $('#modal-export').modal('show');
+            // $('#modal-view-report').modal('hide');
+        });
+
+        $("#modal-export-to-report-trigger").click(function(){
+            $('#modal-export').modal('hide');
+            $('#modal-view-report').modal('show');
         });
     </script>
 

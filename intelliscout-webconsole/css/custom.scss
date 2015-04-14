@@ -215,8 +215,32 @@ label {
     }
 }
 
+/* ------------- Tag --------------*/
+.bootstrap-tagsinput {
+    display: block;
+}
+
+.bootstrap-tagsinput input {
+    width: 100%;
+    font-size: 1.2em;
+    padding-left: 5px;
+}
+
+.bootstrap-tagsinput .tag {
+    color: black;
+}
+
+.label {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.label-info {
+    background-color: $greyLight;
+}
+
 /* ----------- Textarea -----------*/
-textarea{
+textarea {
     resize: inherit;
     overflow: auto;
     width: 100%;
@@ -418,7 +442,6 @@ textarea{
 }
 
 /* --------- REPORT PANEL -----------*/
-
 
 .panel-report:first-child {
     margin-top: 140px;
@@ -787,6 +810,9 @@ ul.sub.active {
     }
 }
 
+.btn-export {
+    float: right;
+}
 
 .modal-section {
     background-color: white;
@@ -819,16 +845,14 @@ ul.sub.active {
     }
 }
 
+.modal-section-icon {
+    padding-right: 10px;
+    color: $greyMid;
+}
+
 .modal-section-name {
     color: black;
     font-weight: 600;
-}
-
-.fa-camera,
-.fa-video-camera,
-.fa-sort-numeric-asc,
-.fa-file {
-    color: $greyMid;
 }
 
 .modal-section-size {
@@ -917,7 +941,7 @@ footer.sec-chat {
 }
 
 /*--------------------------------------
-                 PAGE
+                    PAGE
 -----------------------------------------*/
 /* =========== TEAM ACTIVITIES ============ */
 body {
@@ -1006,4 +1030,9 @@ form .btn.btn-add-invitation {
     margin-left: 0;
     font-weight: 400;
     font-size: 1em;
+}
+
+/* =========== MODAL - Export ============ */
+.input-share-link {
+    display: inline-block;
 }
