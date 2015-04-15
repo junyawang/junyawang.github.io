@@ -143,6 +143,22 @@ a:focus {
 	text-decoration: none;
 }
 
+/* ---- Make Bootstrap Default Gutter Smaller ----- */
+
+.row.small-gutter [class*='col-']:not(:first-child),
+.row.small-gutter [class*='col-']:not(:last-child) {
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.row.small-gutter [class*='col-']:first-child {
+    padding-left: 0;
+}
+
+.row.small-gutter [class*='col-']:last-child {
+    padding-right: 0;
+}
+
 /* --------- UIKIT ---------- */
 
 /* ------------- Button --------------*/
@@ -221,31 +237,7 @@ label {
     }
 }
 
-/* ------------- Tag --------------*/
-// .bootstrap-tagsinput {
-//     display: block;
-// }
-
-// .bootstrap-tagsinput input {
-//     width: 100%;
-//     font-size: 1.2em;
-//     padding-left: 5px;
-// }
-
-// .bootstrap-tagsinput .tag {
-//     color: black;
-// }
-
-// .label {
-//     font-size: 1.2em;
-//     font-weight: 400;
-// }
-
-// .label-info {
-//     background-color: $greyLight;
-// }
-
-/* ---------- Token Field ----------*/
+/* ---------- Token Field - Tags ----------*/
 .tokenfield {
     height: auto;
     margin-bottom: 10px;
@@ -491,19 +483,6 @@ textarea {
 
     .panel-body {
         padding: 15px;
-
-        .col-md-3 {
-            padding-left: 1px;
-            padding-right: 1px;
-        }
-
-        .col-md-3:first-child {
-            padding-left:0;
-        }
-
-        .col-md-3:last-child {
-            padding-right:0;
-        }
 
         p {
             padding: 20px 0 10px 0;
@@ -860,19 +839,6 @@ ul.sub.active {
     .row {
         margin-left: 0;
         margin-right: 0;
-    }
-
-    .col-md-3 {
-        padding-left: 1px;
-        padding-right: 1px;
-    }
-
-    .col-md-3:first-child {
-        padding-left:0;
-    }
-
-    .col-md-3:last-child {
-        padding-right:0;
     }
 }
 

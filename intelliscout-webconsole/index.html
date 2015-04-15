@@ -223,7 +223,7 @@
                                         <span class="panel-time">11:23</span>
                                     </div>
                                     <div class="panel-body">
-                                        <div class="row">
+                                        <div class="row small-gutter">
                                             <img class="col-md-3 col-sm-3 col-xs-3" src="http://placehold.it/400x400">
                                             <img class="col-md-3 col-sm-3 col-xs-3" src="http://placehold.it/400x400">
                                             <img class="col-md-3 col-sm-3 col-xs-3" src="http://placehold.it/400x400">
@@ -294,7 +294,7 @@
                                         <span class="panel-time">11:24</span>
                                     </div>
                                     <div class="panel-body">
-                                        <div class="row">
+                                        <div class="row small-gutter">
                                             <img class="col-md-3 col-sm-3 col-xs-3" src="http://placehold.it/400x400">
                                             <img class="col-md-3 col-sm-3 col-xs-3" src="http://placehold.it/400x400">
                                             <img class="col-md-3 col-sm-3 col-xs-3" src="http://placehold.it/400x400">
@@ -499,7 +499,7 @@
                             <span class="modal-section-name">Photo</span>
                             <span class="modal-section-size alignRight">11 Items, 21.2MB</span>
                         </div>
-                        <div class="row modal-thumbnail">
+                        <div class="row small-gutter modal-thumbnail">
                             <div class="col-md-3 col-sm-6 col-xs-12" id="modal-report-to-photo-trigger">
                                 <img class="modal-img img-responsive clickable" src="http://placehold.it/400x400" alt="">
                             </div>
@@ -521,7 +521,7 @@
                             <span class="modal-section-name">Video</span>
                             <span class="modal-section-size alignRight">11 Items, 21.2MB</span>
                         </div>
-                        <div class="row modal-thumbnail">
+                        <div class="row small-gutter modal-thumbnail">
                             <div class="col-md-3 col-sm-6 col-xs-12">
                                 <img class="modal-img img-responsive" src="http://placehold.it/400x400" alt="">
                             </div>
@@ -542,7 +542,7 @@
                             <span class="modal-section-name">Automation</span>
                             <span class="modal-section-size alignRight">11 Items, 21.2MB</span>
                         </div>
-                        <div class="row modal-thumbnail">
+                        <div class="row small-gutter modal-thumbnail">
                             <div class="col-md-3 col-sm-6 col-xs-12">
                                 <img class="modal-img img-responsive" src="http://placehold.it/400x400" alt="">
                             </div>
@@ -725,12 +725,13 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h1>Export Field Report</h1>
-                        <p>Please give the new team a name and description.</p>
+                        <p>Share this field report with your colleagues and clients.</p>
                     </div>
                     <div class="modal-body">   
                         <form class="row">
                             <div class="form-group col-md-12">
                                 <label>Link to share</label>
+                                <p>People who </p>
                                 <input type="text" class="form-control input-share-link" value="https://orgname.intelliscout.com/craig_ganssle_201504022308" readonly="" onClick="this.setSelectionRange(0, this.value.length)">
                             </div>
                             <div class="form-group col-md-12">
@@ -884,8 +885,14 @@
             // })
 
         .tokenfield()
+    </script>
 
-
+    <!-- Share Link - Click to Copy Text -->
+    <script type="text/javascript">
+        $(document).on('click', '.input-share-link', function(e){
+            e.preventDefault(); //for <a>
+            $('.paste').val($(this).text());
+        });
     </script>
 
     <!-- Textarea Auto Resize -->
