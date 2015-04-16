@@ -6,10 +6,12 @@ $orange: #e75a24; //secondary color
 
 $greyLight: #efeff4;
 $greyMid: #c8c7cc;
-$greyDark: #292E2A; //text, to replace plain black
+$greyDark: #484A49; //text, to replace plain $black
 
-$navbar-main-height: 54px;
-$navbar-lower-height: 52px;
+$black: #1C1F1D;
+
+$navbar-main-height: 60px;
+$navbar-lower-height: 56px;
 
 /*-------------------------------------------
                     BASE
@@ -44,9 +46,7 @@ $navbar-lower-height: 52px;
     visibility: none;
 }
 
-input,
 input:focus,
-textarea,
 textarea:focus {
     outline: none;
 }
@@ -63,6 +63,13 @@ textarea:focus {
     -moz-transition: $transition;
     -o-transition: $transition;
     transition: $transition;
+}
+
+@mixin transform ($transform) {
+    -webkit-transition: $transform;
+    -moz-transition: $transform;
+    -o-transition: $transform;
+    transition: $transform;
 }
 
 /* --------- TYPOGRAPHY ---------- */
@@ -96,7 +103,7 @@ h1, h2, h3, h4, h5, h6, label, p, span, a, .h1{
 
 h1,
 .h1 {
-	color: black;
+	color: $black;
 	font-size: 2em;
 	font-weight: 600;
     margin-top: 30px;
@@ -104,7 +111,7 @@ h1,
 }
 
 h2 {
-	color: black;
+	color: $black;
 	font-size: 1.8em;
 	font-weight: 600;
     margin-top: 20px;
@@ -130,7 +137,7 @@ p {
 }
 
 label {
-	color: black;
+	color: $black;
 }
 
 a {
@@ -163,25 +170,54 @@ a:focus {
 
 /* ------------- Button --------------*/
 .btn {
-    border-radius: 2px;
+    border-radius: 0px;
+    padding: 8px 16px;
     @include box-shadow (0px 0px 0px 0px rgba(0, 0, 0, 0));
     font-weight: 600;
     font-size: 1.2em;
+    min-width: 120px;
 }
 
 .btn-default {
+    background-color: white;
+    border-color: $greyLight;
+    color: $greyDark;
+    @include transition (all 0.2s ease);
+}
+
+.btn-default:hover {
+    background-color: $greyLight;
+    border-color: $greyLight;
+    color: $greyDark;
+    @include transition (all 0.2s ease);
+}
+
+.btn-black {
+    background-color: $black;
+    border-color: $black;
+    color: white;
+    @include transition (all 0.2s ease);
+}
+
+.btn-black:hover {
+    background-color: $greyDark;
+    border-color: $greyDark;
+    color: white;
+    @include transition (all 0.2s ease);
 }
 
 .btn-success {
     background-color: $greenDark;
     border-color: $greenDark;
     color: white;
+    @include transition (all 0.2s ease);
 }
 
 .btn-success:hover {
     background-color: $green;
     border-color: $green;
     color: white;
+    @include transition (all 0.2s ease);
 }
 
 .btn-fail {
@@ -206,10 +242,19 @@ form {
 
 .form-control {
     width: 100%;
-    border-radius: 2px;
+    padding: 8px 16px;
+    border-radius: 0px;
+    border-color: $greyMid;
     font-size: 1.2em;
-    height: 36px;
+    height: auto;
     @include box-shadow (0px 0px 0px 0px rgba(0, 0, 0, 0));
+}
+
+.input-group-addon {
+    font-size: 1.2em;
+    background-color: $greyLight;
+    border-color: $greyMid;
+    border-radius: 0px;
 }
 
 .form-control[disabled],
@@ -225,7 +270,7 @@ label {
 .search-bar {
     .search-icon {
         position: absolute;
-        top: 5px;
+        top: 8px;
         left: 10px;
         font-size: 1.2em;
         color: $greyMid;
@@ -251,6 +296,7 @@ label {
     height: initial;
     background-color: $greyLight;
     border-color: $greyLight;
+    margin: 0 5px 5px 0;
 }
 
 .tokenfield .token.active {
@@ -356,9 +402,9 @@ textarea {
     height: $navbar-lower-height;
     @include box-shadow (0px 2px 2px 0px rgba(0, 0, 0, 0.05));
 
-    a {
-        padding: 16px 0;
-    }
+    // a {
+    //     padding: 16px 0;
+    // }
 
     .navbar-form {
         width: 100%;
@@ -455,7 +501,8 @@ textarea {
 }
 
 .panel-default {
-    @include box-shadow (0px 0px 2px 0px rgba(0, 0, 0, 0.25));
+    border: 1px solid $greyLight;
+    @include box-shadow (0px 0px 10px 0px rgba(0, 0, 0, 0.08));
 }
 
 .panel-default > .panel-heading {
@@ -475,14 +522,19 @@ textarea {
     padding: 0;
 
     .panel-heading {
-        padding: 20px 16px;
+        padding: 20px 20px;
         border-bottom: none;
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
     }
 
     .panel-body {
-        padding: 15px;
+        padding: 0 20px 20px 20px;
+
+        .row {
+            margin-right: -20px;
+            margin-left: -20px;
+        }
 
         p {
             padding: 20px 0 10px 0;
@@ -492,7 +544,7 @@ textarea {
 
 .panel-name {
 	text-align: left;
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-weight: 600;
 }
 
@@ -500,7 +552,7 @@ textarea {
 	text-align: right;
     float: right;
     color: $greyMid;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 400;
 }
 
@@ -541,7 +593,6 @@ li.report-status:not(:first-child) {
         padding: 18px 16px 12px 16px;
         color: $green;
         background-color: white;
-        border-bottom: 1px solid $greyLight;
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
         text-align: center;   
@@ -565,7 +616,7 @@ li.report-status:not(:first-child) {
 
 .comment-name {
     font-size: 1.2em;
-    color: black;
+    color: $black;
     font-weight: 600;
 }
 
@@ -797,99 +848,35 @@ ul.sub.active {
 }
 
 .modal-content {
-    @include box-shadow (0px 0px 2px 0px rgba(0, 0, 0, 0.25));
-}
-
-.modal-lg {
-    .modal-header {
-        padding: 16px;
-        background-color: $greenDark;
-        border-bottom: none;
-
-        .modal-title {
-            font-size: 1.2em;
-            font-weight: 600;
-            color: white;
-        }
-    }
-
-    .modal-body {
-        padding: 0;
-        // overflow-x: hidden;
-        overflow-y: auto;
-    }
-}
-
-.btn-export {
-    float: right;
-}
-
-.modal-section {
+    position: relative;
     background-color: white;
-    margin: 8px 0;
-    padding: 16px 16px;
-    font-size: 1.2em;
-    border-top: 1px solid $greyMid;
-    border-bottom: 1px solid $greyMid;
+    -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+    border-radius: 0px;
+    outline: 0;
+    @include box-shadow (0px 0px 10px 0px rgba(0, 0, 0, 0.08));
 }
 
-.modal-thumbnail {
-    padding: 8px 16px;
-
-    .row {
-        margin-left: 0;
-        margin-right: 0;
-    }
+.modal.fade .modal-dialog {
+    @include transition (all 0.5s ease); //works for toggleUsers
+    // -webkit-transform: translate(0, -25%);
+    //     -ms-transform: translate(0, -25%);
+    //     -o-transform: translate(0, -25%);
+    //         transform: translate(0, -25%);
 }
 
-.modal-section-icon {
-    padding-right: 10px;
-    color: $greyMid;
-}
-
-.modal-section-name {
-    color: black;
-    font-weight: 600;
-}
-
-.modal-section-size {
-    float: right;
-    font-weight: 400;
-    color: $greyMid;
-}
-
-.modal-note {
-    padding: 8px 16px;
-    border-bottom: 1px solid $greyMid;
-
-    .modal-note-header,
-    p {
-        padding: 8px 0;
-    }
-
-    .modal-note-title {
-        font-size: 1.2em;
-        font-weight: 400;
-        color: black;
-    }
-
-    .modal-note-time {
-        font-size: 1.2em;
-        font-weight: 400;
-        color: $greyMid;
-        float: right;
-    }
-
-    p {
-        font-size: 1.2em;
-    }
+.modal.in .modal-dialog {
+    // -webkit-transform: translate(0, 0);
+    //     -ms-transform: translate(0, 0);
+    //     -o-transform: translate(0, 0);
+    //         transform: translate(0, 0);
 }
 
 /* ------------- Carousel --------------*/
 .carousel-inner {
     height: 100vh;
     display: table;
-    background-color: black;
+    background-color: $black;
 }
 
 .item {
@@ -943,6 +930,127 @@ footer.sec-chat {
 /* =========== TEAM ACTIVITIES ============ */
 body {
     background-color: $greyLight;
+}
+
+.panel-report {
+    .panel-name {
+        color: $black;
+    }
+}
+
+/* =========== VIEW REPORT ============ */
+.page-view-report {
+    margin-top: 120px;
+    
+    .view-report-title {
+        margin-bottom: 80px;
+
+        .panel-title-name {
+            font-size: 2.4em;
+            font-weight: 400;
+        }
+    }
+
+    .panel-header {
+        padding: 16px;
+        margin-bottom: 40px;
+        background-color: white;
+        border-bottom: none;
+        @include box-shadow (0px 0px 2px 0px rgba(0, 0, 0, 0.08));
+
+        .panel-section-icon {
+            padding-right: 10px;
+            font-size: 1.2em;
+            color: $greyMid;
+        }
+
+        .panel-section-name {
+            font-size: 1.4em;
+            font-weight: 600;
+            color: $black;
+        }
+
+        .panel-section-size {
+            float: right;
+            font-size: 1.2em;
+            font-weight: 400;
+            color: $greyMid;
+        }
+    }
+
+    .panel-body {
+        padding: 0;
+
+        .img-thumbnail {
+            border: none;
+            background-color: none;
+            padding: 0;
+            border-radius: 0;
+            @include box-shadow (0px 0px 2px 0px rgba(0, 0, 0, 0.08));
+        }
+    }
+
+    .sec-view-report {
+        margin: 60px 0;
+        
+        .row:not(:first-child) {
+            margin-top: 30px;
+        }
+    }
+}
+
+.btn-export {
+    float: right;
+}
+
+.panel-section {
+    background-color: white;
+    margin: 8px 0;
+    padding: 16px 16px;
+    font-size: 1.2em;
+    border-top: 1px solid $greyMid;
+    border-bottom: 1px solid $greyMid;
+}
+
+.modal-thumbnail {
+    padding: 8px 16px;
+
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.panel-note {
+    padding: 8px 16px;
+    background-color: white;
+    @include box-shadow (0px 0px 2px 0px rgba(0, 0, 0, 0.08));
+
+    .panel-note-header,
+    p {
+        padding: 8px 0;
+    }
+
+    .panel-note-title {
+        font-size: 1.2em;
+        font-weight: 400;
+        color: $black;
+    }
+
+    .panel-note-time {
+        font-size: 1.2em;
+        font-weight: 400;
+        color: $greyMid;
+        float: right;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+}
+
+.panel-note:not(:first-child) {
+    margin-top: 30px;
 }
 
 /* =========== ACCOUNT ============ */
@@ -1000,7 +1108,7 @@ table {
 }
 
 .panel-sign-in {
-    margin-top: 30%;
+    margin-top: 20%;
     border: 1px solid $greyLight;
     @include box-shadow (0px 0px 10px 0px rgba(0, 0, 0, 0.08));
     
