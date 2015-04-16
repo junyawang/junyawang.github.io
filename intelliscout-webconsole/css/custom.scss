@@ -58,6 +58,36 @@ textarea:focus {
     box-shadow:         $box-shadow;
 }
 
+@mixin border-radius ($border-radius) {
+    -webkit-border-radius: $border-radius;
+    -moz-border-radius:    $border-radius;
+    border-radius:         $border-radius;
+}
+
+@mixin border-top-right-radius ($border-top-right-radius) {
+    -webkit-border-top-right-radius: $border-top-right-radius;
+    -moz-border-top-right-radius:    $border-top-right-radius;
+    border-top-right-radius:         $border-top-right-radius;
+}
+
+@mixin border-top-left-radius ($border-top-left-radius) {
+    -webkit-border-top-left-radius: $border-top-left-radius;
+    -moz-border-top-left-radius:    $border-top-left-radius;
+    border-top-left-radius:         $border-top-left-radius;
+}
+
+@mixin border-bottom-right-radius ($border-bottom-right-radius) {
+    -webkit-border-bottom-right-radius: $border-bottom-right-radius;
+    -moz-border-bottom-right-radius:    $border-bottom-right-radius;
+    border-bottom-right-radius:         $border-bottom-right-radius;
+}
+
+@mixin border-bottom-left-radius ($border-bottom-left-radius) {
+    -webkit-border-bottom-left-radius: $border-bottom-left-radius;
+    -moz-border-bottom-left-radius:    $border-bottom-left-radius;
+    border-bottom-left-radius:         $border-bottom-left-radius;
+}
+
 @mixin transition ($transition) {
     -webkit-transition: $transition;
     -moz-transition: $transition;
@@ -170,7 +200,7 @@ a:focus {
 
 /* ------------- Button --------------*/
 .btn {
-    border-radius: 0px;
+    @include border-radius (0);
     padding: 8px 16px;
     @include box-shadow (0px 0px 0px 0px rgba(0, 0, 0, 0));
     font-weight: 600;
@@ -243,7 +273,7 @@ form {
 .form-control {
     width: 100%;
     padding: 8px 16px;
-    border-radius: 0px;
+    @include border-radius (0);
     border-color: $greyMid;
     font-size: 1.2em;
     height: auto;
@@ -254,7 +284,7 @@ form {
     font-size: 1.2em;
     background-color: $greyLight;
     border-color: $greyMid;
-    border-radius: 0px;
+    @include border-radius (0);
 }
 
 .form-control[disabled],
@@ -556,7 +586,7 @@ textarea {
         .comment-time {
             float: right;
             font-size: 1.1em;
-            font-weight: 300;
+            font-weight: 400;
             color: $greyMid;
         }
 
@@ -567,7 +597,7 @@ textarea {
 
         .comment-tag {
             color: $green;
-            font-weight: 400;
+            font-weight: 600;
         }
     }
 
@@ -788,7 +818,7 @@ ul.sub.active {
     background-color: white;
     -webkit-background-clip: padding-box;
           background-clip: padding-box;
-    border-radius: 0px;
+    @include border-radius (0);
     outline: 0;
     @include box-shadow (0px 0px 10px 0px rgba(0, 0, 0, 0.08));
 }
@@ -860,6 +890,92 @@ footer.sec-chat {
     }
 }
 
+/* ------------ CHAT BUBBLE ---------- */
+.bubble {
+    cursor: pointer;
+    width: auto;
+    min-width: initial;
+    max-width: 60%;
+    padding: 8px 20px 6px 20px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    clear: both;
+    @include border-radius (20px);
+    @include box-shadow (0px 0px 5px 0px rgba(0, 0, 0, 0.04));
+    @include transition (all 0.25s ease);
+
+    .bubble-name,
+    .bubble-time {
+        line-height: 2;
+    }
+
+    .bubble-name {
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+
+    .bubble-time {
+        float: right;
+        font-size: 1.2em;
+        font-weight: 300;
+        padding-left: 20px;
+    }
+
+    p {
+        font-size: 1.1em;
+        font-weight: 400;
+    }
+
+    .bubble-tag {
+        font-weight: 600;
+    }
+}
+
+.bubble:hover {
+    @include box-shadow (0px 0px 10px 0px rgba(0, 0, 0, 0.08));
+    @include transition (all 0.25s ease);
+}
+
+.bubble-default {
+    float: left;
+    background-color: white;
+    @include border-bottom-left-radius (0px);
+
+    .bubble-name,
+    p {
+        color: $greyDark;
+    }
+
+    .bubble-time {
+        color: $greyMid;
+    }
+
+    .bubble-tag,
+    a {
+        color: $green;
+    }
+}
+
+.bubble-success {
+    float: right;
+    background-color: $greenDark;
+    @include border-bottom-right-radius (0px);
+    
+    .bubble-name,
+    p {
+        color: white;
+    }
+
+    .bubble-time {
+        color: white;
+    }
+
+    .bubble-tag,
+    a {
+        color: white;
+    }
+}
+
 /*--------------------------------------
                     PAGE
 -----------------------------------------*/
@@ -875,7 +991,8 @@ body {
 }
 
 .panel-report {
-    margin-top: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     padding: 0;
     @include transition (all 0.25s ease);
 
@@ -1001,7 +1118,7 @@ body {
             border: none;
             background-color: none;
             padding: 0;
-            border-radius: 0;
+            @include border-radius (0);
             @include box-shadow (0px 0px 4px 0px rgba(0, 0, 0, 0.08));
             @include transition (all 0.25s ease);
         }
