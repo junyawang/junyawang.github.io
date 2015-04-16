@@ -180,14 +180,14 @@ a:focus {
 
 .btn-default {
     background-color: white;
-    border-color: $greyLight;
+    border-color: $greyMid;
     color: $greyDark;
     @include transition (all 0.2s ease);
 }
 
 .btn-default:hover {
     background-color: $greyLight;
-    border-color: $greyLight;
+    border-color: $greyMid;
     color: $greyDark;
     @include transition (all 0.2s ease);
 }
@@ -361,16 +361,18 @@ textarea {
 .navbar-main {
     .navbar-nav.navbar-left>li>a {
         color: white;
-        font-size: 1.2em;
+        font-size: 1.4em;
         font-weight: 600;
-        vertical-align: middle;
+        padding-top: $navbar-main-height/3;
+        padding-bottom: $navbar-main-height/3;
     }
 
     .navbar-nav.navbar-right>li>a {
         color: white;
         font-size: 1.2em;
         font-weight: 400;
-        vertical-align: middle;
+        padding-top: $navbar-main-height/3;
+        padding-bottom: $navbar-main-height/3;
     }
     
     .navbar-nav>.open>a,
@@ -405,7 +407,7 @@ textarea {
     // a {
     //     padding: 16px 0;
     // }
-
+    
     .navbar-form {
         width: 100%;
         
@@ -418,6 +420,13 @@ textarea {
             }
         }
     }
+}
+
+#team-toggle,
+#user-toggle {
+    font-size: 1.1em;
+    padding-top: $navbar-lower-height/3;
+    padding-bottom: $navbar-lower-height/3;
 }
 
 .team-name {
@@ -502,7 +511,7 @@ textarea {
 
 .panel-default {
     border: 1px solid $greyLight;
-    @include box-shadow (0px 0px 10px 0px rgba(0, 0, 0, 0.08));
+    @include box-shadow (0px 0px 5px 0px rgba(0, 0, 0, 0.04));
 }
 
 .panel-default > .panel-heading {
@@ -511,153 +520,80 @@ textarea {
     border-color: #ddd;
 }
 
-/* --------- REPORT PANEL -----------*/
-
-.panel-report:first-child {
-    margin-top: 140px;
-}
-
-.panel-report {
-    margin-top: 60px;
-    padding: 0;
-
-    .panel-heading {
-        padding: 20px 20px;
-        border-bottom: none;
-        border-top-left-radius: 0px;
-        border-top-right-radius: 0px;
-    }
-
-    .panel-body {
-        padding: 0 20px 20px 20px;
-
-        .row {
-            margin-right: -20px;
-            margin-left: -20px;
-        }
-
-        p {
-            padding: 20px 0 10px 0;
-        }
-    }
-}
-
-.panel-name {
-	text-align: left;
-    font-size: 1.4em;
-    font-weight: 600;
-}
-
-.panel-time {
-	text-align: right;
-    float: right;
-    color: $greyMid;
-    font-size: 1.2em;
-    font-weight: 400;
-}
-
-/* Status */
-span.report-location,
-li.report-status {
-    font-weight: 400;
-    font-size: 1.2em;
-    line-height: 2;
-    color: $greyMid;
-    text-transform: none;
-}
-
-span.report-location{
-    text-align: left;
-}
-
-ul.report-status-list {
-    margin: 0 0;
-    display: inline-block;
-    float: right;
-    vertical-align: middle;
-}
-
-li.report-status {
-    display: inline-block;
-    vertical-align: middle;
-    padding: 0 0;
-}
-
-li.report-status:not(:first-child) {
-    margin-left: 10px;
-}
 
 /* ---------- COMMENT -------------- */
 .sec-comment {
     .accordion-heading {
         padding: 18px 16px 12px 16px;
-        color: $green;
         background-color: white;
+        color: $green;
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
-        text-align: center;   
-    }
-
-    .accordion-toggle {
-        font-size: 1em;
         text-align: center;
+
+        .accordion-toggle {
+            font-size: 1em;
+            text-align: center;
+        } 
+    }
+
+    .row-comment {
+        padding: 8px 16px;
+        background-color: white;
+        border-bottom: 1px solid $greyLight;
+
+        .comment-name,
+        .comment-time {
+            line-height: 2;
+        }
+
+        .comment-name {
+            font-size: 1.2em;
+            color: $black;
+            font-weight: 600;
+        }
+
+        .comment-time {
+            float: right;
+            font-size: 1.1em;
+            font-weight: 300;
+            color: $greyMid;
+        }
+
+        p {
+            font-size: 1.1em;
+            font-weight: 400;
+        }
+
+        .comment-tag {
+            color: $green;
+            font-weight: 400;
+        }
+    }
+
+    .comment-form {
+        background-color: white;
+        text-align: left;
+        padding: 0 0 16px 0;
+        margin-top: 10px;
+
+        textarea{
+            margin-top: 10px;
+            border: none;
+            outline: none;
+            resize: inherit;
+            overflow: auto;
+            width: 100%;
+            min-height: 100px;
+            font-size: 1.1em;
+            padding: 16px;
+        }
+
+        .btn {
+            margin-left: 16px;
+        }
     }
 }
-
-.row-comment {
-    padding: 8px 16px;
-    border-bottom: 1px solid $greyLight;
-}
-
-.comment-name,
-.comment-time {
-    line-height: 2;
-}
-
-.comment-name {
-    font-size: 1.2em;
-    color: $black;
-    font-weight: 600;
-}
-
-.comment-time {
-    float: right;
-    font-size: 1.1em;
-    font-weight: 300;
-    color: $greyMid;
-}
-
-.row-comment p {
-    font-size: 1.1em;
-    font-weight: 400;
-}
-
-.comment-tag {
-    color: $green;
-    font-weight: 400;
-}
-
-.comment-form {
-    text-align: left;
-    padding: 0 0 16px 0;
-
-    textarea{
-        border: none;
-        outline: none;
-        border-top: 2px solid $greyLight;
-        resize: inherit;
-        overflow: auto;
-        width: 100%;
-        min-height: 100px;
-        font-size: 1.1em;
-        padding: 16px;
-    }
-}
-
-.comment-form .btn {
-    margin-left: 16px;
-}
-
 
 /* ------------- SIDEBAR --------------*/
 /* Toggle Styles */
@@ -932,11 +868,91 @@ body {
     background-color: $greyLight;
 }
 
+/* --------- REPORT PANEL -----------*/
+
+.panel-report:first-child {
+    margin-top: 140px;
+}
+
 .panel-report {
-    .panel-name {
-        color: $black;
+    margin-top: 60px;
+    padding: 0;
+    @include transition (all 0.25s ease);
+
+    .panel-heading {
+        padding: 30px 20px;
+        border-bottom: none;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+
+        .panel-name {
+            text-align: left;
+            font-size: 1.4em;
+            font-weight: 600;
+            color: $black;
+        }
+
+        .panel-time {
+            text-align: right;
+            float: right;
+            color: $greyMid;
+            font-size: 1.2em;
+            font-weight: 400;
+        }
+    }
+
+    .panel-body {
+        padding: 0 20px 20px 20px;
+
+        .row {
+            margin-right: -20px;
+            margin-left: -20px;
+        }
+
+        p {
+            padding: 20px 0 10px 0;
+        }
+
+        /* Status */
+        .panel-status {
+            span.report-location,
+            li.report-status {
+                font-weight: 400;
+                font-size: 1.2em;
+                line-height: 2;
+                color: $greyMid;
+                text-transform: none;
+            }
+
+            span.report-location{
+                text-align: left;
+            }
+
+            ul.report-status-list {
+                margin: 0 0;
+                display: inline-block;
+                float: right;
+                vertical-align: middle;
+            }
+
+            li.report-status {
+                display: inline-block;
+                vertical-align: middle;
+                padding: 0 0;
+            }
+
+            li.report-status:not(:first-child) {
+                margin-left: 10px;
+            }
+        }
     }
 }
+
+.panel-report:hover {
+    @include box-shadow (0px 0px 10px 0px rgba(0, 0, 0, 0.12));
+    @include transition (all 0.25s ease);
+}
+
 
 /* =========== VIEW REPORT ============ */
 .page-view-report {
@@ -986,7 +1002,14 @@ body {
             background-color: none;
             padding: 0;
             border-radius: 0;
-            @include box-shadow (0px 0px 2px 0px rgba(0, 0, 0, 0.08));
+            @include box-shadow (0px 0px 4px 0px rgba(0, 0, 0, 0.08));
+            @include transition (all 0.25s ease);
+        }
+
+
+        .img-thumbnail:hover {
+            @include box-shadow (0px 0px 10px 0px rgba(0, 0, 0, 0.28));
+            @include transition (all 0.25s ease);
         }
     }
 
@@ -1025,6 +1048,7 @@ body {
     padding: 8px 16px;
     background-color: white;
     @include box-shadow (0px 0px 2px 0px rgba(0, 0, 0, 0.08));
+    @include transition (all 0.25s ease);
 
     .panel-note-header,
     p {
@@ -1052,6 +1076,12 @@ body {
 .panel-note:not(:first-child) {
     margin-top: 30px;
 }
+
+.panel-note:hover {
+    @include box-shadow (0px 0px 10px 0px rgba(0, 0, 0, 0.12));
+    @include transition (all 0.25s ease);
+}
+
 
 /* =========== ACCOUNT ============ */
 img.org-logo {
@@ -1082,6 +1112,15 @@ img.qr-code {
 }
 
 /* =========== DASHBOARD ============ */
+
+/* ---- Org Account ---- */
+.org-logo-upload {
+    max-width: 100px;
+    max-height: 100px;
+    border: 1px solid $greyMid;
+}
+
+/* ---- Members ---- */
 table {
     font-size: 1.2em;
 }
