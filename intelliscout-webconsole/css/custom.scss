@@ -876,19 +876,29 @@ ul.sub.active {
 
 
 /* -------------- CHAT -------------- */
-footer.sec-chat {
+footer, .push {
+    height: 155px; /* .push must be the same height as .footer */
+}
+
+.sec-chat {
     bottom: 0;
 
-    textarea{
-        border: none;
-        outline: none;
-        @include box-shadow (0px 0px 2px 0px rgba(0, 0, 0, 0.25));
-        resize: inherit;
-        overflow: auto;
-        width: 100%;
-        min-height: 20px;
-        font-size: 1.1em;
-        padding: 16px;
+    .comment-form {
+        background-color: transparent;
+        text-align: left;
+        margin-top: 10px;
+
+        textarea{
+            border: none;
+            outline: none;
+            @include box-shadow (0px 0px 2px 0px rgba(0, 0, 0, 0.25));
+            resize: inherit;
+            overflow: auto;
+            width: 100%;
+            min-height: 20px;
+            font-size: 1.1em;
+            padding: 16px;
+        }
     }
 }
 
@@ -1011,6 +1021,14 @@ footer.sec-chat {
 /* =========== TEAM ACTIVITIES ============ */
 body {
     background-color: $greyLight;
+}
+
+.wrapper-index {
+    /* for sticky footer */
+    min-height: 100%;
+    height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+    height: 100%;
+    margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
 }
 
 /* --------- REPORT PANEL -----------*/
