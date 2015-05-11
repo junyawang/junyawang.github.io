@@ -15,6 +15,8 @@ $navbar-lower-height: 56px;
 
 $bubble-triangle-edge: 12px;
 
+$sidebar-width: 250px;
+
 /*-------------------------------------------
                     BASE
 ---------------------------------------------*/
@@ -618,23 +620,23 @@ textarea {
 }
 
 #wrapper.toggledTeams {
-    padding-left: 250px;
+    padding-left: $sidebar-width;
 }
 
 #sidebar-wrapper {
     z-index: 999;
     position: fixed;
-    left: 250px;
+    left: $sidebar-width;
     width: 0;
     height: 100%;
-    margin-left: -250px;
+    margin-left: -$sidebar-width;
     overflow-y: auto;
     background: white;
     @include transition (all 0.5s ease);
 }
 
 #wrapper.toggledTeams #sidebar-wrapper {
-    width: 250px;
+    width: $sidebar-width;
 }
 
 #page-content-wrapper {
@@ -645,7 +647,7 @@ textarea {
 
 #wrapper.toggledTeams #page-content-wrapper {
     position: absolute;
-    margin-right: -250px;
+    margin-right: -$sidebar-width;
 }
 
 /* Sidebar Styles */
@@ -1335,13 +1337,13 @@ form .btn.btn-add-invitation {
 }
 
 
-/* =========== SEARCH ============ */
+/* =========== GLOBAL - SEARCH ============ */
 .sec-search {
   z-index: 9999;
   display: none;
   position: absolute;
   background-color: white;
-  top: $navbar-main-height;
+  top: 0;
   bottom: 0;
   left: 0;
   right: 0;

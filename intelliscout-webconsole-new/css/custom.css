@@ -1037,13 +1037,13 @@ form .btn.btn-add-invitation {
 .input-share-link {
   display: inline-block; }
 
-/* =========== SEARCH ============ */
+/* =========== GLOBAL - SEARCH ============ */
 .sec-search {
   z-index: 9999;
   display: none;
   position: absolute;
   background-color: white;
-  top: 60px;
+  top: 0;
   bottom: 0;
   left: 0;
   right: 0; }

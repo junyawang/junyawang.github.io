@@ -102,25 +102,36 @@ $(document).on('click', '.input-share-link', function(e){
 
 //********** Search - Expand View *********//
 // Search Button
-$(document).on('click', "#navbar-search", function(e){
-    $('.sec-search').slideDown('slow');
+// $(document).on('click', "#navbar-search", function(e){
+//     $('.sec-search').slideDown('slow');
+// });
+
+// // Close Search Button
+// $(document).on('click', "#close-search", function(e){
+//     $('.sec-search').slideUp('slow');
+// });
+
+// // Team Select
+// $( document ).ready(function() {
+//     $('.team-select').selectpicker();
+//     $('.member-select').selectpicker();
+//     $('#search-keyword').tokenfield({
+//         showAutocompleteOnFocus: true
+//     });
+// });
+
+//********** Global Search Modal *********//
+// $(function()) {
+//     $('#global-search').on('click',function()) {
+//         $('.sec-search').addClass('animated slideInUp');
+//     }
+// };
+
+$("#global-search").click(function(e){
+    $('.sec-search').addClass('animated slideInUp');
 });
 
-// Close Search Button
-$(document).on('click', "#close-search", function(e){
-    $('.sec-search').slideUp('slow');
-});
-
-// Team Select
-$( document ).ready(function() {
-    $('.team-select').selectpicker();
-    $('.member-select').selectpicker();
-    $('#search-keyword').tokenfield({
-        showAutocompleteOnFocus: true
-    });
-});
-
-// Textarea Auto Resize
+//********** Textarea Auto Resize *********//
 (function($){    
     //pass in just the context as a $(obj) or a settings JS object
     $.fn.autogrow = function(opts) {
