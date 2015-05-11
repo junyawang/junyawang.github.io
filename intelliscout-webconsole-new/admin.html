@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Org Name - Dashboard</title>
+
+
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- CSS -->
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    <link href="css/media_query.css" rel="stylesheet" type="text/css">
+
+    <!-- JS -->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    
+    <!-- Navbar Main -->
+    <nav class="navbar navbar-default navbar-main navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- Toggle -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <!-- Logo -->
+                <a class="navbar-brand page-scroll" href="index.html">
+                    <img class="img-logo" src="img/org_logo.jpg">
+                </a>
+            </div>
+
+            <!-- Menus -->
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="index.html">Basecamp Networks</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="">
+                        <a href="#" class="navbar-right" id="navbar-search"><i class="fa fa-search"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="admin.html">Admin</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Craig Ganssle <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="account.html">My Account</a></li>
+                            <li><a href="signin_org.html">Switch Org (no other orgs signed in)</a></li>
+                            <li><a href="switch_org.html">Switch Org (has other orgs signed in)</a></li>
+                            <li class="divider"></li>
+                            <li><a href="signin_org.html">Log out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+    
+    <div id="wrapper">
+        <!-- SIDEBAR -->
+        <div class="sidebar-wrapper sidebar-teams">
+            <ul class="sidebar-nav main">
+                <li class="active">
+                    <a href="#org-account" data-toggle="tab">Org Account</a>
+                </li>
+                <li>
+                    <a href="#billings" data-toggle="tab">Billings</a>
+                </li>
+                <li>
+                    <a href="#members" data-toggle="tab">Members</a>
+                </li>
+                <li>
+                    <a href="#teams" data-toggle="tab">Teams</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="page-content-wrapper-sticky-left-sidebar">
+            <div class="tab-content">
+
+                <!-- Org Account -->
+                <div role="tabpanel" class="tab-pane fade active in" id="org-account">
+                    <div class="container">
+                        <section class="panel panel-default">
+                            <div class="panel-heading">
+                                <h1>Organization Account</h1>
+                            </div>
+                            <div class="panel-body">
+                                <form class="row">
+                                    <div class="form-group col-md-12">
+                                        <label for="inputFile">Organization Logo</label>
+                                        <div>
+                                            <img class="org-logo-upload" src="img/org_logo.jpg">
+                                        </div>
+                                        <input type="file" id="inputFile">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputOrgName">Organization Name</label>
+                                        <input type="text" class="form-control" id="inputOrgName" value="Org Name">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputOrgDomain">Organization Domain</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" id="inputOrgDomain" value="orgname">
+                                            <div class="input-group-addon">.intelliscout.com</div>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-success">Save Changes</button>
+                                </form>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <!-- Billings -->
+                <div role="tabpanel" class="tab-pane fade" id="billings">
+                    <div class="container">
+                        <section class="panel panel-default">
+                            <div class="panel-heading">
+                                <h1>Billings</h1>
+                            </div>
+                            <div class="panel-body">
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <!-- Members -->
+                <div role="tabpanel" class="tab-pane fade" id="members">
+                    <div class="container">
+                        <section class="panel panel-default">
+                            <div class="panel-heading">
+                                <h1>Members</h1>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-10">
+                                        <form class="search-bar" role="search">
+                                            <div class="form-group">
+                                                <span class="search-icon"><i class="fa fa-search"></i></span>
+                                                <input type="text" class="form-control" placeholder="Search members">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button class="btn btn-success btn-invite-users" id="modal-invite-members-trigger">+ Invite Members</button>
+                                    </div>
+                                </div>
+                                <div class="table-responsive table-members">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>First Name</th>
+                                                <th>Last Name</th> 
+                                                <th>Email</th>
+                                                <th>Role</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Craig</td>
+                                                <td>Ganssle</td> 
+                                                <td>craig@basecampnetworks.com</td>
+                                                <td>Org Admin</td>
+                                                <td>Team 1, Team 2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jeremy</td>
+                                                <td>Willemse</td> 
+                                                <td>jeremy@momentussoftware.com</td>
+                                                <td>Team Admin</td>
+                                                <td>Team 3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Junya</td>
+                                                <td>Wang</td> 
+                                                <td>junya@momentussoftware.com</td>
+                                                <td>
+                                                    <div class="btn-group">
+                                                        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                                                        Member<span class="caret"></span></a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a href="#">Org Admin</a></li>
+                                                            <li><a href="#">Team Admin</a></li>
+                                                            <li><a href="#">Member</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                                <td>Team 1, Team 3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Guy</td>
+                                                <td>Davis</td> 
+                                                <td>guy_davis@momentussoftware.com</td>
+                                                <td>Member</td>
+                                                <td>Pending accept invitation</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <!-- MODAL - Invite Members -->
+                <div class="modal fade" id="modal-invite-members" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="container">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1>Invite Members</h1>
+                                <p>Inviting more members to join your organization. </p>
+                            </div>
+                            <div class="modal-body">   
+                                <form class="row">
+                                    <div class="form-group col-md-12">
+                                        <input type="email" class="form-control" id="inputEmail1" placeholder="email@domain.com">
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <input type="email" class="form-control" id="inputEmail2" placeholder="email@domain.com">
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <input type="email" class="form-control" id="inputEmail3" placeholder="email@domain.com">
+                                    </div>
+
+                                    <div class="form-group col-md-12">
+                                        <a href="#" class="btn btn-default btn-xs btn-add-invitation">+ Add Invitation</a>
+                                    </div>
+                                    <button type="submit" class="btn btn-success">Send Invitations</button>
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div><!-- /modal-dialogue -->
+                    </div>
+                </div>
+
+                <!-- Teams -->
+                <div role="tabpanel" class="tab-pane fade" id="teams">
+                    <div class="container">
+                        <section class="panel panel-default">
+                            <div class="panel-heading">
+                                <h1>Teams</h1>
+                            </div>
+                            <div class="panel-body">
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Toggle -->
+    <script type="text/javascript">
+        // Show modal-invite-members
+        $("#modal-invite-members-trigger").click(function(){
+            $('#modal-invite-members').modal('show');
+        });
+    </script>
+
+</body>
+
+</html>

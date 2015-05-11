@@ -1,0 +1,666 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Org Name - Team Activities</title>
+
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- CSS -->
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-tokenfield.min.css" rel="stylesheet" type="text/css">
+    <link href="css/tokenfield-typeahead.min.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    <link href="css/media_query.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-select.min.css" rel="stylesheet" type="text/css">
+
+    <!-- JS -->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-tokenfield.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    
+    <!-- Navbar Main -->
+    <nav class="navbar navbar-default navbar-main navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- Toggle -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <!-- Logo -->
+                <a class="navbar-brand page-scroll" href="index.html">
+                    <img class="img-logo" src="img/org_logo.jpg">
+                </a>
+            </div>
+
+            <!-- Menus -->
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="index.html">Basecamp Networks</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="">
+                        <a href="#" class="navbar-right" id="navbar-search"><i class="fa fa-search"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="admin.html">Admin</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Craig Ganssle <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="account.html">My Account</a></li>
+                            <li><a href="signin_org.html">Switch Org (no other orgs signed in)</a></li>
+                            <li><a href="switch_org.html">Switch Org (has other orgs signed in)</a></li>
+                            <li class="divider"></li>
+                            <li><a href="signin_org.html">Log out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <!-- Navbar - Lower -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-lower" role="navigation">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="#team-toggle" class="navbar-left" id="navbar-team-toggle"><i class="fa fa-users"></i></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Team 1 <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Edit Team</a></li>
+                        <li><a href="#">Invite Members</a></li>
+                        <li><a href="#">Remove Members</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#user-toggle" class="navbar-right" id="navbar-user-toggle"><i class="fa fa-filter"></i> Filter</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="wrapper" class="wrapper-index">
+        <!-- SIDEBAR -->
+        <div id="sidebar-wrapper" class="sidebar-left">
+            <ul class="sidebar-nav main">
+                <li class="sidebar-title-area">
+                    <span class="sidebar-title">Teams</span>
+                    <a class="sidebar-add" data-toggle="modal" data-target="#modal-create-team"><i class="fa fa-plus"></i></a>
+                </li>
+                <li class="active">
+                    <a href="#sub1">
+                        <span class="team-name">General</span>
+                        <!-- <span class="team-notification"><i class="fa fa-circle"></i></span> -->
+                    </a>
+                </li>
+                <li>
+                    <a href="#sub2">
+                        <span class="team-name">Team 1</span>
+                        <!-- <span class="team-notification"><i class="fa fa-circle"></i></span> -->
+                    </a>
+                </li>
+                <li>
+                    <a href="#sub3">
+                        <span class="team-name">Team 2</span>
+                        <span class="team-notification"><i class="fa fa-circle"></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#sub4">
+                        <span class="team-name">Team 3</span>
+                        <!-- <span class="team-notification"><i class="fa fa-circle"></i></span> -->
+                    </a>
+                </li>
+                <li>
+                    <a href="#sub5">
+                        <span class="team-name">Team 4</span>
+                        <!-- <span class="team-notification"><i class="fa fa-circle"></i></span> -->
+                    </a>
+                </li>
+                <li>
+                    <a href="#sub6">
+                        <span class="team-name">Team 5</span>
+                        <!-- <span class="team-notification"><i class="fa fa-circle"></i></span> -->
+                    </a>
+                </li>
+                <li class="sidebar-title-area">
+                    <span clas="sidebar-title">Direct Messages</span>
+                    <span class="sidebar-add" data-toggle="modal" data-target="#"><i class="fa fa-plus"></i></span>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="team-name">User 1</span>
+                        <!-- <span class="team-notification"><i class="fa fa-circle"></i></span> -->
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="team-name">User 2</span>
+                        <span class="team-notification"><i class="fa fa-circle"></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="team-name">User 3</span>
+                        <!-- <span class="team-notification"><i class="fa fa-circle"></i></span> -->
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="team-name">User 4</span>
+                        <!-- <span class="team-notification"><i class="fa fa-circle"></i></span> -->
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="team-name">User 5</span>
+                        <!-- <span class="team-notification"><i class="fa fa-circle"></i></span> -->
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="team-name">User 6</span>
+                        <!-- <span class="team-notification"><i class="fa fa-circle"></i></span> -->
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="team-name">User 7</span>
+                        <!-- <span class="team-notification"><i class="fa fa-circle"></i></span> -->
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="team-name">User 8</span>
+                        <!-- <span class="team-notification"><i class="fa fa-circle"></i></span> -->
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="team-name">+ 107 ore users...</span>
+                        <!-- <span class="team-notification"><i class="fa fa-circle"></i></span> -->
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Search View -->
+        <div class="sec-search">
+            <button type="button" class="close close-button" id="close-search" aria-label="Close">
+                <span aria-hidden="true"><i class="fa fa-times"></i></span>
+            </button>
+            <div class="container-fluid">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for"search-keyword" class="col-sm-1" control-label><i class="fa fa-search"></i></label>
+                        <div class="col-sm-11">
+                            <input type="text" class="form-control" id="search-keyword"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for"search-keyword" class="col-sm-1" control-label><i class="fa fa-users"></i></label>
+                        <div class="col-sm-11">
+                            <select class="team-select" multiple data-selected-text-format="count>3" title='Choose one or more teams' data-width="100%">
+                                <option>All Teams</option>
+                                <option>Team 1</option>
+                                <option>Team 2</option>
+                                <option>Team 3</option>
+                                <option>Team 4</option>
+                                <option>Team 5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for"search-keyword" class="col-sm-1" control-label><i class="fa fa-user"></i></label>
+                        <div class="col-sm-11">
+                            <select class="member-select" multiple data-selected-text-format="count>3" title='Choose one or more members' data-width="100%">
+                                <option>All Members</option>
+                                <option>Adam</option>
+                                <option>Benson</option>
+                                <option>Cindy</option>
+                                <option>David</option>
+                                <option>Eric</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="btn btn-success">Search</button>
+                    <button class="btn btn-default">Reset</button>
+                </form>
+            </div>            
+        </div>
+
+        <!-- Filter View -->
+        <div class="sec-search">
+            <button type="button" class="close close-button" id="close-search" aria-label="Close">
+                <span aria-hidden="true"><i class="fa fa-times"></i></span>
+            </button>
+            <div class="container-fluid">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for"search-keyword" class="col-sm-1" control-label><i class="fa fa-search"></i></label>
+                        <div class="col-sm-11">
+                            <input type="text" class="form-control" id="search-keyword"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for"search-keyword" class="col-sm-1" control-label><i class="fa fa-users"></i></label>
+                        <div class="col-sm-11">
+                            <select class="team-select" multiple data-selected-text-format="count>3" title='Choose one or more teams' data-width="100%">
+                                <option>All Teams</option>
+                                <option>Team 1</option>
+                                <option>Team 2</option>
+                                <option>Team 3</option>
+                                <option>Team 4</option>
+                                <option>Team 5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for"search-keyword" class="col-sm-1" control-label><i class="fa fa-user"></i></label>
+                        <div class="col-sm-11">
+                            <select class="member-select" multiple data-selected-text-format="count>3" title='Choose one or more members' data-width="100%">
+                                <option>All Members</option>
+                                <option>Adam</option>
+                                <option>Benson</option>
+                                <option>Cindy</option>
+                                <option>David</option>
+                                <option>Eric</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="btn btn-success">Search</button>
+                    <button class="btn btn-default">Reset</button>
+                </form>
+            </div>            
+        </div>
+
+        <!-- SIDEBAR -->
+        <!-- <div id="sidebar-users"class="sidebar-wrapper sidebar-left">
+            <ul id="sub1" class="sidebar-nav sub active">
+                <li>
+                    <a href="#">
+                        <span class="user-visibility"><i class="fa fa-eye"></i></span>
+                        <span class="user-name">User 1.1</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="user-visibility"><i class="fa fa-eye-slash"></i></span>
+                        <span class="user-name">User 1.2</span>
+                    </a>
+                </li>
+                <li data-toggle="modal" data-target="#modal-invite-members">
+                    <a href="#">
+                        + Add members to team
+                    </a>
+                </li>
+            </ul>
+
+            <ul id="sub2" class="sidebar-nav sub">
+                <li>
+                    <a href="#">
+                        <span class="user-visibility"><i class="fa fa-eye"></i></span>
+                        <span class="user-name">User 2.1</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="user-visibility"><i class="fa fa-eye"></i></span>
+                        <span class="user-name">User 2.2</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="user-visibility"><i class="fa fa-eye-slash"></i></span>
+                        <span class="user-name">User 2.3</span>
+                    </a>
+                </li>
+                <li data-toggle="modal" data-target="#modal-invite-members">
+                    <a href="#">
+                        + Add members to team
+                    </a>
+                </li>
+            </ul>
+
+            <ul id="sub3" class="sidebar-nav sub">
+                <li>
+                    <a href="#">
+                        <span class="user-visibility"><i class="fa fa-eye"></i></span>
+                        <span class="user-name">User 3.1</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="user-visibility"><i class="fa fa-eye-slash"></i></span>
+                        <span class="user-name">User 3.2</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="user-visibility"><i class="fa fa-eye"></i></span>
+                        <span class="user-name">User 3.3</span>
+                    </a>
+                </li>
+                <li data-toggle="modal" data-target="#modal-invite-members">
+                    <a href="#">
+                        + Add members to team
+                    </a>
+                </li>
+            </ul>
+        </div> -->
+
+        <!-- REPORT PANEL -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <!-- Panel 1 -->
+                        <section class="panel panel-default panel-report">
+                            
+                            <!-- Modal Target Area -->
+                            <a href="view_report.html">
+                                <div class="clickable">
+                                    <div class="panel-heading">
+                                        <span class="panel-name">Craig Ganssle</span>
+                                        <span class="panel-time">11:23</span>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="row small-gutter">
+                                            <img class="col-md-3 col-sm-3 col-xs-3" src="img/photo/corn1_thumb.jpg">
+                                            <img class="col-md-3 col-sm-3 col-xs-3" src="img/photo/corn2_thumb.jpg">
+                                            <img class="col-md-3 col-sm-3 col-xs-3" src="img/photo/corn3_thumb.jpg">
+                                            <img class="col-md-3 col-sm-3 col-xs-3" src="img/photo/corn4_thumb.jpg">
+                                        </div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean massa tellus, tempus at augue at, sodales ornare odio. Nam elementum congue hendrerit. Nulla vitae sem eu risus pellentesque hendrerit. Phasellus at massa cursus, eleifend purus vel, porttitor dui. Fusce ac est faucibus, tempus leo sit amet, ullamcorper dui. Ut vestibulum purus ut pellentesque ornare. Vestibulum lacus massa, interdum non ullamcorper a, porta quis lectus.</p>
+                                        
+                                        <!-- Panel Status -->
+                                        <div class="panel-status">
+                                            <span class="report-location alignLeft"><i class="fa fa-map-marker"></i> Vancouver</span>
+
+                                            <ul class="report-status-list alignRight">
+                                                <li class="report-status">
+                                                    <i class="fa fa-camera"></i> 23
+                                                </li>
+                                                <li class="report-status">
+                                                    <i class="fa fa-video-camera"></i> 23
+                                                </li>
+                                                <li class="report-status">
+                                                    <i class="fa fa-sort-numeric-asc"></i> 23
+                                                </li>
+                                                <li class="report-status">
+                                                    <i class="fa fa-file"></i> 23
+                                                </li> 
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div> <!-- .end Modal Target Area -->
+                            </a>
+
+                            <!--Comment-->
+                            <section class="panel-group sec-comment">
+                                <div class="">
+                                    <div class="accordion-heading">
+                                        <h4 class="panel-title">
+                                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseComment1" aria-expanded="false" aria-controls="collapseComment1"><i class="fa fa-comment-o"></i> View 23 comments</a>
+                                        </h4>
+                                    </div>
+
+                                    <div class="panel-collapse collapse" id="collapseComment1">
+                                        <div class="row-comment">
+                                            <span class="comment-name alignLeft">Junya Wang</span>
+                                            <span class="comment-time alignRight">11:24</span>
+                                            <p>I like the first photo.</p>
+                                        </div>
+                                        <div class="row-comment">
+                                            <span class="comment-name alignLeft">Jeremy Willemse</span>
+                                            <span class="comment-time alignRight">11:24</span>
+                                            <p><span class="comment-tag"><a href="#">@junya </a></span>, I like the first photo, too.</p>
+                                        </div>
+                                        <div>
+                                            <form class="comment-form">
+                                                <textarea placeholder="Write a comment..." class="textarea common"></textarea>
+                                                <input class="btn btn-success" type="submit" value="Post">
+                                            </form>
+                                        </div>
+                                    </div><!-- /.panel-collapse-->
+                                </div><!-- /.panel-default-->
+                            </section><!-- /.panel-group -->
+                        </section><!-- / panel 1 -->
+
+                        <!-- Panel 2 -->
+                        <section class="panel panel-default panel-report">
+                            
+                            <!-- Modal Target Area -->
+                            <div class="clickable" data-toggle="modal" data-target="#modal-view-report">
+                                <div class="panel-heading">
+                                    <span class="panel-name">Junya Wang</span>
+                                    <span class="panel-time">11:24</span>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row small-gutter">
+                                        <img class="col-md-3 col-sm-3 col-xs-3" src="img/photo/corn2_thumb.jpg">
+                                        <img class="col-md-3 col-sm-3 col-xs-3" src="img/photo/corn3_thumb.jpg">
+                                        <img class="col-md-3 col-sm-3 col-xs-3" src="img/photo/corn4_thumb.jpg">
+                                        <img class="col-md-3 col-sm-3 col-xs-3" src="img/photo/corn5_thumb.jpg">
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean massa tellus, tempus at augue at, sodales ornare odio. Nam elementum congue hendrerit. Nulla vitae sem eu risus pellentesque hendrerit. Phasellus at massa cursus, eleifend purus vel, porttitor dui. Fusce ac est faucibus, tempus leo sit amet, ullamcorper dui. Ut vestibulum purus ut pellentesque ornare. Vestibulum lacus massa, interdum non ullamcorper a, porta quis lectus.</p>
+                                    
+                                    <!-- Panel Status -->
+                                    <div class="panel-status">
+                                        <span class="report-location alignLeft"><i class="fa fa-map-marker"></i> Vancouver</span>
+
+                                        <ul class="report-status-list alignRight">
+                                            <li class="report-status">
+                                                <i class="fa fa-camera"></i> 23
+                                            </li>
+                                            <li class="report-status">
+                                                <i class="fa fa-video-camera"></i> 23
+                                            </li>
+                                            <li class="report-status">
+                                                <i class="fa fa-sort-numeric-asc"></i> 23
+                                            </li>
+                                            <li class="report-status">
+                                                <i class="fa fa-file"></i> 23
+                                            </li> 
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div> <!-- .end Modal Target Area -->
+
+                            <!--Comment-->
+                            <section class="panel-group sec-comment">
+                                <div class="">
+                                    <div class="accordion-heading">
+                                        <h4 class="panel-title">
+                                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseComment2" aria-expanded="false" aria-controls="collapseComment2"><i class="fa fa-comment-o"></i> View 23 comments</a>
+                                        </h4>
+                                    </div>
+
+                                    <div class="panel-collapse collapse" id="collapseComment2">
+                                        <div class="row-comment">
+                                            <span class="comment-name alignLeft">Junya Wang</span>
+                                            <span class="comment-time alignRight">11:24</span>
+                                            <p>I like the first photo.</p>
+                                        </div>
+                                        <div class="row-comment">
+                                            <span class="comment-name alignLeft">Jeremy Willemse</span>
+                                            <span class="comment-time alignRight">11:24</span>
+                                            <p><span class="comment-tag"><a href="#">@junya </a></span>, I like the first photo, too.</p>
+                                        </div>
+                                        <div>
+                                            <form class="comment-form">
+                                                <textarea placeholder="Write a comment..." class="textarea common"></textarea>
+                                                <input class="btn btn-success" type="submit" value="Post">
+                                            </form>
+                                        </div>
+                                    </div><!-- /.panel-collapse-->
+                                </div><!-- /.panel-default-->
+                            </section><!-- /.comment -->
+                        </section><!-- / panel 2-->
+
+                        <div class="bubble bubble-success">
+                            <span class="bubble-name alignLeft">Junya Wang</span>
+                            <span class="bubble-time alignRight">11:24</span>
+                            <p>I like the first photo. I like the first photo. I like the first photo. I like the first photo. I like the first photo. I like the first photo. I like the first photo. I like the first photo. I like the first photo. I like the first photo. I like the first photo. I like the first photo. I like the first photo. I like the first photo.</p>
+                        </div>
+
+                        <div class="bubble bubble-default">
+                            <span class="bubble-name alignLeft">Jeremy Willemse</span>
+                            <span class="bubble-time alignRight">11:25</span>
+                            <p><span class="bubble-tag"><a href="#">@junya </a></span>I like the first photo. I like the first photo. I like the first photo. I like the first photo. I like the first photo. I like the first photo. I like the first photo. I like the first photo. I like the first photo. I like the first photo. I like the first photo. I like the first photo. I like the first photo. I like the first photo.</p>
+                        </div>
+
+                        <div class="bubble bubble-success">
+                            <span class="bubble-name alignLeft">Junya Wang</span>
+                            <span class="bubble-time alignRight">11:24</span>
+                            <p><span class="bubble-tag"><a href="#">@jeremy </a></span>I like the first photo.</p>
+                        </div>
+
+                        <div class="bubble bubble-default">
+                            <span class="bubble-name alignLeft">Jeremy Willemse</span>
+                            <span class="bubble-time alignRight">11:25</span>
+                            <p>Oops.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="push"></div>
+    </div>
+
+    <!-- CHAT -->
+    <footer class="sec-chat">
+        <div class="container">
+            <form class="comment-form">
+                <textarea placeholder="Send a message" class="textarea common"></textarea>
+            </form>
+        </div>
+    </footer>
+
+    <!-- MODAL - Create New Team -->
+    <div class="modal fade" id="modal-create-team" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="container">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1>Create a Team</h1>
+                        <p>Please give the new team a name and description.</p>
+                    </div>
+                    <div class="modal-body">   
+                        <form class="row">
+                            <div class="form-group col-md-12">
+                                <label>Team Name</label>
+                                <input type="text" class="form-control" id="inputTeamName" placeholder="">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label>Team Description</label>
+                                <textarea class="form-control"></textarea>
+                            </div>
+                            <button type="button" class="btn btn-success" id="modal-createTeam-to-inviteMembers-trigger">Next</button>
+                        </form>
+                    </div>
+                </div>
+            </div><!-- /modal-dialogue -->
+        </div>
+    </div>
+
+    <!-- MODAL - Invite Members -->
+    <div class="modal fade" id="modal-invite-members" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="container">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1>Invite Members</h1>
+                        <p>Invite members from your organization to join this team.</p>
+                    </div>
+                    <div class="modal-body">      
+                        <div class="list-group member-list">
+                            <div class="list-group-item clearfix">
+                                <span class="list-name">Jeremy Willemse</span>
+                                <span class="list-operation pull-right">
+                                    <button class="btn btn-default">Invite</button>
+                                </span>
+                            </div>
+                            <div class="list-group-item clearfix">
+                                <span class="list-name">Junya Wang</span>
+                                <span class="list-operation pull-right">
+                                    <button class="btn btn-default">Invite</button>
+                                </span>
+                            </div>
+                            <div class="list-group-item clearfix">
+                                <span class="list-name">Guy Davis</span>
+                                <span class="list-operation pull-right">
+                                    <button class="btn btn-default">Invite</button>
+                                </span>
+                            </div>
+
+                            <button type="button" class="btn btn-default" id="modal-inviteMembers-to-createTeam-trigger">Back</button>
+                            <button type="submit" class="btn btn-success" id="modal-inviteMembers-to-assignAdmin-trigger">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /modal-dialogue -->
+        </div>
+    </div>
+
+    <!-- MODAL - Assign Team Admin -->
+    <div class="modal fade" id="modal-assign-team-admin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="container">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1>Assign Team Admin</h1>
+                        <p>Please assign one or more member as the Team Admin to help you organize this team.</p>
+                    </div>
+                    <div class="modal-body">   
+                        <div class="list-group member-list">
+                            <div class="list-group-item clearfix">
+                                <span class="list-name">Jeremy Willemse</span>
+                                <span class="list-operation pull-right">
+                                    <button class="btn btn-default">Assign</button>
+                                </span>
+                            </div>
+                            <div class="list-group-item clearfix">
+                                <span class="list-name">Junya Wang</span>
+                                <span class="list-operation pull-right">
+                                    <button class="btn btn-default">Assign</button>
+                                </span>
+                            </div>
+                            <div class="list-group-item clearfix">
+                                <span class="list-name">Guy Davis</span>
+                                <span class="list-operation pull-right">
+                                    <button class="btn btn-default">Assign</button>
+                                </span>
+                            </div>
+
+                            <button type="button" class="btn btn-default" id="modal-assignAdmin-to-inviteMembers-trigger">Back</button>
+                            <button type="submit" class="btn btn-success" data-dismiss="modal">Done</button>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /modal-dialogue -->
+        </div>
+    </div>
+</body>
+
+</html>

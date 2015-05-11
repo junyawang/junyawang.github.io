@@ -1,0 +1,58 @@
+/*-------------------------------------------
+              MEDIA QUERIES
+---------------------------------------------*/
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	
+    .navbar-right {
+        margin-right: 0;
+    }
+
+    .modal-dialog {
+        width: 100%;
+    }
+
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggledTeams {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggledTeams #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggledTeams #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .modal-dialog {
+        width: 100%
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	.modal-dialog {
+        width: 100%;
+    }
+}

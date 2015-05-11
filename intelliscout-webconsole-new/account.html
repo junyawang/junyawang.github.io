@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Org Name - My Account</title>
+
+
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- CSS -->
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    <link href="css/media_query.css" rel="stylesheet" type="text/css">
+
+    <!-- JS -->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    
+    <!-- Navbar Main -->
+    <nav class="navbar navbar-default navbar-main navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- Toggle -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <!-- Logo -->
+                <a class="navbar-brand page-scroll" href="index.html">
+                    <img class="img-logo" src="img/org_logo.jpg">
+                </a>
+            </div>
+
+            <!-- Menus -->
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="index.html">Basecamp Networks</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="">
+                        <a href="#" class="navbar-right" id="navbar-search"><i class="fa fa-search"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="admin.html">Admin</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Craig Ganssle <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="account.html">My Account</a></li>
+                            <li><a href="signin_org.html">Switch Org (no other orgs signed in)</a></li>
+                            <li><a href="switch_org.html">Switch Org (has other orgs signed in)</a></li>
+                            <li class="divider"></li>
+                            <li><a href="signin_org.html">Log out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+    
+    <div id="wrapper">
+        <!-- SIDEBAR -->
+        <div class="sidebar-wrapper sidebar-teams">
+            <ul class="sidebar-nav main">
+                <li class="active">
+                    <a href="#my-account" data-toggle="tab">My Account</a>
+                </li>
+                <li>
+                    <a href="#qr-code" data-toggle="tab">QR Code</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="page-content-wrapper-sticky-left-sidebar">
+            <div class="tab-content">
+                <!-- My Account -->
+                <div role="tabpanel" class="tab-pane fade active in" id="my-account">
+                    <div class="container">
+                        <section class="panel panel-default">
+                            <div class="panel-heading">
+                                <h1>My Account</h1>
+                            </div>
+                            <div class="panel-body">
+                                <form class="row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputFirstName">First Name</label>
+                                        <input type="text" class="form-control" id="inputFirstName" value="Craig">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputLastName">Last Name</label>
+                                        <input type="text" class="form-control" id="inputLastName" value="Ganssle">
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <label for="inputEmail">Email</label>
+                                        <input type="email" class="form-control" id="inputEmail" value="craig@basecampnetworks.com">
+                                    </div>
+
+
+                                    <div class="accordion-heading">
+                                        <label>
+                                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseChangePassword" aria-expanded="false" aria-controls="collapseChangePassword">Change Password <i class="fa fa-pencil"></i></a>
+                                        </label>
+                                    </div>
+
+
+                                    <div class="panel-collapse collapse" id="collapseChangePassword">
+                                        <div class="form-group col-md-6">
+                                            <label for="inputCurrentPassword">Current Password</label>
+                                            <input type="password" class="form-control" id="inputCurrentPassword">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="inputNewPassword">New Password</label>
+                                            <input type="password" class="form-control" id="inputNewPassword">
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-success">Save Changes</button>
+                                </form>
+                            </div>
+                        </section> <!-- / .sec-projects -->
+                    </div>
+                </div>
+
+                <!-- QR CODE -->
+                <div role="tabpanel" class="tab-pane fade" id="qr-code">
+                    <div class="container">
+                        <section class="sec-qr-panel">
+                            <img class="qr-code img-responsive" src="img/qr_code.jpg" alt="">
+                        </section> <!-- / .sec-projects -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,1354 @@
+/* --------- COLOR PALETTES ---------- */
+$green: #18b750; //main color
+$greenDark: #28a55e; //main color when bg is light grey
+
+$orange: #e75a24; //secondary color
+
+$greyLight: #efeff4;
+$greyMid: #c8c7cc;
+$greyDark: #484A49; //text, to replace plain $black
+
+$black: #1C1F1D;
+
+$navbar-main-height: 60px;
+$navbar-lower-height: 56px;
+
+$bubble-triangle-edge: 12px;
+
+/*-------------------------------------------
+                    BASE
+---------------------------------------------*/
+/* --------- GLOBAL ---------- */
+.clickable {
+	cursor: pointer;
+}
+
+.noPadding{
+	padding:0 0 0 0;
+}
+
+.noMargin {
+	margin: 0 0 0 0;
+}
+
+.alignCenter {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.alignLeft {
+	text-align: left;
+}
+
+.alignRight {
+	text-align: right;
+}
+
+.hidden {
+    visibility: none;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+/*---------- MIXINS ---------- */
+@mixin box-shadow ($box-shadow) {
+    -webkit-box-shadow: $box-shadow;
+    -moz-box-shadow:    $box-shadow;
+    box-shadow:         $box-shadow;
+}
+
+@mixin border-radius ($border-radius) {
+    -webkit-border-radius: $border-radius;
+    -moz-border-radius:    $border-radius;
+    border-radius:         $border-radius;
+}
+
+@mixin border-top-right-radius ($border-top-right-radius) {
+    -webkit-border-top-right-radius: $border-top-right-radius;
+    -moz-border-top-right-radius:    $border-top-right-radius;
+    border-top-right-radius:         $border-top-right-radius;
+}
+
+@mixin border-top-left-radius ($border-top-left-radius) {
+    -webkit-border-top-left-radius: $border-top-left-radius;
+    -moz-border-top-left-radius:    $border-top-left-radius;
+    border-top-left-radius:         $border-top-left-radius;
+}
+
+@mixin border-bottom-right-radius ($border-bottom-right-radius) {
+    -webkit-border-bottom-right-radius: $border-bottom-right-radius;
+    -moz-border-bottom-right-radius:    $border-bottom-right-radius;
+    border-bottom-right-radius:         $border-bottom-right-radius;
+}
+
+@mixin border-bottom-left-radius ($border-bottom-left-radius) {
+    -webkit-border-bottom-left-radius: $border-bottom-left-radius;
+    -moz-border-bottom-left-radius:    $border-bottom-left-radius;
+    border-bottom-left-radius:         $border-bottom-left-radius;
+}
+
+@mixin transition ($transition) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}
+
+@mixin transform ($transform) {
+    -webkit-transition: $transform;
+    -moz-transition: $transform;
+    -o-transition: $transform;
+    transition: $transform;
+}
+
+/* --------- TYPOGRAPHY ---------- */
+
+html {
+    height: 100%;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+body{
+    height: 100%;
+    font-family: Source Sans Pro, Helvetica, Arial, Sans-Serif;
+    font-weight: 400;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, label, p, span, a, .h1{
+	font-family: Source Sans Pro, sans-serif;
+	text-align: left;
+
+	/* css trick to render the text for better results */
+	text-rendering: optimizeLegibility;
+	font-feature-settings: "kern";
+	-webkit-font-feature-settings: "kern";
+	-moz-font-feature-settings: "kern";
+	-moz-font-feature-settings: "kern=1";
+}
+
+h1,
+.h1 {
+	color: $black;
+	font-size: 2em;
+	font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h2 {
+	color: $black;
+	font-size: 1.8em;
+	font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h3 {
+	font-size: 1.6em;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+h4 {
+	font-size: 1.4em;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+p {
+	font-size: 1.2em;
+	font-weight: 300;
+	color: #222;
+}
+
+label {
+	color: $black;
+}
+
+a {
+	color: $greenDark;
+}
+
+a:hover,
+a:focus {
+	color: $green;
+	text-decoration: none;
+}
+
+/* ---- Make Bootstrap Default Gutter Smaller ----- */
+
+.row.small-gutter [class*='col-']:not(:first-child),
+.row.small-gutter [class*='col-']:not(:last-child) {
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.row.small-gutter [class*='col-']:first-child {
+    padding-left: 0;
+}
+
+.row.small-gutter [class*='col-']:last-child {
+    padding-right: 0;
+}
+
+/* --------- UIKIT ---------- */
+
+/* ------------- Button --------------*/
+.btn {
+    @include border-radius (0);
+    padding: 8px 16px;
+    @include box-shadow (0px 0px 0px 0px rgba(0, 0, 0, 0));
+    font-weight: 600;
+    font-size: 1.2em;
+    min-width: 120px;
+}
+
+.btn-default {
+    background-color: white;
+    border-color: $greyMid;
+    color: $greyDark;
+    @include transition (all 0.2s ease);
+}
+
+.btn-default:hover {
+    background-color: $greyLight;
+    border-color: $greyMid;
+    color: $greyDark;
+    @include transition (all 0.2s ease);
+}
+
+.btn-black {
+    background-color: $black;
+    border-color: $black;
+    color: white;
+    @include transition (all 0.2s ease);
+}
+
+.btn-black:hover {
+    background-color: $greyDark;
+    border-color: $greyDark;
+    color: white;
+    @include transition (all 0.2s ease);
+}
+
+.btn-success {
+    background-color: $greenDark;
+    border-color: $greenDark;
+    color: white;
+    @include transition (all 0.2s ease);
+}
+
+.btn-success:hover {
+    background-color: $green;
+    border-color: $green;
+    color: white;
+    @include transition (all 0.2s ease);
+}
+
+.btn-fail {
+    background-color: $orange;
+    border-color: $orange;
+    color: white;
+}
+
+
+/* ------------- Form --------------*/
+form {
+    .row {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .btn {
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px 16px;
+    @include border-radius (0);
+    border-color: $greyMid;
+    font-size: 1.2em;
+    height: auto;
+    @include box-shadow (0px 0px 0px 0px rgba(0, 0, 0, 0));
+}
+
+.input-group-addon {
+    font-size: 1.2em;
+    background-color: $greyLight;
+    border-color: $greyMid;
+    @include border-radius (0);
+}
+
+.form-control[disabled],
+.form-control[readonly],
+fieldset[diabled].form-control {
+    background-color: $greyLight;
+}
+
+label {
+    font-size: 1.2em;
+}
+
+.search-bar {
+    .search-icon {
+        position: absolute;
+        top: 8px;
+        left: 10px;
+        font-size: 1.2em;
+        color: $greyMid;
+    }
+
+    input {
+        width: 100%;
+        padding-left: 32px;
+    }
+}
+
+/* ---------- Token Field - Tags ----------*/
+.tokenfield {
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.tokenfield .token-input {
+    height: initial;
+}
+
+.tokenfield .token {
+    height: initial;
+    background-color: $greyLight;
+    border-color: $greyLight;
+    margin: 0 5px 5px 0;
+}
+
+.tokenfield .token.active {
+    border-color: $greenDark;
+}
+
+.tokenfield .token.invalid.active {
+    background-color: white;
+    border-color: $orange;
+}
+
+/* ----------- Textarea -----------*/
+textarea {
+    resize: inherit;
+    overflow: auto;
+    width: 100%;
+    min-height: 100px;
+    font-size: 1.1em;
+    padding-top: 16px;
+}
+
+// .hiddendiv {
+//     display: none;
+//     white-space: pre-wrap;
+//     word-wrap: break-word;
+//     overflow-wrap: break-word; /* future version of deprecated 'word-wrap' */
+// }
+
+/* the styles for 'commmon' are applied to both the textarea and the hidden clone */
+/* these must be the same for both */
+// .common {
+//     width: 100%;
+//     min-height: 100px;
+//     font-size: 1.1em;
+//     overflow: hidden;
+//     padding: 16px;
+// }
+
+::-webkit-input-placeholder,
+:-moz-placeholder, /* Firefox 18- */
+::-moz-placeholder, /* Firefox 19+ */
+:-ms-input-placeholder {
+    color: $greyMid;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+/* --------- NAV BAR ---------- */
+.navbar {
+    border: none;
+    font-weight: 400;
+}
+
+/* NAV BAR - MAIN */
+.navbar-main {
+    background-color: $greenDark;
+    margin-bottom: 0;
+    height: $navbar-main-height;
+    @include box-shadow (0px 2px 2px 0px rgba(0, 0, 0, 0.05));
+}
+
+.navbar-main {
+    .navbar-nav.navbar-left>li>a {
+        color: white;
+        font-size: 1.4em;
+        font-weight: 600;
+        padding-top: $navbar-main-height/3;
+        padding-bottom: $navbar-main-height/3;
+    }
+
+    .navbar-nav.navbar-right>li>a {
+        color: white;
+        font-size: 1.2em;
+        font-weight: 400;
+        padding-top: $navbar-main-height/3;
+        padding-bottom: $navbar-main-height/3;
+    }
+    
+    .navbar-nav>.open>a,
+    .navbar-nav>.open>a:focus,
+    .navbar-nav>.open>a:hover {
+        background-color: $green;
+        color: white;
+    }
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.img-logo {
+    max-width: $navbar-main-height;
+}
+
+.dropdown-menu {
+    @include box-shadow (0px 0px 1px 0px rgba(0, 0, 0, 0.25));
+}
+
+
+/* NAV BAR - LOWER */
+.navbar-lower {
+    width: auto;
+    margin-top: $navbar-main-height;
+    z-index: 10;
+    vertical-align: middle;
+    height: $navbar-lower-height;
+    @include box-shadow (0px 2px 2px 0px rgba(0, 0, 0, 0.05));
+
+    // a {
+    //     padding: 16px 0;
+    // }
+    
+    .navbar-form {
+        width: 100%;
+        
+        .form-group{
+            width: 100%;
+            position: relative;
+
+            input {
+                width: 100%;
+            }
+        }
+    }
+}
+
+#navbar-team-toggle,
+#navbar-search,
+#navbar-user-toggle {
+    font-size: 1.1em;
+    padding-top: $navbar-lower-height/3;
+    padding-bottom: $navbar-lower-height/3;
+}
+
+/* ---------- List Item ----------- */
+
+.list-group {
+    margin-bottom: 10px;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px 10px 0;
+    margin: 2px 0;
+    background-color: #fff;
+    border: none;
+    border-bottom: 1px solid $greyLight;
+
+    .list-name {
+        font-size: 1.2em;
+        vertical-align: middle;
+    }
+
+    .list-operation {
+    }
+}
+
+.list-group-item:first-child {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    // border-top: 1px solid $greyLight;
+}
+
+.list-group-item:last-child {
+    margin-bottom: 0;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom: none;
+}
+
+/* ---------- Panel ----------- */
+.panel {
+    border: none;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.panel-heading {
+    border-bottom: none;
+    padding: 20px 30px 20px 30px;
+}
+
+.panel-body {
+    padding: 10px 30px 30px 30px;
+}
+
+.panel-footer {
+    background-color: white;
+    border-top: none;
+    padding: 10px 30px 10px 30px;
+}
+
+.panel-default {
+    border: 1px solid $greyLight;
+    @include box-shadow (0px 0px 5px 0px rgba(0, 0, 0, 0.04));
+}
+
+.panel-default > .panel-heading {
+    color: #333;
+    background-color: white;
+    border-color: #ddd;
+}
+
+
+/* ---------- COMMENT -------------- */
+.sec-comment {
+    .accordion-heading {
+        padding: 18px 16px 12px 16px;
+        background-color: white;
+        color: $green;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        text-align: center;
+
+        .accordion-toggle {
+            font-size: 1em;
+            text-align: center;
+        } 
+    }
+
+    .row-comment {
+        padding: 8px 16px;
+        background-color: white;
+        border-bottom: 1px solid $greyLight;
+
+        .comment-name,
+        .comment-time {
+            line-height: 2;
+        }
+
+        .comment-name {
+            font-size: 1.2em;
+            color: $black;
+            font-weight: 600;
+        }
+
+        .comment-time {
+            float: right;
+            font-size: 1.1em;
+            font-weight: 400;
+            color: $greyMid;
+        }
+
+        p {
+            font-size: 1.1em;
+            font-weight: 400;
+        }
+
+        .comment-tag {
+            color: $green;
+            font-weight: 600;
+        }
+    }
+
+    .comment-form {
+        background-color: white;
+        text-align: left;
+        padding: 0 0 16px 0;
+        margin-top: 10px;
+
+        textarea{
+            margin-top: 10px;
+            border: none;
+            outline: none;
+            resize: inherit;
+            overflow: auto;
+            width: 100%;
+            min-height: 100px;
+            font-size: 1.1em;
+            padding: 16px;
+        }
+
+        .btn {
+            margin-left: 16px;
+        }
+    }
+}
+
+/* ------------- SIDEBAR --------------*/
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    @include transition (all 0.5s ease);
+}
+
+#wrapper.toggledTeams {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 999;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: white;
+    @include transition (all 0.5s ease);
+}
+
+#wrapper.toggledTeams #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggledTeams #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-left {
+    @include box-shadow (2px 0px 10px 0px rgba(0, 0, 0, 0.05));
+}
+
+.sidebar-right {
+    @include box-shadow (-2px 0px 10px 0px rgba(0, 0, 0, 0.05));
+}
+
+#sidebar-wrapper{
+    margin-top: $navbar-main-height+$navbar-lower-height;
+} 
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+        text-indent: 20px;
+        line-height: 60px;
+        border-bottom: 2px solid $greyLight;
+        
+        color: $greyDark;
+        font-size: 1.1em;
+
+        a {
+            display: block;
+            color: $greyDark;
+            text-decoration: none;
+        }
+
+        .active,
+        .active:hover {
+            background-color: $greenDark;
+            .team-name{
+                font-weight: 600;
+                color: white;
+            }
+        }
+    }
+
+    li:hover {
+        background-color: lighten($greyLight, 20%);
+    } 
+
+    li.sidebar-title-area {
+        line-height: 46px;
+        padding-top: 18px;
+        font-size: 1.1em;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $greyMid;
+        background-color: $greyLight;
+
+        .sidebar-add {
+            float: right;
+            padding-right: 30px;
+            color: $greyMid;
+            cursor: pointer;
+        }
+
+        .sidebar-add:hover {
+            color: $greenDark;
+        }
+    }
+}
+
+.team-name {
+    text-align: left;
+}
+
+.team-notification {
+    text-align: right;
+    float: right;
+    padding-right: 30px;
+    font-size: 0.8em;
+    color: $orange;
+}
+
+.user-visibility {
+    text-align: left;
+}
+
+.user-name {
+    text-align: left;
+    padding-left: 20px;
+}
+
+// .sidebar-nav > .sidebar-brand {
+//     height: 65px;
+//     font-size: 1.6em;
+//     line-height: 60px;
+// }
+
+// .sidebar-nav > .sidebar-brand a {
+//     color: #999999;
+// }
+
+// .sidebar-nav > .sidebar-brand a:hover {
+//     color: #fff;
+//     background: none;
+// }
+
+
+//Change sub sidebar content
+.sub {
+  max-width: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-width 0s;
+}
+
+ul.sub.active {
+	max-width: 1000px;
+	max-height: 1000px;
+	transition: max-width 1s 0.1s;
+}
+
+.sub li {
+    overflow: hidden;
+    white-space: nowrap;
+} 
+
+/* ------------- Modal --------------*/
+.modal-back,
+.modal-close {
+    margin-top: 30px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+
+    .btn-default {
+        background-color: rgba(0,0,0,0.6);
+        border: none;
+        color: white;
+        font-size: 1.4em;
+    }
+
+    .btn-default:hover {
+        background-color: rgba(0,0,0,0.7);
+    }
+}
+
+.modal-back:after,
+.modal-close:after {
+    content: "";
+    display: block;
+    margin-top: 100%;
+}
+
+.modal-content {
+    position: relative;
+    background-color: white;
+    -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+    @include border-radius (0);
+    outline: 0;
+    @include box-shadow (0px 0px 10px 0px rgba(0, 0, 0, 0.08));
+}
+
+.modal.fade .modal-dialog {
+    @include transition (all 0.5s ease); //works for toggleUsers
+    // -webkit-transform: translate(0, -25%);
+    //     -ms-transform: translate(0, -25%);
+    //     -o-transform: translate(0, -25%);
+    //         transform: translate(0, -25%);
+}
+
+.modal.in .modal-dialog {
+    // -webkit-transform: translate(0, 0);
+    //     -ms-transform: translate(0, 0);
+    //     -o-transform: translate(0, 0);
+    //         transform: translate(0, 0);
+}
+
+/* ------------- Carousel --------------*/
+.carousel-inner {
+    height: 100vh;
+    display: table;
+    background-color: $black;
+}
+
+.item {
+    display: table-cell;
+    height: inherit;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.img-responsive {
+    max-height: 100vh;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+.carousel-caption {
+    height: 80px;
+    line-height: 24px; /* Height / no. of lines to display */
+    overflow: hidden;
+    background-color: rgba (0,0,0,1);
+    text-align: left;
+    font-size: 1.2em;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    left: 0;
+    right: 0;
+    bottom: 56px;
+    padding: 10px 32px 30px 32px;
+}
+
+
+/* -------------- CHAT -------------- */
+footer, .push {
+    height: 155px; /* .push must be the same height as .footer */
+}
+
+.sec-chat {
+    bottom: 0;
+
+    .comment-form {
+        background-color: transparent;
+        text-align: left;
+        margin-top: 10px;
+
+        textarea{
+            border: none;
+            outline: none;
+            @include box-shadow (0px 0px 2px 0px rgba(0, 0, 0, 0.25));
+            resize: inherit;
+            overflow: auto;
+            width: 100%;
+            min-height: 20px;
+            font-size: 1.1em;
+            padding: 16px;
+        }
+    }
+}
+
+/* ------------ CHAT BUBBLE ---------- */
+.bubble {
+    position: relative;
+    cursor: pointer;
+    width: auto;
+    min-width: initial;
+    max-width: 60%;
+    padding: 8px 20px 6px 20px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    clear: both;
+    @include border-radius (16px);
+    @include box-shadow (0px 0px 5px 0px rgba(0, 0, 0, 0.04));
+    @include transition (all 0.25s ease);
+
+    .bubble-name,
+    .bubble-time {
+        line-height: 2;
+    }
+
+    .bubble-name {
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+
+    .bubble-time {
+        float: right;
+        font-size: 1.2em;
+        font-weight: 300;
+        padding-left: 20px;
+    }
+
+    p {
+        font-size: 1.1em;
+        font-weight: 400;
+    }
+
+    .bubble-tag {
+        font-weight: 600;
+    }
+}
+
+.bubble:hover {
+    @include box-shadow (0px 0px 10px 0px rgba(0, 0, 0, 0.08));
+    @include transition (all 0.25s ease);
+}
+
+.bubble-default {
+    float: left;
+    background-color: white;
+    @include border-bottom-left-radius (0px);
+
+    .bubble-name,
+    p {
+        color: $greyDark;
+    }
+
+    .bubble-time {
+        color: $greyMid;
+    }
+
+    .bubble-tag,
+    a {
+        color: $green;
+    }
+}
+
+.bubble-default:after {
+    content: "";
+    position: absolute;
+    bottom: -$bubble-triangle-edge; /* value = - border-top-width - border-bottom-width */
+    left: 0px; /* controls horizontal position */
+    border-width: $bubble-triangle-edge $bubble-triangle-edge 0 0; /* vary these values to change the angle of the vertex */
+    border-style: solid;
+    border-color: white transparent;
+    /* reduce the damage in FF3.0 */
+    display: block;
+    width: 0;
+}
+
+.bubble-success {
+    float: right;
+    background-color: $greenDark;
+    @include border-bottom-right-radius (0px);
+    
+    .bubble-name,
+    p {
+        color: white;
+    }
+
+    .bubble-time {
+        color: white;
+    }
+
+    .bubble-tag,
+    a {
+        color: white;
+    }
+}
+
+.bubble-success:after {
+    content: "";
+    position: absolute;
+    bottom: -$bubble-triangle-edge; /* value = - border-top-width - border-bottom-width */
+    right: 0px; /* controls horizontal position */
+    border-width: $bubble-triangle-edge 0 0 $bubble-triangle-edge; /* vary these values to change the angle of the vertex */
+    border-style: solid;
+    border-color: $greenDark transparent;
+    /* reduce the damage in FF3.0 */
+    display: block;
+    width: 0;
+}
+
+/*--------------------------------------
+                    PAGE
+-----------------------------------------*/
+/* =========== TEAM ACTIVITIES ============ */
+body {
+    background-color: $greyLight;
+}
+
+.wrapper-index {
+    /* for sticky footer */
+    min-height: 100%;
+    height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+    height: 100%;
+    margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
+}
+
+/* --------- REPORT PANEL -----------*/
+
+.panel-report:first-child {
+    margin-top: 140px;
+}
+
+.panel-report {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0;
+    @include transition (all 0.25s ease);
+
+    .panel-heading {
+        padding: 30px 20px;
+        border-bottom: none;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+
+        .panel-name {
+            text-align: left;
+            font-size: 1.4em;
+            font-weight: 600;
+            color: $black;
+        }
+
+        .panel-time {
+            text-align: right;
+            float: right;
+            color: $greyMid;
+            font-size: 1.2em;
+            font-weight: 400;
+        }
+    }
+
+    .panel-body {
+        padding: 0 20px 20px 20px;
+
+        .row {
+            margin-right: -20px;
+            margin-left: -20px;
+        }
+
+        p {
+            padding: 20px 0 10px 0;
+        }
+
+        /* Status */
+        .panel-status {
+            span.report-location,
+            li.report-status {
+                font-weight: 400;
+                font-size: 1.2em;
+                line-height: 2;
+                color: $greyMid;
+                text-transform: none;
+            }
+
+            span.report-location{
+                text-align: left;
+            }
+
+            ul.report-status-list {
+                margin: 0 0;
+                display: inline-block;
+                float: right;
+                vertical-align: middle;
+            }
+
+            li.report-status {
+                display: inline-block;
+                vertical-align: middle;
+                padding: 0 0;
+            }
+
+            li.report-status:not(:first-child) {
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+.panel-report:hover {
+    @include box-shadow (0px 0px 10px 0px rgba(0, 0, 0, 0.12));
+    @include transition (all 0.25s ease);
+}
+
+
+/* =========== VIEW REPORT ============ */
+.page-view-report {
+    margin-top: 120px;
+    
+    .view-report-title {
+        margin-bottom: 80px;
+
+        .panel-title-name {
+            font-size: 2.4em;
+            font-weight: 400;
+        }
+    }
+
+    .panel-header {
+        padding: 16px;
+        margin-bottom: 40px;
+        background-color: white;
+        border-bottom: none;
+        @include box-shadow (0px 0px 2px 0px rgba(0, 0, 0, 0.08));
+
+        .panel-section-icon {
+            padding-right: 10px;
+            font-size: 1.2em;
+            color: $greyMid;
+        }
+
+        .panel-section-name {
+            font-size: 1.4em;
+            font-weight: 600;
+            color: $black;
+        }
+
+        .panel-section-size {
+            float: right;
+            font-size: 1.2em;
+            font-weight: 400;
+            color: $greyMid;
+        }
+    }
+
+    .panel-body {
+        padding: 0;
+
+        .img-thumbnail {
+            border: none;
+            background-color: none;
+            padding: 0;
+            @include border-radius (0);
+            @include box-shadow (0px 0px 4px 0px rgba(0, 0, 0, 0.08));
+            @include transition (all 0.25s ease);
+        }
+
+
+        .img-thumbnail:hover {
+            @include box-shadow (0px 0px 10px 0px rgba(0, 0, 0, 0.28));
+            @include transition (all 0.25s ease);
+        }
+    }
+
+    .sec-view-report {
+        margin: 60px 0;
+        
+        .row:not(:first-child) {
+            margin-top: 30px;
+        }
+    }
+}
+
+.btn-export {
+    float: right;
+}
+
+.panel-section {
+    background-color: white;
+    margin: 8px 0;
+    padding: 16px 16px;
+    font-size: 1.2em;
+    border-top: 1px solid $greyMid;
+    border-bottom: 1px solid $greyMid;
+}
+
+.modal-thumbnail {
+    padding: 8px 16px;
+
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.panel-note {
+    padding: 8px 16px;
+    background-color: white;
+    @include box-shadow (0px 0px 2px 0px rgba(0, 0, 0, 0.08));
+    @include transition (all 0.25s ease);
+
+    .panel-note-header,
+    p {
+        padding: 8px 0;
+    }
+
+    .panel-note-title {
+        font-size: 1.2em;
+        font-weight: 400;
+        color: $black;
+    }
+
+    .panel-note-time {
+        font-size: 1.2em;
+        font-weight: 400;
+        color: $greyMid;
+        float: right;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+}
+
+.panel-note:not(:first-child) {
+    margin-top: 30px;
+}
+
+.panel-note:hover {
+    @include box-shadow (0px 0px 10px 0px rgba(0, 0, 0, 0.12));
+    @include transition (all 0.25s ease);
+}
+
+
+/* =========== ACCOUNT ============ */
+img.org-logo {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+img.qr-code {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+#my-account {
+    .accordion-heading {
+        padding-left: 15px;
+        color: $green;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+
+        label {
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+    }
+
+}
+
+/* =========== DASHBOARD ============ */
+
+/* ---- Org Account ---- */
+.org-logo-upload {
+    max-width: 100px;
+    max-height: 100px;
+    border: 1px solid $greyMid;
+}
+
+/* ---- Members ---- */
+table {
+    font-size: 1.2em;
+}
+
+.btn-invite-users {
+    display: block;
+    float: right;
+}
+
+.table-members {
+    clear: both;
+}
+
+/* =========== SWITCH ORG ============ */
+
+
+
+/* =========== SIGN IN & SIGN UP ============ */
+.panel-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.panel-sign-in {
+    margin-top: 20%;
+    border: 1px solid $greyLight;
+    @include box-shadow (0px 0px 10px 0px rgba(0, 0, 0, 0.08));
+    
+    h1 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .panel-body {
+        p {
+            padding: 10px 0 10px 0;
+        }
+    }
+}
+
+.list-group-item {
+    img {
+        padding: 0;
+        padding-right: 20px;
+    }
+}
+
+form .btn.btn-add-invitation {
+    margin-left: 0;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+/* =========== MODAL - Export ============ */
+.input-share-link {
+    display: inline-block;
+}
+
+
+/* =========== SEARCH ============ */
+.sec-search {
+  z-index: 9999;
+  display: none;
+  position: absolute;
+  background-color: white;
+  top: $navbar-main-height;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.close-button {
+  float: right;
+  padding: 16px;
+  display: inline-block;
+}
