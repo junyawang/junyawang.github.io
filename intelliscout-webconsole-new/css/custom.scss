@@ -433,6 +433,8 @@ textarea {
 /* NAV BAR - LOWER */
 .navbar-lower {
     width: auto;
+    position: fixed;
+    left: $sidebar-width;
     margin-top: $navbar-main-height;
     z-index: 10;
     vertical-align: middle;
@@ -661,7 +663,7 @@ textarea {
 }
 
 #sidebar-wrapper{
-    margin-top: $navbar-main-height+$navbar-lower-height;
+    margin-top: $navbar-main-height;
 } 
 
 .sidebar-nav {
@@ -1337,20 +1339,27 @@ form .btn.btn-add-invitation {
 }
 
 
-/* =========== GLOBAL - SEARCH ============ */
-.sec-search {
-  z-index: 9999;
-  display: none;
-  position: absolute;
-  background-color: white;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+/* =========== GLOBAL SEARCH MODAL ============ */
+#modal-global-search {
+    z-index: 9999;
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
-.close-button {
-  float: right;
-  padding: 16px;
-  display: inline-block;
+/* =========== FILTER FLYOVER ============ */
+.sec-filter {
+    padding: 30px;
+    z-index: 1;
+    display: none;
+    position: relative;
+    background-color: white;
+    top: $navbar-main-height + $navbar-lower-height;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }

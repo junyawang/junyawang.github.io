@@ -313,6 +313,8 @@ textarea {
 /* NAV BAR - LOWER */
 .navbar-lower {
   width: auto;
+  position: fixed;
+  left: 250px;
   margin-top: 60px;
   z-index: 10;
   vertical-align: middle;
@@ -491,7 +493,7 @@ textarea {
   box-shadow: -2px 0px 10px 0px rgba(0, 0, 0, 0.05); }
 
 #sidebar-wrapper {
-  margin-top: 116px; }
+  margin-top: 60px; }
 
 .sidebar-nav {
   position: absolute;
@@ -1037,8 +1039,8 @@ form .btn.btn-add-invitation {
 .input-share-link {
   display: inline-block; }
 
-/* =========== GLOBAL - SEARCH ============ */
-.sec-search {
+/* =========== GLOBAL SEARCH MODAL ============ */
+#modal-global-search {
   z-index: 9999;
   display: none;
   position: absolute;
@@ -1048,9 +1050,16 @@ form .btn.btn-add-invitation {
   left: 0;
   right: 0; }
 
-.close-button {
-  float: right;
-  padding: 16px;
-  display: inline-block; }
+/* =========== FILTER FLYOVER ============ */
+.sec-filter {
+  padding: 30px;
+  z-index: 1;
+  display: none;
+  position: relative;
+  background-color: white;
+  top: 116px;
+  bottom: 0;
+  left: 0;
+  right: 0; }
 
 /*# sourceMappingURL=custom.css.map */

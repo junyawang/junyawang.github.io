@@ -4,19 +4,19 @@ $("#team-toggle").click(function(e) {
     $("#wrapper").toggleClass("toggled");
 });
 
-$("#user-toggle").click(function(e) {
-    e.preventDefault();
-    $("#wrapper").toggleClass("toggled");
-});
+// $("#user-toggle").click(function(e) {
+//     e.preventDefault();
+//     $("#wrapper").toggleClass("toggled");
+// });
 
 // Change Sub Sidebar Content
-$(function () {
-    $(".main").on("click", "a", function () {
-        $(".sub").removeClass("active");
-        $($(this).attr("href")).addClass("active");
-        console.log($(".sub ul"));
-    });
-});
+// $(function () {
+//     $(".main").on("click", "a", function () {
+//         $(".sub").removeClass("active");
+//         $($(this).attr("href")).addClass("active");
+//         console.log($(".sub ul"));
+//     });
+// });
 
 // Modal Toggle
 $("#navbar-team-toggle").click(function(e) {
@@ -100,36 +100,38 @@ $(document).on('click', '.input-share-link', function(e){
     $('.paste').val($(this).text());
 });
 
-//********** Search - Expand View *********//
-// Search Button
-// $(document).on('click', "#navbar-search", function(e){
-//     $('.sec-search').slideDown('slow');
-// });
-
-// // Close Search Button
-// $(document).on('click', "#close-search", function(e){
-//     $('.sec-search').slideUp('slow');
-// });
-
-// // Team Select
-// $( document ).ready(function() {
-//     $('.team-select').selectpicker();
-//     $('.member-select').selectpicker();
-//     $('#search-keyword').tokenfield({
-//         showAutocompleteOnFocus: true
-//     });
-// });
-
 //********** Global Search Modal *********//
-// $(function()) {
-//     $('#global-search').on('click',function()) {
-//         $('.sec-search').addClass('animated slideInUp');
-//     }
-// };
-
-$("#global-search").click(function(e){
-    $('.sec-search').addClass('animated slideInUp');
+// Global Search Button
+$("#global-search").click(function(){
+    $('#modal-global-search').modal('show');
 });
+
+// Close Search Button
+// $("#close-global-search").click(function(){
+//     $('#modal-global-search').modal('hide');
+// });
+
+// Team Select
+$( document ).ready(function() {
+    $('.team-select').selectpicker();
+    $('.member-select').selectpicker();
+    $('#search-keyword').tokenfield({
+        showAutocompleteOnFocus: true
+    });
+});
+
+//********** Filter Flyover *********//
+// Filter Button
+$(document).on('click', "#filter", function(e){
+    $('.sec-filter').slideDown('slow');
+});
+
+// Close Search Button
+$(document).on('click', "#close-filter", function(e){
+    $('.sec-filter').slideUp('slow');
+});
+
+
 
 //********** Textarea Auto Resize *********//
 (function($){    
