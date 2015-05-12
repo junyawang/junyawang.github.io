@@ -32,14 +32,28 @@ $("#navbar-team-toggle").click(function(e) {
     }
 });
 
+// $(document).ready(function() {
+//     var mq = window.matchMedia("(min-width: 768px)");
+//     mq.addListener(function () {
+//         if (mq.matches) {
+//             $('.sec-chat').removeAttr('style');
+//             $('.navbar-lower').removeAttr('style');
+//         }
+//     }); 
+// });
+
 $(document).ready(function() {
-    var mq = window.matchMedia("(min-width: 768px)");
-    mq.addListener(function () {
-        if (mq.matches) {
+    $(window).resize(function() {
+        if (window.matchMedia("(min-width: 768px)").matches ||
+            window.matchMedia("(min-width: 992px)").matches ||
+            window.matchMedia("(min-width: 1200px)").matches) {
             $('.sec-chat').removeAttr('style');
             $('.navbar-lower').removeAttr('style');
         }
-    }); 
+        else {
+            $("#wrapper").removeClass('toggledTeams');
+        }
+    });
 });
 
 $("#navbar-user-toggle").click(function(e) {
