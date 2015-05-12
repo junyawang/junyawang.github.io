@@ -1,4 +1,6 @@
 /* --------- COLOR PALETTES ---------- */
+/* --------- VARIABLES ---------- */
+/*---------- MIXINS ---------- */
 /*-------------------------------------------
                     BASE
 ---------------------------------------------*/
@@ -29,7 +31,6 @@ input:focus,
 textarea:focus {
   outline: none; }
 
-/*---------- MIXINS ---------- */
 /* --------- TYPOGRAPHY ---------- */
 html {
   height: 100%;
@@ -314,7 +315,7 @@ textarea {
 .navbar-lower {
   width: auto;
   position: fixed;
-  left: 250px;
+  left: 0;
   margin-top: 60px;
   z-index: 10;
   vertical-align: middle;
@@ -331,8 +332,7 @@ textarea {
         width: 100%; }
 
 #navbar-team-toggle,
-#navbar-search,
-#navbar-user-toggle {
+#filter {
   font-size: 1.1em;
   padding-top: 18.66667px;
   padding-bottom: 18.66667px; }
@@ -649,17 +649,19 @@ footer, .push {
   /* .push must be the same height as .footer */ }
 
 .sec-chat {
-  bottom: 0; }
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #efeff4;
+  padding: 0; }
   .sec-chat .comment-form {
     background-color: transparent;
-    text-align: left;
-    margin-top: 10px; }
+    text-align: left; }
     .sec-chat .comment-form textarea {
       border: none;
+      border-top: 1px solid #c8c7cc;
       outline: none;
-      -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25);
-      -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25);
-      box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25);
       resize: inherit;
       overflow: auto;
       width: 100%;
@@ -671,9 +673,7 @@ footer, .push {
 .bubble {
   position: relative;
   cursor: pointer;
-  width: auto;
-  min-width: initial;
-  max-width: 60%;
+  width: 100%;
   padding: 8px 20px 6px 20px;
   margin-top: 16px;
   margin-bottom: 16px;
@@ -1052,7 +1052,7 @@ form .btn.btn-add-invitation {
 
 /* =========== FILTER FLYOVER ============ */
 .sec-filter {
-  padding: 30px;
+  padding: 15px;
   z-index: 1;
   display: none;
   position: relative;

@@ -76,26 +76,6 @@
         </div>
     </nav>
 
-    <!-- Navbar - Lower -->
-    <nav class="navbar navbar-default navbar-fixed-top navbar-lower" role="navigation">
-        <div class="container-fluid">
-            <ul class="nav navbar-nav navbar-left">
-                <li><a href="#team-toggle" class="navbar-left" id="navbar-team-toggle"><i class="fa fa-users"></i></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Team 1 <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Edit Team</a></li>
-                        <li><a href="#">Invite Members</a></li>
-                        <li><a href="#">Remove Members</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#user-toggle" class="navbar-right" id="filter"><i class="fa fa-filter"></i> Filter</a></li>
-            </ul>
-        </div>
-    </nav>
-
     <div id="wrapper" class="wrapper-index">
         <!-- SIDEBAR -->
         <div id="sidebar-wrapper" class="sidebar-left">
@@ -212,44 +192,37 @@
             <button type="button" class="close" id="close-filter" aria-label="Close">
                 <span aria-hidden="true"><i class="fa fa-times"></i></span>
             </button>
-            <div class="container-fluid">
-                <form class="form-horizontal">
-                    <div class="form-group">
-                        <label for"search-keyword" class="col-sm-1" control-label><i class="fa fa-search"></i></label>
-                        <div class="col-sm-11">
-                            <input type="text" class="form-control" id="search-keyword"/>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for"search-keyword" class="col-sm-1" control-label><i class="fa fa-users"></i></label>
-                        <div class="col-sm-11">
-                            <select class="team-select" multiple data-selected-text-format="count>3" title='Choose one or more teams' data-width="100%">
-                                <option>All Teams</option>
-                                <option>Team 1</option>
-                                <option>Team 2</option>
-                                <option>Team 3</option>
-                                <option>Team 4</option>
-                                <option>Team 5</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for"search-keyword" class="col-sm-1" control-label><i class="fa fa-user"></i></label>
-                        <div class="col-sm-11">
-                            <select class="member-select" multiple data-selected-text-format="count>3" title='Choose one or more members' data-width="100%">
-                                <option>All Members</option>
-                                <option>Adam</option>
-                                <option>Benson</option>
-                                <option>Cindy</option>
-                                <option>David</option>
-                                <option>Eric</option>
-                            </select>
-                        </div>
-                    </div>
-                    <button class="btn btn-success">Search</button>
-                    <button class="btn btn-default">Reset</button>
-                </form>
-            </div>            
+
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for"search-keyword" control-label><i class="fa fa-search"></i></label>
+                    <input type="text" class="form-control" id="search-keyword"/>
+                </div>
+                <div class="form-group">
+                    <label for"search-keyword" control-label><i class="fa fa-users"></i></label>
+                    <select class="team-select" multiple data-selected-text-format="count>3" title='Choose one or more teams' data-width="100%">
+                        <option>All Teams</option>
+                        <option>Team 1</option>
+                        <option>Team 2</option>
+                        <option>Team 3</option>
+                        <option>Team 4</option>
+                        <option>Team 5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for"search-keyword" control-label><i class="fa fa-user"></i></label>
+                    <select class="member-select" multiple data-selected-text-format="count>3" title='Choose one or more members' data-width="100%">
+                        <option>All Members</option>
+                        <option>Adam</option>
+                        <option>Benson</option>
+                        <option>Cindy</option>
+                        <option>David</option>
+                        <option>Eric</option>
+                    </select>
+                </div>
+                <button class="btn btn-success">Search</button>
+                <button class="btn btn-default">Reset</button>
+            </form>           
         </section>
 
         <!-- SIDEBAR -->
@@ -329,6 +302,26 @@
 
         <!-- REPORT PANEL -->
         <div id="page-content-wrapper">
+            <!-- Navbar - Lower -->
+            <nav class="navbar navbar-default navbar-fixed-top navbar-lower" role="navigation">
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li><a href="#team-toggle" class="navbar-left" id="navbar-team-toggle"><i class="fa fa-users"></i></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Team 1 <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Edit Team</a></li>
+                                <li><a href="#">Invite Members</a></li>
+                                <li><a href="#">Remove Members</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#user-toggle" class="navbar-right" id="filter"><i class="fa fa-filter"></i> Filter</a></li>
+                    </ul>
+                </div>
+            </nav>
+
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
@@ -500,22 +493,23 @@
                             <span class="bubble-time alignRight">11:25</span>
                             <p>Oops.</p>
                         </div>
-                    </div>
+                    </div>    
+                </div><!-- /.row -->
+
+                <!-- CHAT -->
+                <div class="sec-chat">
+                    <form class="comment-form">
+                        <textarea placeholder="Send a message" class="textarea common"></textarea>
+                    </form>
                 </div>
-            </div>
-        </div>
+
+            </div><!-- /.container-fluid -->
+        </div><!-- /.page-content-wrapper -->
 
         <div class="push"></div>
     </div>
 
-    <!-- CHAT -->
-    <footer class="sec-chat">
-        <div class="container">
-            <form class="comment-form">
-                <textarea placeholder="Send a message" class="textarea common"></textarea>
-            </form>
-        </div>
-    </footer>
+    
 
     <!-- MODAL - Global Search -->
     <section id="modal-global-search" class="modal fade">
