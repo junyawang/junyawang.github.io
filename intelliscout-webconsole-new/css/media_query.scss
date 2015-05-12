@@ -5,13 +5,6 @@
 @import 'partials';
 
 
-/*---------- MIXINS ---------- */
-@mixin box-shadow ($box-shadow) {
-    -webkit-box-shadow: $box-shadow;
-    -moz-box-shadow:    $box-shadow;
-    box-shadow:         $box-shadow;
-}
-
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 

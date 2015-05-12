@@ -32,6 +32,16 @@ $("#navbar-team-toggle").click(function(e) {
     }
 });
 
+$(document).ready(function() {
+    var mq = window.matchMedia("(min-width: 768px)");
+    mq.addListener(function () {
+        if (mq.matches) {
+            $('.sec-chat').removeAttr('style');
+            $('.navbar-lower').removeAttr('style');
+        }
+    }); 
+});
+
 $("#navbar-user-toggle").click(function(e) {
     e.preventDefault();
     $("#wrapper").toggleClass("toggledUsers");
@@ -126,15 +136,6 @@ $( document ).ready(function() {
     $('#search-keyword').tokenfield({
         showAutocompleteOnFocus: true
     });
-
-    var mq = window.matchMedia("(min-width: 768px)");
-    mq.addListener(function () {
-        if (mq.matches) {
-            $('.sec-chat').removeAttr('style');
-            $('.navbar-lower').removeAttr('style');
-        }
-    });
-    
 });
 
 //********** Filter Flyover *********//
