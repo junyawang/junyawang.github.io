@@ -18,7 +18,7 @@ $("#team-toggle").click(function(e) {
 //     });
 // });
 
-// Modal Toggle
+// Sidebar Toggle
 $("#navbar-team-toggle").click(function(e) {
     e.preventDefault();
     $("#wrapper").toggleClass("toggledTeams");
@@ -163,6 +163,18 @@ $(document).on('click', "#close-filter", function(e){
     $('.sec-filter').slideUp('slow');
 });
 
+
+//********** Date & Time Picker *********//
+$(function () {
+    $('#startdatetimepicker').datetimepicker();
+    $('#enddatetimepicker').datetimepicker();
+    $("#startdatetimepicker").on("dp.change", function (e) {
+        $('#enddatetimepicker').data("DateTimePicker").minDate(e.date);
+    });
+    $("#enddatetimepicker").on("dp.change", function (e) {
+        $('#startdatetimepicker').data("DateTimePicker").maxDate(e.date);
+    });
+});
 
 
 //********** Textarea Auto Resize *********//

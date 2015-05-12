@@ -72,9 +72,9 @@
         </div>
     </nav>
     
-    <div id="wrapper">
+    <div id="wrapper" class="wrapper-index">
         <!-- SIDEBAR -->
-        <div class="sidebar-wrapper sidebar-teams">
+        <div id="sidebar-wrapper" class="sidebar-left">
             <ul class="sidebar-nav main">
                 <li class="active">
                     <a href="#my-account" data-toggle="tab">My Account</a>
@@ -85,66 +85,84 @@
             </ul>
         </div>
 
-        <div class="page-content-wrapper-sticky-left-sidebar">
-            <div class="tab-content">
-                <!-- My Account -->
-                <div role="tabpanel" class="tab-pane fade active in" id="my-account">
-                    <div class="container">
-                        <section class="panel panel-default">
-                            <div class="panel-heading">
-                                <h1>My Account</h1>
-                            </div>
-                            <div class="panel-body">
-                                <form class="row">
-                                    <div class="form-group col-md-6">
-                                        <label for="inputFirstName">First Name</label>
-                                        <input type="text" class="form-control" id="inputFirstName" value="Craig">
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <label for="inputLastName">Last Name</label>
-                                        <input type="text" class="form-control" id="inputLastName" value="Ganssle">
-                                    </div>
-                                    <div class="form-group col-md-12">
-                                        <label for="inputEmail">Email</label>
-                                        <input type="email" class="form-control" id="inputEmail" value="craig@basecampnetworks.com">
-                                    </div>
+        <div id="page-content-wrapper">
 
-
-                                    <div class="accordion-heading">
-                                        <label>
-                                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseChangePassword" aria-expanded="false" aria-controls="collapseChangePassword">Change Password <i class="fa fa-pencil"></i></a>
-                                        </label>
-                                    </div>
-
-
-                                    <div class="panel-collapse collapse" id="collapseChangePassword">
-                                        <div class="form-group col-md-6">
-                                            <label for="inputCurrentPassword">Current Password</label>
-                                            <input type="password" class="form-control" id="inputCurrentPassword">
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <label for="inputNewPassword">New Password</label>
-                                            <input type="password" class="form-control" id="inputNewPassword">
-                                        </div>
-                                    </div>
-                                    <button type="submit" class="btn btn-success">Save Changes</button>
-                                </form>
-                            </div>
-                        </section> <!-- / .sec-projects -->
-                    </div>
+            <!-- Navbar - Lower -->
+            <nav class="navbar navbar-default navbar-fixed-top navbar-lower" role="navigation">
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li><a href="#team-toggle" class="navbar-left" id="navbar-team-toggle"><i class="fa fa-bars"></i></a></li>
+                        <li>
+                            <a href="#">My Account</a>
+                        </li>
+                    </ul>
                 </div>
+            </nav>
+            <div class="main-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- My Account -->
+                            <div role="tabpanel" class="tab-pane fade active in" id="my-account">
+                                <div class="container">
+                                    <section class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h1>My Account</h1>
+                                        </div>
+                                        <div class="panel-body">
+                                            <form class="row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputFirstName">First Name</label>
+                                                    <input type="text" class="form-control" id="inputFirstName" value="Craig">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputLastName">Last Name</label>
+                                                    <input type="text" class="form-control" id="inputLastName" value="Ganssle">
+                                                </div>
+                                                <div class="form-group col-md-12">
+                                                    <label for="inputEmail">Email</label>
+                                                    <input type="email" class="form-control" id="inputEmail" value="craig@basecampnetworks.com">
+                                                </div>
 
-                <!-- QR CODE -->
-                <div role="tabpanel" class="tab-pane fade" id="qr-code">
-                    <div class="container">
-                        <section class="sec-qr-panel">
-                            <img class="qr-code img-responsive" src="img/qr_code.jpg" alt="">
-                        </section> <!-- / .sec-projects -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+                                                <div class="accordion-heading">
+                                                    <label>
+                                                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseChangePassword" aria-expanded="false" aria-controls="collapseChangePassword">Change Password <i class="fa fa-pencil"></i></a>
+                                                    </label>
+                                                </div>
+
+
+                                                <div class="panel-collapse collapse" id="collapseChangePassword">
+                                                    <div class="form-group col-md-6">
+                                                        <label for="inputCurrentPassword">Current Password</label>
+                                                        <input type="password" class="form-control" id="inputCurrentPassword">
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <label for="inputNewPassword">New Password</label>
+                                                        <input type="password" class="form-control" id="inputNewPassword">
+                                                    </div>
+                                                </div>
+                                                <button type="submit" class="btn btn-success">Save Changes</button>
+                                            </form>
+                                        </div>
+                                    </section> <!-- / .sec-projects -->
+                                </div>
+                            </div>
+
+                            <!-- QR CODE -->
+                            <div role="tabpanel" class="tab-pane fade" id="qr-code">
+                                <div class="container">
+                                    <section class="sec-qr-panel">
+                                        <img class="qr-code img-responsive" src="img/qr_code.jpg" alt="">
+                                    </section> <!-- / .sec-projects -->
+                                </div>
+                            </div>
+                        </div><!-- /.col-lg-12 -->
+                    </div><!-- /.row -->
+                </div><!-- /.container-fluid -->
+            </div><!-- /.main-content -->
+        </div><!-- /.page-content-wrapper -->
+    </div><!-- #wrapper -->
 
 </body>
 
