@@ -281,24 +281,23 @@ textarea {
   -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.05); }
-
-.navbar-main .navbar-nav.navbar-left > li > a {
-  color: white;
-  font-size: 1.4em;
-  font-weight: 600;
-  padding-top: 20px;
-  padding-bottom: 20px; }
-.navbar-main .navbar-nav.navbar-right > li > a {
-  color: white;
-  font-size: 1.2em;
-  font-weight: 400;
-  padding-top: 20px;
-  padding-bottom: 20px; }
-.navbar-main .navbar-nav > .open > a,
-.navbar-main .navbar-nav > .open > a:focus,
-.navbar-main .navbar-nav > .open > a:hover {
-  background-color: #18b750;
-  color: white; }
+  .navbar-main .navbar-nav.navbar-left > li > a {
+    color: white;
+    font-size: 1.4em;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .navbar-main .navbar-nav.navbar-right > li > a {
+    color: white;
+    font-size: 1.2em;
+    font-weight: 400;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .navbar-main .navbar-nav > .open > a,
+  .navbar-main .navbar-nav > .open > a:focus,
+  .navbar-main .navbar-nav > .open > a:hover {
+    background-color: #18b750;
+    color: white; }
 
 .navbar-brand {
   padding: 0; }
@@ -322,20 +321,20 @@ textarea {
   height: 56px;
   -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.05);
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.05); }
-  .navbar-lower .navbar-form {
-    width: 100%; }
-    .navbar-lower .navbar-form .form-group {
-      width: 100%;
-      position: relative; }
-      .navbar-lower .navbar-form .form-group input {
-        width: 100%; }
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.05);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  .navbar-lower .navbar-nav.navbar-left > li > a,
+  .navbar-lower .navbar-nav.navbar-right > li > a {
+    font-size: 1.1em;
+    font-weight: 400;
+    padding-top: 18.66667px;
+    padding-bottom: 18.66667px; }
 
-#navbar-team-toggle,
-#filter {
-  font-size: 1.1em;
-  padding-top: 18.66667px;
-  padding-bottom: 18.66667px; }
+#navbar-team-toggle {
+  display: inline-block; }
 
 /* ---------- List Item ----------- */
 .list-group {
@@ -654,7 +653,11 @@ footer, .push {
   right: 0;
   bottom: 0;
   background-color: #efeff4;
-  padding: 0; }
+  padding: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
   .sec-chat .comment-form {
     background-color: transparent;
     text-align: left; }

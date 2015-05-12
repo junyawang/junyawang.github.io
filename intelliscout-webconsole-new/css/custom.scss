@@ -322,9 +322,7 @@ textarea {
     margin-bottom: 0;
     height: $navbar-main-height;
     @include box-shadow (0px 2px 2px 0px rgba(0, 0, 0, 0.05));
-}
 
-.navbar-main {
     .navbar-nav.navbar-left>li>a {
         color: white;
         font-size: 1.4em;
@@ -372,26 +370,18 @@ textarea {
     vertical-align: middle;
     height: $navbar-lower-height;
     @include box-shadow (0px 2px 2px 0px rgba(0, 0, 0, 0.05));
-    
-    .navbar-form {
-        width: 100%;
-        
-        .form-group{
-            width: 100%;
-            position: relative;
-
-            input {
-                width: 100%;
-            }
-        }
+    @include transition (all 0.5s ease);
+    .navbar-nav.navbar-left>li>a,
+    .navbar-nav.navbar-right>li>a {
+        font-size: 1.1em;
+        font-weight: 400;
+        padding-top: $navbar-lower-height/3;
+        padding-bottom: $navbar-lower-height/3;
     }
 }
 
-#navbar-team-toggle,
-#filter {
-    font-size: 1.1em;
-    padding-top: $navbar-lower-height/3;
-    padding-bottom: $navbar-lower-height/3;
+#navbar-team-toggle {
+    display: inline-block;
 }
 
 /* ---------- List Item ----------- */
@@ -807,6 +797,7 @@ footer, .push {
     bottom: 0;
     background-color: $greyLight;
     padding: 0;
+    @include transition (all 0.5s ease);
 
     .comment-form {
         background-color: transparent;

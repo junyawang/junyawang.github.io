@@ -22,6 +22,14 @@ $("#team-toggle").click(function(e) {
 $("#navbar-team-toggle").click(function(e) {
     e.preventDefault();
     $("#wrapper").toggleClass("toggledTeams");
+    if ($("#wrapper").hasClass('toggledTeams')) {
+        $('.sec-chat').attr('style', 'left: 250px;');
+        $('.navbar-lower').attr('style', 'left: 250px;');
+    }
+    else {
+        $('.sec-chat').attr('style', 'left: 0;');
+        $('.navbar-lower').attr('style', 'left: 0;');
+    }
 });
 
 $("#navbar-user-toggle").click(function(e) {
@@ -118,6 +126,15 @@ $( document ).ready(function() {
     $('#search-keyword').tokenfield({
         showAutocompleteOnFocus: true
     });
+
+    var mq = window.matchMedia("(min-width: 768px)");
+    mq.addListener(function () {
+        if (mq.matches) {
+            $('.sec-chat').removeAttr('style');
+            $('.navbar-lower').removeAttr('style');
+        }
+    });
+    
 });
 
 //********** Filter Flyover *********//
