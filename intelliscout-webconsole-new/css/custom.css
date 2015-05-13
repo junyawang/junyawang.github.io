@@ -336,7 +336,8 @@ textarea {
     padding-top: 18.66667px;
     padding-bottom: 18.66667px; }
 
-#navbar-team-toggle {
+#navbar-team-toggle,
+#navbar-sidebar-toggle {
   display: inline-block; }
 
 /* ---------- List Item ----------- */

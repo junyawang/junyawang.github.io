@@ -32,6 +32,19 @@ $("#navbar-team-toggle").click(function(e) {
     }
 });
 
+$("#navbar-sidebar-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggledTeams");
+    if ($("#wrapper").hasClass('toggledTeams')) {
+        $('.sec-chat').attr('style', 'left: 250px;');
+        $('.navbar-lower').attr('style', 'left: 250px;');
+    }
+    else {
+        $('.sec-chat').attr('style', 'left: 0;');
+        $('.navbar-lower').attr('style', 'left: 0;');
+    }
+});
+
 // $(document).ready(function() {
 //     var mq = window.matchMedia("(min-width: 768px)");
 //     mq.addListener(function () {

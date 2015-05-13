@@ -28,7 +28,8 @@
         }
     }
 
-    #navbar-team-toggle {
+    #navbar-team-toggle,
+    #navbar-sidebar-toggle {
         display: none;
     }
 
@@ -41,7 +42,7 @@
     }
 
     #wrapper {
-        padding-left: 250px;
+        padding-left: $sidebar-width;
     }
 
     #wrapper.toggledTeams {
@@ -49,7 +50,7 @@
     }
 
     #sidebar-wrapper {
-        width: 250px;
+        width: $sidebar-width;
     }
 
     #wrapper.toggledTeams #sidebar-wrapper {
