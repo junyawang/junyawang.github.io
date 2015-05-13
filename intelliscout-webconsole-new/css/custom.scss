@@ -823,6 +823,20 @@ footer, .push {
     }
 }
 
+/* ------- JUMP BACK TO RECENT MESSAGE ------ */
+.sec-jump-back {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 79px;
+    background-color: $greyDark;
+    padding: 16px;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 600;
+    @include transition (all 0.5s ease);
+}
+
 /* ------------ CHAT BUBBLE ---------- */
 .bubble {
     position: relative;
@@ -934,10 +948,19 @@ footer, .push {
     width: 0;
 }
 
+/* ------------ SEARCH RESULT ---------- */
+.result-highlight {
+    @include box-shadow (0px 0px 10px 0px rgba($green, 0.4));
+}
+
+.result-highlight:hover {
+    @include box-shadow (0px 0px 10px 0px rgba($green, 0.8));
+}
+
 /*--------------------------------------
                     PAGE
 -----------------------------------------*/
-/* =========== TEAM ACTIVITIES ============ */
+/* =========== TEAM STEAMS ============ */
 body {
     background-color: $greyLight;
 }
@@ -948,6 +971,33 @@ body {
     height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
     height: 100%;
     margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
+}
+
+.date-divider {
+    span {
+        font-size: 1.2em;
+        font-weight: 400;
+        text-align: center;
+        line-height: 40px;
+    }
+
+    hr {
+        display: inline-block;
+        border-color: $greenDark;
+    }
+}
+
+/* -------- FILTER FLYOVER -------- */
+.sec-filter {
+    padding: 15px;
+    z-index: 1;
+    display: none;
+    position: relative;
+    background-color: white;
+    top: $navbar-main-height + $navbar-lower-height;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 /* --------- REPORT PANEL -----------*/
@@ -1260,7 +1310,6 @@ form .btn.btn-add-invitation {
     display: inline-block;
 }
 
-
 /* =========== GLOBAL SEARCH MODAL ============ */
 #modal-global-search {
     z-index: 9999;
@@ -1268,19 +1317,6 @@ form .btn.btn-add-invitation {
     position: absolute;
     background-color: white;
     top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-/* =========== FILTER FLYOVER ============ */
-.sec-filter {
-    padding: 15px;
-    z-index: 1;
-    display: none;
-    position: relative;
-    background-color: white;
-    top: $navbar-main-height + $navbar-lower-height;
     bottom: 0;
     left: 0;
     right: 0;

@@ -676,6 +676,22 @@ footer, .push {
       font-size: 1.1em;
       padding: 16px; }
 
+/* ------- JUMP BACK TO RECENT MESSAGE ------ */
+.sec-jump-back {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 79px;
+  background-color: #484A49;
+  padding: 16px;
+  color: white;
+  font-size: 1.1em;
+  font-weight: 600;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
 /* ------------ CHAT BUBBLE ---------- */
 .bubble {
   position: relative;
@@ -781,10 +797,21 @@ footer, .push {
   display: block;
   width: 0; }
 
+/* ------------ SEARCH RESULT ---------- */
+.result-highlight {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(24, 183, 80, 0.4);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(24, 183, 80, 0.4);
+  box-shadow: 0px 0px 10px 0px rgba(24, 183, 80, 0.4); }
+
+.result-highlight:hover {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(24, 183, 80, 0.8);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(24, 183, 80, 0.8);
+  box-shadow: 0px 0px 10px 0px rgba(24, 183, 80, 0.8); }
+
 /*--------------------------------------
                     PAGE
 -----------------------------------------*/
-/* =========== TEAM ACTIVITIES ============ */
+/* =========== TEAM STEAMS ============ */
 body {
   background-color: #efeff4; }
 
@@ -796,6 +823,27 @@ body {
   height: 100%;
   margin: 0 auto -155px;
   /* the bottom margin is the negative value of the footer's height */ }
+
+.date-divider span {
+  font-size: 1.2em;
+  font-weight: 400;
+  text-align: center;
+  line-height: 40px; }
+.date-divider hr {
+  display: inline-block;
+  border-color: #28a55e; }
+
+/* -------- FILTER FLYOVER -------- */
+.sec-filter {
+  padding: 15px;
+  z-index: 1;
+  display: none;
+  position: relative;
+  background-color: white;
+  top: 116px;
+  bottom: 0;
+  left: 0;
+  right: 0; }
 
 /* --------- REPORT PANEL -----------*/
 .panel-report {
@@ -1050,18 +1098,6 @@ form .btn.btn-add-invitation {
   position: absolute;
   background-color: white;
   top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0; }
-
-/* =========== FILTER FLYOVER ============ */
-.sec-filter {
-  padding: 15px;
-  z-index: 1;
-  display: none;
-  position: relative;
-  background-color: white;
-  top: 116px;
   bottom: 0;
   left: 0;
   right: 0; }

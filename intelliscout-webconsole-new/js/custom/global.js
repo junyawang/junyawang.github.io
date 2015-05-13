@@ -24,10 +24,12 @@ $("#navbar-sidebar-toggle").click(function(e) {
     $("#wrapper").toggleClass("toggledSidebar");
     if ($("#wrapper").hasClass('toggledSidebar')) {
         $('.sec-chat').attr('style', 'left: 250px;');
+        $('.sec-jump-back').attr('style', 'left: 250px;');
         $('.navbar-lower').attr('style', 'left: 250px;');
     }
     else {
         $('.sec-chat').attr('style', 'left: 0;');
+        $('.sec-jump-back').attr('style', 'left: 0;');
         $('.navbar-lower').attr('style', 'left: 0;');
     }
 });
