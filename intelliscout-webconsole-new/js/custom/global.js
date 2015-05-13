@@ -1,8 +1,8 @@
 // Menu Toggle Script
-$("#team-toggle").click(function(e) {
-    e.preventDefault();
-    $("#wrapper").toggleClass("toggled");
-});
+// $("#team-toggle").click(function(e) {
+//     e.preventDefault();
+//     $("#wrapper").toggleClass("toggled");
+// });
 
 // $("#user-toggle").click(function(e) {
 //     e.preventDefault();
@@ -19,23 +19,10 @@ $("#team-toggle").click(function(e) {
 // });
 
 // Sidebar Toggle
-$("#navbar-team-toggle").click(function(e) {
-    e.preventDefault();
-    $("#wrapper").toggleClass("toggledTeams");
-    if ($("#wrapper").hasClass('toggledTeams')) {
-        $('.sec-chat').attr('style', 'left: 250px;');
-        $('.navbar-lower').attr('style', 'left: 250px;');
-    }
-    else {
-        $('.sec-chat').attr('style', 'left: 0;');
-        $('.navbar-lower').attr('style', 'left: 0;');
-    }
-});
-
 $("#navbar-sidebar-toggle").click(function(e) {
     e.preventDefault();
-    $("#wrapper").toggleClass("toggledTeams");
-    if ($("#wrapper").hasClass('toggledTeams')) {
+    $("#wrapper").toggleClass("toggledSidebar");
+    if ($("#wrapper").hasClass('toggledSidebar')) {
         $('.sec-chat').attr('style', 'left: 250px;');
         $('.navbar-lower').attr('style', 'left: 250px;');
     }
@@ -69,62 +56,10 @@ $(document).ready(function() {
     });
 });
 
-$("#navbar-user-toggle").click(function(e) {
-    e.preventDefault();
-    $("#wrapper").toggleClass("toggledUsers");
-});
-
-//********** Field Report Workflow *********//
-
-// Show modal-photo-to-report
-$("#modal-photo-to-report-trigger").click(function(){
-    $('#modal-view-photo').modal('hide');
-    $('#modal-view-report').modal('show');
-});
-
-// Show modal-note-to-report
-$("#modal-note-to-report-trigger").click(function(){
-    $('#modal-view-note').modal('hide');
-    $('#modal-view-report').modal('show');
-});
-
-// Show modal-report-to-photo
-$("#modal-report-to-photo-trigger").click(function(){
-    $('#modal-view-report').modal('hide');
-    $('#modal-view-photo').modal('show');
-});
-
-// Show modal-report-to-note
-$("#modal-report-to-note-trigger").click(function(){
-    $('#modal-view-report').modal('hide');
-    $('#modal-view-note').modal('show');
-});
-
-//********** Create Team Workflow *********//
-
-// Show createTeam-to-inviteMembers
-$("#modal-createTeam-to-inviteMembers-trigger").click(function(){
-    $('#modal-invite-members').modal('show');
-    $('#modal-create-team').modal('hide');
-});
-
-// Show inviteMembers-to-createTeam
-$("#modal-inviteMembers-to-createTeam-trigger").click(function(){
-    $('#modal-invite-members').modal('hide');
-    $('#modal-create-team').modal('show');
-});
-
-// Show inviteMembers-to-assignAdmin
-$("#modal-inviteMembers-to-assignAdmin-trigger").click(function(){
-    $('#modal-assign-team-admin').modal('show');
-    $('#modal-invite-members').modal('hide');
-});
-
-// Show assignAdmin-to-inviteMembers
-$("#modal-assignAdmin-to-inviteMembers-trigger").click(function(){
-    $('#modal-assign-team-admin').modal('hide');
-    $('#modal-invite-members').modal('show');
-});
+// $("#navbar-user-toggle").click(function(e) {
+//     e.preventDefault();
+//     $("#wrapper").toggleClass("toggledUsers");
+// });
 
 //********** Export Workflow *********//
 
@@ -155,40 +90,6 @@ $("#global-search").click(function(){
 // $("#close-global-search").click(function(){
 //     $('#modal-global-search').modal('hide');
 // });
-
-// Team Select
-$( document ).ready(function() {
-    $('.team-select').selectpicker();
-    $('.member-select').selectpicker();
-    $('#search-keyword').tokenfield({
-        showAutocompleteOnFocus: true
-    });
-});
-
-//********** Filter Flyover *********//
-// Filter Button
-$(document).on('click', "#filter", function(e){
-    $('.sec-filter').slideDown('slow');
-});
-
-// Close Search Button
-$(document).on('click', "#close-filter", function(e){
-    $('.sec-filter').slideUp('slow');
-});
-
-
-//********** Date & Time Picker *********//
-$(function () {
-    $('#startdatetimepicker').datetimepicker();
-    $('#enddatetimepicker').datetimepicker();
-    $("#startdatetimepicker").on("dp.change", function (e) {
-        $('#enddatetimepicker').data("DateTimePicker").minDate(e.date);
-    });
-    $("#enddatetimepicker").on("dp.change", function (e) {
-        $('#startdatetimepicker').data("DateTimePicker").maxDate(e.date);
-    });
-});
-
 
 //********** Textarea Auto Resize *********//
 (function($){    

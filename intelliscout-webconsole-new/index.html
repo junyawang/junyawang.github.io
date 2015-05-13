@@ -25,7 +25,7 @@
 
     <!-- JS -->
     <script src="js/jquery-1.11.2.min.js"></script>
-    <script src="js/moment.js"></script>
+    <script src="js/moment.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap-tokenfield.min.js"></script>
     <script src="js/bootstrap-select.min.js"></script>
@@ -225,13 +225,17 @@
                 <div class="col-md-3">
                     <div class="form-group">
                         <label for"search-keyword" control-label><i class="fa fa-user"></i></label>
-                        <select class="member-select" multiple data-selected-text-format="count>3" title='Choose one or more members' data-width="100%">
-                            <option>All Members</option>
-                            <option>Adam</option>
-                            <option>Benson</option>
-                            <option>Cindy</option>
-                            <option>David</option>
-                            <option>Eric</option>
+                        <select class="selectpicker" multiple data-selected-text-format="count>3" data-live-search="true" title='Choose one or more members' data-width="100%">
+                            <optgroup label="Select All">
+                                <option>All Members</option>
+                            </optgroup>
+                            <optgroup label="Select Members">
+                                <option>Adam</option>
+                                <option>Benson</option>
+                                <option>Cindy</option>
+                                <option>David</option>
+                                <option>Eric</option>
+                            </optgroup>
                         </select>
                     </div>
                 </div>
@@ -322,7 +326,7 @@
             <nav class="navbar navbar-default navbar-fixed-top navbar-lower" role="navigation">
                 <div class="container-fluid">
                     <ul class="nav navbar-nav navbar-left">
-                        <li><a href="#team-toggle" class="navbar-left" id="navbar-team-toggle"><i class="fa fa-users"></i></a></li>
+                        <li><a href="#team-toggle" class="navbar-left" id="navbar-sidebar-toggle"><i class="fa fa-users"></i></a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Team 1 <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu" role="menu">
@@ -549,12 +553,16 @@
                             <label for"search-keyword" class="col-sm-1" control-label><i class="fa fa-users"></i></label>
                             <div class="col-sm-11">
                                 <select class="team-select" multiple data-selected-text-format="count>3" title='Choose one or more teams' data-width="100%">
-                                    <option>All Teams</option>
-                                    <option>Team 1</option>
-                                    <option>Team 2</option>
-                                    <option>Team 3</option>
-                                    <option>Team 4</option>
-                                    <option>Team 5</option>
+                                    <optgroup label="all">
+                                        <option>All Teams</option>
+                                    </optgroup>
+                                    <optgroup>
+                                        <option>Team 1</option>
+                                        <option>Team 2</option>
+                                        <option>Team 3</option>
+                                        <option>Team 4</option>
+                                        <option>Team 5</option>
+                                    </optgroup>
                                 </select>
                             </div>
                         </div>
@@ -685,5 +693,6 @@
     </div>
     
 </body>
-<script src="js/custom.js"></script>
+<script src="js/custom/global.js"></script>
+<script src="js/custom/index.js"></script>
 </html>

@@ -455,7 +455,7 @@ textarea {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease; }
 
-#wrapper.toggledTeams {
+#wrapper.toggledSidebar {
   padding-left: 250px; }
 
 #sidebar-wrapper {
@@ -472,7 +472,7 @@ textarea {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease; }
 
-#wrapper.toggledTeams #sidebar-wrapper {
+#wrapper.toggledSidebar #sidebar-wrapper {
   width: 250px; }
 
 #page-content-wrapper {
@@ -480,7 +480,7 @@ textarea {
   position: absolute;
   padding: 15px; }
 
-#wrapper.toggledTeams #page-content-wrapper {
+#wrapper.toggledSidebar #page-content-wrapper {
   position: absolute;
   margin-right: -250px; }
 

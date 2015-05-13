@@ -543,7 +543,7 @@ textarea {
     @include transition (all 0.5s ease);
 }
 
-#wrapper.toggledTeams {
+#wrapper.toggledSidebar {
     padding-left: $sidebar-width;
 }
 
@@ -559,7 +559,7 @@ textarea {
     @include transition (all 0.5s ease);
 }
 
-#wrapper.toggledTeams #sidebar-wrapper {
+#wrapper.toggledSidebar #sidebar-wrapper {
     width: $sidebar-width;
 }
 
@@ -569,7 +569,7 @@ textarea {
     padding: 15px;
 }
 
-#wrapper.toggledTeams #page-content-wrapper {
+#wrapper.toggledSidebar #page-content-wrapper {
     position: absolute;
     margin-right: -$sidebar-width;
 }
