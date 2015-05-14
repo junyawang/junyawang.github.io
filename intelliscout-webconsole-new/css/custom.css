@@ -595,11 +595,7 @@ footer, .push {
   left: 0;
   right: 0;
   bottom: 79px;
-<<<<<<< HEAD
   background-color: rgba(72, 74, 73, 0.96);
-=======
-  background-color: rgba(72, 74, 73, 0.92);
->>>>>>> origin/master
   padding: 16px;
   color: white;
   font-size: 1.1em;
@@ -742,28 +738,16 @@ footer, .push {
   margin: 0 auto;
   text-align: center; }
 
-<<<<<<< HEAD
-=======
-.alignLeft {
-  text-align: left; }
-
-.alignRight {
-  text-align: right; }
-
->>>>>>> origin/master
 .hidden {
   visibility: none; }
 
 .main-content {
   margin-top: 116px; }
 
-<<<<<<< HEAD
 textarea,
 input {
   outline: none; }
 
-=======
->>>>>>> origin/master
 input:focus,
 textarea:focus {
   outline: none; }
