@@ -77,3 +77,10 @@ $(function () {
         $('#startdatetimepicker').data("DateTimePicker").maxDate(e.date);
     });
 });
+
+//********** Smooth Scroll *********//
+$(".sec-jump-back").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#recent-message").offset().top
+    }, 700);
+});
