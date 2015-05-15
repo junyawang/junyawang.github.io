@@ -10,6 +10,27 @@
 
 /* Small devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    .navbar-main {
+        
+        /* dropdown menu - open */
+        .navbar-nav .open .dropdown-menu {
+            background-color: white;
+        }
+
+        /* dropdown menu - open - link*/
+        .navbar-nav .open .dropdown-menu>li>a {
+            color: $greyDark;
+        }
+        .navbar-nav .open .dropdown-menu>li>a:hover {
+            background-color: rgba(white,0.1);
+            color: $greenDark;
+        }
+
+        .navbar-nav .open .dropdown-menu .divider {
+            background-color: $greyLight;
+        }
+    }
+
     .navbar-lower,
     .sec-chat,
     .sec-jump-back {

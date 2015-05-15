@@ -8,6 +8,19 @@
 /* No media query since this is the default in Bootstrap */
 /* Small devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .navbar-main {
+    /* dropdown menu - open */
+    /* dropdown menu - open - link*/ }
+    .navbar-main .navbar-nav .open .dropdown-menu {
+      background-color: white; }
+    .navbar-main .navbar-nav .open .dropdown-menu > li > a {
+      color: #484A49; }
+    .navbar-main .navbar-nav .open .dropdown-menu > li > a:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #28a55e; }
+    .navbar-main .navbar-nav .open .dropdown-menu .divider {
+      background-color: #efeff4; }
+
   .navbar-lower,
   .sec-chat,
   .sec-jump-back {

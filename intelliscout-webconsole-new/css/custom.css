@@ -74,6 +74,107 @@
   border-color: #e75a24;
   color: white; }
 
+/* ------------- Dropdown Menu --------------*/
+.dropdown-menu {
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 1em;
+  background-color: white;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #efeff4;
+  border-radius: 0;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.04);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.04); }
+  .dropdown-menu .divider {
+    height: 1px;
+    margin: 8px 0;
+    overflow: hidden;
+    background-color: #efeff4; }
+
+.dropdown-menu > li > a {
+  display: block;
+  padding: 8px 16px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #484A49;
+  white-space: nowrap; }
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  color: #484A49;
+  text-decoration: none;
+  background-color: rgba #efeff4, 0.1; }
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: #337ab7;
+  outline: 0; }
+
+.dropdown-menu > .disabled > a,
+.dropdown-menu > .disabled > a:hover,
+.dropdown-menu > .disabled > a:focus {
+  color: #777; }
+
+.dropdown-menu > .disabled > a:hover,
+.dropdown-menu > .disabled > a:focus {
+  text-decoration: none;
+  cursor: not-allowed;
+  background-color: transparent;
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false); }
+
+.open > .dropdown-menu {
+  display: block; }
+
+.open > a {
+  outline: 0; }
+
+.dropdown-menu-right {
+  right: 0;
+  left: auto; }
+
+.dropdown-menu-left {
+  right: auto;
+  left: 0; }
+
+.dropdown-header {
+  display: block;
+  padding: 3px 20px;
+  font-size: 12px;
+  line-height: 1.42857143;
+  color: #777;
+  white-space: nowrap; }
+
+.dropdown-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 990; }
+
+.pull-right > .dropdown-menu {
+  right: 0;
+  left: auto; }
+
+.dropup .caret,
+.navbar-fixed-bottom .dropdown .caret {
+  content: "";
+  border-top: 0;
+  border-bottom: 4px solid; }
+
+.dropup .dropdown-menu,
+.navbar-fixed-bottom .dropdown .dropdown-menu {
+  top: auto;
+  bottom: 100%;
+  margin-bottom: 2px; }
+
 /* ------------- Form --------------*/
 form .row {
   padding-left: 15px;
@@ -187,44 +288,96 @@ textarea {
 /* --------- NAV BAR ---------- */
 .navbar {
   border: none;
-  font-weight: 400; }
+  font-weight: 400;
+  /* Collapse */
+  /* dropdown menu*/ }
+  .navbar .open .dropdown-menu > li > a {
+    line-height: 22px; }
 
-/* NAV BAR - MAIN */
+.navbar-fixed-top .navbar-collapse {
+  max-height: none; }
+
+/* NAV BAR - MAIN - Expand */
 .navbar-main {
   background-color: #28a55e;
-  margin-bottom: 0;
+  border-color: none;
   height: 60px;
   -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.05);
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.05); }
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.05);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  /* toggle */
+  /* link */
+  /* link - left */
+  /* link - right */
+  /* hover link */
+  /* active link */ }
+  .navbar-main .navbar-toggle {
+    background-color: transparent;
+    border-color: transparent;
+    color: white; }
+  .navbar-main .navbar-toggle:hover {
+    background-color: transparent; }
+  .navbar-main .navbar-brand {
+    padding: 0; }
+  .navbar-main .navbar-nav > li > a {
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px; }
   .navbar-main .navbar-nav.navbar-left > li > a {
-    color: white;
     font-size: 1.4em;
-    font-weight: 600;
-    padding-top: 20px;
-    padding-bottom: 20px; }
+    font-weight: 600; }
   .navbar-main .navbar-nav.navbar-right > li > a {
-    color: white;
     font-size: 1.2em;
-    font-weight: 400;
-    padding-top: 20px;
-    padding-bottom: 20px; }
+    font-weight: 400; }
+  .navbar-main .navbar-nav > li > a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #18b750; }
+  .navbar-main .navbar-nav > .navbar-active > a {
+    color: #18b750; }
+
+/* NAV BAR - MAIN - Collapse */
+.navbar-main {
+  /* bg */
+  /* link */
+  /* hover link */
+  /* active link*/
+  /* dropdown toggle - open */
+  /* dropdown menu - open */
+  /* dropdown menu - open - link*/ }
+  .navbar-main .navbar-collapse {
+    background-color: #28a55e;
+    border: none; }
+  .navbar-main .navbar-nav > li > a {
+    color: white; }
+  .navbar-main .navbar-nav > li > a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white; }
+  .navbar-main .navbar-nav > .navbar-active > a {
+    color: white; }
   .navbar-main .navbar-nav > .open > a,
   .navbar-main .navbar-nav > .open > a:focus,
   .navbar-main .navbar-nav > .open > a:hover {
-    background-color: #18b750;
+    background-color: #28a55e;
     color: white; }
-
-.navbar-brand {
-  padding: 0; }
+  .navbar-main .navbar-nav .open .dropdown-menu {
+    background-color: transparent;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.04);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.04);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.04); }
+  .navbar-main .navbar-nav .open .dropdown-menu > li > a {
+    color: white; }
+  .navbar-main .navbar-nav .open .dropdown-menu > li > a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white; }
+  .navbar-main .navbar-nav .open .dropdown-menu .divider {
+    background-color: #18b750; }
 
 .img-logo {
   max-width: 60px; }
-
-.dropdown-menu {
-  -webkit-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.25); }
 
 /* NAV BAR - LOWER */
 .navbar-lower {
@@ -242,6 +395,8 @@ textarea {
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease; }
+  .navbar-lower .nav > li {
+    display: inline-block; }
   .navbar-lower .navbar-nav.navbar-left > li > a,
   .navbar-lower .navbar-nav.navbar-right > li > a {
     font-size: 1.1em;
