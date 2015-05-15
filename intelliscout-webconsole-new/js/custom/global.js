@@ -46,14 +46,19 @@ $("#navbar-sidebar-toggle").click(function(e) {
 
 $(document).ready(function() {
     $(window).resize(function() {
+        $('.sec-chat').removeAttr('style');
+        $('.navbar-lower').removeAttr('style');
+        $('.sec-jump-back').removeAttr('style');
+            
         if (window.matchMedia("(min-width: 768px)").matches ||
             window.matchMedia("(min-width: 992px)").matches ||
             window.matchMedia("(min-width: 1200px)").matches) {
-            $('.sec-chat').removeAttr('style');
-            $('.navbar-lower').removeAttr('style');
+            // $('.sec-chat').removeAttr('style');
+            // $('.navbar-lower').removeAttr('style');
+            // $('.sec-jump-back').removeAttr('style');
         }
         else {
-            $("#wrapper").removeClass('toggledTeams');
+            $("#wrapper").removeClass('toggledSidebar');
         }
     });
 });
