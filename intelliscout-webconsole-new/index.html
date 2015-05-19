@@ -19,6 +19,7 @@
     <link href="css/tokenfield-typeahead.min.css" rel="stylesheet" type="text/css">
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap-select.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css">
     <link href="css/animate.css" rel="stylesheet" type="text/css">
     <link href="css/custom.css" rel="stylesheet" type="text/css">
     <link href="css/media_query.css" rel="stylesheet" type="text/css">
@@ -197,36 +198,44 @@
                 <span aria-hidden="true"><i class="fa fa-times"></i></span>
             </button>
 
-            <form class="form-inline">
-                <div class="col-md-12">
-                    <div class="form-group">
-                        <label for"search-keyword" control-label><i class="fa fa-search"></i></label>
-                        <input type="text" class="form-control" id="search-keyword"/>
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <!-- Keywords -->
+                    <label for"search-keyword" class="col-xs-1 control-label">
+                        <i class="fa fa-search"></i>
+                    </label>
+                    <div class="col-xs-11">
+                        <input type="text" class="form-control" id="search-keyword" placeholder=""/>
                     </div>
-                </div>
-                <div class='col-md-3'>
-                    <div class="form-group">
-                        <div class='input-group date' id='startdatetimepicker'>
-                            <input type='text' class="form-control" />
-                            <span class="input-group-addon">
-                                <span class="glyphicon glyphicon-calendar"></span>
-                            </span>
+                
+                    <!-- Date Picker -->
+                    <label for"startdatetimepicker" class="col-xs-1 col-md-1 control-label">
+                        <i class="fa fa-calendar"></i>
+                    </label>
+                    
+                    <!-- Start Date -->
+                    <div class="col-xs-5 col-md-2">
+                        <div class='input-group date'>
+                            <input type='text' class="form-control" id='startdatetimepicker' />
                         </div>
                     </div>
-                </div>
-                <div class='col-md-3'>
-                    <div class="form-group">
-                        <div class='input-group date' id='enddatetimepicker'>
-                            <input type='text' class="form-control" />
-                            <span class="input-group-addon">
-                                <span class="glyphicon glyphicon-calendar"></span>
-                            </span>
+                    
+                    <div class="col-xs-1 col-md-1">
+                        <span>to</span>
+                    </div>
+
+                    <!-- End Date -->
+                    <div class="col-xs-5 col-md-2">         
+                        <div class='input-group date'>
+                            <input type='text' class="form-control" id='enddatetimepicker'/>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="form-group">
-                        <label for"search-keyword" control-label><i class="fa fa-user"></i></label>
+                
+                    <!-- Users Dropdown Menu -->
+                    <label for"search-keyword" class="col-xs-1 col-md-1 control-label">
+                        <i class="fa fa-user"></i>
+                    </label>
+                    <div class="col-xs-11 col-md-2">
                         <select class="selectpicker" multiple data-selected-text-format="count>3" data-live-search="true" title='Choose one or more members' data-width="100%">
                             <optgroup label="Select All">
                                 <option>All Members</option>
@@ -240,10 +249,27 @@
                             </optgroup>
                         </select>
                     </div>
-                </div>
 
-                <button class="btn btn-success">Search</button>
-                <button class="btn btn-default">Reset</button>
+                    <!-- Checkboxes -->
+                    <div class="col-xs-11 col-xs-offset-1 col-md-2 col-md-offset-0">
+                        <div class="checkbox">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" name="type" value="reports" checked> Reports
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" name="type" value="messages" checked> Messages
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="col-xs-6 col-md-2">
+                        <button class="btn btn-success">Filter</button>
+                    </div>
+                    <div class="col-xs-6 col-md-2">
+                        <button class="btn btn-default">Reset</button>
+                    </div>
+                </div>
             </form>           
         </section>
 

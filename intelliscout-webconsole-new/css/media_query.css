@@ -8,6 +8,7 @@
 /* No media query since this is the default in Bootstrap */
 /* Small devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  /* NAVBAR */
   .navbar-main {
     /* dropdown menu - open */
     /* dropdown menu - open - link*/ }
@@ -21,6 +22,13 @@
     .navbar-main .navbar-nav .open .dropdown-menu .divider {
       background-color: #efeff4; }
 
+  #navbar-team-toggle,
+  #navbar-sidebar-toggle {
+    display: none; }
+
+  .navbar-right {
+    margin-right: 0; }
+
   .navbar-lower,
   .sec-chat,
   .sec-jump-back {
@@ -31,29 +39,7 @@
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease; }
 
-  .sec-chat {
-    background-color: #efeff4;
-    padding: 16px;
-    border-top: 1px solid #c8c7cc; }
-    .sec-chat .comment-form textarea {
-      border: none;
-      -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25);
-      -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25);
-      box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25); }
-
-  .sec-jump-back {
-    bottom: 111px; }
-
-  #navbar-team-toggle,
-  #navbar-sidebar-toggle {
-    display: none; }
-
-  .navbar-right {
-    margin-right: 0; }
-
-  .modal-dialog {
-    width: 100%; }
-
+  /* SIDEBAR */
   #wrapper {
     padding-left: 250px; }
 
@@ -74,10 +60,29 @@
     position: relative;
     margin-right: 0; }
 
+  /* CHAT */
+  .sec-chat {
+    background-color: #efeff4;
+    padding: 16px;
+    border-top: 1px solid #c8c7cc; }
+    .sec-chat .comment-form textarea {
+      border: none;
+      -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25);
+      box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25); }
+
+  .sec-jump-back {
+    bottom: 111px; }
+
+  /* BUBBLE */
   .bubble {
     width: auto;
     min-width: initial;
-    max-width: 60%; } }
+    max-width: 60%; }
+
+  /* MODAL */
+  .modal-dialog {
+    width: 100%; } }
 /* Medium devices (desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .modal-dialog {

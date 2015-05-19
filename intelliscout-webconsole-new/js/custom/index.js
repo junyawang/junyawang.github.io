@@ -68,8 +68,12 @@ $('#search-keyword').tokenfield({
 
 //********** Date & Time Picker *********//
 $(function () {
-    $('#startdatetimepicker').datetimepicker();
-    $('#enddatetimepicker').datetimepicker();
+    $('#startdatetimepicker').datetimepicker({
+        format: 'MM/DD/YYYY'
+    });
+    $('#enddatetimepicker').datetimepicker({
+        format: 'MM/DD/YYYY'
+    });
     $("#startdatetimepicker").on("dp.change", function (e) {
         $('#enddatetimepicker').data("DateTimePicker").minDate(e.date);
     });

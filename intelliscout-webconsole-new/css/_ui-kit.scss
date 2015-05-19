@@ -310,7 +310,6 @@ textarea {
 }
 
 /* --------- NAV BAR ---------- */
-
 .navbar {
     border: none;
     font-weight: 400;
@@ -449,8 +448,24 @@ textarea {
     @include box-shadow (0px 2px 2px 0px rgba(0, 0, 0, 0.05));
     @include transition (all 0.5s ease);
     
+    /* -------- */
+    .navbar-nav {
+        margin: 0 0;
+        display: inline-block;
+    }
+
+    ul.navbar-right {
+        float: right;
+    }
+
+    ul {
+        // display: inline-block;
+        // clear: both;
+    }
+
     .nav>li {
         display: inline-block;
+        vertical-align: top;
     }
 
     .navbar-nav.navbar-left>li>a,
@@ -1032,4 +1047,9 @@ footer, .push {
 
 .result-highlight:hover {
     @include box-shadow (0px 0px 10px 0px rgba($green, 0.8));
+}
+
+/* ------------ DATETIMEPICKER ---------- */
+.sec-filter .form-horizontal .input-group {
+    display: block;
 }

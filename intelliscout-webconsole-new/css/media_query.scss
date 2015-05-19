@@ -10,6 +10,7 @@
 
 /* Small devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    /* NAVBAR */
     .navbar-main {
         
         /* dropdown menu - open */
@@ -31,30 +32,6 @@
         }
     }
 
-    .navbar-lower,
-    .sec-chat,
-    .sec-jump-back {
-        left: $sidebar-width; /* $sidebar-width*/
-        @include transition (all 0.5s ease);
-    }
-
-    .sec-chat {
-        background-color: $greyLight;
-        padding: 16px;
-        border-top: 1px solid $greyMid;
-
-        .comment-form {
-            textarea{
-                border: none;
-                @include box-shadow (0px 0px 2px 0px rgba(0, 0, 0, 0.25));
-            }
-        }
-    }
-
-    .sec-jump-back {
-        bottom: 111px;
-    }
-
     #navbar-team-toggle,
     #navbar-sidebar-toggle {
         display: none;
@@ -64,10 +41,14 @@
         margin-right: 0;
     }
 
-    .modal-dialog {
-        width: 100%;
+    .navbar-lower,
+    .sec-chat,
+    .sec-jump-back {
+        left: $sidebar-width; /* $sidebar-width*/
+        @include transition (all 0.5s ease);
     }
-
+    
+    /* SIDEBAR */
     #wrapper {
         padding-left: $sidebar-width;
     }
@@ -93,11 +74,35 @@
         position: relative;
         margin-right: 0;
     }
+    
+    /* CHAT */
+    .sec-chat {
+        background-color: $greyLight;
+        padding: 16px;
+        border-top: 1px solid $greyMid;
 
+        .comment-form {
+            textarea{
+                border: none;
+                @include box-shadow (0px 0px 2px 0px rgba(0, 0, 0, 0.25));
+            }
+        }
+    }
+
+    .sec-jump-back {
+        bottom: 111px;
+    }
+
+    /* BUBBLE */
     .bubble {
         width: auto;
         min-width: initial;
         max-width: 60%;
+    }
+
+    /* MODAL */
+    .modal-dialog {
+        width: 100%;
     }
 }
 
