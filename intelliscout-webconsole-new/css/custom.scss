@@ -157,10 +157,7 @@ body {
     color: #bbb;
 }
 
-.filter-icon {
-    margin-bottom: 0px;
-    margin-top: 7px;
-}
+
 
 .sec-filter {
     padding: 15px;
@@ -179,6 +176,22 @@ body {
 
     .token-input {
         margin-bottom: 0px;
+    }
+
+    .filter-icon {
+        margin-bottom: 0px;
+        margin-top: 7px;
+    }
+
+    .date {
+        margin-bottom: 10px;
+    }
+
+    .to-date {
+        margin-top: 10px;
+        padding: 0px;
+        text-align: center;
+        font-size: 1.2em;
     }
 }
 

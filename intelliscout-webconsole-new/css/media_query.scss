@@ -104,6 +104,16 @@
     .modal-dialog {
         width: 100%;
     }
+
+    .sec-filter {
+        .date {
+            margin-bottom: 0px;
+        }
+        .filter-icon {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+    }
 }
 
 /* Medium devices (desktops, 992px and up) */

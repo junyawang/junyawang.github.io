@@ -1016,10 +1016,6 @@ body {
   font-size: 1.4em;
   color: #bbb; }
 
-.filter-icon {
-  margin-bottom: 0px;
-  margin-top: 7px; }
-
 .sec-filter {
   padding: 15px;
   z-index: 1;
@@ -1034,6 +1030,16 @@ body {
     margin-top: 0; }
   .sec-filter .token-input {
     margin-bottom: 0px; }
+  .sec-filter .filter-icon {
+    margin-bottom: 0px;
+    margin-top: 7px; }
+  .sec-filter .date {
+    margin-bottom: 10px; }
+  .sec-filter .to-date {
+    margin-top: 10px;
+    padding: 0px;
+    text-align: center;
+    font-size: 1.2em; }
 
 /* --------- REPORT PANEL -----------*/
 .panel-report {

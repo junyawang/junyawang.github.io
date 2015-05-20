@@ -82,7 +82,13 @@
 
   /* MODAL */
   .modal-dialog {
-    width: 100%; } }
+    width: 100%; }
+
+  .sec-filter .date {
+    margin-bottom: 0px; }
+  .sec-filter .filter-icon {
+    margin-top: 0px;
+    margin-bottom: 0px; } }
 /* Medium devices (desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .modal-dialog {
