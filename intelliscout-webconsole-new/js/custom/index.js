@@ -49,6 +49,12 @@ $("#modal-assignAdmin-to-inviteMembers-trigger").click(function(){
     $('#modal-invite-members').modal('show');
 });
 
+$(document).ready(function() {
+    $('.token-input').clearSearch();
+    $('#search-keyword-tokenfield').attr('token-selector', '#search-keyword');
+    $('#startdatetimepicker').clearSearch();
+    $('#enddatetimepicker').clearSearch();
+});
 //********** Filter Flyover *********//
 // Filter Button
 $(document).on('click', "#filter", function(e){

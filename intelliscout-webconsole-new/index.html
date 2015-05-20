@@ -26,6 +26,7 @@
 
     <!-- JS -->
     <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery.clearsearch.js"></script>
     <script src="js/moment.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script>
@@ -194,14 +195,17 @@
 
         <!-- Filter Flyover -->
         <section class="sec-filter">
-            <button type="button" class="close" id="close-filter" aria-label="Close">
-                <span aria-hidden="true"><i class="fa fa-times"></i></span>
-            </button>
+            <div class="row">
+                <button type="button" class="close" id="close-filter" aria-label="Close">
+                    <span aria-hidden="true"><i class="fa fa-times"></i></span>
+                </button>
+            </div>
+            
 
             <form class="form-horizontal">
                 <div class="form-group">
                     <!-- Keywords -->
-                    <label for"search-keyword" class="col-xs-1 control-label">
+                    <label for"search-keyword" class="col-xs-1 control-label filter-icon">
                         <i class="fa fa-search"></i>
                     </label>
                     <div class="col-xs-11">
@@ -209,7 +213,7 @@
                     </div>
                 
                     <!-- Date Picker -->
-                    <label for"startdatetimepicker" class="col-xs-1 col-md-1 control-label">
+                    <label for"startdatetimepicker" class="col-xs-1 col-md-1 control-label filter-icon">
                         <i class="fa fa-calendar"></i>
                     </label>
                     
@@ -232,7 +236,7 @@
                     </div>
                 
                     <!-- Users Dropdown Menu -->
-                    <label for"search-keyword" class="col-xs-1 col-md-1 control-label">
+                    <label for"search-keyword" class="col-xs-1 col-md-1 control-label filter-icon">
                         <i class="fa fa-user"></i>
                     </label>
                     <div class="col-xs-11 col-md-2">
