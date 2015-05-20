@@ -1022,8 +1022,8 @@ body {
   bottom: 0;
   left: 0;
   right: 0; }
-  .sec-filter form .btn {
-    margin: 0; }
+  .sec-filter form .dropdown-toggle {
+    margin-top: 0; }
 
 /* --------- REPORT PANEL -----------*/
 .panel-report {
