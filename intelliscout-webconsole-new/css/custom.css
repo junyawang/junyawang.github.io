@@ -299,7 +299,7 @@ textarea {
 
 /* NAV BAR - MAIN - Expand */
 .navbar-main {
-  background-color: #28a55e;
+  background-color: #484A49;
   border-color: none;
   height: 60px;
   -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.05);
@@ -349,7 +349,7 @@ textarea {
   /* dropdown menu - open */
   /* dropdown menu - open - link*/ }
   .navbar-main .navbar-collapse {
-    background-color: #28a55e;
+    background-color: #484A49;
     border: none; }
   .navbar-main .navbar-nav > li > a {
     color: white; }
@@ -361,7 +361,7 @@ textarea {
   .navbar-main .navbar-nav > .open > a,
   .navbar-main .navbar-nav > .open > a:focus,
   .navbar-main .navbar-nav > .open > a:hover {
-    background-color: #28a55e;
+    background-color: #484A49;
     color: white; }
   .navbar-main .navbar-nav .open .dropdown-menu {
     background-color: transparent;
@@ -374,7 +374,7 @@ textarea {
     background-color: rgba(255, 255, 255, 0.1);
     color: white; }
   .navbar-main .navbar-nav .open .dropdown-menu .divider {
-    background-color: #18b750; }
+    background-color: #c8c7cc; }
 
 .img-logo {
   max-width: 60px; }
@@ -469,6 +469,71 @@ textarea {
   color: #333;
   background-color: white;
   border-color: #ddd; }
+
+/* --------- REPORT PANEL -----------*/
+.panel-report {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 0;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease; }
+  .panel-report .panel-heading {
+    padding: 30px 20px;
+    border-bottom: none;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px; }
+    .panel-report .panel-heading .panel-name {
+      text-align: left;
+      font-size: 1.4em;
+      font-weight: 600;
+      color: #1C1F1D; }
+    .panel-report .panel-heading .panel-time {
+      text-align: right;
+      float: right;
+      color: #c8c7cc;
+      font-size: 1.2em;
+      font-weight: 400; }
+  .panel-report .panel-body {
+    padding: 0 20px 20px 20px;
+    /* Status */ }
+    .panel-report .panel-body .row {
+      margin-right: -20px;
+      margin-left: -20px; }
+    .panel-report .panel-body p {
+      padding: 20px 0 0 0; }
+    .panel-report .panel-body .panel-status {
+      margin-bottom: 16px; }
+      .panel-report .panel-body .panel-status span.report-location,
+      .panel-report .panel-body .panel-status li.report-status {
+        font-weight: 400;
+        font-size: 1.2em;
+        line-height: 2;
+        color: #c8c7cc;
+        text-transform: none; }
+      .panel-report .panel-body .panel-status span.report-location {
+        text-align: left; }
+      .panel-report .panel-body .panel-status ul.report-status-list {
+        margin: 0 0;
+        display: inline-block;
+        float: right;
+        vertical-align: middle; }
+      .panel-report .panel-body .panel-status li.report-status {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0 0; }
+      .panel-report .panel-body .panel-status li.report-status:not(:first-child) {
+        margin-left: 10px; }
+
+.panel-report:hover {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease; }
 
 /* ---------- COMMENT -------------- */
 .sec-comment .accordion-heading {
@@ -704,7 +769,6 @@ ul.sub.active {
 
 .img-responsive {
   max-height: 100vh;
-  margin: 0 auto;
   vertical-align: middle; }
 
 .carousel-caption {
@@ -1041,76 +1105,16 @@ body {
     text-align: center;
     font-size: 1.2em; }
 
-/* --------- REPORT PANEL -----------*/
-.panel-report {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  padding: 0;
-  -webkit-transition: all 0.25s ease;
-  -moz-transition: all 0.25s ease;
-  -o-transition: all 0.25s ease;
-  transition: all 0.25s ease; }
-  .panel-report .panel-heading {
-    padding: 30px 20px;
-    border-bottom: none;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px; }
-    .panel-report .panel-heading .panel-name {
-      text-align: left;
-      font-size: 1.4em;
-      font-weight: 600;
-      color: #1C1F1D; }
-    .panel-report .panel-heading .panel-time {
-      text-align: right;
-      float: right;
-      color: #c8c7cc;
-      font-size: 1.2em;
-      font-weight: 400; }
-  .panel-report .panel-body {
-    padding: 0 20px 20px 20px;
-    /* Status */ }
-    .panel-report .panel-body .row {
-      margin-right: -20px;
-      margin-left: -20px; }
-    .panel-report .panel-body p {
-      padding: 20px 0 10px 0; }
-    .panel-report .panel-body .panel-status span.report-location,
-    .panel-report .panel-body .panel-status li.report-status {
-      font-weight: 400;
-      font-size: 1.2em;
-      line-height: 2;
-      color: #c8c7cc;
-      text-transform: none; }
-    .panel-report .panel-body .panel-status span.report-location {
-      text-align: left; }
-    .panel-report .panel-body .panel-status ul.report-status-list {
-      margin: 0 0;
-      display: inline-block;
-      float: right;
-      vertical-align: middle; }
-    .panel-report .panel-body .panel-status li.report-status {
-      display: inline-block;
-      vertical-align: middle;
-      padding: 0 0; }
-    .panel-report .panel-body .panel-status li.report-status:not(:first-child) {
-      margin-left: 10px; }
-
-.panel-report:hover {
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
-  -webkit-transition: all 0.25s ease;
-  -moz-transition: all 0.25s ease;
-  -o-transition: all 0.25s ease;
-  transition: all 0.25s ease; }
-
 /* =========== VIEW REPORT ============ */
 .page-view-report {
   margin-top: 120px; }
   .page-view-report .view-report-title {
     margin-bottom: 80px; }
-    .page-view-report .view-report-title .panel-title-name {
-      font-size: 2.4em;
+    .page-view-report .view-report-title .report-number {
+      font-size: 2.2em;
+      font-weight: 400; }
+    .page-view-report .view-report-title .report-author {
+      font-size: 1.2em;
       font-weight: 400; }
   .page-view-report .panel-header {
     padding: 16px;
@@ -1139,6 +1143,7 @@ body {
       border: none;
       background-color: none;
       padding: 0;
+      margin: 16px 0;
       -webkit-border-radius: 0;
       -moz-border-radius: 0;
       border-radius: 0;
@@ -1163,6 +1168,7 @@ body {
       margin-top: 30px; }
 
 .btn-export {
+  display: inline-block;
   float: right; }
 
 .panel-section {

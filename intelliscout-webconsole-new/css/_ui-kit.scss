@@ -327,7 +327,7 @@ textarea {
 
 /* NAV BAR - MAIN - Expand */
 .navbar-main {
-    background-color: $greenDark;
+    background-color: $greyDark;
     border-color: none;
     height: $navbar-main-height;
     @include box-shadow (0px 2px 2px 0px rgba(0, 0, 0, 0.05));
@@ -383,7 +383,7 @@ textarea {
 .navbar-main {
     /* bg */
     .navbar-collapse {
-        background-color: $greenDark;
+        background-color: $greyDark;
         border: none;
     }
 
@@ -407,7 +407,7 @@ textarea {
     .navbar-nav>.open>a,
     .navbar-nav>.open>a:focus,
     .navbar-nav>.open>a:hover {
-        background-color: $greenDark;
+        background-color: $greyDark;
         color: white;
     }
 
@@ -427,7 +427,7 @@ textarea {
     }
 
     .navbar-nav .open .dropdown-menu .divider {
-        background-color: $green;
+        background-color: $greyMid;
     }
 }
 
@@ -552,6 +552,89 @@ textarea {
     border-color: #ddd;
 }
 
+/* --------- REPORT PANEL -----------*/
+
+.panel-report {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0;
+    @include transition (all 0.25s ease);
+
+    .panel-heading {
+        padding: 30px 20px;
+        border-bottom: none;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+
+        .panel-name {
+            text-align: left;
+            font-size: 1.4em;
+            font-weight: 600;
+            color: $black;
+        }
+
+        .panel-time {
+            text-align: right;
+            float: right;
+            color: $greyMid;
+            font-size: 1.2em;
+            font-weight: 400;
+        }
+    }
+
+    .panel-body {
+        padding: 0 20px 20px 20px;
+
+        .row {
+            margin-right: -20px;
+            margin-left: -20px;
+        }
+
+        p {
+            padding: 20px 0 0 0;
+        }
+
+        /* Status */
+        .panel-status {
+            margin-bottom: 16px;
+
+            span.report-location,
+            li.report-status {
+                font-weight: 400;
+                font-size: 1.2em;
+                line-height: 2;
+                color: $greyMid;
+                text-transform: none;
+            }
+
+            span.report-location{
+                text-align: left;
+            }
+
+            ul.report-status-list {
+                margin: 0 0;
+                display: inline-block;
+                float: right;
+                vertical-align: middle;
+            }
+
+            li.report-status {
+                display: inline-block;
+                vertical-align: middle;
+                padding: 0 0;
+            }
+
+            li.report-status:not(:first-child) {
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+.panel-report:hover {
+    @include box-shadow (0px 0px 10px 0px rgba(0, 0, 0, 0.12));
+    @include transition (all 0.25s ease);
+}
 
 /* ---------- COMMENT -------------- */
 .sec-comment {
@@ -864,7 +947,7 @@ ul.sub.active {
 
 .img-responsive {
     max-height: 100vh;
-    margin: 0 auto;
+    // margin: 0 auto;
     vertical-align: middle;
 }
 

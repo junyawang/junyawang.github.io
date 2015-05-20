@@ -193,89 +193,6 @@ body {
     }
 }
 
-/* --------- REPORT PANEL -----------*/
-
-.panel-report {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding: 0;
-    @include transition (all 0.25s ease);
-
-    .panel-heading {
-        padding: 30px 20px;
-        border-bottom: none;
-        border-top-left-radius: 0px;
-        border-top-right-radius: 0px;
-
-        .panel-name {
-            text-align: left;
-            font-size: 1.4em;
-            font-weight: 600;
-            color: $black;
-        }
-
-        .panel-time {
-            text-align: right;
-            float: right;
-            color: $greyMid;
-            font-size: 1.2em;
-            font-weight: 400;
-        }
-    }
-
-    .panel-body {
-        padding: 0 20px 20px 20px;
-
-        .row {
-            margin-right: -20px;
-            margin-left: -20px;
-        }
-
-        p {
-            padding: 20px 0 10px 0;
-        }
-
-        /* Status */
-        .panel-status {
-            span.report-location,
-            li.report-status {
-                font-weight: 400;
-                font-size: 1.2em;
-                line-height: 2;
-                color: $greyMid;
-                text-transform: none;
-            }
-
-            span.report-location{
-                text-align: left;
-            }
-
-            ul.report-status-list {
-                margin: 0 0;
-                display: inline-block;
-                float: right;
-                vertical-align: middle;
-            }
-
-            li.report-status {
-                display: inline-block;
-                vertical-align: middle;
-                padding: 0 0;
-            }
-
-            li.report-status:not(:first-child) {
-                margin-left: 10px;
-            }
-        }
-    }
-}
-
-.panel-report:hover {
-    @include box-shadow (0px 0px 10px 0px rgba(0, 0, 0, 0.12));
-    @include transition (all 0.25s ease);
-}
-
-
 /* =========== VIEW REPORT ============ */
 .page-view-report {
     margin-top: 120px;
@@ -283,8 +200,13 @@ body {
     .view-report-title {
         margin-bottom: 80px;
 
-        .panel-title-name {
-            font-size: 2.4em;
+        .report-number {
+            font-size: 2.2em;
+            font-weight: 400;
+        }
+
+        .report-author {
+            font-size: 1.2em;
             font-weight: 400;
         }
     }
@@ -323,6 +245,7 @@ body {
             border: none;
             background-color: none;
             padding: 0;
+            margin: 16px 0;
             @include border-radius (0);
             @include box-shadow (0px 0px 4px 0px rgba(0, 0, 0, 0.08));
             @include transition (all 0.25s ease);
@@ -344,6 +267,7 @@ body {
 }
 
 .btn-export {
+    display: inline-block;
     float: right;
 }
 
