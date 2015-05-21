@@ -263,25 +263,18 @@
     </div>
 
     <!-- MODAL - View Photo-->
-    <div class="modal fade bs-example-modal-lg row" id="modal-view-photo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        
-        <div class="col-md-1 col-md-offset-1 col-sm-1 col-sm-offset-1 col-xs-1">
-            <div class="modal-back">
-                <button type="button" class="btn btn-default" id="modal-photo-to-report-trigger">
-                    <span class="btn-modal-close text-right" aria-hidden="true"><i class="fa fa-arrow-left"></i></span>
-                </button>
-            </div>
-        </div>
+    <div class="modal fade bs-example-modal-lg modal-carousel" id="modal-view-photo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 
-        <div class="col-md-8 col-sm-8 col-xs-10">
+        <div class="container">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
-                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <div id="carousel-example-generic" class="carousel slide" data-interval="false" data-keyboard="true">
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner">
                             <div class="item active">
                                 <img class="img-responsive" src="img/photo1.jpg" alt="...">
                                 <div class="carousel-caption">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean massa tellus, tempus at augue at, sodales ornare odio. Nam elementum congue hendrerit. Nulla vitae sem eu risus pellentesque hendrerit. Phasellus at massa cursus, eleifend purus vel, porttitor dui. Fusce ac est faucibus, tempus leo sit amet, ullamcorper dui. Ut vestibulum purus ut pellentesque ornare. Vestibulum lacus massa, interdum non ullamcorper a, porta quis lectus.
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean massa tellus, tempus at augue at, sodales ornare odio. Nam elementum congue hendrerit. Nulla vitae sem eu risus pellentesque hendrerit. Phasellus at massa cursus, eleifend purus vel, porttitor dui. Fusce ac est faucibus, tempus leo sit amet, ullamcorper dui. Ut vestibulum purus ut pellentesque ornare. Vestibulum lacus massa, interdum non ullamcorper a, porta quis lectus.
                                 </div>
                             </div>
@@ -308,19 +301,11 @@
                 </div>
             </div><!-- / .modal-dialog -->
         </div>
-
-        <div class="col-md-1 col-sm-1 col-xs-1">
-            <div class="modal-close">
-                <button type="button" class="btn btn-default" data-dismiss="modal">
-                    <span class="btn-modal-close" aria-hidden="true"><i class="fa fa-times"></i></span>
-                </button>
-            </div>
-        </div>
     </div>
 
     <!-- MODAL - View Note-->
     <div class="modal fade bs-example-modal-lg row" id="modal-view-note" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="col-md-1 col-md-offset-1 col-sm-1 col-sm-offset-1 col-xs-1">
+        <div class="col-xs-1 col-sm-1 col-sm-offset-1 col-md-1 col-md-offset-1 ">
             <div class="modal-back">
                 <button type="button" class="btn btn-default" id="modal-note-to-report-trigger">
                     <span class="btn-modal-close text-right" aria-hidden="true"><i class="fa fa-arrow-left"></i></span>
@@ -328,7 +313,7 @@
             </div>
         </div>
 
-        <div class="col-md-8 col-sm-8 col-xs-10">
+        <div class="col-xs-12 col-sm-8 col-md-8">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-body">   
