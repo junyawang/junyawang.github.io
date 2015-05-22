@@ -201,74 +201,64 @@
                 </button>
             </div>
 
-            <form class="form-horizontal">
-                <div class="form-group">
+            <form class="form-inline">
+                <div class="form-group search-keyword-group">
                     <!-- Keywords -->
-                    <label for"search-keyword" class="col-xs-1 control-label filter-icon">
+                    <label for"search-keyword" class="control-label filter-icon">
                         <i class="fa fa-search"></i>
                     </label>
-                    <div class="col-xs-11">
+                    <div class="input-group token-div">
                         <input type="text" class="form-control" id="search-keyword" placeholder=""/>
                     </div>
+                </div>
+                <p style="margin: 0px"></p>
+                <div class="form-group">
                     <!-- Date Picker -->
-                    <label for"startdatetimepicker" class="col-xs-1 col-md-1 control-label filter-icon">
+                    <label for"startdatetimepicker" class="control-label filter-icon">
                         <i class="fa fa-calendar"></i>
                     </label>
                     
                     <!-- Start Date -->
-                    <div class="col-xs-5 col-md-2 date">
-                        <div class='input-group'>
-                            <input type='text' class="form-control" id='startdatetimepicker' />
-                        </div>
+                    <div class="input-group start-date">
+                        <input type='text' class="form-control" id='startdatetimepicker' />
                     </div>
-                    
-                    <div class="col-xs-1 col-md-1 to-date">
+                    <div class="input-group to-date">
                         <span>to</span>
                     </div>
-
                     <!-- End Date -->
-                    <div class="col-xs-5 col-md-2 date">         
-                        <div class='input-group'>
-                            <input type='text' class="form-control" id='enddatetimepicker'/>
-                        </div>
+                    <div class="input-group end-date">
+                        <input type='text' class="form-control" id='enddatetimepicker'/>
                     </div>
-                
                     <!-- Users Dropdown Menu -->
-                    <label for"search-keyword" class="col-xs-1 col-md-1 control-label filter-icon">
+                    <label for"user-picker" class="control-label user-icon">
                         <i class="fa fa-user"></i>
                     </label>
-                    <div class="col-xs-11 col-md-2">
-                        <select class="selectpicker" multiple data-selected-text-format="count>3" data-live-search="true" title='Choose one or more members' data-width="100%">
-                            <optgroup label="Select All">
-                                <option>All Members</option>
-                            </optgroup>
-                            <optgroup label="Select Members">
-                                <option>Adam</option>
-                                <option>Benson</option>
-                                <option>Cindy</option>
-                                <option>David</option>
-                                <option>Eric</option>
-                            </optgroup>
-                        </select>
-                    </div>
+
+                    <select class="selectpicker" multiple data-selected-text-format="count>3" data-live-search="true" title='Choose one or more members' data-width="100%">
+                        <optgroup label="Select All">
+                            <option>All Members</option>
+                        </optgroup>
+                        <optgroup label="Select Members">
+                            <option>Adam</option>
+                            <option>Benson</option>
+                            <option>Cindy</option>
+                            <option>David</option>
+                            <option>Eric</option>
+                        </optgroup>
+                    </select>
 
                     <!-- Checkboxes -->
-                    <div class="col-xs-11 col-xs-offset-1 col-md-2 col-md-offset-0">
-                        <div class="checkbox">
-                            <label class="checkbox-inline">
-                                <input type="checkbox" name="type" value="reports" checked> Reports
-                            </label>
-                            <label class="checkbox-inline">
-                                <input type="checkbox" name="type" value="messages" checked> Messages
-                            </label>
-                        </div>
+                    <div class="checkbox">
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="type" value="reports" checked> Reports
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="type" value="messages" checked> Messages
+                        </label>
                     </div>
-
-                    <!-- Buttons -->
-                    <div class="col-xs-6 col-md-2">
+                    
+                    <div class="filter-buttons">
                         <button class="btn btn-success">Filter</button>
-                    </div>
-                    <div class="col-xs-6 col-md-2">
                         <button class="btn btn-default">Reset</button>
                     </div>
                 </div>

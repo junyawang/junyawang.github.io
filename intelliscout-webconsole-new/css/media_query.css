@@ -84,19 +84,75 @@
   .modal-dialog {
     width: 100%; }
 
-  .sec-filter .date {
-    margin-bottom: 0px; }
+  .sec-filter .form-group {
+    margin-bottom: 15px; }
+  .sec-filter .search-keyword-group {
+    width: 100%; }
   .sec-filter .filter-icon {
-    margin-top: 0px;
-    margin-bottom: 0px; } }
+    margin-left: 0.8em;
+    margin-right: 0.8em;
+    width: 2.5%;
+    top: 0; }
+  .sec-filter .user-icon {
+    text-align: center;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    width: 3%; }
+  .sec-filter .start-date {
+    width: 20%; }
+    .sec-filter .start-date input {
+      width: 100% !important; }
+  .sec-filter .to-date {
+    width: 5%;
+    font-size: 1.2em;
+    text-align: center;
+    position: relative;
+    top: 1px; }
+  .sec-filter .end-date {
+    width: 20%; }
+    .sec-filter .end-date input {
+      width: 100% !important; }
+  .sec-filter .bootstrap-select {
+    width: 36% !important; }
+  .sec-filter .token-div {
+    width: 90%; }
+  .sec-filter .checkbox {
+    margin-left: 1em; }
+  .sec-filter .filter-buttons {
+    margin-top: 0.5em;
+    display: inline-block; } }
 /* Medium devices (desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .modal-dialog {
-    width: 100%; } }
+    width: 100%; }
+
+  .sec-filter .user-icon {
+    text-align: center;
+    margin-right: 0.8em;
+    margin-left: 0.8em;
+    width: 2%; }
+  .sec-filter .bootstrap-select {
+    width: 38% !important; } }
 /* Large devices (large desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .modal-dialog {
     width: 100%; }
+
+  .sec-filter .start-date {
+    width: 13%; }
+  .sec-filter .to-date {
+    width: 1.5%; }
+  .sec-filter .end-date {
+    width: 13%; }
+  .sec-filter .user-icon {
+    text-align: center;
+    margin-right: 0.6em;
+    margin-left: 0.6em;
+    width: 1.5%; }
+  .sec-filter .bootstrap-select {
+    width: 15% !important; }
+  .sec-filter .btn {
+    min-width: 100px; }
 
   /* --- CAROUSEL --- */
   .modal-carousel {

@@ -177,19 +177,52 @@ body {
     }
 
     .filter-icon {
-        margin-bottom: 0px;
-        margin-top: 7px;
+        margin-right: 0.5em;
+        position: relative;
+        top: -15px;
+        width: 5%;
     }
 
-    .date {
-        margin-bottom: 10px;
+    .user-icon {
+        margin-right: 0.5em;
+        width: 5%;
+    }
+
+    .search-keyword-group {
+        margin-bottom: 0px;
+    }
+
+    .input-group {
+        display: inline-block;
+    }
+
+    .token-div {
+        width: 91%;
+    }
+
+    .tokenfield {
+        width: 100% !important;
+    }
+
+    .start-date {
+        width: 40%;
     }
 
     .to-date {
-        margin-top: 10px;
-        padding: 0px;
-        text-align: center;
+        width: 10%;
         font-size: 1.2em;
+        text-align: center;
+        position: relative;
+        top: -15px;
+    }
+
+    .end-date {
+        width: 40%;
+    }
+
+    .bootstrap-select {
+        display: inline-block !important;
+        width: 91% !important;
     }
 }
 

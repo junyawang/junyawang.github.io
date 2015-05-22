@@ -106,12 +106,65 @@
     }
 
     .sec-filter {
-        .date {
-            margin-bottom: 0px;
+        .form-group {
+            margin-bottom: 15px;
         }
+
+        .search-keyword-group {
+            width: 100%;
+        }
+
         .filter-icon {
-            margin-top: 0px;
-            margin-bottom: 0px;
+            margin-left: 0.8em;
+            margin-right: 0.8em;
+            width: 2.5%;
+            top: 0;
+        }
+
+        .user-icon {
+            text-align: center;
+            margin-right: 0.5em;
+            margin-left: 0.5em;
+            width: 3%;
+        }
+
+        .start-date {
+            width: 20%;
+            input {
+                width: 100% !important;
+            }
+        }
+
+        .to-date {
+            width: 5%;
+            font-size: 1.2em;
+            text-align: center;
+            position: relative;
+            top: 1px;
+        }
+
+        .end-date {
+            width: 20%;
+            input {
+                width: 100% !important;
+            }
+        }
+
+        .bootstrap-select {
+            width: 36% !important;
+        }
+
+        .token-div {
+            width: 90%;
+        }
+
+        .checkbox {
+            margin-left: 1em;
+        }
+
+        .filter-buttons {
+            margin-top: 0.5em;
+            display: inline-block;
         }
     }
 
@@ -122,12 +175,54 @@
     .modal-dialog {
         width: 100%
     }
+
+    .sec-filter {
+        .user-icon {
+            text-align: center;
+            margin-right: 0.8em;
+            margin-left: 0.8em;
+            width: 2%;
+        }
+
+        .bootstrap-select {
+            width: 38% !important;
+        }
+    }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .modal-dialog {
         width: 100%;
+    }
+
+    .sec-filter {
+        .start-date {
+            width: 13%;
+        }
+
+        .to-date {
+            width: 1.5%;
+        }
+
+        .end-date {
+            width: 13%;
+        }
+
+        .user-icon {
+            text-align: center;
+            margin-right: 0.6em;
+            margin-left: 0.6em;
+            width: 1.5%;
+        }
+
+        .bootstrap-select {
+            width: 15% !important;
+        }
+
+        .btn {
+            min-width: 100px;
+        }
     }
     
     /* --- CAROUSEL --- */

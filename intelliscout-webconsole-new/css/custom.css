@@ -1153,15 +1153,34 @@ body {
   .sec-filter .token-input {
     margin-bottom: 0px; }
   .sec-filter .filter-icon {
-    margin-bottom: 0px;
-    margin-top: 7px; }
-  .sec-filter .date {
-    margin-bottom: 10px; }
+    margin-right: 0.5em;
+    position: relative;
+    top: -15px;
+    width: 5%; }
+  .sec-filter .user-icon {
+    margin-right: 0.5em;
+    width: 5%; }
+  .sec-filter .search-keyword-group {
+    margin-bottom: 0px; }
+  .sec-filter .input-group {
+    display: inline-block; }
+  .sec-filter .token-div {
+    width: 91%; }
+  .sec-filter .tokenfield {
+    width: 100% !important; }
+  .sec-filter .start-date {
+    width: 40%; }
   .sec-filter .to-date {
-    margin-top: 10px;
-    padding: 0px;
+    width: 10%;
+    font-size: 1.2em;
     text-align: center;
-    font-size: 1.2em; }
+    position: relative;
+    top: -15px; }
+  .sec-filter .end-date {
+    width: 40%; }
+  .sec-filter .bootstrap-select {
+    display: inline-block !important;
+    width: 91% !important; }
 
 /* =========== VIEW REPORT ============ */
 .page-view-report {
