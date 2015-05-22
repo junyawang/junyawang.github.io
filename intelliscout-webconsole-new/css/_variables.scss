@@ -62,9 +62,16 @@ $sidebar-width: 250px;
     transition: $transition;
 }
 
-@mixin transform ($transform) {
-    -webkit-transition: $transform;
-    -moz-transition: $transform;
-    -o-transition: $transform;
-    transition: $transform;
+// generic transform
+@mixin transform($transforms) {
+       -moz-transform: $transforms;
+         -o-transform: $transforms;
+        -ms-transform: $transforms;
+    -webkit-transform: $transforms;
+          transform: $transforms;
+}
+
+// translate
+@mixin translate ($x, $y) {
+   @include transform(translate($x, $y));
 }

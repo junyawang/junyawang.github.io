@@ -967,7 +967,8 @@ ul.sub.active {
     vertical-align: middle;
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
+    // transform: translateY(-50%);
+    @include translate(0,-50%);
     // top: 0;
     // bottom: 0;
 }
