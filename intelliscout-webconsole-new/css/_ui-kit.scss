@@ -1021,11 +1021,11 @@ ul.sub.active {
 }
 
 //caption visible only when carousel is hovered
-.carousel:hover .carousel-caption {
-    visibility: visible;
-    opacity: 1;
-    @include transition (all 0.5s ease);
-}
+// .carousel:hover .carousel-caption {
+//     visibility: visible;
+//     opacity: 1;
+//     @include transition (all 0.5s ease);
+// }
 
 /* -------------- CHAT -------------- */
 footer, .push {

@@ -839,14 +839,6 @@ ul.sub.active {
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease; }
 
-.carousel:hover .carousel-caption {
-  visibility: visible;
-  opacity: 1;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
-
 /* -------------- CHAT -------------- */
 footer, .push {
   height: 155px;
