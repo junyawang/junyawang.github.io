@@ -99,28 +99,14 @@
     width: 100%; }
 
   /* --- CAROUSEL --- */
-  .carousel {
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    transition: all 0.2s ease; }
+  .modal-carousel {
+    width: 90%;
+    margin: 0 auto; }
+    .modal-carousel .modal-lg {
+      margin: 30px auto; }
 
   .carousel-inner {
-    height: 90vh;
-    background-color: #1C1F1D; }
-
-  .carousel-inner > .item {
-    height: inherit;
-    vertical-align: middle; }
-
-  .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-    max-height: 100%;
-    margin: 0 auto;
-    vertical-align: middle;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%); }
+    height: 90vh; }
 
   .carousel-control {
     visibility: hidden;

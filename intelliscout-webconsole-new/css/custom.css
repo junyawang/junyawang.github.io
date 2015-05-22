@@ -757,6 +757,14 @@ ul.sub.active {
   transition: all 0.5s ease; }
 
 /* ------------- Carousel --------------*/
+.modal-carousel {
+  width: 100%; }
+  .modal-carousel .modal-lg {
+    width: 100%;
+    margin: 0; }
+  .modal-carousel .modal-body {
+    padding: 0; }
+
 .carousel {
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
@@ -764,7 +772,7 @@ ul.sub.active {
   transition: all 0.2s ease; }
 
 .carousel-inner {
-  height: 90vh;
+  height: 100vh;
   background-color: #1C1F1D; }
 
 .carousel-inner > .item {
@@ -781,10 +789,10 @@ ul.sub.active {
   transform: translateY(-50%); }
 
 .carousel-control {
-  visibility: hidden;
+  visibility: visible;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-  filter: alpha(opacity=0);
-  opacity: 0;
+  filter: alpha(opacity=50);
+  opacity: .5;
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
@@ -795,22 +803,24 @@ ul.sub.active {
   background-image: none;
   filter: none; }
 
-.carousel:hover .carousel-control {
+.carousel-control.close {
+  top: 0;
+  bottom: auto;
+  right: 0;
+  left: auto;
+  padding: 16px;
+  font-size: 2em; }
+
+.carousel:hover .carousel-control,
+.carousel:hover .carousel-control:hover,
+.carousel:hover .carousel-control:focus {
   visibility: visible;
-  opacity: 0.5;
+  filter: alpha(opacity=90);
+  opacity: .9;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease; }
-
-.carousel:hover .carousel-control:hover,
-.carousel:hover .carousel-control:focus {
-  filter: alpha(opacity=90);
-  opacity: .9;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease; }
 
 .carousel-caption {
   visibility: hidden;

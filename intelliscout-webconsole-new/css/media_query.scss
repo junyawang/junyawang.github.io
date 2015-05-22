@@ -132,28 +132,17 @@
     
     /* --- CAROUSEL --- */
     // since this carousel style has some hover effect, it has to be on desktop
-    .carousel {
-        @include transition (all 0.2s ease);
+    .modal-carousel {
+        width: 90%;
+        margin: 0 auto;
+
+        .modal-lg {
+            margin: 30px auto;
+        }
     }
 
     .carousel-inner {
         height: 90vh;
-        background-color: $black;
-    }
-
-    .carousel-inner > .item {
-        height: inherit;
-        vertical-align: middle;
-    }
-
-    .carousel-inner > .item > img,
-    .carousel-inner > .item > a > img {
-        max-height: 100%;
-        margin: 0 auto;
-        vertical-align: middle;
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
     }
 
     .carousel-control {

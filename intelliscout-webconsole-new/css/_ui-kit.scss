@@ -933,12 +933,25 @@ ul.sub.active {
 }
 
 /* ------------- Carousel --------------*/
+.modal-carousel {
+    width: 100%;
+    
+    .modal-lg {
+        width: 100%;
+        margin: 0;
+    }
+
+    .modal-body {
+        padding: 0;
+    }
+}
+
 .carousel {
     @include transition (all 0.2s ease);
 }
 
 .carousel-inner {
-    height: 90vh;
+    height: 100vh;
     background-color: $black;
 }
 
@@ -958,10 +971,10 @@ ul.sub.active {
 }
 
 .carousel-control {
-    visibility: hidden;
+    visibility: visible;
     text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
-    filter: alpha(opacity=0);
-    opacity: 0;
+    filter: alpha(opacity=50);
+    opacity: .5;
     @include transition (all 0.2s ease);
 }
 
@@ -971,19 +984,23 @@ ul.sub.active {
     filter: none;
 }
 
-//carousel control visible only when carousel is hovered
-.carousel:hover .carousel-control {
-    visibility: visible;
-    opacity: 0.5;
-    @include transition (all 0.5s ease);
+.carousel-control.close {
+    top: 0;
+    bottom: auto;
+    right: 0;
+    left: auto;
+    padding: 16px; 
+    font-size: 2em;
 }
 
-//opacity increase when hover carousel-control
+//carousel control always visible
+.carousel:hover .carousel-control,
 .carousel:hover .carousel-control:hover,
 .carousel:hover .carousel-control:focus {
+    visibility: visible;
     filter: alpha(opacity=90);
     opacity: .9;
-    @include transition (all 0.2s ease);
+    @include transition (all 0.5s ease);
 }
 
 .carousel-caption {
