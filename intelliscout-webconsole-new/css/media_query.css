@@ -8,6 +8,9 @@
 /* No media query since this is the default in Bootstrap */
 /* Small devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .checkbox label {
+    padding-left: 0.5em !important; }
+
   /* --- NAVBAR --- */
   .navbar-main {
     /* dropdown menu - open */

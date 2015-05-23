@@ -62,6 +62,13 @@ $sidebar-width: 250px;
     transition: $transition;
 }
 
+@mixin transition-ease ($transition) {
+    -webkit-transition: border $transition ease-in-out, color $transition ease-in-out;
+    -o-transition: border $transition ease-in-out, color $transition ease-in-out;
+    -moz-transition: border $transition ease-in-out, color $transition ease-in-out;
+    transition: border $transition ease-in-out, color $transition ease-in-out;
+}
+
 // generic transform
 @mixin transform($transforms) {
        -moz-transform: $transforms;
