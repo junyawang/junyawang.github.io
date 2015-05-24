@@ -1222,12 +1222,16 @@ body {
   padding: 15px;
   z-index: 1;
   display: none;
-  position: relative;
+  position: fixed;
   background-color: white;
   top: 116px;
   bottom: 0;
   left: 0;
-  right: 0; }
+  right: 0;
+  height: 290px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); }
   .sec-filter form .dropdown-toggle {
     margin-top: 0; }
   .sec-filter .token-input {

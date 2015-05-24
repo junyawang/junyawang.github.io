@@ -110,6 +110,9 @@
     }
 
     .sec-filter {
+        left: $sidebar-width;
+        height: 210px;
+
         .form-group {
             margin-bottom: 15px;
         }
@@ -172,6 +175,10 @@
             display: inline-block;
             text-align: initial;
         }
+
+        .btn {
+            min-width: 100px;
+        }
     }
 
 }
@@ -193,6 +200,10 @@
         .bootstrap-select {
             width: 38% !important;
         }
+
+        .btn {
+            min-width: 120px;
+        }
     }
 }
 
@@ -203,6 +214,8 @@
     }
 
     .sec-filter {
+        height: 150px;
+
         .start-date {
             width: 13%;
         }
