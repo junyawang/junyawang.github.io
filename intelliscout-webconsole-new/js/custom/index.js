@@ -55,15 +55,22 @@ $(document).ready(function() {
     $('#startdatetimepicker').clearSearch();
     $('#enddatetimepicker').clearSearch();
 });
+
 //********** Filter Flyover *********//
 // Filter Button
 $(document).on('click', "#filter", function(e){
-    $('.sec-filter').slideDown('slow');
-});
-
-// Close Search Button
-$(document).on('click', "#close-filter", function(e){
-    $('.sec-filter').slideUp('slow');
+    if ($('#filter').attr('value') == 'closed') {
+        $('.sec-filter').slideDown('slow');
+        $('.fa-filter').css('color','#18b750');
+        $('#filter').css('color','#18b750');
+        $('#filter').attr('value', 'open');
+    }
+    else {
+        $('.sec-filter').slideUp('slow');
+        $('.fa-filter').removeAttr('style');
+        $('#filter').removeAttr('style');
+        $('#filter').attr('value', 'closed');
+    }
 });
 
 //********** Team Select *********//

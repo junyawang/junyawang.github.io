@@ -519,7 +519,8 @@ textarea {
         margin: 0 0;
         display: inline-block;
         float: right;
-        vertical-align: middle; }
+        vertical-align: middle;
+        width: 100%; }
       .panel-report .panel-body .panel-status li.report-status {
         display: inline-block;
         vertical-align: middle;
@@ -1260,6 +1261,8 @@ body {
   .sec-filter .bootstrap-select {
     display: inline-block !important;
     width: 91% !important; }
+  .sec-filter .filter-buttons {
+    text-align: center; }
 
 /* =========== VIEW REPORT ============ */
 .page-view-report {

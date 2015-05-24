@@ -120,10 +120,12 @@
   .sec-filter .token-div {
     width: 90%; }
   .sec-filter .checkbox {
-    margin-left: 1em; }
+    margin-top: 1em;
+    margin-right: 1em; }
   .sec-filter .filter-buttons {
     margin-top: 0.5em;
-    display: inline-block; } }
+    display: inline-block;
+    text-align: initial; } }
 /* Medium devices (desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .modal-dialog {
@@ -147,6 +149,11 @@
     width: 1.5%; }
   .sec-filter .end-date {
     width: 13%; }
+  .sec-filter .filter-icon {
+    width: auto;
+    margin-left: 5px; }
+  .sec-filter .token-div {
+    width: 94%; }
   .sec-filter .user-icon {
     text-align: center;
     margin-right: 0.6em;
@@ -154,8 +161,18 @@
     width: 1.5%; }
   .sec-filter .bootstrap-select {
     width: 15% !important; }
+  .sec-filter .checkbox {
+    margin-top: 0px;
+    margin-right: 0px;
+    padding-left: 15px; }
+  .sec-filter .filter-buttons {
+    margin-top: 0px;
+    float: right;
+    position: relative;
+    right: 2%; }
   .sec-filter .btn {
-    min-width: 100px; }
+    min-width: 100px;
+    margin-top: 0px; }
 
   /* --- CAROUSEL --- */
   .modal-carousel {

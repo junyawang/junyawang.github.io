@@ -163,12 +163,14 @@
         }
 
         .checkbox {
-            margin-left: 1em;
+            margin-top: 1em;
+            margin-right: 1em;
         }
 
         .filter-buttons {
             margin-top: 0.5em;
             display: inline-block;
+            text-align: initial;
         }
     }
 
@@ -213,6 +215,15 @@
             width: 13%;
         }
 
+        .filter-icon {
+            width: auto;
+            margin-left: 5px;
+        }
+
+        .token-div {
+            width: 94%;
+        }
+
         .user-icon {
             text-align: center;
             margin-right: 0.6em;
@@ -224,8 +235,22 @@
             width: 15% !important;
         }
 
+        .checkbox {
+            margin-top: 0px;
+            margin-right: 0px;
+            padding-left: 15px;
+        }
+
+        .filter-buttons {
+            margin-top: 0px;
+            float: right;
+            position: relative;
+            right: 2%;
+        }
+
         .btn {
             min-width: 100px;
+            margin-top: 0px;
         }
     }
     
