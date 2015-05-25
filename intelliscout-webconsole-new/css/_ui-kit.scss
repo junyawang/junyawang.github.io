@@ -62,7 +62,7 @@
     padding: 5px 0;
     margin: 2px 0 0;
     font-size: 1em;
-    background-color: white !important;
+    background-color: white;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     border: 1px solid $greyLight;
@@ -386,6 +386,7 @@ textarea {
     .navbar-collapse {
         background-color: $greyDark;
         border: none;
+        position: relative;
     }
 
     /* link */
@@ -477,6 +478,10 @@ textarea {
         font-weight: 400;
         padding-top: $navbar-lower-height/3;
         padding-bottom: $navbar-lower-height/3;
+    }
+
+    .dropdown-menu {
+        background-color: white !important;
     }
 }
 

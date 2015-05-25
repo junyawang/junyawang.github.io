@@ -79,7 +79,7 @@
   padding: 5px 0;
   margin: 2px 0 0;
   font-size: 1em;
-  background-color: white !important;
+  background-color: white;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   border: 1px solid #efeff4;
@@ -351,7 +351,8 @@ textarea {
   /* dropdown menu - open - link*/ }
   .navbar-main .navbar-collapse {
     background-color: #484A49;
-    border: none; }
+    border: none;
+    position: relative; }
   .navbar-main .navbar-nav > li > a {
     color: white; }
   .navbar-main .navbar-nav > li > a:hover {
@@ -413,6 +414,8 @@ textarea {
     font-weight: 400;
     padding-top: 18.66667px;
     padding-bottom: 18.66667px; }
+  .navbar-lower .dropdown-menu {
+    background-color: white !important; }
 
 #navbar-team-toggle,
 #navbar-sidebar-toggle {
