@@ -24,6 +24,8 @@
       color: #28a55e; }
     .navbar-main .navbar-nav .open .dropdown-menu .divider {
       background-color: #efeff4; }
+    .navbar-main .navbar-collapse {
+      position: initial; }
 
   #navbar-team-toggle,
   #navbar-sidebar-toggle {
