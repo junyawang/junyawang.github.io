@@ -830,8 +830,8 @@ ul.sub.active {
   transition: all 0.5s ease; }
 
 .carousel-caption {
-  visibility: hidden;
-  opacity: 0;
+  display: none;
+  opacity: 100;
   overflow: hidden;
   background-color: rgba(28, 31, 29, 0.92);
   text-align: left;

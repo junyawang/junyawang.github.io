@@ -1010,8 +1010,8 @@ ul.sub.active {
 }
 
 .carousel-caption {
-    visibility: hidden;
-    opacity: 0;
+    display: none;
+    opacity: 100;
     // height: 80px;
     //line-height: 24px; /* Height / no. of lines to display */
     overflow: hidden;

@@ -83,6 +83,23 @@ $("#carousel-generic").swipe({
     swipeRight: function() { $(this).carousel('prev'); },
 });
 
+$('.carousel .item.active').click(function(e) {
+    if($('.carousel .item.active .carousel-caption').css('display') == 'none'){
+        $('.carousel .item.active .carousel-caption').addClass('fadeInUp');
+        $('.carousel .item.active .carousel-caption').css('display', 'block');
+    }
+    else {
+        if($('.carousel .item.active .carousel-caption').attr('class').indexOf('fadeInUp') >= 0){
+            $('.carousel .item.active .carousel-caption').removeClass('fadeInUp');
+            $('.carousel .item.active .carousel-caption').addClass('fadeOutDown');
+        }
+        else {
+            $('.carousel .item.active .carousel-caption').removeClass('fadeOutDown');
+            $('.carousel .item.active .carousel-caption').addClass('fadeInUp');
+        }
+    }
+});
+
 //enable tokenfield-typeahead - email validation function
 $('#tokenfield-typeahead')
     .on('tokenfield:createtoken', function (e) {
