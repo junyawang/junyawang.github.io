@@ -78,6 +78,11 @@ $('#tokenfield-typeahead').on('tokenfield:createtoken', function (event) {
     });
 });
 
+$("#carousel-generic").swipe({
+    swipeLeft: function() { $(this).carousel('next'); },
+    swipeRight: function() { $(this).carousel('prev'); },
+});
+
 //enable tokenfield-typeahead - email validation function
 $('#tokenfield-typeahead')
     .on('tokenfield:createtoken', function (e) {
@@ -107,7 +112,7 @@ $('#tokenfield-typeahead')
     //   alert('Token removed! Token value was: ' + e.attrs.value)
     // })
 
-.tokenfield()
+.tokenfield();
 
 // Textarea Auto Resize
 (function($){    
