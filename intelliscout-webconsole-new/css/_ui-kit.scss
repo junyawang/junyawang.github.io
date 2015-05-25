@@ -62,7 +62,7 @@
     padding: 5px 0;
     margin: 2px 0 0;
     font-size: 1em;
-    background-color: white;
+    background-color: white !important;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     border: 1px solid $greyLight;
@@ -456,7 +456,9 @@ textarea {
     }
 
     ul.navbar-right {
-        float: right;
+        position: absolute;
+        right: 15px;
+        top: 0px;
     }
 
     ul {

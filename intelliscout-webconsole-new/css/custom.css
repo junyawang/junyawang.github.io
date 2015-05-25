@@ -79,7 +79,7 @@
   padding: 5px 0;
   margin: 2px 0 0;
   font-size: 1em;
-  background-color: white;
+  background-color: white !important;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   border: 1px solid #efeff4;
@@ -401,7 +401,9 @@ textarea {
     margin: 0 0;
     display: inline-block; }
   .navbar-lower ul.navbar-right {
-    float: right; }
+    position: absolute;
+    right: 15px;
+    top: 0px; }
   .navbar-lower .nav > li {
     display: inline-block;
     vertical-align: top; }
