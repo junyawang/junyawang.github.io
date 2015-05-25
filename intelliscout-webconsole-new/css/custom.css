@@ -1465,6 +1465,21 @@ form .btn.btn-add-invitation {
 .input-share-link {
   display: inline-block; }
 
+/* =========== MODAL - NOTE ============ */
+.modal-note .modal-lg {
+  width: 100%;
+  height: 100vh;
+  margin-top: 0; }
+.modal-note .note-title {
+  font-weight: 600; }
+.modal-note .note-time {
+  font-size: 1.1em;
+  font-weight: 400; }
+.modal-note .modal-header {
+  padding: 16px 32px; }
+.modal-note .modal-body {
+  padding: 32px; }
+
 /* =========== MODAL - CAROUSEL ============ */
 .modal-carousel .container {
   width: 90%; }

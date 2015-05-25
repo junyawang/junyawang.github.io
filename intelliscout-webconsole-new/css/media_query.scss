@@ -271,6 +271,17 @@
         }
     }
     
+    /* --- MODAL NOTE --- */
+    .modal-note {
+        width: 80%;
+        margin: 0 auto;
+
+        .modal-lg {
+            margin: 30px auto;
+            height: auto;
+        }
+    }
+    
     /* --- CAROUSEL --- */
     // since this carousel style has some hover effect, it has to be on desktop
     .modal-carousel {

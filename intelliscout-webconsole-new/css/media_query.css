@@ -185,6 +185,14 @@
       min-width: 100px;
       margin-top: 0px; }
 
+  /* --- MODAL NOTE --- */
+  .modal-note {
+    width: 80%;
+    margin: 0 auto; }
+    .modal-note .modal-lg {
+      margin: 30px auto;
+      height: auto; }
+
   /* --- CAROUSEL --- */
   .modal-carousel {
     width: 90%;
