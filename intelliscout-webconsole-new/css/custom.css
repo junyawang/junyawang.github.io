@@ -833,8 +833,8 @@ ul.sub.active {
   transition: all 0.5s ease; }
 
 .carousel-caption {
-  display: none;
-  opacity: 100;
+  visibility: hidden;
+  opacity: 0;
   overflow: hidden;
   background-color: rgba(28, 31, 29, 0.92);
   text-align: left;
@@ -1478,7 +1478,9 @@ form .btn.btn-add-invitation {
 .modal-note .modal-header {
   padding: 16px 32px; }
 .modal-note .modal-body {
-  padding: 32px; }
+  padding: 32px;
+  max-height: calc(100vh - 90px);
+  overflow-y: auto; }
 
 /* =========== MODAL - CAROUSEL ============ */
 .modal-carousel .container {

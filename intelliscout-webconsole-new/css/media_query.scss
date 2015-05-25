@@ -280,6 +280,15 @@
             margin: 30px auto;
             height: auto;
         }
+
+        .modal-header {
+            position: relative;
+        }
+
+        .modal-body {
+            position: relative;
+            margin-top: 0;
+        }
     }
     
     /* --- CAROUSEL --- */

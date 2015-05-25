@@ -484,11 +484,21 @@ form .btn.btn-add-invitation {
     }
     
     .modal-header {
+        // position: fixed;
+        // right: 0;
+        // left: 0;
+        // z-index: 1030;
         padding: 16px 32px;
+        // background-color: white;
     }
 
     .modal-body {
+        // position: relative;
+        // margin-top: 90px;
         padding: 32px;
+        // background-color: white;
+        max-height: calc(100vh - 90px);
+        overflow-y: auto;
     }
 }
 

@@ -192,6 +192,11 @@
     .modal-note .modal-lg {
       margin: 30px auto;
       height: auto; }
+    .modal-note .modal-header {
+      position: relative; }
+    .modal-note .modal-body {
+      position: relative;
+      margin-top: 0; }
 
   /* --- CAROUSEL --- */
   .modal-carousel {
