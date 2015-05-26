@@ -83,29 +83,26 @@ $("#carousel-generic").swipe({
     swipeRight: function() { $(this).carousel('prev'); },
 });
 
-$(document).ready(function() {
-    if (
-        window.matchMedia("(min-width: 1200px)").matches) {
-    }
-    else {
-        $('.carousel .item.active').click(function(e) {
-            if($('.carousel .item.active .carousel-caption').css('visibility') == 'hidden'){
-                $('.carousel .item.active .carousel-caption').addClass('fadeInUp');
-                $('.carousel .item.active .carousel-caption').css('visibility', 'visible');
+
+$('.carousel .item').click(function(e) {
+    if (! window.matchMedia("(min-width: 1200px)").matches) {
+        if($('.carousel .item.active .carousel-caption').css('visibility') == 'hidden'){
+            $('.carousel .item.active .carousel-caption').addClass('fadeIn');
+            $('.carousel .item.active .carousel-caption').css('visibility', 'visible');
+        }
+        else {
+            if($('.carousel .item.active .carousel-caption').attr('class').indexOf('fadeIn') >= 0){
+                $('.carousel .item.active .carousel-caption').removeClass('fadeIn');
+                $('.carousel .item.active .carousel-caption').addClass('fadeOut');
             }
             else {
-                if($('.carousel .item.active .carousel-caption').attr('class').indexOf('fadeInUp') >= 0){
-                    $('.carousel .item.active .carousel-caption').removeClass('fadeInUp');
-                    $('.carousel .item.active .carousel-caption').addClass('fadeOutDown');
-                }
-                else {
-                    $('.carousel .item.active .carousel-caption').removeClass('fadeOutDown');
-                    $('.carousel .item.active .carousel-caption').addClass('fadeInUp');
-                }
+                $('.carousel .item.active .carousel-caption').removeClass('fadeOut');
+                $('.carousel .item.active .carousel-caption').addClass('fadeIn');
             }
-        });
+        }
     }
 });
+
 
 //enable tokenfield-typeahead - email validation function
 $('#tokenfield-typeahead')

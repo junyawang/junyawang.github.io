@@ -82,3 +82,14 @@ $sidebar-width: 250px;
 @mixin translate ($x, $y) {
    @include transform(translate($x, $y));
 }
+
+@mixin animation ($x) {
+
+}
+
+@mixin animation-duration ($x) {
+  -moz-animation-duration: $x;
+  -o-animation-duration: $x;
+  -webkit-animation-duration: $x;
+  animation-duration: $x;
+}
