@@ -78,11 +78,17 @@ $('#tokenfield-typeahead').on('tokenfield:createtoken', function (event) {
     });
 });
 
+function dismissCaption() {
+    $('.carousel .item .carousel-caption').removeClass('fadeIn');
+    $('.carousel .item .carousel-caption').removeClass('fadeOut');
+}
+
 $("#carousel-generic").swipe({
-    swipeLeft: function() { $(this).carousel('next'); },
-    swipeRight: function() { $(this).carousel('prev'); },
+    swipeLeft: function() { dismissCaption(); $(this).carousel('next'); },
+    swipeRight: function() { dismissCaption(); $(this).carousel('prev'); },
 });
 
+$('.carousel-control').click(dismissCaption);
 
 $('.carousel .item').click(function(e) {
     if (! window.matchMedia("(min-width: 1200px)").matches) {
