@@ -206,19 +206,20 @@ label {
     font-size: 1.2em;
 }
 
-/* ---------- Search Bar ---------- */
+/* -------- Search Bar ---------- */
 
 .search-bar {
-    // .search-icon {
-    //     position: absolute;
-    //     top: 8px;
-    //     left: 23px;
-    //     font-size: 1.2em;
-    //     color: $greyMid;
-    // }
+    .search-icon {
+        position: absolute;
+        top: 8px;
+        left: 23px;
+        font-size: 1.2em;
+        color: $greyMid;
+    }
 
     input {
         width: 100%;
+        padding-left: 32px;
     }
 }
 

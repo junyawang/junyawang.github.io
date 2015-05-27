@@ -405,13 +405,30 @@ img.qr-code {
 }
 
 /* ---- Members ---- */
+#members {
+    .dropdown button,
+    input {
+        width: 100%;
+    }
+
+    .dropdown button {
+        text-align: left;
+    }
+}
+
 
 .btn-invite-users {
     display: block;
-    float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
 }
 
-.list-user {
+.list-member-group {
+    margin-top: 20px;
+}
+
+.list-member {
     background-color: white;
     margin-bottom: 5px;
     

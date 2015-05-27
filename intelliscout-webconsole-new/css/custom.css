@@ -219,9 +219,16 @@ fieldset[diabled].form-control {
 label {
   font-size: 1.2em; }
 
-/* ---------- Search Bar ---------- */
+/* -------- Search Bar ---------- */
+.search-bar .search-icon {
+  position: absolute;
+  top: 8px;
+  left: 23px;
+  font-size: 1.2em;
+  color: #c8c7cc; }
 .search-bar input {
-  width: 100%; }
+  width: 100%;
+  padding-left: 32px; }
 
 /* ---------- Date Divider ----------*/
 .date-divider .row {
@@ -1409,52 +1416,63 @@ img.qr-code {
   border: 1px solid #c8c7cc; }
 
 /* ---- Members ---- */
+#members .dropdown button,
+#members input {
+  width: 100%; }
+#members .dropdown button {
+  text-align: left; }
+
 .btn-invite-users {
   display: block;
-  float: right; }
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%; }
 
-.list-user {
+.list-member-group {
+  margin-top: 20px; }
+
+.list-member {
   background-color: white;
   margin-bottom: 5px; }
-  .list-user .accordion-heading {
+  .list-member .accordion-heading {
     padding: 16px; }
-    .list-user .accordion-heading .user-full-name {
+    .list-member .accordion-heading .user-full-name {
       float: left;
       font-size: 1.4em;
       font-weight: 600;
       color: #1C1F1D; }
-    .list-user .accordion-heading .user-role {
+    .list-member .accordion-heading .user-role {
       float: right;
       font-size: 1.1em;
       font-weight: 400;
       color: #484A49; }
-    .list-user .accordion-heading .user-settings {
+    .list-member .accordion-heading .user-settings {
       float: right;
       margin-left: 10px; }
-    .list-user .accordion-heading .user-settings.btn {
+    .list-member .accordion-heading .user-settings.btn {
       min-width: 1px;
       padding: 4px 8px;
       font-size: 0.8em; }
-    .list-user .accordion-heading .user-tag-name {
+    .list-member .accordion-heading .user-tag-name {
       clear: both;
       float: left;
       font-size: 1em;
       font-weight: 600;
       color: #18b750; }
-    .list-user .accordion-heading .user-email {
+    .list-member .accordion-heading .user-email {
       padding-left: 5px;
       float: left;
       font-size: 1em;
       font-weight: 400;
       color: #c8c7cc; }
-  .list-user .panel-collapse {
+  .list-member .panel-collapse {
     padding: 16px;
     border-top: 1px solid #efeff4; }
-    .list-user .panel-collapse .btn {
+    .list-member .panel-collapse .btn {
       width: 100%;
       margin-top: 2px;
       margin-bottom: 2px; }
-    .list-user .panel-collapse .btn-sm {
+    .list-member .panel-collapse .btn-sm {
       padding: 5px 10px;
       font-size: 1em;
       line-height: 1.5; }

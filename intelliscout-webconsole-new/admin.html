@@ -166,38 +166,49 @@
                 <div role="tabpanel" class="tab-pane fade" id="members">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-md-3 col-md-push-9 col-lg-2">
+                            <div class="col-xs-7 col-xs-offset-5 col-sm-4 col-sm-offset-8 col-md-4 col-md-offset-8">
                                 <button class="btn btn-success btn-invite-users" id="modal-invite-members-trigger">+ Invite Members</button>
                             </div>
-                            <div class="col-md-9 col-md-pull-3 col-lg-10">
-                                <!-- <form class="search-bar" role="search">
+                            <div class="hidden-xs col-sm-2 col-md-2">
+                                <div class="dropdown">
+                                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                    Sort by
+                                    <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Full Name</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Tag Name</a></li>
+                                  </ul>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-4">
+                                <form class="search-bar" role="search">
                                     <div class="form-group">
                                         <span class="search-icon"><i class="fa fa-search"></i></span>
-                                        <input type="text" class="form-control" placeholder="Search members">
+                                        <input type="text" class="form-control" placeholder="Search for names or email address">
                                     </div>
-                                </form> -->
-                                <div class="search-bar">
+                                </form>
+                                <!-- <div class="search-bar">
                                     <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Search members">
+                                        <input type="text" class="form-control" placeholder="Search for names or email address">
                                         <span class="input-group-btn">
                                             <button class="btn btn-default" type="button">
                                                 <span><i class="fa fa-search"></i> Search</span>
                                             </button>
                                         </span>
-                                    </div><!-- /input-group -->
-                                </div>
+                                    </div>
+                                </div> -->
                             </div>
-                            
                         </div>
 
-                        <div class="">
-                            <div class="list-user clearfix">
+                        <div class="list-member-group">
+                            <div class="list-member clearfix">
                                 <div class="accordion-heading clearfix">
                                     <span class="user-full-name">Craig Ganssle</span>
                                     <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseUser1" aria-expanded="false" aria-controls="collapseUser1">
                                         <span class="user-settings btn btn-default btn-sm"><i class="fa fa-cog"></i></span>
                                     </a>
-                                    <span class="user-role">Org Admin</span>
+                                    <span class="user-role">Primary Org Admin</span>
                                     <span class="user-tag-name">@craig</span>
                                     <span class="user-email">craig@example.com</span>
                                 </div>
@@ -208,19 +219,44 @@
                                         </div>
                                     </div>
                                 </div><!-- /.panel-collapse-->
-                            </div>
-                            <div class="list-user clearfix">
-                                
-                                    <div class="accordion-heading clearfix">
-                                        <span class="user-full-name">Junya Wang</span>
-                                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseUser2" aria-expanded="false" aria-controls="collapseUser2">
-                                            <span class="user-settings btn btn-default btn-sm"><i class="fa fa-cog"></i></span>
-                                        </a>
-                                        <span class="user-role">Member</span>
-                                        <span class="user-tag-name">@junya</span>
-                                        <span class="user-email">junya@example.com</span>
-                                    </div>
+                            </div><!-- /.list-member-->
+                            
+                            <div class="list-member clearfix">
+                                <div class="accordion-heading clearfix">
+                                    <span class="user-full-name">Jeremy Willemse</span>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseUser2" aria-expanded="false" aria-controls="collapseUser2">
+                                        <span class="user-settings btn btn-default btn-sm"><i class="fa fa-cog"></i></span>
+                                    </a>
+                                    <span class="user-role">Org Admin</span>
+                                    <span class="user-tag-name">@jeremy</span>
+                                    <span class="user-email">jeremy@example.com</span>
+                                </div>
                                 <div class="panel-collapse collapse" id="collapseUser2">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-4">
+                                            <button class="btn btn-default btn-sm">Send Direct Message</button>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4">
+                                            <button class="btn btn-default btn-sm">Remove Org Admin Role</button>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4">
+                                            <button class="btn btn-default btn-sm">Disable Account</button>
+                                        </div>
+                                    </div>
+                                </div><!-- /.panel-collapse-->
+                            </div><!-- /.list-member-->
+
+                            <div class="list-member clearfix">
+                                <div class="accordion-heading clearfix">
+                                    <span class="user-full-name">Junya Wang</span>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseUser3" aria-expanded="false" aria-controls="collapseUser3">
+                                        <span class="user-settings btn btn-default btn-sm"><i class="fa fa-cog"></i></span>
+                                    </a>
+                                    <span class="user-role">Member</span>
+                                    <span class="user-tag-name">@junya</span>
+                                    <span class="user-email">junya@example.com</span>
+                                </div>
+                                <div class="panel-collapse collapse" id="collapseUser3">
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-4">
                                             <button class="btn btn-default btn-sm">Send Direct Message</button>
@@ -233,7 +269,7 @@
                                         </div>
                                     </div>
                                 </div><!-- /.panel-collapse-->
-                            </div>
+                            </div><!-- /.list-member-->
                         </div>
                     </div><!-- /.container-fluid -->
                 </div><!-- /.tab-pane -->
