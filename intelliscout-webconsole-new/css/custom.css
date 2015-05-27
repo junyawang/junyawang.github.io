@@ -219,15 +219,9 @@ fieldset[diabled].form-control {
 label {
   font-size: 1.2em; }
 
-.search-bar .search-icon {
-  position: absolute;
-  top: 8px;
-  left: 10px;
-  font-size: 1.2em;
-  color: #c8c7cc; }
+/* ---------- Search Bar ---------- */
 .search-bar input {
-  width: 100%;
-  padding-left: 32px; }
+  width: 100%; }
 
 /* ---------- Date Divider ----------*/
 .date-divider .row {
@@ -422,30 +416,27 @@ textarea {
   display: inline-block; }
 
 /* ---------- List Item ----------- */
-.list-group {
+.list-group.member-list {
   margin-bottom: 10px; }
-
-.list-group-item {
-  position: relative;
-  display: block;
-  padding: 10px 15px 10px 0;
-  margin: 2px 0;
-  background-color: #fff;
-  border: none;
-  border-bottom: 1px solid #efeff4; }
-  .list-group-item .list-name {
+  .list-group.member-list .list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px 10px 0;
+    margin: 2px 0;
+    background-color: #fff;
+    border: none;
+    border-bottom: 1px solid #efeff4; }
+  .list-group.member-list span.list-name {
     font-size: 1.2em;
     vertical-align: middle; }
-
-.list-group-item:first-child {
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px; }
-
-.list-group-item:last-child {
-  margin-bottom: 0;
-  border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom: none; }
+  .list-group.member-list .list-group-item:first-child {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px; }
+  .list-group.member-list .list-group-item:last-child {
+    margin-bottom: 0;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom: none; }
 
 /* ---------- Panel ----------- */
 .panel {
@@ -1418,15 +1409,55 @@ img.qr-code {
   border: 1px solid #c8c7cc; }
 
 /* ---- Members ---- */
-table {
-  font-size: 1.2em; }
-
 .btn-invite-users {
   display: block;
   float: right; }
 
-.table-members {
-  clear: both; }
+.list-user {
+  background-color: white;
+  margin-bottom: 5px; }
+  .list-user .accordion-heading {
+    padding: 16px; }
+    .list-user .accordion-heading .user-full-name {
+      float: left;
+      font-size: 1.4em;
+      font-weight: 600;
+      color: #1C1F1D; }
+    .list-user .accordion-heading .user-role {
+      float: right;
+      font-size: 1.1em;
+      font-weight: 400;
+      color: #484A49; }
+    .list-user .accordion-heading .user-settings {
+      float: right;
+      margin-left: 10px; }
+    .list-user .accordion-heading .user-settings.btn {
+      min-width: 1px;
+      padding: 4px 8px;
+      font-size: 0.8em; }
+    .list-user .accordion-heading .user-tag-name {
+      clear: both;
+      float: left;
+      font-size: 1em;
+      font-weight: 600;
+      color: #18b750; }
+    .list-user .accordion-heading .user-email {
+      padding-left: 5px;
+      float: left;
+      font-size: 1em;
+      font-weight: 400;
+      color: #c8c7cc; }
+  .list-user .panel-collapse {
+    padding: 16px;
+    border-top: 1px solid #efeff4; }
+    .list-user .panel-collapse .btn {
+      width: 100%;
+      margin-top: 2px;
+      margin-bottom: 2px; }
+    .list-user .panel-collapse .btn-sm {
+      padding: 5px 10px;
+      font-size: 1em;
+      line-height: 1.5; }
 
 /* =========== SWITCH ORG ============ */
 /* =========== SIGN IN & SIGN UP ============ */

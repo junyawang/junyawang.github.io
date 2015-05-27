@@ -87,9 +87,9 @@
                 <li>
                     <a href="#members" data-toggle="tab">Members</a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="#teams" data-toggle="tab">Teams</a>
-                </li>
+                </li> -->
             </ul>
         </div>
 
@@ -133,7 +133,7 @@
                                                 <label for="inputOrgDomain">Organization Domain</label>
                                                 <div class="input-group">
                                                     <input type="text" class="form-control" id="inputOrgDomain" value="orgname">
-                                                    <div class="input-group-addon">.intelliscout.com</div>
+                                                    <span class="input-group-addon">.intelliscout.com</span>
                                                 </div>
                                             </div>
                                             <button type="submit" class="btn btn-success">Save Changes</button>
@@ -166,82 +166,75 @@
                 <div role="tabpanel" class="tab-pane fade" id="members">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-lg-12">
-                                <section class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h1>Members</h1>
+                            <div class="col-md-3 col-md-push-9 col-lg-2">
+                                <button class="btn btn-success btn-invite-users" id="modal-invite-members-trigger">+ Invite Members</button>
+                            </div>
+                            <div class="col-md-9 col-md-pull-3 col-lg-10">
+                                <!-- <form class="search-bar" role="search">
+                                    <div class="form-group">
+                                        <span class="search-icon"><i class="fa fa-search"></i></span>
+                                        <input type="text" class="form-control" placeholder="Search members">
                                     </div>
-                                    <div class="panel-body">
-                                        <div class="row">
-                                            <div class="col-md-10">
-                                                <form class="search-bar" role="search">
-                                                    <div class="form-group">
-                                                        <span class="search-icon"><i class="fa fa-search"></i></span>
-                                                        <input type="text" class="form-control" placeholder="Search members">
-                                                    </div>
-                                                </form>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <button class="btn btn-success btn-invite-users" id="modal-invite-members-trigger">+ Invite Members</button>
-                                            </div>
-                                        </div>
-                                        <div class="table-responsive table-members">
-                                            <table class="table table-hover">
-                                                <thead>
-                                                    <tr>
-                                                        <th>First Name</th>
-                                                        <th>Last Name</th> 
-                                                        <th>Email</th>
-                                                        <th>Role</th>
-                                                        <th>Status</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Craig</td>
-                                                        <td>Ganssle</td> 
-                                                        <td>craig@basecampnetworks.com</td>
-                                                        <td>Org Admin</td>
-                                                        <td>Team 1, Team 2</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Jeremy</td>
-                                                        <td>Willemse</td> 
-                                                        <td>jeremy@momentussoftware.com</td>
-                                                        <td>Team Admin</td>
-                                                        <td>Team 3</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Junya</td>
-                                                        <td>Wang</td> 
-                                                        <td>junya@momentussoftware.com</td>
-                                                        <td>
-                                                            <div class="btn-group">
-                                                                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-                                                                Member<span class="caret"></span></a>
-                                                                <ul class="dropdown-menu">
-                                                                    <li><a href="#">Org Admin</a></li>
-                                                                    <li><a href="#">Team Admin</a></li>
-                                                                    <li><a href="#">Member</a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </td>
-                                                        <td>Team 1, Team 3</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Guy</td>
-                                                        <td>Davis</td> 
-                                                        <td>guy_davis@momentussoftware.com</td>
-                                                        <td>Member</td>
-                                                        <td>Pending accept invitation</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                </form> -->
+                                <div class="search-bar">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search members">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default" type="button">
+                                                <span><i class="fa fa-search"></i> Search</span>
+                                            </button>
+                                        </span>
+                                    </div><!-- /input-group -->
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="">
+                            <div class="list-user clearfix">
+                                <div class="accordion-heading clearfix">
+                                    <span class="user-full-name">Craig Ganssle</span>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseUser1" aria-expanded="false" aria-controls="collapseUser1">
+                                        <span class="user-settings btn btn-default btn-sm"><i class="fa fa-cog"></i></span>
+                                    </a>
+                                    <span class="user-role">Org Admin</span>
+                                    <span class="user-tag-name">@craig</span>
+                                    <span class="user-email">craig@example.com</span>
+                                </div>
+                                <div class="panel-collapse collapse" id="collapseUser1">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-4">
+                                            <a href="./account.html" class="btn btn-default btn-sm">Edit My Account</a>
                                         </div>
                                     </div>
-                                </section>
-                            </div><!-- /.col-lg-12 -->
-                        </div><!-- /.row-->
+                                </div><!-- /.panel-collapse-->
+                            </div>
+                            <div class="list-user clearfix">
+                                
+                                    <div class="accordion-heading clearfix">
+                                        <span class="user-full-name">Junya Wang</span>
+                                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseUser2" aria-expanded="false" aria-controls="collapseUser2">
+                                            <span class="user-settings btn btn-default btn-sm"><i class="fa fa-cog"></i></span>
+                                        </a>
+                                        <span class="user-role">Member</span>
+                                        <span class="user-tag-name">@junya</span>
+                                        <span class="user-email">junya@example.com</span>
+                                    </div>
+                                <div class="panel-collapse collapse" id="collapseUser2">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-4">
+                                            <button class="btn btn-default btn-sm">Send Direct Message</button>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4">
+                                            <button class="btn btn-default btn-sm">Make an Org Admin</button>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4">
+                                            <button class="btn btn-default btn-sm">Disable Account</button>
+                                        </div>
+                                    </div>
+                                </div><!-- /.panel-collapse-->
+                            </div>
+                        </div>
                     </div><!-- /.container-fluid -->
                 </div><!-- /.tab-pane -->
 
@@ -279,7 +272,7 @@
                 </div>
 
                 <!-- Teams -->
-                <div role="tabpanel" class="tab-pane fade" id="teams">
+                <!-- <div role="tabpanel" class="tab-pane fade" id="teams">
                     <div class="container">
                         <section class="panel panel-default">
                             <div class="panel-heading">
@@ -289,7 +282,7 @@
                             </div>
                         </section>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>

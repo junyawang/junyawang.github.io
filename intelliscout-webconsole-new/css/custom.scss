@@ -405,17 +405,77 @@ img.qr-code {
 }
 
 /* ---- Members ---- */
-table {
-    font-size: 1.2em;
-}
 
 .btn-invite-users {
     display: block;
     float: right;
 }
 
-.table-members {
-    clear: both;
+.list-user {
+    background-color: white;
+    margin-bottom: 5px;
+    
+    .accordion-heading {
+        padding: 16px;
+
+        .user-full-name {
+            float: left;
+            font-size: 1.4em;
+            font-weight: 600;
+            color: $black;
+        }
+
+        .user-role {
+            float: right;
+            font-size: 1.1em;
+            font-weight: 400;
+            color: $greyDark;
+        }
+
+        .user-settings {
+            float: right;
+            margin-left: 10px;
+        }
+
+        .user-settings.btn {
+            min-width: 1px;
+            padding: 4px 8px;
+            font-size: 0.8em;
+        }
+
+        .user-tag-name {
+            clear: both;
+            float: left;
+            font-size: 1em;
+            font-weight: 600;
+            color: $green;
+        }
+
+        .user-email {
+            padding-left: 5px;
+            float: left;
+            font-size: 1em;
+            font-weight: 400;
+            color: $greyMid;
+        }
+    }
+
+    .panel-collapse {
+        padding: 16px;
+        border-top: 1px solid $greyLight;
+
+        .btn {
+            width: 100%;
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }
+
+        .btn-sm {
+            padding: 5px 10px;
+            font-size: 1em;
+            line-height: 1.5;
+        }
+    }
 }
 
 /* =========== SWITCH ORG ============ */

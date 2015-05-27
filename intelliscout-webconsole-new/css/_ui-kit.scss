@@ -206,18 +206,19 @@ label {
     font-size: 1.2em;
 }
 
+/* ---------- Search Bar ---------- */
+
 .search-bar {
-    .search-icon {
-        position: absolute;
-        top: 8px;
-        left: 10px;
-        font-size: 1.2em;
-        color: $greyMid;
-    }
+    // .search-icon {
+    //     position: absolute;
+    //     top: 8px;
+    //     left: 23px;
+    //     font-size: 1.2em;
+    //     color: $greyMid;
+    // }
 
     input {
         width: 100%;
-        padding-left: 32px;
     }
 }
 
@@ -492,40 +493,41 @@ textarea {
 
 /* ---------- List Item ----------- */
 
-.list-group {
+.list-group.member-list {
     margin-bottom: 10px;
-}
+    
+    .list-group-item {
+        position: relative;
+        display: block;
+        padding: 10px 15px 10px 0;
+        margin: 2px 0;
+        background-color: #fff;
+        border: none;
+        border-bottom: 1px solid $greyLight;
+    }
 
-.list-group-item {
-    position: relative;
-    display: block;
-    padding: 10px 15px 10px 0;
-    margin: 2px 0;
-    background-color: #fff;
-    border: none;
-    border-bottom: 1px solid $greyLight;
-
-    .list-name {
+    span.list-name {
         font-size: 1.2em;
         vertical-align: middle;
     }
 
-    .list-operation {
+    span.list-operation {
+    }
+
+    .list-group-item:first-child {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        // border-top: 1px solid $greyLight;
+    }
+
+    .list-group-item:last-child {
+        margin-bottom: 0;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-bottom: none;
     }
 }
 
-.list-group-item:first-child {
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    // border-top: 1px solid $greyLight;
-}
-
-.list-group-item:last-child {
-    margin-bottom: 0;
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom: none;
-}
 
 /* ---------- Panel ----------- */
 .panel {
