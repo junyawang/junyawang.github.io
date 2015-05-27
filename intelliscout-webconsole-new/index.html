@@ -350,8 +350,8 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Team 1 <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Edit Team</a></li>
-                                <li><a href="#">Invite Members</a></li>
+                                <li><a href="#" id="modal-editTeam-trigger">Edit Team</a></li>
+                                <li><a href="#" id="modal-inviteMembers-trigger">Invite Members</a></li>
                                 <li><a href="#">Remove Members</a></li>
                             </ul>
                         </li>
@@ -634,6 +634,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         <h1>Create a Team</h1>
                         <p>Please give the new team a name and description.</p>
                     </div>
@@ -655,12 +656,41 @@
         </div>
     </div>
 
-    <!-- MODAL - Invite Members -->
-    <div class="modal fade" id="modal-invite-members" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <!-- MODAL - Edit Team -->
+    <div class="modal fade" id="modal-edit-team" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="container">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h1>Edit Team</h1>
+                        <p>Change <strong>Team 1</strong>'s name and description.</p>
+                    </div>
+                    <div class="modal-body">   
+                        <form class="row">
+                            <div class="form-group col-md-12">
+                                <label>Team Name</label>
+                                <input type="text" class="form-control" id="inputTeamName" value="Team 1">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label>Team Description</label>
+                                <textarea class="form-control"></textarea>
+                            </div>
+                            <button type="button" class="btn btn-success">Save</button>
+                        </form>
+                    </div>
+                </div>
+            </div><!-- /modal-dialogue -->
+        </div>
+    </div>
+
+    <!-- MODAL - Invite Members to New Team-->
+    <div class="modal fade" id="modal-invite-members-new-team" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="container">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         <h1>Invite Members</h1>
                         <p>Invite members from your organization to join this team.</p>
                     </div>
@@ -694,12 +724,50 @@
         </div>
     </div>
 
+    <!-- MODAL - Invite Members to Current Team -->
+    <div class="modal fade" id="modal-invite-members" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="container">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h1>Invite Members</h1>
+                        <p>Invite members from your organization to join this team.</p>
+                    </div>
+                    <div class="modal-body">      
+                        <div class="list-group member-list">
+                            <div class="list-group-item clearfix">
+                                <span class="list-name">Jeremy Willemse</span>
+                                <span class="list-operation pull-right">
+                                    <button class="btn btn-default">Invite</button>
+                                </span>
+                            </div>
+                            <div class="list-group-item clearfix">
+                                <span class="list-name">Junya Wang</span>
+                                <span class="list-operation pull-right">
+                                    <button class="btn btn-default">Invite</button>
+                                </span>
+                            </div>
+                            <div class="list-group-item clearfix">
+                                <span class="list-name">Guy Davis</span>
+                                <span class="list-operation pull-right">
+                                    <button class="btn btn-default">Invite</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /modal-dialogue -->
+        </div>
+    </div>
+
     <!-- MODAL - Assign Team Admin -->
     <div class="modal fade" id="modal-assign-team-admin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="container">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         <h1>Assign Team Admin</h1>
                         <p>Please assign one or more member as the Team Admin to help you organize this team.</p>
                     </div>
@@ -732,6 +800,8 @@
             </div><!-- /modal-dialogue -->
         </div>
     </div>
+
+
     
 </body>
 <script src="js/custom/global.js"></script>
