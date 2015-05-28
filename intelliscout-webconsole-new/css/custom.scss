@@ -169,6 +169,7 @@ body {
     right: 0;
     height: 290px;
     @include box-shadow (0px 0px 10px 0px rgba(0, 0, 0, 0.1));
+    @include transition (all 0.5s ease);
 
     form .dropdown-toggle {
         margin-top: 0;

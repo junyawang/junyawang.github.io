@@ -233,9 +233,8 @@ label {
 /* -------- Global Search ---------- */
 #modal-global-search .label-photo {
   position: absolute;
-  top: -22px; }
-#modal-global-search .label {
-  border-radius: 0px; }
+  top: -22px;
+  border-radius: 0.25em 0.25em 0.25em 0; }
 
 /* ---------- Date Divider ----------*/
 .date-divider .row {
@@ -429,7 +428,11 @@ textarea {
   .navbar-lower ul.navbar-right {
     position: absolute;
     right: 15px;
-    top: 0px; }
+    top: 0px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
   .navbar-lower .nav > li {
     display: inline-block;
     vertical-align: top; }
@@ -1259,7 +1262,11 @@ body {
   height: 290px;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); }
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
   .sec-filter form .dropdown-toggle {
     margin-top: 0; }
   .sec-filter .token-input {

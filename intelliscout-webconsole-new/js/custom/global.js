@@ -26,11 +26,17 @@ $("#navbar-sidebar-toggle").click(function(e) {
         $('.sec-chat').attr('style', 'left: 230px;');
         $('.sec-jump-back').attr('style', 'left: 230px;');
         $('.navbar-lower').attr('style', 'left: 230px;');
+        $('.sec-filter').css('left', '230px');
+        $('.sec-filter').css('right', '-230px');
+        $('.navbar-lower ul.navbar-right').css('right', '-215px');
     }
     else {
         $('.sec-chat').attr('style', 'left: 0;');
         $('.sec-jump-back').attr('style', 'left: 0;');
         $('.navbar-lower').attr('style', 'left: 0;');
+        $('.sec-filter').css('left', '0');
+        $('.sec-filter').css('right', '0');
+        $('.navbar-lower ul.navbar-right').css('right', '15px');
     }
 });
 

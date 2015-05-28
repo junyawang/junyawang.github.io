@@ -228,10 +228,7 @@ label {
     .label-photo {
         position: absolute;
         top: -22px;
-    }
-
-    .label {
-        border-radius: 0px;
+        border-radius: 0.25em 0.25em 0.25em 0;
     }
 }
 
@@ -497,6 +494,7 @@ textarea {
         position: absolute;
         right: 15px;
         top: 0px;
+        @include transition (all 0.5s ease);
     }
 
     ul {

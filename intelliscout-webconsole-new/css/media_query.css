@@ -151,7 +151,8 @@
   /* -------- Global Search ---------- */
   #modal-global-search .label-photo {
     position: initial;
-    top: 0px; } }
+    top: 0px;
+    border-radius: 0.25em; } }
 /* Large devices (large desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .modal-dialog {
