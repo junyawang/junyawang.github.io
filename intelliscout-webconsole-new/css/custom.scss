@@ -591,11 +591,15 @@ form .btn.btn-add-invitation {
     z-index: 9999;
     display: none;
     position: absolute;
+    padding: 0;
     background-color: white;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    .number-of-results {
+        color: $greyDark;
+    }
 
     .modal-content {
         @include box-shadow (none); 
@@ -626,6 +630,29 @@ form .btn.btn-add-invitation {
         
         .modal-body {
             min-height: 500px;
+            padding-top: 0;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .tab-content {
+        
+            .tab-pane {
+                padding-top: 30px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+        }        
+
+        nav.nav-pagination {
+            margin-left: -30px;
+            margin-right: -30px;
+
+            .pagination {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
         }
     }
 
@@ -665,4 +692,8 @@ form .btn.btn-add-invitation {
         border-radius: 0;
         border: none;
     }
+}
+
+#search-results-messages {
+    background-color: rgba($greyLight, 0.5);
 }

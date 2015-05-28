@@ -1335,7 +1335,9 @@ input[type="checkbox"] .styled:checked + label::after {
 
 /* ------------ PAGINATION ---------- */
 nav.nav-pagination {
+    clear: both;
     margin-top: 40px;
+    background-color: white;
     
     hr {
         margin: 5px 0;
@@ -1349,6 +1351,7 @@ nav.nav-pagination {
 .pagination>li>a,
 .pagination>li>span {
     border: none;
+    background-color: transparent;
     color: $greyDark;
 }
 
