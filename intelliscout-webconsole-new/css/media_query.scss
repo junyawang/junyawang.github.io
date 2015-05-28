@@ -209,6 +209,14 @@
             min-width: 120px;
         }
     }
+    
+    /* -------- Global Search ---------- */
+    #modal-global-search {
+        .label-photo {
+            position: initial;
+            top: 0px;
+        }
+    }
 }
 
 /* Large devices (large desktops, 1200px and up) */

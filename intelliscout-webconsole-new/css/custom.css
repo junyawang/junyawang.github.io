@@ -230,6 +230,13 @@ label {
   width: 100%;
   padding-left: 32px; }
 
+/* -------- Global Search ---------- */
+#modal-global-search .label-photo {
+  position: absolute;
+  top: -22px; }
+#modal-global-search .label {
+  border-radius: 0px; }
+
 /* ---------- Date Divider ----------*/
 .date-divider .row {
   margin-left: 0;
