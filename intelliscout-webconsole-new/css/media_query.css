@@ -37,7 +37,7 @@
   .navbar-lower,
   .sec-chat,
   .sec-jump-back {
-    left: 250px;
+    left: 230px;
     /* $sidebar-width*/
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -46,13 +46,13 @@
 
   /* --- SIDEBAR --- */
   #wrapper {
-    padding-left: 250px; }
+    padding-left: 230px; }
 
   #wrapper.toggledTeams {
     padding-left: 0; }
 
   #sidebar-wrapper {
-    width: 250px; }
+    width: 230px; }
 
   #wrapper.toggledTeams #sidebar-wrapper {
     width: 0; }
@@ -90,7 +90,7 @@
     width: 100%; }
 
   .sec-filter {
-    left: 250px;
+    left: 230px;
     height: 210px; }
     .sec-filter .form-group {
       margin-bottom: 15px; }

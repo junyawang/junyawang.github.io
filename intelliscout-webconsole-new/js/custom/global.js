@@ -23,9 +23,9 @@ $("#navbar-sidebar-toggle").click(function(e) {
     e.preventDefault();
     $("#wrapper").toggleClass("toggledSidebar");
     if ($("#wrapper").hasClass('toggledSidebar')) {
-        $('.sec-chat').attr('style', 'left: 250px;');
-        $('.sec-jump-back').attr('style', 'left: 250px;');
-        $('.navbar-lower').attr('style', 'left: 250px;');
+        $('.sec-chat').attr('style', 'left: 230px;');
+        $('.sec-jump-back').attr('style', 'left: 230px;');
+        $('.navbar-lower').attr('style', 'left: 230px;');
     }
     else {
         $('.sec-chat').attr('style', 'left: 0;');

@@ -311,6 +311,29 @@ textarea {
     font-size: 1.2em;
 }
 
+
+
+/* --------- NAV ---------- */
+.nav-pills>li>a {
+    color: $greyDark;
+    border-radius: 0;
+}
+
+.nav-pills>li>a:hover,
+.nav-pills>li>a:focus {
+    border-bottom: 3px solid $greenDark;
+    background-color: transparent;
+}
+
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
+    color: $black;
+    background-color: transparent;
+    border-bottom: 3px solid $green;
+}
+
+
 /* --------- NAV BAR ---------- */
 .navbar {
     border: none;
@@ -779,14 +802,14 @@ textarea {
 .sidebar-nav {
     position: absolute;
     top: 0;
-    width: 250px;
+    width: $sidebar-width;
     margin: 0;
     padding: 0;
     list-style: none;
 
     li {
         text-indent: 20px;
-        line-height: 60px;
+        line-height: 56px;
         border-bottom: 2px solid $greyLight;
         
         color: $greyDark;
@@ -1297,3 +1320,5 @@ input[type="checkbox"] .styled:checked + label::before {
 input[type="checkbox"] .styled:checked + label::after {
     color: #fff;
 }
+
+/* ------------ PAGINATION ---------- */

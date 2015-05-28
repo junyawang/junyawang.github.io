@@ -286,6 +286,23 @@ textarea {
   font-weight: 300;
   font-size: 1.2em; }
 
+/* --------- NAV ---------- */
+.nav-pills > li > a {
+  color: #484A49;
+  border-radius: 0; }
+
+.nav-pills > li > a:hover,
+.nav-pills > li > a:focus {
+  border-bottom: 3px solid #28a55e;
+  background-color: transparent; }
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover {
+  color: #1C1F1D;
+  background-color: transparent;
+  border-bottom: 3px solid #18b750; }
+
 /* --------- NAV BAR ---------- */
 .navbar {
   border: none;
@@ -601,15 +618,15 @@ textarea {
   transition: all 0.5s ease; }
 
 #wrapper.toggledSidebar {
-  padding-left: 250px; }
+  padding-left: 230px; }
 
 #sidebar-wrapper {
   z-index: 999;
   position: fixed;
-  left: 250px;
+  left: 230px;
   width: 0;
   height: 100%;
-  margin-left: -250px;
+  margin-left: -230px;
   overflow-y: auto;
   background: white;
   -webkit-transition: all 0.5s ease;
@@ -618,7 +635,7 @@ textarea {
   transition: all 0.5s ease; }
 
 #wrapper.toggledSidebar #sidebar-wrapper {
-  width: 250px; }
+  width: 230px; }
 
 #page-content-wrapper {
   width: 100%;
@@ -627,7 +644,7 @@ textarea {
 
 #wrapper.toggledSidebar #page-content-wrapper {
   position: absolute;
-  margin-right: -250px; }
+  margin-right: -230px; }
 
 /* Sidebar Styles */
 .sidebar-left {
@@ -646,13 +663,13 @@ textarea {
 .sidebar-nav {
   position: absolute;
   top: 0;
-  width: 250px;
+  width: 230px;
   margin: 0;
   padding: 0;
   list-style: none; }
   .sidebar-nav li {
     text-indent: 20px;
-    line-height: 60px;
+    line-height: 56px;
     border-bottom: 2px solid #efeff4;
     color: #484A49;
     font-size: 1.1em; }
@@ -1092,6 +1109,7 @@ input[type="checkbox"] .styled:checked + label::before {
 input[type="checkbox"] .styled:checked + label::after {
   color: #fff; }
 
+/* ------------ PAGINATION ---------- */
 /*-------------------------------------------
                     BASE
 ---------------------------------------------*/
@@ -1396,8 +1414,7 @@ img.org-logo {
 
 img.qr-code {
   display: block;
-  margin: 0 auto;
-  margin-top: 10%; }
+  margin: 0 auto; }
 
 #my-account .accordion-heading {
   padding-left: 15px;
@@ -1545,5 +1562,47 @@ form .btn.btn-add-invitation {
   bottom: 0;
   left: 0;
   right: 0; }
+  #modal-global-search .modal-content {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border: none; }
+    #modal-global-search .modal-content .modal-header {
+      background-color: #efeff4;
+      padding-bottom: 0px;
+      border-bottom: 1px solid #c8c7cc; }
+      #modal-global-search .modal-content .modal-header .close {
+        margin-top: 8px; }
+      #modal-global-search .modal-content .modal-header .search-bar {
+        margin-right: 30px; }
+        #modal-global-search .modal-content .modal-header .search-bar .form-group {
+          margin-bottom: 0; }
+        #modal-global-search .modal-content .modal-header .search-bar .search-icon {
+          top: 23px;
+          left: 26px; }
+    #modal-global-search .modal-content .modal-body {
+      min-height: 500px; }
+  #modal-global-search .nav > li > a {
+    padding: 14px 12px 6px 12px;
+    margin: 0 3px; }
+
+#search-results-reports h4 {
+  margin-top: 0; }
+#search-results-reports label {
+  display: inline-block; }
+#search-results-reports section {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+#search-results-reports span.reference {
+  display: inline-block;
+  margin: 0 0 6px 0;
+  color: #484A49; }
+#search-results-reports p {
+  font-size: 1em; }
+
+.search-results-reports-photo .img-thumbnail {
+  padding: 0;
+  border-radius: 0;
+  border: none; }
 
 /*# sourceMappingURL=custom.css.map */

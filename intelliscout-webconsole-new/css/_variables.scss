@@ -16,7 +16,7 @@ $navbar-lower-height: 56px;
 
 $bubble-triangle-edge: 12px;
 
-$sidebar-width: 250px;
+$sidebar-width: 230px;
 
 /*---------- MIXINS ---------- */
 @mixin box-shadow ($box-shadow) {
@@ -81,15 +81,4 @@ $sidebar-width: 250px;
 // translate
 @mixin translate ($x, $y) {
    @include transform(translate($x, $y));
-}
-
-@mixin animation ($x) {
-
-}
-
-@mixin animation-duration ($x) {
-  -moz-animation-duration: $x;
-  -o-animation-duration: $x;
-  -webkit-animation-duration: $x;
-  animation-duration: $x;
 }

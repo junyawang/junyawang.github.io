@@ -377,7 +377,6 @@ img.org-logo {
 img.qr-code {
     display: block;
     margin: 0 auto;
-    margin-top: 10%;
 }
 
 #my-account {
@@ -596,4 +595,75 @@ form .btn.btn-add-invitation {
     bottom: 0;
     left: 0;
     right: 0;
+
+    .modal-content {
+        @include box-shadow (none); 
+        border: none;   
+    
+        .modal-header {
+            background-color: $greyLight;
+            padding-bottom: 0px;
+            border-bottom: 1px solid $greyMid;
+
+            .close{
+                margin-top: 8px;
+            }
+
+            .search-bar {
+                margin-right: 30px;
+
+                .form-group {
+                    margin-bottom: 0;
+                }
+
+                .search-icon {
+                    top: 23px;
+                    left: 26px;
+                }
+            }
+        }
+        
+        .modal-body {
+            min-height: 500px;
+        }
+    }
+
+    .nav>li>a {
+        padding: 14px 12px 6px 12px;
+        margin: 0 3px;
+    }
+
+}
+
+#search-results-reports {
+    h4 {
+        margin-top: 0;
+    }
+
+    label {
+        display: inline-block;
+    }
+
+    section {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    span.reference {
+        display: inline-block;
+        margin: 0 0 6px 0;
+        color: $greyDark;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+.search-results-reports-photo {
+    .img-thumbnail {
+        padding: 0;
+        border-radius: 0;
+        border: none;
+    }
 }
