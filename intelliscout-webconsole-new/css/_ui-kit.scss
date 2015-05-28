@@ -24,6 +24,20 @@
     font-weight: 400;
     color: $greyDark;
 }
+
+.team-name {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: $black;
+}
+
+.team-admin,
+.team-number-of-users {
+    font-size: 1.1em;
+    font-weight: 400;
+    color: $greyDark;
+}
+
 /* ------------- Button --------------*/
 .btn {
     @include border-radius (0);

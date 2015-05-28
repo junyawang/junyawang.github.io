@@ -23,6 +23,17 @@
   font-weight: 400;
   color: #484A49; }
 
+.team-name {
+  font-size: 1.4em;
+  font-weight: 600;
+  color: #1C1F1D; }
+
+.team-admin,
+.team-number-of-users {
+  font-size: 1.1em;
+  font-weight: 400;
+  color: #484A49; }
+
 /* ------------- Button --------------*/
 .btn {
   -webkit-border-radius: 0;
@@ -1692,12 +1703,34 @@ form .btn.btn-add-invitation {
     clear: both;
     float: left; }
   #search-results-users .search-results-user .user-role {
-    float: right; }
+    clear: both;
+    float: left;
+    color: #484A49;
+    font-size: 1.1em; }
   #search-results-users .search-results-user .user-username {
     clear: both;
     float: left; }
   #search-results-users .search-results-user .user-email {
     padding-left: 5px;
     float: left; }
+
+#search-results-teams .search-results-team {
+  margin: 20px 0; }
+  #search-results-teams .search-results-team .team-name {
+    clear: both;
+    float: left;
+    margin: 6px 0; }
+  #search-results-teams .search-results-team .team-number-of-users {
+    clear: both;
+    float: left;
+    margin: 6px 0; }
+  #search-results-teams .search-results-team .team-admin {
+    clear: both;
+    float: left;
+    margin: 6px 0; }
+  #search-results-teams .search-results-team .team-descr {
+    clear: both;
+    margin: 6px 0;
+    font-size: 1em; }
 
 /*# sourceMappingURL=custom.css.map */
