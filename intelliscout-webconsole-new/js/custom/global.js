@@ -90,7 +90,13 @@ $(document).on('click', '.input-share-link', function(e){
 //********** Global Search Modal *********//
 // Global Search Button
 $("#global-search").click(function(){
-    $('#modal-global-search').modal('show');
+    //$('#modal-global-search').modal('show');
+    var $modal = $("#modal-global-search");
+    setTimeout(function(){
+        $modal.load('./global_search.html', '', function(){
+            $modal.modal();
+        });
+    }, 0);
 });
 
 // Close Search Button
