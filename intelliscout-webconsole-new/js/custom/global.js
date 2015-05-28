@@ -103,10 +103,30 @@ $("#global-search").click(function(){
     });
 });
 
-// Close Search Button
-// $("#close-global-search").click(function(){
-//     $('#modal-global-search').modal('hide');
-// });
+
+//********** Global Search Tab List Swipe *********//
+function tabSwipe(isLeft) {
+    var tabList = $('#modal-global-search ul[role="tablist"] li');
+    var activeTabIndex;
+    for (var i = tabList.length - 1; i >= 0; i--) {
+        if ($(tabList[i]).attr('class') != undefined &&
+            $(tabList[i]).attr('class').indexOf('active') >= 0) {
+            activeTabIndex = i;
+            break;
+        }
+    };
+    if (!isLeft && activeTabIndex > 0) {
+        $('#search-tab li:eq('+ (activeTabIndex - 1) +') a').tab('show');
+    }
+    if (isLeft && activeTabIndex < tabList.length) {
+        $('#search-tab li:eq('+ (activeTabIndex + 1) +') a').tab('show');
+    }
+}
+
+$("#modal-global-search").swipe({
+    swipeLeft: function() { tabSwipe(true); },
+    swipeRight: function() { tabSwipe(false); },
+});
 
 //********** Textarea Auto Resize *********//
 (function($){    
