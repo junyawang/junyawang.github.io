@@ -60,11 +60,18 @@ $("#modal-inviteMembers-trigger").click(function(){
     $('#modal-invite-members').modal('show');
 });
 
+function setJumpSecOpacity() {
+    var allHeight = $(document).height()-$(window).height();
+    var percent = (allHeight - $(this).scrollTop()) / allHeight;
+    $('.sec-jump-back').css('opacity', percent);
+}
+
 $(document).ready(function() {
     $('.token-input').clearSearch();
     $('#search-keyword-tokenfield').attr('token-selector', '#search-keyword');
     $('#startdatetimepicker').clearSearch();
     $('#enddatetimepicker').clearSearch();
+    setJumpSecOpacity();
 });
 
 //********** Filter Flyover *********//
@@ -82,6 +89,10 @@ $(document).on('click', "#filter", function(e){
         $('#filter').removeAttr('style');
         $('#filter').attr('value', 'closed');
     }
+});
+
+$(window).scroll(function() {
+    setJumpSecOpacity();
 });
 
 //********** Team Select *********//

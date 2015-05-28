@@ -650,7 +650,8 @@ textarea {
 #page-content-wrapper {
   width: 100%;
   position: absolute;
-  padding: 15px; }
+  padding: 15px;
+  margin-bottom: 109px; }
 
 #wrapper.toggledSidebar #page-content-wrapper {
   position: absolute;
@@ -876,7 +877,7 @@ ul.sub.active {
 
 /* -------------- CHAT -------------- */
 footer, .push {
-  height: 155px;
+  height: 109px;
   /* .push must be the same height as .footer */ }
 
 .sec-chat {

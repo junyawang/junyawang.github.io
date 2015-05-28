@@ -10,6 +10,10 @@
 
 /* Small devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    #page-content-wrapper {
+        margin-bottom: 0;
+    }
+
     .checkbox label {
         padding-left: 0.5em !important;
     }
