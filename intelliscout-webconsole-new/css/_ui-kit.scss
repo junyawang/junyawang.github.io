@@ -1,4 +1,29 @@
 /* --------- UIKIT ---------- */
+
+/* --- SPAN --- */
+.user-fullname {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: $black;
+}
+
+.user-role {
+    font-size: 1.1em;
+    font-weight: 400;
+    color: $greyDark;
+}
+
+.user-username {
+    font-size: 1em;
+    font-weight: 600;
+    color: $green;
+}
+
+.user-email {
+    font-size: 1em;
+    font-weight: 400;
+    color: $greyDark;
+}
 /* ------------- Button --------------*/
 .btn {
     @include border-radius (0);

@@ -435,18 +435,12 @@ img.qr-code {
     .accordion-heading {
         padding: 16px;
 
-        .user-full-name {
+        .user-fullname {
             float: left;
-            font-size: 1.4em;
-            font-weight: 600;
-            color: $black;
         }
 
         .user-role {
             float: right;
-            font-size: 1.1em;
-            font-weight: 400;
-            color: $greyDark;
         }
 
         .user-settings {
@@ -460,20 +454,14 @@ img.qr-code {
             font-size: 0.8em;
         }
 
-        .user-tag-name {
+        .user-username {
             clear: both;
             float: left;
-            font-size: 1em;
-            font-weight: 600;
-            color: $green;
         }
 
         .user-email {
             padding-left: 5px;
             float: left;
-            font-size: 1em;
-            font-weight: 400;
-            color: $greyMid;
         }
     }
 
@@ -598,6 +586,8 @@ form .btn.btn-add-invitation {
     left: 0;
     right: 0;
     .number-of-results {
+        display: inline-block;
+        padding: 6px 0;
         color: $greyDark;
     }
 
@@ -696,4 +686,30 @@ form .btn.btn-add-invitation {
 
 #search-results-messages {
     background-color: rgba($greyLight, 0.5);
+}
+
+#search-results-users {
+
+    .search-results-user {
+        margin: 20px 0;
+
+        .user-fullname {
+            clear: both;
+            float: left;
+        }
+
+        .user-role {
+            float: right;
+        }
+
+        .user-username {
+            clear: both;
+            float: left;
+        }
+
+        .user-email {
+            padding-left: 5px;
+            float: left;
+        }
+    }
 }
