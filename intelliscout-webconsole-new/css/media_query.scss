@@ -188,7 +188,17 @@
             min-width: 100px;
         }
     }
-
+    
+    /* -------- Global Search ---------- */
+    #modal-global-search {
+        .label-photo,
+        .label-video,
+        .label-counting {
+            position: initial;
+            top: 0px;
+            border-radius: 0.25em;
+        }
+    }
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -211,15 +221,6 @@
 
         .btn {
             min-width: 120px;
-        }
-    }
-
-    /* -------- Global Search ---------- */
-    #modal-global-search {
-        .label-photo {
-            position: initial;
-            top: 0px;
-            border-radius: 0.25em;
         }
     }
 }

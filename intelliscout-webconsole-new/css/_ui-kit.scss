@@ -224,7 +224,9 @@ label {
 
 /* -------- Global Search ---------- */
 #modal-global-search {
-    .label-photo {
+    .label-photo,
+    .label-video,
+    .label-counting {
         position: absolute;
         top: -22px;
         border-radius: 0.25em 0.25em 0.25em 0;
@@ -1332,3 +1334,42 @@ input[type="checkbox"] .styled:checked + label::after {
 }
 
 /* ------------ PAGINATION ---------- */
+nav.nav-pagination {
+    margin-top: 40px;
+    
+    hr {
+        margin: 5px 0;
+    }
+
+    .pagination {
+        margin: 10px 0;
+    }
+}
+
+.pagination>li>a,
+.pagination>li>span {
+    border: none;
+    color: $greyDark;
+}
+
+.pagination>li>a:hover,
+.pagination>li>a:focus,
+.pagination>li>span:hover,
+.pagination>li>span:focus, {
+    border: none;
+    color: $greenDark;
+    background-color: transparent;
+}
+
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {
+    background-color: transparent;
+    border: none;
+    border-radius: 15px;
+    color: $greenDark;
+    font-weight: 600;
+}

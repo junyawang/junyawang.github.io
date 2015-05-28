@@ -135,7 +135,15 @@
       display: inline-block;
       text-align: initial; }
     .sec-filter .btn {
-      min-width: 100px; } }
+      min-width: 100px; }
+
+  /* -------- Global Search ---------- */
+  #modal-global-search .label-photo,
+  #modal-global-search .label-video,
+  #modal-global-search .label-counting {
+    position: initial;
+    top: 0px;
+    border-radius: 0.25em; } }
 /* Medium devices (desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .modal-dialog {
@@ -149,13 +157,7 @@
   .sec-filter .bootstrap-select {
     width: 38% !important; }
   .sec-filter .btn {
-    min-width: 120px; }
-
-  /* -------- Global Search ---------- */
-  #modal-global-search .label-photo {
-    position: initial;
-    top: 0px;
-    border-radius: 0.25em; } }
+    min-width: 120px; } }
 /* Large devices (large desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .modal-dialog {
