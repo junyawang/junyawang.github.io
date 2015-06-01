@@ -722,15 +722,11 @@ textarea {
       display: block;
       color: #484A49;
       text-decoration: none; }
-    .sidebar-nav li .active,
-    .sidebar-nav li .active:hover {
-      background-color: #28a55e; }
-      .sidebar-nav li .active .team-name,
-      .sidebar-nav li .active:hover .team-name {
-        font-weight: 600;
-        color: white; }
+  .sidebar-nav li.active .sidebar-list-name,
+  .sidebar-nav li.active:hover .sidebar-list-name {
+    font-weight: 600; }
   .sidebar-nav li:hover {
-    background-color: white; }
+    background-color: rgba(239, 239, 244, 0.2); }
   .sidebar-nav li.sidebar-title-area {
     line-height: 46px;
     padding-top: 18px;
@@ -747,10 +743,10 @@ textarea {
     .sidebar-nav li.sidebar-title-area .sidebar-add:hover {
       color: #28a55e; }
 
-.team-name {
+.sidebar-list-name {
   text-align: left; }
 
-.team-notification {
+.sidebar-notification {
   text-align: right;
   float: right;
   padding-right: 30px;

@@ -871,19 +871,17 @@ textarea {
             color: $greyDark;
             text-decoration: none;
         }
+    }
 
-        .active,
-        .active:hover {
-            background-color: $greenDark;
-            .team-name{
-                font-weight: 600;
-                color: white;
-            }
+    li.active,
+    li.active:hover {
+        .sidebar-list-name{
+            font-weight: 600;
         }
     }
 
     li:hover {
-        background-color: lighten($greyLight, 20%);
+        background-color: rgba($greyLight,.2);
     } 
 
     li.sidebar-title-area {
@@ -908,11 +906,11 @@ textarea {
     }
 }
 
-.team-name {
+.sidebar-list-name {
     text-align: left;
 }
 
-.team-notification {
+.sidebar-notification {
     text-align: right;
     float: right;
     padding-right: 30px;
