@@ -555,9 +555,16 @@ textarea {
         padding-bottom: $navbar-lower-height/3;
     }
 
+    .navbar-nav.navbar-left>li>a.navbar-lower-title {
+        font-size: 1.3em;
+        font-weight: 600;
+    }
+
     .dropdown-menu {
         background-color: white !important;
     }
+
+
 }
 
 #navbar-team-toggle,

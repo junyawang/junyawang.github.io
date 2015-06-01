@@ -476,6 +476,9 @@ textarea {
     font-weight: 400;
     padding-top: 18.66667px;
     padding-bottom: 18.66667px; }
+  .navbar-lower .navbar-nav.navbar-left > li > a.navbar-lower-title {
+    font-size: 1.3em;
+    font-weight: 600; }
   .navbar-lower .dropdown-menu {
     background-color: white !important; }
 
