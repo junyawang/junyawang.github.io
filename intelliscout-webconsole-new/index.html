@@ -630,7 +630,7 @@
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle navbar-lower-title" data-toggle="dropdown" role="button" aria-expanded="false">Jeremy Willemse <i class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown-menu" role="menu">
-                                        <li><a href="#" id="">View Profile</a></li>
+                                        <li><a href="#" id="modal-userProfile-trigger">View Profile</a></li>
                                     </ul>
                                 </li>
 
@@ -655,16 +655,16 @@
                                     <span class="bubble-time text-right">11:25</span>
                                     <p><span class="bubble-tag"><a href="#">@junya </a></span>I like the first photo. I like the first photo. I like the first photo. I like the first photo. I like the first photo. I like the first photo. I like the first photo. I like the first photo. I like the first photo. I like the first photo. I like the first photo. I like the first photo. I like the first photo. I like the first photo.</p>
                                 </div>
-                                <div class="bubble bubble-success result-highlight">
+                                <div class="bubble bubble-success">
                                     <span class="bubble-name text-left">Junya Wang</span>
                                     <span class="bubble-time text-right">11:24</span>
-                                    <p>Jump to search result - Highlighted. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean massa tellus, tempus at augue at, sodales ornare odio. Nam elementum congue hendrerit. Nulla vitae sem eu risus pellentesque hendrerit. Phasellus at massa cursus, eleifend purus vel, porttitor dui. Fusce ac est faucibus, tempus leo sit amet, ullamcorper dui.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean massa tellus, tempus at augue at, sodales ornare odio. Nam elementum congue hendrerit. Nulla vitae sem eu risus pellentesque hendrerit. Phasellus at massa cursus, eleifend purus vel, porttitor dui. Fusce ac est faucibus, tempus leo sit amet, ullamcorper dui.</p>
                                 </div>
 
-                                <div class="bubble bubble-default result-highlight">
+                                <div class="bubble bubble-default">
                                     <span class="bubble-name text-left">Jeremy Willemse</span>
                                     <span class="bubble-time text-right">11:25</span>
-                                    <p><span class="bubble-tag"><a href="#">@junya </a></span>Jump to search result - Highlighted. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean massa tellus, tempus at augue at, sodales ornare odio. Nam elementum congue hendrerit. Nulla vitae sem eu risus pellentesque hendrerit. Phasellus at massa cursus, eleifend purus vel, porttitor dui. Fusce ac est faucibus, tempus leo sit amet, ullamcorper dui.</p>
+                                    <p><span class="bubble-tag"><a href="#">@junya </a></span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean massa tellus, tempus at augue at, sodales ornare odio. Nam elementum congue hendrerit. Nulla vitae sem eu risus pellentesque hendrerit. Phasellus at massa cursus, eleifend purus vel, porttitor dui. Fusce ac est faucibus, tempus leo sit amet, ullamcorper dui.</p>
                                 </div>
                                 <div class="bubble bubble-success">
                                     <span class="bubble-name text-left">Junya Wang</span>
@@ -715,6 +715,7 @@
                                 <label>Team Description (Optional)</label>
                                 <textarea class="form-control"></textarea>
                             </div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
                             <button type="button" class="btn btn-success" data-dismiss="modal" href="#new-team" data-toggle="tab">Create Team</button>
                         </form>
                     </div>
@@ -770,7 +771,7 @@
                                 <label>Team Description</label>
                                 <textarea class="form-control" disabled></textarea>
                             </div>
-                            <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         </form>
                     </div>
                 </div>
@@ -888,6 +889,46 @@
 
                             <button type="button" class="btn btn-default" id="modal-assignAdmin-to-inviteMembers-trigger">Back</button>
                             <button type="submit" class="btn btn-success" data-dismiss="modal">Done</button>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /modal-dialogue -->
+        </div>
+    </div>
+
+    <!-- MODAL - User Profile -->
+    <div class="modal fade" id="modal-user-profile" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="container">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button ty pe="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h1>Invite Members</h1>
+                        <p>Invite members from your organization to join this team.</p>
+                    </div>
+                    <div class="modal-body">      
+                        <div class="list-group member-list">
+                            <div class="list-group-item clearfix">
+                                <span class="list-name">Jeremy Willemse</span>
+                                <span class="list-operation pull-right">
+                                    <button class="btn btn-default">Invite</button>
+                                </span>
+                            </div>
+                            <div class="list-group-item clearfix">
+                                <span class="list-name">Junya Wang</span>
+                                <span class="list-operation pull-right">
+                                    <button class="btn btn-default">Invite</button>
+                                </span>
+                            </div>
+                            <div class="list-group-item clearfix">
+                                <span class="list-name">Guy Davis</span>
+                                <span class="list-operation pull-right">
+                                    <button class="btn btn-default">Invite</button>
+                                </span>
+                            </div>
+
+                            <button type="button" class="btn btn-default" id="modal-inviteMembers-to-createTeam-trigger">Back</button>
+                            <button type="submit" class="btn btn-success" id="modal-inviteMembers-to-assignAdmin-trigger">Next</button>
                         </div>
                     </div>
                 </div>

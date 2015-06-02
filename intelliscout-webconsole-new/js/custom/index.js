@@ -60,9 +60,14 @@ $("#modal-viewTeamInfo-trigger").click(function(){
     $('#modal-view-team-info').modal('show');
 });
 
-//Invite Members
+// Invite Members
 $("#modal-inviteMembers-trigger").click(function(){
     $('#modal-invite-members').modal('show');
+});
+
+// User Profile
+$("#modal-userProfile-trigger").click(function(){
+    $('#modal-user-profile').modal('show');
 });
 
 function setJumpSecOpacity() {
@@ -82,14 +87,20 @@ $(document).ready(function() {
 //********** Filter Flyover *********//
 // Filter Button
 $(document).on('click', "#filter", function(e){
+    if ($('.sec-filter').css('display') == 'none') {
+        $('.sec-filter').toggle();
+        $('.sec-filter').addClass('animated');
+    }
     if ($('#filter').attr('value') == 'closed') {
-        $('.sec-filter').slideDown('slow');
+        $('.sec-filter').removeClass('slideOutUp');
+        $('.sec-filter').addClass('slideInDown');
         $('.fa-filter').css('color','#18b750');
         $('#filter').css('color','#18b750');
         $('#filter').attr('value', 'open');
     }
     else {
-        $('.sec-filter').slideUp('slow');
+        $('.sec-filter').removeClass('slideInDown');
+        $('.sec-filter').addClass('slideOutUp');
         $('.fa-filter').removeAttr('style');
         $('#filter').removeAttr('style');
         $('#filter').attr('value', 'closed');

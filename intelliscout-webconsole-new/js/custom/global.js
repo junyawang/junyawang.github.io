@@ -124,7 +124,9 @@ function tabSwipe(isLeft) {
 }
 
 $("#modal-global-search").swipe({
-    swipeLeft: function() { tabSwipe(true); },
+    swipeLeft: function() {
+     tabSwipe(true); 
+ },
     swipeRight: function() { tabSwipe(false); },
 });
 
