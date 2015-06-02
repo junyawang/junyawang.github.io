@@ -258,7 +258,7 @@
                     </div>
                     
                     <div class="filter-buttons">
-                        <button class="btn btn-success"><i class="fa fa-search"></i> Search</button>
+                        <button class="btn btn-success"><i class="fa fa-search"></i> Filter</button>
                         <button class="btn btn-default">Reset</button>
                     </div>
                 </div>
@@ -357,9 +357,8 @@
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle navbar-lower-title" data-toggle="dropdown" role="button" aria-expanded="false">Team 1 <i class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown-menu" role="menu">
-                                        <li><a href="#" id="modal-editTeam-trigger">Edit Team</a></li>
-                                        <li><a href="#" id="modal-inviteMembers-trigger">Invite Members</a></li>
-                                        <li><a href="#">Remove Members</a></li>
+                                        <li><a href="#" id="modal-viewTeamInfo-trigger">View Team Information</a></li>
+                                        <li><a href="#" id="modal-viewMembers-trigger">View Members</a></li>
                                     </ul>
                                 </li>
 
@@ -587,7 +586,7 @@
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle navbar-lower-title" data-toggle="dropdown" role="button" aria-expanded="false">New Team <i class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown-menu" role="menu">
-                                        <li><a href="#" id="modal-editTeam-trigger">Edit Team</a></li>
+                                        <li><a href="#" id="modal-editTeamInfo-trigger">Edit Team Information</a></li>
                                         <li><a href="#" id="modal-inviteMembers-trigger">Invite Members</a></li>
                                         <li><a href="#">Remove Members</a></li>
                                     </ul>
@@ -710,7 +709,7 @@
                         <form class="row">
                             <div class="form-group col-md-12">
                                 <label>Team Name</label>
-                                <input type="text" class="form-control" id="inputTeamName" placeholder="">
+                                <input type="text" class="form-control" id="inputTeamName" placeholder="" value="New Team">
                             </div>
                             <div class="form-group col-md-12">
                                 <label>Team Description (Optional)</label>
@@ -725,26 +724,53 @@
     </div>
 
     <!-- MODAL - Edit Team -->
-    <div class="modal fade" id="modal-edit-team" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="modal-edit-team-info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="container">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h1>Edit Team</h1>
-                        <p>Change <strong>Team 1</strong>'s name and description.</p>
+                        <h1>Edit Team Information</h1>
+                        <p>Change <strong>New Team</strong>'s name and description.</p>
                     </div>
                     <div class="modal-body">   
                         <form class="row">
                             <div class="form-group col-md-12">
                                 <label>Team Name</label>
-                                <input type="text" class="form-control" id="inputTeamName" value="Team 1">
+                                <input type="text" class="form-control" id="inputTeamName" value="New Team">
                             </div>
                             <div class="form-group col-md-12">
                                 <label>Team Description</label>
                                 <textarea class="form-control"></textarea>
                             </div>
-                            <button type="button" class="btn btn-success">Save</button>
+                            <button type="button" class="btn btn-success" data-dismiss="modal">Save</button>
+                        </form>
+                    </div>
+                </div>
+            </div><!-- /modal-dialogue -->
+        </div>
+    </div>
+
+    <!-- MODAL - View Team Info -->
+    <div class="modal fade" id="modal-view-team-info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="container">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h1>View Team 1 Information</h1>
+                    </div>
+                    <div class="modal-body">   
+                        <form class="row">
+                            <div class="form-group col-md-12">
+                                <label>Team Name</label>
+                                <input type="text" class="form-control" id="inputTeamName" value="Team 1" disabled>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label>Team Description</label>
+                                <textarea class="form-control" disabled></textarea>
+                            </div>
+                            <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
                         </form>
                     </div>
                 </div>

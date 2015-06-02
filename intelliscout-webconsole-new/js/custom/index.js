@@ -26,33 +26,38 @@ $("#modal-report-to-note-trigger").click(function(){
 //********** Create Team Workflow *********//
 
 // Show createTeam-to-inviteMembers
-$("#modal-createTeam-to-inviteMembers-trigger").click(function(){
-    $('#modal-invite-members-new-team').modal('show');
-    $('#modal-create-team').modal('hide');
-});
+// $("#modal-createTeam-to-inviteMembers-trigger").click(function(){
+//     $('#modal-invite-members-new-team').modal('show');
+//     $('#modal-create-team').modal('hide');
+// });
 
 // Show inviteMembers-to-createTeam
-$("#modal-inviteMembers-to-createTeam-trigger").click(function(){
-    $('#modal-invite-members-new-team').modal('hide');
-    $('#modal-create-team').modal('show');
-});
+// $("#modal-inviteMembers-to-createTeam-trigger").click(function(){
+//     $('#modal-invite-members-new-team').modal('hide');
+//     $('#modal-create-team').modal('show');
+// });
 
 // Show inviteMembers-to-assignAdmin
-$("#modal-inviteMembers-to-assignAdmin-trigger").click(function(){
-    $('#modal-assign-team-admin').modal('show');
-    $('#modal-invite-members-new-team').modal('hide');
-});
+// $("#modal-inviteMembers-to-assignAdmin-trigger").click(function(){
+//     $('#modal-assign-team-admin').modal('show');
+//     $('#modal-invite-members-new-team').modal('hide');
+// });
 
 // Show assignAdmin-to-inviteMembers
-$("#modal-assignAdmin-to-inviteMembers-trigger").click(function(){
-    $('#modal-assign-team-admin').modal('hide');
-    $('#modal-invite-members-new-team').modal('show');
-});
+// $("#modal-assignAdmin-to-inviteMembers-trigger").click(function(){
+//     $('#modal-assign-team-admin').modal('hide');
+//     $('#modal-invite-members-new-team').modal('show');
+// });
 
 //********** Team Management *********//
 // Edit Team
-$("#modal-editTeam-trigger").click(function(){
-    $('#modal-edit-team').modal('show');
+$("#modal-editTeamInfo-trigger").click(function(){
+    $('#modal-edit-team-info').modal('show');
+});
+
+// View Team Info
+$("#modal-viewTeamInfo-trigger").click(function(){
+    $('#modal-view-team-info').modal('show');
 });
 
 //Invite Members
