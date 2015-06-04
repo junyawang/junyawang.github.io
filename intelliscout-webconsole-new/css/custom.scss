@@ -297,6 +297,12 @@ body {
         }
     }
 
+    .sec-weather {
+        padding: 16px;
+        background-color: $aqua;
+        color: white;
+
+    }
     .sec-view-report {
         margin: 60px 0;
         
@@ -404,6 +410,18 @@ img.qr-code {
     border: 1px solid $greyMid;
 }
 /* ---- Billings ---- */
+#billings {
+    h3 {
+        font-weight: 600;
+    }
+
+    h4 {
+        font-size: 1.2em;
+        margin-top: 14px;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+}
 
 /* ---- Members ---- */
 #members {

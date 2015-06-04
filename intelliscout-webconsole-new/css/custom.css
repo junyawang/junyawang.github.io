@@ -1429,6 +1429,10 @@ body {
       -moz-transition: all 0.25s ease;
       -o-transition: all 0.25s ease;
       transition: all 0.25s ease; }
+  .page-view-report .sec-weather {
+    padding: 16px;
+    background-color: #31b5cd;
+    color: white; }
   .page-view-report .sec-view-report {
     margin: 60px 0; }
     .page-view-report .sec-view-report .row:not(:first-child) {
@@ -1516,6 +1520,14 @@ img.qr-code {
   border: 1px solid #c8c7cc; }
 
 /* ---- Billings ---- */
+#billings h3 {
+  font-weight: 600; }
+#billings h4 {
+  font-size: 1.2em;
+  margin-top: 14px;
+  margin-bottom: 10px;
+  font-weight: 600; }
+
 /* ---- Members ---- */
 #members .dropdown button,
 #members input {
