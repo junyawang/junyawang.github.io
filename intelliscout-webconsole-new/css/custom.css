@@ -1380,12 +1380,17 @@ body {
   margin-top: 120px; }
   .page-view-report .view-report-title {
     margin-bottom: 80px; }
-    .page-view-report .view-report-title .report-number {
+    .page-view-report .view-report-title h1.report-number {
+      display: inline-block;
       font-size: 2.2em;
       font-weight: 400; }
-    .page-view-report .view-report-title .report-author {
+    .page-view-report .view-report-title h2.report-author {
       font-size: 1.2em;
       font-weight: 400; }
+    .page-view-report .view-report-title .btn-export {
+      display: inline-block;
+      float: right;
+      margin-top: 16px; }
   .page-view-report .panel-header {
     padding: 16px;
     margin-bottom: 40px;
@@ -1432,42 +1437,41 @@ body {
       -moz-transition: all 0.25s ease;
       -o-transition: all 0.25s ease;
       transition: all 0.25s ease; }
-  .page-view-report .sec-weather {
-    text-align: center;
-    padding: 32px;
-    background-color: #31b5cd;
-    color: white; }
-    .page-view-report .sec-weather .weather-condition-icon {
-      font-size: 6em; }
-    .page-view-report .sec-weather .weather-condition {
-      display: block;
-      text-align: center;
-      font-size: 4em; }
-    .page-view-report .sec-weather .weather-location {
-      display: block;
-      text-align: center;
-      font-size: 1.4em; }
-    .page-view-report .sec-weather .weather-temperature .weather-temperature-number {
-      font-size: 6.8em;
-      font-weight: 300; }
-    .page-view-report .sec-weather .weather-temperature .weather-degree {
-      font-size: 3em;
-      vertical-align: top; }
-    .page-view-report .sec-weather .weather-others {
-      margin-top: 16px;
-      text-align: center;
-      font-size: 1.4em;
-      font-weight: 400; }
-    .page-view-report .sec-weather .weather-others span:not(first-child) {
-      padding-left: 16px; }
   .page-view-report .sec-view-report {
     margin: 60px 0; }
     .page-view-report .sec-view-report .row:not(:first-child) {
       margin-top: 30px; }
 
-.btn-export {
-  display: inline-block;
-  float: right; }
+.sec-weather {
+  text-align: center;
+  padding: 20px;
+  background-color: #31b5cd;
+  color: white;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2); }
+  .sec-weather .weather-condition-icon {
+    font-size: 2.6em; }
+  .sec-weather .weather-condition {
+    display: block;
+    text-align: center;
+    font-size: 1.4em;
+    margin-top: 10px; }
+  .sec-weather .weather-location {
+    display: block;
+    text-align: center;
+    font-size: 1em; }
+  .sec-weather .weather-temperature .weather-temperature-number {
+    font-size: 2.4em;
+    font-weight: 300; }
+  .sec-weather .weather-temperature .weather-degree {
+    font-size: 1.4em;
+    vertical-align: top; }
+  .sec-weather .weather-others {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 400; }
+  .sec-weather .weather-others span:not(first-child) {
+    padding-left: 16px; }
 
 .panel-section {
   background-color: white;

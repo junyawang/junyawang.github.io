@@ -137,6 +137,25 @@
     .sec-filter .btn {
       min-width: 100px; }
 
+  /* ---- Weather Section ---- */
+  .sec-weather {
+    padding: 32px; }
+    .sec-weather .weather-condition-icon {
+      font-size: 5.2em; }
+    .sec-weather .weather-condition {
+      font-size: 3.8em; }
+    .sec-weather .weather-location {
+      font-size: 1.2em; }
+    .sec-weather .weather-temperature .weather-temperature-number {
+      font-size: 6.2em;
+      font-weight: 300; }
+    .sec-weather .weather-temperature .weather-degree {
+      font-size: 3em; }
+    .sec-weather .weather-others {
+      margin-top: 16px;
+      font-size: 1.2em;
+      font-weight: 400; }
+
   /* -------- Global Search ---------- */
   #modal-global-search .label-photo,
   #modal-global-search .label-video,
@@ -157,7 +176,25 @@
   .sec-filter .bootstrap-select {
     width: 38% !important; }
   .sec-filter .btn {
-    min-width: 120px; } }
+    min-width: 120px; }
+
+  .sec-weather {
+    padding: 32px; }
+    .sec-weather .weather-condition-icon {
+      font-size: 6em; }
+    .sec-weather .weather-condition {
+      font-size: 4em; }
+    .sec-weather .weather-location {
+      font-size: 1.4em; }
+    .sec-weather .weather-temperature .weather-temperature-number {
+      font-size: 6.8em;
+      font-weight: 300; }
+    .sec-weather .weather-temperature .weather-degree {
+      font-size: 3em; }
+    .sec-weather .weather-others {
+      margin-top: 16px;
+      font-size: 1.4em;
+      font-weight: 400; } }
 /* Large devices (large desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .modal-dialog {

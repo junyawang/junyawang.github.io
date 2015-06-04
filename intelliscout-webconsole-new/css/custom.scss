@@ -241,14 +241,21 @@ body {
     .view-report-title {
         margin-bottom: 80px;
 
-        .report-number {
+        h1.report-number {
+            display: inline-block;
             font-size: 2.2em;
             font-weight: 400;
         }
 
-        .report-author {
+        h2.report-author {
             font-size: 1.2em;
             font-weight: 400;
+        }
+
+        .btn-export {
+            display: inline-block;
+            float: right;
+            margin-top: 16px;
         }
     }
 
@@ -298,53 +305,6 @@ body {
         }
     }
 
-    .sec-weather {
-        text-align: center;
-        padding: 32px;
-        background-color: $aqua;
-        color: white;
-        
-        .weather-condition-icon {
-            font-size: 6em;
-        }
-
-        .weather-condition {
-            display: block;
-            text-align: center;
-            font-size: 4em;
-        }
-
-        .weather-location {
-            display: block;
-            text-align: center;
-            font-size: 1.4em;
-        }
-
-        .weather-temperature {
-            .weather-temperature-number {
-                font-size: 6.8em;
-                font-weight: 300;
-            }
-
-            .weather-degree {
-                font-size: 3em;
-                vertical-align: top;
-            }
-
-        }
-
-        .weather-others {
-            margin-top: 16px;
-            text-align: center;
-            font-size: 1.4em;
-            font-weight: 400;
-        }
-
-        .weather-others span:not(first-child){
-            padding-left: 16px;
-        }
-    }
-
     .sec-view-report {
         margin: 60px 0;
         
@@ -354,9 +314,53 @@ body {
     }
 }
 
-.btn-export {
-    display: inline-block;
-    float: right;
+.sec-weather {
+    text-align: center;
+    padding: 20px;
+    background-color: $aqua;
+    color: white;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+    
+    .weather-condition-icon {
+        font-size: 2.6em;
+    }
+
+    .weather-condition {
+        display: block;
+        text-align: center;
+        font-size: 1.4em;
+        margin-top: 10px;
+    }
+
+    .weather-location {
+        display: block;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .weather-temperature {
+        .weather-temperature-number {
+            font-size: 2.4em;
+            font-weight: 300;
+        }
+
+        .weather-degree {
+            font-size: 1.4em;
+            vertical-align: top;
+        }
+
+    }
+
+    .weather-others {
+        margin-top: 16px;
+        text-align: center;
+        font-size: 1em;
+        font-weight: 400;
+    }
+
+    .weather-others span:not(first-child){
+        padding-left: 16px;
+    }
 }
 
 .panel-section {

@@ -188,6 +188,40 @@
             min-width: 100px;
         }
     }
+
+    /* ---- Weather Section ---- */
+    .sec-weather {        
+        padding: 32px;
+        
+        .weather-condition-icon {
+            font-size: 5.2em;
+        }
+
+        .weather-condition {
+            font-size: 3.8em;
+        }
+
+        .weather-location {
+            font-size: 1.2em;
+        }
+
+        .weather-temperature {
+            .weather-temperature-number {
+                font-size: 6.2em;
+                font-weight: 300;
+            }
+
+            .weather-degree {
+                font-size: 3em;
+            }
+        }
+
+        .weather-others {
+            margin-top: 16px;
+            font-size: 1.2em;
+            font-weight: 400;
+        }
+    }
     
     /* -------- Global Search ---------- */
     #modal-global-search {
@@ -221,6 +255,39 @@
 
         .btn {
             min-width: 120px;
+        }
+    }
+
+    .sec-weather {        
+        padding: 32px;
+        
+        .weather-condition-icon {
+            font-size: 6em;
+        }
+
+        .weather-condition {
+            font-size: 4em;
+        }
+
+        .weather-location {
+            font-size: 1.4em;
+        }
+
+        .weather-temperature {
+            .weather-temperature-number {
+                font-size: 6.8em;
+                font-weight: 300;
+            }
+
+            .weather-degree {
+                font-size: 3em;
+            }
+        }
+
+        .weather-others {
+            margin-top: 16px;
+            font-size: 1.4em;
+            font-weight: 400;
         }
     }
 }
