@@ -120,7 +120,7 @@
                             <div class="col-lg-12">
                                 <section class="panel panel-default">
                                     <div class="panel-heading">
-                                        <h1>Organization Account</h1>
+                                        <h3>Organization Account</h3>
                                     </div>
                                     <div class="panel-body">
                                         <form class="row">
@@ -174,17 +174,33 @@
                                         <button type="button" class="btn btn-default" id="">Edit <i class="fa fa-pencil"></i></button>
                                     </div>
                                     <div class="panel-body">
-                                        <h4>Full Name</h4>
-                                        <span>Craig Ganssle</span>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <h4>Billing Plan</h4>
+                                                <span>Explorer Plan</span>
+                                                <span>$15.99/user/month</span>
+                                                <span>Monthly (2015/02/14-2016/02/14)</span>
+                                            </div>
+                                            
+                                            <div class="col-md-4">
+                                                <h4>Payment Method</h4>
+                                                <span>Credit Card</span>
+                                                <span>Craig Ganssle</span>
+                                                <span>Visa (XXXX-XXXX-XXXX-1234)</span>
+                                                <span>Exp 05/2017</span>
+                                            </div>
 
-                                        <h4>Payment Type</h4>
-                                        <span>Visa (****-****-****-1234)</span>
-                                        
-                                        <h4>Billing Plan</h4>
-                                        <span>Monthly (2015/02/14-2016/02/14)</span>
-
-                                        <h4>Billing Address</h4>
-                                        <span>123 Main Street, Vancouver, B.C.<span>
+                                            <div class="col-md-4">
+                                            <h4>Billing Address</h4>
+                                                <address>
+                                                    Craig Ganssle<br>
+                                                    1234 Example Street<br>
+                                                    Vancouver, BC V6B 2Y5<br>
+                                                    Canada<br>
+                                                    Phone: 778-123-4567<br>
+                                                </address>
+                                            </div>
+                                        </div>
                                     </div>
                                 </section>
 
@@ -207,7 +223,7 @@
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td>15/02/16</td>
+                                                        <td>15/01/02</td>
                                                         <td>#1234</td> 
                                                         <td>Visa ****1234 approved</td>
                                                         <td></td>
@@ -216,7 +232,7 @@
                                                     <tr>
                                                         <td>15/01/01</td>
                                                         <td>#1234</td> 
-                                                        <td>IntelliScout Subscription A</td>
+                                                        <td>IntelliScout Explorer Plan - December 2014</td>
                                                         <td>$99.00</td>
                                                         <td></td>
                                                     </tr>
@@ -257,7 +273,7 @@
                                   </button>
                                   <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
                                     <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Full Name</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Tag Name</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Username</a></li>
                                   </ul>
                                 </div>
                             </div>
@@ -290,6 +306,7 @@
                                     </a>
                                     <span class="user-role">Primary Org Admin</span>
                                     <span class="user-username">@craig</span>
+                                    <span class="user-job-title">CEO</span>
                                     <span class="user-email">craig@example.com</span>
                                 </div>
                                 <div class="panel-collapse collapse" id="collapseUser1">
@@ -309,6 +326,7 @@
                                     </a>
                                     <span class="user-role">Org Admin</span>
                                     <span class="user-username">@jeremy</span>
+                                    <span class="user-job-title">Development Manager</span>
                                     <span class="user-email">jeremy@example.com</span>
                                 </div>
                                 <div class="panel-collapse collapse" id="collapseUser2">
@@ -334,6 +352,7 @@
                                     </a>
                                     <span class="user-role">Member</span>
                                     <span class="user-username">@junya</span>
+                                    <span class="user-job-title">UI/UX Designer</span>
                                     <span class="user-email">junya@example.com</span>
                                 </div>
                                 <div class="panel-collapse collapse" id="collapseUser3">
@@ -361,7 +380,7 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button>
                                 <h1>Invite Members</h1>
                                 <p>Inviting more members to join your organization. </p>
                             </div>

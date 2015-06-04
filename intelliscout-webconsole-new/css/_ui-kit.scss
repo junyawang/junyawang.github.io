@@ -13,6 +13,12 @@
     color: $greyDark;
 }
 
+.user-job-title {
+    font-size: 1.1em;
+    font-weight: 400;
+    color: $greyDark;
+}
+
 .user-username {
     font-size: 1em;
     font-weight: 600;
@@ -707,7 +713,6 @@ textarea {
                 display: inline-block;
                 float: right;
                 vertical-align: middle;
-                width: 100%;
             }
 
             li.report-status {

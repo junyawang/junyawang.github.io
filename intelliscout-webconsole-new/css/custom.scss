@@ -19,7 +19,6 @@
 
 .alignCenter {
 	margin: 0 auto;
-	text-align: center;
 }
 
 .hidden {
@@ -234,6 +233,8 @@ body {
 }
 
 /* =========== VIEW REPORT ============ */
+
+
 .page-view-report {
     margin-top: 120px;
     
@@ -298,11 +299,52 @@ body {
     }
 
     .sec-weather {
-        padding: 16px;
+        text-align: center;
+        padding: 32px;
         background-color: $aqua;
         color: white;
+        
+        .weather-condition-icon {
+            font-size: 6em;
+        }
 
+        .weather-condition {
+            display: block;
+            text-align: center;
+            font-size: 4em;
+        }
+
+        .weather-location {
+            display: block;
+            text-align: center;
+            font-size: 1.4em;
+        }
+
+        .weather-temperature {
+            .weather-temperature-number {
+                font-size: 6.8em;
+                font-weight: 300;
+            }
+
+            .weather-degree {
+                font-size: 3em;
+                vertical-align: top;
+            }
+
+        }
+
+        .weather-others {
+            margin-top: 16px;
+            text-align: center;
+            font-size: 1.4em;
+            font-weight: 400;
+        }
+
+        .weather-others span:not(first-child){
+            padding-left: 16px;
+        }
     }
+
     .sec-view-report {
         margin: 60px 0;
         
@@ -403,6 +445,14 @@ img.qr-code {
 
 /* =========== DASHBOARD ============ */
 
+#org-account,
+#billings,
+#members {
+    h3 {
+        font-weight: 600;
+    }
+}
+
 /* ---- Org Account ---- */
 .org-logo-upload {
     max-width: 100px;
@@ -411,15 +461,29 @@ img.qr-code {
 }
 /* ---- Billings ---- */
 #billings {
-    h3 {
-        font-weight: 600;
-    }
+    .panel-heading {
+        h3 {
+            display: inline-block;
+        }  
 
+        button {
+            float: right;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+    }
+    
     h4 {
         font-size: 1.2em;
         margin-top: 14px;
         margin-bottom: 10px;
         font-weight: 600;
+    }
+
+    .panel-body {
+        span {
+            display: block;
+        }
     }
 }
 
@@ -462,6 +526,16 @@ img.qr-code {
             float: right;
         }
 
+        .user-username {
+            clear: both;
+            float: left;
+        }
+
+        .user-job-title {
+            clear: both;
+            float: left;
+        }
+
         .user-settings {
             float: right;
             margin-left: 10px;
@@ -473,13 +547,8 @@ img.qr-code {
             font-size: 0.8em;
         }
 
-        .user-username {
-            clear: both;
-            float: left;
-        }
-
         .user-email {
-            padding-left: 5px;
+            clear: both;
             float: left;
         }
     }
@@ -590,6 +659,39 @@ form .btn.btn-add-invitation {
 .modal-carousel {
     .container {
         width: 90%;
+    }
+}
+
+/* =========== MODAL - USER PROFILE ============ */
+.modal-user-profile {
+
+    .user-fullname {
+        clear: both;
+        float: left;
+    }
+
+    .user-role {
+        clear: both;
+        float: left;
+    }
+
+    .user-username {
+        clear: both;
+        float: left;
+    }
+
+    .user-job-title {
+        clear: both;
+        float: left;
+    }
+
+    .user-email {
+        clear: both;
+        float: left;
+    }
+
+    .user-profile-content {
+        margin-bottom: 32px;
     }
 }
 
@@ -717,20 +819,23 @@ form .btn.btn-add-invitation {
             float: left;
         }
 
-        .user-role {
-            clear: both;
-            float: left;
-            color: $greyDark;
-            font-size: 1.1em;
-        }
-
         .user-username {
             clear: both;
             float: left;
         }
 
+        .user-role {
+            clear: both;
+            float: left;
+        }
+
+        .user-job-title {
+            clear: both;
+            float: left;
+        }
+
         .user-email {
-            padding-left: 5px;
+            clear: both;
             float: left;
         }
     }

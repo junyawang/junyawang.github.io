@@ -66,8 +66,8 @@ $("#modal-inviteMembers-trigger").click(function(){
 });
 
 // User Profile
-$("#modal-userProfile-trigger").click(function(){
-    $('#modal-user-profile').modal('show');
+$("#modal-jeremyProfile-trigger").click(function(){
+    $('#modal-jeremy-profile').modal('show');
 });
 
 function setJumpSecOpacity() {
