@@ -119,7 +119,6 @@
 
     .sec-filter {
         left: $sidebar-width;
-        height: 210px;
 
         .form-group {
             margin-bottom: 15px;
@@ -250,7 +249,7 @@
         }
 
         .bootstrap-select {
-            width: 38% !important;
+            width: 40% !important;
         }
 
         .btn {
@@ -299,18 +298,23 @@
     }
 
     .sec-filter {
-        height: 150px;
 
         .start-date {
             width: 13%;
+            input {
+                width: 100% !important;
+            }
         }
 
         .to-date {
-            width: 1.5%;
+            width: 3%;
         }
 
         .end-date {
             width: 13%;
+            input {
+                width: 100% !important;
+            }
         }
 
         .filter-icon {
@@ -330,7 +334,7 @@
         }
 
         .bootstrap-select {
-            width: 15% !important;
+            width: 22% !important;
         }
 
         .checkbox {

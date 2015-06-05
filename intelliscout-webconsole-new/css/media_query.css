@@ -93,8 +93,7 @@
     width: 100%; }
 
   .sec-filter {
-    left: 230px;
-    height: 210px; }
+    left: 230px; }
     .sec-filter .form-group {
       margin-bottom: 15px; }
     .sec-filter .search-keyword-group {
@@ -174,7 +173,7 @@
     margin-left: 0.8em;
     width: 2%; }
   .sec-filter .bootstrap-select {
-    width: 38% !important; }
+    width: 40% !important; }
   .sec-filter .btn {
     min-width: 120px; }
 
@@ -200,38 +199,40 @@
   .modal-dialog {
     width: 100%; }
 
-  .sec-filter {
-    height: 150px; }
-    .sec-filter .start-date {
-      width: 13%; }
-    .sec-filter .to-date {
-      width: 1.5%; }
-    .sec-filter .end-date {
-      width: 13%; }
-    .sec-filter .filter-icon {
-      width: auto;
-      margin-left: 5px; }
-    .sec-filter .token-div {
-      width: 94%; }
-    .sec-filter .user-icon {
-      text-align: center;
-      margin-right: 0.6em;
-      margin-left: 0.6em;
-      width: 1.5%; }
-    .sec-filter .bootstrap-select {
-      width: 15% !important; }
-    .sec-filter .checkbox {
-      margin-top: 0px;
-      margin-right: 0px;
-      padding-left: 15px; }
-    .sec-filter .filter-buttons {
-      margin-top: 0px;
-      float: right;
-      position: relative;
-      right: 2%; }
-    .sec-filter .btn {
-      min-width: 100px;
-      margin-top: 0px; }
+  .sec-filter .start-date {
+    width: 13%; }
+    .sec-filter .start-date input {
+      width: 100% !important; }
+  .sec-filter .to-date {
+    width: 3%; }
+  .sec-filter .end-date {
+    width: 13%; }
+    .sec-filter .end-date input {
+      width: 100% !important; }
+  .sec-filter .filter-icon {
+    width: auto;
+    margin-left: 5px; }
+  .sec-filter .token-div {
+    width: 94%; }
+  .sec-filter .user-icon {
+    text-align: center;
+    margin-right: 0.6em;
+    margin-left: 0.6em;
+    width: 1.5%; }
+  .sec-filter .bootstrap-select {
+    width: 22% !important; }
+  .sec-filter .checkbox {
+    margin-top: 0px;
+    margin-right: 0px;
+    padding-left: 15px; }
+  .sec-filter .filter-buttons {
+    margin-top: 0px;
+    float: right;
+    position: relative;
+    right: 2%; }
+  .sec-filter .btn {
+    min-width: 100px;
+    margin-top: 0px; }
 
   /* --- MODAL NOTE --- */
   .modal-note {

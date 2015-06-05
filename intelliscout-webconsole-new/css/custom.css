@@ -1328,10 +1328,9 @@ body {
   position: fixed;
   background-color: white;
   top: 116px;
-  bottom: 0;
   left: 0;
   right: 0;
-  height: 290px;
+  height: auto;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
@@ -1362,7 +1361,7 @@ body {
   .sec-filter .start-date {
     width: 40%; }
   .sec-filter .to-date {
-    width: 10%;
+    width: 9%;
     font-size: 1.2em;
     text-align: center;
     position: relative;
@@ -1372,6 +1371,8 @@ body {
   .sec-filter .bootstrap-select {
     display: inline-block !important;
     width: 91% !important; }
+    .sec-filter .bootstrap-select ul.dropdown-menu.inner.selectpicker {
+      max-height: 50vh !important; }
   .sec-filter .filter-buttons {
     text-align: center; }
 
