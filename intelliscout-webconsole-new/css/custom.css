@@ -212,6 +212,15 @@
   bottom: 100%;
   margin-bottom: 2px; }
 
+.btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .btn-default:hover, .open > .dropdown-toggle.btn-default {
+  background-color: #efeff4;
+  border-color: #c8c7cc; }
+
+.btn-group.open .dropdown-toggle {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
+
 /* ------------- Form --------------*/
 form .row {
   padding-left: 15px;
@@ -1157,6 +1166,15 @@ input[type="checkbox"] .styled:checked + label::before {
 input[type="checkbox"] .styled:checked + label::after {
   color: #fff; }
 
+.bootstrap-datetimepicker-widget table td.active,
+.bootstrap-datetimepicker-widget table td.active:hover {
+  background-color: #28a55e;
+  text-shadow: none; }
+
+.bootstrap-datetimepicker-widget table td span.active {
+  background-color: #28a55e;
+  text-shadow: none; }
+
 /* ------------ PAGINATION ---------- */
 nav.nav-pagination {
   clear: both;
@@ -1371,10 +1389,27 @@ body {
   .sec-filter .bootstrap-select {
     display: inline-block !important;
     width: 91% !important; }
-    .sec-filter .bootstrap-select ul.dropdown-menu.inner.selectpicker {
+    .sec-filter .bootstrap-select ul.dropdown-menu.inner {
       max-height: 50vh !important; }
   .sec-filter .filter-buttons {
     text-align: center; }
+
+.bs-actionsbox .btn-group button {
+  font-size: 1em;
+  padding: 5px 10px;
+  font-weight: 400;
+  min-width: 0; }
+
+.bootstrap-select button {
+  font-weight: 400; }
+
+.bootstrap-select.btn-group .dropdown-menu li a.opt {
+  padding-left: 1em; }
+
+.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a span.check-mark {
+  font-size: 0.6em;
+  color: #28a55e;
+  margin-top: 12px; }
 
 /* =========== VIEW REPORT ============ */
 .page-view-report {

@@ -203,6 +203,14 @@
   bottom: 100%;
   margin-bottom: 2px;
 }
+.btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .btn-default:hover, .open>.dropdown-toggle.btn-default {
+    background-color: $greyLight;
+    border-color: $greyMid;
+}
+
+.btn-group.open .dropdown-toggle {
+    @include box-shadow (none);
+}
 
 /* ------------- Form --------------*/
 form {
@@ -1381,6 +1389,18 @@ input[type="checkbox"] .styled:checked + label::before {
 input[type="checkbox"] .styled:checked + label::after {
     color: #fff;
 }
+
+.bootstrap-datetimepicker-widget table td.active,
+.bootstrap-datetimepicker-widget table td.active:hover {
+    background-color: $greenDark;
+    text-shadow: none;
+}
+
+.bootstrap-datetimepicker-widget table td span.active {
+    background-color: $greenDark;
+    text-shadow: none;
+}
+
 
 /* ------------ PAGINATION ---------- */
 nav.nav-pagination {

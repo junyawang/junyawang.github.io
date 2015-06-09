@@ -112,7 +112,9 @@ $(window).scroll(function() {
 });
 
 //********** Team Select *********//
-$('.selectpicker').selectpicker();
+
+$('.selectpicker').selectpicker('selectAll');
+
 $('#search-keyword').tokenfield({
     showAutocompleteOnFocus: true
 });

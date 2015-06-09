@@ -225,7 +225,7 @@ body {
         display: inline-block !important;
         width: 91% !important;
 
-        ul.dropdown-menu.inner.selectpicker {
+        ul.dropdown-menu.inner {
             max-height: 50vh !important;
         }
     }
@@ -233,6 +233,26 @@ body {
     .filter-buttons {
         text-align: center;
     }
+}
+
+.bs-actionsbox .btn-group button {
+        font-size: 1em;
+        padding: 5px 10px;
+        font-weight: 400;
+        min-width: 0;
+}
+
+.bootstrap-select button {
+    font-weight: 400;
+}
+.bootstrap-select.btn-group .dropdown-menu li a.opt {
+    padding-left: 1em;
+}
+
+.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a span.check-mark {
+    font-size: 0.6em;
+    color: $greenDark;
+    margin-top: 12px;
 }
 
 /* =========== VIEW REPORT ============ */
