@@ -29,6 +29,16 @@
     margin-top: $navbar-main-height + $navbar-lower-height;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none; // for IE9
+}
+
 textarea,
 input {
     outline: none;
@@ -375,15 +385,29 @@ body {
     }
 
     .weather-others {
-        margin-top: 16px;
+        margin: 16px auto 0 auto;
         text-align: center;
         font-size: 1em;
         font-weight: 400;
+        vertical-align: middle;
+
+        ul {
+            li {
+                display: inline-block;
+                vertical-align: top;
+
+                div {
+                    display: inline-block;
+                    font-size: 1.2em;
+                }
+            }
+
+            li:not(:first-child) {
+                padding-left: 16px;
+            }
+        }
     }
 
-    .weather-others span:not(first-child){
-        padding-left: 16px;
-    }
 }
 
 .panel-section {

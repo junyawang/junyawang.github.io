@@ -1233,6 +1233,14 @@ nav.nav-pagination {
 .main-content {
   margin-top: 116px; }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+li {
+  list-style: none; }
+
 textarea,
 input {
   outline: none; }
@@ -1502,12 +1510,19 @@ body {
     font-size: 1.4em;
     vertical-align: top; }
   .sec-weather .weather-others {
-    margin-top: 16px;
+    margin: 16px auto 0 auto;
     text-align: center;
     font-size: 1em;
-    font-weight: 400; }
-  .sec-weather .weather-others span:not(first-child) {
-    padding-left: 16px; }
+    font-weight: 400;
+    vertical-align: middle; }
+    .sec-weather .weather-others ul li {
+      display: inline-block;
+      vertical-align: top; }
+      .sec-weather .weather-others ul li div {
+        display: inline-block;
+        font-size: 1.2em; }
+    .sec-weather .weather-others ul li:not(:first-child) {
+      padding-left: 16px; }
 
 .panel-section {
   background-color: white;
@@ -1845,5 +1860,3 @@ form .btn.btn-add-invitation {
     clear: both;
     margin: 6px 0;
     font-size: 1em; }
-
-/*# sourceMappingURL=custom.css.map */
