@@ -60,6 +60,11 @@ $("#modal-viewTeamInfo-trigger").click(function(){
     $('#modal-view-team-info').modal('show');
 });
 
+// View Members
+$("#modal-viewMembers-trigger").click(function(){
+    $('#modal-view-members').modal('show');
+});
+
 // Invite Members
 $("#modal-inviteMembers-trigger").click(function(){
     $('#modal-invite-members').modal('show');

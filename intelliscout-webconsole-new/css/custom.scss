@@ -107,6 +107,12 @@ h4 {
     margin-bottom: 16px;
 }
 
+h5 {
+    font-size: 1.3em;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
 p {
 	font-size: 1.2em;
 	font-weight: 300;
@@ -663,6 +669,79 @@ form .btn.btn-add-invitation {
     margin-left: 0;
     font-weight: 400;
     font-size: 1em;
+}
+
+
+/* =========== MODAL - View Members ============ */
+#modal-view-members {
+     .list-member {
+        background-color: white;
+        margin-bottom: 0px;
+        
+        .accordion-heading {
+            padding: 8px 8px;
+
+            .user-fullname {
+                display: inline-block;
+                float: left;
+            }
+
+            .user-role {
+                float: right;
+            }
+
+            .user-username {
+                display: inline-block;
+                // clear: none;
+                float: left;
+            }
+
+            // .user-job-title {
+            //     clear: both;
+            //     float: left;
+            // }
+
+            .user-settings.btn {
+                min-width: 1px;
+                padding: 4px 8px;
+                font-size: 0.8em;
+            }
+
+            // .user-email {
+            //     clear: both;
+            //     float: left;
+            // }
+        }
+
+        .panel-collapse {
+            padding: 16px;
+            border-top: 1px solid $greyLight;
+
+            .btn {
+                width: 100%;
+                margin-top: 2px;
+                margin-bottom: 2px;
+            }
+
+            .btn-sm {
+                padding: 5px 10px;
+                font-size: 1em;
+                line-height: 1.5;
+            }
+        }
+    }
+
+    .list-member:first-child {
+        border-top: 1px solid $greyLight;
+    }
+
+    .list-member:last-child {
+        border-bottom: none;
+    }
+
+    .list-member:hover {
+        background-color: rgba($greyLight, 0.2);
+    }
 }
 
 /* =========== MODAL - Export ============ */

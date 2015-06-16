@@ -229,7 +229,7 @@
                         <i class="fa fa-user"></i>
                     </label>
 
-                    <select class="selectpicker" multiple  data-selected-text-format="count>2" data-live-search="true" data-actions-box="true" data-width="100%">
+                    <select class="selectpicker" multiple data-dropupAuto="false" data-selected-text-format="count>2" data-live-search="true" data-actions-box="true" data-width="100%">
                         <optgroup label="">
                             <option>Adam Wilson</option>
                             <option>Benson Wu</option>
@@ -280,7 +280,7 @@
                     </div>
                     
                     <div class="filter-buttons">
-                        <button class="btn btn-default">Reset</button>
+                        <button class="btn btn-default">Clear Filters</button>
                     </div>
                 </div>
             </form>           
@@ -623,9 +623,13 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-lg-12">
-                                <span>New Team</span>
-                                <span>Created on June 1, 2015 16:08 by Craig Ganssle</span>
-                                <span>0 users. <a href="#">Invite members to team</a></span>
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <h1>New Team</h1>
+                                        <h5>Created on June 1, 2015 16:08 by <a href="#">Craig Ganssle</a></h5>
+                                        <h5>0 users. <a href="#" id="modal-inviteMembers-trigger">Invite members to team</a></h5>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -715,7 +719,7 @@
 
         <div class="push"></div>
     </div>
-
+    
     <!-- MODAL - Create New Team -->
     <div class="modal fade" id="modal-create-team" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="container">
@@ -762,7 +766,7 @@
                                 <input type="text" class="form-control" id="inputTeamName" value="New Team">
                             </div>
                             <div class="form-group col-md-12">
-                                <label>Team Description</label>
+                                <label>Team Description (Optional)</label>
                                 <textarea class="form-control"></textarea>
                             </div>
                             <button type="button" class="btn btn-success" data-dismiss="modal">Save</button>
@@ -800,43 +804,91 @@
         </div>
     </div>
 
-    <!-- MODAL - Invite Members to New Team-->
-    <div class="modal fade" id="modal-invite-members-new-team" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <!-- MODAL - View Members-->
+    <div class="modal fade" id="modal-view-members" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="container">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button>
-                        <h1>Invite Members</h1>
-                        <p>Invite members from your organization to join this team.</p>
+                        <h1>View Members (25)</h1>
                     </div>
-                    <div class="modal-body">      
-                        <div class="list-group member-list">
-                            <div class="list-group-item clearfix">
-                                <span class="list-name">Jeremy Willemse</span>
-                                <span class="list-operation pull-right">
-                                    <button class="btn btn-default">Invite</button>
-                                </span>
-                            </div>
-                            <div class="list-group-item clearfix">
-                                <span class="list-name">Junya Wang</span>
-                                <span class="list-operation pull-right">
-                                    <button class="btn btn-default">Invite</button>
-                                </span>
-                            </div>
-                            <div class="list-group-item clearfix">
-                                <span class="list-name">Guy Davis</span>
-                                <span class="list-operation pull-right">
-                                    <button class="btn btn-default">Invite</button>
-                                </span>
-                            </div>
+                    <div class="modal-body">
+                        <div class="list-member-group">
+                            <div class="list-member clearfix">
+                                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseUser1" aria-expanded="false" aria-controls="collapseUser1">
+                                    <div class="accordion-heading clearfix">
+                                        <span class="user-fullname">Craig Ganssle</span>
+                                        <span class="user-username">@craig</span>
+                                        <span class="user-role">Team Leader</span>
+                                        <!-- <span class="user-job-title">CEO</span> -->
+                                        <!-- <span class="user-email">craig@example.com</span> -->
+                                    </div>
+                                </a>
+                                <div class="panel-collapse collapse" id="collapseUser1">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-4">
+                                            <a href="./account.html" class="btn btn-default btn-sm">Edit My Account</a>
+                                        </div>
+                                    </div>
+                                </div><!-- /.panel-collapse-->
+                            </div><!-- /.list-member-->
+                            
+                            <div class="list-member clearfix">
+                                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseUser2" aria-expanded="false" aria-controls="collapseUser2">
+                                    <div class="accordion-heading clearfix">
+                                        <span class="user-fullname">Jeremy Willemse</span>
+                                        <span class="user-username">@jeremy</span>
+                                        <!-- <span class="user-role">Org Admin</span> -->
+                                        <!-- <span class="user-job-title">Development Manager</span>
+                                        <span class="user-email">jeremy@example.com</span> -->
+                                    </div>
+                                </a>
+                                <div class="panel-collapse collapse" id="collapseUser2">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-4">
+                                            <a href="index.html" class="btn btn-default btn-sm">Send Direct Message</a>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4">
+                                            <button class="btn btn-default btn-sm">Assign Team Leader</button>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4">
+                                            <button class="btn btn-default btn-sm">Remove From Team</button>
+                                        </div>
+                                    </div>
+                                </div><!-- /.panel-collapse-->
+                            </div><!-- /.list-member-->
 
-                            <button type="button" class="btn btn-default" id="modal-inviteMembers-to-createTeam-trigger">Back</button>
-                            <button type="submit" class="btn btn-success" id="modal-inviteMembers-to-assignAdmin-trigger">Next</button>
+                            <div class="list-member clearfix">
+                                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseUser3" aria-expanded="false" aria-controls="collapseUser3">
+                                    <div class="accordion-heading clearfix">
+                                        <span class="user-fullname">Junya Wang</span>
+                                        <span class="user-username">@junya</span>
+                                        <!-- <span class="user-role">Member</span> -->
+                                        
+                                        <!-- <span class="user-job-title">UI/UX Designer</span>
+                                        <span class="user-email">junya@example.com</span> -->
+                                    </div>
+                                </a>
+                                <div class="panel-collapse collapse" id="collapseUser3">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-4">
+                                            <a href="index.html" class="btn btn-default btn-sm">Send Direct Message</a>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4">
+                                            <button class="btn btn-default btn-sm">Assign Team Leader</button>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4">
+                                            <button class="btn btn-default btn-sm">Remove From Team</button>
+                                        </div>
+                                    </div>
+                                </div><!-- /.panel-collapse-->
+                            </div><!-- /.list-member-->
+
                         </div>
                     </div>
                 </div>
-            </div><!-- /modal-dialogue -->
+            </div><!-- /modal-dialogue-->
         </div>
     </div>
 
@@ -870,6 +922,8 @@
                                     <button class="btn btn-default">Invite</button>
                                 </span>
                             </div>
+
+                            <button type="submit" class="btn btn-success" data-dismiss="modal">Invite</button>
                         </div>
                     </div>
                 </div>
