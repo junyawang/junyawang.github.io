@@ -1,0 +1,303 @@
+/* --------- COLOR PALETTES ---------- */
+/* --------- VARIABLES ---------- */
+/*---------- MIXINS ---------- */
+/* --------- TYPOGRAPHY ---------- */
+body {
+  font-family: Source Sans Pro, Helvetica, Arial, Sans-Serif;
+  font-weight: 300;
+  color: #828C96;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6, label, p, span {
+  font-weight: 300;
+  text-align: center;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern=1"; }
+
+h1 {
+  font-size: 3.6em;
+  color: white; }
+
+h2 {
+  font-size: 2.8em;
+  color: #66D1CD; }
+
+h3 {
+  font-size: 1.4em;
+  font-weight: 600;
+  color: #33C1BC; }
+
+h4 {
+  font-size: 1.4em;
+  color: #B3B3B3; }
+
+h5 {
+  font-size: 1.6em; }
+
+a {
+  color: #66D1CD; }
+
+a:hover {
+  color: white;
+  text-decoration: none; }
+
+p {
+  font-size: 1.2em;
+  color: #B3B3B3; }
+
+/*-------------------------------------------
+                 ICON+IMAGE
+---------------------------------------------*/
+.img-logo-white, .img-logo-color {
+  height: 100%; }
+
+.img-intro {
+  width: 100%;
+  margin-bottom: 30px; }
+
+.img-mobile {
+  margin-top: 80px; }
+
+/*-------------------------------------------
+                 UI KIT
+---------------------------------------------*/
+/* --------- NAV BAR ---------- */
+.navbar {
+  border: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 30px 0 20px;
+  background-size: 100% auto;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  border-radius: 0px; }
+
+.navbar-nav {
+  margin: 0; }
+
+.navbar-default {
+  background-color: transparent;
+  border: none; }
+
+.navbar-brand {
+  height: 37px;
+  padding: 0;
+  margin: 22px 0 !important; }
+
+.navbar-toggle {
+  border: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  color: white; }
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #ffc062; }
+
+.navbar-default .navbar-nav > li > a {
+  color: white;
+  font-size: 1em;
+  text-transform: uppercase;
+  margin: 20px 0 15px 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: inline-block;
+  vertical-align: middle; }
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: white; }
+
+.navbar .img-logo-color {
+  display: none; }
+
+.navbar.navbar-scroll #btn-cta-top, .navbar.navbar-scroll .img-logo-color {
+  display: inline-block; }
+
+.navbar.navbar-scroll .img-logo-white {
+  display: none; }
+
+.navbar.navbar-scroll {
+  position: fixed;
+  top: 0;
+  background: #fff;
+  color: #43485c;
+  padding: 0 0;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.06);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.06);
+  -ms-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.06);
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  transform-origin: center bottom;
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.navbar-scroll.navbar-default .navbar-nav > li > a {
+  color: #66D1CD; }
+
+/******* btn *******/
+.btn {
+  padding: 15px 30px;
+  border: 1px solid transparent;
+  font-family: Source Sans Pro, sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  color: white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+
+.btn:hover {
+  color: white; }
+
+.btn-info {
+  background-color: white;
+  border: 2px white solid;
+  color: #66D1CD; }
+
+.btn-info:hover,
+.btn-info:active,
+.btn-info:focus {
+  background-color: transparent;
+  border: 2px white solid;
+  border-color: white;
+  color: white; }
+
+/******* form *******/
+.form-control {
+  padding: 20px;
+  border: none;
+  outline: none;
+  color: #66D1CD;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  box-shadow: none;
+  height: 50px; }
+
+.form-control:focus {
+  outline: none;
+  border-color: #E5F7F6;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  box-shadow: none; }
+
+.form-control::-moz-placeholder {
+  color: #66D1CD;
+  opacity: 1; }
+
+.form-control::-ms-input-placeholder {
+  color: #66D1CD; }
+
+.form-control::-webkit-input-placeholder {
+  color: #66D1CD; }
+
+input {
+  outline: none; }
+
+input:focus {
+  outline: none; }
+
+.input-group-btn:last-child > .btn,
+.input-group-btn:last-child > .btn-group {
+  color: #66D1CD; }
+
+/*-------------------------------------------
+                 PAGES
+---------------------------------------------*/
+header {
+  background-color: #66D1CD;
+  padding-top: 140px; }
+
+header h1 {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+
+.sec-showcase {
+  padding-bottom: 100px; }
+
+.sec-showcase h2 {
+  margin-top: 100px; }
+
+.sec-showcase h4 {
+  margin-bottom: 100px; }
+
+.sec-showcase-aqua {
+  background-color: #66D1CD; }
+  .sec-showcase-aqua h2 {
+    color: white; }
+  .sec-showcase-aqua h4 {
+    color: #828C96; }
+
+.sec-showcase-white {
+  background-color: white; }
+
+.sec-features {
+  margin-top: 50px; }
+  .sec-features h3,
+  .sec-features p {
+    text-align: left; }
+  .sec-features p {
+    margin-bottom: 100px; }
+
+.sec-clients {
+  margin-top: 100px; }
+  .sec-clients blockquote {
+    border: none;
+    margin-top: 33.33333px;
+    margin-bottom: 33.33333px; }
+  .sec-clients .client-name {
+    display: block;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #33C1BC; }
+  .sec-clients .client-title {
+    margin-bottom: 100px;
+    display: block;
+    font-size: 1em;
+    color: #B3B3B3; }
+
+.sec-signup {
+  background-color: #E5F7F6;
+  padding-top: 200px;
+  padding-bottom: 200px; }
+  .sec-signup h1 {
+    color: #66D1CD; }
+  .sec-signup h4 {
+    color: #828C96; }
+  .sec-signup .input-group {
+    margin-top: 50px;
+    margin-bottom: 50px; }
+
+footer {
+  background-color: #66D1CD;
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+/*# sourceMappingURL=main.css.map */
