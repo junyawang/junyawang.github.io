@@ -7,6 +7,15 @@
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 /* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  footer img {
+    width: 22%; }
+  footer .logo-name {
+    font-size: 1.3em; }
+  footer .copyright {
+    font-size: 0.8em; }
+  footer .footer-nav {
+    padding-top: 16px; } }
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
@@ -23,6 +32,49 @@
     font-size: 1.4em; }
 
   h5 {
-    font-size: 1.6em; } }
+    font-size: 1.6em; }
+
+  footer .footer-logo {
+    margin: 0 auto; }
+  footer img {
+    padding-top: 10px; }
+  footer .logo-content {
+    padding-left: 20px; }
+  footer .logo-name {
+    font-size: 3em;
+    font-weight: 300; }
+  footer .copyright {
+    clear: both;
+    float: left;
+    font-size: 1em;
+    font-weight: 600; }
+  footer .footer-nav {
+    padding-top: 40px; }
+  footer ul li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: left; }
+    footer ul li a {
+      color: white; }
+  footer ul li:not(:first-child) {
+    padding-left: 30px; }
+  footer .footer-right {
+    padding-top: 30px; }
+    footer .footer-right .twitter {
+      display: block;
+      color: white;
+      font-weight: 600;
+      text-align: right; }
+      footer .footer-right .twitter a {
+        color: white; }
+    footer .footer-right .momentus-website a {
+      padding-top: 6px;
+      text-align: right;
+      font-size: 1.1em;
+      font-weight: 400;
+      text-transform: uppercase;
+      display: block;
+      color: #E5F7F6; } }
 
 /*# sourceMappingURL=media_query.css.map */

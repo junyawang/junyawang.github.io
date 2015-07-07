@@ -12,6 +12,7 @@ body{
 h1, h2, h3, h4, h5, h6, label, p, span {
 	font-weight: 400;
 	text-align: center;
+	line-height: 1.4;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 	font-feature-settings: "kern";
@@ -26,7 +27,7 @@ h1 {
 }
 
 h2 {
-	font-size: 2.4em;
+	font-size: 2.2em;
 	color: $mainAqua;
 }
 
@@ -387,42 +388,46 @@ footer {
 	padding-top: 60px;
 	padding-bottom: 60px;
 
-	.img-logo-white {
-		padding-top: 10px;
+	img {
 		float: left;
+		padding-top: 10px;
 	}
 
 	.logo-content {
 		float: left;
-		padding-left: 20px;
+		padding-left: 6px;
 	}
 
 	.logo-name {
 		float: left;
-		font-size: 3em;
-		font-weight: 300;
+		text-align: left;
+		font-size: 1.6em;
+		font-weight: 400;
 		color: white;
 	}
 
 	.copyright {
 		clear: both;
 		float: left;
-		font-size: 1em;
+		text-align: left;
+		font-size: 0.9em;
 		font-weight: 600;
 		color: $lightAqua;
 		text-transform: uppercase;
 	}
 	
 	.footer-nav {
-		padding-top: 40px;
+		padding-top: 20px;
+		text-align: center;
 	}
 
 	ul {
+		padding-left: 0;
 		li {
 			display: inline-block;
 			text-transform: uppercase;
 			font-weight: 400;
-			text-align: left;
+			text-align: center;
 
 			a {
 				color: white;
@@ -435,13 +440,13 @@ footer {
 	}
 	
 	.footer-right {
-		padding-top: 30px;
+		padding-top: 20px;
 
 		.twitter {
 			display: block;
 			color: white;
 			font-weight: 600;
-			text-align: right;
+			text-align: center;
 			
 			a {
 				color: white;
@@ -450,14 +455,12 @@ footer {
 
 		.momentus-website a {
 			padding-top: 6px;
-			text-align: right;
+			text-align: center;
 			font-size: 1.1em;
-			font-weight: 400;
+			font-weight: 600;
 			text-transform: uppercase;
 			display: block;
 			color: $lightAqua;
 		}
-
 	}
-
 }

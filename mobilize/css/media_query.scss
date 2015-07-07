@@ -8,7 +8,23 @@
 
 /* Small devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    footer {
+        img {
+            width: 22%;
+        }
 
+        .logo-name {
+            font-size: 1.3em;
+        }
+
+        .copyright {
+            font-size: 0.8em;
+        }
+
+        .footer-nav {
+            padding-top: 16px;
+        }
+    }
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -20,7 +36,7 @@
 @media only screen and (min-width: 1200px) {
     h1 {
         font-size: 3.6em;
-        }
+    }
 
     h2 {
         font-size: 2.8em;
@@ -30,11 +46,83 @@
         font-size: 1.4em;
     }
 
-    h4{
+    h4 {
         font-size: 1.4em;
     }
 
-    h5{
+    h5 {
         font-size:1.6em;
+    }
+
+    footer {
+        .footer-logo {
+            margin: 0 auto;
+        }
+
+        img {
+            padding-top: 10px;
+        }
+
+        .logo-content {
+            padding-left: 20px;
+        }
+
+        .logo-name {
+            font-size: 3em;
+            font-weight: 300;
+        }
+
+        .copyright {
+            clear: both;
+            float: left;
+            font-size: 1em;
+            font-weight: 600;
+        }
+        
+        .footer-nav {
+            padding-top: 40px;
+        }
+
+        ul {
+            li {
+                display: inline-block;
+                text-transform: uppercase;
+                font-weight: 400;
+                text-align: left;
+
+                a {
+                    color: white;
+                }
+            }
+
+            li:not(:first-child) {
+                padding-left: 30px;
+            }
+        }
+        
+        .footer-right {
+            padding-top: 30px;
+
+            .twitter {
+                display: block;
+                color: white;
+                font-weight: 600;
+                text-align: right;
+                
+                a {
+                    color: white;
+                }
+            }
+
+            .momentus-website a {
+                padding-top: 6px;
+                text-align: right;
+                font-size: 1.1em;
+                font-weight: 400;
+                text-transform: uppercase;
+                display: block;
+                color: $lightAqua;
+            }
+        }
     }
 }
