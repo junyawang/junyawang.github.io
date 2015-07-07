@@ -3,14 +3,14 @@
 /* --------- TYPOGRAPHY ---------- */
 
 body{
-	font-family: Source Sans Pro, Helvetica, Arial, Sans-Serif;
-	font-weight: 300;
+	font-family: 'Open Sans', Helvetica, Arial, Sans-Serif;
+	font-weight: 400;
 	color: $darkGrey;
 	@include box-sizing (border-box);
 }
 
 h1, h2, h3, h4, h5, h6, label, p, span {
-	font-weight:300;
+	font-weight: 400;
 	text-align: center;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
@@ -21,28 +21,28 @@ h1, h2, h3, h4, h5, h6, label, p, span {
 }
 
 h1 {
-	font-size: 3.6em;
+	font-size: 3em;
 	color: white;
 }
 
 h2 {
-	font-size: 2.8em;
+	font-size: 2.4em;
 	color: $mainAqua;
 }
 
 h3 {
-	font-size: 1.4em;
+	font-size: 1.3em;
 	font-weight: 600;
 	color: $darkAqua;
 }
 
 h4{
-	font-size: 1.4em;
+	font-size: 1.2em;
 	color: $lightGrey;
 }
 
 h5{
-	font-size:1.6em;
+	font-size: 1.3em;
 }
 
 a {
@@ -88,9 +88,10 @@ p {
 	top: 0;
 	width: 100%;
 	z-index: 100;
-	padding: 30px 0 20px;
+	padding: 50px 0 50px;
 	background-size: 100% auto; 
 	@include border-radius(0px);
+	@include transition ($transition);
 }
 
 .navbar-nav{
@@ -104,8 +105,8 @@ p {
 
 .navbar-brand {
 	height: 37px;
-	padding:0;
-	margin:22px 0 !important;
+	padding: 0;
+	margin: 22px 0 !important;
 }
 
 .navbar-toggle {
@@ -135,13 +136,23 @@ p {
 	color: white;
 }
 
+.navbar-default .navbar-nav > li > a.btn.btn-info {
+	color: white;
+}
+.navbar-default .navbar-nav > li > a.btn.btn-info:hover {
+	color: $mainAqua;
+	background-color: white;
+}
+
 .navbar .img-logo-color{
 	display:none;
 }
 
-.navbar.navbar-scroll #btn-cta-top, .navbar.navbar-scroll .img-logo-color{
+.navbar.navbar-scroll #btn-cta-top,
+.navbar.navbar-scroll .img-logo-color{
 	display:inline-block;
 }
+
 .navbar.navbar-scroll .img-logo-white {
 	display:none;
 }
@@ -149,8 +160,8 @@ p {
 .navbar.navbar-scroll{
 	position: fixed;
 	top: 0;
-	background: #fff;
-	color: #43485c;
+	background: white;
+	color: $mainAqua;
 	padding: 0 0;
 	@include box-shadow(0px 1px 5px 0px rgba(0,0,0,0.06));
 
@@ -163,56 +174,78 @@ p {
 	animation-duration: .5s;
 	-webkit-animation-fill-mode: both;
 	animation-fill-mode: both;
+	@include transition ($transition);
 }
 
 .navbar-scroll.navbar-default .navbar-nav > li > a {
 	color: $mainAqua;
 }
 
+.navbar-scroll .navbar-nav > li > a.btn.btn-info {
+	background-color: white;
+	border: 2px solid $mainAqua;
+	color: $mainAqua;
+}
+.navbar-scroll .navbar-nav > li > a.btn.btn-info:hover {
+	background-color: $mainAqua;
+	color: white;
+}
 /******* btn *******/
 
 .btn {
 	padding: 15px 30px;
-	border: 1px solid transparent;
-	font-family: Source Sans Pro, sans-serif;
+	border: 2px solid white;
 	font-size: 1em;
-	font-weight: 600;
-	color: white;
+	font-weight: 400;
+	color: $mainAqua;
 	@include border-radius($radius);
+	@include transition ($transition);
 }
 
 .btn:hover {
 	color: white;
+	@include transition ($transition);
+}
+
+.btn-default {
+	background-color: white;
+	border: 2px solid white;
+	color: $mainAqua;
+}
+
+.btn-default:hover,
+.btn-default:active,
+.btn-default:focus {
+	background-color: $mainAqua;
+	border: 2px solid $mainAqua;
+	color: white;
 }
 
 .btn-info {
-	background-color: white;
+	background-color: transparent;
 	border: 2px white solid;
-	color: $mainAqua;
+	color: white;
 }
 
 .btn-info:hover,
 .btn-info:active,
 .btn-info:focus {
-	background-color: transparent;
+	background-color: white;
 	border: 2px white solid;
-	border-color: white;
-	color: white;
+	color: $mainAqua;
 }
 
 /******* form *******/
 
 .form-control {
-	padding: 20px;
+	padding-left: 20px;
 	border: none;
 	outline: none;
 	color: $mainAqua;
-	font-size: 1.2em;
-	font-weight: 600;
-	text-transform: uppercase;
+	font-size: 1em;
+	font-weight: 400;
 	@include border-radius ($radius);
 	@include box-shadow (none);
-	height: 50px;
 }
 
 .form-control:focus {
@@ -234,12 +267,19 @@ p {
 	color: $mainAqua;
 }
 
-input {
+input,
+.form-control {
 	outline: none;
 }
 
-input:focus {
+input:focus,
+.form-control:focus {
 	outline: none;
+}
+
+.input-group .form-control,
+.input-group .input-group-btn .btn {
+	height: 50px;
 }
 
 .input-group-btn:last-child>.btn,
@@ -253,7 +293,7 @@ input:focus {
 
 header {
 	background-color: $mainAqua;
-	padding-top: 140px;
+	padding-top: 150px;
 }
 
 header h1 {
@@ -346,4 +386,78 @@ footer {
 	background-color: $mainAqua;
 	padding-top: 60px;
 	padding-bottom: 60px;
+
+	.img-logo-white {
+		padding-top: 10px;
+		float: left;
+	}
+
+	.logo-content {
+		float: left;
+		padding-left: 20px;
+	}
+
+	.logo-name {
+		float: left;
+		font-size: 3em;
+		font-weight: 300;
+		color: white;
+	}
+
+	.copyright {
+		clear: both;
+		float: left;
+		font-size: 1em;
+		font-weight: 600;
+		color: $lightAqua;
+		text-transform: uppercase;
+	}
+	
+	.footer-nav {
+		padding-top: 40px;
+	}
+
+	ul {
+		li {
+			display: inline-block;
+			text-transform: uppercase;
+			font-weight: 400;
+			text-align: left;
+
+			a {
+				color: white;
+			}
+		}
+
+		li:not(:first-child) {
+			padding-left: 30px;
+		}
+	}
+	
+	.footer-right {
+		padding-top: 30px;
+
+		.twitter {
+			display: block;
+			color: white;
+			font-weight: 600;
+			text-align: right;
+			
+			a {
+				color: white;
+			}
+		}
+
+		.momentus-website a {
+			padding-top: 6px;
+			text-align: right;
+			font-size: 1.1em;
+			font-weight: 400;
+			text-transform: uppercase;
+			display: block;
+			color: $lightAqua;
+		}
+
+	}
+
 }

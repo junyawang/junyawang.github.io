@@ -9,6 +9,7 @@ $darkGrey: #828C96;
 /* --------- VARIABLES ---------- */
 $margin-desktop: 100px;
 $radius: 10px;
+$transition: ease all 0.2s;
 
 /*---------- MIXINS ---------- */
 @mixin border-radius($radius) {
@@ -46,3 +47,27 @@ $radius: 10px;
     -moz-transition: border $transition ease-in-out, color $transition ease-in-out;
     transition: border $transition ease-in-out, color $transition ease-in-out;
 }
+
+// @mixin animation ($animation-name, $duration, $timing-function, $delay, $direction, $fill-mode) {
+//     -webkit-animation-name: $animation;
+//     -webkit-animation-duration: $duration;
+//     -webkit-animation-timing-function: $timing-function;
+//     -webkit-animation-delay: $delay;
+//     -webkit-animation-direction: $direction;
+//     -webkit-animation-fill-mode: $fill-mode; /* this prevents the animation from restarting! */
+ 
+//     -moz-animation-name: $animation;
+//     -moz-animation-duration: $duration;
+//     -moz-animation-timing-function: $timing-function;
+//     -moz-animation-delay: $delay;
+//     -moz-animation-direction: $direction;
+//     -moz-animation-fill-mode: $fill-mode; /* this prevents the animation from restarting! */
+
+//     animation-name: $animation;
+//     animation-duration: $duration;
+//     animation-timing-function: $timing-function;
+//     animation-delay: $delay;
+//     animation-direction: $direction;
+//     animation-fill-mode: $fill-mode; /* this prevents the animation from restarting! */
+
+// }
