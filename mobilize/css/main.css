@@ -182,7 +182,6 @@ p {
 .btn {
   padding: 15px 30px;
   border: 2px solid white;
-  font-size: 1em;
   font-weight: 400;
   color: #66D1CD;
   -webkit-border-radius: 10px;
@@ -272,9 +271,19 @@ input:focus,
 .input-group .input-group-btn .btn {
   height: 50px; }
 
-.input-group-btn:last-child > .btn,
-.input-group-btn:last-child > .btn-group {
+.input-group-btn .btn,
+.input-group-btn .btn-group {
   color: #66D1CD; }
+
+.input-group-btn .btn:hover,
+.input-group-btn .btn:active,
+.input-group-btn .btn:focus,
+.input-group-btn .btn-group:hover,
+.input-group-btn .btn-group:active,
+.input-group-btn .btn-group:focus {
+  background-color: #66D1CD;
+  border: 2px solid #66D1CD;
+  color: white; }
 
 /*-------------------------------------------
                  PAGES
@@ -342,6 +351,25 @@ header h1 {
   .sec-signup .input-group {
     margin-top: 50px;
     margin-bottom: 50px; }
+
+.sec-apps {
+  padding-top: 300px;
+  padding-bottom: 100px;
+  background-color: #66D1CD; }
+  .sec-apps h3 {
+    color: white;
+    font-weight: 600; }
+  .sec-apps img {
+    margin: 50px auto; }
+  .sec-apps img.icon-webapp {
+    margin: 72px auto; }
+  .sec-apps p {
+    color: white;
+    width: 80%;
+    margin: 0 auto; }
+  .sec-apps a.btn {
+    text-transform: uppercase;
+    margin: 71.42857px auto; }
 
 footer {
   background-color: #66D1CD;

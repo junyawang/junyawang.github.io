@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="Momentus Software">
+
+    <title>Mobilize</title>
+    
+    
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/main.min.css" rel="stylesheet" type="text/css">
+    <link href="css/media_query.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+
+    <!-- JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container">
+
+                <!-- Logo -->
+                
+                <div class="navbar-header navbar-left page-scroll">
+                    <a href="index.html" class="navbar-brand">
+                        <img class="img-logo-white" src="img/mobilize_logo_white.png" alt="">
+                        <img class="img-logo-color" src="img/mobilize_logo_color.png" alt="">
+                    </a>
+                    <ul class="nav navbar-nav">
+                        <li class="">
+                          <a href="index.html">About</a>
+                        </li>
+                        <li>
+                          <a href="apps.html" class="active">Apps</a>
+                        </li>
+                        <li>
+                          <a href="#">Support</a>
+                        </li>
+                    </ul>
+                </div>
+                  
+                <!-- Menus -->
+                <div class="navbar-header navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="index.html#sec-signup" id="btn-cta-top" class="btn btn-info">Sign up</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </nav>
+        
+        <!-- Apps -->
+        <section class="sec-apps">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <h3>Mobilize for Web</h3>
+                <img class="img-responsive icon-webapp" src="img/mobilize_icon_webapp.png" alt="">
+                <p>There are a few versions of Mobilize currently available through your browser. Find out how you can optomize your files today!</p>
+                <div class="text-center">
+                  <a href="index.html#sec-signup" class="btn btn-info">Sign up now</a>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <h3>Mobilize for Android</h3>
+                <img class="img-responsive" src="img/mobilize_icon_android.png" alt="">
+                <p>There are a few versions of Mobilize currently available through your browser. Find out how you can optomize your files today!</p>
+                <div class="text-center">
+                  <a href="https://play.google.com/store/apps/details?id=com.momentus.mobilize" target="_blank" class="btn btn-info">Download in Play store</a>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <h3>Mobilize for iOS</h3>
+                <img class="img-responsive" src="img/mobilize_icon_ios.png" alt="">
+                <p>There are a few versions of Mobilize currently available through your browser. Find out how you can optomize your files today!</p>
+                <div class="text-center">
+                  <a href="https://appsto.re/ca/EyZY5.i" target="_blank" class="btn btn-info">Download in App store</a>
+                </div>
+              </div>
+            </div>  
+          </div>  
+        </section>  
+       
+
+        <!-- FOOTER AREA-->
+        <footer>
+            <!-- FOOTER -->
+            <div class="container">
+                <div class="row">
+                    <!--footer left-->
+                    <div class="hidden-xs col-sm-3">
+                      <img class="img-responsive" src="img/mobilize_logo_white.png" alt="">
+                      <div class="logo-content">
+                        <span class="logo-name">Mobilize</span>
+                        <span class="copyright">Copyright &copy; 2015</span>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 footer-nav">
+                        <ul>
+                          <li><a href="index.html">About</a></li>
+                          <li><a href="apps.html">Apps</a></li>
+                          <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!--footer right-->
+                    <div class="col-xs-12 col-sm-3 footer-right">
+                        <span class="twitter">Follow us on Twitter <a href="#">@Mobilize</a></span>
+                        <span class="momentus-website"><a href="http://www.momentussoftware.com"> Momentus Software.com</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+    <!-- Nav bar background color change -->
+    <script type="text/javascript">
+         $(window).scroll(function() {    
+             var scroll = $(window).scrollTop();
+
+             if (scroll >= 300) {
+                 $(".navbar").addClass("navbar-scroll");
+             } else {
+                 $(".navbar").removeClass("navbar-scroll");
+             }
+         });
+         
+         $("#btn-cta-top").click(function() {
+             $('html, body').animate({
+                 scrollTop: $("index.html#sec-signup").offset().top
+             }, 800);
+         });
+    </script>
+     
+</body>
+
+</html>

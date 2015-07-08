@@ -65,16 +65,16 @@ p {
 ---------------------------------------------*/
 
 .img-logo-white, .img-logo-color{
-  height:100%;
+	height:100%;
 }
 
 .img-intro{
-  width:100%;
-  margin-bottom: 30px;
+	width:100%;
+	margin-bottom: 30px;
 }
 
 .img-mobile {
-  margin-top: 80px;
+	margin-top: 80px;
 }
 
 
@@ -196,7 +196,6 @@ p {
 .btn {
 	padding: 15px 30px;
 	border: 2px solid white;
-	font-size: 1em;
 	font-weight: 400;
 	color: $mainAqua;
 	@include border-radius($radius);
@@ -283,9 +282,20 @@ input:focus,
 	height: 50px;
 }
 
-.input-group-btn:last-child>.btn,
-.input-group-btn:last-child>.btn-group {
+.input-group-btn .btn,
+.input-group-btn .btn-group {
 	color: $mainAqua;
+}
+
+.input-group-btn .btn:hover,
+.input-group-btn .btn:active,
+.input-group-btn .btn:focus,
+.input-group-btn .btn-group:hover,
+.input-group-btn .btn-group:active,
+.input-group-btn .btn-group:focus {
+	background-color: $mainAqua;
+	border: 2px solid $mainAqua;
+	color: white;
 }
 
 /*-------------------------------------------
@@ -315,6 +325,7 @@ header h1 {
 
 .sec-showcase-aqua {
 	background-color: $mainAqua;
+
 	h2 {
 		color: white;
 	}
@@ -382,6 +393,36 @@ header h1 {
 		margin-bottom: $margin-desktop/2;
 	}
 }
+
+.sec-apps {
+	padding-top: $margin-desktop * 3;
+	padding-bottom: $margin-desktop;
+	background-color: $mainAqua;
+	
+	h3 {
+		color: white;
+		font-weight: 600;
+	}
+
+	img {
+		margin: $margin-desktop/2 auto;
+	}
+
+	img.icon-webapp {
+		margin: 72px auto;
+	}
+
+	p {
+		color: white;
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	a.btn {
+		text-transform: uppercase;
+		margin: $margin-desktop/1.4 auto;
+	}
+}	
 
 footer {
 	background-color: $mainAqua;
