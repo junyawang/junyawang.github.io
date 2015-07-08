@@ -9,18 +9,18 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
-  box-sizing: border-box; }
-
-h1, h2, h3, h4, h5, h6, label, p, span {
-  font-weight: 400;
-  text-align: center;
-  line-height: 1.4;
+  box-sizing: border-box;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
   font-feature-settings: "kern";
   -webkit-font-feature-settings: "kern";
   -moz-font-feature-settings: "kern";
   -moz-font-feature-settings: "kern=1"; }
+
+h1, h2, h3, h4, h5, h6, label, p, span {
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.4; }
 
 h1 {
   font-size: 3em;
@@ -91,7 +91,7 @@ p {
   margin: 0; }
 
 .navbar-default {
-  background-color: transparent;
+  background-color: #66D1CD;
   border: none; }
 
 .navbar-brand {
@@ -113,7 +113,8 @@ p {
 
 .navbar-default .navbar-nav > li > a {
   color: white;
-  font-size: 1em;
+  font-size: 1.1em;
+  font-weight: 600;
   text-transform: uppercase;
   margin: 20px 0 15px 10px;
   padding-top: 10px;
@@ -231,7 +232,7 @@ p {
   outline: none;
   color: #66D1CD;
   font-size: 1em;
-  font-weight: 400;
+  font-weight: 600;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
@@ -371,6 +372,21 @@ header h1 {
     text-transform: uppercase;
     margin: 71.42857px auto; }
 
+.sec-privacy {
+  padding-top: 300px;
+  padding-bottom: 100px;
+  background-color: white; }
+  .sec-privacy h2, .sec-privacy h5 {
+    text-align: left;
+    color: #66D1CD; }
+  .sec-privacy p {
+    text-align: left;
+    color: #828C96; }
+  .sec-privacy ol {
+    text-align: left;
+    color: #828C96;
+    font-size: 1.2em; }
+
 footer {
   background-color: #66D1CD;
   padding-top: 60px;
@@ -403,10 +419,10 @@ footer {
     footer ul li {
       display: inline-block;
       text-transform: uppercase;
-      font-weight: 400;
       text-align: center; }
       footer ul li a {
-        color: white; }
+        color: white;
+        font-weight: 600; }
     footer ul li:not(:first-child) {
       padding-left: 30px; }
   footer .footer-right {

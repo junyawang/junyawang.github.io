@@ -7,18 +7,19 @@ body{
 	font-weight: 400;
 	color: $darkGrey;
 	@include box-sizing (border-box);
-}
-
-h1, h2, h3, h4, h5, h6, label, p, span {
-	font-weight: 400;
-	text-align: center;
-	line-height: 1.4;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 	font-feature-settings: "kern";
 	-webkit-font-feature-settings: "kern";
 	-moz-font-feature-settings: "kern";
 	-moz-font-feature-settings: "kern=1";
+}
+
+h1, h2, h3, h4, h5, h6, label, p, span {
+	font-weight: 400;
+	text-align: center;
+	line-height: 1.4;
+	
 }
 
 h1 {
@@ -37,12 +38,12 @@ h3 {
 	color: $darkAqua;
 }
 
-h4{
+h4 {
 	font-size: 1.2em;
 	color: $lightGrey;
 }
 
-h5{
+h5 {
 	font-size: 1.3em;
 }
 
@@ -100,7 +101,7 @@ p {
 }
 
 .navbar-default {
-	background-color: transparent;
+	background-color: $mainAqua;
 	border: none;
 }
 
@@ -123,7 +124,8 @@ p {
 
 .navbar-default .navbar-nav > li > a {
 	color: white;
-	font-size: 1em;
+	font-size: 1.1em;
+	font-weight: 600;
 	text-transform: uppercase;
 	margin: 20px 0 15px 10px;
 	padding-top: 10px;
@@ -243,7 +245,7 @@ p {
 	outline: none;
 	color: $mainAqua;
 	font-size: 1em;
-	font-weight: 400;
+	font-weight: 600;
 	@include border-radius ($radius);
 	@include box-shadow (none);
 }
@@ -424,6 +426,28 @@ header h1 {
 	}
 }	
 
+.sec-privacy {
+	padding-top: $margin-desktop * 3;
+	padding-bottom: $margin-desktop;
+	background-color: white;
+
+	h2, h5 {
+		text-align: left;
+		color: $mainAqua
+	}
+
+	p {
+		text-align: left;
+		color: $darkGrey;
+	}
+
+	ol {
+		text-align: left;
+		color: $darkGrey;
+		font-size: 1.2em;
+	}
+}
+
 footer {
 	background-color: $mainAqua;
 	padding-top: 60px;
@@ -464,14 +488,15 @@ footer {
 
 	ul {
 		padding-left: 0;
+
 		li {
 			display: inline-block;
 			text-transform: uppercase;
-			font-weight: 400;
 			text-align: center;
 
 			a {
 				color: white;
+				font-weight: 600;
 			}
 		}
 
