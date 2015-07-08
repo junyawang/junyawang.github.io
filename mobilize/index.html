@@ -46,9 +46,6 @@
                         <li>
                           <a href="apps.html">Apps</a>
                         </li>
-                        <li>
-                          <a href="#">Support</a>
-                        </li>
                     </ul>
                 </div>
                   
@@ -211,9 +208,11 @@
                 <div class="row">
                     <!--footer left-->
                     <div class="hidden-xs col-sm-3">
-                      <img class="img-responsive" src="img/mobilize_logo_white.png" alt="">
+                      <a href="index.html#page-top" id="moblize-logo">
+                        <img class="img-responsive" src="img/mobilize_logo_white.png" alt="">
+                      </a>
                       <div class="logo-content">
-                        <span class="logo-name">Mobilize</span>
+                        <a href="index.html#page-top" class="logo-name" id="mobilize-name">Mobilize</a>
                         <span class="copyright">Copyright &copy; 2015</span>
                       </div>
                     </div>
@@ -228,8 +227,8 @@
                     
                     <!--footer right-->
                     <div class="col-xs-12 col-sm-3 footer-right">
-                        <span class="twitter">Follow us on Twitter <a href="#">@Mobilize</a></span>
-                        <span class="momentus-website"><a href="http://www.momentussoftware.com"> Momentus Software.com</span>
+                        <span class="twitter">Follow us on Twitter <a href="https://twitter.com/getmobilize" target="_blank">@Mobilize</a></span>
+                        <span class="momentus-website"><a href="http://www.momentussoftware.com" target="_blank"> Momentus Software.com</span>
                     </div>
                 </div>
             </div>
@@ -251,6 +250,18 @@
          $("#btn-cta-top").click(function() {
              $('html, body').animate({
                  scrollTop: $("#sec-signup").offset().top
+             }, 800);
+         });
+
+         $("#mobilize-logo").click(function() {
+             $('html, body').animate({
+                 scrollTop: $("index.html#page-top").offset().top
+             }, 800);
+         });
+
+         $("#mobilize-name").click(function() {
+             $('html, body').animate({
+                 scrollTop: $("index.html#page-top").offset().top
              }, 800);
          });
     </script>
