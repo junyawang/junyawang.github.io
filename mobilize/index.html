@@ -53,7 +53,7 @@
                 <div class="navbar-header navbar-right">
                     <ul class="nav navbar-nav">
                         <li>
-                            <a href="#sec-signup" id="btn-cta-top" class="btn btn-info">Sign up</a>
+                            <a href="signup.html" class="btn btn-info">30 day free trial</a>
                         </li>
                     </ul>
                 </div>
@@ -177,8 +177,8 @@
             </div>
         </section> <!-- ADMIN FEATURES -->
 
-        <!-- Sign up -->
-        <section class="sec-signup" id="sec-signup">
+        <!-- Email -->
+        <section class="sec-email" id="sec-email">
             <div class="container">
               <div class="row">
                 <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1">
@@ -188,10 +188,10 @@
               </div>
               <div class="row">
                 <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
-                  <div class="input-group">
+                  <div class="input-group input-group-lg">
                     <input type="email" class="form-control" placeholder="Email address">
                     <span class="input-group-btn">
-                      <button class="btn btn-default" type="button">
+                      <button class="btn btn-default btn-lg" type="button">
                         <i class="fa fa-arrow-right"></i>
                       </button>
                     </span>
@@ -245,12 +245,6 @@
              } else {
                  $(".navbar").removeClass("navbar-scroll");
              }
-         });
-         
-         $("#btn-cta-top").click(function() {
-             $('html, body').animate({
-                 scrollTop: $("#sec-signup").offset().top
-             }, 800);
          });
 
          $("#mobilize-logo").click(function() {

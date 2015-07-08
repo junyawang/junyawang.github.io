@@ -181,9 +181,8 @@ p {
 
 /******* btn *******/
 .btn {
-  padding: 15px 30px;
   border: 2px solid white;
-  font-weight: 400;
+  font-weight: 600;
   color: #66D1CD;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -232,7 +231,7 @@ p {
   outline: none;
   color: #66D1CD;
   font-size: 1em;
-  font-weight: 600;
+  font-weight: 400;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
@@ -261,16 +260,16 @@ p {
   color: #66D1CD; }
 
 input,
-.form-control {
+.form-control,
+.input-group,
+.input-group-btn {
   outline: none; }
 
 input:focus,
-.form-control:focus {
+.form-control:focus,
+.input-group:focus,
+.input-group-btn:focus {
   outline: none; }
-
-.input-group .form-control,
-.input-group .input-group-btn .btn {
-  height: 50px; }
 
 .input-group-btn .btn,
 .input-group-btn .btn-group {
@@ -285,6 +284,10 @@ input:focus,
   background-color: #66D1CD;
   border: 2px solid #66D1CD;
   color: white; }
+
+.form-group {
+  margin-top: 30px;
+  margin-bottom: 30px; }
 
 /*-------------------------------------------
                  PAGES
@@ -341,15 +344,15 @@ header h1 {
     font-size: 1em;
     color: #B3B3B3; }
 
-.sec-signup {
+.sec-email {
   background-color: #E5F7F6;
   padding-top: 200px;
   padding-bottom: 200px; }
-  .sec-signup h1 {
+  .sec-email h1 {
     color: #66D1CD; }
-  .sec-signup h4 {
+  .sec-email h4 {
     color: #828C96; }
-  .sec-signup .input-group {
+  .sec-email .input-group {
     margin-top: 50px;
     margin-bottom: 50px; }
 
@@ -386,6 +389,14 @@ header h1 {
     text-align: left;
     color: #828C96;
     font-size: 1.2em; }
+
+.sec-signup {
+  padding-top: 150px;
+  padding-bottom: 100px;
+  background-color: #66D1CD; }
+  .sec-signup h1 {
+    margin-top: 100px;
+    margin-bottom: 66.66667px; }
 
 footer {
   background-color: #66D1CD;

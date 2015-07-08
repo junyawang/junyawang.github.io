@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Momentus Software">
 
-    <title>Mobilize - Download Apps</title>
+    <title>Mobilize - Sign up</title>
     
     
     <link rel="shortcut icon" href="img/favicon.ico" />
@@ -53,7 +53,7 @@
                 <div class="navbar-header navbar-right">
                     <ul class="nav navbar-nav">
                         <li>
-                            <a href="signup.html" class="btn btn-info">30 day free trial</a>
+                            <a href="index.html#sec-signup" id="btn-cta-top" class="btn btn-info">30 day free trial</a>
                         </li>
                     </ul>
                 </div>
@@ -61,39 +61,36 @@
             
         </nav>
         
-        <!-- Apps -->
-        <section class="sec-apps">
-          <div class="container">
+        <section class='sec-signup'>
+          <div class='container'>
             <div class="row">
-              <div class="col-md-4">
-                <h3>Mobilize for Web</h3>
-                <img class="img-responsive icon-webapp" src="img/mobilize_icon_webapp.png" alt="">
-                <p>There are a few versions of Mobilize currently available through your browser. Find out how you can optomize your files today!</p>
-                <div class="text-center">
-                  <a href="index.html#sec-signup" class="btn btn-info">Sign up now</a>
-                </div>
+              <h1>Sign up to request a <strong>30 day free trial</strong></h1>
+              <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                <form class='form-signup' id='form-signup'>
+                  <p class='form-message-success hidden'>
+                  Success! We will contact you shortly to schedule your demo.
+                  </p>
+                  <p class='form-message-error hidden'>
+                  Oops! There was an error submitting your request. Please contact support@getmobilize.com for help.
+                  </p>
+                  <div class='form-group form-group-lg'>
+                    <input class='form-control' id='firstName' placeholder='Your Name' type='text'>
+                  </div>
+                  <div class='form-group form-group-lg'>
+                    <input class='form-control' id='email' placeholder='Work email address' type='email'>
+                  </div>
+                  <div class='form-group form-group-lg'>
+                    <input class='form-control' id='phone' placeholder='Phone Number' type='text'>
+                  </div>
+                  <div class='form-group form-group-lg'>
+                    <input class='form-control' id='company' placeholder='Company Name' type='text'>
+                  </div>
+                  <button class='btn btn-info btn-lg' type='submit'>Request Demo</button>
+                </form>
               </div>
-
-              <div class="col-md-4">
-                <h3>Mobilize for Android</h3>
-                <img class="img-responsive" src="img/mobilize_icon_android.png" alt="">
-                <p>There are a few versions of Mobilize currently available through your browser. Find out how you can optomize your files today!</p>
-                <div class="text-center">
-                  <a href="https://play.google.com/store/apps/details?id=com.momentus.mobilize" target="_blank" class="btn btn-info">Download in Play store</a>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <h3>Mobilize for iOS</h3>
-                <img class="img-responsive" src="img/mobilize_icon_ios.png" alt="">
-                <p>There are a few versions of Mobilize currently available through your browser. Find out how you can optomize your files today!</p>
-                <div class="text-center">
-                  <a href="https://appsto.re/ca/EyZY5.i" target="_blank" class="btn btn-info">Download in App store</a>
-                </div>
-              </div>
-            </div>  
-          </div>  
-        </section>  
+            </div>
+          </div>
+        </section> 
        
 
         <!-- FOOTER AREA-->

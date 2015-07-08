@@ -66,11 +66,11 @@ p {
 ---------------------------------------------*/
 
 .img-logo-white, .img-logo-color{
-	height:100%;
+	height: 100%;
 }
 
 .img-intro{
-	width:100%;
+	width: 100%;
 	margin-bottom: 30px;
 }
 
@@ -196,9 +196,8 @@ p {
 /******* btn *******/
 
 .btn {
-	padding: 15px 30px;
 	border: 2px solid white;
-	font-weight: 400;
+	font-weight: 600;
 	color: $mainAqua;
 	@include border-radius($radius);
 	@include transition ($transition);
@@ -245,7 +244,7 @@ p {
 	outline: none;
 	color: $mainAqua;
 	font-size: 1em;
-	font-weight: 600;
+	font-weight: 400;
 	@include border-radius ($radius);
 	@include box-shadow (none);
 }
@@ -270,18 +269,22 @@ p {
 }
 
 input,
-.form-control {
+.form-control,
+.input-group,
+.input-group-btn {
 	outline: none;
 }
 
 input:focus,
-.form-control:focus {
+.form-control:focus,
+.input-group:focus,
+.input-group-btn:focus {
 	outline: none;
 }
 
 .input-group .form-control,
 .input-group .input-group-btn .btn {
-	height: 50px;
+	// height: 50px;
 }
 
 .input-group-btn .btn,
@@ -300,13 +303,18 @@ input:focus,
 	color: white;
 }
 
+.form-group {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
 /*-------------------------------------------
                  PAGES
 ---------------------------------------------*/
 
 header {
 	background-color: $mainAqua;
-	padding-top: 150px;
+	padding-top: $margin-desktop * 1.5;
 }
 
 header h1 {
@@ -377,7 +385,7 @@ header h1 {
 	}
 }
 
-.sec-signup {
+.sec-email {
 	background-color: $lightAqua;
 	padding-top: $margin-desktop * 2;
 	padding-bottom: $margin-desktop * 2;
@@ -445,6 +453,17 @@ header h1 {
 		text-align: left;
 		color: $darkGrey;
 		font-size: 1.2em;
+	}
+}
+
+.sec-signup {
+	padding-top: $margin-desktop * 1.5;
+	padding-bottom: $margin-desktop;
+	background-color: $mainAqua;
+
+	h1 {
+		margin-top: $margin-desktop;
+		margin-bottom: $margin-desktop/1.5;
 	}
 }
 
