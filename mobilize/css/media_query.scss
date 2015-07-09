@@ -8,7 +8,38 @@
 
 /* Small devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+
+    .navbar {
+        padding: 50px 0 50px;
+    }
+    
+    .navbar-brand {
+        margin-left: 0;
+    }
+
+    header {
+        padding-top: $margin-desktop * 1.5;
+    }
+
+    .sec-email {
+        padding-top: $margin-desktop * 2;
+        padding-bottom: $margin-desktop * 2;
+    }
+
+    .sec-apps {
+        padding-top: $margin-desktop;
+        padding-bottom: $margin-desktop;
+    }
+
+    .sec-privacy {
+        padding-top: $margin-desktop * 3;
+        padding-bottom: $margin-desktop;
+    }
+
     footer {
+        padding-top: $margin-desktop/2;
+        padding-bottom: $margin-desktop/2;
+
         img {
             width: 22%;
         }

@@ -8,14 +8,38 @@
 /* No media query since this is the default in Bootstrap */
 /* Small devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  footer img {
-    width: 22%; }
-  footer .logo-name {
-    font-size: 1.3em; }
-  footer .copyright {
-    font-size: 0.8em; }
-  footer .footer-nav {
-    padding-top: 16px; } }
+  .navbar {
+    padding: 50px 0 50px; }
+
+  .navbar-brand {
+    margin-left: 0; }
+
+  header {
+    padding-top: 150px; }
+
+  .sec-email {
+    padding-top: 200px;
+    padding-bottom: 200px; }
+
+  .sec-apps {
+    padding-top: 100px;
+    padding-bottom: 100px; }
+
+  .sec-privacy {
+    padding-top: 300px;
+    padding-bottom: 100px; }
+
+  footer {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+    footer img {
+      width: 22%; }
+    footer .logo-name {
+      font-size: 1.3em; }
+    footer .copyright {
+      font-size: 0.8em; }
+    footer .footer-nav {
+      padding-top: 16px; } }
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
