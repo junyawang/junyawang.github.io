@@ -11,6 +11,7 @@ $margin-mobile: 70px;
 $margin-desktop: 100px;
 $radius: 10px;
 $transition: ease all 0.2s;
+$box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.06);
 
 /*---------- MIXINS ---------- */
 @mixin border-radius($radius) {

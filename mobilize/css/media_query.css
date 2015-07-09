@@ -12,7 +12,10 @@
     padding: 50px 0 50px; }
 
   .navbar-brand {
-    margin-left: 0; }
+    height: 70px; }
+
+  .navbar-nav {
+    margin: 7.5px 15px; }
 
   header {
     padding-top: 150px; }
