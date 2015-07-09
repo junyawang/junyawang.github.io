@@ -40,7 +40,7 @@ h3 {
 
 h4 {
 	font-size: 1.2em;
-	color: $lightGrey;
+	color: $darkBlue;
 }
 
 h5 {
@@ -315,22 +315,26 @@ input:focus,
 header {
 	background-color: $mainAqua;
 	padding-top: $margin-desktop * 1.5;
-}
 
-header h1 {
-	margin-top: $margin-desktop;
-	margin-bottom: $margin-desktop;
+	h1 {
+		margin-top: $margin-desktop;
+	}
+
+	h4 {
+		margin-bottom: $margin-desktop
+	}
 }
 
 .sec-showcase {
 	padding-bottom: $margin-desktop;
-}
-.sec-showcase h2 {
-	margin-top: $margin-desktop;
-}
 
-.sec-showcase h4 {
-	margin-bottom: $margin-desktop;
+	h2 {
+		margin-top: $margin-desktop;
+	}
+
+	h4 {
+		margin-bottom: $margin-desktop;
+	}
 }
 
 .sec-showcase-aqua {
@@ -340,7 +344,7 @@ header h1 {
 		color: white;
 	}
 	h4 {
-		color: $darkGrey;
+		color: $darkBlue;
 	}
 }
 
@@ -368,6 +372,7 @@ header h1 {
 		border: none;
 		margin-top: $margin-desktop/3;
 		margin-bottom: $margin-desktop/3;
+		color: $darkBlue;
 	}
 
 	.client-name {
