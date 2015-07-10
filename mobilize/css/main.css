@@ -73,6 +73,16 @@ p {
 .img-mobile {
   margin-top: 80px; }
 
+.img-app-store {
+  width: 180px; }
+
+.img-clients {
+  max-width: 220px;
+  -webkit-border-radius: 110px;
+  -moz-border-radius: 110px;
+  -ms-border-radius: 110px;
+  border-radius: 110px; }
+
 /*-------------------------------------------
                  UI KIT
 ---------------------------------------------*/
@@ -95,6 +105,12 @@ p {
 
 .navbar-brand {
   height: 50px; }
+
+.navbar-nav > li > a.btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px; }
 
 .navbar-toggle {
   padding: 8px 8px;
@@ -120,7 +136,7 @@ p {
   transition: ease all 0.2s; }
 
 .navbar-default {
-  background-color: #66D1CD;
+  background-color: transparent;
   border: none; }
   .navbar-default .img-logo-color {
     display: none; }
@@ -191,6 +207,9 @@ p {
       background-color: #66D1CD; }
   .navbar-scroll .navbar-nav > li > a {
     color: #66D1CD; }
+  .navbar-scroll .navbar-nav > li > a:hover,
+  .navbar-scroll .navbar-nav > li > a:focus {
+    color: #66D1CD; }
   .navbar-scroll .navbar-nav > li > a.btn.btn-info {
     background-color: white;
     border: 2px solid #66D1CD;
@@ -243,6 +262,9 @@ p {
   background-color: white;
   border: 2px white solid;
   color: #66D1CD; }
+
+.btn-lg {
+  padding: 16px 16px; }
 
 /******* form *******/
 .form-control {
@@ -313,7 +335,15 @@ input:focus,
                  PAGES
 ---------------------------------------------*/
 header {
-  background-color: #66D1CD;
+  background: #66D1CD;
+  background: -webkit-linear-gradient(170deg, #66D1CD, #66D1CD, #E5F7F6);
+  /*Safari 5.1-6*/
+  background: -o-linear-gradient(170deg, #66D1CD, #66D1CD, #E5F7F6);
+  /*Opera 11.1-12*/
+  background: -moz-linear-gradient(170deg, #66D1CD, #66D1CD, #E5F7F6);
+  /*Fx 3.6-15*/
+  background: linear-gradient(170deg, #66D1CD, #66D1CD, #E5F7F6);
+  /*Standard*/
   padding-top: 70px; }
   header h1 {
     margin-top: 100px; }
@@ -391,7 +421,7 @@ header {
     margin: 0 auto; }
   .sec-apps a.btn {
     text-transform: uppercase;
-    margin: 71.42857px auto; }
+    margin: 52px auto; }
 
 .sec-privacy {
   padding-top: 105px;
