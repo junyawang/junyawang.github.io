@@ -83,6 +83,10 @@ p {
   -ms-border-radius: 110px;
   border-radius: 110px; }
 
+canvas#myChart {
+  width: 100%;
+  height: auto; }
+
 /*-------------------------------------------
                  UI KIT
 ---------------------------------------------*/
