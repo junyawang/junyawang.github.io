@@ -9,8 +9,12 @@
 /* Small devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
-    .navbar {
-        padding: 50px 0 50px;
+    .navbar-default {
+        padding: 50px 0;
+    }
+
+    .navbar-scroll {
+        padding: 10px 0;
     }
     
     .navbar-brand {
@@ -19,6 +23,12 @@
 
     .navbar-nav {
         margin: 7.5px 15px;
+    }
+
+    .navbar-default {
+        .navbar-collapse {
+            @include box-shadow(none);
+        }
     }
 
     header {
@@ -49,7 +59,7 @@
         }
 
         .logo-name {
-            font-size: 1.3em;
+            font-size: 2.1em;
         }
 
         .copyright {
@@ -59,36 +69,26 @@
         .footer-nav {
             padding-top: 16px;
         }
+
+        .footer-right {
+            padding-top: 16px;
+
+            .twitter {
+                text-align: right;
+                font-size: 0.8em;
+            }
+
+            .momentus-website a {
+                padding-top: 6px;
+                text-align: right;
+                font-size: 0.8em;
+            }
+        }
     }
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
-}
-
-/* Large devices (large desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    h1 {
-        font-size: 3.6em;
-    }
-
-    h2 {
-        font-size: 2.8em;
-    }
-
-    h3 {
-        font-size: 1.4em;
-    }
-
-    h4 {
-        font-size: 1.4em;
-    }
-
-    h5 {
-        font-size:1.6em;
-    }
-
     footer {
         .footer-logo {
             margin: 0 auto;
@@ -103,7 +103,7 @@
         }
 
         .logo-name {
-            font-size: 3em;
+            font-size: 2.4em;
             font-weight: 300;
         }
 
@@ -134,30 +134,57 @@
                 padding-left: 30px;
             }
         }
-        
+
         .footer-right {
             padding-top: 30px;
 
             .twitter {
-                display: block;
-                color: white;
-                font-weight: 600;
-                text-align: right;
-                
-                a {
-                    color: white;
-                }
+                font-size: 1em;
             }
 
             .momentus-website a {
-                padding-top: 6px;
-                text-align: right;
-                font-size: 1.1em;
-                font-weight: 400;
-                text-transform: uppercase;
-                display: block;
-                color: $lightAqua;
+                font-size: 1em;
             }
         }
     }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    h1 {
+        font-size: 3.6em;
+    }
+
+    h2 {
+        font-size: 2.8em;
+    }
+
+    h3 {
+        font-size: 1.4em;
+    }
+
+    h4 {
+        font-size: 1.4em;
+    }
+
+    h5 {
+        font-size:1.6em;
+    }
+
+    footer {
+        .logo-name {
+            font-size: 3em;
+        }
+
+        .footer-right {
+            .twitter {
+                font-size: 1em;
+            }
+
+            .momentus-website a {
+                font-size: 1.1em;
+            }
+        }
+    }
+
 }

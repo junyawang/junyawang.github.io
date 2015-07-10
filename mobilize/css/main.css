@@ -460,7 +460,8 @@ footer {
       display: block;
       color: white;
       font-weight: 600;
-      text-align: center; }
+      text-align: center;
+      font-size: 1em; }
       footer .footer-right .twitter a {
         color: white; }
     footer .footer-right .momentus-website a {
