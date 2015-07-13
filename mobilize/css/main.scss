@@ -95,11 +95,6 @@ p {
 	@include border-radius (110px);
 }
 
-canvas#myChart {
-	width: 100%;
-	height: auto;
-}
-
 /*-------------------------------------------
                  UI KIT
 ---------------------------------------------*/
@@ -119,7 +114,6 @@ canvas#myChart {
 .navbar-brand {
 	height: 50px;
 }
-
 
 .navbar-nav > li > a.btn {
 	padding-top: 10px;
@@ -434,6 +428,21 @@ header {
 		margin-bottom: $margin-desktop;
 	}
 }
+
+.myChart-width {
+	position: absolute;
+	width: 70%;
+	bottom: 6%;
+	right: 8%;
+}
+
+canvas#myChart {
+	background-color: white;
+	padding: 10px;
+	width: 100%;
+	height: auto;
+}
+
 
 .sec-clients {
 	margin-top: $margin-desktop;

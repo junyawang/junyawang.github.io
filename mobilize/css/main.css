@@ -83,10 +83,6 @@ p {
   -ms-border-radius: 110px;
   border-radius: 110px; }
 
-canvas#myChart {
-  width: 100%;
-  height: auto; }
-
 /*-------------------------------------------
                  UI KIT
 ---------------------------------------------*/
@@ -377,6 +373,18 @@ header {
     text-align: left; }
   .sec-features p {
     margin-bottom: 100px; }
+
+.myChart-width {
+  position: absolute;
+  width: 70%;
+  bottom: 6%;
+  right: 8%; }
+
+canvas#myChart {
+  background-color: white;
+  padding: 10px;
+  width: 100%;
+  height: auto; }
 
 .sec-clients {
   margin-top: 100px; }
