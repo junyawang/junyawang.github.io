@@ -23,11 +23,11 @@ h1, h2, h3, h4, h5, h6, label, p, span {
   line-height: 1.4; }
 
 h1 {
-  font-size: 3em;
+  font-size: 2.4em;
   color: white; }
 
 h2 {
-  font-size: 2.2em;
+  font-size: 1.8em;
   color: #66D1CD; }
 
 h3 {
@@ -40,7 +40,10 @@ h4 {
   color: #364251; }
 
 h5 {
-  font-size: 1.3em; }
+  font-size: 1.2em; }
+
+h6 {
+  font-size: 1.1em; }
 
 a {
   color: #66D1CD; }
@@ -158,9 +161,9 @@ p {
   .navbar-default .navbar-nav > li > a:hover,
   .navbar-default .navbar-nav > li > a:focus {
     color: white; }
-  .navbar-default .navbar-nav > li > a.btn.btn-info {
+  .navbar-default .navbar-nav > li > a.btn.btn-default {
     color: white; }
-  .navbar-default .navbar-nav > li > a.btn.btn-info:hover {
+  .navbar-default .navbar-nav > li > a.btn.btn-default:hover {
     color: #66D1CD;
     background-color: white; }
   .navbar-default .navbar-collapse {
@@ -210,11 +213,11 @@ p {
   .navbar-scroll .navbar-nav > li > a:hover,
   .navbar-scroll .navbar-nav > li > a:focus {
     color: #66D1CD; }
-  .navbar-scroll .navbar-nav > li > a.btn.btn-info {
+  .navbar-scroll .navbar-nav > li > a.btn.btn-default {
     background-color: white;
     border: 2px solid #66D1CD;
     color: #66D1CD; }
-  .navbar-scroll .navbar-nav > li > a.btn.btn-info:hover {
+  .navbar-scroll .navbar-nav > li > a.btn.btn-default:hover {
     background-color: #66D1CD;
     color: white; }
 
@@ -239,32 +242,59 @@ p {
   -o-transition: ease all 0.2s;
   transition: ease all 0.2s; }
 
-.btn-default {
+.btn-lg {
+  padding: 12px 16px; }
+
+/*	
+	btn-primary
+	standard: bg white, stroke white
+	hover: bg transparent, stroke white
+*/
+.btn-primary {
   background-color: white;
   border: 2px solid white;
   color: #66D1CD; }
 
-.btn-default:hover,
-.btn-default:active,
-.btn-default:focus {
-  background-color: #66D1CD;
-  border: 2px solid #66D1CD;
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: transparent;
+  border: 2px solid white;
   color: white; }
 
-.btn-info {
+/*	
+	btn-default
+	standard: bg transparent, stroke white
+	hover: bg white, stroke white
+*/
+.btn-default {
   background-color: transparent;
   border: 2px white solid;
   color: white; }
 
-.btn-info:hover,
-.btn-info:active,
-.btn-info:focus {
+.btn-default:hover,
+.btn-default:active,
+.btn-default:focus {
   background-color: white;
   border: 2px white solid;
   color: #66D1CD; }
 
-.btn-lg {
-  padding: 16px 16px; }
+/*	
+	btn-info
+	standard: bg white, stroke white
+	hover: bg aqua, stroke aqua
+*/
+.btn-info {
+  background-color: white;
+  border: 2px solid white;
+  color: #66D1CD; }
+
+.btn-info:hover,
+.btn-info:active,
+.btn-info:focus {
+  background-color: #66D1CD;
+  border: 2px solid #66D1CD;
+  color: white; }
 
 /******* form *******/
 .form-control {
@@ -331,9 +361,46 @@ input:focus,
   margin-top: 30px;
   margin-bottom: 30px; }
 
+.notification-label, .group-label {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 12px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 700;
+  background-color: #66D1CD;
+  color: white;
+  background-clip: padding-box;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  border-radius: 30px; }
+
+.group-label-red {
+  background-color: #EB5768; }
+
+.group-label-blue {
+  background-color: #2585C4; }
+
+.group-label-orange {
+  background-color: #F6AB60; }
+
+.group-label-green {
+  background-color: #28B294; }
+
 /*-------------------------------------------
                  PAGES
 ---------------------------------------------*/
+#particle-js {
+  width: 100%;
+  height: 100%;
+  background-image: url("");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
+
 header {
   background: #66D1CD;
   background: -webkit-linear-gradient(170deg, #66D1CD, #66D1CD, #E5F7F6);
@@ -345,9 +412,17 @@ header {
   background: linear-gradient(170deg, #66D1CD, #66D1CD, #E5F7F6);
   /*Standard*/
   padding-top: 70px; }
+  header #header-content {
+    position: relative;
+    z-index: 1; }
+  header .particles-js-canvas-el {
+    display: none; }
   header h1 {
     margin-top: 100px; }
   header h4 {
+    margin-bottom: 100px; }
+  header a.btn {
+    display: block;
     margin-bottom: 100px; }
 
 .sec-showcase {
@@ -367,24 +442,116 @@ header {
 .sec-showcase-white {
   background-color: white; }
 
-.sec-features {
-  margin-top: 50px; }
-  .sec-features h3, .sec-features p {
-    text-align: left; }
-  .sec-features p {
-    margin-bottom: 100px; }
+.sec-showcase-blue {
+  background-color: #E9F3F9; }
+  .sec-showcase-blue h2 {
+    color: #2585C4; }
 
-.myChart-width {
-  position: absolute;
-  width: 70%;
-  bottom: 6%;
-  right: 8%; }
+.sec-analytics {
+  padding-bottom: 0; }
+  .sec-analytics .analytics-content {
+    position: absolute;
+    left: 25%;
+    transform: translate(-18%, 0);
+    z-index: 10; }
+
+.myChart-container {
+  width: 100%;
+  padding-top: 100px; }
 
 canvas#myChart {
-  background-color: white;
-  padding: 10px;
+  display: block;
   width: 100%;
-  height: auto; }
+  height: auto;
+  bottom: 0%;
+  margin: 0;
+  padding: 0;
+  border: none; }
+
+.notification-bell {
+  position: absolute;
+  top: -26px;
+  left: -26px;
+  font-size: 2.8em;
+  color: #F4F41E;
+  -webkit-transform: rotate(340deg);
+  -moz-transform: rotate(340deg);
+  -ms-transform: rotate(340deg);
+  -o-transform: rotate(340deg);
+  transform: rotate(340deg);
+  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(340), M12=-sin(340), M21=sin(340), M22=cos(340));
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(340), M12=-sin(340), M21=sin(340), M22=cos(340))";
+  zoom: 1; }
+  .notification-bell i {
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16); }
+
+.notification {
+  height: 70px;
+  overflow: hidden;
+  position: relative;
+  background-color: white;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  color: #364251;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.06);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.06);
+  -ms-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.06); }
+
+.notification-middle {
+  position: absolute;
+  top: 25%; }
+
+.notification-inner {
+  position: relative;
+  top: -50%; }
+
+.notification-label, .group-label {
+  display: block; }
+
+.notification-content {
+  display: block;
+  margin-left: 50px;
+  text-align: left; }
+
+.sec-steps h5 {
+  color: #EB5768;
+  text-transform: uppercase;
+  font-weight: 600; }
+.sec-steps h6 {
+  color: #828C96; }
+.sec-steps img {
+  margin: 60px auto 60px auto; }
+.sec-steps #img-signup-org {
+  width: 50%; }
+.sec-steps #img-connect-team {
+  width: 100%; }
+.sec-steps #img-share-with-team {
+  width: 70%;
+  margin-top: 50px; }
+
+.blue {
+  background-color: #3883d8; }
+
+.turqoise {
+  background-color: #38ced7; }
+
+.green {
+  background-color: #22d659; }
+
+.bordeaux {
+  background-color: #953543; }
+
+.panel {
+  height: 100%;
+  width: 100%; }
+
+.panel.green {
+  margin-bottom: 400px; }
 
 .sec-clients {
   margin-top: 100px; }
@@ -404,15 +571,19 @@ canvas#myChart {
     font-size: 1em;
     color: #B3B3B3; }
 
-.sec-email {
+.sec-cta-signup {
   background-color: #E5F7F6;
   padding-top: 70px;
   padding-bottom: 70px; }
-  .sec-email h1 {
+  .sec-cta-signup h1 {
     color: #66D1CD; }
-  .sec-email h4 {
+  .sec-cta-signup h4 {
     color: #828C96; }
-  .sec-email .input-group {
+  .sec-cta-signup .input-group {
+    margin-top: 50px;
+    margin-bottom: 50px; }
+  .sec-cta-signup a.btn {
+    display: block;
     margin-top: 50px;
     margin-bottom: 50px; }
 
@@ -514,5 +685,93 @@ footer {
       text-transform: uppercase;
       display: block;
       color: #E5F7F6; }
+
+/********************** ANIMATIONS *********************/
+.delay-half-sec {
+  -webkit-animation-delay: 0.5s;
+  /* Chrome, Safari, Opera */
+  animation-delay: 0.5s; }
+
+.delay-1-sec {
+  -webkit-animation-delay: 1s;
+  /* Chrome, Safari, Opera */
+  animation-delay: 1s; }
+
+.delay-1-half-sec {
+  -webkit-animation-delay: 1.5s;
+  /* Chrome, Safari, Opera */
+  animation-delay: 1.5s; }
+
+.delay-2-sec {
+  -webkit-animation-delay: 2s;
+  /* Chrome, Safari, Opera */
+  animation-delay: 2s; }
+
+.delay-2-half-sec {
+  -webkit-animation-delay: 2.5s;
+  /* Chrome, Safari, Opera */
+  animation-delay: 2.5s; }
+
+/* fadeInLeft */
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft; }
+
+/* swing */
+@-webkit-keyframes swing {
+  20% {
+    -webkit-transform: rotate3d(0, 0, 1, 355deg);
+    transform: rotate3d(0, 0, 1, 355deg); }
+  40% {
+    -webkit-transform: rotate3d(0, 0, 1, 330deg);
+    transform: rotate3d(0, 0, 1, 330deg); }
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 345deg);
+    transform: rotate3d(0, 0, 1, 345deg); }
+  80% {
+    -webkit-transform: rotate3d(0, 0, 1, 335deg);
+    transform: rotate3d(0, 0, 1, 335deg); }
+  100% {
+    -webkit-transform: rotate3d(0, 0, 1, 340deg);
+    transform: rotate3d(0, 0, 1, 340deg); } }
+@keyframes swing {
+  20% {
+    -webkit-transform: rotate3d(0, 0, 1, 355deg);
+    transform: rotate3d(0, 0, 1, 355deg); }
+  40% {
+    -webkit-transform: rotate3d(0, 0, 1, 330deg);
+    transform: rotate3d(0, 0, 1, 330deg); }
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 345deg);
+    transform: rotate3d(0, 0, 1, 345deg); }
+  80% {
+    -webkit-transform: rotate3d(0, 0, 1, 335deg);
+    transform: rotate3d(0, 0, 1, 335deg); }
+  100% {
+    -webkit-transform: rotate3d(0, 0, 1, 340deg);
+    transform: rotate3d(0, 0, 1, 340deg); } }
+.swing {
+  -webkit-transform-origin: top center;
+  transform-origin: top center;
+  -webkit-animation-name: swing;
+  animation-name: swing; }
 
 /*# sourceMappingURL=main.css.map */

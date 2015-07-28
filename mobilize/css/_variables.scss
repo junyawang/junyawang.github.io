@@ -6,12 +6,21 @@ $lightGrey: #B3B3B3;
 $darkGrey: #828C96;
 $darkBlue: #364251;
 
+$blue: #2585C4;
+$red: #EB5768;
+$orange: #F6AB60;
+$green: #28B294;
+$yellow: #F4F41E;
+$lightBlue: #E9F3F9;
+
+
 /* --------- VARIABLES ---------- */
 $margin-mobile: 70px;
 $margin-desktop: 100px;
 $radius: 10px;
 $transition: ease all 0.2s;
 $box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.06);
+$degrees: 340;
 
 /*---------- MIXINS ---------- */
 @mixin border-radius($radius) {
@@ -49,6 +58,18 @@ $box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.06);
     -moz-transition: border $transition ease-in-out, color $transition ease-in-out;
     transition: border $transition ease-in-out, color $transition ease-in-out;
 }
+
+@mixin rotate( $degrees ) {
+  -webkit-transform: rotate(#{$degrees}deg);
+  -moz-transform: rotate(#{$degrees}deg);
+  -ms-transform: rotate(#{$degrees}deg);
+  -o-transform: rotate(#{$degrees}deg);
+  transform: rotate(#{$degrees}deg);
+
+  filter:  progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($degrees)}, M12=-#{sin($degrees)}, M21=#{sin($degrees)}, M22=#{cos($degrees)});
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($degrees)}, M12=-#{sin($degrees)}, M21=#{sin($degrees)}, M22=#{cos($degrees)})";
+  zoom: 1;
+ }
 
 // @mixin animation ($animation-name, $duration, $timing-function, $delay, $direction, $fill-mode) {
 //     -webkit-animation-name: $animation;

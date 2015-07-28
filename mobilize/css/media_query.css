@@ -8,6 +8,21 @@
 /* No media query since this is the default in Bootstrap */
 /* Small devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 3em; }
+
+  h2 {
+    font-size: 2.6em; }
+
+  h3 {
+    font-size: 1.3em; }
+
+  h4 {
+    font-size: 1.2em; }
+
+  h5 {
+    font-size: 1.3em; }
+
   .navbar-default {
     padding: 50px 0; }
 
@@ -37,6 +52,13 @@
     padding-top: 300px;
     padding-bottom: 100px; }
 
+  .sec-analytics .analytics-content {
+    left: 50%;
+    transform: translate(-50%, 0); }
+
+  .myChart-container {
+    padding-top: 0px; }
+
   .sec-privacy {
     padding-top: 300px;
     padding-bottom: 100px; }
@@ -63,6 +85,24 @@
         font-size: 0.8em; } }
 /* Medium devices (desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  header #header-content {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1; }
+  header .particles-js-canvas-el {
+    display: block; }
+
+  .sec-steps img {
+    margin: 60px auto 40px auto; }
+  .sec-steps #img-signup-org {
+    width: 50%; }
+  .sec-steps #img-connect-team {
+    width: 100%; }
+  .sec-steps #img-share-with-team {
+    width: 70%;
+    margin-top: 50px; }
+
   footer .footer-logo {
     margin: 0 auto; }
   footer img {
@@ -110,6 +150,14 @@
 
   h5 {
     font-size: 1.6em; }
+
+  .sec-steps #img-signup-org {
+    width: 50%; }
+  .sec-steps #img-connect-team {
+    width: 90%; }
+  .sec-steps #img-share-with-team {
+    width: 60%;
+    margin-top: 60px; }
 
   footer .logo-name {
     font-size: 3em; }

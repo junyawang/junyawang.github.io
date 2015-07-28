@@ -15,6 +15,7 @@
     <!-- CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.min.css" rel="stylesheet" type="text/css">
     <link href="css/main.min.css" rel="stylesheet" type="text/css">
     <link href="css/media_query.min.css" rel="stylesheet" type="text/css">
 
@@ -26,6 +27,14 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/Chart.min.js"></script>
     
+    <!-- JS for ScrollMagic -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="js/scrollmagic/minified/ScrollMagic.min.js"></script>
+    <script src="js/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+    <!-- ScrollMagic Debugging Indicator Visulization-->
+    <script src="js/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+
+    <!--
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -34,271 +43,390 @@
 
       ga('create', 'UA-65001007-1', 'auto');
       ga('send', 'pageview');
-    </script>
+    </script> -->
 
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-        <nav class="navbar navbar-default" role="navigation">
-            <div class="container">
-                <!-- Logo -->
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                  <a href="index.html" class="navbar-brand">
-                    <img class="img-responsive img-logo-white" src="img/mobilize_logo_white.png" alt="">
-                    <img class="img-responsive img-logo-color" src="img/mobilize_logo_color.png" alt="">
-                  </a>
-                </div>
-                
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="navbar-collapse">
-                  <ul class="nav navbar-nav">
-                    <li><a href="index.html" class="active">About</a></li>
-                    <li><a href="apps.html">Apps</a></li>
-                  </ul>
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <!-- Logo -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="index.html" class="navbar-brand">
+          <img class="img-responsive img-logo-white" src="img/mobilize_logo_white.png" alt="">
+          <img class="img-responsive img-logo-color" src="img/mobilize_logo_color.png" alt="">
+        </a>
+      </div>
+      
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html" class="active">Product</a></li>
+          <li><a href="apps.html">Apps</a></li>
+        </ul>
 
-                  <ul class="nav navbar-nav navbar-right">
-                    <li><a href="signup.html" class="btn btn-info">30 day free trial</a></li>
-                  </ul>
-                </div><!-- /.navbar-collapse -->
-            </div>
-        </nav>
-       
-       <!-- HEADER -->
-        <header class="">
-          <div class="container">
-            <div class="row">
-              <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
-                <h1>Mobilize your people</h1>
-                <h4>Document sharing for the future</h4>
-              </div>
-            </div> 
-            <div class="row">
-              <div class="col-xs-10 col-xs-offset-1">
-                <img class="img-responsive" src="img/mobilize_browser.png" alt="">
-              </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://uat.getmobilize.com" class="btn btn-default">30 day free trial</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div>
+  </nav>
+
+ <!-- HEADER -->
+  <header class="" id="particles-js">
+    <div id="header-content">
+      <div class="container">
+        <h1>Mobilize Your People</h1>
+        <h4>Create a deep mobile connection with your team</h4>
+
+        <div class="row">
+          <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+            <a href="signup.html" class="btn btn-primary btn-lg">Sign up</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-10 col-xs-offset-1">
+            <img class="img-responsive" src="img/mobilize_browser.png" alt="">
+          </div>
+        </div>  
+      </div>
+    </div>
+  </header>
+
+  <!-- Feature 1 - Data & Analytics -->
+  <section class="sec-showcase sec-showcase-blue sec-analytics">
+      <div class="container">
+        <h2>The Smartest Way to Share</h2>
+        <h4>All your important documents distributed and tracked on all devices</h4> 
+      </div>
+      
+      <div class="analytics-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+              <img class="img-responsive" src="img/panel-engagement-score.png" alt="">
             </div>  
           </div>
-        </header>
-        
-        <!-- Showcase One -->
-        <section class="sec-showcase sec-showcase-white">
-          <div class="container">
+        </div>
+      </div>
+
+      <div class="myChart-container">
+        <canvas id="myChart"></canvas>
+      </div>
+  </section>
+  
+  <!-- Feature 2 - Notifications -->
+  <section class="sec-showcase sec-showcase-aqua">
+      <div class="container">
+        <div class="row">
+          <h2>Connect Your Organization</h2>
+          <h4>Know more about how your documents are being viewed, shared and loved</h4> 
+
+          <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
+            <div class="notification-container animated fadeInLeft">
+              <div class="notification">
+                <div class="notification-middle">
+                  <div class="notification-inner">
+                    <div class="notification-label group-label group-label-red ">Sale</div>
+                  </div>
+                </div>
+                <div class="notification-middle">
+                  <div class="notification-inner">
+                    <span class="notification-content"><strong>All people</strong> in your <strong>Sales</strong> team have read your file!</span>
+                  </div>
+                </div>
+              </div>
+              <div class="notification-bell animated swing delay-1-half-sec">
+                <i class="fa fa-bell"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-offset-6 col-md-5 col-lg-offset-6 col-lg-5">
+            <div class="notification-container animated fadeInLeft delay-half-sec">
+              <div class="notification">
+                <div class="notification-middle">
+                  <div class="notification-inner">
+                    <div class="notification-label"><i class="fa fa-share-alt"></i></div>
+                  </div>
+                </div>
+                <div class="notification-middle">
+                  <div class="notification-inner">
+                    <span class="notification-content"><strong>Nick Rindahl</strong> has shared your document.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="notification-bell animated swing delay-2-sec">
+                <i class="fa fa-bell"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-offset-2 col-md-5 col-lg-offset-4 col-lg-5">
+            <div class="notification-container animated fadeInLeft delay-1-sec">
+              <div class="notification">
+                <div class="notification-middle">
+                  <div class="notification-inner">
+                    <div class="notification-label"><i class="fa fa-star"></i></div>
+                  </div>
+                </div>
+                <div class="notification-middle">
+                  <div class="notification-inner">
+                    <span class="notification-content"><strong>Junya Wang</strong> and <strong>Mike Abbott</strong> added your file to their favourite!</span>
+                  </div>
+                </div>
+              </div>
+              <div class="notification-bell animated swing delay-2-half-sec">
+                <i class="fa fa-bell"></i>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>  
+  </section>
+
+  <!-- Feature 3 - Ease of Implementation -->
+  <section class="sec-showcase sec-showcase-white sec-steps">
+    <div class="container">
+      <div class="row">
+          <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+            <h2>Mobilize Your Roll-Outs</h2>
+            <h4>Share all your organization's information quickly</h4> 
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-4">
+          <h5>Step 1</h5>
+          <h6>Sign in by creating an organization</h6>
+          <img src="img/signup-org.png" class="img-responsive" id="img-signup-org">
+        </div> 
+
+        <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-4">
+          <h5>Step 2</h5>
+          <h6>Connect your team</h6>
+          <img src="img/connect-team.png" class="img-responsive" id="img-connect-team">
+        </div>
+
+        <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-4">
+          <h5>Step 3</h5>
+          <h6>Share files with your team</h6>
+          <img src="img/share-with-team.png" class="img-responsive" id="img-share-with-team">
+        </div> 
+
+      </div>  
+    </div>  
+  </section>  
+  
+  <!-- Features -->
+  <!-- <section class="sec-features">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0">
             <div class="row">
-                <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-                  <h2>The smartest way to share</h2>
-                  <h4>See when your documents are viewd, shared and loved</h4> 
-                </div>
+              <div class="col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-0">
+                <img class="img-responsive" src="img/feature_file.png" alt="">
+              </div>
+              <div class="col-xs-10 col-xs-offset-1 col-sm-9 col-sm-offset-0">
+                <h3>File Management</h3>
+                <p>Store and share all of your documents. Set time limits on file access.</p>
+              </div>
             </div>
+          </div>
+          <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0">
             <div class="row">
-              <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-                <img class="img-responsive" src="img/mobilize_macbook_mocks.png" alt="">
-              </div>  
-            </div>  
-          </div>  
-        </section>  
-        
-        <!-- Features -->
-        <section class="sec-features">
-            <div class="container">
-              <div class="row">
-                <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0">
-                  <div class="row">
-                    <div class="col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-0">
-                      <img class="img-responsive" src="img/feature_file.png" alt="">
-                    </div>
-                    <div class="col-xs-10 col-xs-offset-1 col-sm-9 col-sm-offset-0">
-                      <h3>File Management</h3>
-                      <p>Store and share all of your documents. Set time limits on file access.</p>
-                    </div>
-                  </div>
+                <div class="col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-0">
+                  <img class="img-responsive" src="img/feature_cloud.png" alt="">
                 </div>
-                <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0">
-                  <div class="row">
-                      <div class="col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-0">
-                        <img class="img-responsive" src="img/feature_cloud.png" alt="">
-                      </div>
-                      <div class="col-xs-10 col-xs-offset-1 col-sm-9 col-sm-offset-0">
-                        <h3>Simplify Attachments</h3>
-                        <p>Attaching things to email is old news. Make it easy to find and read files anywhere.</p>
-                      </div>
-                    </div>
-                </div>
-              </div>  
-            </div>  
-        </section>
-
-        <!-- Showcase Two -->
-        <section class="sec-showcase sec-showcase-aqua">
-            <div class="container">
-              <div class="row">
-                <h2>Connecting all clouds</h2>
-                <h4>Centralize your cloud services with complete flexibility</h4> 
-                <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-                  <img class="img-responsive" src="img/mobilize_macbook_iphone_mocks.png" alt="">
-                </div>  
-              </div>  
-            </div>  
-        </section>
-
-        <!-- Showcase Three -->
-        <section class="sec-showcase sec-showcase-white">
-            <div class="container">
-              <div class="row">
-                <h2>Every</h2>
-                <h4>Centralize your cloud services with complete flexibility</h4> 
-                <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-                  <img class="img-responsive" src="img/photo-imac-macbook.jpg" alt="">
-                </div>  
-              </div>  
-            </div>  
-        </section>
-
-        <!-- Showcase Three -->
-        <section class="sec-showcase sec-showcase-white">
-            <div class="container">
-              <div class="row">
-                <h2>Analytics feature</h2>
-                <h4>Analytics feature description</h4> 
-                <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-                  <img class="img-responsive" src="img/mobilize-browser-analytics.jpg" alt="">
-                  <div class="myChart-width">
-                    <canvas id="myChart"></canvas>
-                  </div>
-                </div>  
-              </div>  
-            </div>  
-        </section>
-        
-        <!-- Clients -->
-        <section class="sec-clients">
-            <div class="container">
-              <div class="row">
-                <div class="col-xs-12 col-md-4">
-                  <img class="img-responsive img-clients center-block" src="img/exec_nick.jpg" alt="">
-                  <div class="row">
-                    <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-12 col-md-offset-0">
-                      <blockquote>“I’ve never been so unafraid to fight cops in all of my life! Mobilize has given me complete freedom to handle my life from here on. Bring it!”</blockquote>
-                    </div>
-                  </div>
-                  <span class="client-name text-center">Example Name</span>
-                  <span class="client-title text-center">Example Job Title</span>
-                </div>
-
-                <div class="col-xs-12 col-md-4">
-                  <img class="img-responsive img-clients center-block" src="img/exec_soren.jpg" alt="">
-                  <div class="row">
-                    <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-12 col-md-offset-0">
-                      <blockquote>“I’ve never been so unafraid to fight cops in all of my life! Mobilize has given me complete freedom to handle my life from here on. Bring it!”</blockquote>
-                    </div>
-                  </div>
-                  <span class="client-name text-center">Example Name</span>
-                  <span class="client-title text-center">Example Job Title</span>
-                </div>
-
-                <div class="col-xs-12 col-md-4">
-                  <img class="img-responsive img-clients center-block" src="img/exec_david.jpg" alt="">
-                  <div class="row">
-                    <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-12 col-md-offset-0">
-                      <blockquote>“I’ve never been so unafraid to fight cops in all of my life! Mobilize has given me complete freedom to handle my life from here on. Bring it!”</blockquote>
-                    </div>
-                  </div>
-                  <span class="client-name text-center">Example Name</span>
-                  <span class="client-title text-center">Example Job Title</span>
+                <div class="col-xs-10 col-xs-offset-1 col-sm-9 col-sm-offset-0">
+                  <h3>Simplify Attachments</h3>
+                  <p>Attaching things to email is old news. Make it easy to find and read files anywhere.</p>
                 </div>
               </div>
-            </div>
-        </section> <!-- ADMIN FEATURES -->
+          </div>
+        </div>  
+      </div>  
+  </section> -->
 
-        <!-- Email -->
-        <section class="sec-email" id="sec-email">
-            <div class="container">
-              <div class="row">
-                <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1">
-                  <h1>Start sharing the smart way</h1>
-                  <h4>Sign up and start today!</h4>
+
+
+  <!-- <section class="panel blue">
+    <b>ONE</b>
+  </section>
+  <section class="panel turqoise">
+    <b>TWO</b>
+  </section>
+  <section class="panel green">
+    <b>THREE</b>
+  </section>
+  <section class="panel bordeaux">
+    <b>FOUR</b>
+  </section> -->
+  
+  <!-- Clients -->
+  <!-- <section class="sec-clients">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-4">
+            <img class="img-responsive img-clients center-block" src="img/exec_nick.jpg" alt="">
+            <div class="row">
+              <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-12 col-md-offset-0">
+                <blockquote>“I’ve never been so unafraid to fight cops in all of my life! Mobilize has given me complete freedom to handle my life from here on. Bring it!”</blockquote>
+              </div>
+            </div>
+            <span class="client-name text-center">Example Name</span>
+            <span class="client-title text-center">Example Job Title</span>
+          </div>
+
+          <div class="col-xs-12 col-md-4">
+            <img class="img-responsive img-clients center-block" src="img/exec_soren.jpg" alt="">
+            <div class="row">
+              <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-12 col-md-offset-0">
+                <blockquote>“I’ve never been so unafraid to fight cops in all of my life! Mobilize has given me complete freedom to handle my life from here on. Bring it!”</blockquote>
+              </div>
+            </div>
+            <span class="client-name text-center">Example Name</span>
+            <span class="client-title text-center">Example Job Title</span>
+          </div>
+
+          <div class="col-xs-12 col-md-4">
+            <img class="img-responsive img-clients center-block" src="img/exec_david.jpg" alt="">
+            <div class="row">
+              <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-12 col-md-offset-0">
+                <blockquote>“I’ve never been so unafraid to fight cops in all of my life! Mobilize has given me complete freedom to handle my life from here on. Bring it!”</blockquote>
+              </div>
+            </div>
+            <span class="client-name text-center">Example Name</span>
+            <span class="client-title text-center">Example Job Title</span>
+          </div>
+        </div>
+      </div>
+  </section> -->
+
+  <!-- CTA - Sign up -->
+  <section class="sec-cta-signup" id="sec-cta-signup">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1">
+            <h1>Share the Smart Way</h1>
+            <h4>Mobilize your people</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+            <!-- <div class="input-group input-group-lg">
+              <input type="email" class="form-control" placeholder="Email address">
+              <span class="input-group-btn">
+                <button class="btn btn-info btn-lg" type="button">
+                  <i class="fa fa-arrow-right"></i>
+                </button>
+              </span>
+            </div> -->
+
+           <a href="signup.html" class="btn btn-info btn-lg">Sign up</a>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- FOOTER AREA-->
+  <footer>
+      <!-- FOOTER -->
+      <div class="container">
+          <div class="row">
+              <!--footer left-->
+              <div class="hidden-xs col-sm-3">
+                <a href="index.html#page-top" id="moblize-logo">
+                  <img class="img-responsive" src="img/mobilize_logo_white.png" alt="">
+                </a>
+                <div class="logo-content">
+                  <a href="index.html#page-top" class="logo-name" id="mobilize-name">Mobilize</a>
+                  <span class="copyright">Copyright &copy; 2015</span>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
-                  <div class="input-group input-group-lg">
-                    <input type="email" class="form-control" placeholder="Email address">
-                    <span class="input-group-btn">
-                      <button class="btn btn-default btn-lg" type="button">
-                        <i class="fa fa-arrow-right"></i>
-                      </button>
-                    </span>
-                  </div><!-- /input-group -->
-                </div>
+
+              <div class="col-xs-12 col-sm-6 footer-nav">
+                  <ul>
+                    <li><a href="index.html">Product</a></li>
+                    <li><a href="apps.html">Apps</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                  </ul>
               </div>
-            </div>
-        </section>
-
-        <!-- FOOTER AREA-->
-        <footer>
-            <!-- FOOTER -->
-            <div class="container">
-                <div class="row">
-                    <!--footer left-->
-                    <div class="hidden-xs col-sm-3">
-                      <a href="index.html#page-top" id="moblize-logo">
-                        <img class="img-responsive" src="img/mobilize_logo_white.png" alt="">
-                      </a>
-                      <div class="logo-content">
-                        <a href="index.html#page-top" class="logo-name" id="mobilize-name">Mobilize</a>
-                        <span class="copyright">Copyright &copy; 2015</span>
-                      </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6 footer-nav">
-                        <ul>
-                          <li><a href="index.html">About</a></li>
-                          <li><a href="apps.html">Apps</a></li>
-                          <li><a href="privacy.html">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-                    
-                    <!--footer right-->
-                    <div class="col-xs-12 col-sm-3 footer-right">
-                        <span class="twitter">Follow us on Twitter <a href="https://twitter.com/getmobilize" target="_blank">@Mobilize</a></span>
-                        <span class="momentus-website"><a href="http://www.momentussoftware.com" target="_blank"> Momentus Software.com</span>
-                    </div>
-                </div>
-            </div>
-        </footer>
+              
+              <!--footer right-->
+              <div class="col-xs-12 col-sm-3 footer-right">
+                  <span class="twitter">Follow us on Twitter <a href="https://twitter.com/getmobilize" target="_blank">@Mobilize</a></span>
+                  <span class="momentus-website"><a href="http://www.momentussoftware.com" target="_blank"> Momentus Software.com</span>
+              </div>
+          </div>
+      </div>
+  </footer>
 
 
-    <!-- Nav bar background color change -->
-    <script type="text/javascript">
-         $(window).scroll(function() {    
-             var scroll = $(window).scrollTop();
+  <!-- Nav bar background color change -->
+  <script type="text/javascript">
+    $(window).scroll(function() {    
+       var scroll = $(window).scrollTop();
 
-             if (scroll >= 300) {
-                 $(".navbar").addClass("navbar-scroll");
-             } else {
-                 $(".navbar").removeClass("navbar-scroll");
-             }
-         });
+       if (scroll >= 300) {
+           $(".navbar").addClass("navbar-scroll");
+       } else {
+           $(".navbar").removeClass("navbar-scroll");
+       }
+    });
 
-         $("#mobilize-logo").click(function() {
-             $('html, body').animate({
-                 scrollTop: $("index.html#page-top").offset().top
-             }, 800);
-         });
+    $("#mobilize-logo").click(function() {
+       $('html, body').animate({
+           scrollTop: $("index.html#page-top").offset().top
+       }, 800);
+    });
 
-         $("#mobilize-name").click(function() {
-             $('html, body').animate({
-                 scrollTop: $("index.html#page-top").offset().top
-             }, 800);
-         });
-    </script>
-     <script src="js/main.js"></script>
+    $("#mobilize-name").click(function() {
+       $('html, body').animate({
+           scrollTop: $("index.html#page-top").offset().top
+       }, 800);
+    });
+  </script>
+
+  <script>
+    $(function () { // wait for document ready
+      // init
+      var controller = new ScrollMagic.Controller({
+        globalSceneOptions: {
+          triggerHook: 'onLeave'
+        }
+      });
+
+      // get all slides
+      var slides = document.querySelectorAll("section.panel");
+
+      // create scene for every slide
+      for (var i=0; i<slides.length; i++) {
+        new ScrollMagic.Scene({
+            triggerElement: slides[i]
+          })
+          .setPin(slides[i])
+          .addIndicators() // add indicators (requires plugin)
+          .addTo(controller);
+      }
+    });
+  </script>
+  <script src="js/scrollmagic/examples.js"></script>
+  <script src="js/scrollmagic/ScrollMagic.js"></script>
+
+  <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="js/particle-app.js"></script>
+  <!-- stats.js lib -->
+  <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>

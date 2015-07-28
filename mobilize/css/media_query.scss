@@ -9,6 +9,26 @@
 /* Small devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2.6em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    h4 {
+        font-size: 1.2em;
+    }
+
+    h5 {
+        font-size: 1.3em;
+    }
+
     .navbar-default {
         padding: 50px 0;
     }
@@ -43,6 +63,17 @@
     .sec-apps {
         padding-top: $margin-desktop * 3;
         padding-bottom: $margin-desktop;
+    }
+    
+    .sec-analytics {
+        .analytics-content {
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+    }
+
+    .myChart-container {
+        padding-top: 0px;
     }
 
     .sec-privacy {
@@ -89,6 +120,39 @@
 
 /* Medium devices (desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+    header {
+        #header-content {
+            position: absolute;
+            left: 50%;
+            // top: 50%;
+            transform: translate(-50%, 0);
+            z-index: 1;
+        }
+
+        .particles-js-canvas-el {
+            display: block;
+        }
+    }
+
+    .sec-steps {
+        img {
+            margin: 60px auto 40px auto;
+        }
+
+        #img-signup-org {
+            width: 50%;
+        }
+
+        #img-connect-team {
+            width: 100%;
+        }
+
+        #img-share-with-team {
+            width: 70%;
+            margin-top: 50px;
+        }
+    }
+
     footer {
         .footer-logo {
             margin: 0 auto;
@@ -169,6 +233,21 @@
 
     h5 {
         font-size:1.6em;
+    }
+    
+    .sec-steps {
+        #img-signup-org {
+            width: 50%;
+        }
+
+        #img-connect-team {
+            width: 90%;
+        }
+
+        #img-share-with-team {
+            width: 60%;
+            margin-top: 60px;
+        }
     }
 
     footer {
