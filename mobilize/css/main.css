@@ -447,9 +447,9 @@ header {
   .sec-showcase-blue h2 {
     color: #2585C4; }
 
-.sec-analytics {
+#sec-analytics {
   padding-bottom: 0; }
-  .sec-analytics .analytics-content {
+  #sec-analytics .analytics-content {
     position: absolute;
     left: 25%;
     transform: translate(-18%, 0);

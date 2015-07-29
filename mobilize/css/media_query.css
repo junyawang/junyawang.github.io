@@ -52,7 +52,7 @@
     padding-top: 300px;
     padding-bottom: 100px; }
 
-  .sec-analytics .analytics-content {
+  #sec-analytics .analytics-content {
     left: 50%;
     transform: translate(-50%, 0); }
 

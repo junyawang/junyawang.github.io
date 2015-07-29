@@ -104,20 +104,30 @@ var ctx = document.getElementById("myChart").getContext("2d");
 
 /******** ScrollMagic *********/
 
-$(function() {
-    // Create new instance of a controller
+$(function() { // wait for document ready
+    // init controller
     var controller = new ScrollMagic.Controller();
 
-    // Create new instance of a scene
-    // A scene defines where the controller should react and how
-    var scene = new ScrollMagic.Scene({
-        triggerElement: '.sec-showcase-analytics', // starting scene, when reaching this element
+    // build scene 1 - Section Analytics
+    var sceneAnalytics = new ScrollMagic.Scene({
+        triggerElement: '#sec-analytics', // starting scene, when reaching this element
         // duration: 400 // pin the element for 400px of scrolling
-    });
+    })
+    .on("enter", function () {
+        // on enter, draw line chart
+        var myNewChart = new Chart(ctx).Line(data);
+        new Chart(ctx).Line(data, options);
+    })
+    .addTo(controller);
 
-    // .setPin('#pinned-element1'); // the element we want to pin
-    var myNewChart = new Chart(ctx).Line(data);
-    new Chart(ctx).Line(data, options);
-    // Add Scene to ScrollMagic Controller
-    controller.addScene(scene);
+    // build scene 2 - Section Notification
+    var sceneNotification = new ScrollMagic.Scene({
+        triggerElement: '#sec-notification', // starting scene, when reaching this element
+    })
+    // .setClassToggle(".notification-container", "fadeInLeft")
+    .setClassToggle(".notification-bell", "swing")
+    .addTo(controller);
+
+    // sceneAnalytics.remove();
+    // sceneNotification.remove();
 });
