@@ -60,8 +60,8 @@
           <span class="icon-bar"></span>
         </button>
         <a href="index.html" class="navbar-brand">
-          <img class="img-responsive img-logo-white" src="img/mobilize_logo_white.png" alt="">
-          <img class="img-responsive img-logo-color" src="img/mobilize_logo_color.png" alt="">
+          <img class="img-responsive img-logo-white" src="img/mobilize_logo_white.svg" alt="">
+          <img class="img-responsive img-logo-color" src="img/mobilize_logo_color.svg" alt="">
         </a>
       </div>
       
@@ -69,14 +69,14 @@
       <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="nav navbar-nav">
           <li><a href="index.html" class="active">For HR/Ops</a></li>
-          <li><a href="index.html">For Sales</a></li>
+          <li><a href="#">For Sales</a></li>
           <!-- <li><a href="apps.html">Apps</a></li> -->
-          <li><a href="index.html">Case Study</a></li>
-          <li><a href="index.html">Pricing</a></li>
+          <li><a href="#">Case Study</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="http://uat.getmobilize.com" class="btn btn-default" target="_blank">30 day free trial</a></li>
+          <li><a href="http://uat.getmobilize.com" class="btn btn-default" target="_blank">Get Started</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div>
@@ -90,7 +90,7 @@
 
       <div class="row">
         <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
-          <a href="https://uat.getmobilize.com/register" class="btn btn-default btn-lg" target="_blank">Get started</a>
+          <a href="https://uat.getmobilize.com/register" class="btn btn-default btn-lg" target="_blank">Get Started</a>
         </div>
       </div>
     </div>
@@ -103,17 +103,20 @@
         <h2>Connect your whole team</h2>
         <h4>All your important documents distributed and tracked on any device</h4>
         <div class="row">
-            <div class="col-xs-2">
+            <!-- <div class="col-xs-2">
               <img class="img-responsive" src="img/mobilize-iphone5.png" alt="">
             </div>
             <div class="col-xs-2">
-              <img class="img-responsive" src="img/mobilize-iphone5.png" alt="">
+              <img class="img-responsive" src="img/mobilize-nexus5.png" alt="">
             </div>
             <div class="col-xs-5">
               <img class="img-responsive" src="img/mobilize-macbook.png" alt="">
             </div>
             <div class="col-xs-3">
               <img class="img-responsive" src="img/mobilize-ipad.png" alt="">
+            </div> -->
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+              <img class="img-responsive" src="img/mobilize-showcase.png" alt="">
             </div>
         </div>
       </div>
@@ -152,19 +155,19 @@
         <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-4">
           <h5>Step 1</h5>
           <h6>Create an organization<br>and connect your team</h6>
-          <img src="img/connect-team.png" class="img-responsive animated" id="img-connect-team">
+          <img src="img/connect-team.svg" class="img-responsive animated" id="img-connect-team">
         </div> 
 
         <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-4">
           <h5>Step 2</h5>
           <h6>Share files with your team</h6>
-          <img src="img/share-with-team.png" class="img-responsive animated delay-half-sec" id="img-share-with-team">
+          <img src="img/share-with-team.svg" class="img-responsive animated delay-half-sec" id="img-share-with-team">
         </div>
 
         <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-4">
           <h5>Step 3</h5>
           <h6>Receive notifications about what's happening</h6>
-          <img src="img/get-analytics.png" class="img-responsive animated delay-1-sec" id="img-get-analytics">
+          <img src="img/get-analytics.svg" class="img-responsive animated delay-1-sec" id="img-get-analytics">
         </div> 
       </div>
     </div>  
@@ -345,7 +348,7 @@
               </span>
             </div> -->
 
-           <a href="https://uat.getmobilize.com/register" class="btn btn-info btn-lg" target="_blank">Get started</a>
+           <a href="https://uat.getmobilize.com/register" class="btn btn-info btn-lg" target="_blank">Get Started</a>
           </div>
         </div>
       </div>
@@ -359,7 +362,7 @@
               <!--footer left-->
               <div class="hidden-xs col-sm-3">
                 <a href="index.html#page-top" id="moblize-logo">
-                  <img class="img-responsive" src="img/mobilize_logo_white.png" alt="">
+                  <img class="img-responsive" src="img/mobilize_logo_white.svg" alt="">
                 </a>
                 <div class="logo-content">
                   <a href="index.html#page-top" class="logo-name" id="mobilize-name">Mobilize</a>
@@ -369,8 +372,6 @@
 
               <div class="col-xs-12 col-sm-6 footer-nav">
                   <ul>
-                    <li><a href="index.html">Product</a></li>
-                    <li><a href="apps.html">Apps</a></li>
                     <li><a href="privacy.html">Privacy Policy</a></li>
                   </ul>
               </div>
@@ -410,29 +411,7 @@
     });
   </script>
 
-  <script>
-    $(function () { // wait for document ready
-      // init
-      var controller = new ScrollMagic.Controller({
-        globalSceneOptions: {
-          triggerHook: 'onLeave'
-        }
-      });
-
-      // get all slides
-      var slides = document.querySelectorAll("section.panel");
-
-      // create scene for every slide
-      for (var i=0; i<slides.length; i++) {
-        new ScrollMagic.Scene({
-            triggerElement: slides[i]
-          })
-          .setPin(slides[i])
-          .addIndicators() // add indicators (requires plugin)
-          .addTo(controller);
-      }
-    });
-  </script>
+  
   <script src="js/scrollmagic/examples.js"></script>
   <script src="js/scrollmagic/ScrollMagic.js"></script>
 
