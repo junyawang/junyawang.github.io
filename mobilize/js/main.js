@@ -123,7 +123,7 @@ $(function() { // wait for document ready
     .on("enter", function () {
         // on enter, draw line chart
         var myNewChart = new Chart(ctx).Line(data);
-        new Chart(ctx).Line(data, options);
+        new Chart(ctx).Line(data, {});
     })
     .addTo(controller);
 

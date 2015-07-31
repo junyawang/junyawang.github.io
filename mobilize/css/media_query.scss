@@ -69,7 +69,8 @@
     #sec-analytics {
         .analytics-content {
             left: 50%;
-            transform: translate(-50%, 0);
+            // transform: translate(-50%, 0);
+            @include translate ($translateX, $translateY);
         }
     }
 
@@ -170,7 +171,8 @@
             position: absolute;
             left: 50%;
             // top: 50%;
-            transform: translate(-50%, 0);
+            // transform: translate(-50%, 0);
+            @include translate ($translateX, $translateY);
             z-index: 1;
         }
 
