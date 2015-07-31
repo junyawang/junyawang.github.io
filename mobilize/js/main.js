@@ -165,8 +165,11 @@ $(function() { // wait for document ready
 
     sceneAnalyticsChart.reverse(false);
     sceneAnalyticsEngagementScore.reverse(false);
+    sceneSteps1.reverse(false);
+    sceneSteps2.reverse(false);
+    sceneSteps3.reverse(false);
     sceneNotification.reverse(false);
-    sceneNotificationBell.reverse(false);
+    sceneNotificationBell.reverse(true);
 });
 
 /******** Change Background Color *********/

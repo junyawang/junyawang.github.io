@@ -19,7 +19,7 @@
     <link href="css/media_query.min.css" rel="stylesheet" type="text/css">
 
     <!-- Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -39,7 +39,7 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-  <nav class="navbar navbar-default" role="navigation">
+  <nav class="navbar navbar-aqua" role="navigation">
     <div class="container">
       <!-- Logo -->
       <div class="navbar-header">
@@ -76,12 +76,107 @@
         <h4>Mobilize is a versatile product, and available for all teams of all sizes. Select the tier which best suits your needs.</h4>
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="panel-pricing panel-pricing-free">
-              <h3>Free<br>Account</h3>
-              <h5>$0.00</h5>
+            
+            <div class="panel-pricing panel-pricing-starter">
+              <h3>Starter</h3>
+              <div class="price-container">
+                <span class="price">$</span>
+                <span class="price price-highlight">0</span>
+                <span class="price">00</span>
+              </div>
+              <span class="price price-suffix"> </span>
               <p>Perfect for the individual user, looking to share their content in a secure way.</p>
-              <span><strong>Free</strong> for 30 days</span>
+              <span class="price-descr"><strong>Free</strong> for 30 days</span>
               <a href="#" class="btn btn-default">Order Now</a>
+            </div>
+
+            <div class="price-detail price-detail-starter">
+              <h3>Starter Account</h3>
+              <hr>
+              <ul>
+                <li>Share any file types with any of your Mobilize contacts</li>
+                <li>Send files via e-mail or SMS text messages to friends with ease</li>
+                <li>Get 2GB of free cloud storage with signing up for Mobilize</li>
+              </ul>
+            </div>
+
+          </div> 
+
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            
+            <div class="panel-pricing panel-pricing-professional">
+              <h3>Professional</h3>
+              <div class="price-container">
+                <span class="price">$</span>
+                <span class="price price-highlight">20</span>
+                <span class="price">00</span>
+              </div>
+              <span class="price price-suffix">Per month</span>
+              <p>Perfect for the individual user, looking to share their content in a secure way.</p>
+              <span class="price-descr"><strong>Free</strong> for 30 days</span>
+              <a href="#" class="btn btn-default">Order Now</a>
+            </div>
+
+            <div class="price-detail price-detail-professional">
+              <h3>Professional Account</h3>
+              <hr>
+              <ul>
+                <li>Share any file types with any of your Mobilize contacts</li>
+                <li>Send files via e-mail or SMS text messages to friends with ease</li>
+                <li>Get 2GB of free cloud storage with signing up for Mobilize</li>
+              </ul>
+            </div>
+            
+          </div> 
+
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            
+            <div class="panel-pricing panel-pricing-business">
+              <h3>Business</h3>
+              <div class="price-container">
+                <span class="price">$</span>
+                <span class="price price-highlight">5</span>
+                <span class="price">00</span>
+              </div>
+              <span class="price price-suffix">Per user per month</span>
+              <p>Perfect for the individual user, looking to share their content in a secure way.</p>
+              <span class="price-descr"><strong>Free</strong> for 30 days</span>
+              <a href="#" class="btn btn-default">Order Now</a>
+            </div>
+
+            <div class="price-detail price-detail-business">
+              <h3>Business Account</h3>
+              <hr>
+              <ul>
+                <li>Share any file types with any of your Mobilize contacts</li>
+                <li>Send files via e-mail or SMS text messages to friends with ease</li>
+                <li>Get 2GB of free cloud storage with signing up for Mobilize</li>
+              </ul>
+            </div>
+            
+          </div> 
+
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            
+            <div class="panel-pricing panel-pricing-enterprise">
+              <h3>Enterprise</h3>
+              <div class="price-container">
+                <span class="price price-contact-us">Contact us</span>
+              </div>
+              <span class="price price-suffix"> </span>
+              <p>Perfect for the individual user, looking to share their content in a secure way.</p>
+              <span class="price-descr"><strong>Free</strong> for 30 days</span>
+              <a href="#" class="btn btn-default">Order Now</a>
+            </div>
+            
+            <div class="price-detail price-detail-enterprise">
+              <h3>Enterprise Account</h3>
+              <hr>
+              <ul>
+                <li>Share any file types with any of your Mobilize contacts</li>
+                <li>Send files via e-mail or SMS text messages to friends with ease</li>
+                <li>Get 2GB of free cloud storage with signing up for Mobilize</li>
+              </ul>
             </div>
           </div>  
         </div>
@@ -127,9 +222,9 @@
        var scroll = $(window).scrollTop();
 
        if (scroll >= 300) {
-           $(".navbar").addClass("navbar-scroll");
+           $(".navbar").addClass("navbar-white");
        } else {
-           $(".navbar").removeClass("navbar-scroll");
+           $(".navbar").removeClass("navbar-white");
        }
     });
 

@@ -138,42 +138,77 @@ p {
   -o-transition: ease all 0.2s;
   transition: ease all 0.2s; }
 
-.navbar-default {
+.navbar-transparent {
   background-color: transparent;
   border: none; }
-  .navbar-default .img-logo-color {
+  .navbar-transparent .img-logo-color {
     display: none; }
-  .navbar-default .navbar-toggle .icon-bar {
+  .navbar-transparent .navbar-toggle .icon-bar {
     background-color: white; }
-  .navbar-default .navbar-toggle:hover,
-  .navbar-default .navbar-toggle:focus {
+  .navbar-transparent .navbar-toggle:hover,
+  .navbar-transparent .navbar-toggle:focus {
     background-color: #66D1CD; }
-    .navbar-default .navbar-toggle:hover .icon-bar,
-    .navbar-default .navbar-toggle:focus .icon-bar {
+    .navbar-transparent .navbar-toggle:hover .icon-bar,
+    .navbar-transparent .navbar-toggle:focus .icon-bar {
       background-color: white; }
-  .navbar-default .navbar-nav > li > a {
+  .navbar-transparent .navbar-nav > li > a {
     color: white;
     font-size: 1.1em;
     font-weight: 600;
     text-transform: uppercase;
     display: inline-block;
     vertical-align: middle; }
-  .navbar-default .navbar-nav > li > a:hover,
-  .navbar-default .navbar-nav > li > a:focus {
+  .navbar-transparent .navbar-nav > li > a:hover,
+  .navbar-transparent .navbar-nav > li > a:focus {
     color: white; }
-  .navbar-default .navbar-nav > li > a.btn.btn-default {
+  .navbar-transparent .navbar-nav > li > a.btn.btn-default {
     color: white; }
-  .navbar-default .navbar-nav > li > a.btn.btn-default:hover {
+  .navbar-transparent .navbar-nav > li > a.btn.btn-default:hover {
     color: #66D1CD;
     background-color: white; }
-  .navbar-default .navbar-collapse {
+  .navbar-transparent .navbar-collapse {
     border-color: #66D1CD;
     -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.06);
     -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.06);
     -ms-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.06);
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.06); }
 
-.navbar-scroll {
+.navbar-aqua {
+  background-color: #66D1CD;
+  border: none; }
+  .navbar-aqua .img-logo-color {
+    display: none; }
+  .navbar-aqua .navbar-toggle .icon-bar {
+    background-color: white; }
+  .navbar-aqua .navbar-toggle:hover,
+  .navbar-aqua .navbar-toggle:focus {
+    background-color: #66D1CD; }
+    .navbar-aqua .navbar-toggle:hover .icon-bar,
+    .navbar-aqua .navbar-toggle:focus .icon-bar {
+      background-color: white; }
+  .navbar-aqua .navbar-nav > li > a {
+    color: white;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: middle; }
+  .navbar-aqua .navbar-nav > li > a:hover,
+  .navbar-aqua .navbar-nav > li > a:focus {
+    color: white; }
+  .navbar-aqua .navbar-nav > li > a.btn.btn-default {
+    color: white; }
+  .navbar-aqua .navbar-nav > li > a.btn.btn-default:hover {
+    color: #66D1CD;
+    background-color: white; }
+  .navbar-aqua .navbar-collapse {
+    border-color: #66D1CD;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.06);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.06);
+    -ms-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.06); }
+
+.navbar-white {
   position: fixed;
   top: 0;
   background: white;
@@ -196,28 +231,28 @@ p {
   -moz-transition: ease all 0.2s;
   -o-transition: ease all 0.2s;
   transition: ease all 0.2s; }
-  .navbar-scroll .img-logo-color {
+  .navbar-white .img-logo-color {
     display: inline-block; }
-  .navbar-scroll .img-logo-white {
+  .navbar-white .img-logo-white {
     display: none; }
-  .navbar-scroll .navbar-toggle .icon-bar {
+  .navbar-white .navbar-toggle .icon-bar {
     background-color: #66D1CD; }
-  .navbar-scroll .navbar-toggle:hover,
-  .navbar-scroll .navbar-toggle:focus {
+  .navbar-white .navbar-toggle:hover,
+  .navbar-white .navbar-toggle:focus {
     background-color: white; }
-    .navbar-scroll .navbar-toggle:hover .icon-bar,
-    .navbar-scroll .navbar-toggle:focus .icon-bar {
+    .navbar-white .navbar-toggle:hover .icon-bar,
+    .navbar-white .navbar-toggle:focus .icon-bar {
       background-color: #66D1CD; }
-  .navbar-scroll .navbar-nav > li > a {
+  .navbar-white .navbar-nav > li > a {
     color: #66D1CD; }
-  .navbar-scroll .navbar-nav > li > a:hover,
-  .navbar-scroll .navbar-nav > li > a:focus {
+  .navbar-white .navbar-nav > li > a:hover,
+  .navbar-white .navbar-nav > li > a:focus {
     color: #66D1CD; }
-  .navbar-scroll .navbar-nav > li > a.btn.btn-default {
+  .navbar-white .navbar-nav > li > a.btn.btn-default {
     background-color: white;
     border: 2px solid #66D1CD;
     color: #66D1CD; }
-  .navbar-scroll .navbar-nav > li > a.btn.btn-default:hover {
+  .navbar-white .navbar-nav > li > a.btn.btn-default:hover {
     background-color: #66D1CD;
     color: white; }
 
@@ -435,12 +470,6 @@ header {
   padding-bottom: 0; }
   #sec-analytics .analytics-content {
     position: absolute;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0);
-    -moz-transform: translate(-50%, 0);
-    -ms-transform: translate(-50%, 0);
-    -o-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
     z-index: 10; }
 
 #browser-analytics {
@@ -638,6 +667,7 @@ canvas#myChart {
   #sec-pricing h1 {
     color: #66D1CD; }
   #sec-pricing .panel-pricing {
+    margin: 20px 0;
     padding: 10px 40px;
     color: white;
     -webkit-border-radius: 10px;
@@ -645,9 +675,86 @@ canvas#myChart {
     -ms-border-radius: 10px;
     border-radius: 10px; }
     #sec-pricing .panel-pricing h3, #sec-pricing .panel-pricing h4, #sec-pricing .panel-pricing p, #sec-pricing .panel-pricing span {
-      color: white; }
-  #sec-pricing .panel-pricing-free {
+      color: white;
+      text-align: center; }
+    #sec-pricing .panel-pricing h3 {
+      font-size: 1.4em; }
+    #sec-pricing .panel-pricing .price-container {
+      position: relative;
+      text-align: center;
+      margin-top: 40px;
+      min-height: 120px; }
+      #sec-pricing .panel-pricing .price-container .price {
+        vertical-align: text-top;
+        font-size: 2.8em;
+        color: rgba(255, 255, 255, 0.8);
+        text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.08); }
+      #sec-pricing .panel-pricing .price-container .price-highlight {
+        position: relative;
+        top: -20px;
+        font-size: 6em;
+        font-size: 700;
+        color: white; }
+      #sec-pricing .panel-pricing .price-container .price-contact-us {
+        font-size: 2.4em;
+        color: white;
+        vertical-align: center; }
+    #sec-pricing .panel-pricing .price-suffix {
+      display: block;
+      min-height: 40px;
+      font-size: 1em;
+      font-size: 300; }
+    #sec-pricing .panel-pricing p {
+      width: 80%;
+      margin: 0 auto 20px auto;
+      font-size: 0.8em; }
+    #sec-pricing .panel-pricing .price-descr {
+      display: block;
+      margin: 10px 0;
+      font-size: 1.2em; }
+    #sec-pricing .panel-pricing .btn {
+      display: block;
+      width: 80%;
+      margin: 30px auto;
+      text-transform: uppercase; }
+  #sec-pricing .panel-pricing-starter {
+    background-color: #28B294; }
+  #sec-pricing .panel-pricing-professional {
+    background-color: #2585C4; }
+  #sec-pricing .panel-pricing-business {
     background-color: #F6AB60; }
+  #sec-pricing .panel-pricing-enterprise {
+    background-color: #EB5768; }
+  #sec-pricing .price-detail h3 {
+    margin: 40px 0 30px 0;
+    text-align: left; }
+  #sec-pricing .price-detail hr {
+    margin: 20px 0;
+    height: 4px;
+    width: 100%;
+    border-color: #28B294; }
+  #sec-pricing .price-detail ul {
+    list-style-type: circle;
+    margin-left: -20px;
+    color: #B3B3B3; }
+    #sec-pricing .price-detail ul li:not(:last-child) {
+      margin-bottom: 8px; }
+  #sec-pricing .price-detail-starter h3 {
+    color: #28B294; }
+  #sec-pricing .price-detail-starter hr {
+    border-color: #28B294; }
+  #sec-pricing .price-detail-professional h3 {
+    color: #2585C4; }
+  #sec-pricing .price-detail-professional hr {
+    border-color: #2585C4; }
+  #sec-pricing .price-detail-business h3 {
+    color: #F6AB60; }
+  #sec-pricing .price-detail-business hr {
+    border-color: #F6AB60; }
+  #sec-pricing .price-detail-enterprise h3 {
+    color: #EB5768; }
+  #sec-pricing .price-detail-enterprise hr {
+    border-color: #EB5768; }
 
 #sec-privacy {
   padding-top: 105px;

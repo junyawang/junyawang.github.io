@@ -23,10 +23,10 @@
   h5 {
     font-size: 1.3em; }
 
-  .navbar-default {
+  .navbar-aqua {
     padding: 50px 0; }
 
-  .navbar-scroll {
+  .navbar-white {
     padding: 10px 0; }
 
   .navbar-brand {
@@ -35,7 +35,7 @@
   .navbar-nav {
     margin: 7.5px 15px; }
 
-  .navbar-default .navbar-collapse {
+  .navbar-aqua .navbar-collapse {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     -ms-box-shadow: none;
@@ -62,7 +62,7 @@
     transform: translate(-50%, 0); }
 
   .myChart-container {
-    padding-top: 200px; }
+    padding-top: 180px; }
 
   #sec-steps img {
     margin: 60px auto 40px auto; }
@@ -129,6 +129,9 @@
     z-index: 1; }
   .sec-connect .particles-js-canvas-el {
     display: block; }
+
+  .myChart-container {
+    padding-top: 120px; }
 
   footer .footer-logo {
     margin: 0 auto; }

@@ -143,7 +143,7 @@ p {
 	@include transition($transition);
 }
 
-.navbar-default {
+.navbar-transparent {
 	background-color: transparent;
 	border: none;
 	
@@ -195,7 +195,59 @@ p {
 	}
 }
 
-.navbar-scroll{
+.navbar-aqua {
+	background-color: $mainAqua;
+	border: none;
+	
+	.img-logo-color {
+		display: none;
+	}
+
+	.navbar-toggle {
+		.icon-bar {
+			background-color: white;
+		}
+	}
+
+	.navbar-toggle:hover,
+	.navbar-toggle:focus {
+		background-color: $mainAqua;
+
+		.icon-bar {
+			background-color: white;
+		}
+	}
+
+	.navbar-nav > li > a {
+		color: white;
+		font-size: 1.1em;
+		font-weight: 600;
+		text-transform: uppercase;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.navbar-nav > li > a:hover,
+	.navbar-nav > li > a:focus {
+		color: white;
+	}
+
+	.navbar-nav > li > a.btn.btn-default{
+		color: white;
+	}
+
+	.navbar-nav > li > a.btn.btn-default:hover {
+		color: $mainAqua;
+		background-color: white;
+	}
+
+	.navbar-collapse {
+		border-color: $mainAqua;
+		@include box-shadow($box-shadow);
+	}
+}
+
+.navbar-white {
 	position: fixed;
 	top: 0;
 	background: white;
@@ -509,10 +561,10 @@ header {
 
 	.analytics-content {
 		position: absolute;
-        left: 50%;
+        // left: 50%;
         // top: 50%;
         // transform: translate(-18%, 0);
-        @include translate ($translateX, $translateY);
+        // @include translate ($translateX, $translateY);
         z-index: 10;
 	}
 }
@@ -760,24 +812,151 @@ canvas#myChart {
 
 #sec-pricing {
 	padding-top: $margin-mobile * 1.5;
+	
 	h1 {
 		color: $mainAqua;
 	}
 	
 	.panel-pricing {
+		margin: 20px 0;
 		padding: 10px 40px;
 		color: white;
+		@include border-radius($radius);
 
 		h3,h4,p,span {
 			color: white;
+			text-align: center;
 		}
 
+		h3 {
+			font-size: 1.4em;
+		}
 		
-		@include border-radius($radius);
+		.price-container {
+			position: relative;
+			text-align: center;
+			margin-top: 40px;
+			min-height: 120px;
+
+
+			.price{
+				vertical-align: text-top;
+				font-size: 2.8em;
+				color: rgba(white,0.8);
+				text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.08);
+			}
+
+			.price-highlight {
+				position: relative;
+				top: -20px;
+				font-size: 6em;
+				font-size: 700;
+				color: white;
+			}
+
+			.price-contact-us {
+				font-size: 2.4em;
+				color: white;
+				vertical-align: center;
+			}
+
+		}
+		
+		.price-suffix {
+			display: block;
+			min-height: 40px;
+			font-size: 1em;
+			font-size: 300;
+		}
+
+		p {
+			width: 80%;
+			margin: 0 auto 20px auto;
+			font-size: 0.8em;
+		}
+
+		.price-descr {
+			display: block;
+			margin: 10px 0;
+			font-size: 1.2em;
+		}
+
+		.btn {
+			display: block;
+			width: 80%;
+			margin: 30px auto;
+			text-transform: uppercase;
+		}
 	}
 
-	.panel-pricing-free {
+	.panel-pricing-starter {
+		background-color: $green;
+	}
+	.panel-pricing-professional {
+		background-color: $blue;
+	}
+	.panel-pricing-business {
 		background-color: $orange;
+	}
+	.panel-pricing-enterprise {
+		background-color: $red;
+	}
+
+	.price-detail {
+		h3 {
+			margin: 40px 0 30px 0;
+			text-align: left;
+		}
+
+		hr {
+			margin: 20px 0;
+			height: 4px;
+			width: 100%;
+			border-color: $green;
+		}
+
+		ul {
+			list-style-type: circle;
+			margin-left: -20px;
+			color: $lightGrey;
+
+			li:not(:last-child) {
+				margin-bottom: 8px;
+			}
+		}
+	}
+
+	.price-detail-starter {
+		h3 {
+			color: $green;
+		}
+		hr {
+			border-color: $green;
+		}
+	}
+	.price-detail-professional {
+		h3 {
+			color: $blue;
+		}
+		hr {
+			border-color: $blue;
+		}
+	}
+	.price-detail-business {
+		h3{
+			color: $orange;
+		}
+		hr {
+			border-color: $orange;
+		}
+	}
+	.price-detail-enterprise{
+		h3 {
+			color: $red;
+		}
+		hr {
+			border-color: $red
+		}
 	}
 }
 
