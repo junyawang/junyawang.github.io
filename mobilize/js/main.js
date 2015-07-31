@@ -1,12 +1,12 @@
-//Make .particles-js-canvas-el 's height always equal to #header-content height
+//Make .particles-js-canvas-el 's height always equal to #connect-content height
 var callSameHeight = function sameHeight(){
-    var headerContentHeight = $('#header-content').css("height");
-    console.log("headerContentHeight = " + headerContentHeight);
-    $('.particles-js-canvas-el').css("height", headerContentHeight);
+    var connectContentHeight = $('#connect-content').css("height");
+    console.log("connectContentHeight = " + connectContentHeight);
+    $('.particles-js-canvas-el').css("height", connectContentHeight);
 };
 
-$( document ).ready(callSameHeight);
 $( window ).resize(callSameHeight);
+$( document ).ready(callSameHeight);
 
 /******* Line Chart ********/
 var data = {
@@ -108,10 +108,17 @@ $(function() { // wait for document ready
     // init controller
     var controller = new ScrollMagic.Controller();
 
-    // build scene 1 - Section Analytics
-    var sceneAnalytics = new ScrollMagic.Scene({
+    //build scene 1.1 - Section Analytics - Engagement Score Panel
+    var sceneAnalyticsEngagementScore = new ScrollMagic.Scene({
         triggerElement: '#sec-analytics', // starting scene, when reaching this element
-        // duration: 400 // pin the element for 400px of scrolling
+    })
+    .setClassToggle("#browser-analytics", "fadeInDown")
+    .addTo(controller);
+
+
+    // build scene 1.2 - Section Analytics - Chart
+    var sceneAnalyticsChart = new ScrollMagic.Scene({
+        triggerElement: '#sec-analytics', // starting scene, when reaching this element
     })
     .on("enter", function () {
         // on enter, draw line chart
@@ -120,14 +127,68 @@ $(function() { // wait for document ready
     })
     .addTo(controller);
 
-    // build scene 2 - Section Notification
+    // build scene 2.1 - Steps 1
+    var sceneSteps1 = new ScrollMagic.Scene({
+        triggerElement: '#sec-steps', // starting scene, when reaching this element
+    })
+    .setClassToggle("#img-connect-team", "fadeInDown")
+    .addTo(controller);
+
+    // build scene 2.2 - Steps 2
+    var sceneSteps2 = new ScrollMagic.Scene({
+        triggerElement: '#sec-steps', // starting scene, when reaching this element
+    })
+    .setClassToggle("#img-share-with-team", "fadeInDown")
+    .addTo(controller);
+
+    // build scene 2.3 - Steps 3
+    var sceneSteps3 = new ScrollMagic.Scene({
+        triggerElement: '#sec-steps', // starting scene, when reaching this element
+    })
+    .setClassToggle("#img-get-analytics", "fadeInDown")
+    .addTo(controller);
+
+    // build scene 3.1 - Section Notification
     var sceneNotification = new ScrollMagic.Scene({
         triggerElement: '#sec-notification', // starting scene, when reaching this element
     })
-    // .setClassToggle(".notification-container", "fadeInLeft")
+    .setClassToggle(".notification-container", "fadeInLeft")
+    .addTo(controller);
+
+
+    // build scene 3.2 - Section Notification - Bell
+    var sceneNotificationBell = new ScrollMagic.Scene({
+        triggerElement: '#sec-notification', // starting scene, when reaching this element
+    })
     .setClassToggle(".notification-bell", "swing")
     .addTo(controller);
 
-    // sceneAnalytics.remove();
-    // sceneNotification.remove();
+    sceneAnalyticsChart.reverse(false);
+    sceneAnalyticsEngagementScore.reverse(false);
+    sceneNotification.reverse(false);
+    sceneNotificationBell.reverse(false);
 });
+
+/******** Change Background Color *********/
+// $(function() {  
+//     var i = 0;  
+//     var bgColors = ["linear-gradient(170deg, #66D1CD, #66D1CD, #E5F7F6)", 
+//                     "linear-gradient(170deg, blue, #66D1CD, #E5F7F6)", 
+//                     "green" ];  
+
+//     // set initial header color  
+//     $("header").css('backgroundColor', bgColors[0]);  
+
+//     // change color every 30 milliseconds
+//     window.setInterval(function() {  
+//         i = i == bgColors.length ? 0 : i;  
+//         $("header").animate({'backgroundColor':bgColors[i]}, 3000);  
+//         i++;  
+//     }, 30);
+
+//     // window.setInterval(function() {  
+//     //     i = i == bgColors.length ? 0 : i;  
+//     //     $("header").css('background', bgColors[i]);  
+//     //     i++;  
+//     // }, 3000);
+// });  

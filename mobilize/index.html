@@ -23,7 +23,8 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
 
     <!-- JS -->
-    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/Chart.min.js"></script>
     
@@ -67,8 +68,11 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="nav navbar-nav">
-          <li><a href="index.html" class="active">Product</a></li>
-          <li><a href="apps.html">Apps</a></li>
+          <li><a href="index.html" class="active">For HR/Ops</a></li>
+          <li><a href="index.html">For Sales</a></li>
+          <!-- <li><a href="apps.html">Apps</a></li> -->
+          <li><a href="index.html">Case Study</a></li>
+          <li><a href="index.html">Pricing</a></li>
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
@@ -79,38 +83,55 @@
   </nav>
 
  <!-- HEADER -->
-  <header class="" id="particles-js">
-    <div id="header-content">
-      <div class="container">
-        <h1>Mobilize Your People</h1>
-        <h4>Create a deep mobile connection with your team</h4>
+  <header>
+    <div class="container">
+      <h1>Share schedules directly to your team's mobile devices</h1>
+      <h4>Supercharge your HR and Operations with a deep mobilize connection to your whole team</h4>
 
-        <div class="row">
-          <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
-            <a href="https://uat.getmobilize.com/register" class="btn btn-primary btn-lg" target="_blank">Sign up</a>
-          </div>
+      <div class="row">
+        <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+          <a href="https://uat.getmobilize.com/register" class="btn btn-default btn-lg" target="_blank">Get started</a>
         </div>
-        <div class="row">
-          <div class="col-xs-10 col-xs-offset-1">
-            <img class="img-responsive" src="img/mobilize_browser.png" alt="">
-          </div>
-        </div>  
       </div>
     </div>
   </header>
 
-  <!-- Feature 1 - Data & Analytics -->
+  <!-- Feature 1 - Ease of Implementation -->
+  <section class="sec-showcase sec-showcase-aqua sec-connect" id="particles-js">
+    <div id="connect-content">
+      <div class="container">
+        <h2>Connect your whole team</h2>
+        <h4>All your important documents distributed and tracked on any device</h4>
+        <div class="row">
+            <div class="col-xs-2">
+              <img class="img-responsive" src="img/mobilize-iphone5.png" alt="">
+            </div> 
+            <div class="col-xs-2">
+              <img class="img-responsive" src="img/mobilize-iphone5.png" alt="">
+            </div> 
+            <div class="col-xs-5">
+              <img class="img-responsive" src="img/mobilize-macbook.png" alt="">
+            </div>
+            <div class="col-xs-3">
+              <img class="img-responsive" src="img/mobilize-ipad.png" alt="">
+            </div>  
+        </div>
+      </div>
+    </div>
+  </section>  
+
+  <!-- Feature 2 - Data & Analytics -->
   <section class="sec-showcase sec-showcase-blue" id="sec-analytics">
       <div class="container">
-        <h2>The Smartest Way to Share</h2>
-        <h4>All your important documents distributed and tracked on all devices</h4> 
+        <h2>File sharing with all the data you need</h2>
+        <h4>Get insight into what’s working and what isn’t</h4> 
       </div>
       
       <div class="analytics-content">
         <div class="container">
           <div class="row">
-            <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-              <img class="img-responsive" src="img/panel-engagement-score.png" alt="">
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+              <img class="img-responsive animated delay-1-sec" id="browser-analytics" src="img/mobilize-browser-analytics.png" alt="">
             </div>  
           </div>
         </div>
@@ -121,14 +142,42 @@
       </div>
   </section>
   
-  <!-- Feature 2 - Notifications -->
+  <!-- Feature 3 - Steps -->
+  <section class="sec-showcase sec-showcase-white" id="sec-steps">
+    <div class="container">
+      <h2>Secure file sharing across your organization</h2>
+      <h4>Share or restrict documents with intelligent access controls</h4>
+       
+      <div class="row">
+        <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-4">
+          <h5>Step 1</h5>
+          <h6>Create an organization<br>and connect your team</h6>
+          <img src="img/connect-team.png" class="img-responsive animated" id="img-connect-team">
+        </div> 
+
+        <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-4">
+          <h5>Step 2</h5>
+          <h6>Share files with your team</h6>
+          <img src="img/share-with-team.png" class="img-responsive animated delay-half-sec" id="img-share-with-team">
+        </div>
+
+        <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-4">
+          <h5>Step 3</h5>
+          <h6>Receive notifications about what's happening</h6>
+          <img src="img/get-analytics.png" class="img-responsive animated delay-1-sec" id="img-get-analytics">
+        </div> 
+      </div>
+    </div>  
+  </section>
+  
+  <!-- Feature 4 - Notifications -->
   <section class="sec-showcase sec-showcase-aqua" id="sec-notification">
       <div class="container">
         <div class="row">
-          <h2>Connect Your Organization</h2>
-          <h4>Know more about how your documents are being viewed, shared and loved</h4> 
+          <h2>Update Everyone in Real Time </h2>
+          <h4>Understand more about how your information is viewed, shared and loved</h4> 
 
-          <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
+          <div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-7 col-md-offset-1 col-md-6 col-lg-offset-1 col-lg-5">
             <div class="notification-container animated">
               <div class="notification">
                 <div class="notification-middle">
@@ -148,7 +197,7 @@
             </div>
           </div>
 
-          <div class="col-xs-12 col-sm-6 col-md-offset-6 col-md-5 col-lg-offset-6 col-lg-5">
+          <div class="col-xs-offset-1 col-xs-10 col-sm-offset-5 col-sm-7 col-md-offset-5 col-md-6 col-lg-offset-6 col-lg-5">
             <div class="notification-container animated delay-half-sec">
               <div class="notification">
                 <div class="notification-middle">
@@ -168,7 +217,7 @@
             </div>
           </div>
 
-          <div class="col-xs-12 col-sm-6 col-md-offset-2 col-md-5 col-lg-offset-4 col-lg-5">
+          <div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-7 col-md-offset-3 col-md-6 col-lg-offset-4 col-lg-5">
             <div class="notification-container animated delay-1-sec">
               <div class="notification">
                 <div class="notification-middle">
@@ -178,7 +227,7 @@
                 </div>
                 <div class="notification-middle">
                   <div class="notification-inner">
-                    <span class="notification-content"><strong>Junya Wang</strong> and <strong>Mike Abbott</strong> added your file to their favourite!</span>
+                    <span class="notification-content"><strong>Junya Wang</strong> added your file to her favourite!</span>
                   </div>
                 </div>
               </div>
@@ -188,40 +237,8 @@
             </div>
           </div>
         </div>  
-      </div>  
-  </section>
-
-  <!-- Feature 3 - Ease of Implementation -->
-  <section class="sec-showcase sec-showcase-white sec-steps">
-    <div class="container">
-      <div class="row">
-          <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-            <h2>Mobilize Your Roll-Outs</h2>
-            <h4>Share all your organization's information quickly</h4> 
-          </div>
       </div>
-      <div class="row">
-        <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-4">
-          <h5>Step 1</h5>
-          <h6>Sign in by creating an organization</h6>
-          <img src="img/signup-org.png" class="img-responsive" id="img-signup-org">
-        </div> 
-
-        <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-4">
-          <h5>Step 2</h5>
-          <h6>Connect your team</h6>
-          <img src="img/connect-team.png" class="img-responsive" id="img-connect-team">
-        </div>
-
-        <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-4">
-          <h5>Step 3</h5>
-          <h6>Share files with your team</h6>
-          <img src="img/share-with-team.png" class="img-responsive" id="img-share-with-team">
-        </div> 
-
-      </div>  
-    </div>  
-  </section>  
+  </section>
   
   <!-- Features -->
   <!-- <section class="sec-features">
@@ -313,8 +330,8 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1">
-            <h1>Share the Smart Way</h1>
-            <h4>Mobilize your people</h4>
+            <h1>Mobilize your HR and operations</h1>
+            <h4>Help your teams move faster and stay better connected</h4>
           </div>
         </div>
         <div class="row">
@@ -328,7 +345,7 @@
               </span>
             </div> -->
 
-           <a href="https://uat.getmobilize.com/register" class="btn btn-info btn-lg" target="_blank">Sign up</a>
+           <a href="https://uat.getmobilize.com/register" class="btn btn-info btn-lg" target="_blank">Get started</a>
           </div>
         </div>
       </div>
