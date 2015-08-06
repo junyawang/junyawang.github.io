@@ -127,25 +127,39 @@ $(function() { // wait for document ready
     })
     .addTo(controller);
 
-    // build scene 2.1 - Steps 1
-    var sceneSteps1 = new ScrollMagic.Scene({
+    // build scene - HR Steps 1
+    var sceneHrSteps1 = new ScrollMagic.Scene({
         triggerElement: '#sec-steps', // starting scene, when reaching this element
     })
     .setClassToggle("#img-connect-team", "fadeInDown")
     .addTo(controller);
 
-    // build scene 2.2 - Steps 2
-    var sceneSteps2 = new ScrollMagic.Scene({
+    // build scene - HR Steps 2
+    var sceneHrSteps2 = new ScrollMagic.Scene({
         triggerElement: '#sec-steps', // starting scene, when reaching this element
     })
     .setClassToggle("#img-share-with-team", "fadeInDown")
     .addTo(controller);
 
-    // build scene 2.3 - Steps 3
-    var sceneSteps3 = new ScrollMagic.Scene({
+    // build scene - HR Steps 3
+    var sceneHrSteps3 = new ScrollMagic.Scene({
         triggerElement: '#sec-steps', // starting scene, when reaching this element
     })
     .setClassToggle("#img-get-analytics", "fadeInDown")
+    .addTo(controller);
+
+    // build scene - Sales Steps 1
+    var sceneSalesSteps1 = new ScrollMagic.Scene({
+        triggerElement: '#sec-steps', // starting scene, when reaching this element
+    })
+    .setClassToggle("#img-create-org", "fadeInDown")
+    .addTo(controller);
+
+    // build scene - Sales Steps 2
+    var sceneSalesSteps2 = new ScrollMagic.Scene({
+        triggerElement: '#sec-steps', // starting scene, when reaching this element
+    })
+    .setClassToggle("#img-share-links", "fadeInDown")
     .addTo(controller);
 
     // build scene 3.1 - Section Notification

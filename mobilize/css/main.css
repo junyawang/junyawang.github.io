@@ -434,7 +434,8 @@ header {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding-top: 70px; }
+  padding-top: 70px;
+  min-height: 500px; }
   header h1 {
     margin-top: 70px; }
   header h4 {
@@ -581,12 +582,16 @@ canvas#myChart {
 #sec-steps h6 {
   color: #828C96; }
 #sec-steps img {
-  margin: 60px auto 60px auto; }
+  margin: 50px auto 50px auto; }
 #sec-steps #img-connect-team {
   width: 100%; }
-#sec-steps #img-share-with-team {
+#sec-steps #img-create-org {
   width: 70%;
-  margin-top: 50px; }
+  margin-top: 80px; }
+#sec-steps #img-share-with-team,
+#sec-steps #img-share-links {
+  width: 70%;
+  margin-top: 60px; }
 #sec-steps #img-get-analytics {
   width: 80%; }
 
@@ -628,7 +633,7 @@ canvas#myChart {
     color: #B3B3B3; }
 
 .sec-cta-signup {
-  background-color: #E5F7F6;
+  background-color: #333;
   padding-top: 70px;
   padding-bottom: 70px; }
   .sec-cta-signup h1 {
@@ -709,18 +714,23 @@ canvas#myChart {
       min-height: 40px;
       font-size: 1.2em;
       font-size: 300; }
-    #sec-pricing .panel-pricing p {
-      width: 80%;
-      margin: 0 auto 20px auto;
-      font-size: 0.8em; }
     #sec-pricing .panel-pricing .price-descr {
       display: block;
       margin: 10px 0;
       font-size: 1.2em; }
+    #sec-pricing .panel-pricing .price-detail {
+      margin-top: 40px;
+      margin-bottom: 40px; }
+      #sec-pricing .panel-pricing .price-detail ul {
+        list-style-type: circle;
+        margin-left: -20px;
+        color: white; }
+        #sec-pricing .panel-pricing .price-detail ul li:not(:last-child) {
+          margin-bottom: 8px; }
     #sec-pricing .panel-pricing .btn {
       display: block;
       width: 80%;
-      margin: 30px auto;
+      margin: 40px auto;
       text-transform: uppercase; }
   #sec-pricing .panel-pricing-starter {
     background-color: #28B294; }
@@ -730,38 +740,6 @@ canvas#myChart {
     background-color: #2585C4; }
   #sec-pricing .panel-pricing-enterprise {
     background-color: #F6AB60; }
-  #sec-pricing .price-detail {
-    margin-bottom: 40px; }
-    #sec-pricing .price-detail h3 {
-      margin: 40px 0 30px 0;
-      text-align: left; }
-    #sec-pricing .price-detail hr {
-      margin: 20px 0;
-      height: 4px;
-      width: 100%;
-      border-color: #28B294; }
-    #sec-pricing .price-detail ul {
-      list-style-type: circle;
-      margin-left: -20px;
-      color: #B3B3B3; }
-      #sec-pricing .price-detail ul li:not(:last-child) {
-        margin-bottom: 8px; }
-  #sec-pricing .price-detail-starter h3 {
-    color: #28B294; }
-  #sec-pricing .price-detail-starter hr {
-    border-color: #28B294; }
-  #sec-pricing .price-detail-professional h3 {
-    color: #EB5768; }
-  #sec-pricing .price-detail-professional hr {
-    border-color: #EB5768; }
-  #sec-pricing .price-detail-business h3 {
-    color: #2585C4; }
-  #sec-pricing .price-detail-business hr {
-    border-color: #2585C4; }
-  #sec-pricing .price-detail-enterprise h3 {
-    color: #F6AB60; }
-  #sec-pricing .price-detail-enterprise hr {
-    border-color: #F6AB60; }
 
 #sec-privacy {
   padding-top: 105px;

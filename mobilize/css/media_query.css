@@ -42,7 +42,8 @@
     box-shadow: none; }
 
   header {
-    padding-top: 105px; }
+    padding-top: 105px;
+    height: 600px; }
 
   .sec-email {
     padding-top: 140px;
@@ -65,12 +66,16 @@
     padding-top: 180px; }
 
   #sec-steps img {
-    margin: 60px auto 40px auto; }
+    margin: 50px auto 50px auto; }
   #sec-steps #img-connect-team {
     width: 100%; }
-  #sec-steps #img-share-with-team {
+  #sec-steps #img-create-org {
     width: 70%;
-    margin-top: 75px; }
+    margin-top: 80px; }
+  #sec-steps #img-share-with-team,
+  #sec-steps #img-share-links {
+    width: 70%;
+    margin-top: 80px; }
   #sec-steps #img-get-analytics {
     width: 80%; }
 

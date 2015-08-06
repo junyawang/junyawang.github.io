@@ -53,6 +53,7 @@
 
     header {
         padding-top: $margin-desktop * 1.5;
+        height: 600px;
     }
 
     .sec-email {
@@ -80,16 +81,22 @@
 
     #sec-steps {
         img {
-            margin: 60px auto 40px auto;
+            margin: 50px auto 50px auto;
         }
 
         #img-connect-team {
             width: 100%;
         }
 
-        #img-share-with-team {
+        #img-create-org {
             width: 70%;
-            margin-top: 75px;
+            margin-top: 80px;
+        }
+
+        #img-share-with-team,
+        #img-share-links {
+            width: 70%;
+            margin-top: 80px;
         }
 
         #img-get-analytics {
