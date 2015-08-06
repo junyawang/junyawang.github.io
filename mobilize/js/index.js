@@ -1,4 +1,4 @@
-//Make .particles-js-canvas-el 's height always equal to #connect-content height
+// Make .particles-js-canvas-el 's height always equal to #connect-content height
 var callSameHeight = function sameHeight(){
     var connectContentHeight = $('#connect-content').css("height");
     console.log("connectContentHeight = " + connectContentHeight);
@@ -60,6 +60,56 @@ var ctx = document.getElementById("myChart").getContext("2d");
 // var myNewChart = new Chart(ctx).Line(data);
 // new Chart(ctx).Line(data, options);
 
+
+/******** ScrollMagic *********/
+
+$(function() { // wait for document ready
+    // init controller
+    var controller = new ScrollMagic.Controller();
+
+    //build scene - Section Analytics - Engagement Score Panel
+    var sceneAnalyticsEngagementScore = new ScrollMagic.Scene({
+        triggerElement: '#sec-analytics', // starting scene, when reaching this element
+    })
+    .setClassToggle("#browser-analytics", "fadeInDown")
+    .addTo(controller);
+
+
+    // build scene - Section Analytics - Chart
+    var sceneAnalyticsChart = new ScrollMagic.Scene({
+        triggerElement: '#sec-analytics', // starting scene, when reaching this element
+    })
+    .on("enter", function () {
+        // on enter, draw line chart
+        var myNewChart = new Chart(ctx).Line(data);
+        new Chart(ctx).Line(data, {});
+    })
+    .addTo(controller);
+
+
+    // build scene - Section Notification
+    var sceneNotification = new ScrollMagic.Scene({
+        triggerElement: '#sec-notification', // starting scene, when reaching this element
+    })
+    .setClassToggle(".notification-container", "fadeInLeft")
+    .addTo(controller);
+
+
+    // build scene - Section Notification - Bell
+    var sceneNotificationBell = new ScrollMagic.Scene({
+        triggerElement: '#sec-notification', // starting scene, when reaching this element
+    })
+    .setClassToggle(".notification-bell", "swing")
+    .addTo(controller);
+
+    sceneAnalyticsChart.reverse(false);
+    sceneAnalyticsEngagementScore.reverse(false);
+    sceneNotification.reverse(false);
+    sceneNotificationBell.reverse(true);
+});
+
+
+
 /******** Add particle.js if window width>=960 *********/
 // $("header").each(function () {    
 //     if($(this).has("canvas")){
@@ -102,89 +152,6 @@ var ctx = document.getElementById("myChart").getContext("2d");
 //     }
 // });
 
-/******** ScrollMagic *********/
-
-$(function() { // wait for document ready
-    // init controller
-    var controller = new ScrollMagic.Controller();
-
-    //build scene 1.1 - Section Analytics - Engagement Score Panel
-    var sceneAnalyticsEngagementScore = new ScrollMagic.Scene({
-        triggerElement: '#sec-analytics', // starting scene, when reaching this element
-    })
-    .setClassToggle("#browser-analytics", "fadeInDown")
-    .addTo(controller);
-
-
-    // build scene 1.2 - Section Analytics - Chart
-    var sceneAnalyticsChart = new ScrollMagic.Scene({
-        triggerElement: '#sec-analytics', // starting scene, when reaching this element
-    })
-    .on("enter", function () {
-        // on enter, draw line chart
-        var myNewChart = new Chart(ctx).Line(data);
-        new Chart(ctx).Line(data, {});
-    })
-    .addTo(controller);
-
-    // build scene - HR Steps 1
-    var sceneHrSteps1 = new ScrollMagic.Scene({
-        triggerElement: '#sec-steps', // starting scene, when reaching this element
-    })
-    .setClassToggle("#img-connect-team", "fadeInDown")
-    .addTo(controller);
-
-    // build scene - HR Steps 2
-    var sceneHrSteps2 = new ScrollMagic.Scene({
-        triggerElement: '#sec-steps', // starting scene, when reaching this element
-    })
-    .setClassToggle("#img-share-with-team", "fadeInDown")
-    .addTo(controller);
-
-    // build scene - HR Steps 3
-    var sceneHrSteps3 = new ScrollMagic.Scene({
-        triggerElement: '#sec-steps', // starting scene, when reaching this element
-    })
-    .setClassToggle("#img-get-analytics", "fadeInDown")
-    .addTo(controller);
-
-    // build scene - Sales Steps 1
-    var sceneSalesSteps1 = new ScrollMagic.Scene({
-        triggerElement: '#sec-steps', // starting scene, when reaching this element
-    })
-    .setClassToggle("#img-create-org", "fadeInDown")
-    .addTo(controller);
-
-    // build scene - Sales Steps 2
-    var sceneSalesSteps2 = new ScrollMagic.Scene({
-        triggerElement: '#sec-steps', // starting scene, when reaching this element
-    })
-    .setClassToggle("#img-share-links", "fadeInDown")
-    .addTo(controller);
-
-    // build scene 3.1 - Section Notification
-    var sceneNotification = new ScrollMagic.Scene({
-        triggerElement: '#sec-notification', // starting scene, when reaching this element
-    })
-    .setClassToggle(".notification-container", "fadeInLeft")
-    .addTo(controller);
-
-
-    // build scene 3.2 - Section Notification - Bell
-    var sceneNotificationBell = new ScrollMagic.Scene({
-        triggerElement: '#sec-notification', // starting scene, when reaching this element
-    })
-    .setClassToggle(".notification-bell", "swing")
-    .addTo(controller);
-
-    sceneAnalyticsChart.reverse(false);
-    sceneAnalyticsEngagementScore.reverse(false);
-    sceneSteps1.reverse(false);
-    sceneSteps2.reverse(false);
-    sceneSteps3.reverse(false);
-    sceneNotification.reverse(false);
-    sceneNotificationBell.reverse(true);
-});
 
 /******** Change Background Color *********/
 // $(function() {  

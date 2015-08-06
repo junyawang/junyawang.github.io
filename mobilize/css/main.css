@@ -139,8 +139,21 @@ p {
   transition: ease all 0.2s; }
 
 .navbar-transparent {
+  position: fixed;
+  top: 0;
   background-color: transparent;
-  border: none; }
+  border: none;
+  -webkit-transform-origin: center top;
+  -ms-transform-origin: center top;
+  transform-origin: center top;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-transition: ease all 0.2s;
+  -moz-transition: ease all 0.2s;
+  -o-transition: ease all 0.2s;
+  transition: ease all 0.2s; }
   .navbar-transparent .img-logo-color {
     display: none; }
   .navbar-transparent .navbar-toggle .icon-bar {
@@ -174,8 +187,21 @@ p {
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.06); }
 
 .navbar-aqua {
+  position: fixed;
+  top: 0;
   background-color: #66D1CD;
-  border: none; }
+  border: none;
+  -webkit-transform-origin: center top;
+  -ms-transform-origin: center top;
+  transform-origin: center top;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-transition: ease all 0.2s;
+  -moz-transition: ease all 0.2s;
+  -o-transition: ease all 0.2s;
+  transition: ease all 0.2s; }
   .navbar-aqua .img-logo-color {
     display: none; }
   .navbar-aqua .navbar-toggle .icon-bar {
@@ -218,13 +244,11 @@ p {
   -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.06);
   -ms-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.06);
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.06);
-  -webkit-animation-name: bounce;
-  animation-name: bounce;
-  -webkit-transform-origin: center bottom;
-  -ms-transform-origin: center bottom;
-  transform-origin: center bottom;
-  -webkit-animation-duration: .5s;
-  animation-duration: .5s;
+  -webkit-transform-origin: center top;
+  -ms-transform-origin: center top;
+  transform-origin: center top;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-transition: ease all 0.2s;
@@ -429,11 +453,6 @@ input:focus,
                  PAGES
 ---------------------------------------------*/
 header {
-  background: url(../img/hr-hero-img.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   padding-top: 70px;
   min-height: 500px; }
   header h1 {
@@ -444,6 +463,30 @@ header {
   header a.btn {
     display: block;
     margin-bottom: 70px; }
+
+header#header-hr {
+  background: url(../img/hero-img-hr.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+header#header-sales {
+  background: url(../img/hero-img-sales.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+header#header-pricing {
+  background: url(../img/hero-img-hr.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 300px; }
+  header#header-pricing h1 {
+    margin-top: 70px; }
 
 .sec-showcase {
   padding-bottom: 70px; }
@@ -582,6 +625,7 @@ canvas#myChart {
 #sec-steps h6 {
   color: #828C96; }
 #sec-steps img {
+  opacity: 0;
   margin: 50px auto 50px auto; }
 #sec-steps #img-connect-team {
   width: 100%; }
@@ -647,6 +691,9 @@ canvas#myChart {
     display: block;
     margin-top: 35px;
     margin-bottom: 35px; }
+
+.sec-pricing-cta-signup {
+  background-color: #E5F7F6; }
 
 #sec-apps {
   padding-top: 105px;

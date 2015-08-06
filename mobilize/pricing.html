@@ -23,8 +23,15 @@
 
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
+    
+    <!-- JS for ScrollMagic -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="js/scrollmagic/minified/ScrollMagic.min.js"></script>
+    <script src="js/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+    <!-- ScrollMagic Debugging Indicator Visulization-->
+    <script src="js/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
     <!--
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -39,7 +46,7 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-  <nav class="navbar navbar-aqua" role="navigation">
+  <nav class="navbar navbar-transparent" role="navigation">
     <div class="container">
       <!-- Logo -->
       <div class="navbar-header">
@@ -58,22 +65,33 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="nav navbar-nav">
-          <li><a href="index.html" class="active">Product</a></li>
-          <li><a href="apps.html">Apps</a></li>
+          <li><a href="index.html">For HR/Ops</a></li>
+          <li><a href="for_sales.html">For Sales</a></li>
+          <!-- <li><a href="apps.html">Apps</a></li> -->
+          <li><a href="#">Case Study</a></li>
+          <li><a href="pricing.html" class="active">Pricing</a></li>
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="http://uat.getmobilize.com" class="btn btn-default" target="_blank">30 day free trial</a></li>
+          <li><a href="http://uat.getmobilize.com" class="btn btn-default" target="_blank">Get Started</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div>
   </nav>
 
+  <!-- HEADER -->
+  <header id="header-pricing">
+    <div class="container">
+      <h1>Pricing</h1>
+    </div>
+  </header>
+
   <!-- Pricing Tables -->
   <section class="sec-showcase sec-showcase-white" id="sec-pricing">
       <div class="container">
-        <h1>Pricing</h1>
-        <h4>Mobilize is a versatile product, and available for all teams of all sizes. Select the tier which best suits your needs.</h4>
+        <h1>Try it for free and get started in seconds</h1>
+        <h4></h4>
+        
         <div class="row">
           <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-4 col-md-offset-1">
             
@@ -151,6 +169,59 @@
           </div>  
         </div>
   </section>
+
+  <!-- CTA - Sign up -->
+  <section class="sec-cta-signup sec-pricing-cta-signup">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1">
+            <h1>Enter your email to get started</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+            <!-- <div class="input-group input-group-lg">
+              <input type="email" class="form-control" placeholder="Email address">
+              <span class="input-group-btn">
+                <button class="btn btn-info btn-lg" type="button">
+                  <i class="fa fa-arrow-right"></i>
+                </button>
+              </span>
+            </div> -->
+
+           <a href="https://uat.getmobilize.com/register" class="btn btn-info btn-lg" target="_blank">Get Started</a>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- HR Steps -->
+  <section class="sec-showcase sec-showcase-white" id="sec-steps">
+    <div class="container">
+      <h2>Up and running in under 2 minutes</h2>
+      <h4></h4>
+       
+      <div class="row">
+        <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-4">
+          <h5>Step 1</h5>
+          <h6>Create an organization<br>and connect your team</h6>
+          <img src="img/connect-team.svg" class="img-responsive animated" id="img-connect-team">
+        </div> 
+
+        <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-4">
+          <h5>Step 2</h5>
+          <h6>Share files with your team</h6>
+          <img src="img/share-with-team.svg" class="img-responsive animated delay-half-sec" id="img-share-with-team">
+        </div>
+
+        <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-4">
+          <h5>Step 3</h5>
+          <h6>Receive notifications about what's happening</h6>
+          <img src="img/get-analytics.svg" class="img-responsive animated delay-1-sec" id="img-get-analytics">
+        </div> 
+      </div>
+    </div>  
+  </section>
   
   <!-- FOOTER AREA-->
   <footer>
@@ -185,65 +256,9 @@
       </div>
   </footer>
 
-
-  <!-- Nav bar background color change -->
-  <script type="text/javascript">
-    $(window).scroll(function() {    
-       var scroll = $(window).scrollTop();
-
-       if (scroll >= 300) {
-           $(".navbar").addClass("navbar-white");
-       } else {
-           $(".navbar").removeClass("navbar-white");
-       }
-    });
-
-    $("#mobilize-logo").click(function() {
-       $('html, body').animate({
-           scrollTop: $("index.html#page-top").offset().top
-       }, 800);
-    });
-
-    $("#mobilize-name").click(function() {
-       $('html, body').animate({
-           scrollTop: $("index.html#page-top").offset().top
-       }, 800);
-    });
-  </script>
-
-  <script>
-    $(function () { // wait for document ready
-      // init
-      var controller = new ScrollMagic.Controller({
-        globalSceneOptions: {
-          triggerHook: 'onLeave'
-        }
-      });
-
-      // get all slides
-      var slides = document.querySelectorAll("section.panel");
-
-      // create scene for every slide
-      for (var i=0; i<slides.length; i++) {
-        new ScrollMagic.Scene({
-            triggerElement: slides[i]
-          })
-          .setPin(slides[i])
-          .addIndicators() // add indicators (requires plugin)
-          .addTo(controller);
-      }
-    });
-  </script>
   <script src="js/scrollmagic/examples.js"></script>
-  <script src="js/scrollmagic/ScrollMagic.js"></script>
-
-  <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
-  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="js/particle-app.js"></script>
-  <!-- stats.js lib -->
-  <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
-
-  <script src="js/main.js"></script>
+  <script src="js/scrollmagic/minified/ScrollMagic.min.js"></script>
+  <script src="js/global.min.js"></script>
 </body>
 
 </html>

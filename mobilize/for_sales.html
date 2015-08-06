@@ -69,7 +69,7 @@
       <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="nav navbar-nav">
           <li><a href="index.html">For HR/Ops</a></li>
-          <li><a href="for_sales.html class="active"">For Sales</a></li>
+          <li><a href="for_sales.html" class="active">For Sales</a></li>
           <!-- <li><a href="apps.html">Apps</a></li> -->
           <li><a href="#">Case Study</a></li>
           <li><a href="pricing.html">Pricing</a></li>
@@ -83,7 +83,7 @@
   </nav>
 
  <!-- HEADER -->
-  <header>
+  <header id="header-sales">
     <div class="container">
       <h1>Track all your proposals after you send them</h1>
       <h4>Increase your team’s sales with Mobilize</h4>
@@ -329,7 +329,7 @@
   </section> -->
 
   <!-- CTA - Sign up -->
-  <section class="sec-cta-signup" id="sec-cta-signup">
+  <section class="sec-cta-signup">
       <div class="container">
         <div class="row">
           <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1">
@@ -385,43 +385,15 @@
       </div>
   </footer>
 
-
-  <!-- Nav bar background color change -->
-  <script type="text/javascript">
-    $(window).scroll(function() {    
-       var scroll = $(window).scrollTop();
-
-       if (scroll >= 300) {
-           $(".navbar").addClass("navbar-white");
-       } else {
-           $(".navbar").removeClass("navbar-white");
-       }
-    });
-
-    $("#mobilize-logo").click(function() {
-       $('html, body').animate({
-           scrollTop: $("index.html#page-top").offset().top
-       }, 800);
-    });
-
-    $("#mobilize-name").click(function() {
-       $('html, body').animate({
-           scrollTop: $("index.html#page-top").offset().top
-       }, 800);
-    });
-  </script>
-
-  
-  <script src="js/scrollmagic/examples.js"></script>
-  <script src="js/scrollmagic/ScrollMagic.js"></script>
-
   <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
   <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="js/particle-app.js"></script>
   <!-- stats.js lib -->
   <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
-
-  <script src="js/main.js"></script>
+  <script src="js/scrollmagic/examples.js"></script>
+  <script src="js/scrollmagic/minified/ScrollMagic.min.js"></script>
+  <script src="js/global.min.js"></script>
+  <script src="js/index.min.js"></script>
 </body>
 
 </html>

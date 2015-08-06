@@ -23,6 +23,7 @@
   h5 {
     font-size: 1.3em; }
 
+  .navbar-transparent,
   .navbar-aqua {
     padding: 50px 0; }
 
@@ -35,6 +36,7 @@
   .navbar-nav {
     margin: 7.5px 15px; }
 
+  .navbar-transparent .navbar-collapse,
   .navbar-aqua .navbar-collapse {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -42,8 +44,12 @@
     box-shadow: none; }
 
   header {
-    padding-top: 105px;
-    height: 600px; }
+    padding-top: 140px;
+    min-height: 600px; }
+
+  header#header-pricing {
+    padding-top: 140px;
+    min-height: 500px; }
 
   .sec-email {
     padding-top: 140px;

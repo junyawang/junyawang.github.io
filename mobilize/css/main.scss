@@ -144,8 +144,19 @@ p {
 }
 
 .navbar-transparent {
+	position: fixed;
+	top: 0;
 	background-color: transparent;
 	border: none;
+
+	-webkit-transform-origin: center top;
+	-ms-transform-origin: center top;
+	transform-origin: center top;
+	-webkit-animation-duration: 0.5s;
+	animation-duration: 0.5s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	@include transition ($transition);
 	
 	.img-logo-color {
 		display: none;
@@ -196,8 +207,19 @@ p {
 }
 
 .navbar-aqua {
+	position: fixed;
+	top: 0;
 	background-color: $mainAqua;
 	border: none;
+
+	-webkit-transform-origin: center top;
+	-ms-transform-origin: center top;
+	transform-origin: center top;
+	-webkit-animation-duration: 0.5s;
+	animation-duration: 0.5s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	@include transition ($transition);
 	
 	.img-logo-color {
 		display: none;
@@ -255,13 +277,13 @@ p {
 	padding: 0 0;
 	@include box-shadow($box-shadow);
 
-	-webkit-animation-name: bounce;
-	animation-name: bounce;
-	-webkit-transform-origin: center bottom;
-	-ms-transform-origin: center bottom;
-	transform-origin: center bottom;
-	-webkit-animation-duration: .5s;
-	animation-duration: .5s;
+	// -webkit-animation-name: bounce;
+	// animation-name: bounce;
+	-webkit-transform-origin: center top;
+	-ms-transform-origin: center top;
+	transform-origin: center top;
+	-webkit-animation-duration: 0.5s;
+	animation-duration: 0.5s;
 	-webkit-animation-fill-mode: both;
 	animation-fill-mode: both;
 	@include transition ($transition);
@@ -496,14 +518,6 @@ input:focus,
 ---------------------------------------------*/
 
 header {
-	// background: $mainAqua;
-	background: url(../img/hr-hero-img.jpg) no-repeat center center fixed;
-
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-
 	padding-top: $margin-mobile;
 	min-height: 500px;
 
@@ -519,6 +533,35 @@ header {
 	a.btn {
 		display: block;
 		margin-bottom: $margin-desktop;
+	}
+}
+
+header#header-hr {
+	background: url(../img/hero-img-hr.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+header#header-sales {
+	background: url(../img/hero-img-sales.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+header#header-pricing {
+	background: url(../img/hero-img-hr.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	
+	min-height: 300px;
+	h1 {
+		margin-top:  $margin-mobile;
 	}
 }
 
@@ -689,6 +732,7 @@ canvas#myChart {
 	}
 
 	img {
+		opacity: 0;
 		margin: 50px auto 50px auto;
 	}
 
@@ -785,6 +829,10 @@ canvas#myChart {
 		margin-top: $margin-desktop/2;
 		margin-bottom: $margin-desktop/2;
 	}
+}
+
+.sec-pricing-cta-signup {
+	background-color: $lightAqua;
 }
 
 #sec-apps {
