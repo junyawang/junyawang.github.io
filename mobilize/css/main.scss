@@ -54,8 +54,13 @@ a {
 	color: $mainAqua;
 }
 
+a:focus,
 a:hover {
-	color: white;
+	color: $mainAqua;
+	text-decoration: none;
+	outline: none;
+}
+a:visited {
 	text-decoration: none;
 }
 
@@ -163,10 +168,23 @@ blockquote cite:before {
 	@include border-radius(0px);
 	@include transition ($transition);
 
+	.navbar-collapse {
+		border: none;
+	}
+
+	.navbar-nav {
+		height: 100vh;
+	}
+
+	.navbar-nav > li {
+		text-align: center;
+	}
+
 	.navbar-nav > li > a {
-		font-size: 1.1em;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		font-size: 2.1em;
 		font-weight: 400;
-		// text-transform: uppercase;
 		display: inline-block;
 		vertical-align: middle;
 	}
@@ -177,11 +195,8 @@ blockquote cite:before {
 }
 
 .navbar-nav > li > a.btn {
-	font-weight: 600;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin-top: 5px;
-	margin-bottom: 5px;
+	font-weight: 400;
+	padding: 15px;
 }
 
 .navbar-toggle {
@@ -203,8 +218,6 @@ blockquote cite:before {
 }
 
 .navbar-transparent {
-	position: fixed;
-	top: 0;
 	background-color: transparent;
 	border: none;
 
@@ -229,7 +242,7 @@ blockquote cite:before {
 
 	.navbar-toggle:hover,
 	.navbar-toggle:focus {
-		background-color: $mainAqua;
+		background-color: transparent;
 
 		.icon-bar {
 			background-color: white;
@@ -237,21 +250,19 @@ blockquote cite:before {
 	}
 
 	.navbar-nav > li > a {
-		color: white;
+		color: rgba(white,0.8);
 		// @include transition ($transition);
 	}
 
 	.navbar-nav > li > a:hover,
 	.navbar-nav > li > a:focus {
-		color: white;
+		color: rgba(white,1);
 		background-color: transparent;
-		border-bottom: 3px solid rgba(white, 0.2);
 		// @include transition ($transition);
 	}
 
 	.navbar-nav > li > a.active {
-		color: white;
-		border-bottom: 3px solid rgba($mainAqua, 1);
+		color: rgba(white,0.8);
 	}
 
 	.navbar-nav > li > a.btn.btn-default{
@@ -264,14 +275,12 @@ blockquote cite:before {
 	}
 
 	.navbar-collapse {
-		border-color: $mainAqua;
+		background-color: black;
 		@include box-shadow($box-shadow);
 	}
 }
 
 .navbar-aqua {
-	position: fixed;
-	top: 0;
 	background-color: $mainAqua;
 	border: none;
 
@@ -311,13 +320,11 @@ blockquote cite:before {
 	.navbar-nav > li > a:focus {
 		color: white;
 		background-color: transparent;
-		border-bottom: 3px solid rgba(white, 0.2);
 		// @include transition ($transition);
 	}
 
 	.navbar-nav > li > a.active {
 		color: white;
-		border-bottom: 3px solid rgba($mainAqua, 1);
 	}
 
 	.navbar-nav > li > a.btn.btn-default{
@@ -384,13 +391,11 @@ blockquote cite:before {
 	.navbar-nav > li > a:focus {
 		color: $darkGrey;
 		background-color: transparent;
-		border-bottom: 3px solid rgba(white, 0.2);
 		// @include transition ($transition);
 	}
 
 	.navbar-nav > li > a.active {
-		color: $mainAqua;
-		border-bottom: 3px solid rgba($mainAqua, 1);
+		color: $darkGrey;
 	}
 
 	.navbar-nav > li > a.btn.btn-default {
@@ -402,6 +407,10 @@ blockquote cite:before {
 	.navbar-nav > li > a.btn.btn-default:hover {
 		background-color: $mainAqua;
 		color: white;
+	}
+	
+	.navbar-collapse {
+		background-color: white;
 	}
 }
 
