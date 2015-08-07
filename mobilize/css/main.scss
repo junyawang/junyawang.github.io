@@ -60,9 +60,59 @@ a:hover {
 }
 
 p {
-	font-size: 1.2em;
-	color: $lightGrey;
+	font-size: 1.1em;
+	line-height: 1.8;
+	color: $darkGrey;
 }
+
+ul {
+	list-style-type: circle;
+	margin-left: -20px;
+
+	li:not(:last-child) {
+		margin-bottom: 8px;
+	}
+}
+
+/****** blockquote ******/
+blockquote {
+	// font-style: italic;
+	width: 100%;
+	max-width: 600px;
+	margin-top: 15%;
+	padding: 0.25em 40px;
+	position: relative;
+	color: white;
+	border-left: none;
+	p {	
+		font-size: 1.2em;
+		line-height: 1.4;
+	}
+}
+
+blockquote:before {
+	font-family: Georgia, serif;
+	display: block;
+	content: "\201C";
+	font-size: 4em;
+	position: absolute;
+	left: -5px;
+	top: -20px;
+	color: white;
+}
+
+blockquote cite {
+	color: white;
+	font-size: 0.9em;
+	display: block;
+	margin-top: 10px;
+}
+ 
+blockquote cite:before {
+	content: "\2014 \2009";
+}
+
+
 
 /*-------------------------------------------
                  GLOBAL
@@ -112,6 +162,14 @@ p {
 	background-size: 100% auto; 
 	@include border-radius(0px);
 	@include transition ($transition);
+
+	.navbar-nav > li > a {
+		font-size: 1.1em;
+		font-weight: 400;
+		// text-transform: uppercase;
+		display: inline-block;
+		vertical-align: middle;
+	}
 }
 
 .navbar-brand {
@@ -119,6 +177,7 @@ p {
 }
 
 .navbar-nav > li > a.btn {
+	font-weight: 600;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	margin-top: 5px;
@@ -179,16 +238,20 @@ p {
 
 	.navbar-nav > li > a {
 		color: white;
-		font-size: 1.1em;
-		font-weight: 600;
-		text-transform: uppercase;
-		display: inline-block;
-		vertical-align: middle;
+		// @include transition ($transition);
 	}
 
 	.navbar-nav > li > a:hover,
 	.navbar-nav > li > a:focus {
 		color: white;
+		background-color: transparent;
+		border-bottom: 3px solid rgba(white, 0.2);
+		// @include transition ($transition);
+	}
+
+	.navbar-nav > li > a.active {
+		color: white;
+		border-bottom: 3px solid rgba($mainAqua, 1);
 	}
 
 	.navbar-nav > li > a.btn.btn-default{
@@ -242,16 +305,19 @@ p {
 
 	.navbar-nav > li > a {
 		color: white;
-		font-size: 1.1em;
-		font-weight: 600;
-		text-transform: uppercase;
-		display: inline-block;
-		vertical-align: middle;
 	}
 
 	.navbar-nav > li > a:hover,
 	.navbar-nav > li > a:focus {
 		color: white;
+		background-color: transparent;
+		border-bottom: 3px solid rgba(white, 0.2);
+		// @include transition ($transition);
+	}
+
+	.navbar-nav > li > a.active {
+		color: white;
+		border-bottom: 3px solid rgba($mainAqua, 1);
 	}
 
 	.navbar-nav > li > a.btn.btn-default{
@@ -311,12 +377,20 @@ p {
 	}
 
 	.navbar-nav > li > a {
-		color: $mainAqua;
+		color: $darkGrey;
 	}
 
 	.navbar-nav > li > a:hover,
 	.navbar-nav > li > a:focus {
+		color: $darkGrey;
+		background-color: transparent;
+		border-bottom: 3px solid rgba(white, 0.2);
+		// @include transition ($transition);
+	}
+
+	.navbar-nav > li > a.active {
 		color: $mainAqua;
+		border-bottom: 3px solid rgba($mainAqua, 1);
 	}
 
 	.navbar-nav > li > a.btn.btn-default {
@@ -566,6 +640,17 @@ header#header-pricing {
 	}
 }
 
+header#header-local {
+	background: url(../img/local-public-eatery-header-bg.jpg) repeat center center fixed;
+	min-height: 200px;
+	max-height: 300px;
+
+	img {
+		margin: 10px auto 100px auto;
+		max-height: 150px;
+	}
+}
+
 .cd-intro {
 	width: 100%;
 	max-width: 992px;
@@ -602,13 +687,38 @@ header#header-pricing {
 	h4 {
 		color: $darkBlue;
 	}
+	p {
+		color: white;
+	}
+}
+
+.sec-showcase-blue {
+	background-color: $blue;
+
+	h2 {
+		color: white;
+	}
+
+	h4 {
+		color: white;
+	}
+	p {
+		color: white;
+	}
 }
 
 .sec-showcase-white {
 	background-color: white;
+	p {
+		color: $darkBlue;
+	}
+
+	ul {
+		color: $darkBlue;
+	}
 }
 
-.sec-showcase-blue {
+.sec-showcase-lightblue {
 	background-color: $lightBlue;
 
 	h2 {
@@ -958,13 +1068,7 @@ canvas#myChart {
 			margin-bottom: 40px;
 
 			ul {
-				list-style-type: circle;
-				margin-left: -20px;
 				color: white;
-
-				li:not(:last-child) {
-					margin-bottom: 8px;
-				}
 			}
 		}
 
@@ -991,18 +1095,7 @@ canvas#myChart {
 
 
 
-	// .price-detail-starter {
-	// 	h3 {
-	// 		color: $green;
-	// 	}
-	// 	hr {
-	// 		border-color: $green;
-	// 	}
-	// }
-	// .price-detail-professional {
-	// 	h3 {
-	// 		color: $red;
-	// 	}
+		// 	}
 	// 	hr {
 	// 		border-color: $red;
 	// 	}
@@ -1022,7 +1115,18 @@ canvas#myChart {
 	// 	hr {
 	// 		border-color: $orange;
 	// 	}
+	// }// .price-detail-starter {
+	// 	h3 {
+	// 		color: $green;
+	// 	}
+	// 	hr {
+	// 		border-color: $green;
+	// 	}
 	// }
+	// .price-detail-professional {
+	// 	h3 {
+	// 		color: $red;
+
 }
 
 #sec-privacy {
@@ -1044,6 +1148,26 @@ canvas#myChart {
 		text-align: left;
 		color: $darkGrey;
 		font-size: 1.2em;
+	}
+}
+
+.sec-case-study-descr {
+	padding: 70px 0;
+
+	h2 {
+		margin-top: 20px;
+	}
+
+	p {	
+		text-align: left;
+	}
+}
+
+.sec-case-study-quote {
+	padding: 0;
+
+	p {
+		text-align: left;
 	}
 }
 

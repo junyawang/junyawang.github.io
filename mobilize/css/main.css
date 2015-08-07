@@ -53,8 +53,47 @@ a:hover {
   text-decoration: none; }
 
 p {
-  font-size: 1.2em;
-  color: #B3B3B3; }
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: #828C96; }
+
+ul {
+  list-style-type: circle;
+  margin-left: -20px; }
+  ul li:not(:last-child) {
+    margin-bottom: 8px; }
+
+/****** blockquote ******/
+blockquote {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 15%;
+  padding: 0.25em 40px;
+  position: relative;
+  color: white;
+  border-left: none; }
+  blockquote p {
+    font-size: 1.2em;
+    line-height: 1.4; }
+
+blockquote:before {
+  font-family: Georgia, serif;
+  display: block;
+  content: "\201C";
+  font-size: 4em;
+  position: absolute;
+  left: -5px;
+  top: -20px;
+  color: white; }
+
+blockquote cite {
+  color: white;
+  font-size: 0.9em;
+  display: block;
+  margin-top: 10px; }
+
+blockquote cite:before {
+  content: "\2014 \2009"; }
 
 /*-------------------------------------------
                  GLOBAL
@@ -105,11 +144,17 @@ p {
   -moz-transition: ease all 0.2s;
   -o-transition: ease all 0.2s;
   transition: ease all 0.2s; }
+  .navbar .navbar-nav > li > a {
+    font-size: 1.1em;
+    font-weight: 400;
+    display: inline-block;
+    vertical-align: middle; }
 
 .navbar-brand {
   height: 50px; }
 
 .navbar-nav > li > a.btn {
+  font-weight: 600;
   padding-top: 10px;
   padding-bottom: 10px;
   margin-top: 5px;
@@ -165,15 +210,15 @@ p {
     .navbar-transparent .navbar-toggle:focus .icon-bar {
       background-color: white; }
   .navbar-transparent .navbar-nav > li > a {
-    color: white;
-    font-size: 1.1em;
-    font-weight: 600;
-    text-transform: uppercase;
-    display: inline-block;
-    vertical-align: middle; }
+    color: white; }
   .navbar-transparent .navbar-nav > li > a:hover,
   .navbar-transparent .navbar-nav > li > a:focus {
-    color: white; }
+    color: white;
+    background-color: transparent;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.2); }
+  .navbar-transparent .navbar-nav > li > a.active {
+    color: white;
+    border-bottom: 3px solid #66d1cd; }
   .navbar-transparent .navbar-nav > li > a.btn.btn-default {
     color: white; }
   .navbar-transparent .navbar-nav > li > a.btn.btn-default:hover {
@@ -213,15 +258,15 @@ p {
     .navbar-aqua .navbar-toggle:focus .icon-bar {
       background-color: white; }
   .navbar-aqua .navbar-nav > li > a {
-    color: white;
-    font-size: 1.1em;
-    font-weight: 600;
-    text-transform: uppercase;
-    display: inline-block;
-    vertical-align: middle; }
+    color: white; }
   .navbar-aqua .navbar-nav > li > a:hover,
   .navbar-aqua .navbar-nav > li > a:focus {
-    color: white; }
+    color: white;
+    background-color: transparent;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.2); }
+  .navbar-aqua .navbar-nav > li > a.active {
+    color: white;
+    border-bottom: 3px solid #66d1cd; }
   .navbar-aqua .navbar-nav > li > a.btn.btn-default {
     color: white; }
   .navbar-aqua .navbar-nav > li > a.btn.btn-default:hover {
@@ -268,10 +313,15 @@ p {
     .navbar-white .navbar-toggle:focus .icon-bar {
       background-color: #66D1CD; }
   .navbar-white .navbar-nav > li > a {
-    color: #66D1CD; }
+    color: #828C96; }
   .navbar-white .navbar-nav > li > a:hover,
   .navbar-white .navbar-nav > li > a:focus {
-    color: #66D1CD; }
+    color: #828C96;
+    background-color: transparent;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.2); }
+  .navbar-white .navbar-nav > li > a.active {
+    color: #66D1CD;
+    border-bottom: 3px solid #66d1cd; }
   .navbar-white .navbar-nav > li > a.btn.btn-default {
     background-color: white;
     border: 2px solid #66D1CD;
@@ -489,6 +539,14 @@ header#header-pricing {
   header#header-pricing h1 {
     margin-top: 70px; }
 
+header#header-local {
+  background: url(../img/local-public-eatery-header-bg.jpg) repeat center center fixed;
+  min-height: 200px;
+  max-height: 300px; }
+  header#header-local img {
+    margin: 10px auto 100px auto;
+    max-height: 150px; }
+
 .cd-intro {
   width: 100%;
   max-width: 992px;
@@ -512,13 +570,28 @@ header#header-pricing {
     color: white; }
   .sec-showcase-aqua h4 {
     color: #364251; }
+  .sec-showcase-aqua p {
+    color: white; }
+
+.sec-showcase-blue {
+  background-color: #2585C4; }
+  .sec-showcase-blue h2 {
+    color: white; }
+  .sec-showcase-blue h4 {
+    color: white; }
+  .sec-showcase-blue p {
+    color: white; }
 
 .sec-showcase-white {
   background-color: white; }
+  .sec-showcase-white p {
+    color: #364251; }
+  .sec-showcase-white ul {
+    color: #364251; }
 
-.sec-showcase-blue {
+.sec-showcase-lightblue {
   background-color: #E9F3F9; }
-  .sec-showcase-blue h2 {
+  .sec-showcase-lightblue h2 {
     color: #2585C4; }
 
 #sec-analytics {
@@ -780,11 +853,7 @@ canvas#myChart {
       margin-top: 40px;
       margin-bottom: 40px; }
       #sec-pricing .panel-pricing .price-detail ul {
-        list-style-type: circle;
-        margin-left: -20px;
         color: white; }
-        #sec-pricing .panel-pricing .price-detail ul li:not(:last-child) {
-          margin-bottom: 8px; }
     #sec-pricing .panel-pricing .btn {
       display: block;
       width: 80%;
@@ -813,6 +882,18 @@ canvas#myChart {
     text-align: left;
     color: #828C96;
     font-size: 1.2em; }
+
+.sec-case-study-descr {
+  padding: 70px 0; }
+  .sec-case-study-descr h2 {
+    margin-top: 20px; }
+  .sec-case-study-descr p {
+    text-align: left; }
+
+.sec-case-study-quote {
+  padding: 0; }
+  .sec-case-study-quote p {
+    text-align: left; }
 
 .sec-signup {
   padding-top: 105px;
