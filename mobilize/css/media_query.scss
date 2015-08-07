@@ -113,6 +113,15 @@
         min-height: 700px;
     }
 
+    header#header-hr,
+    header#header-sales,
+    header#header-pricing {
+        background-size: 200% auto;
+        h1 {
+            min-height: initial;
+        }
+    }
+
     header#header-pricing {
         padding-top: $margin-desktop * 2;
         min-height: 500px;
@@ -246,6 +255,12 @@
     h5 {
         font-size: 1.3em;
     }
+
+    header#header-hr,
+    header#header-sales,
+    header#header-pricing {
+        background-size: 180% auto;
+    }
     
     .sec-connect {
         #connect-content {
@@ -347,6 +362,12 @@
 
     h5 {
         font-size: 1.4em;
+    }
+
+    header#header-hr,
+    header#header-sales,
+    header#header-pricing {
+        background-size: 150% auto;
     }
 
     footer {

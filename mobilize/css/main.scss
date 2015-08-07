@@ -642,11 +642,19 @@ header#header-pricing {
 	// -moz-background-size: cover;
 	// -o-background-size: cover;
 	// background-size: cover;
-	
-	min-height: 300px;
+
 	h1 {
 		margin-top:  $margin-mobile;
 	}
+}
+
+header#header-hr,
+header#header-sales,
+header#header-pricing {
+    background-size: 600% auto;
+    h1 {
+    	min-height: 200px;
+    }
 }
 
 header#header-local {
