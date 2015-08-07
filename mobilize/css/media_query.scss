@@ -9,7 +9,8 @@
 /* Small devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
-    h1 {
+    h1,
+    .cd-headline {
         font-size: 2.8em;
     }
 
@@ -54,13 +55,14 @@
 
     header {
         padding-top: $margin-desktop * 2;
-        min-height: 600px;
+        min-height: 700px;
     }
 
     header#header-pricing {
         padding-top: $margin-desktop * 2;
         min-height: 500px;
     }
+
 
     .sec-email {
         padding-top: $margin-desktop * 2;
@@ -159,7 +161,8 @@
 /* Medium devices (desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
-    h1 {
+    h1,
+    .cd-headline {
         font-size: 2.6em;
     }
 
@@ -260,7 +263,8 @@
 
 /* Large devices (large desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    h1 {
+    h1,
+    .cd-headline {
         font-size: 3.0em;
     }
 

@@ -8,7 +8,8 @@
 /* No media query since this is the default in Bootstrap */
 /* Small devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  h1 {
+  h1,
+  .cd-headline {
     font-size: 2.8em; }
 
   h2 {
@@ -45,7 +46,7 @@
 
   header {
     padding-top: 140px;
-    min-height: 600px; }
+    min-height: 700px; }
 
   header#header-pricing {
     padding-top: 140px;
@@ -114,7 +115,8 @@
         font-size: 0.8em; } }
 /* Medium devices (desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  h1 {
+  h1,
+  .cd-headline {
     font-size: 2.6em; }
 
   h2 {
@@ -177,7 +179,8 @@
       font-size: 1em; } }
 /* Large devices (large desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  h1 {
+  h1,
+  .cd-headline {
     font-size: 3.0em; }
 
   h2 {
