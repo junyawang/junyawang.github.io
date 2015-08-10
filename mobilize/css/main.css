@@ -70,22 +70,18 @@ ul {
 
 /****** blockquote ******/
 blockquote {
-  width: 100%;
-  max-width: 600px;
-  margin-top: 15%;
-  padding: 0.25em 40px;
   position: relative;
   color: white;
   border-left: none; }
   blockquote p {
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 1.4; }
 
 blockquote:before {
   font-family: Georgia, serif;
   display: block;
   content: "\201C";
-  font-size: 4em;
+  font-size: 3em;
   position: absolute;
   left: -5px;
   top: -20px;
@@ -892,6 +888,8 @@ canvas#myChart {
   padding: 0; }
   .sec-case-study-quote p {
     text-align: left; }
+  .sec-case-study-quote .blockquote-container {
+    margin: 40px 20px 40px 30px; }
 
 .sec-signup {
   padding-top: 105px;

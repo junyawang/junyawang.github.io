@@ -190,6 +190,13 @@
         margin-top: 8px;
     }
 
+    .sec-case-study-quote {
+        .blockquote-container {
+            margin-left: 0px;
+            margin-top: 18%;
+        }
+    }
+
     #sec-privacy {
         padding-top: $margin-desktop * 3;
         padding-bottom: $margin-desktop;
@@ -281,6 +288,12 @@
         padding-top: 120px;
     }
 
+    .sec-case-study-quote {
+        .blockquote-container {
+            margin-top: 22%;
+        }
+    }
+
     footer {
         .footer-logo {
             margin: 0 auto;
@@ -368,6 +381,12 @@
     header#header-sales,
     header#header-pricing {
         background-size: 150% auto;
+    }
+
+    .sec-case-study-quote {
+        .blockquote-container {
+            margin-top: 25%;
+        }
     }
 
     footer {

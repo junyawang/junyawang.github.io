@@ -82,15 +82,14 @@ ul {
 /****** blockquote ******/
 blockquote {
 	// font-style: italic;
-	width: 100%;
-	max-width: 600px;
-	margin-top: 15%;
-	padding: 0.25em 40px;
+	// width: 100%;
+	// max-width: 600px;
+	// margin-top: 15%;
 	position: relative;
 	color: white;
 	border-left: none;
 	p {	
-		font-size: 1.2em;
+		font-size: 1.1em;
 		line-height: 1.4;
 	}
 }
@@ -99,7 +98,7 @@ blockquote:before {
 	font-family: Georgia, serif;
 	display: block;
 	content: "\201C";
-	font-size: 4em;
+	font-size: 3em;
 	position: absolute;
 	left: -5px;
 	top: -20px;
@@ -1185,6 +1184,10 @@ canvas#myChart {
 
 	p {
 		text-align: left;
+	}
+
+	.blockquote-container {
+		margin: 40px 20px 40px 30px;
 	}
 }
 
