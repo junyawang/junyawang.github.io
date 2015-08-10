@@ -143,10 +143,6 @@ blockquote cite:before {
 	margin-top: 80px;
 }
 
-.img-app-store {
-	width: 180px;
-}
-
 .img-clients {
 	max-width: 220px;
 	@include border-radius (110px);
@@ -857,6 +853,48 @@ canvas#myChart {
 
 	.particles-js-canvas-el {
         display: none;
+    }
+
+    .sec-download-badge {
+    	margin-top: 50px;
+    	width: 100%;
+
+		.download-badge-container {
+			margin: 0 auto;
+		}
+
+		.download-badge {
+			display: inline-block;
+			padding: 0;
+		}
+
+		.download-badge-google {
+			float: left;
+			width: 50%;
+
+
+			img {
+				margin-left: auto;
+				margin-right: 2%;
+				height: 50px;
+			}
+		}
+
+		.download-badge-apple {
+			float: right;
+			width: 50%;
+
+			img {
+				margin-left: 2%;
+				margin-right: auto;
+				height: 50px;
+			}
+		}
+
+    	// img {
+    	// 	margin: 0 auto;
+    	// 	height: 50px;
+    	// }
     }
 }
 

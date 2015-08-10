@@ -58,8 +58,6 @@
     }
 
     .navbar-transparent {
-        
-
         .navbar-nav > li > a {
             color: rgba(white,0.6);
             // @include transition ($transition);
@@ -79,8 +77,6 @@
     }
 
     .navbar-white {
-        
-
         padding: 10px 0;
 
         .navbar-nav > li > a {
@@ -136,7 +132,6 @@
             max-height: 200px;
         }
     }
-
 
     .sec-email {
         padding-top: $margin-desktop * 2;

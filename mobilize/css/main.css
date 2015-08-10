@@ -116,9 +116,6 @@ blockquote cite:before {
 .img-mobile {
   margin-top: 80px; }
 
-.img-app-store {
-  width: 180px; }
-
 .img-clients {
   max-width: 220px;
   -webkit-border-radius: 110px;
@@ -695,6 +692,28 @@ canvas#myChart {
     z-index: 1; }
   .sec-connect .particles-js-canvas-el {
     display: none; }
+  .sec-connect .sec-download-badge {
+    margin-top: 50px;
+    width: 100%; }
+    .sec-connect .sec-download-badge .download-badge-container {
+      margin: 0 auto; }
+    .sec-connect .sec-download-badge .download-badge {
+      display: inline-block;
+      padding: 0; }
+    .sec-connect .sec-download-badge .download-badge-google {
+      float: left;
+      width: 50%; }
+      .sec-connect .sec-download-badge .download-badge-google img {
+        margin-left: auto;
+        margin-right: 2%;
+        height: 50px; }
+    .sec-connect .sec-download-badge .download-badge-apple {
+      float: right;
+      width: 50%; }
+      .sec-connect .sec-download-badge .download-badge-apple img {
+        margin-left: 2%;
+        margin-right: auto;
+        height: 50px; }
 
 #sec-steps h5 {
   color: #EB5768;
