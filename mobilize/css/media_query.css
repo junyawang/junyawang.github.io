@@ -33,7 +33,11 @@
   .navbar .navbar-nav > li > a {
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 1.1em; }
+    font-size: 1.0em; }
+
+  .img-logo-name-white,
+  .img-logo-name-color {
+    height: 20px; }
 
   .navbar-transparent,
   .navbar-aqua {
@@ -45,6 +49,12 @@
       -ms-box-shadow: none;
       box-shadow: none; }
 
+  .navbar-transparent .img-logo-name-white {
+    display: inline-block; }
+  .navbar-transparent .img-logo-color,
+  .navbar-transparent .img-logo-white,
+  .navbar-transparent .img-logo-name-color {
+    display: none; }
   .navbar-transparent .navbar-nav > li > a {
     color: rgba(255, 255, 255, 0.6); }
   .navbar-transparent .navbar-nav > li > a:hover,
@@ -55,8 +65,21 @@
     color: rgba(255, 255, 255, 0.8);
     border-bottom: 2px solid #66d1cd; }
 
+  .navbar-aqua .img-logo-name-white {
+    display: inline-block; }
+  .navbar-aqua .img-logo-color,
+  .navbar-aqua .img-logo-white,
+  .navbar-aqua .img-logo-name-color {
+    display: none; }
+
   .navbar-white {
     padding: 10px 0; }
+    .navbar-white .img-logo-name-color {
+      display: inline-block; }
+    .navbar-white .img-logo-color,
+    .navbar-white .img-logo-white,
+    .navbar-white .img-logo-name-white {
+      display: none; }
     .navbar-white .navbar-nav > li > a {
       color: rgba(130, 140, 150, 0.8); }
     .navbar-white .navbar-nav > li > a:hover,
@@ -213,6 +236,13 @@
 
   h5 {
     font-size: 1.3em; }
+
+  .navbar .navbar-nav > li > a {
+    font-size: 1.1em; }
+
+  .img-logo-name-white,
+  .img-logo-name-color {
+    height: 28px; }
 
   header#header-hr,
   header#header-sales,

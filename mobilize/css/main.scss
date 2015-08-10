@@ -131,7 +131,7 @@ blockquote cite:before {
 
 .img-logo-white,
 .img-logo-color {
-	height: 100%;
+	height: 20px;
 }
 
 .img-intro {
@@ -186,7 +186,7 @@ blockquote cite:before {
 }
 
 .navbar-brand {
-	height: 50px;
+	height: 20px;
 }
 
 .navbar-nav > li > a.btn {
@@ -225,7 +225,13 @@ blockquote cite:before {
 	animation-fill-mode: both;
 	@include transition ($transition);
 	
-	.img-logo-color {
+	.img-logo-white {
+		display: inline-block;
+	}
+
+	.img-logo-color,
+	.img-logo-name-white,
+	.img-logo-name-color {
 		display: none;
 	}
 
@@ -288,7 +294,13 @@ blockquote cite:before {
 	animation-fill-mode: both;
 	@include transition ($transition);
 	
-	.img-logo-color {
+	.img-logo-white {
+		display: inline-block;
+	}
+
+	.img-logo-color,
+	.img-logo-name-white,
+	.img-logo-name-color {
 		display: none;
 	}
 
@@ -360,7 +372,9 @@ blockquote cite:before {
 		display: inline-block;
 	}
 
-	.img-logo-white {
+	.img-logo-white,
+	.img-logo-name-white,
+	.img-logo-name-color {
 		display: none;
 	}
 

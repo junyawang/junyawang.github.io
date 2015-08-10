@@ -107,7 +107,7 @@ blockquote cite:before {
 
 .img-logo-white,
 .img-logo-color {
-  height: 100%; }
+  height: 20px; }
 
 .img-intro {
   width: 100%;
@@ -157,7 +157,7 @@ blockquote cite:before {
     vertical-align: middle; }
 
 .navbar-brand {
-  height: 50px; }
+  height: 20px; }
 
 .navbar-nav > li > a.btn {
   font-weight: 400;
@@ -200,7 +200,11 @@ blockquote cite:before {
   -moz-transition: ease all 0.2s;
   -o-transition: ease all 0.2s;
   transition: ease all 0.2s; }
-  .navbar-transparent .img-logo-color {
+  .navbar-transparent .img-logo-white {
+    display: inline-block; }
+  .navbar-transparent .img-logo-color,
+  .navbar-transparent .img-logo-name-white,
+  .navbar-transparent .img-logo-name-color {
     display: none; }
   .navbar-transparent .navbar-toggle .icon-bar {
     background-color: white; }
@@ -244,7 +248,11 @@ blockquote cite:before {
   -moz-transition: ease all 0.2s;
   -o-transition: ease all 0.2s;
   transition: ease all 0.2s; }
-  .navbar-aqua .img-logo-color {
+  .navbar-aqua .img-logo-white {
+    display: inline-block; }
+  .navbar-aqua .img-logo-color,
+  .navbar-aqua .img-logo-name-white,
+  .navbar-aqua .img-logo-name-color {
     display: none; }
   .navbar-aqua .navbar-toggle .icon-bar {
     background-color: white; }
@@ -297,7 +305,9 @@ blockquote cite:before {
   transition: ease all 0.2s; }
   .navbar-white .img-logo-color {
     display: inline-block; }
-  .navbar-white .img-logo-white {
+  .navbar-white .img-logo-white,
+  .navbar-white .img-logo-name-white,
+  .navbar-white .img-logo-name-color {
     display: none; }
   .navbar-white .navbar-toggle .icon-bar {
     background-color: #66D1CD; }

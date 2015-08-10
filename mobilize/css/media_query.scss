@@ -46,9 +46,15 @@
         .navbar-nav > li > a {
             padding-top: 10px;
             padding-bottom: 10px;
-            font-size: 1.1em;
+            font-size: 1.0em;
         }
     }
+
+    .img-logo-name-white,
+    .img-logo-name-color {
+        height: 20px;
+    }
+
     .navbar-transparent,
     .navbar-aqua {
         padding: 30px 0;
@@ -58,6 +64,16 @@
     }
 
     .navbar-transparent {
+        .img-logo-name-white {
+            display: inline-block;
+        }
+
+        .img-logo-color,
+        .img-logo-white,
+        .img-logo-name-color {
+            display: none;
+        }
+
         .navbar-nav > li > a {
             color: rgba(white,0.6);
             // @include transition ($transition);
@@ -76,8 +92,30 @@
         }
     }
 
+    .navbar-aqua {
+        .img-logo-name-white {
+            display: inline-block;
+        }
+
+        .img-logo-color,
+        .img-logo-white,
+        .img-logo-name-color {
+            display: none;
+        }
+    }
+
     .navbar-white {
         padding: 10px 0;
+
+        .img-logo-name-color {
+            display: inline-block;
+        }
+
+        .img-logo-color,
+        .img-logo-white,
+        .img-logo-name-white {
+            display: none;
+        }
 
         .navbar-nav > li > a {
             color: rgba($darkGrey,0.8);
@@ -308,6 +346,17 @@
 
     h5 {
         font-size: 1.3em;
+    }
+
+    .navbar {
+        .navbar-nav > li > a {
+            font-size: 1.1em;
+        }
+    }
+
+    .img-logo-name-white,
+    .img-logo-name-color {
+        height: 28px;
     }
 
     header#header-hr,
