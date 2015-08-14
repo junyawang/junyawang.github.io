@@ -1144,29 +1144,36 @@ canvas#myChart {
 }
 
 .sec-cta-signup {
-	background-color: #333;
+	// background-color: #333;
 	padding-top: $margin-desktop;
 	padding-bottom: $margin-desktop;
 
+	.container {
+		background-color: #f7f7f7;
+		@include border-radius($radius-large);
+	}
+
 	h2 {
 		font-size: 1.4em;
-		color: white;
+		color: $darkBlue;
 		text-align: left;
-		margin-top: $margin-desktop/2;
-		margin-bottom: 20px;
-		
+		margin-top: $margin-desktop/1.5;
+		margin-left: 20px;
+		margin-bottom: 6px;
 	}
 
 	h4 {
 		font-size: 0.9em;
-		color: $lightGrey;
+		color: $darkGrey;
 		text-align: left;
-		margin-bottom: $margin-desktop/2;
+		margin-left: 20px;
+		margin-bottom: $margin-desktop/1.5;
 	}
 
 	a.btn {
 		display: inline-block;
-		margin: $margin-desktop/2 auto;
+		margin: $margin-desktop/1.5 auto;
+		margin-right: 20px;
 	}
 }
 
@@ -1471,7 +1478,7 @@ footer {
 			color: $mainAqua;
 		}
 	}
-	
+
 	.footer-social-media {
 		position: relative;
 		text-align: center;

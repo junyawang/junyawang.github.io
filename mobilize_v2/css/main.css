@@ -814,23 +814,31 @@ canvas#myChart {
     color: #B3B3B3; }
 
 .sec-cta-signup {
-  background-color: #333;
   padding-top: 70px;
   padding-bottom: 70px; }
+  .sec-cta-signup .container {
+    background-color: #f7f7f7;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px; }
   .sec-cta-signup h2 {
     font-size: 1.4em;
-    color: white;
+    color: #364251;
     text-align: left;
-    margin-top: 35px;
-    margin-bottom: 20px; }
+    margin-top: 46.66667px;
+    margin-left: 20px;
+    margin-bottom: 6px; }
   .sec-cta-signup h4 {
     font-size: 0.9em;
-    color: #B3B3B3;
+    color: #828C96;
     text-align: left;
-    margin-bottom: 35px; }
+    margin-left: 20px;
+    margin-bottom: 46.66667px; }
   .sec-cta-signup a.btn {
     display: inline-block;
-    margin: 35px auto; }
+    margin: 46.66667px auto;
+    margin-right: 20px; }
 
 .sec-pricing-cta-signup {
   background-color: #E5F7F6; }
