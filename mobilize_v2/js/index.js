@@ -111,7 +111,6 @@ Chart.defaults.global.responsive = true;
 
 Chart.defaults.Line.pointDot = false;
 
-
 // Get the context of the canvas element we want to select
 var ctx = document.getElementById("myChart").getContext("2d");
 // var myNewChart = new Chart(ctx).Line(data);
@@ -240,3 +239,10 @@ $(function() { // wait for document ready
 //     //     i++;  
 //     // }, 3000);
 // });  
+
+// Super Simple Text Rotator
+$(".rotate").textrotator({
+  animation: "flipUp", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
+  separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
+  speed: 8000 // How many milliseconds until the next word show.
+});

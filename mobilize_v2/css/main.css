@@ -581,9 +581,11 @@ header#header-pricing h1 {
   min-height: 200px; }
 
 header#header-local {
-  background-color: white; }
+  background: url(../img/local-leas-exta.jpg) top center fixed; }
+  header#header-local h2 {
+    color: white; }
   header#header-local h4 {
-    color: #364251; }
+    color: white; }
   header#header-local img {
     margin: 0 auto;
     max-height: 600px; }
@@ -642,11 +644,7 @@ header#header-local {
     z-index: 10; }
 
 #browser-analytics {
-  opacity: 0;
-  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
-  -ms-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1); }
+  opacity: 0; }
 
 .myChart-container {
   width: 100%;
@@ -727,14 +725,6 @@ canvas#myChart {
 
 .sec-connect {
   background: #66D1CD;
-  background: -webkit-linear-gradient(170deg, #66D1CD, #66D1CD, #E5F7F6);
-  /*Safari 5.1-6*/
-  background: -o-linear-gradient(170deg, #66D1CD, #66D1CD, #E5F7F6);
-  /*Opera 11.1-12*/
-  background: -moz-linear-gradient(170deg, #66D1CD, #66D1CD, #E5F7F6);
-  /*Fx 3.6-15*/
-  background: linear-gradient(170deg, #66D1CD, #66D1CD, #E5F7F6);
-  /*Standard*/
   padding-top: 50px;
   padding-bottom: 50px; }
   .sec-connect #connect-content {
