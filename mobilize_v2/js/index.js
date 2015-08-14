@@ -53,17 +53,23 @@ $('.carousel').carousel({
     keyboard: false
 });
 
-
+var connConnOriginalHeight = "0px";
 
 // Make .particles-js-canvas-el 's height always equal to #connect-content height
 var callSameHeight = function sameHeight(){
     var connectContentHeight = $('#connect-content').css("height");
-    console.log("connectContentHeight = " + connectContentHeight);
-    $('.particles-js-canvas-el').css("height", connectContentHeight);
+    if (connectContentHeight != connConnOriginalHeight) {
+        connConnOriginalHeight = connectContentHeight;
+        console.log("connectContentHeight = " + connectContentHeight);
+        $('.particles-js-canvas-el').css("height", connectContentHeight);
+    }   
 };
 
 $( window ).resize(callSameHeight);
-$( document ).ready(callSameHeight);
+$( document ).ready(
+    callSameHeight,
+    setTimeout(callSameHeight, 200)
+);
 
 /******* Line Chart ********/
 var data = {
@@ -130,14 +136,6 @@ $(function() { // wait for document ready
     .setClassToggle("#browser-analytics", "fadeInUp")
     .addTo(controller);
 
-
-    var particleJs = new ScrollMagic.Scene({
-        triggerElement: '#particles-js', // starting scene, when reaching this element
-    })
-    .on("enter", function () {
-        callSameHeight
-    })
-    .addTo(controller);
 
     // build scene - Section Analytics - Chart
     var sceneAnalyticsChart = new ScrollMagic.Scene({
