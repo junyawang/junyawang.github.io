@@ -58,7 +58,7 @@ a:visited {
   text-decoration: none; }
 
 p {
-  font-size: 1.1em;
+  font-size: 1.2em;
   line-height: 1.8;
   color: #828C96; }
 
@@ -74,7 +74,7 @@ blockquote {
   color: white;
   border-left: none; }
   blockquote p {
-    font-size: 1.1em;
+    font-size: 1.4em;
     line-height: 1.4; }
 
 blockquote:before {
@@ -83,15 +83,15 @@ blockquote:before {
   content: "\201C";
   font-size: 3em;
   position: absolute;
-  left: -5px;
+  left: -18px;
   top: -20px;
-  color: white; }
+  color: #66D1CD; }
 
 blockquote cite {
-  color: white;
-  font-size: 0.9em;
+  color: #828C96;
+  font-size: 1.0em;
   display: block;
-  margin-top: 10px; }
+  margin-top: 30px; }
 
 blockquote cite:before {
   content: "\2014 \2009"; }
@@ -817,12 +817,16 @@ canvas#myChart {
   background-color: #333;
   padding-top: 70px;
   padding-bottom: 70px; }
-  .sec-cta-signup span {
-    display: block;
-    font-size: 1.3em;
-    color: #66D1CD;
+  .sec-cta-signup h2 {
+    font-size: 1.4em;
+    color: white;
     text-align: left;
     margin-top: 35px;
+    margin-bottom: 20px; }
+  .sec-cta-signup h4 {
+    font-size: 0.9em;
+    color: #B3B3B3;
+    text-align: left;
     margin-bottom: 35px; }
   .sec-cta-signup a.btn {
     display: inline-block;
@@ -939,8 +943,16 @@ canvas#myChart {
   padding: 70px 0; }
   .sec-case-study-descr h2 {
     margin-top: 20px; }
+  .sec-case-study-descr h5 {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #66D1CD;
+    text-align: left;
+    margin: 30px 0 10px 0; }
   .sec-case-study-descr p {
     text-align: left; }
+  .sec-case-study-descr .blockquote-container {
+    margin: 80px 20px 80px 30px; }
 
 .sec-case-study-quote {
   padding: 0; }

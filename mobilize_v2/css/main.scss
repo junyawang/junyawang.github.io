@@ -66,7 +66,7 @@ a:visited {
 }
 
 p {
-	font-size: 1.1em;
+	font-size: 1.2em;
 	line-height: 1.8;
 	color: $darkGrey;
 }
@@ -90,7 +90,7 @@ blockquote {
 	color: white;
 	border-left: none;
 	p {	
-		font-size: 1.1em;
+		font-size: 1.4em;
 		line-height: 1.4;
 	}
 }
@@ -101,16 +101,16 @@ blockquote:before {
 	content: "\201C";
 	font-size: 3em;
 	position: absolute;
-	left: -5px;
+	left: -18px;
 	top: -20px;
-	color: white;
+	color: $mainAqua;
 }
 
 blockquote cite {
-	color: white;
-	font-size: 0.9em;
+	color: $darkGrey;
+	font-size: 1.0em;
 	display: block;
-	margin-top: 10px;
+	margin-top: 30px;
 }
  
 blockquote cite:before {
@@ -1148,12 +1148,19 @@ canvas#myChart {
 	padding-top: $margin-desktop;
 	padding-bottom: $margin-desktop;
 
-	span {
-		display: block;
-		font-size: 1.3em;
-		color: $mainAqua;
+	h2 {
+		font-size: 1.4em;
+		color: white;
 		text-align: left;
 		margin-top: $margin-desktop/2;
+		margin-bottom: 20px;
+		
+	}
+
+	h4 {
+		font-size: 0.9em;
+		color: $lightGrey;
+		text-align: left;
 		margin-bottom: $margin-desktop/2;
 	}
 
@@ -1364,8 +1371,20 @@ canvas#myChart {
 		margin-top: 20px;
 	}
 
+	h5 {
+		font-size: 1.3em;
+		font-weight: 600;
+		color: $mainAqua;
+		text-align: left;
+		margin: 30px 0 10px 0;
+	}
+
 	p {	
 		text-align: left;
+	}
+
+	.blockquote-container {
+		margin: 80px 20px 80px 30px;
 	}
 }
 
