@@ -53,23 +53,17 @@ $('.carousel').carousel({
     keyboard: false
 });
 
-var connConnOriginalHeight = "0px";
+
 
 // Make .particles-js-canvas-el 's height always equal to #connect-content height
 var callSameHeight = function sameHeight(){
     var connectContentHeight = $('#connect-content').css("height");
-    if (connectContentHeight != connConnOriginalHeight) {
-        connConnOriginalHeight = connectContentHeight;
-        console.log("connectContentHeight = " + connectContentHeight);
-        $('.particles-js-canvas-el').css("height", connectContentHeight);
-    }   
+    console.log("connectContentHeight = " + connectContentHeight);
+    $('.particles-js-canvas-el').css("height", connectContentHeight);
 };
 
 $( window ).resize(callSameHeight);
-$( document ).ready(
-    callSameHeight,
-    setTimeout(callSameHeight, 200)
-);
+$( window ).load(callSameHeight);
 
 /******* Line Chart ********/
 var data = {
