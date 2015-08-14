@@ -62,6 +62,8 @@ var callSameHeight = function sameHeight(){
     $('.particles-js-canvas-el').css("height", connectContentHeight);
 };
 
+$( window ).resize(callSameHeight);
+$( document ).ready(callSameHeight);
 
 /******* Line Chart ********/
 var data = {
@@ -129,6 +131,14 @@ $(function() { // wait for document ready
     .addTo(controller);
 
 
+    var particleJs = new ScrollMagic.Scene({
+        triggerElement: '#particles-js', // starting scene, when reaching this element
+    })
+    .on("enter", function () {
+        callSameHeight
+    })
+    .addTo(controller);
+
     // build scene - Section Analytics - Chart
     var sceneAnalyticsChart = new ScrollMagic.Scene({
         triggerElement: '#sec-analytics', // starting scene, when reaching this element
@@ -169,9 +179,6 @@ $(function() { // wait for document ready
     sceneNotificationBell.reverse(true);
 });
 
-
-$( window ).resize(callSameHeight);
-$( document ).ready(callSameHeight);
 
 
 /******** Add particle.js if window width>=960 *********/
