@@ -200,13 +200,13 @@ blockquote cite:before {
 .navbar-toggle {
 	padding: 8px 8px;
 	border: none;
-	@include border-radius($radius);
+	@include border-radius($radius-small);
 	@include transition($transition);
 
 	.icon-bar {
 		width: 20px;
 		height: 3px;
-		border-radius: $radius;
+		border-radius: $radius-small;
 	}
 }
 
@@ -507,7 +507,7 @@ blockquote cite:before {
 	border: 2px solid white;
 	font-weight: 600;
 	color: $mainAqua;
-	@include border-radius($radius);
+	@include border-radius($radius-small);
 	@include transition ($transition);
 }
 
@@ -621,7 +621,7 @@ blockquote cite:before {
 	color: $mainAqua;
 	font-size: 1em;
 	font-weight: 400;
-	@include border-radius ($radius);
+	@include border-radius ($radius-small);
 	@include box-shadow (none);
 }
 
@@ -956,7 +956,7 @@ canvas#myChart {
 	padding: 12px 16px;
 	margin-bottom: 20px;
 	color: $darkBlue;
-	@include border-radius($notification-radius);
+	@include border-radius($radius-large);
 	@include box-shadow($box-shadow);
 }
 
@@ -1216,7 +1216,7 @@ canvas#myChart {
 		padding: 10px 40px;
 		min-height: 400px;
 		color: white;
-		@include border-radius($radius);
+		@include border-radius($radius-large);
 
 		h3,h4,p,span {
 			color: white;
@@ -1232,7 +1232,6 @@ canvas#myChart {
 			text-align: center;
 			margin-top: 40px;
 			min-height: 120px;
-
 
 			.price{
 				vertical-align: text-top;
@@ -1255,12 +1254,11 @@ canvas#myChart {
 
 			.price-contact-us {
 				display: block;
-				margin-top: 100px;
-				font-size: 2.4em;
+				margin-top: 70px;
+				font-size: 2em;
 				color: white;
 				vertical-align: center;
 			}
-
 		}
 		
 		.price-bill {
@@ -1274,15 +1272,6 @@ canvas#myChart {
 			display: block;
 			margin: 10px 0;
 			font-size: 1.2em;
-		}
-
-		.price-detail {
-			margin-top: 40px;
-			margin-bottom: 40px;
-
-			ul {
-				color: white;
-			}
 		}
 
 		.btn {
@@ -1306,40 +1295,58 @@ canvas#myChart {
 		background-color: $orange;
 	}
 
+	.price-detail {
+		margin-top: 40px;
+		margin-bottom: 40px;
+		
+		h3 {
+			text-align: left;
+		}
 
+		h5 {
+			text-align: left;
+			font-size: 1em;
+		}
 
-		// 	}
-	// 	hr {
-	// 		border-color: $red;
-	// 	}
-	// }
-	// .price-detail-business {
-	// 	h3{
-	// 		color: $blue;
-	// 	}
-	// 	hr {
-	// 		border-color: $blue;
-	// 	}
-	// }
-	// .price-detail-enterprise{
-	// 	h3 {
-	// 		color: $orange;
-	// 	}
-	// 	hr {
-	// 		border-color: $orange;
-	// 	}
-	// }// .price-detail-starter {
-	// 	h3 {
-	// 		color: $green;
-	// 	}
-	// 	hr {
-	// 		border-color: $green;
-	// 	}
-	// }
-	// .price-detail-professional {
-	// 	h3 {
-	// 		color: $red;
+		ul {
+			color: $darkBlue;
+			font-size: 1.1em;
+		}
+	}
 
+	.price-detail-business {
+		h3{
+			color: $blue;
+		}
+		hr {
+			border-color: $blue;
+		}
+	}
+	.price-detail-enterprise{
+		h3 {
+			color: $orange;
+		}
+		hr {
+			border-color: $orange;
+		}
+	}
+
+	.price-detail-starter {
+		h3 {
+			color: $green;
+		}
+		hr {
+			border-color: $green;
+		}
+	}
+	.price-detail-professional {
+		h3 {
+			color: $red;
+		}
+		hr {
+			border-color: $red;
+		}
+	}
 }
 
 #sec-privacy {
@@ -1464,6 +1471,7 @@ footer {
 			color: $mainAqua;
 		}
 	}
+	
 	.footer-social-media {
 		position: relative;
 		text-align: center;
