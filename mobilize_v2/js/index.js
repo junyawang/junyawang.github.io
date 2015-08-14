@@ -62,8 +62,6 @@ var callSameHeight = function sameHeight(){
     $('.particles-js-canvas-el').css("height", connectContentHeight);
 };
 
-$( window ).resize(callSameHeight);
-$( document ).ready(callSameHeight);
 
 /******* Line Chart ********/
 var data = {
@@ -171,6 +169,9 @@ $(function() { // wait for document ready
     sceneNotificationBell.reverse(true);
 });
 
+
+$( window ).resize(callSameHeight);
+$( document ).ready(callSameHeight);
 
 
 /******** Add particle.js if window width>=960 *********/
