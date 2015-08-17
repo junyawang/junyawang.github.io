@@ -139,7 +139,7 @@
   header#header-hr .carousel .item img {
     width: 80%; }
   header#header-hr .carousel .carousel-gif img {
-    width: 80%; }
+    width: 100%; }
 
   header#header-pricing {
     padding-top: 140px;
@@ -151,7 +151,7 @@
 
   #sec-apps,
   #sec-pricing {
-    padding-top: 210px;
+    padding-top: 140px;
     padding-bottom: 70px; }
 
   #sec-analytics .analytics-content {
@@ -164,20 +164,6 @@
 
   .myChart-container {
     padding-top: 180px; }
-
-  #sec-steps img {
-    margin: 50px auto 50px auto; }
-  #sec-steps #img-connect-team {
-    width: 100%; }
-  #sec-steps #img-create-org {
-    width: 70%;
-    margin-top: 80px; }
-  #sec-steps #img-share-with-team,
-  #sec-steps #img-share-links {
-    width: 70%;
-    margin-top: 80px; }
-  #sec-steps #img-get-analytics {
-    width: 80%; }
 
   .notification-content {
     margin-top: 8px; }
@@ -258,7 +244,7 @@
     font-size: 2.6em; }
 
   h2 {
-    font-size: 2.2em; }
+    font-size: 2.4em; }
 
   h3 {
     font-size: 1.3em; }
@@ -286,7 +272,7 @@
   header#header-hr .carousel .item img {
     width: 60%; }
   header#header-hr .carousel .carousel-gif img {
-    width: 60%; }
+    width: 100%; }
 
   .sec-connect #connect-content {
     position: absolute;
@@ -316,10 +302,10 @@
 @media only screen and (min-width: 1200px) {
   h1,
   .cd-headline {
-    font-size: 2.6em; }
+    font-size: 2.8em; }
 
   h2 {
-    font-size: 2.4em; }
+    font-size: 2.6em; }
 
   h3 {
     font-size: 1.4em; }

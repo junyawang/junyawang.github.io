@@ -15,8 +15,7 @@ body{
 	-moz-font-feature-settings: "kern=1";
 }
 
-
-h1, h2, h3, h4, h5, h6, label, p, span {
+h1, h2, h3, h4, h5, h6, label{
 	font-weight: 400;
 	text-align: center;
 	line-height: 1.4;
@@ -24,17 +23,19 @@ h1, h2, h3, h4, h5, h6, label, p, span {
 
 h1 {
 	font-size: 2.2em;
+	font-weight: 700;
 	color: white;
 }
 
 h2 {
 	font-size: 1.8em;
+	font-weight: 700;
 	color: $mainAqua;
 }
 
 h3 {
 	font-size: 1.3em;
-	font-weight: 600;
+	font-weight: 400;
 	color: $darkAqua;
 }
 
@@ -182,7 +183,7 @@ blockquote cite:before {
 		padding-top: 20px;
 		padding-bottom: 20px;
 		font-size: 2.1em;
-		font-weight: 400;
+		font-weight: 600;
 		display: inline-block;
 		vertical-align: middle;
 	}
@@ -193,7 +194,7 @@ blockquote cite:before {
 }
 
 .navbar-nav > li > a.btn {
-	font-weight: 400;
+	font-weight: 600;
 	padding: 15px;
 }
 
@@ -254,7 +255,7 @@ blockquote cite:before {
 	}
 
 	.navbar-nav > li > a {
-		color: rgba(white,0.8);
+		color: rgba(white,0.9);
 		// @include transition ($transition);
 	}
 
@@ -555,7 +556,7 @@ blockquote cite:before {
 .btn-success:hover,
 .btn-success:active,
 .btn-success:focus {
-	background-color: transparent;
+	background-color: white;
 	border: 2px solid $mainAqua;
 	color: $mainAqua;
 }
@@ -565,6 +566,7 @@ blockquote cite:before {
 	standard: bg transparent, stroke white
 	hover: bg white, stroke white
 */
+
 .btn-default {
 	background-color: transparent;
 	border: 2px white solid;
@@ -729,7 +731,7 @@ header {
 	}
 
 	h4 {
-		color: rgba(white,0.7);
+		color: white;
 		margin-bottom: $margin-desktop;
 	}
 
@@ -748,6 +750,11 @@ header#header-hr {
 
 header#header-hr {
 	background-color: $mainAqua;
+
+	span.rotate {
+		font-weight: 400;
+	}
+
 	.carousel {
 		margin-top: 40px;
 		.item {
@@ -761,10 +768,11 @@ header#header-hr {
 			position: absolute;
 			top: 60%;
 			left: 50%;
-			transform: translate(-50%, -50%);
+			// transform: translate(-50%, -50%);
+			@include translate (-50%, -50%);
 
 			img {
-				width: 80%;
+				width: 60%;
 				margin: 0 auto;
 			}
 		}
@@ -777,6 +785,10 @@ header#header-sales {
 	// -moz-background-size: cover;
 	// -o-background-size: cover;
 	// background-size: cover;
+	span.rotate {
+		font-weight: 400;
+	}
+	
 }
 
 header#header-pricing {
@@ -802,7 +814,9 @@ header#header-pricing {
 
 header#header-local {
 	// background: url(../img/local-public-eatery-header-bg.jpg) repeat center center fixed;
-	background: url(../img/local-leas-exta.jpg) top center fixed;
+	background: url(../img/local-leas-exta-dark.jpg) fixed;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
 	// min-height: 200px;
 	// max-height: 500px;
 	h2 {
@@ -910,7 +924,7 @@ header#header-local {
 
 #browser-analytics {
 	opacity: 0;
-	// @include box-shadow($box-shadow);
+	@include box-shadow($box-shadow);
 }
 
 .myChart-container {
@@ -928,6 +942,28 @@ canvas#myChart {
 	border: none;
 }
 
+.sec-features {
+	padding-bottom: 0;
+
+	.col-sm-4 {
+		margin-bottom: 40px;
+	}
+
+	h2 {
+		margin-bottom: 70px;
+	}
+
+	h5 {
+		color: $mainAqua;
+		font-weight: 700;
+		text-align: left;
+	}
+
+	p {
+		text-align: left;
+	}
+}
+
 .notification-bell {
 	position: absolute;
 	top: -26px;
@@ -937,7 +973,8 @@ canvas#myChart {
 	@include rotate($degrees);
 
 	i {
-		text-shadow: 0px 4px 10px rgba(0,0,0,0.16);
+		// text-shadow: 0px 4px 10px rgba(0,0,0,0.16);
+		text-shadow: 0px 2px 4px rgba(0,0,0,0.07);
 	}
 }
 
@@ -956,6 +993,7 @@ canvas#myChart {
 	padding: 12px 16px;
 	margin-bottom: 20px;
 	color: $darkBlue;
+	border: 1px solid rgba($lightGrey, 0.2);
 	@include border-radius($radius-large);
 	@include box-shadow($box-shadow);
 }
@@ -1066,6 +1104,7 @@ canvas#myChart {
 	h6 {
 		color: $darkGrey;
 		// text-align: left;
+		min-height: 50px;
 	}
 
 	img {
@@ -1079,17 +1118,17 @@ canvas#myChart {
 
 	#img-create-org {
 		width: 70%;
-		margin-top: 80px;
+		// margin-top: 80px;
 	}
 
 	#img-share-with-team,
 	#img-share-links {
 		width: 70%;
-		margin-top: 60px;
+		// margin-top: 60px;
 	}
 
 	#img-get-analytics {
-		width: 80%;
+		width: 70%;
 	}
 }
 
@@ -1153,7 +1192,7 @@ canvas#myChart {
 		@include border-radius($radius-large);
 	}
 
-	h2 {
+	h3 {
 		font-size: 1.4em;
 		color: $darkBlue;
 		text-align: left;
@@ -1212,7 +1251,7 @@ canvas#myChart {
 }	
 
 #sec-pricing {
-	padding-top: $margin-mobile * 1.5;
+	padding-top: $margin-mobile;
 	
 	h1 {
 		color: $mainAqua;
@@ -1232,6 +1271,7 @@ canvas#myChart {
 
 		h3 {
 			font-size: 1.4em;
+			font-weight: 700;
 		}
 		
 		.price-container {
@@ -1251,7 +1291,7 @@ canvas#myChart {
 				position: relative;
 				top: -20px;
 				font-size: 6em;
-				font-size: 700;
+				font-weight: 700;
 				color: white;
 			}
 
@@ -1261,10 +1301,11 @@ canvas#myChart {
 
 			.price-contact-us {
 				display: block;
-				margin-top: 70px;
+				margin-top: 76px;
 				font-size: 2em;
-				color: white;
+				color: $lightGrey;
 				vertical-align: center;
+				text-shadow: none;
 			}
 		}
 		
@@ -1285,7 +1326,7 @@ canvas#myChart {
 			display: block;
 			width: 80%;
 			margin: 40px auto;
-			text-transform: uppercase;
+			// text-transform: uppercase;
 		}
 	}
 
@@ -1296,18 +1337,25 @@ canvas#myChart {
 		background-color: $red;
 	}
 	.panel-pricing-business {
-		background-color: $blue;
+		// background-color: $blue;
+		background-color: $mainAqua;
 	}
 	.panel-pricing-enterprise {
-		background-color: $orange;
+		// background-color: $orange;
+		background-color: white;
+		border: 2px solid $mainAqua;
+		h3 {
+			color: $mainAqua;
+		}
 	}
 
 	.price-detail {
-		margin-top: 40px;
+		margin-top: 60px;
 		margin-bottom: 40px;
 		
 		h3 {
 			text-align: left;
+			font-weight: 700;
 		}
 
 		h5 {
@@ -1323,18 +1371,22 @@ canvas#myChart {
 
 	.price-detail-business {
 		h3{
-			color: $blue;
+			// color: $blue;
+			color: $mainAqua;
 		}
 		hr {
-			border-color: $blue;
+			// border-color: $blue;
+			border-color: $mainAqua;
 		}
 	}
 	.price-detail-enterprise{
 		h3 {
-			color: $orange;
+			// color: $orange;
+			color: $darkGrey;
 		}
 		hr {
-			border-color: $orange;
+			// border-color: $orange;
+			border-color: $lightGrey;
 		}
 	}
 
@@ -1387,10 +1439,10 @@ canvas#myChart {
 
 	h5 {
 		font-size: 1.3em;
-		font-weight: 600;
+		font-weight: 700;
 		color: $mainAqua;
 		text-align: left;
-		margin: 30px 0 10px 0;
+		margin: 50px 0 10px 0;
 	}
 
 	p {	
