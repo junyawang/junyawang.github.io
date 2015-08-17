@@ -197,7 +197,7 @@
 
     header {
         padding-top: $margin-desktop * 2;
-        min-height: 700px;
+        // min-height: 700px;
     }
 
     header#header-hr,
@@ -231,13 +231,23 @@
     }
 
     header#header-local {
-        // min-height: 300px;
-        // max-height: 500px;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
 
-        // img {
-        //     margin: 10px auto 100px auto;
-        //     max-height: 200px;
-        // }
+        h1 {
+            font-size: 2.6em;
+            margin-top: 0px;
+        }
+
+        h4 {
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-height: 400px;
+            margin-bottom: 40px;
+        }
     }
 
     .sec-email {
@@ -261,6 +271,12 @@
 
     .myChart-container {
         padding-top: 180px;
+    }
+    
+    .sec-features {
+        .block-feature {
+            min-height: 140px;
+        }
     }
 
     .notification-content {
@@ -413,6 +429,24 @@
     .img-logo-name-color {
         height: 28px;
     }
+    
+    header {
+        padding-top: $margin-mobile;
+
+        h1 {
+            margin-top: $margin-desktop;
+            margin-bottom: 40px;
+        }
+
+        h4 {
+            color: white;
+            margin-bottom: $margin-desktop;
+        }
+
+        a.btn {
+            display: block;
+        }
+    }
 
     header#header-hr,
     header#header-sales,
@@ -435,6 +469,21 @@
             }
         }
     }
+
+    header#header-local {
+        h1 {
+            margin-top: 100px;
+        }
+
+        h4 {
+
+        }
+
+        img {
+            max-height: 600px;
+            margin-bottom: 40px;
+        }
+    }
     
     .sec-connect {
         #connect-content {
@@ -453,6 +502,10 @@
 
     .myChart-container {
         padding-top: 120px;
+    }
+
+    #sec-steps {
+        padding-bottom: 30px;
     }
 
     .sec-case-study-quote {

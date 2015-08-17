@@ -723,16 +723,15 @@ input:focus,
 
 header {
 	padding-top: $margin-mobile;
-	// height: 100vh;
 
 	h1 {
-		margin-top: $margin-desktop;
-		margin-bottom: 40px;
+		margin-top: $margin-desktop/2;
+		margin-bottom: 10px;
 	}
 
 	h4 {
 		color: white;
-		margin-bottom: $margin-desktop;
+		margin-bottom: 10px;
 	}
 
 	a.btn {
@@ -817,20 +816,24 @@ header#header-local {
 	background: url(../img/local-leas-exta-dark.jpg) fixed;
 	background-repeat: no-repeat;
 	background-size: 100% auto;
-	// min-height: 200px;
-	// max-height: 500px;
-	h2 {
+
+	h1 {
+		font-size: 1.6em;
 		color: white;
+		margin-top: 0px;
+
 	}
 
 	h4 {
 		color: white;
-		// margin-bottom: 20px;
+		margin-bottom: 0px;
+		font-size: 0.9em;
 	}
 
 	img {
 		margin: 0 auto;
-		max-height: 600px;
+		max-height: 100px;
+		// margin-bottom: 60px;
 	}
 }
 
@@ -949,6 +952,11 @@ canvas#myChart {
 		margin-bottom: 40px;
 	}
 
+	.block-feature {
+		min-height: 110px;
+		margin: 0 auto;
+	}
+
 	h2 {
 		margin-bottom: 70px;
 	}
@@ -1034,9 +1042,6 @@ canvas#myChart {
 	// background: -moz-linear-gradient(170deg, $mainAqua, $mainAqua, $lightAqua); /*Fx 3.6-15*/
 	// background: linear-gradient(170deg, $mainAqua, $mainAqua, $lightAqua); /*Standard*/
 
-	padding-top: 50px;
-	padding-bottom: 50px;
-
 	#connect-content{
 		position: relative;
 		// left: 50%;
@@ -1094,6 +1099,8 @@ canvas#myChart {
 }
 
 #sec-steps {
+	padding-bottom: 0;
+
 	h5 {
 		color: $red;
 		text-transform: uppercase;
@@ -1497,7 +1504,7 @@ canvas#myChart {
 }
 
 footer {
-	background-color: rgba(#333,0.8);
+	background-color: #333;
 	padding-bottom: 56px;
 
 	.container {

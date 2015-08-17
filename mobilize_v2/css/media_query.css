@@ -124,8 +124,7 @@
     padding: 7.5px 15px 0 15px; }
 
   header {
-    padding-top: 140px;
-    min-height: 700px; }
+    padding-top: 140px; }
 
   header#header-hr,
   header#header-sales,
@@ -144,6 +143,19 @@
   header#header-pricing {
     padding-top: 140px;
     min-height: 500px; }
+
+  header#header-local {
+    background-repeat: no-repeat;
+    background-size: 100% auto; }
+    header#header-local h1 {
+      font-size: 2.6em;
+      margin-top: 0px; }
+    header#header-local h4 {
+      font-size: 1em;
+      margin-bottom: 20px; }
+    header#header-local img {
+      max-height: 400px;
+      margin-bottom: 40px; }
 
   .sec-email {
     padding-top: 140px;
@@ -164,6 +176,9 @@
 
   .myChart-container {
     padding-top: 180px; }
+
+  .sec-features .block-feature {
+    min-height: 140px; }
 
   .notification-content {
     margin-top: 8px; }
@@ -264,6 +279,17 @@
   .img-logo-name-color {
     height: 28px; }
 
+  header {
+    padding-top: 70px; }
+    header h1 {
+      margin-top: 70px;
+      margin-bottom: 40px; }
+    header h4 {
+      color: white;
+      margin-bottom: 70px; }
+    header a.btn {
+      display: block; }
+
   header#header-hr,
   header#header-sales,
   header#header-pricing {
@@ -273,6 +299,12 @@
     width: 60%; }
   header#header-hr .carousel .carousel-gif img {
     width: 100%; }
+
+  header#header-local h1 {
+    margin-top: 100px; }
+  header#header-local img {
+    max-height: 600px;
+    margin-bottom: 40px; }
 
   .sec-connect #connect-content {
     position: absolute;
@@ -288,6 +320,9 @@
 
   .myChart-container {
     padding-top: 120px; }
+
+  #sec-steps {
+    padding-bottom: 30px; }
 
   .sec-case-study-quote .blockquote-container {
     margin-top: 22%; }

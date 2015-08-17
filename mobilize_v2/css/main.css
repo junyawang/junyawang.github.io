@@ -545,11 +545,11 @@ input:focus,
 header {
   padding-top: 70px; }
   header h1 {
-    margin-top: 70px;
-    margin-bottom: 40px; }
+    margin-top: 35px;
+    margin-bottom: 10px; }
   header h4 {
     color: white;
-    margin-bottom: 70px; }
+    margin-bottom: 10px; }
   header a.btn {
     display: block; }
 
@@ -594,13 +594,17 @@ header#header-local {
   background: url(../img/local-leas-exta-dark.jpg) fixed;
   background-repeat: no-repeat;
   background-size: 100% auto; }
-  header#header-local h2 {
-    color: white; }
+  header#header-local h1 {
+    font-size: 1.6em;
+    color: white;
+    margin-top: 0px; }
   header#header-local h4 {
-    color: white; }
+    color: white;
+    margin-bottom: 0px;
+    font-size: 0.9em; }
   header#header-local img {
     margin: 0 auto;
-    max-height: 600px; }
+    max-height: 100px; }
 
 .cd-intro {
   width: 100%;
@@ -679,6 +683,9 @@ canvas#myChart {
   padding-bottom: 0; }
   .sec-features .col-sm-4 {
     margin-bottom: 40px; }
+  .sec-features .block-feature {
+    min-height: 110px;
+    margin: 0 auto; }
   .sec-features h2 {
     margin-bottom: 70px; }
   .sec-features h5 {
@@ -754,9 +761,7 @@ canvas#myChart {
   background-repeat: no-repeat; }
 
 .sec-connect {
-  background: #66D1CD;
-  padding-top: 50px;
-  padding-bottom: 50px; }
+  background: #66D1CD; }
   .sec-connect #connect-content {
     position: relative;
     z-index: 1; }
@@ -785,25 +790,27 @@ canvas#myChart {
         margin-right: auto;
         height: 50px; }
 
-#sec-steps h5 {
-  color: #EB5768;
-  text-transform: uppercase;
-  font-weight: 600; }
-#sec-steps h6 {
-  color: #828C96;
-  min-height: 50px; }
-#sec-steps img {
-  opacity: 0;
-  margin: 50px auto 50px auto; }
-#sec-steps #img-connect-team {
-  width: 100%; }
-#sec-steps #img-create-org {
-  width: 70%; }
-#sec-steps #img-share-with-team,
-#sec-steps #img-share-links {
-  width: 70%; }
-#sec-steps #img-get-analytics {
-  width: 70%; }
+#sec-steps {
+  padding-bottom: 0; }
+  #sec-steps h5 {
+    color: #EB5768;
+    text-transform: uppercase;
+    font-weight: 600; }
+  #sec-steps h6 {
+    color: #828C96;
+    min-height: 50px; }
+  #sec-steps img {
+    opacity: 0;
+    margin: 50px auto 50px auto; }
+  #sec-steps #img-connect-team {
+    width: 100%; }
+  #sec-steps #img-create-org {
+    width: 70%; }
+  #sec-steps #img-share-with-team,
+  #sec-steps #img-share-links {
+    width: 70%; }
+  #sec-steps #img-get-analytics {
+    width: 70%; }
 
 .blue {
   background-color: #3883d8; }
@@ -1048,7 +1055,7 @@ canvas#myChart {
     display: block; }
 
 footer {
-  background-color: rgba(51, 51, 51, 0.8);
+  background-color: #333;
   padding-bottom: 56px; }
   footer .container {
     padding-top: 23.33333px;
