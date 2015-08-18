@@ -969,6 +969,7 @@ canvas#myChart {
 
 	p {
 		text-align: left;
+		line-height: 1.6;
 	}
 }
 
@@ -977,7 +978,8 @@ canvas#myChart {
 	top: -26px;
 	left: -26px;
 	font-size: 2.8em;
-	color: $yellow;
+	// color: $yellow;
+	color: #F6D952;
 	@include rotate($degrees);
 
 	i {

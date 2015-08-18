@@ -693,14 +693,15 @@ canvas#myChart {
     font-weight: 700;
     text-align: left; }
   .sec-features p {
-    text-align: left; }
+    text-align: left;
+    line-height: 1.6; }
 
 .notification-bell {
   position: absolute;
   top: -26px;
   left: -26px;
   font-size: 2.8em;
-  color: #F4F41E;
+  color: #F6D952;
   -webkit-transform: rotate(340deg);
   -moz-transform: rotate(340deg);
   -ms-transform: rotate(340deg);
