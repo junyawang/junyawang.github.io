@@ -680,22 +680,20 @@ canvas#myChart {
   padding: 0;
   border: none; }
 
-.sec-features {
-  padding-bottom: 0; }
-  .sec-features .col-sm-4 {
-    margin-bottom: 40px; }
-  .sec-features .block-feature {
-    min-height: 80px;
-    margin: 0 auto; }
-    .sec-features .block-feature h5 {
-      color: #darkBlue;
-      font-weight: 700;
-      text-align: left; }
-    .sec-features .block-feature p {
-      text-align: left;
-      line-height: 1.6; }
-  .sec-features h2 {
-    margin-bottom: 70px; }
+.sec-features .col-sm-4 {
+  margin-bottom: 40px; }
+.sec-features .block-feature {
+  min-height: 80px;
+  margin: 0 auto; }
+  .sec-features .block-feature h5 {
+    color: #darkBlue;
+    font-weight: 700;
+    text-align: left; }
+  .sec-features .block-feature p {
+    text-align: left;
+    line-height: 1.6; }
+.sec-features h2 {
+  margin-bottom: 70px; }
 
 .notification-bell {
   position: absolute;
