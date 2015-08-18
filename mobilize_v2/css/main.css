@@ -685,17 +685,17 @@ canvas#myChart {
   .sec-features .col-sm-4 {
     margin-bottom: 40px; }
   .sec-features .block-feature {
-    min-height: 110px;
+    min-height: 80px;
     margin: 0 auto; }
+    .sec-features .block-feature h5 {
+      color: #darkBlue;
+      font-weight: 700;
+      text-align: left; }
+    .sec-features .block-feature p {
+      text-align: left;
+      line-height: 1.6; }
   .sec-features h2 {
     margin-bottom: 70px; }
-  .sec-features h5 {
-    color: #66D1CD;
-    font-weight: 700;
-    text-align: left; }
-  .sec-features p {
-    text-align: left;
-    line-height: 1.6; }
 
 .notification-bell {
   position: absolute;

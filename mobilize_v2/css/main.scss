@@ -954,23 +954,23 @@ canvas#myChart {
 	}
 
 	.block-feature {
-		min-height: 110px;
+		min-height: 80px;
 		margin: 0 auto;
+
+		h5 {
+			color: #darkBlue;
+			font-weight: 700;
+			text-align: left;
+		}
+
+		p {
+			text-align: left;
+			line-height: 1.6;
+		}
 	}
 
 	h2 {
 		margin-bottom: 70px;
-	}
-
-	h5 {
-		color: $mainAqua;
-		font-weight: 700;
-		text-align: left;
-	}
-
-	p {
-		text-align: left;
-		line-height: 1.6;
 	}
 }
 
