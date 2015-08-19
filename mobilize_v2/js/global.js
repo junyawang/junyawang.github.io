@@ -9,6 +9,16 @@ $(window).scroll(function() {
    }
 });
 
+$(document).ready(function() {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 50) {
+       $(".navbar").addClass("navbar-scroll");
+    } else {
+       $(".navbar").removeClass("navbar-scroll");
+    }
+});
+
 $("#mobilize-logo").click(function() {
    $('html, body').animate({
        scrollTop: $("index.html#page-top").offset().top
