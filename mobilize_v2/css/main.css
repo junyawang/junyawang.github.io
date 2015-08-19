@@ -108,7 +108,9 @@ blockquote cite:before {
   background-color: #E5F7F6; }
 
 .img-logo-white,
-.img-logo-color {
+.img-logo-color,
+.img-logo-name-white,
+.img-logo-name-color {
   height: 20px; }
 
 .img-intro {
@@ -167,7 +169,8 @@ blockquote cite:before {
   -o-transition: ease all 0.2s;
   transition: ease all 0.2s; }
   .navbar .navbar-collapse {
-    border: none; }
+    border: none;
+    z-index: 10; }
   .navbar .navbar-nav {
     height: 100vh; }
   .navbar .navbar-nav > li {
@@ -226,10 +229,10 @@ blockquote cite:before {
   -moz-transition: ease all 0.2s;
   -o-transition: ease all 0.2s;
   transition: ease all 0.2s; }
-  .navbar-transparent .img-logo-white {
+  .navbar-transparent .img-logo-name-white {
     display: inline-block; }
   .navbar-transparent .img-logo-color,
-  .navbar-transparent .img-logo-name-white,
+  .navbar-transparent .img-logo-white,
   .navbar-transparent .img-logo-name-color {
     display: none; }
   .navbar-transparent .navbar-toggle .icon-bar {
@@ -278,11 +281,11 @@ blockquote cite:before {
   -moz-transition: ease all 0.2s;
   -o-transition: ease all 0.2s;
   transition: ease all 0.2s; }
-  .navbar-white .img-logo-color {
+  .navbar-white .img-logo-name-color {
     display: inline-block; }
   .navbar-white .img-logo-white,
   .navbar-white .img-logo-name-white,
-  .navbar-white .img-logo-name-color {
+  .navbar-white .img-logo-color {
     display: none; }
   .navbar-white .navbar-toggle .icon-bar {
     background-color: #66D1CD; }
@@ -333,11 +336,11 @@ blockquote cite:before {
   -moz-transition: ease all 0.2s;
   -o-transition: ease all 0.2s;
   transition: ease all 0.2s; }
-  .navbar-scroll .img-logo-color {
+  .navbar-scroll .img-logo-name-color {
     display: inline-block; }
   .navbar-scroll .img-logo-white,
   .navbar-scroll .img-logo-name-white,
-  .navbar-scroll .img-logo-name-color {
+  .navbar-scroll .img-logo-color {
     display: none; }
   .navbar-scroll .navbar-toggle .icon-bar {
     background-color: #66D1CD; }
@@ -1091,7 +1094,7 @@ footer {
     padding-bottom: 23.33333px; }
   footer .footer-logo {
     width: 180px;
-    padding: 15px 0;
+    padding: 15px 0 0 0;
     margin: 0 auto; }
   footer .footer-copyright {
     display: block;

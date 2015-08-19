@@ -206,48 +206,24 @@
     padding-bottom: 70px; }
 
   footer {
-    padding-bottom: 0;
-    background-color: #333; }
-    footer .container {
-      padding-top: 23.33333px;
-      padding-bottom: 23.33333px; }
+    padding-bottom: 0px; }
     footer .footer-logo {
       width: 180px;
-      padding-top: 12px;
+      padding: 15px 0px 0px 0px;
       float: left; }
     footer .footer-copyright {
+      clear: both;
       float: left;
       text-align: left;
       font-size: 0.8em;
       font-weight: 400;
       color: white;
-      margin-top: 22px;
-      padding-left: 22px;
-      color: #B3B3B3; }
+      margin-top: 5px; }
       footer .footer-copyright a {
         color: white; }
       footer .footer-copyright a:hover,
       footer .footer-copyright a:focus {
         color: #66D1CD; }
-    footer .footer-social-media {
-      float: right;
-      text-align: right;
-      font-size: 1.6em;
-      margin: 12px 0 0 0; }
-      footer .footer-social-media ul {
-        padding-left: 0;
-        margin-bottom: 0; }
-        footer .footer-social-media ul li {
-          display: inline-block;
-          text-align: right;
-          margin-bottom: 0; }
-          footer .footer-social-media ul li a {
-            color: white; }
-          footer .footer-social-media ul li a:hover,
-          footer .footer-social-media ul li a:focus {
-            color: #66D1CD; }
-        footer .footer-social-media ul li:not(:first-child) {
-          padding-left: 10px; }
     footer .footer-nav {
       float: right;
       text-align: right;
@@ -265,7 +241,26 @@
           footer .footer-nav ul li a:focus {
             color: #66D1CD; }
         footer .footer-nav ul li:not(:first-child) {
-          padding-left: 20px; } }
+          padding-left: 20px; }
+    footer .footer-social-media {
+      float: right;
+      text-align: right;
+      font-size: 1.6em;
+      padding-top: 16px; }
+      footer .footer-social-media ul {
+        padding-left: 0;
+        margin-bottom: 0; }
+        footer .footer-social-media ul li {
+          display: inline-block;
+          text-align: right;
+          margin-bottom: 0; }
+          footer .footer-social-media ul li a {
+            color: white; }
+          footer .footer-social-media ul li a:hover,
+          footer .footer-social-media ul li a:focus {
+            color: #66D1CD; }
+        footer .footer-social-media ul li:not(:first-child) {
+          padding-left: 10px; } }
 /* Medium devices (desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   h1,

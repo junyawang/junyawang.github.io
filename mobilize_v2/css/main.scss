@@ -132,7 +132,9 @@ blockquote cite:before {
 }
 
 .img-logo-white,
-.img-logo-color {
+.img-logo-color,
+.img-logo-name-white,
+.img-logo-name-color {
 	height: 20px;
 }
 
@@ -197,6 +199,7 @@ blockquote cite:before {
 
 	.navbar-collapse {
 		border: none;
+		z-index: 10;
 	}
 
 	.navbar-nav {
@@ -259,12 +262,12 @@ blockquote cite:before {
 	animation-fill-mode: both;
 	@include transition ($transition);
 	
-	.img-logo-white {
+	.img-logo-name-white {
 		display: inline-block;
 	}
 
 	.img-logo-color,
-	.img-logo-name-white,
+	.img-logo-white,
 	.img-logo-name-color {
 		display: none;
 	}
@@ -329,13 +332,13 @@ blockquote cite:before {
 	animation-fill-mode: both;
 	@include transition ($transition);
 	
-	.img-logo-color {
+	.img-logo-name-color {
 		display: inline-block;
 	}
 
 	.img-logo-white,
 	.img-logo-name-white,
-	.img-logo-name-color {
+	.img-logo-color {
 		display: none;
 	}
 
@@ -477,13 +480,13 @@ blockquote cite:before {
 	animation-fill-mode: both;
 	@include transition ($transition);
 
-	.img-logo-color{
+	.img-logo-name-color{
 		display: inline-block;
 	}
 
 	.img-logo-white,
 	.img-logo-name-white,
-	.img-logo-name-color {
+	.img-logo-color {
 		display: none;
 	}
 
@@ -1553,7 +1556,7 @@ footer {
 	
 	.footer-logo {
 		width: 180px;
-		padding: 15px 0;
+		padding: 15px 0 0 0;
 		margin: 0 auto;
 	}
 
