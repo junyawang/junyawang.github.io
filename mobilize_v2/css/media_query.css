@@ -24,6 +24,12 @@
   h5 {
     font-size: 1.3em; }
 
+  p {
+    font-size: 1.2em; }
+
+  blockquote p {
+    font-size: 1.4em; }
+
   .navbar .navbar-collapse {
     background-color: transparent; }
   .navbar .navbar-nav {
@@ -125,6 +131,8 @@
 
   header {
     padding-top: 140px; }
+    header h1 {
+      margin-top: 35px; }
 
   header#header-hr,
   header#header-sales,
@@ -146,10 +154,11 @@
 
   header#header-local {
     background-repeat: no-repeat;
-    background-size: 100% auto; }
+    background-size: 100% auto;
+    padding-top: 70px; }
     header#header-local h1 {
-      font-size: 2.6em;
-      margin-top: 0px; }
+      font-size: 2.4em;
+      margin-top: 100px; }
     header#header-local h4 {
       font-size: 1em;
       margin-bottom: 20px; }
@@ -179,8 +188,11 @@
 
   .sec-features {
     padding-bottom: 0; }
+    .sec-features h2 {
+      margin-bottom: 70px; }
     .sec-features .block-feature {
-      min-height: 120px; }
+      min-height: 120px;
+      padding-bottom: 0px; }
 
   .notification-content {
     margin-top: 8px; }
@@ -308,6 +320,13 @@
     max-height: 600px;
     margin-bottom: 40px; }
 
+  .sec-showcase {
+    padding-bottom: 70px; }
+    .sec-showcase h2 {
+      margin-top: 70px; }
+    .sec-showcase h4 {
+      margin-bottom: 70px; }
+
   .sec-connect #connect-content {
     position: absolute;
     left: 50%;
@@ -317,6 +336,10 @@
     -o-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
     z-index: 1; }
+  .sec-connect .sec-download-badge .download-badge-google img {
+    height: 50px; }
+  .sec-connect .sec-download-badge .download-badge-apple img {
+    height: 50px; }
   .sec-connect .particles-js-canvas-el {
     display: block; }
 
@@ -325,9 +348,67 @@
 
   #sec-steps {
     padding-bottom: 30px; }
+    #sec-steps img {
+      margin: 50px auto; }
 
   .sec-case-study-quote .blockquote-container {
     margin-top: 22%; }
+
+  #sec-pricing {
+    padding-top: 70px; }
+    #sec-pricing .panel-pricing {
+      margin: 20px 0;
+      padding: 10px 40px;
+      min-height: 400px;
+      color: white;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      border-radius: 10px; }
+      #sec-pricing .panel-pricing h3, #sec-pricing .panel-pricing h4, #sec-pricing .panel-pricing p, #sec-pricing .panel-pricing span {
+        color: white;
+        text-align: center; }
+      #sec-pricing .panel-pricing h3 {
+        font-size: 1.4em;
+        font-weight: 700; }
+      #sec-pricing .panel-pricing .price-container {
+        position: relative;
+        text-align: center;
+        margin-top: 40px;
+        min-height: 120px; }
+        #sec-pricing .panel-pricing .price-container .price {
+          vertical-align: text-top;
+          font-size: 2.8em;
+          color: rgba(255, 255, 255, 0.8);
+          text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.08); }
+        #sec-pricing .panel-pricing .price-container .price-highlight {
+          position: relative;
+          top: -20px;
+          font-size: 6em;
+          font-weight: 700;
+          color: white; }
+        #sec-pricing .panel-pricing .price-container .price-suffix {
+          font-size: 1.6em; }
+        #sec-pricing .panel-pricing .price-container .price-contact-us {
+          display: block;
+          margin-top: 76px;
+          font-size: 2em;
+          color: #B3B3B3;
+          vertical-align: center;
+          text-shadow: none; }
+      #sec-pricing .panel-pricing .price-bill {
+        display: block;
+        min-height: 40px;
+        font-size: 1.2em;
+        font-size: 300; }
+      #sec-pricing .panel-pricing .price-descr {
+        display: block;
+        margin: 10px 0;
+        font-size: 1.2em; }
+      #sec-pricing .panel-pricing .btn {
+        display: block;
+        width: 80%;
+        margin: 40px auto; }
 
   .sec-cta-signup {
     padding-top: 70px;

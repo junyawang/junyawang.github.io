@@ -22,13 +22,13 @@ h1, h2, h3, h4, h5, h6, label{
 }
 
 h1 {
-	font-size: 2.2em;
+	font-size: 1.8em;
 	font-weight: 700;
 	color: white;
 }
 
 h2 {
-	font-size: 1.8em;
+	font-size: 1.6em;
 	font-weight: 700;
 	color: $mainAqua;
 }
@@ -40,16 +40,16 @@ h3 {
 }
 
 h4 {
-	font-size: 1.2em;
+	font-size: 1.1em;
 	color: $darkBlue;
 }
 
-h5 {
-	font-size: 1.2em;
+h5,.h5 {
+	font-size: 1.1em;
 }
 
 h6 {
-	font-size: 1.1em;
+	font-size: 1em;
 }
 
 a {
@@ -67,7 +67,7 @@ a:visited {
 }
 
 p {
-	font-size: 1.2em;
+	font-size: 1em;
 	line-height: 1.8;
 	color: $darkGrey;
 }
@@ -91,7 +91,7 @@ blockquote {
 	color: white;
 	border-left: none;
 	p {	
-		font-size: 1.4em;
+		font-size: 1.3em;
 		line-height: 1.4;
 	}
 }
@@ -547,9 +547,10 @@ blockquote cite:before {
 	@include transition ($transition);
 }
 
-.btn-lg {
-	padding: 12px 36px;
-}
+// .btn-lg {
+// 	padding: 12px 36px;
+// }
+
 
 /*	
 	btn-primary
@@ -755,7 +756,7 @@ header {
 	padding-top: $margin-mobile;
 
 	h1 {
-		margin-top: $margin-desktop/2;
+		margin-top: 0px;
 		margin-bottom: 10px;
 	}
 
@@ -767,14 +768,6 @@ header {
 	a.btn {
 		display: block;
 	}
-}
-
-header#header-hr {
-	// background: url(../img/hero-img-hr.jpg) no-repeat center center fixed;
-	// -webkit-background-size: cover;
-	// -moz-background-size: cover;
-	// -o-background-size: cover;
-	// background-size: cover;
 }
 
 header#header-hr {
@@ -801,7 +794,7 @@ header#header-hr {
 			@include translate (-50%, -50%);
 
 			img {
-				width: 60%;
+				width: 50%;
 				margin: 0 auto;
 			}
 		}
@@ -833,11 +826,9 @@ header#header-pricing {
 }
 
 header#header-hr,
-header#header-sales,
-header#header-pricing {
-    // background-size: 600% auto;
+header#header-sales {
     h1 {
-    	min-height: 200px;
+    	min-height: 100px;
     }
 }
 
@@ -846,9 +837,10 @@ header#header-local {
 	background: url(../img/local-leas-exta-dark.jpg) fixed;
 	background-repeat: no-repeat;
 	background-size: 100% auto;
+	padding-top: 50px;
 
 	h1 {
-		font-size: 1.6em;
+		font-size: 1.2em;
 		color: white;
 		margin-top: 0px;
 
@@ -862,7 +854,7 @@ header#header-local {
 
 	img {
 		margin: 0 auto;
-		max-height: 100px;
+		max-height: 90px;
 		// margin-bottom: 60px;
 	}
 }
@@ -883,14 +875,14 @@ header#header-local {
 }
 
 .sec-showcase {
-	padding-bottom: $margin-desktop;
+	padding-bottom: $margin-mobile;
 
 	h2 {
-		margin-top: $margin-desktop;
+		margin-top: $margin-mobile;
 	}
 
 	h4 {
-		margin-bottom: $margin-desktop;
+		margin-bottom: $margin-mobile/2;
 	}
 }
 
@@ -962,7 +954,7 @@ header#header-local {
 
 .myChart-container {
 	width: 100%;
-	padding-top: 160px;
+	padding-top: 80px;
 }
 
 canvas#myChart {
@@ -983,12 +975,9 @@ canvas#myChart {
 	}
 
 	.block-feature {
-		min-height: 100px;
+		min-height: 0px;
 		margin: 0 auto;
-
-		.icon {
-			font-size: 1.6em;
-		}
+		padding-bottom: 20px;
 
 		h5 {
 			display: inline-block;
@@ -1005,7 +994,7 @@ canvas#myChart {
 	}
 
 	h2 {
-		margin-bottom: 70px;
+		margin-bottom: 20px;
 	}
 }
 
@@ -1124,7 +1113,7 @@ canvas#myChart {
 			img {
 				margin-left: auto;
 				margin-right: 2%;
-				height: 50px;
+				height: 40px;
 			}
 		}
 
@@ -1135,7 +1124,7 @@ canvas#myChart {
 			img {
 				margin-left: 2%;
 				margin-right: auto;
-				height: 50px;
+				height: 40px;
 			}
 		}
 
@@ -1164,7 +1153,7 @@ canvas#myChart {
 
 	img {
 		opacity: 0;
-		margin: 50px auto 50px auto;
+		margin: 20px auto 30px auto;
 	}
 
 	#img-connect-team {
@@ -1357,7 +1346,7 @@ canvas#myChart {
 			.price-contact-us {
 				display: block;
 				margin-top: 76px;
-				font-size: 2em;
+				font-size: 1.6em;
 				color: $lightGrey;
 				vertical-align: center;
 				text-shadow: none;
@@ -1544,10 +1533,12 @@ canvas#myChart {
 		display: inline-block;
 		margin: 6px auto;
 		color: rgba(white, 0.92);
+		font-size: 0.9em;
 	}
 
 	a.btn {
-		display: block;
+		display: inline-block;
+		font-size: 0.8em;
 	}
 }
 
