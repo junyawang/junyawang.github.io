@@ -16,7 +16,7 @@
   var defaults = {
 		animation: "dissolve",
 		separator: ",",
-		speed: 2000
+		speed: 10000000
 	};
 	
 	$.fx.step.textShadowBlur = function(fx) {

@@ -125,6 +125,28 @@ blockquote cite:before {
   -ms-border-radius: 110px;
   border-radius: 110px; }
 
+.icon {
+  display: inline-block;
+  padding-right: 6px; }
+
+.icon-feature-share {
+  color: #28B294; }
+
+.icon-feature-notification {
+  color: #EB5768; }
+
+.icon-feature-security {
+  color: #2585C4; }
+
+.icon-feature-analytics {
+  color: #F6AB60; }
+
+.icon-feature-training {
+  color: #F6D951; }
+
+.icon-feature-ease {
+  color: #7D489C; }
+
 /*-------------------------------------------
                  UI KIT
 ---------------------------------------------*/
@@ -683,9 +705,12 @@ canvas#myChart {
 .sec-features .col-sm-4 {
   margin-bottom: 40px; }
 .sec-features .block-feature {
-  min-height: 80px;
+  min-height: 100px;
   margin: 0 auto; }
+  .sec-features .block-feature .icon {
+    font-size: 1.6em; }
   .sec-features .block-feature h5 {
+    display: inline-block;
     color: #darkBlue;
     font-weight: 700;
     text-align: left; }
@@ -765,6 +790,12 @@ canvas#myChart {
   .sec-connect #connect-content {
     position: relative;
     z-index: 1; }
+    .sec-connect #connect-content .img-google-badge {
+      display: inline-block;
+      float: right; }
+    .sec-connect #connect-content .img-apple-badge {
+      display: inline-block;
+      float: left; }
   .sec-connect .particles-js-canvas-el {
     display: none; }
   .sec-connect .sec-download-badge {

@@ -150,6 +150,36 @@ blockquote cite:before {
 	@include border-radius (110px);
 }
 
+.icon {
+	display: inline-block;
+	padding-right: 6px;
+	// position: absolute;
+	// top: 12px;
+}
+
+.icon-feature-share {
+	color: $green;
+}
+
+.icon-feature-notification {
+	color: $red;
+}
+
+.icon-feature-security {
+	color: $blue;
+}
+
+.icon-feature-analytics {
+	color: $orange;
+}
+
+.icon-feature-training {
+	color: $yellow;
+}
+
+.icon-feature-ease {
+	color: $purple;
+}
 /*-------------------------------------------
                  UI KIT
 ---------------------------------------------*/
@@ -953,13 +983,19 @@ canvas#myChart {
 	}
 
 	.block-feature {
-		min-height: 80px;
+		min-height: 100px;
 		margin: 0 auto;
 
+		.icon {
+			font-size: 1.6em;
+		}
+
 		h5 {
+			display: inline-block;
 			color: #darkBlue;
 			font-weight: 700;
 			text-align: left;
+			// padding-left: 20px;
 		}
 
 		p {
@@ -1051,6 +1087,16 @@ canvas#myChart {
 		// transform: translate(-50%, 0);
 		// @include translate ($translateX, $translateY);
 		z-index: 1;
+
+		.img-google-badge {
+			display: inline-block;
+			float: right;
+		}
+
+		.img-apple-badge {
+			display: inline-block;
+			float: left;
+		}
 	}
 
 	.particles-js-canvas-el {
