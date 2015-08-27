@@ -586,7 +586,7 @@ header#header-hr .background {
   z-index: -1;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 768px;
   height: 60%;
   /* To compensate for mobile browser address bar space */
   background: url(../img/hero-img-hr.jpg) no-repeat;

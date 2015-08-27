@@ -27,6 +27,15 @@
 //     });
 // });
 
+$( window ).resize(function() {
+    if ($('header#header-hr .background').is(":visible")) {
+        var left = - (768 - $('header#header-hr').width()) / 2;
+        console.log(left);
+        $('header#header-hr .background').css('left', left + 'px');
+    }
+});
+
+
 // Owl Carousel 2
 // $(document).ready(function(){
 //     var owl = $(".owl-carousel");

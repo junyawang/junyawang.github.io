@@ -137,7 +137,7 @@
   header#header-hr,
   header#header-sales,
   header#header-pricing {
-    background-size: 200% auto; }
+    /*        background-size: 200% auto;*/ }
     header#header-hr h1,
     header#header-sales h1,
     header#header-pricing h1 {
@@ -300,7 +300,7 @@
   header#header-hr,
   header#header-sales,
   header#header-pricing {
-    background-size: 180% auto; }
+    /*background-size: 180% auto;*/ }
 
   header#header-hr .carousel .item img {
     width: 60%; }
@@ -429,7 +429,7 @@
   header#header-hr,
   header#header-sales,
   header#header-pricing {
-    background-size: 150% auto; }
+    /*        background-size: 150% auto;*/ }
 
   .myChart-container {
     padding-top: 100px; }
