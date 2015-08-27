@@ -1,0 +1,434 @@
+/*-------------------------------------------
+              MEDIA QUERIES
+---------------------------------------------*/
+/* --------- COLOR PALETTES ---------- */
+/* --------- VARIABLES ---------- */
+/*---------- MIXINS ---------- */
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  h1,
+  .cd-headline {
+    font-size: 2.6em; }
+
+  h2 {
+    font-size: 2.4em; }
+
+  h3 {
+    font-size: 1.3em; }
+
+  h4 {
+    font-size: 1.2em; }
+
+  h5 {
+    font-size: 1.3em; }
+
+  p {
+    font-size: 1.2em; }
+
+  blockquote p {
+    font-size: 1.4em; }
+
+  .navbar .navbar-collapse {
+    background-color: transparent; }
+  .navbar .navbar-nav {
+    height: auto; }
+  .navbar .navbar-nav li {
+    height: auto; }
+  .navbar .navbar-nav > li > a {
+    padding-top: 12px;
+    padding-bottom: 18px;
+    font-size: 1.0em; }
+  .navbar .navbar-nav > li > a.btn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 20px; }
+
+  .img-logo-name-white,
+  .img-logo-name-color {
+    height: 20px; }
+
+  .navbar-transparent .navbar-brand,
+  .navbar-white .navbar-brand,
+  .navbar-aqua .navbar-brand {
+    padding: 26px 15px; }
+  .navbar-transparent .navbar-nav > li > a,
+  .navbar-white .navbar-nav > li > a,
+  .navbar-aqua .navbar-nav > li > a {
+    padding-top: 22px;
+    padding-bottom: 28px; }
+  .navbar-transparent .navbar-nav > li > a.btn,
+  .navbar-white .navbar-nav > li > a.btn,
+  .navbar-aqua .navbar-nav > li > a.btn {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .navbar-transparent .navbar-collapse,
+  .navbar-white .navbar-collapse,
+  .navbar-aqua .navbar-collapse {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    box-shadow: none; }
+
+  .navbar-transparent .img-logo-name-white {
+    display: inline-block; }
+  .navbar-transparent .img-logo-color,
+  .navbar-transparent .img-logo-white,
+  .navbar-transparent .img-logo-name-color {
+    display: none; }
+  .navbar-transparent .navbar-nav > li > a {
+    color: rgba(255, 255, 255, 0.6); }
+  .navbar-transparent .navbar-nav > li > a:hover,
+  .navbar-transparent .navbar-nav > li > a:focus {
+    color: white;
+    background-color: transparent; }
+  .navbar-transparent .navbar-nav > li > a.active {
+    color: rgba(255, 255, 255, 0.8);
+    border-bottom: 3px solid #66d1cd; }
+
+  .navbar-white .img-logo-name-color {
+    display: inline-block; }
+  .navbar-white .img-logo-color,
+  .navbar-white .img-logo-white,
+  .navbar-white .img-logo-name-white {
+    display: none; }
+  .navbar-white .navbar-nav > li > a.active {
+    border-bottom: 3px solid #66d1cd; }
+
+  .navbar-scroll {
+    padding: 0px 0; }
+    .navbar-scroll .img-logo-name-color {
+      display: inline-block; }
+    .navbar-scroll .img-logo-color,
+    .navbar-scroll .img-logo-white,
+    .navbar-scroll .img-logo-name-white {
+      display: none; }
+    .navbar-scroll .navbar-brand {
+      padding: 17px 15px; }
+    .navbar-scroll .navbar-nav > li > a {
+      padding-top: 12px;
+      padding-bottom: 18px;
+      color: #828C96; }
+    .navbar-scroll .navbar-nav > li > a:hover,
+    .navbar-scroll .navbar-nav > li > a:focus {
+      color: #828C96;
+      background-color: transparent; }
+    .navbar-scroll .navbar-nav > li > a.active {
+      color: #828C96;
+      border-bottom: 3px solid #66d1cd; }
+    .navbar-scroll .navbar-nav > li > a.btn {
+      margin-top: 0px;
+      margin-bottom: 0px; }
+    .navbar-scroll .navbar-collapse {
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      -ms-box-shadow: none;
+      box-shadow: none; }
+
+  .navbar-nav {
+    padding: 7.5px 15px 0 15px; }
+
+  header {
+    padding-top: 140px; }
+    header h1 {
+      margin-top: 35px; }
+
+  header#header-hr,
+  header#header-sales,
+  header#header-pricing {
+    background-size: 200% auto; }
+    header#header-hr h1,
+    header#header-sales h1,
+    header#header-pricing h1 {
+      min-height: initial; }
+
+  header#header-pricing {
+    padding-top: 140px;
+    min-height: 500px; }
+
+  header#header-local {
+    padding-top: 70px; }
+    header#header-local h1 {
+      font-size: 2.4em;
+      margin-top: 100px; }
+    header#header-local h4 {
+      font-size: 1em;
+      margin-bottom: 20px; }
+    header#header-local img {
+      max-height: 220px; }
+
+  .sec-email {
+    padding-top: 140px;
+    padding-bottom: 140px; }
+
+  #sec-apps,
+  #sec-pricing {
+    padding-top: 140px;
+    padding-bottom: 70px; }
+
+  #sec-analytics .analytics-content {
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0); }
+
+  .myChart-container {
+    padding-top: 180px; }
+
+  .sec-features {
+    padding-bottom: 0; }
+    .sec-features h2 {
+      margin-bottom: 70px; }
+    .sec-features .block-feature {
+      min-height: 120px;
+      padding-bottom: 0px; }
+
+  .notification-content {
+    margin-top: 8px; }
+
+  .sec-case-study-quote .blockquote-container {
+    margin-left: 0px;
+    margin-top: 18%; }
+
+  #sec-privacy {
+    padding-top: 210px;
+    padding-bottom: 70px; }
+
+  footer {
+    padding-bottom: 0px; }
+    footer .footer-logo {
+      width: 180px;
+      padding: 15px 0px 0px 0px;
+      float: left; }
+    footer .footer-copyright {
+      clear: both;
+      float: left;
+      text-align: left;
+      font-size: 0.8em;
+      font-weight: 400;
+      color: white;
+      margin-top: 5px; }
+      footer .footer-copyright a {
+        color: white; }
+      footer .footer-copyright a:hover,
+      footer .footer-copyright a:focus {
+        color: #66D1CD; }
+    footer .footer-nav {
+      float: right;
+      text-align: right;
+      font-size: 0.9em;
+      margin-top: 5px; }
+      footer .footer-nav ul {
+        padding-left: 0; }
+        footer .footer-nav ul li {
+          display: inline-block;
+          text-align: right; }
+          footer .footer-nav ul li a {
+            color: white;
+            font-weight: 400; }
+          footer .footer-nav ul li a:hover,
+          footer .footer-nav ul li a:focus {
+            color: #66D1CD; }
+        footer .footer-nav ul li:not(:first-child) {
+          padding-left: 20px; }
+    footer .footer-social-media {
+      float: right;
+      text-align: right;
+      font-size: 1.6em;
+      padding-top: 16px; }
+      footer .footer-social-media ul {
+        padding-left: 0;
+        margin-bottom: 0; }
+        footer .footer-social-media ul li {
+          display: inline-block;
+          text-align: right;
+          margin-bottom: 0; }
+          footer .footer-social-media ul li a {
+            color: white; }
+          footer .footer-social-media ul li a:hover,
+          footer .footer-social-media ul li a:focus {
+            color: #66D1CD; }
+        footer .footer-social-media ul li:not(:first-child) {
+          padding-left: 10px; } }
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  h1,
+  .cd-headline {
+    font-size: 2.6em; }
+
+  h2 {
+    font-size: 2.4em; }
+
+  h3 {
+    font-size: 1.3em; }
+
+  h4 {
+    font-size: 1.2em; }
+
+  h5 {
+    font-size: 1.3em; }
+
+  .navbar .navbar-nav > li > a {
+    font-size: 1.1em; }
+
+  .img-logo-white,
+  .img-logo-color,
+  .img-logo-name-white,
+  .img-logo-name-color {
+    height: 28px; }
+
+  header {
+    padding-top: 70px; }
+    header h1 {
+      margin-top: 70px;
+      margin-bottom: 40px; }
+    header h4 {
+      color: white;
+      margin-bottom: 70px; }
+    header a.btn {
+      display: block; }
+
+  header#header-hr,
+  header#header-sales,
+  header#header-pricing {
+    background-size: 180% auto; }
+
+  header#header-hr .carousel .item img {
+    width: 60%; }
+  header#header-hr .carousel .carousel-gif img {
+    width: 100%; }
+
+  header#header-local h1 {
+    margin-top: 100px; }
+  header#header-local img {
+    max-height: 250px; }
+
+  .sec-showcase {
+    padding-bottom: 70px; }
+    .sec-showcase h2 {
+      margin-top: 70px; }
+    .sec-showcase h4 {
+      margin-bottom: 70px; }
+
+  .sec-connect #connect-content {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    z-index: 1; }
+  .sec-connect .sec-download-badge .download-badge-google img {
+    height: 50px; }
+  .sec-connect .sec-download-badge .download-badge-apple img {
+    height: 50px; }
+  .sec-connect .particles-js-canvas-el {
+    display: block; }
+
+  .myChart-container {
+    padding-top: 120px; }
+
+  #sec-steps {
+    padding-bottom: 30px; }
+    #sec-steps img {
+      margin: 50px auto; }
+
+  .sec-case-study-quote .blockquote-container {
+    margin-top: 22%; }
+
+  #sec-pricing {
+    padding-top: 70px; }
+    #sec-pricing .panel-pricing {
+      margin: 20px 0;
+      padding: 10px 40px;
+      min-height: 400px;
+      color: white;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      border-radius: 10px; }
+      #sec-pricing .panel-pricing h3, #sec-pricing .panel-pricing h4, #sec-pricing .panel-pricing p, #sec-pricing .panel-pricing span {
+        color: white;
+        text-align: center; }
+      #sec-pricing .panel-pricing h3 {
+        font-size: 1.4em;
+        font-weight: 700; }
+      #sec-pricing .panel-pricing .price-container {
+        position: relative;
+        text-align: center;
+        margin-top: 40px;
+        min-height: 120px; }
+        #sec-pricing .panel-pricing .price-container .price {
+          vertical-align: text-top;
+          font-size: 2.8em;
+          color: rgba(255, 255, 255, 0.8);
+          text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.08); }
+        #sec-pricing .panel-pricing .price-container .price-highlight {
+          position: relative;
+          top: -20px;
+          font-size: 6em;
+          font-weight: 700;
+          color: white; }
+        #sec-pricing .panel-pricing .price-container .price-suffix {
+          font-size: 1.6em; }
+        #sec-pricing .panel-pricing .price-container .price-contact-us {
+          display: block;
+          margin-top: 76px;
+          font-size: 2em;
+          color: #B3B3B3;
+          vertical-align: center;
+          text-shadow: none; }
+      #sec-pricing .panel-pricing .price-bill {
+        display: block;
+        min-height: 40px;
+        font-size: 1.2em;
+        font-size: 300; }
+      #sec-pricing .panel-pricing .price-descr {
+        display: block;
+        margin: 10px 0;
+        font-size: 1.2em; }
+      #sec-pricing .panel-pricing .btn {
+        display: block;
+        width: 80%;
+        margin: 40px auto; }
+
+  .sec-cta-signup {
+    padding-top: 70px;
+    padding-bottom: 70px; }
+    .sec-cta-signup span {
+      margin-top: 47px;
+      margin-bottom: 47px; } }
+/* Large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  h1,
+  .cd-headline {
+    font-size: 2.8em; }
+
+  h2 {
+    font-size: 2.6em; }
+
+  h3 {
+    font-size: 1.4em; }
+
+  h4 {
+    font-size: 1.2em; }
+
+  h5 {
+    font-size: 1.4em; }
+
+  header#header-hr,
+  header#header-sales,
+  header#header-pricing {
+    background-size: 150% auto; }
+
+  .myChart-container {
+    padding-top: 100px; }
+
+  .sec-case-study-quote .blockquote-container {
+    margin-top: 25%; } }
+
+/*# sourceMappingURL=media_query.css.map */
