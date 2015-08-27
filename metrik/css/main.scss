@@ -91,8 +91,10 @@ blockquote {
 	color: white;
 	border-left: none;
 	p {	
-		font-size: 1.3em;
+		font-size: 1.1em;
+		font-weight: 400;
 		line-height: 1.4;
+		@include text-shadow($text-shadow-title);
 	}
 }
 
@@ -104,18 +106,21 @@ blockquote:before {
 	position: absolute;
 	left: -18px;
 	top: -20px;
-	color: $mainAqua;
+	color: white;
+	@include text-shadow($text-shadow-title);
 }
 
 blockquote cite {
-	color: $darkGrey;
-	font-size: 1.0em;
+	color: white;
+	font-size: 0.8em;
 	display: block;
 	margin-top: 30px;
+	@include text-shadow($text-shadow-title);
 }
  
 blockquote cite:before {
 	content: "\2014 \2009";
+	@include text-shadow($text-shadow-title);
 }
 
 
@@ -1516,9 +1521,22 @@ canvas#myChart {
 	p {	
 		text-align: left;
 	}
+}
 
+.sec-local-screen {
+	background: url(../img/local-screen-quote-bg.jpg) no-repeat center center;
+	min-height: 400px;
+	max-height: 1242px;
+	h2 {
+		@include text-shadow($text-shadow-title);
+	}
+
+	img {
+		width: 80%;
+		margin: 0 auto;
+	}
 	.blockquote-container {
-		margin: 80px 20px 80px 30px;
+		margin: 120px 20px 0px 30px;
 	}
 }
 
@@ -1531,20 +1549,6 @@ canvas#myChart {
 
 	.blockquote-container {
 		margin: 40px 20px 40px 30px;
-	}
-}
-
-.sec-local-screen {
-	background: url(../img/local-screen-bg.jpg) no-repeat center center;
-	min-height: 400px;
-	max-height: 733px;
-	h2 {
-		@include text-shadow($text-shadow-title);
-	}
-
-	img {
-		width: 80%;
-		margin: 0 auto;
 	}
 }
 

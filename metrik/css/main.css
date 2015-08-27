@@ -76,8 +76,13 @@ blockquote {
   color: white;
   border-left: none; }
   blockquote p {
-    font-size: 1.3em;
-    line-height: 1.4; }
+    font-size: 1.1em;
+    font-weight: 400;
+    line-height: 1.4;
+    -webkit-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.08);
+    -moz-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.08);
+    -ms-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.08);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.08); }
 
 blockquote:before {
   font-family: Georgia, serif;
@@ -87,16 +92,28 @@ blockquote:before {
   position: absolute;
   left: -18px;
   top: -20px;
-  color: #66D1CD; }
+  color: white;
+  -webkit-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.08);
+  -moz-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.08);
+  -ms-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.08);
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.08); }
 
 blockquote cite {
-  color: #828C96;
-  font-size: 1.0em;
+  color: white;
+  font-size: 0.8em;
   display: block;
-  margin-top: 30px; }
+  margin-top: 30px;
+  -webkit-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.08);
+  -moz-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.08);
+  -ms-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.08);
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.08); }
 
 blockquote cite:before {
-  content: "\2014 \2009"; }
+  content: "\2014 \2009";
+  -webkit-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.08);
+  -moz-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.08);
+  -ms-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.08);
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.08); }
 
 /*-------------------------------------------
                  GLOBAL
@@ -1075,20 +1092,11 @@ canvas#myChart {
     margin: 50px 0 10px 0; }
   .sec-case-study-descr p {
     text-align: left; }
-  .sec-case-study-descr .blockquote-container {
-    margin: 80px 20px 80px 30px; }
-
-.sec-case-study-quote {
-  padding: 0; }
-  .sec-case-study-quote p {
-    text-align: left; }
-  .sec-case-study-quote .blockquote-container {
-    margin: 40px 20px 40px 30px; }
 
 .sec-local-screen {
-  background: url(../img/local-screen-bg.jpg) no-repeat center center;
+  background: url(../img/local-screen-quote-bg.jpg) no-repeat center center;
   min-height: 400px;
-  max-height: 733px; }
+  max-height: 1242px; }
   .sec-local-screen h2 {
     -webkit-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.08);
     -moz-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.08);
@@ -1097,6 +1105,15 @@ canvas#myChart {
   .sec-local-screen img {
     width: 80%;
     margin: 0 auto; }
+  .sec-local-screen .blockquote-container {
+    margin: 120px 20px 0px 30px; }
+
+.sec-case-study-quote {
+  padding: 0; }
+  .sec-case-study-quote p {
+    text-align: left; }
+  .sec-case-study-quote .blockquote-container {
+    margin: 40px 20px 40px 30px; }
 
 .sec-signup {
   padding-top: 105px;
