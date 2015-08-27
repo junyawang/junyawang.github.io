@@ -143,6 +143,9 @@
     header#header-pricing h1 {
       min-height: initial; }
 
+  header#header-hr {
+    background-size: cover; }
+
   header#header-pricing {
     padding-top: 140px;
     min-height: 500px; }

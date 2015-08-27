@@ -582,7 +582,8 @@ header {
     display: block; }
 
 header#header-hr {
-  background: url(../img/hero-img-hr.jpg) no-repeat center center fixed; }
+  background: url(../img/hero-img-hr.jpg) no-repeat center center fixed;
+  background-size: 100% 100%; }
   header#header-hr span.rotate {
     font-weight: 400; }
   header#header-hr .carousel {
