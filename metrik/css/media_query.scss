@@ -207,7 +207,7 @@
 
     header {
         padding-top: $margin-desktop * 2;
-        // min-height: 700px;
+        min-height: 500px;
 
         h1 {
             margin-top: $margin-desktop/2;
@@ -574,7 +574,6 @@
     }
 
     #sec-pricing {
-        padding-top: $margin-mobile;
         
         .panel-pricing {
             margin: 20px 0;

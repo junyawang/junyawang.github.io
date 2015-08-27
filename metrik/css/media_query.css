@@ -130,7 +130,8 @@
     padding: 7.5px 15px 0 15px; }
 
   header {
-    padding-top: 140px; }
+    padding-top: 140px;
+    min-height: 500px; }
     header h1 {
       margin-top: 35px; }
 
@@ -349,61 +350,59 @@
   .sec-case-study-quote .blockquote-container {
     margin-top: 22%; }
 
-  #sec-pricing {
-    padding-top: 70px; }
-    #sec-pricing .panel-pricing {
-      margin: 20px 0;
-      padding: 10px 40px;
-      min-height: 400px;
+  #sec-pricing .panel-pricing {
+    margin: 20px 0;
+    padding: 10px 40px;
+    min-height: 400px;
+    color: white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px; }
+    #sec-pricing .panel-pricing h3, #sec-pricing .panel-pricing h4, #sec-pricing .panel-pricing p, #sec-pricing .panel-pricing span {
       color: white;
-      -webkit-border-radius: 10px;
-      -moz-border-radius: 10px;
-      -ms-border-radius: 10px;
-      border-radius: 10px; }
-      #sec-pricing .panel-pricing h3, #sec-pricing .panel-pricing h4, #sec-pricing .panel-pricing p, #sec-pricing .panel-pricing span {
-        color: white;
-        text-align: center; }
-      #sec-pricing .panel-pricing h3 {
-        font-size: 1.4em;
-        font-weight: 700; }
-      #sec-pricing .panel-pricing .price-container {
+      text-align: center; }
+    #sec-pricing .panel-pricing h3 {
+      font-size: 1.4em;
+      font-weight: 700; }
+    #sec-pricing .panel-pricing .price-container {
+      position: relative;
+      text-align: center;
+      margin-top: 40px;
+      min-height: 120px; }
+      #sec-pricing .panel-pricing .price-container .price {
+        vertical-align: text-top;
+        font-size: 2.8em;
+        color: rgba(255, 255, 255, 0.8);
+        text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.08); }
+      #sec-pricing .panel-pricing .price-container .price-highlight {
         position: relative;
-        text-align: center;
-        margin-top: 40px;
-        min-height: 120px; }
-        #sec-pricing .panel-pricing .price-container .price {
-          vertical-align: text-top;
-          font-size: 2.8em;
-          color: rgba(255, 255, 255, 0.8);
-          text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.08); }
-        #sec-pricing .panel-pricing .price-container .price-highlight {
-          position: relative;
-          top: -20px;
-          font-size: 6em;
-          font-weight: 700;
-          color: white; }
-        #sec-pricing .panel-pricing .price-container .price-suffix {
-          font-size: 1.6em; }
-        #sec-pricing .panel-pricing .price-container .price-contact-us {
-          display: block;
-          margin-top: 76px;
-          font-size: 2em;
-          color: #B3B3B3;
-          vertical-align: center;
-          text-shadow: none; }
-      #sec-pricing .panel-pricing .price-bill {
+        top: -20px;
+        font-size: 6em;
+        font-weight: 700;
+        color: white; }
+      #sec-pricing .panel-pricing .price-container .price-suffix {
+        font-size: 1.6em; }
+      #sec-pricing .panel-pricing .price-container .price-contact-us {
         display: block;
-        min-height: 40px;
-        font-size: 1.2em;
-        font-size: 300; }
-      #sec-pricing .panel-pricing .price-descr {
-        display: block;
-        margin: 10px 0;
-        font-size: 1.2em; }
-      #sec-pricing .panel-pricing .btn {
-        display: block;
-        width: 80%;
-        margin: 40px auto; }
+        margin-top: 76px;
+        font-size: 2em;
+        color: #B3B3B3;
+        vertical-align: center;
+        text-shadow: none; }
+    #sec-pricing .panel-pricing .price-bill {
+      display: block;
+      min-height: 40px;
+      font-size: 1.2em;
+      font-size: 300; }
+    #sec-pricing .panel-pricing .price-descr {
+      display: block;
+      margin: 10px 0;
+      font-size: 1.2em; }
+    #sec-pricing .panel-pricing .btn {
+      display: block;
+      width: 80%;
+      margin: 40px auto; }
 
   .sec-cta-signup {
     padding-top: 70px;

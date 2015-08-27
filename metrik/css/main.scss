@@ -131,6 +131,23 @@ blockquote cite:before {
 	background-color: $lightAqua;
 }
 
+.cd-intro {
+	width: 100%;
+	max-width: 992px;
+	margin: 0 auto;
+}
+
+
+.cd-headline {
+	// font-size: 2.2em;
+	line-height: 1.4;
+	font-weight: 300;
+	
+	i {
+		font-style: normal;
+	}
+}
+
 .img-logo-white,
 .img-logo-color,
 .img-logo-name-white,
@@ -755,10 +772,12 @@ input:focus,
 
 header {
 	padding-top: $margin-mobile;
+	min-height: 360px;
 
 	h1 {
 		margin-top: 0px;
 		margin-bottom: 10px;
+		font-size: 1.2em;
 		@include text-shadow($text-shadow-title);
 	}
 
@@ -775,14 +794,19 @@ header {
 
 header#header-hr {
 	// background-color: $mainAqua;
-
+	// .cd-headline {
+	// 	font-size: 1.2em;
+	// }
+	.cd-headline {
+		min-height: 180px;
+	}
 	.background {
 		position: fixed;
 		z-index: -1;
 		top: 0;
 		left: 0;
 		width: 768px;
-		height: 60%; /* To compensate for mobile browser address bar space */
+		height: 70%; /* To compensate for mobile browser address bar space */
 		background: url(../img/hero-img-hr.jpg) no-repeat; 
 		background-size: 100% 100%;
 	}
@@ -872,21 +896,6 @@ header#header-local {
 		max-height: 180px;
 		margin-top: 20px;
 		// margin-bottom: 60px;
-	}
-}
-
-.cd-intro {
-	width: 100%;
-	max-width: 992px;
-	margin: 0 auto;
-}
-
-
-.cd-headline {
-	font-size: 2.2em;
-	
-	i {
-		font-style: normal;
 	}
 }
 
