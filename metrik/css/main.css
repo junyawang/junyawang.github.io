@@ -1080,6 +1080,19 @@ canvas#myChart {
   .sec-case-study-quote .blockquote-container {
     margin: 40px 20px 40px 30px; }
 
+.sec-local-screen {
+  background: url(../img/local-screen-bg.jpg) no-repeat center center;
+  min-height: 400px;
+  max-height: 733px; }
+  .sec-local-screen h2 {
+    -webkit-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.08);
+    -moz-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.08);
+    -ms-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.08);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.08); }
+  .sec-local-screen img {
+    width: 80%;
+    margin: 0 auto; }
+
 .sec-signup {
   padding-top: 105px;
   padding-bottom: 70px;

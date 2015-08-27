@@ -1525,6 +1525,20 @@ canvas#myChart {
 	}
 }
 
+.sec-local-screen {
+	background: url(../img/local-screen-bg.jpg) no-repeat center center;
+	min-height: 400px;
+	max-height: 733px;
+	h2 {
+		@include text-shadow($text-shadow-title);
+	}
+
+	img {
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
 .sec-signup {
 	padding-top: $margin-desktop * 1.5;
 	padding-bottom: $margin-desktop;
