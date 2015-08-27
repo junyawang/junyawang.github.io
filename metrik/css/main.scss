@@ -775,8 +775,17 @@ header {
 
 header#header-hr {
 	// background-color: $mainAqua;
-	background: url(../img/hero-img-hr.jpg) no-repeat center center fixed;
-	background-size: 100% 100%;
+
+	.background {
+		position: fixed;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 125%; /* To compensate for mobile browser address bar space */
+		background: url(../img/hero-img-hr.jpg) no-repeat; 
+		background-size: 100% 100%;
+	}
 
 	span.rotate {
 		font-weight: 400;

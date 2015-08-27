@@ -144,7 +144,10 @@
       min-height: initial; }
 
   header#header-hr {
+    background: url(../img/hero-img-hr.jpg) no-repeat center center fixed;
     background-size: cover; }
+    header#header-hr .background {
+      display: none; }
 
   header#header-pricing {
     padding-top: 140px;

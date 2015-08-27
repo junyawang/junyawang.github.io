@@ -224,8 +224,12 @@
     }
 
     header#header-hr {
+        background: url(../img/hero-img-hr.jpg) no-repeat center center fixed; 
         background-size: cover;
-        // .carousel {
+        .background {
+            display: none;
+        }
+            // .carousel {
         //     .item {
         //         img {
         //             width: 80%;

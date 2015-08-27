@@ -581,28 +581,35 @@ header {
   header a.btn {
     display: block; }
 
-header#header-hr {
-  background: url(../img/hero-img-hr.jpg) no-repeat center center fixed;
+header#header-hr .background {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 125%;
+  /* To compensate for mobile browser address bar space */
+  background: url(../img/hero-img-hr.jpg) no-repeat;
   background-size: 100% 100%; }
-  header#header-hr span.rotate {
-    font-weight: 400; }
-  header#header-hr .carousel {
-    margin-top: 40px; }
-    header#header-hr .carousel .item img {
-      width: 80%;
+header#header-hr span.rotate {
+  font-weight: 400; }
+header#header-hr .carousel {
+  margin-top: 40px; }
+  header#header-hr .carousel .item img {
+    width: 80%;
+    margin: 0 auto; }
+  header#header-hr .carousel .carousel-gif {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+    header#header-hr .carousel .carousel-gif img {
+      width: 50%;
       margin: 0 auto; }
-    header#header-hr .carousel .carousel-gif {
-      position: absolute;
-      top: 60%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      -o-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%); }
-      header#header-hr .carousel .carousel-gif img {
-        width: 50%;
-        margin: 0 auto; }
 
 header#header-sales {
   background: url(../img/hero-img-sales.jpg) no-repeat center center fixed; }
