@@ -66,9 +66,21 @@ p {
 
 ul {
   list-style-type: circle;
-  margin-left: -20px; }
+  margin-left: -20px;
+  color: #364251;
+  font-size: 1.1em; }
   ul li:not(:last-child) {
     margin-bottom: 8px; }
+
+.list-detail {
+  margin-top: 60px;
+  margin-bottom: 40px; }
+  .list-detail h3 {
+    text-align: left;
+    font-weight: 700; }
+  .list-detail h5 {
+    text-align: left;
+    font-size: 1em; }
 
 /****** blockquote ******/
 blockquote {
@@ -619,7 +631,7 @@ header#header-hr .background {
   top: 0;
   left: 0;
   width: 768px;
-  height: 70%;
+  height: 56%;
   /* To compensate for mobile browser address bar space */
   background: url(../img/hero-img-hr.jpg) no-repeat;
   background-size: 100% 100%; }
@@ -642,6 +654,17 @@ header#header-hr .carousel {
     header#header-hr .carousel .carousel-gif img {
       width: 50%;
       margin: 0 auto; }
+
+header#header-ops .background {
+  position: fixed;
+  z-index: -1;
+  top: -40px;
+  right: 0;
+  width: 768px;
+  height: 56%;
+  /* To compensate for mobile browser address bar space */
+  background: url(../img/hero-img-ops.jpg) no-repeat;
+  background-size: 100% 100%; }
 
 header#header-sales {
   background: url(../img/hero-img-sales.jpg) no-repeat center center fixed; }
@@ -1036,18 +1059,6 @@ canvas#myChart {
     border: 2px solid #66D1CD; }
     #sec-pricing .panel-pricing-enterprise h3 {
       color: #66D1CD; }
-  #sec-pricing .price-detail {
-    margin-top: 60px;
-    margin-bottom: 40px; }
-    #sec-pricing .price-detail h3 {
-      text-align: left;
-      font-weight: 700; }
-    #sec-pricing .price-detail h5 {
-      text-align: left;
-      font-size: 1em; }
-    #sec-pricing .price-detail ul {
-      color: #364251;
-      font-size: 1.1em; }
   #sec-pricing .price-detail-business h3 {
     color: #66D1CD; }
   #sec-pricing .price-detail-business hr {
@@ -1094,7 +1105,7 @@ canvas#myChart {
     text-align: left; }
 
 .sec-local-screen {
-  background: url(../img/local-screen-quote-bg.jpg) repeat-x center center fixed;
+  background: url(../img/local-screen-quote-bg.jpg) repeat-x center center;
   min-height: 400px;
   max-height: 1242px; }
   .sec-local-screen h2 {
@@ -1139,6 +1150,16 @@ canvas#myChart {
     display: inline-block;
     font-size: 0.8em; }
 
+/* --- About --- */
+#sec-about {
+  padding-top: 70px; }
+  #sec-about h1 {
+    color: #66D1CD; }
+  #sec-about p {
+    margin-top: 10px;
+    margin-bottom: 30px; }
+
+/* --- Footer --- */
 footer {
   background-color: #333;
   padding-bottom: 56px; }

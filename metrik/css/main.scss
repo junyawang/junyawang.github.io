@@ -75,9 +75,26 @@ p {
 ul {
 	list-style-type: circle;
 	margin-left: -20px;
+	color: $darkBlue;
+	font-size: 1.1em;
 
 	li:not(:last-child) {
 		margin-bottom: 8px;
+	}
+}
+
+.list-detail {
+	margin-top: 60px;
+	margin-bottom: 40px;
+	
+	h3 {
+		text-align: left;
+		font-weight: 700;
+	}
+
+	h5 {
+		text-align: left;
+		font-size: 1em;
 	}
 }
 
@@ -811,7 +828,7 @@ header#header-hr {
 		top: 0;
 		left: 0;
 		width: 768px;
-		height: 70%; /* To compensate for mobile browser address bar space */
+		height: 56%; /* To compensate for mobile browser address bar space */
 		background: url(../img/hero-img-hr.jpg) no-repeat; 
 		background-size: 100% 100%;
 	}
@@ -841,6 +858,20 @@ header#header-hr {
 				margin: 0 auto;
 			}
 		}
+	}
+}
+
+header#header-ops {
+	// background: url(../img/hero-img-ops.jpg) no-repeat center center fixed;
+	.background {
+		position: fixed;
+		z-index: -1;
+		top: -40px;
+		right: 0;
+		width: 768px;
+		height: 56%; /* To compensate for mobile browser address bar space */
+		background: url(../img/hero-img-ops.jpg) no-repeat; 
+		background-size: 100% 100%;
 	}
 }
 
@@ -1422,26 +1453,6 @@ canvas#myChart {
 		}
 	}
 
-	.price-detail {
-		margin-top: 60px;
-		margin-bottom: 40px;
-		
-		h3 {
-			text-align: left;
-			font-weight: 700;
-		}
-
-		h5 {
-			text-align: left;
-			font-size: 1em;
-		}
-
-		ul {
-			color: $darkBlue;
-			font-size: 1.1em;
-		}
-	}
-
 	.price-detail-business {
 		h3{
 			// color: $blue;
@@ -1524,7 +1535,7 @@ canvas#myChart {
 }
 
 .sec-local-screen {
-	background: url(../img/local-screen-quote-bg.jpg) repeat-x center center fixed;
+	background: url(../img/local-screen-quote-bg.jpg) repeat-x center center;
 	min-height: 400px;
 	max-height: 1242px;
 	h2 {
@@ -1583,6 +1594,22 @@ canvas#myChart {
 		font-size: 0.8em;
 	}
 }
+
+/* --- About --- */
+#sec-about {
+	padding-top: $margin-mobile;
+	
+	h1 {
+		color: $mainAqua;
+	}
+
+	p {
+		margin-top: 10px;
+		margin-bottom: 30px;
+	}
+}
+
+/* --- Footer --- */
 
 footer {
 	background-color: #333;

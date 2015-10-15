@@ -39,7 +39,7 @@
   .navbar .navbar-nav > li > a {
     padding-top: 12px;
     padding-bottom: 18px;
-    font-size: 1.0em; }
+    font-size: 0.9em; }
   .navbar .navbar-nav > li > a.btn {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -150,6 +150,12 @@
     header#header-hr .background {
       display: none; }
 
+  header#header-ops {
+    background: url(../img/hero-img-ops.jpg) no-repeat top center fixed;
+    background-size: 100%; }
+    header#header-ops .background {
+      display: none; }
+
   header#header-pricing {
     padding-top: 140px;
     min-height: 500px; }
@@ -170,7 +176,8 @@
     padding-bottom: 140px; }
 
   #sec-apps,
-  #sec-pricing {
+  #sec-pricing,
+  #sec-about {
     padding-top: 140px;
     padding-bottom: 70px; }
 
@@ -206,6 +213,10 @@
   #sec-privacy {
     padding-top: 105px;
     padding-bottom: 70px; }
+
+  #sec-about p {
+    margin-top: 20px;
+    margin-bottom: 50px; }
 
   footer {
     padding-bottom: 0px; }
@@ -342,6 +353,10 @@
     #sec-steps img {
       margin: 50px auto; }
 
+  #sec-about p {
+    margin-top: 20px;
+    margin-bottom: 70px; }
+
   .sec-case-study-quote .blockquote-container {
     margin-top: 22%; }
 
@@ -426,6 +441,10 @@
   header#header-sales,
   header#header-pricing {
     /*        background-size: 150% auto;*/ }
+
+  header#header-ops {
+    background: url(../img/hero-img-ops.jpg) no-repeat center center fixed;
+    background-size: cover; }
 
   .myChart-container {
     padding-top: 100px; }
