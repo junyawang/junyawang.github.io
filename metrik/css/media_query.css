@@ -443,7 +443,7 @@
     /*        background-size: 150% auto;*/ }
 
   header#header-ops {
-    background: url(../img/hero-img-ops.jpg) no-repeat center center fixed;
+    background: url(../img/hero-img-ops.jpg) no-repeat top center fixed;
     background-size: 100%; }
 
   .myChart-container {
