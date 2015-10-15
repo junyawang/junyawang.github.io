@@ -631,7 +631,7 @@ header#header-hr .background {
   top: 0;
   left: 0;
   width: 768px;
-  height: 56%;
+  height: 66%;
   /* To compensate for mobile browser address bar space */
   background: url(../img/hero-img-hr.jpg) no-repeat;
   background-size: 100% 100%; }
@@ -661,7 +661,7 @@ header#header-ops .background {
   top: -40px;
   right: 0;
   width: 768px;
-  height: 56%;
+  height: 66%;
   /* To compensate for mobile browser address bar space */
   background: url(../img/hero-img-ops.jpg) no-repeat;
   background-size: 100% 100%; }
