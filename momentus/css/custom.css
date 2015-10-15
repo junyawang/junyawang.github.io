@@ -117,7 +117,7 @@ h1, h2, h3, h4, h5, h6, label, p, span, a {
 h1 {
 	color: black;
 	font-size: 1.6em;
-	font-weight: 400;
+	font-weight: 600;
 }
 
 h2 {
@@ -196,7 +196,7 @@ a.symbol:hover {
 
 .btn {
 	padding: 6px 46px;
-	border: 1px solid transparent;
+	border: 2px solid transparent;
 	border-radius: 2px;
 	font-family: Source Sans Pro, sans-serif;
 	font-size: 1.3em;
@@ -218,10 +218,21 @@ a.symbol:hover {
 	background-color: #ffb13c;
 }
 
+.btn-aqua {
+	background-color: #66D1CD;
+	color: white;
+}
+
+.btn-aqua:hover {
+	background-color: white;
+	color: #66D1CD;
+	border: 2px solid #66D1CD;
+}
+
 .btn-transparent{
 	color: white;
 	background: transparent;
-	border: 1px solid white;
+	border: 2px solid white;
 }
 
 .btn-transparent:hover,
@@ -359,13 +370,13 @@ textarea.form-control {
 /* --------- NAV BAR ---------- */
 .navbar {
 	border: none;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 .img-logo,
 .img-logo-white,
 .img-logo-dark {
-	max-width: 100px;
+	max-width: 120px;
 }
 
 .navbar-collapse a {
@@ -599,28 +610,38 @@ address,
 
 /* --------- HEADER ---------- */
 header.index-header {
-	background-image: url(../img/careers_banner.jpg);
+	/*background-image: url(../img/index_header.jpg);*/
+    background: -webkit-radial-gradient(circle at bottom left, #F14F00, #ff9901);
+    background: -o-radial-gradient(circle at bottom left, #F14F00, #ff9901);
+    background: -moz-radial-gradient(circle at bottom left, #F14F00, #ff9901);
+    background: radial-gradient(circle at bottom left, #F14F00, #ff9901);
+	/*background-color: #ff9901;*/
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% auto;
+	height: 100vh;
 }
 
 .index-header h1{
-	padding: 15% 0 2% 0;
-	text-align: center;
-	font-weight: 300;
-	font-size: 1.4em;
+	padding: 30% 0 2% 0;
+	text-align: left;
+	font-weight: 600;
+	font-size: 3.6em;
 	color: white;
+	line-height: 1.2;
 	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
 .index-header h2 {
-	padding: 0 0 7% 0;
-	text-align: center;
+	padding: 1% 0 7% 0;
+	text-align: right;
 	font-weight: 300;
 	font-size: 0.8em;
-	color: white;
-	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+	color: #121023;
+	line-height: 1.8;
+	/*text-transform: uppercase;*/
+	/*text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);*/
+	color: rgba(white,0.8);
 }
 
 .header-arrow {
@@ -680,13 +701,37 @@ h3.service-point {
 }
 
 p.service-point-descr {
-	padding-top: 20px;
+	padding-top: 2px;
 	text-align: center;
 	font-size: 1em;
 	font-weight: 300;
 	color: #222;
 }
 
+/* --------- METRIK --------- */
+.sec-metrik {
+	padding-top: 30px;
+	padding-bottom: 50px;
+	background-color: #E9F0F4;
+}
+
+.sec-metrik .row {
+	padding-top: 40px;
+}
+
+.sec-metrik .metrik-promo {
+	width: 100%;
+	margin: 20px auto;
+}
+
+.sec-metrik .metrik-logo {
+	width: 40%;
+	margin: 50px auto 10px auto;
+}
+
+.sec-metrik a.btn {
+	margin: 30px auto 30px;
+}
 
 /* --------- PROJECTS --------- */
 .sec-projects {
@@ -780,7 +825,7 @@ span.btn-modal-close {
 
 /* --------- CLIENTS --------- */
 .sec-clients {
-	background-color: #eee;
+	background-color: white;
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
@@ -790,9 +835,12 @@ span.btn-modal-close {
 }
 
 .clients-img {
-	padding: 10px 10px;
-/*  margin: 0 auto;*/
+	padding: 20px 24px;
 	min-height: 110px;
+}
+
+.clients-img img {
+	margin: 0 auto;
 }
 
 /* =========== ABOUT PAGE============ */

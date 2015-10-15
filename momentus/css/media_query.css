@@ -25,6 +25,12 @@
 		margin-bottom: 30px;
 	}
 
+	.img-logo,
+	.img-logo-white,
+	.img-logo-dark {
+		max-width: 140px;
+	}
+
 	.form-group:not(:first-child){
 		padding-left: 12px;
 	}
@@ -35,6 +41,16 @@
 	}
 
 	/* NAVBAR */
+
+	.navbar-brand {
+		height: auto;
+		padding: 20px 15px;
+	}
+
+	.navbar-nav>li>a {
+		padding-top: 26px;
+		padding-bottom: 26px;
+	}
 	/* Navbar Transparent - Collapse */
 	/* bg */
 	.navbar-transparent .navbar-collapse {
@@ -84,19 +100,28 @@
 	}
 
 	/* INDEX */
+	header.index-header {
+		background-image: url(../img/index_header.jpg);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 140% auto;
+		height: auto;
+	}
 	.index-header h1{
-		padding: 20% 0 5% 0;
+		text-align: center;
+		padding: 20% 0 1% 0;
 		font-size: 3.3em;
 	}
 
 	.index-header h2 {
-		padding: 3% 0 7% 0;
+		text-align: center;
+		padding: 1% 0 7% 0;
 		font-size: 1.4em;
 	}
 
 	.panel-service {
 		margin-top: 20px;
-		min-height: 350px;
+		min-height: 300px;
 	}
 
 	.service-icon {
@@ -105,8 +130,16 @@
 	}
 
 	.clients-img {
-		padding: 5px 5px;
-		height: 80px;
+		padding: 12px 50px;
+	}
+
+	.sec-metrik .metrik-logo {
+		width: 30%;
+		margin: 50px auto 10px auto;
+	}
+
+	.sec-metrik a.btn {
+		margin: 30px auto 30px;
 	}
 
 	/* About */
@@ -200,16 +233,25 @@
 
 	/* Index */
 	.index-header h1{
-		padding: 20% 0 5% 0;
+		padding: 20% 0 1% 0;
 		font-size: 3.3em;
 	}
 
 	.panel-service {
-		min-height: 380px;
+		min-height: 300px;
 	}
 
 	.clients-img {
-		padding: 5px 5px;
+		padding: 20px 30px;
+	}
+
+	.sec-metrik .metrik-logo {
+		width: 60%;
+		margin: 150px auto 10px auto;
+	}
+
+	.sec-metrik a.btn {
+		margin: 30px auto 100px;
 	}
 
 	/* About */
@@ -249,7 +291,7 @@
 
 /* Large devices (large desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-	/* Global */s
+	/* Global */
 	h1 {
 		font-size: 1.6em;
 	}
@@ -289,13 +331,26 @@
 
 	/* Index */
 	.index-header h1{
-		padding: 20% 0 5% 0;
+		padding: 20% 0 1% 0;
 		font-size: 3.2em;
 	}
 
 	.index-header h2 {
-		padding: 3% 0 7% 0;
+		padding: 1% 0 7% 0;
 		font-size: 1.6em;
+	}
+
+	.clients-img {
+		padding: 30px 30px;
+	}
+
+	.sec-metrik .metrik-logo {
+		width: 66%;
+		margin: 200px auto 0 auto;
+	}
+
+	.sec-metrik a.btn {
+		margin: 50px auto 200px;
 	}
 
 	/* About */
