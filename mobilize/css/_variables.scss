@@ -1,0 +1,118 @@
+/* --------- COLOR PALETTES ---------- */
+$mainAqua: #66D1CD;
+$lightAqua: #E5F7F6;
+$darkAqua: #33C1BC;
+$lightGrey: #B3B3B3;
+$darkGrey: #828C96;
+$darkBlue: #364251;
+
+$blue: #2585C4;
+$red: #EB5768;
+$orange: #F6AB60;
+$green: #28B294;
+$yellow: #F4F41E;
+$lightBlue: #E9F3F9;
+
+/* --------- VARIABLES ---------- */
+$margin-mobile: 70px;
+$margin-desktop: 70px;
+$radius: 10px;
+$transition: ease all 0.2s;
+$box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.1);
+$degrees: 340;
+$translateX: -50%;
+$translateY: 0;
+$rotateX: 0;
+$rotateY: 0;
+$rotateZ: 1;
+$rotateDegree: 340deg;
+
+/*---------- MIXINS ---------- */
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin box-shadow ($box-shadow){
+	-webkit-box-shadow: $box-shadow;
+	   -moz-box-shadow: $box-shadow;
+		-ms-box-shadow: $box-shadow;
+			box-shadow: $box-shadow;
+}
+
+@mixin box-sizing ($box-sizing){
+	-webkit-box-sizing: $box-sizing;
+	   -moz-box-sizing: $box-sizing;
+		-ms-box-sizing: $box-sizing;
+			box-sizing: $box-sizing;
+}
+
+
+@mixin transition ($transition) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}
+
+@mixin transition-ease ($transition) {
+    -webkit-transition: border $transition ease-in-out, color $transition ease-in-out;
+    -o-transition: border $transition ease-in-out, color $transition ease-in-out;
+    -moz-transition: border $transition ease-in-out, color $transition ease-in-out;
+    transition: border $transition ease-in-out, color $transition ease-in-out;
+}
+
+@mixin translate ($translateX, $translateY) {
+  -webkit-transform: translate($translateX, $translateY);
+  -moz-transform: translate($translateX, $translateY);
+  -ms-transform: translate($translateX, $translateY);
+  -o-transform: translate($translateX, $translateY);
+  transform: translate($translateX, $translateY);
+}
+
+@mixin rotate( $degrees ) {
+  -webkit-transform: rotate(#{$degrees}deg);
+  -moz-transform: rotate(#{$degrees}deg);
+  -ms-transform: rotate(#{$degrees}deg);
+  -o-transform: rotate(#{$degrees}deg);
+  transform: rotate(#{$degrees}deg);
+
+  filter:  progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($degrees)}, M12=-#{sin($degrees)}, M21=#{sin($degrees)}, M22=#{cos($degrees)});
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($degrees)}, M12=-#{sin($degrees)}, M21=#{sin($degrees)}, M22=#{cos($degrees)})";
+  zoom: 1;
+ }
+
+
+ @mixin rotate3d($rotateX, $rotateY, $rotateX, $rotateDegree) {
+  -webkit-transform: rotate3d($rotateX, $rotateY, $rotateZ, $rotateDegree);
+  -moz-transform: rotate3d($rotateX, $rotateY, $rotateZ, $rotateDegree);
+  -ms-transform: rotate3d($rotateX, $rotateY, $rotateZ, $rotateDegree);
+  -o-transform: rotate3d($rotateX, $rotateY, $rotateZ, $rotateDegree);
+  transform: rotate3d($rotateX, $rotateY, $rotateZ, $rotateDegree);
+ }
+
+// @mixin animation ($animation-name, $duration, $timing-function, $delay, $direction, $fill-mode) {
+//     -webkit-animation-name: $animation;
+//     -webkit-animation-duration: $duration;
+//     -webkit-animation-timing-function: $timing-function;
+//     -webkit-animation-delay: $delay;
+//     -webkit-animation-direction: $direction;
+//     -webkit-animation-fill-mode: $fill-mode; /* this prevents the animation from restarting! */
+ 
+//     -moz-animation-name: $animation;
+//     -moz-animation-duration: $duration;
+//     -moz-animation-timing-function: $timing-function;
+//     -moz-animation-delay: $delay;
+//     -moz-animation-direction: $direction;
+//     -moz-animation-fill-mode: $fill-mode; /* this prevents the animation from restarting! */
+
+//     animation-name: $animation;
+//     animation-duration: $duration;
+//     animation-timing-function: $timing-function;
+//     animation-delay: $delay;
+//     animation-direction: $direction;
+//     animation-fill-mode: $fill-mode; /* this prevents the animation from restarting! */
+
+// }

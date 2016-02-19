@@ -1,0 +1,1447 @@
+/* --------- UIKIT ---------- */
+
+/* --- SPAN --- */
+.user-fullname {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: $black;
+}
+
+.user-role {
+    font-size: 1.1em;
+    font-weight: 400;
+    color: $greyDark;
+}
+
+.user-job-title {
+    font-size: 1.1em;
+    font-weight: 400;
+    color: $greyDark;
+}
+
+.user-username {
+    font-size: 1em;
+    font-weight: 600;
+    color: $green;
+}
+
+.user-email {
+    font-size: 1em;
+    font-weight: 400;
+    color: $greyDark;
+}
+
+.team-name {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: $black;
+}
+
+.team-admin,
+.team-number-of-users {
+    font-size: 1.1em;
+    font-weight: 400;
+    color: $greyDark;
+}
+
+/* ------------- Button --------------*/
+.btn {
+    @include border-radius (0);
+    padding: 8px 16px;
+    @include box-shadow (0px 0px 0px 0px rgba(0, 0, 0, 0));
+    font-weight: 600;
+    font-size: 1.2em;
+    min-width: 120px;
+}
+
+.btn-default {
+    background-color: white;
+    border-color: $greyMid;
+    color: $greyDark;
+    @include transition (all 0.2s ease);
+}
+
+.btn-default:hover {
+    background-color: $greyLight;
+    border-color: $greyMid;
+    color: $greyDark;
+    @include transition (all 0.2s ease);
+}
+
+.btn-black {
+    background-color: $black;
+    border-color: $black;
+    color: white;
+    @include transition (all 0.2s ease);
+}
+
+.btn-black:hover {
+    background-color: $greyDark;
+    border-color: $greyDark;
+    color: white;
+    @include transition (all 0.2s ease);
+}
+
+.btn-success {
+    background-color: $greenDark;
+    border-color: $greenDark;
+    color: white;
+    @include transition (all 0.2s ease);
+}
+
+.btn-success:hover {
+    background-color: $green;
+    border-color: $green;
+    color: white;
+    @include transition (all 0.2s ease);
+}
+
+.btn-fail {
+    background-color: $orange;
+    border-color: $orange;
+    color: white;
+}
+/* ------------- Dropdown Menu --------------*/
+.dropdown-menu {
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 1em;
+    background-color: white;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid $greyLight;
+    border-radius: 0;
+    @include box-shadow (0px 0px 5px 0px rgba(0, 0, 0, 0.04));
+
+    .divider {
+        height: 1px;
+        margin: 8px 0;
+        overflow: hidden;
+        background-color: $greyLight;
+    }
+}
+
+.dropdown-menu > li > a {
+    display: block;
+    padding: 8px 16px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: $greyDark;
+    white-space: nowrap;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    color: $greyDark;
+    text-decoration: none;
+    background-color: rgba ($greyLight, 0.1);
+}
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: #337ab7;
+  outline: 0;
+}
+.dropdown-menu > .disabled > a,
+.dropdown-menu > .disabled > a:hover,
+.dropdown-menu > .disabled > a:focus {
+  color: #777;
+}
+.dropdown-menu > .disabled > a:hover,
+.dropdown-menu > .disabled > a:focus {
+  text-decoration: none;
+  cursor: not-allowed;
+  background-color: transparent;
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.open > .dropdown-menu {
+  display: block;
+}
+.open > a {
+  outline: 0;
+}
+.dropdown-menu-right {
+  right: 0;
+  left: auto;
+}
+.dropdown-menu-left {
+  right: auto;
+  left: 0;
+}
+.dropdown-header {
+  display: block;
+  padding: 3px 20px;
+  font-size: 12px;
+  line-height: 1.42857143;
+  color: #777;
+  white-space: nowrap;
+}
+.dropdown-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 990;
+}
+.pull-right > .dropdown-menu {
+  right: 0;
+  left: auto;
+}
+.dropup .caret,
+.navbar-fixed-bottom .dropdown .caret {
+  content: "";
+  border-top: 0;
+  border-bottom: 4px solid;
+}
+.dropup .dropdown-menu,
+.navbar-fixed-bottom .dropdown .dropdown-menu {
+  top: auto;
+  bottom: 100%;
+  margin-bottom: 2px;
+}
+.btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .btn-default:hover, .open>.dropdown-toggle.btn-default {
+    background-color: $greyLight;
+    border-color: $greyMid;
+}
+
+.btn-group.open .dropdown-toggle {
+    @include box-shadow (none);
+}
+
+/* ------------- Form --------------*/
+form {
+    .row {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .btn {
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px 16px;
+    @include border-radius (0);
+    border-color: $greyMid;
+    font-size: 1.2em;
+    height: auto;
+    @include box-shadow (0px 0px 0px 0px rgba(0, 0, 0, 0));
+}
+
+.input-group-addon {
+    font-size: 1.2em;
+    background-color: $greyLight;
+    border-color: $greyMid;
+    @include border-radius (0);
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: $green;
+    @include box-shadow (none);
+}
+
+.form-control[disabled],
+.form-control[readonly],
+fieldset[diabled].form-control {
+    background-color: $greyLight;
+}
+
+label {
+    font-size: 1.2em;
+}
+
+/* -------- Search Bar ---------- */
+
+.search-bar {
+    .search-icon {
+        position: absolute;
+        top: 8px;
+        left: 23px;
+        font-size: 1.2em;
+        color: $greyMid;
+    }
+
+    input {
+        width: 100%;
+        padding-left: 32px;
+    }
+}
+
+/* -------- Global Search ---------- */
+#modal-global-search {
+    .label-photo,
+    .label-video,
+    .label-counting {
+        position: absolute;
+        top: -22px;
+        border-radius: 0.25em 0.25em 0.25em 0;
+    }
+}
+
+/* ---------- Date Divider ----------*/
+.date-divider {
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+
+        [class*='col-'] {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    
+    hr {
+        display: inline-block;
+        border-color: #28a55e;
+    }
+
+    span {
+        font-size: 1.2em;
+        font-weight: 400;
+        text-align: center;
+        line-height: 40px;
+    }
+}
+
+
+/* ---------- Token Field - Tags ----------*/
+.tokenfield {
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.tokenfield .token-input {
+    height: initial;
+}
+
+.tokenfield .token {
+    height: initial;
+    background-color: $greyLight;
+    border-color: $greyLight;
+    margin: 0 5px 5px 0;
+}
+
+.tokenfield .token.active {
+    border-color: $greenDark;
+}
+
+.tokenfield .token.invalid.active {
+    background-color: white;
+    border-color: $orange;
+}
+
+/* ----------- Textarea -----------*/
+textarea {
+    resize: inherit;
+    overflow: auto;
+    width: 100%;
+    min-height: 100px;
+    font-size: 1.1em;
+    padding-top: 16px;
+}
+
+// .hiddendiv {
+//     display: none;
+//     white-space: pre-wrap;
+//     word-wrap: break-word;
+//     overflow-wrap: break-word; /* future version of deprecated 'word-wrap' */
+// }
+
+/* the styles for 'commmon' are applied to both the textarea and the hidden clone */
+/* these must be the same for both */
+// .common {
+//     width: 100%;
+//     min-height: 100px;
+//     font-size: 1.1em;
+//     overflow: hidden;
+//     padding: 16px;
+// }
+
+::-webkit-input-placeholder,
+:-moz-placeholder, /* Firefox 18- */
+::-moz-placeholder, /* Firefox 19+ */
+:-ms-input-placeholder {
+    color: $greyMid;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+
+
+/* --------- NAV ---------- */
+.nav-pills>li>a {
+    color: $greyDark;
+    border-radius: 0;
+}
+
+.nav-pills>li>a:hover,
+.nav-pills>li>a:focus {
+    border-bottom: 3px solid $greenDark;
+    background-color: transparent;
+}
+
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
+    color: $black;
+    background-color: transparent;
+    border-bottom: 3px solid $green;
+}
+
+
+/* --------- NAV BAR ---------- */
+.navbar {
+    border: none;
+    font-weight: 400;
+    
+    /* Collapse */
+    /* dropdown menu*/
+    .open .dropdown-menu>li>a {
+      line-height: 22px;
+    }
+}
+
+.navbar-fixed-top .navbar-collapse {
+    max-height: none;
+}
+
+/* NAV BAR - MAIN - Expand */
+.navbar-main {
+    background-color: $greyDark;
+    border-color: none;
+    height: $navbar-main-height;
+    @include box-shadow (0px 2px 2px 0px rgba(0, 0, 0, 0.05));
+    @include transition (all 0.3s ease);
+
+    /* toggle */
+    .navbar-toggle {
+        background-color: transparent;
+        border-color: transparent;
+        color: white;
+    }
+    .navbar-toggle:hover {
+        background-color: transparent;
+    }
+
+    .navbar-brand {
+        padding: 0;
+    }
+
+    /* link */
+    .navbar-nav>li>a {
+        color: white;
+        padding-top: $navbar-main-height/3;
+        padding-bottom: $navbar-main-height/3;
+    }
+
+    /* link - left */
+    .navbar-nav.navbar-left>li>a {
+        font-size: 1.4em;
+        font-weight: 600;
+    }
+    
+    /* link - right */
+    .navbar-nav.navbar-right>li>a {
+        font-size: 1.2em;
+        font-weight: 400;
+    }
+
+    /* hover link */
+    .navbar-nav>li>a:hover {
+        background-color: rgba(white,0.4);
+        color: $green;
+    }
+
+    /* active link */
+    .navbar-nav>.navbar-active>a {
+        background-color: rgba(white,0.4);
+        color: white;
+    }
+    
+}
+
+/* NAV BAR - MAIN - Collapse */
+.navbar-main {
+    /* bg */
+    .navbar-collapse {
+        background-color: $greyDark;
+        border: none;
+        position: relative;
+    }
+
+    /* link */
+    .navbar-nav>li>a{
+        color: white;
+    }
+
+    /* hover link */
+    .navbar-nav>li>a:hover {
+        background-color: rgba(white,0.1);
+        color: white;
+    }
+
+    /* active link*/
+    .navbar-nav>.navbar-active>a{
+        color: white;
+    }
+    
+    /* dropdown toggle - open */
+    .navbar-nav>.open>a,
+    .navbar-nav>.open>a:focus,
+    .navbar-nav>.open>a:hover {
+        background-color: $greyDark;
+        color: white;
+    }
+
+    /* dropdown menu - open */
+    .navbar-nav .open .dropdown-menu {
+        background-color: transparent;
+        @include box-shadow (0px 0px 5px 0px rgba(0, 0, 0, 0.04));
+    }
+
+    /* dropdown menu - open - link*/
+    .navbar-nav .open .dropdown-menu>li>a {
+        color: white;
+    }
+    .navbar-nav .open .dropdown-menu>li>a:hover {
+        background-color: rgba(white,0.1);
+        color: white;
+    }
+
+    .navbar-nav .open .dropdown-menu .divider {
+        background-color: $greyMid;
+    }
+}
+
+.img-logo {
+    max-width: $navbar-main-height;
+}
+
+
+/* NAV BAR - LOWER */
+.navbar-lower {
+    width: auto;
+    position: fixed;
+    left: 0;
+    margin-top: $navbar-main-height;
+    z-index: 10;
+    vertical-align: middle;
+    height: $navbar-lower-height;
+    @include box-shadow (0px 2px 2px 0px rgba(0, 0, 0, 0.05));
+    @include transition (all 0.5s ease);
+    
+    /* -------- */
+    .navbar-nav {
+        margin: 0 0;
+        display: inline-block;
+    }
+
+    ul.navbar-right {
+        position: absolute;
+        right: 15px;
+        top: 0px;
+        @include transition (all 0.5s ease);
+    }
+
+    ul {
+        // display: inline-block;
+        // clear: both;
+    }
+
+    .nav>li {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .navbar-nav.navbar-left>li>a,
+    .navbar-nav.navbar-right>li>a {
+        font-size: 1.1em;
+        font-weight: 400;
+        padding-top: $navbar-lower-height/3;
+        padding-bottom: $navbar-lower-height/3;
+    }
+
+    .navbar-nav.navbar-left>li>a.navbar-lower-title {
+        font-size: 1.3em;
+        font-weight: 600;
+    }
+
+    .dropdown-menu {
+        background-color: white !important;
+    }
+
+
+}
+
+#navbar-team-toggle,
+#navbar-sidebar-toggle {
+    display: inline-block; 
+}
+
+/* ---------- List Item ----------- */
+
+.list-group.member-list {
+    margin-bottom: 10px;
+    
+    .list-group-item {
+        position: relative;
+        display: block;
+        padding: 10px 15px 10px 0;
+        margin: 2px 0;
+        background-color: #fff;
+        border: none;
+        border-bottom: 1px solid $greyLight;
+    }
+
+    span.list-name {
+        font-size: 1.2em;
+        vertical-align: middle;
+    }
+
+    span.list-operation {
+    }
+
+    .list-group-item:first-child {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        // border-top: 1px solid $greyLight;
+    }
+
+    .list-group-item:last-child {
+        margin-bottom: 0;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-bottom: none;
+    }
+}
+
+
+/* ---------- Panel ----------- */
+.panel {
+    border: none;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.panel-heading {
+    border-bottom: none;
+    padding: 20px 30px 20px 30px;
+}
+
+.panel-body {
+    padding: 10px 30px 30px 30px;
+}
+
+.panel-footer {
+    background-color: white;
+    border-top: none;
+    padding: 10px 30px 10px 30px;
+}
+
+.panel-default {
+    border: 1px solid $greyLight;
+    @include box-shadow (0px 0px 5px 0px rgba(0, 0, 0, 0.04));
+}
+
+.panel-default > .panel-heading {
+    color: #333;
+    background-color: white;
+    border-color: #ddd;
+}
+
+/* --------- REPORT PANEL -----------*/
+
+.panel-report {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0;
+    @include transition (all 0.25s ease);
+
+    .panel-heading {
+        padding: 30px 20px;
+        border-bottom: none;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+
+        .panel-name {
+            text-align: left;
+            font-size: 1.4em;
+            font-weight: 600;
+            color: $black;
+        }
+
+        .panel-time {
+            text-align: right;
+            float: right;
+            color: $greyMid;
+            font-size: 1.2em;
+            font-weight: 400;
+        }
+    }
+
+    .panel-body {
+        padding: 0 20px 20px 20px;
+
+        .row {
+            margin-right: -20px;
+            margin-left: -20px;
+        }
+
+        p {
+            padding: 20px 0 0 0;
+        }
+
+        /* Status */
+        .panel-status {
+            margin-bottom: 16px;
+
+            span.report-location,
+            li.report-status {
+                font-weight: 400;
+                font-size: 1.2em;
+                line-height: 2;
+                color: $greyMid;
+                text-transform: none;
+            }
+
+            span.report-location{
+                text-align: left;
+            }
+
+            ul.report-status-list {
+                margin: 0 0;
+                display: inline-block;
+                float: right;
+                vertical-align: middle;
+            }
+
+            li.report-status {
+                display: inline-block;
+                vertical-align: middle;
+                padding: 0 0;
+            }
+
+            li.report-status:not(:first-child) {
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+.panel-report:hover {
+    @include box-shadow (0px 0px 10px 0px rgba(0, 0, 0, 0.12));
+    @include transition (all 0.25s ease);
+}
+
+/* ---------- COMMENT -------------- */
+.sec-comment {
+    .accordion-heading {
+        padding: 18px 16px 12px 16px;
+        background-color: white;
+        color: $green;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        text-align: center;
+
+        .accordion-toggle {
+            font-size: 1em;
+            text-align: center;
+        } 
+    }
+
+    .row-comment {
+        padding: 8px 16px;
+        background-color: white;
+        border-bottom: 1px solid $greyLight;
+
+        .comment-name,
+        .comment-time {
+            line-height: 2;
+        }
+
+        .comment-name {
+            font-size: 1.2em;
+            color: $black;
+            font-weight: 600;
+        }
+
+        .comment-time {
+            float: right;
+            font-size: 1.1em;
+            font-weight: 400;
+            color: $greyMid;
+        }
+
+        p {
+            font-size: 1.1em;
+            font-weight: 400;
+        }
+
+        .comment-tag {
+            color: $green;
+            font-weight: 600;
+        }
+    }
+
+    .comment-form {
+        background-color: white;
+        text-align: left;
+        padding: 0 0 16px 0;
+        margin-top: 10px;
+
+        textarea{
+            margin-top: 10px;
+            border: none;
+            outline: none;
+            resize: inherit;
+            overflow: auto;
+            width: 100%;
+            min-height: 100px;
+            font-size: 1.1em;
+            padding: 16px;
+        }
+
+        .btn {
+            margin-left: 16px;
+        }
+    }
+}
+
+/* ------------- SIDEBAR --------------*/
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    @include transition (all 0.5s ease);
+}
+
+#wrapper.toggledSidebar {
+    padding-left: $sidebar-width;
+}
+
+#sidebar-wrapper {
+    z-index: 999;
+    position: fixed;
+    left: $sidebar-width;
+    width: 0;
+    height: 100%;
+    margin-left: -$sidebar-width;
+    overflow-y: auto;
+    background: white;
+    @include transition (all 0.5s ease);
+}
+
+#wrapper.toggledSidebar #sidebar-wrapper {
+    width: $sidebar-width;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+    margin-bottom: 109px;
+}
+
+#wrapper.toggledSidebar #page-content-wrapper {
+    position: absolute;
+    margin-right: -$sidebar-width;
+}
+
+/* Sidebar Styles */
+
+.sidebar-left {
+    @include box-shadow (2px 0px 10px 0px rgba(0, 0, 0, 0.05));
+}
+
+.sidebar-right {
+    @include box-shadow (-2px 0px 10px 0px rgba(0, 0, 0, 0.05));
+}
+
+#sidebar-wrapper{
+    margin-top: $navbar-main-height;
+} 
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: $sidebar-width;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+        text-indent: 20px;
+        line-height: 56px;
+        border-bottom: 2px solid $greyLight;
+        
+        color: $greyDark;
+        font-size: 1.1em;
+
+        a {
+            display: block;
+            color: $greyDark;
+            text-decoration: none;
+        }
+    }
+
+    li.active,
+    li.active:hover {
+        .sidebar-list-name{
+            font-weight: 600;
+        }
+    }
+
+    li:hover {
+        background-color: rgba($greyLight,.2);
+    } 
+
+    li.sidebar-title-area {
+        line-height: 46px;
+        padding-top: 18px;
+        font-size: 1.1em;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $greyMid;
+        background-color: $greyLight;
+
+        .sidebar-add {
+            float: right;
+            padding-right: 30px;
+            color: $greyMid;
+            cursor: pointer;
+        }
+
+        .sidebar-add:hover {
+            color: $greenDark;
+        }
+    }
+}
+
+.sidebar-list-name {
+    text-align: left;
+}
+
+.sidebar-notification {
+    text-align: right;
+    float: right;
+    padding-right: 30px;
+    font-size: 0.8em;
+    color: $orange;
+}
+
+.user-visibility {
+    text-align: left;
+}
+
+.user-name {
+    text-align: left;
+    padding-left: 20px;
+}
+
+// .sidebar-nav > .sidebar-brand {
+//     height: 65px;
+//     font-size: 1.6em;
+//     line-height: 60px;
+// }
+
+// .sidebar-nav > .sidebar-brand a {
+//     color: #999999;
+// }
+
+// .sidebar-nav > .sidebar-brand a:hover {
+//     color: #fff;
+//     background: none;
+// }
+
+
+//Change sub sidebar content
+.sub {
+  max-width: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-width 0s;
+}
+
+ul.sub.active {
+	max-width: 1000px;
+	max-height: 1000px;
+	transition: max-width 1s 0.1s;
+}
+
+.sub li {
+    overflow: hidden;
+    white-space: nowrap;
+} 
+
+/* ------------- Modal --------------*/
+.modal-back,
+.modal-close {
+    margin-top: 30px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+
+    .btn-default {
+        background-color: rgba(0,0,0,0.6);
+        border: none;
+        color: white;
+        font-size: 1.4em;
+    }
+
+    .btn-default:hover {
+        background-color: rgba(0,0,0,0.7);
+    }
+}
+
+.modal-back:after,
+.modal-close:after {
+    content: "";
+    display: block;
+    margin-top: 100%;
+}
+
+.modal-content {
+    position: relative;
+    background-color: white;
+    -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+    @include border-radius (0);
+    outline: 0;
+    @include box-shadow (0px 0px 10px 0px rgba(0, 0, 0, 0.08));
+}
+
+.modal.fade .modal-dialog {
+    @include transition (all 0.5s ease); //works for toggleUsers
+    // -webkit-transform: translate(0, -25%);
+    //     -ms-transform: translate(0, -25%);
+    //     -o-transform: translate(0, -25%);
+    //         transform: translate(0, -25%);
+}
+
+.modal.in .modal-dialog {
+    // -webkit-transform: translate(0, 0);
+    //     -ms-transform: translate(0, 0);
+    //     -o-transform: translate(0, 0);
+    //         transform: translate(0, 0);
+}
+
+/* ------------- Carousel --------------*/
+.modal-carousel {
+    width: 100%;
+    
+    .modal-lg {
+        width: 100%;
+        margin: 0;
+    }
+
+    .modal-body {
+        padding: 0;
+    }
+}
+
+.carousel {
+    @include transition (all 0.2s ease);
+}
+
+.carousel-inner {
+    height: 100vh;
+    background-color: $black;
+}
+
+.carousel-inner > .item {
+    height: inherit;
+    vertical-align: middle;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    max-height: 100%;
+    margin: 0 auto;
+    vertical-align: middle;
+    position: relative;
+    top: 50%;
+    // transform: translateY(-50%);
+    @include translate(0,-50%);
+    // top: 0;
+    // bottom: 0;
+}
+
+.carousel-control {
+    visibility: visible;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+    filter: alpha(opacity=50);
+    opacity: .5;
+    @include transition (all 0.2s ease);
+}
+
+.carousel-control.left,
+.carousel-control.right {
+    background-image: none;
+    filter: none;
+}
+
+.carousel-control.close {
+    top: 0;
+    bottom: auto;
+    right: 0;
+    left: auto;
+    padding: 16px; 
+    font-size: 2em;
+}
+
+//carousel control always visible
+.carousel:hover .carousel-control,
+.carousel:hover .carousel-control:hover,
+.carousel:hover .carousel-control:focus {
+    visibility: visible;
+    filter: alpha(opacity=90);
+    opacity: .9;
+    @include transition (all 0.5s ease);
+}
+
+.carousel-caption {
+    visibility: hidden;
+    opacity: 0;
+    // height: 80px;
+    //line-height: 24px; /* Height / no. of lines to display */
+    overflow: hidden;
+    background-color: rgba($black,0.92);
+    text-align: left;
+    font-size: 1.2em;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 32px;
+    @include transition (all 0.2s ease);
+}
+
+//caption visible only when carousel is hovered
+// .carousel:hover .carousel-caption {
+//     visibility: visible;
+//     opacity: 1;
+//     @include transition (all 0.5s ease);
+// }
+
+/* -------------- CHAT -------------- */
+footer, .push {
+    height: 109px; /* .push must be the same height as .footer */
+}
+
+.sec-chat {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $greyLight;
+    padding: 0;
+    @include transition (all 0.5s ease);
+
+    .comment-form {
+        background-color: transparent;
+        text-align: left;
+
+        textarea{
+            border: none;
+            border-top: 1px solid $greyMid;
+            outline: none;
+            resize: inherit;
+            overflow: auto;
+            width: 100%;
+            min-height: 20px;
+            font-size: 1.1em;
+            padding: 16px;
+        }
+    }
+}
+
+/* ------- JUMP BACK TO RECENT MESSAGE ------ */
+.sec-jump-back {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 79px;
+    background-color: rgba($greyDark, 0.96);
+    padding: 16px;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 600;
+    @include transition (all 0.5s ease);
+}
+
+/* ------------ CHAT BUBBLE ---------- */
+.bubble {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    padding: 8px 20px 6px 20px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    clear: both;
+    @include border-radius (16px);
+    @include box-shadow (0px 0px 5px 0px rgba(0, 0, 0, 0.04));
+    @include transition (all 0.25s ease);
+
+    .bubble-name,
+    .bubble-time {
+        line-height: 2;
+    }
+
+    .bubble-name {
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+
+    .bubble-time {
+        float: right;
+        font-size: 1.2em;
+        font-weight: 300;
+        padding-left: 20px;
+    }
+
+    p {
+        font-size: 1.1em;
+        font-weight: 400;
+    }
+
+    .bubble-tag {
+        font-weight: 600;
+    }
+}
+
+.bubble:hover {
+    @include box-shadow (0px 0px 10px 0px rgba(0, 0, 0, 0.08));
+    @include transition (all 0.25s ease);
+}
+
+.bubble-default {
+    float: left;
+    background-color: white;
+    @include border-bottom-left-radius (0px);
+
+    .bubble-name,
+    p {
+        color: $greyDark;
+    }
+
+    .bubble-time {
+        color: $greyMid;
+    }
+
+    .bubble-tag,
+    a {
+        color: $green;
+    }
+}
+
+.bubble-default:after {
+    content: "";
+    position: absolute;
+    bottom: -$bubble-triangle-edge; /* value = - border-top-width - border-bottom-width */
+    left: 0px; /* controls horizontal position */
+    border-width: $bubble-triangle-edge $bubble-triangle-edge 0 0; /* vary these values to change the angle of the vertex */
+    border-style: solid;
+    border-color: white transparent;
+    /* reduce the damage in FF3.0 */
+    display: block;
+    width: 0;
+}
+
+.bubble-success {
+    float: right;
+    background-color: $greenDark;
+    @include border-bottom-right-radius (0px);
+    
+    .bubble-name,
+    p {
+        color: white;
+    }
+
+    .bubble-time {
+        color: white;
+    }
+
+    .bubble-tag,
+    a {
+        color: white;
+    }
+}
+
+.bubble-success:after {
+    content: "";
+    position: absolute;
+    bottom: -$bubble-triangle-edge; /* value = - border-top-width - border-bottom-width */
+    right: 0px; /* controls horizontal position */
+    border-width: $bubble-triangle-edge 0 0 $bubble-triangle-edge; /* vary these values to change the angle of the vertex */
+    border-style: solid;
+    border-color: $greenDark transparent;
+    /* reduce the damage in FF3.0 */
+    display: block;
+    width: 0;
+}
+
+/* ------------ SEARCH RESULT ---------- */
+.result-highlight {
+    @include box-shadow (0px 0px 10px 0px rgba($green, 0.4));
+}
+
+.result-highlight:hover {
+    @include box-shadow (0px 0px 10px 0px rgba($green, 0.8));
+}
+
+/* ------------ DATETIMEPICKER ---------- */
+.sec-filter .form-horizontal .input-group {
+    display: block;
+}
+
+.checkbox {
+    padding-left: 20px;
+    display: inline-block;
+    margin-right: 1.5em;
+}
+
+.checkbox label {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    padding-left: 0.5em;
+}
+
+.checkbox label::before {
+    border-radius: 50%;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    left: 0;
+    top:4px;
+    margin-left: -20px;
+    border: 1px solid #cccccc;
+    background-color: #fff;
+    @include transition-ease (0.15s);
+}
+.checkbox label::after {
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 0;
+    top: 4px;
+    margin-left: -20px;
+    padding-left: 3px;
+    padding-top: 1px;
+    font-size: 11px;
+    color: #555555;
+}
+
+.checkbox input[type="checkbox"] {
+    opacity: 0;
+    z-index: 1;
+}
+
+.checkbox input[type="checkbox"]:focus + label::before {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+.checkbox input[type="checkbox"]:checked + label::after {
+    font-family: 'FontAwesome';
+    content: "\f00c";
+}
+
+.checkbox input[type="checkbox"]:disabled + label {
+    opacity: 0.65;
+}
+
+.checkbox input[type="checkbox"]:disabled + label::before {
+    background-color: #eeeeee;
+    cursor: not-allowed;
+}
+
+.checkbox input[type="checkbox"]:checked + label::before {
+    background-color: $green;
+    border-color: $green;
+}
+
+.checkbox input[type="checkbox"]:checked + label::after {
+    color: white;
+}
+
+input[type="checkbox"].styled:checked + label:after {
+    font-family: 'FontAwesome';
+    content: "\f00c";
+}
+input[type="checkbox"] .styled:checked + label::before {
+    color: #fff;
+}
+input[type="checkbox"] .styled:checked + label::after {
+    color: #fff;
+}
+
+.bootstrap-datetimepicker-widget table td.active,
+.bootstrap-datetimepicker-widget table td.active:hover {
+    background-color: $greenDark;
+    text-shadow: none;
+}
+
+.bootstrap-datetimepicker-widget table td span.active {
+    background-color: $greenDark;
+    text-shadow: none;
+}
+
+
+/* ------------ PAGINATION ---------- */
+nav.nav-pagination {
+    clear: both;
+    margin-top: 40px;
+    background-color: white;
+    
+    hr {
+        margin: 5px 0;
+    }
+
+    .pagination {
+        margin: 10px 0;
+    }
+}
+
+.pagination>li>a,
+.pagination>li>span {
+    border: none;
+    background-color: transparent;
+    color: $greyDark;
+}
+
+.pagination>li>a:hover,
+.pagination>li>a:focus,
+.pagination>li>span:hover,
+.pagination>li>span:focus, {
+    border: none;
+    color: $greenDark;
+    background-color: transparent;
+}
+
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {
+    background-color: transparent;
+    border: none;
+    border-radius: 15px;
+    color: $greenDark;
+    font-weight: 600;
+}

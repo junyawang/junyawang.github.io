@@ -1,0 +1,446 @@
+/*-------------------------------------------
+              MEDIA QUERIES
+---------------------------------------------*/
+
+@import 'variables';
+
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #page-content-wrapper {
+        margin-bottom: 0;
+    }
+
+    .checkbox label {
+        padding-left: 0.5em !important;
+    }
+
+    /* --- NAVBAR --- */
+    .navbar-main {
+        
+        /* dropdown menu - open */
+        .navbar-nav .open .dropdown-menu {
+            background-color: white;
+        }
+
+        /* dropdown menu - open - link*/
+        .navbar-nav .open .dropdown-menu>li>a {
+            color: $greyDark;
+        }
+        .navbar-nav .open .dropdown-menu>li>a:hover {
+            background-color: rgba(white,0.1);
+            color: $greenDark;
+        }
+
+        .navbar-nav .open .dropdown-menu .divider {
+            background-color: $greyLight;
+        }
+
+        .navbar-collapse {
+            position: initial;
+        }
+    }
+
+    #navbar-team-toggle,
+    #navbar-sidebar-toggle {
+        display: none;
+    }
+
+    .navbar-right {
+        margin-right: 0;
+    }
+
+    .navbar-lower,
+    .sec-chat,
+    .sec-jump-back {
+        left: $sidebar-width; /* $sidebar-width*/
+        @include transition (all 0.5s ease);
+    }
+    
+    /* --- SIDEBAR --- */
+    #wrapper {
+        padding-left: $sidebar-width;
+    }
+
+    #wrapper.toggledTeams {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: $sidebar-width;
+    }
+
+    #wrapper.toggledTeams #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggledTeams #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+    
+    /* --- CHAT --- */
+    .sec-chat {
+        background-color: $greyLight;
+        padding: 16px;
+        border-top: 1px solid $greyMid;
+
+        .comment-form {
+            textarea{
+                border: none;
+                @include box-shadow (0px 0px 2px 0px rgba(0, 0, 0, 0.25));
+            }
+        }
+    }
+
+    .sec-jump-back {
+        bottom: 111px;
+    }
+
+    /* --- BUBBLE --- */
+    .bubble {
+        width: auto;
+        min-width: initial;
+        max-width: 60%;
+    }
+
+    /* --- MODAL --- */
+    .modal-dialog {
+        width: 100%;
+    }
+
+    .sec-filter {
+        left: $sidebar-width;
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .search-keyword-group {
+            width: 100%;
+        }
+
+        .filter-icon {
+            margin-left: 0.8em;
+            margin-right: 0.8em;
+            width: 2.5%;
+            top: 0;
+        }
+
+        .user-icon {
+            text-align: center;
+            margin-right: 0.5em;
+            margin-left: 0.5em;
+            width: 3%;
+        }
+
+        .start-date {
+            width: 20%;
+            input {
+                width: 100% !important;
+            }
+        }
+
+        .to-date {
+            width: 5%;
+            font-size: 1.2em;
+            text-align: center;
+            position: relative;
+            top: 1px;
+        }
+
+        .end-date {
+            width: 20%;
+            input {
+                width: 100% !important;
+            }
+        }
+
+        .bootstrap-select {
+            width: 36% !important;
+        }
+
+        .token-div {
+            width: 90%;
+        }
+
+        .checkbox {
+            margin-top: 1em;
+            margin-right: 1em;
+        }
+
+        .filter-buttons {
+            margin-top: 0.5em;
+            display: inline-block;
+            text-align: initial;
+        }
+
+        .btn {
+            min-width: 100px;
+        }
+    }
+
+    /* ---- Weather Section ---- */
+    .sec-weather {        
+        padding: 32px;
+        
+        .weather-condition-icon {
+            font-size: 5.2em;
+        }
+
+        .weather-condition {
+            font-size: 3.8em;
+        }
+
+        .weather-location {
+            font-size: 1.2em;
+        }
+
+        .weather-temperature {
+            .weather-temperature-number {
+                font-size: 6.2em;
+                font-weight: 300;
+            }
+
+            .weather-degree {
+                font-size: 3em;
+            }
+        }
+
+        .weather-others {
+            margin-top: 16px;
+            font-size: 1.2em;
+            font-weight: 400;
+        }
+    }
+    
+    /* -------- Global Search ---------- */
+    #modal-global-search {
+        .label-photo,
+        .label-video,
+        .label-counting {
+            position: initial;
+            top: 0px;
+            border-radius: 0.25em;
+        }
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .modal-dialog {
+        width: 100%
+    }
+
+    .sec-filter {
+        .user-icon {
+            text-align: center;
+            margin-right: 0.8em;
+            margin-left: 0.8em;
+            width: 2%;
+        }
+
+        .bootstrap-select {
+            width: 40% !important;
+        }
+
+        .btn {
+            min-width: 120px;
+        }
+    }
+
+    .sec-weather {        
+        padding: 32px;
+        
+        .weather-condition-icon {
+            font-size: 6em;
+        }
+
+        .weather-condition {
+            font-size: 4em;
+        }
+
+        .weather-location {
+            font-size: 1.4em;
+        }
+
+        .weather-temperature {
+            .weather-temperature-number {
+                font-size: 6.8em;
+                font-weight: 300;
+            }
+
+            .weather-degree {
+                font-size: 3em;
+            }
+        }
+
+        .weather-others {
+            margin-top: 16px;
+            font-size: 1.4em;
+            font-weight: 400;
+        }
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .modal-dialog {
+        width: 100%;
+    }
+
+    .sec-filter {
+
+        .start-date {
+            width: 13%;
+            input {
+                width: 100% !important;
+            }
+        }
+
+        .to-date {
+            width: 3%;
+        }
+
+        .end-date {
+            width: 13%;
+            input {
+                width: 100% !important;
+            }
+        }
+
+        .filter-icon {
+            width: auto;
+            margin-left: 5px;
+        }
+
+        .token-div {
+            width: 94%;
+        }
+
+        .user-icon {
+            text-align: center;
+            margin-right: 0.6em;
+            margin-left: 0.6em;
+            width: 1.5%;
+        }
+
+        .bootstrap-select {
+            width: 22% !important;
+        }
+
+        .checkbox {
+            margin-top: 0px;
+            margin-right: 0px;
+            padding-left: 15px;
+        }
+
+        .filter-buttons {
+            margin-top: 0px;
+            float: right;
+            position: relative;
+            right: 2%;
+        }
+
+        .btn {
+            min-width: 100px;
+            margin-top: 0px;
+        }
+    }
+    
+    /* --- MODAL NOTE --- */
+    .modal-note {
+        width: 80%;
+        margin: 0 auto;
+
+        .modal-lg {
+            margin: 30px auto;
+            height: auto;
+        }
+
+        .modal-header {
+            position: relative;
+        }
+
+        .modal-body {
+            position: relative;
+            margin-top: 0;
+        }
+    }
+    
+    /* --- CAROUSEL --- */
+    // since this carousel style has some hover effect, it has to be on desktop
+    .modal-carousel {
+        width: 90%;
+        margin: 0 auto;
+
+        .modal-lg {
+            margin: 30px auto;
+        }
+    }
+
+    .carousel-inner {
+        height: 90vh;
+    }
+
+    .carousel-control {
+        visibility: hidden;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+        filter: alpha(opacity=0);
+        opacity: 0;
+        @include transition (all 0.2s ease);
+    }
+
+    .carousel-control.left,
+    .carousel-control.right {
+        background-image: none;
+        filter: none;
+    }
+
+    //carousel control visible only when carousel is hovered
+    .carousel:hover .carousel-control {
+        visibility: visible;
+        opacity: 0.5;
+        @include transition (all 0.5s ease);
+    }
+
+    //opacity increase when hover carousel-control
+    .carousel:hover .carousel-control:hover,
+    .carousel:hover .carousel-control:focus {
+        filter: alpha(opacity=90);
+        opacity: .9;
+        @include transition (all 0.2s ease);
+    }
+
+    .carousel-caption {
+        visibility: hidden;
+        opacity: 0;
+        // height: 80px;
+        //line-height: 24px; /* Height / no. of lines to display */
+        overflow: hidden;
+        background-color: rgba($black,0.98);
+        text-align: left;
+        font-size: 1.2em;
+        text-shadow: 0 1px 2px rgba(0,0,0,.6);
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 32px;
+        @include transition (all 0.2s ease);
+    }
+
+    //caption visible only when carousel is hovered
+    .carousel:hover .carousel-caption {
+        visibility: visible;
+        opacity: 1;
+        @include transition (all 0.5s ease);
+    }
+}

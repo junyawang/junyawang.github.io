@@ -1,0 +1,440 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Org Name - Dashboard</title>
+
+
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- CSS -->
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    <link href="css/media_query.css" rel="stylesheet" type="text/css">
+
+    <!-- JS -->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    
+    <!-- Navbar Main -->
+    <nav class="navbar navbar-default navbar-main navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- Toggle -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <!-- Logo -->
+                <a class="navbar-brand page-scroll" href="index.html">
+                    <img class="img-logo" src="img/org_logo.jpg">
+                </a>
+            </div>
+
+            <!-- Menus -->
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="hidden-xs">
+                        <a href="index.html">Basecamp Networks</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="">
+                        <a href="#" class="navbar-right" id="global-search"><i class="fa fa-search hidden-xs"></i><span class="visible-xs">Search</span></a>
+                    </li>
+                    <li class="">
+                        <a href="admin.html">Admin</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Craig Ganssle <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="account.html">My Account</a></li>
+                            <li><a href="signin_org.html">Switch Org (no other orgs signed in)</a></li>
+                            <li><a href="switch_org.html">Switch Org (has other orgs signed in)</a></li>
+                            <li class="divider"></li>
+                            <li><a href="signin_org.html">Log out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+    
+    <div id="wrapper" class="wrapper-index">
+        <!-- SIDEBAR -->
+        <div id="sidebar-wrapper" class="sidebar-left">
+            <ul class="sidebar-nav main">
+                <li class="active">
+                    <a href="#org-account" data-toggle="tab">
+                        <span class="sidebar-list-name">Org Account</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#billings" data-toggle="tab">
+                        <span class="sidebar-list-name">Billings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#members" data-toggle="tab">
+                        <span class="sidebar-list-name">Members</span>
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="#teams" data-toggle="tab">Teams</a>
+                </li> -->
+            </ul>
+        </div>
+
+        <div id="page-content-wrapper">
+            <div class="main-content tab-content">
+                <!-- Org Account -->
+                <div role="tabpanel" class="tab-pane fade active in" id="org-account">
+                    <!-- Navbar - Lower -->
+                    <nav class="navbar navbar-default navbar-fixed-top navbar-lower" role="navigation">
+                        <div class="container-fluid">
+                            <ul class="nav navbar-nav navbar-left">
+                                <li><a href="#team-toggle" class="navbar-left" id="navbar-sidebar-toggle"><i class="fa fa-bars"></i></a></li>
+                                <li>
+                                    <a href="#" class="navbar-lower-title">Organization Account</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <section class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3>Organization Account</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <form class="row">
+                                            <div class="form-group col-md-12">
+                                                <label for="inputFile">Organization Logo</label>
+                                                <div>
+                                                    <img class="org-logo-upload" src="img/org_logo.jpg">
+                                                </div>
+                                                <input type="file" id="inputFile">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label for="inputOrgName">Organization Name</label>
+                                                <input type="text" class="form-control" id="inputOrgName" value="Org Name">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label for="inputOrgDomain">Organization Domain</label>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" id="inputOrgDomain" value="orgname">
+                                                    <span class="input-group-addon">.intelliscout.com</span>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-success">Save Changes</button>
+                                        </form>
+                                    </div>
+                                </section>
+                            </div><!-- /.col-lg-12 -->
+                        </div><!-- /.row-->
+                    </div><!-- /.container-fluid -->
+                </div><!-- /.tab-pane -->
+
+                <!-- Billings -->
+                <div role="tabpanel" class="tab-pane fade" id="billings">
+                    <!-- Navbar - Lower -->
+                    <nav class="navbar navbar-default navbar-fixed-top navbar-lower" role="navigation">
+                        <div class="container-fluid">
+                            <ul class="nav navbar-nav navbar-left">
+                                <li><a href="#team-toggle" class="navbar-left" id="navbar-sidebar-toggle"><i class="fa fa-bars"></i></a></li>
+                                <li>
+                                    <a href="#" class="navbar-lower-title">Billings</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <section class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3>Billing Info</h3>
+                                        <button type="button" class="btn btn-default" id="">Edit <i class="fa fa-pencil"></i></button>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <h4>Billing Plan</h4>
+                                                <span>Explorer Plan</span>
+                                                <span>$15.99/user/month</span>
+                                                <span>Monthly (2015/02/14-2016/02/14)</span>
+                                            </div>
+                                            
+                                            <div class="col-md-4">
+                                                <h4>Payment Method</h4>
+                                                <span>Credit Card</span>
+                                                <span>Craig Ganssle</span>
+                                                <span>Visa (XXXX-XXXX-XXXX-1234)</span>
+                                                <span>Exp 05/2017</span>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                            <h4>Billing Address</h4>
+                                                <address>
+                                                    Craig Ganssle<br>
+                                                    1234 Example Street<br>
+                                                    Vancouver, BC V6B 2Y5<br>
+                                                    Canada<br>
+                                                    Phone: 778-123-4567<br>
+                                                </address>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3>Transaction History</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <!-- Table -->
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Date</th>
+                                                        <th>Transaction #</th> 
+                                                        <th>Description</th>
+                                                        <th>Billed</th>
+                                                        <th>Paid</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>15/01/02</td>
+                                                        <td>#1234</td> 
+                                                        <td>Visa ****1234 approved</td>
+                                                        <td></td>
+                                                        <td>$99.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>15/01/01</td>
+                                                        <td>#1234</td> 
+                                                        <td>IntelliScout Explorer Plan - December 2014</td>
+                                                        <td>$99.00</td>
+                                                        <td></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div><!-- /.col-lg-12 -->
+                        </div><!-- /.row-->
+                    </div><!-- /.container-fluid -->
+                </div><!-- /.tab-pane -->
+
+                <!-- Members -->
+                <div role="tabpanel" class="tab-pane fade" id="members">
+                    <!-- Navbar - Lower -->
+                    <nav class="navbar navbar-default navbar-fixed-top navbar-lower" role="navigation">
+                        <div class="container-fluid">
+                            <ul class="nav navbar-nav navbar-left">
+                                <li><a href="#team-toggle" class="navbar-left" id="navbar-sidebar-toggle"><i class="fa fa-bars"></i></a></li>
+                                <li>
+                                    <a href="#" class="navbar-lower-title">Members</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xs-7 col-xs-offset-5 col-sm-4 col-sm-offset-8 col-md-3 col-md-offset-9">
+                                <button class="btn btn-success btn-invite-users" id="modal-invite-members-trigger">+ Invite Members</button>
+                            </div>
+                            <div class="hidden-xs col-sm-2 col-md-2">
+                                <div class="dropdown">
+                                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                    Sort by
+                                    <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Full Name</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Username</a></li>
+                                  </ul>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-4">
+                                <form class="search-bar" role="search">
+                                    <div class="form-group">
+                                        <span class="search-icon"><i class="fa fa-search"></i></span>
+                                        <input type="text" class="form-control" placeholder="Search for names or email address">
+                                    </div>
+                                </form>
+                                <!-- <div class="search-bar">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search for names or email address">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default" type="button">
+                                                <span><i class="fa fa-search"></i> Search</span>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <div class="list-member-group">
+                            <div class="list-member clearfix">
+                                <div class="accordion-heading clearfix">
+                                    <span class="user-fullname">Craig Ganssle</span>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseUser1" aria-expanded="false" aria-controls="collapseUser1">
+                                        <span class="user-settings btn btn-default btn-sm"><i class="fa fa-cog"></i></span>
+                                    </a>
+                                    <span class="user-role">Primary Org Admin</span>
+                                    <span class="user-username">@craig</span>
+                                    <span class="user-job-title">CEO</span>
+                                    <span class="user-email">craig@example.com</span>
+                                </div>
+                                <div class="panel-collapse collapse" id="collapseUser1">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-4">
+                                            <a href="./account.html" class="btn btn-default btn-sm">Edit My Account</a>
+                                        </div>
+                                    </div>
+                                </div><!-- /.panel-collapse-->
+                            </div><!-- /.list-member-->
+                            
+                            <div class="list-member clearfix">
+                                <div class="accordion-heading clearfix">
+                                    <span class="user-fullname">Jeremy Willemse</span>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseUser2" aria-expanded="false" aria-controls="collapseUser2">
+                                        <span class="user-settings btn btn-default btn-sm"><i class="fa fa-cog"></i></span>
+                                    </a>
+                                    <span class="user-role">Org Admin</span>
+                                    <span class="user-username">@jeremy</span>
+                                    <span class="user-job-title">Development Manager</span>
+                                    <span class="user-email">jeremy@example.com</span>
+                                </div>
+                                <div class="panel-collapse collapse" id="collapseUser2">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-4">
+                                            <a href="index.html" class="btn btn-default btn-sm">Send Direct Message</a>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4">
+                                            <button class="btn btn-default btn-sm">Remove Org Admin Role</button>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4">
+                                            <button class="btn btn-default btn-sm">Disable Account</button>
+                                        </div>
+                                    </div>
+                                </div><!-- /.panel-collapse-->
+                            </div><!-- /.list-member-->
+
+                            <div class="list-member clearfix">
+                                <div class="accordion-heading clearfix">
+                                    <span class="user-fullname">Junya Wang</span>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseUser3" aria-expanded="false" aria-controls="collapseUser3">
+                                        <span class="user-settings btn btn-default btn-sm"><i class="fa fa-cog"></i></span>
+                                    </a>
+                                    <span class="user-role">Member</span>
+                                    <span class="user-username">@junya</span>
+                                    <span class="user-job-title">UI/UX Designer</span>
+                                    <span class="user-email">junya@example.com</span>
+                                </div>
+                                <div class="panel-collapse collapse" id="collapseUser3">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-4">
+                                            <a href="index.html" class="btn btn-default btn-sm">Send Direct Message</a>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4">
+                                            <button class="btn btn-default btn-sm">Make an Org Admin</button>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4">
+                                            <button class="btn btn-default btn-sm">Disable Account</button>
+                                        </div>
+                                    </div>
+                                </div><!-- /.panel-collapse-->
+                            </div><!-- /.list-member-->
+
+                        </div>
+                    </div><!-- /.container-fluid -->
+                </div><!-- /.tab-pane -->
+
+                <!-- MODAL - Invite Members -->
+                <div class="modal fade" id="modal-invite-members" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="container">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button>
+                                <h1>Invite Members</h1>
+                                <p>Inviting more members to join your organization. </p>
+                            </div>
+                            <div class="modal-body">   
+                                <form class="row">
+                                    <div class="form-group col-md-12">
+                                        <input type="email" class="form-control" id="inputEmail1" placeholder="email@domain.com">
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <input type="email" class="form-control" id="inputEmail2" placeholder="email@domain.com">
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <input type="email" class="form-control" id="inputEmail3" placeholder="email@domain.com">
+                                    </div>
+
+                                    <div class="form-group col-md-12">
+                                        <a href="#" class="btn btn-default btn-xs btn-add-invitation">+ Add Invitation</a>
+                                    </div>
+                                    <button type="submit" class="btn btn-success">Send Invitations</button>
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div><!-- /modal-dialogue -->
+                    </div>
+                </div>
+
+                <!-- Teams -->
+                <!-- <div role="tabpanel" class="tab-pane fade" id="teams">
+                    <div class="container">
+                        <section class="panel panel-default">
+                            <div class="panel-heading">
+                                <h1>Teams</h1>
+                            </div>
+                            <div class="panel-body">
+                            </div>
+                        </section>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL - Global Search -->
+    <section id="modal-global-search" class="modal fade"/>
+
+    <!-- Modal Toggle -->
+    <script type="text/javascript">
+        // Show modal-invite-members
+        $("#modal-invite-members-trigger").click(function(){
+            $('#modal-invite-members').modal('show');
+        });
+    </script>
+
+</body>
+    <script src="js/custom/global.js"></script>
+</html>
