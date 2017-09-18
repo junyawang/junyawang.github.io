@@ -51,11 +51,17 @@
 				camera.position.z = 250;
 				// scene
 				scene = new THREE.Scene();
-				var ambient = new THREE.AmbientLight( 0x444444 );
+				var ambient = new THREE.AmbientLight( 0xeeeeee);
 				scene.add( ambient );
-				var directionalLight = new THREE.DirectionalLight( 0xffeedd );
-				directionalLight.position.set( 0, 0, 1 ).normalize();
-				scene.add( directionalLight );
+				var directionalLightFront = new THREE.DirectionalLight( 0xffeedd );
+				// var directionalLightBackLeft = new THREE.DirectionalLight( 0xffeedd );
+				// var directionalLightBackRight = new THREE.DirectionalLight( 0xffeedd );
+				directionalLightFront.position.set( -100, 100, 100 ).normalize();
+				// directionalLightBackLeft.position.set( 120, 70, -64 ).normalize();
+				// directionalLightBackRight.position.set( -65, -60, -65 ).normalize();
+				scene.add( directionalLightFront );
+				// scene.add( directionalLightBackLeft );
+				// scene.add( directionalLightBackRight );
 				// model
 				var onProgress = function ( xhr ) {
 					if ( xhr.lengthComputable ) {
@@ -67,12 +73,12 @@
 				THREE.Loader.Handlers.add( /\.dds$/i, new THREE.DDSLoader() );
 				var mtlLoader = new THREE.MTLLoader();
 				mtlLoader.setPath( 'obj/' );
-				mtlLoader.load( 'Tool_Storage_Cabinet_colored.mtl', function( materials ) {
+				mtlLoader.load( 'Tool_Storage_Cabinet_Colored.mtl', function( materials ) {
 					materials.preload();
 					var objLoader = new THREE.OBJLoader();
 					objLoader.setMaterials( materials );
 					objLoader.setPath( 'obj/' );
-					objLoader.load( 'Tool_Storage_Cabinet_colored.obj', function ( object ) {
+					objLoader.load( 'Tool_Storage_Cabinet_Colored.obj', function ( object ) {
 						object.position.y = 0;
 						scene.add( object );
 					}, onProgress, onError );
