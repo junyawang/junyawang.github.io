@@ -73,12 +73,12 @@
 				THREE.Loader.Handlers.add( /\.dds$/i, new THREE.DDSLoader() );
 				var mtlLoader = new THREE.MTLLoader();
 				mtlLoader.setPath( 'obj/' );
-				mtlLoader.load( 'Tool_Storage_Cabinet_Colored.mtl', function( materials ) {
+				mtlLoader.load( 'Tool_Storage_Cabinet_colored.mtl', function( materials ) {
 					materials.preload();
 					var objLoader = new THREE.OBJLoader();
 					objLoader.setMaterials( materials );
 					objLoader.setPath( 'obj/' );
-					objLoader.load( 'Tool_Storage_Cabinet_Colored.obj', function ( object ) {
+					objLoader.load( 'Tool_Storage_Cabinet_colored.obj', function ( object ) {
 						object.position.y = 0;
 						scene.add( object );
 					}, onProgress, onError );
