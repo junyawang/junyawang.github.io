@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.a6852748.chunk.css",
-    "main.js": "/static/js/main.5308d4d5.chunk.js",
-    "main.js.map": "/static/js/main.5308d4d5.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.7a0eef9b.js",
-    "runtime-main.js.map": "/static/js/runtime-main.7a0eef9b.js.map",
-    "static/js/2.190f1fa0.chunk.js": "/static/js/2.190f1fa0.chunk.js",
-    "static/js/2.190f1fa0.chunk.js.map": "/static/js/2.190f1fa0.chunk.js.map",
-    "static/js/3.565d3e4d.chunk.js": "/static/js/3.565d3e4d.chunk.js",
-    "static/js/3.565d3e4d.chunk.js.map": "/static/js/3.565d3e4d.chunk.js.map",
+    "main.css": "/static/css/main.4315126d.chunk.css",
+    "main.js": "/static/js/main.dd83ba4d.chunk.js",
+    "main.js.map": "/static/js/main.dd83ba4d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e86bdb5d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e86bdb5d.js.map",
+    "static/js/2.d4f0b861.chunk.js": "/static/js/2.d4f0b861.chunk.js",
+    "static/js/2.d4f0b861.chunk.js.map": "/static/js/2.d4f0b861.chunk.js.map",
+    "static/js/3.e325968d.chunk.js": "/static/js/3.e325968d.chunk.js",
+    "static/js/3.e325968d.chunk.js.map": "/static/js/3.e325968d.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.a6852748.chunk.css.map": "/static/css/main.a6852748.chunk.css.map",
-    "static/js/2.190f1fa0.chunk.js.LICENSE.txt": "/static/js/2.190f1fa0.chunk.js.LICENSE.txt",
+    "static/css/main.4315126d.chunk.css.map": "/static/css/main.4315126d.chunk.css.map",
+    "static/js/2.d4f0b861.chunk.js.LICENSE.txt": "/static/js/2.d4f0b861.chunk.js.LICENSE.txt",
     "static/media/3M-AutoLayout_600x300.a21dd422.gif": "/static/media/3M-AutoLayout_600x300.a21dd422.gif",
     "static/media/3M-SwapInstance_600x300.2a6bec3a.gif": "/static/media/3M-SwapInstance_600x300.2a6bec3a.gif",
     "static/media/3m-blurb.0d229c55.png": "/static/media/3m-blurb.0d229c55.png",
@@ -74,6 +74,7 @@
     "static/media/google-cardboard-gaze-reticle@2x.37505543.png": "/static/media/google-cardboard-gaze-reticle@2x.37505543.png",
     "static/media/google-cardboard-gaze-reticle@3x.207a8f8a.png": "/static/media/google-cardboard-gaze-reticle@3x.207a8f8a.png",
     "static/media/icon-close.svg": "/static/media/icon-close.58c5b43f.svg",
+    "static/media/icon-direction-arrow-left.6b79305e.svg": "/static/media/icon-direction-arrow-left.6b79305e.svg",
     "static/media/icon-lock.cc720b9a.svg": "/static/media/icon-lock.cc720b9a.svg",
     "static/media/incident-draft-design@2x.d5612df0.png": "/static/media/incident-draft-design@2x.d5612df0.png",
     "static/media/incident-draft-design@3x.e4bdbd95.png": "/static/media/incident-draft-design@3x.e4bdbd95.png",
@@ -329,9 +330,9 @@
     "static/media/workshop-voted@3x.4b385ebe.png": "/static/media/workshop-voted@3x.4b385ebe.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.7a0eef9b.js",
-    "static/js/2.190f1fa0.chunk.js",
-    "static/css/main.a6852748.chunk.css",
-    "static/js/main.5308d4d5.chunk.js"
+    "static/js/runtime-main.e86bdb5d.js",
+    "static/js/2.d4f0b861.chunk.js",
+    "static/css/main.4315126d.chunk.css",
+    "static/js/main.dd83ba4d.chunk.js"
   ]
 }
